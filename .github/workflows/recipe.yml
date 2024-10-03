@@ -1,0 +1,88 @@
+name: Recipe
+
+on:
+    push:
+        branches:
+            - *
+    schedule:
+        - cron: "0 7 * * 0/3"
+    workflow_dispatch:
+
+jobs:
+    mongo-versions:
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version:
+                    - 20.x
+
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: User Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v4
+              with:
+                node-version: ${{ matrix.node-version }}
+                cache: "npm"
+            
+            - name: update Mongo versions
+              run: npm run update:mongo-versions
+
+            - name: git config
+              run: |
+                git config user.name "GutHub Actions Recipe Bot"
+                git config user.email "<>"
+                git add . && git commit -m "recipe update $(date +"%Y-%m-%dT%H:%M:%S%z")" && while ! git push origin main; do git pull --rebase; done || exit 0
+
+    mongo-versions:
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version:
+                    - 20.x
+
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: User Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v4
+              with:
+                node-version: ${{ matrix.node-version }}
+                cache: "npm"
+            
+            - name: update Mongo versions
+              run: npm run update:mongo-versions
+
+            - name: git config
+              run: |
+                git config user.name "GutHub Actions Recipe Bot"
+                git config user.email "<>"
+                git add . && git commit -m "recipe update $(date +"%Y-%m-%dT%H:%M:%S%z")" && while ! git push origin main; do git pull --rebase; done || exit 0
+
+    catalog-queries:
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version:
+                    - 20.x
+
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: User Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v4
+              with:
+                node-version: ${{ matrix.node-version }}
+                cache: "npm"
+            
+            - name: update Catalog Queries
+              run: npm run update:catalog-queries
+
+            - name: git config
+              run: |
+                git config user.name "GutHub Actions Recipe Bot"
+                git config user.email "<>"
+                git add . && git commit -m "recipe update $(date +"%Y-%m-%dT%H:%M:%S%z")" && while ! git push origin main; do git pull --rebase; done || exit 0
