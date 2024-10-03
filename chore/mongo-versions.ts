@@ -25,7 +25,6 @@ function readJSONFile(path: string): Promise<JSON> {
 }
 
 function fetchJSON<T>(url: string): Promise<T> {
-    console.info(url);
     return fetch(url)
         .then((response) => response.json() as T);
 }
@@ -53,7 +52,7 @@ function joinValues(char: string, ...parts: Array<unknown>): string {
 const versionPattern = /^(\d+)(?:\.(\d+)(?:\.(\d+))?)?(?:-(rc))?/;
 const automation = resolve(__dirname, '..', 'automation');
 const versionFile = resolve(automation, 'mongo-versions.json');
-const started = new Date();
+const now = new Date();
 
 readJSONFile(versionFile)
     .catch(() => undefined)
@@ -96,7 +95,7 @@ readJSONFile(versionFile)
             })
             .forEach(({ normalized, version, name, updated }: NormalizedVersionRelease) => {
                 const found = history.find((record) => record.version === normalized);
-                const record = found || { version: normalized, name, released: updated, changes: [], modified: new Date() };
+                const record = found || { version: normalized, name, released: updated, changes: [], modified: now };
 
                 if (found) {
                     const compare = { version: normalized, name };
@@ -116,7 +115,7 @@ readJSONFile(versionFile)
                             record[key] = compare[key];
                         });
 
-                        record.modified = new Date();
+                        record.modified = now;
                     }
                 }
                 else {
@@ -130,5 +129,10 @@ readJSONFile(versionFile)
 
         return history;
     })
-    .then((history) => writeFile(versionFile, JSON.stringify(history, null, '\t')))
+    .then((history) => {
+        const updates = history.filter(({ modified }) => modified === now).map(({ version }) => version);
+        console.log('versions=' + updates.join(','));
+
+        return writeFile(versionFile, JSON.stringify(history, null, '\t'));
+    })
     ;
