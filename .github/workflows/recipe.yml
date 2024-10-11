@@ -10,9 +10,6 @@ jobs:
     mongo-versions:
         runs-on: ubuntu-latest
 
-        outputs:
-            versions: ${{ steps.update-versions.outputs.versions }}
-
         steps:
             - uses: actions/checkout@v4
 
@@ -25,14 +22,15 @@ jobs:
             - name: install
               run: npm install
             
-            - name: update-versions
-              run: npm run update:mongo-versions >> "$GITHUB_OUTPUT"
+            - name: update Mongo Versions
+              id: update-versions
+              run: npm run update:mongo-versions
 
             - name: git config
               run: |
                 git config user.name "GutHub Actions Recipe Bot"
                 git config user.email "<>"
-                git add . && git commit -m "mongo versions $(date +"%Y-%m-%dT%H:%M:%S%z")" && while ! git push origin main; do git pull --rebase; done || exit 0
+                git add ./automation && git commit -m "mongo versions $(date +"%Y-%m-%dT%H:%M:%S%z")" && while ! git push origin main; do git pull --rebase; done || exit 0
 
     catalog-queries:
         runs-on: ubuntu-latest
@@ -56,12 +54,4 @@ jobs:
               run: |
                 git config user.name "GutHub Actions Recipe Bot"
                 git config user.email "<>"
-                git add . && git commit -m "catalog queries $(date +"%Y-%m-%dT%H:%M:%S%z")" && while ! git push origin main; do git pull --rebase; done || exit 0
-
-    summarize:
-        runs-on: ubuntu-latest
-        needs: mongo-versions
-        steps:
-          - env:
-              VERSIONS: ${{ needs.mongo-versions.outputs.versions }}
-            run: echo "captured VERSIONS ((${VERSIONS}))"
+                git add ./automation && git commit -m "catalog queries $(date +"%Y-%m-%dT%H:%M:%S%z")" && while ! git push origin main; do git pull --rebase; done || exit 0
