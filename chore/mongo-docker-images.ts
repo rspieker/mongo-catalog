@@ -83,7 +83,7 @@ getTags<DockerTag>('mongo')
                 const record = meta.releases.find(({ name }: any) => name === rel.name);
 
                 if (record) {
-                    return Object.keys(record).some((key: any) => record[key] !== rel[key]);
+                    return Object.keys(record).some((key: any) => JSON.stringify(record[key]) !== JSON.stringify(rel[key]));
                 }
 
                 return false;
