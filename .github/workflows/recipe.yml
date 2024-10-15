@@ -79,11 +79,8 @@ jobs:
               run: npm install
 
             - name: Determine Workload
-              run: npm run update:workload
-
-            - name: Output versions
               id: capture
-              run: echo "captured=$(cat ./automation/workload.txt)" >> "$GITHUB_OUTPUT"
+              run: echo "captured=$(npm run --silent update:workload)" >> "$GITHUB_OUTPUT"
 
     debug-versions:
         runs-on: ubuntu-latest
