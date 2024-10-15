@@ -1,59 +1,29 @@
-import { dirname, resolve } from 'node:path';
-import { mkdir, readFile, writeFile } from 'node:fs/promises';
-
-type JSONValue = string | number | boolean | null | Array<JSONValue> | { [key: string]: JSONValue };
-
-function readJSONFile<T extends JSONValue>(path: string): Promise<T> {
-    return readFile(path)
-        .then((buffer: Buffer) => buffer.toString('utf-8'))
-        .then((utf8: string) => JSON.parse(utf8));
-}
-
-function writeJSONFile<T extends JSONValue>(path: string, data: JSONValue): Promise<JSONValue> {
-    return directory(dirname(path))
-        .then(() => writeFile(path, JSON.stringify(data, null, '\t')))
-        .then(() => data);
-}
-
-function directory(path: string): Promise<string> {
-    return mkdir(path, { recursive: true }).then(() => path);
-}
+import { glob } from "glob";
+import { resolve } from "path";
+import { readJSONFile } from "../source/domain/json";
 
 const automation = resolve(__dirname, '..', 'automation');
-const workload = resolve(automation, 'workload.json');
 const catalogFile = resolve(automation, 'catalog-queries.json');
-const versionsFile = resolve(automation, 'mongo-versions.json');
-const collect = resolve(automation, 'collect');
 
-readJSONFile<Array<any>>(workload)
-    .catch(() => [])
-    .then(async (prior: Array<any>) => {
-        const catalog = await readJSONFile<Array<any>>(catalogFile);
-        const versions = await readJSONFile<Array<any>>(versionsFile);
-        const normalizedCatalog = catalog.map(({ path, hash }) => ({ path, hash }));
-        const names = [];
+readJSONFile<Array<any>>(catalogFile)
+    .then(async (catalog) => {
+        const outdated: Set<string> = new Set();
+        const files = await glob(resolve(automation, 'collect', '**', 'meta.json'));
 
-        for (const { version, name, modified } of versions) {
-            const [major] = version.split('.');
-            const metaFile = resolve(collect, major, version, 'meta.json');
-            const meta = await readJSONFile<any>(metaFile)
-                .then((meta) => {
-                    meta.updated = modified;
-                    return meta;
-                })
-                .catch(() => ({ version, name, catalog: normalizedCatalog, updated: null }));
+        for (const file of files) {
+            const meta = await readJSONFile<{ catalog: Array<any>, name: string, updated: string, releases: Array<{ released: string }> }>(file);
+            const [release] = meta.releases;
 
-            if (meta.updated >= modified) {
-                meta.catalog = normalizedCatalog.filter(({ path, hash }) => !meta.catalog.find((cat: any) => cat.path === path && cat.hash === hash))
+            if (release.released > meta.updated) {
+                outdated.add(meta.name);
             }
-
-            if (meta.catalog.length) {
-                names.push(name);
+            else if (!catalog.every((c) => meta.catalog.find((m) => m.hash = c.hash && m.path === c.path))) {
+                outdated.add(meta.name);
             }
-
-            await writeJSONFile(metaFile, meta);
         }
 
-        console.log(names.join(','));
-        return names;
+        return [...outdated];
     })
+    .then((outdated: Array<string>) => {
+        console.log(outdated.join(' '));
+    });
