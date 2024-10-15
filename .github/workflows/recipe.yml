@@ -83,7 +83,7 @@ jobs:
 
             - name: Output versions
               id: workload
-              run: echo "versions=$(cat ./automation/versions.txt)"
+              run: echo "versions=$(cat ./automation/workload.txt)"
 
     debug-versions:
         runs-on: ubuntu-latest
