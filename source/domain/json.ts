@@ -4,7 +4,7 @@ import { dirname } from "path";
 
 export type JSONValue = string | number | boolean | null | undefined | Array<JSONValue> | { [key: string]: JSONValue };
 
-export async function readJSONFile<T extends JSONValue = JSONValue>(path: string): Promise<T> {
+export async function readJSONFile<T = JSONValue>(path: string): Promise<T> {
     return readFile(path)
         .then((buffer: Buffer) => buffer.toString('utf8'))
         .then((data: string) => JSON.parse(data) as T);
@@ -16,7 +16,7 @@ export async function writeJSONFile(path: string, data: JSONValue): Promise<type
         .then(() => data);
 }
 
-export async function fetchJSON<T extends JSONValue = JSONValue>(url: string): Promise<T> {
+export async function fetchJSON<T = JSONValue>(url: string): Promise<T> {
     return fetch(url)
         .then((response) => response.json() as Promise<T>);
 }

@@ -1,52 +1,32 @@
 import { resolve } from "path";
-import { getTags } from "../source/domain/docker";
+import { type DockerTag, getTags } from "../source/domain/docker";
 import { Version } from "../source/domain/version";
 import { readJSONFile, writeJSONFile } from "../source/domain/json";
 
-type DockerVersion = {
-    v2: boolean;
-    name: string;
-    digest: string;
-    images: Array<{
-        architecture: string;
-        digest: string;
-        os: string;
-        status: string;
-    }>;
-    last_updated: string;
-};
-
-type MongoVersion = {
-    version: string;
-    name: string;
-    digest: string;
+type BasicDockerTag = {
+    name: DockerTag['name'];
+    version: Version;
+    digest: DockerTag['digest'];
     released: Date;
-    catalog: Array<{
-        file: string;
-        checksum: string;
-        date: Date;
-    }>;
-    updates: Array<{
-        type: 'initial' | 'catalog';
-        timestamp: number;
-    } | {
-        type: 'updated'
-        before: { [key: string]: unknown };
-        timestamp: number;
-    }>;
-    modified: Date;
 }
+
+type BasicDockerTagBundle = {
+    name: DockerTag['name'];
+    version: Version;
+    releases: Array<BasicDockerTag>;
+};
 
 const automation = resolve(__dirname, '..', 'automation');
 const now = new Date();
 const collation = new Intl.Collator('en', { numeric: true });
 
-getTags('mongo')
+getTags<DockerTag>('mongo')
     .then(async (tags) => tags
-        .filter(({ name, v2, images }: any) => v2 && Version.isVersionString(name) && images.some(({ architecture, os }: any) => architecture === 'amd64' && os === 'linux'))
-        .map(({ name, digest, last_updated }: any) => {
+        .filter(({ name, v2, images }) => v2 && Version.isVersionString(name) && images.some(({ architecture, os }: any) => architecture === 'amd64' && os === 'linux'))
+        .map(({ name, digest, last_updated }) => {
             const version = new Version(name);
-            return {
+
+            return <BasicDockerTag>{
                 name,
                 version,
                 digest,
@@ -56,7 +36,7 @@ getTags('mongo')
         // only preserve stable version (no build) and release candididates (-rcN)
         .filter(({ version: { build } }) => !build || /^rc\d+$/.test(build))
         // group by version (release candidates belong to the version) or digest (partial versions refer to full versions)
-        .reduce((carry, item: any) => {
+        .reduce((carry, item: BasicDockerTag) => {
             const name = String(item.version);
             const found = carry.find((it: any) => String(it.version) === name || it.releases.some((rel: any) => rel.digest === item.digest));
             const record = found || { name, version: item.version, releases: [] };
@@ -68,8 +48,10 @@ getTags('mongo')
             const release = record.releases.find((rel: any) => rel.name === item.name);
 
             if (release) {
-                Object.keys(item).forEach((key) => {
-                    release[key] = item[key];
+                const keys = Object.keys(item) as Array<keyof BasicDockerTag>;
+
+                keys.forEach((key) => {
+                    release[key] = <any>item[key];
                 });
             }
             else {
@@ -77,9 +59,9 @@ getTags('mongo')
             }
 
             return carry;
-        }, [] as Array<any>)
+        }, [] as Array<BasicDockerTagBundle>)
     )
-    .then((bundles) => bundles.map((item: any) => {
+    .then((bundles: Array<BasicDockerTagBundle>) => bundles.map((item: BasicDockerTagBundle) => {
         const [release] = item.releases.sort(({ version: a }: any, { version: b }: any) => a > b ? -1 : Number(a < b));
 
         return {
@@ -89,9 +71,10 @@ getTags('mongo')
             updated: release.released,
         };
     }))
-    .then((bundles) => bundles.reduce((carry, bundle) => carry.then(async () => {
+    .then((bundles: Array<BasicDockerTagBundle>) => bundles.reduce((carry, bundle) => carry.then(async () => {
         const file = resolve(automation, 'collect', `v${bundle.version.major}`, bundle.name, 'meta.json');
-        const meta = await readJSONFile<any>(file).catch(() => ({ name: bundle.name, version: String(bundle.version), catalog: [], releases: [], history: [], updated: now }));
+        const meta = await readJSONFile<any>(file)
+            .catch(() => ({ name: bundle.name, version: String(bundle.version), catalog: [], releases: [], history: [], updated: now }));
         const removed = meta.releases.filter(({ name }: any) => !bundle.releases.find((rel: any) => name === rel.name));
         const added = bundle.releases.filter(({ name }: any) => !meta.releases.find((rel: any) => name === rel.name));
         const modified = bundle.releases
