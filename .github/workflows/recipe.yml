@@ -90,5 +90,5 @@ jobs:
 
         steps:
           - env:
-              WORKLOAD: ${{needs.workload.outputs.work}}
+              WORKLOAD: ${{fromJSON(needs.workload.outputs.work)}}
             run: echo "[[$WORKLOAD]]"

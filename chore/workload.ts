@@ -25,5 +25,5 @@ readJSONFile<Array<any>>(catalogFile)
         return [...outdated];
     })
     .then((outdated: Array<string>) => {
-        console.log(outdated.join(' '));
+        console.log(JSON.stringify(outdated));
     });
