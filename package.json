@@ -5,7 +5,8 @@
   "scripts": {
     "update:mongo-versions": "ts-node chore/mongo-docker-images.ts",
     "update:catalog-queries": "ts-node chore/catalog-queries.ts",
-    "update:workload": "ts-node chore/workload.ts"
+    "update:workload": "ts-node chore/workload.ts",
+    "update:mongo-collect": "ts-node chore/mongo-collect.ts"
   },
   "keywords": [],
   "author": "",
