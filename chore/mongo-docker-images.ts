@@ -39,6 +39,7 @@ type MongoVersion = {
 
 const automation = resolve(__dirname, '..', 'automation');
 const now = new Date();
+const collation = new Intl.Collator('en', { numeric: true });
 
 getTags('mongo')
     .then(async (tags) => tags
@@ -121,7 +122,7 @@ getTags('mongo')
             }
         }
 
-        meta.releases = bundle.releases;
+        meta.releases = bundle.releases.sort(({ version: a }: any, { version: b }: any) => collation.compare(a.version, b.version) * (Number(a.build === b.build) * -1) || a > b ? -1 : Number(a < b));
 
         await writeJSONFile(file, meta);
     }), Promise.resolve()))
