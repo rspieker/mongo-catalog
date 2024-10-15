@@ -88,7 +88,10 @@ jobs:
         needs:
           - workload
 
+        strategy:
+          matrix:
+            version: ${{ fromJSON(needs.workload.outputs.work )}}
+
         steps:
-          - env:
-              WORKLOAD: ${{fromJSON(needs.workload.outputs.work)}}
-            run: echo "[[$WORKLOAD]]"
+          - name: log-version
+            run: echo "Version ${{ matrix.version }}";
