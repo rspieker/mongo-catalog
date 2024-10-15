@@ -64,7 +64,7 @@ jobs:
           - catalog-queries
 
         outputs:
-          versions: ${{ steps.capture.outputs.versions }}
+          work: ${{ steps.capture.outputs.captured }}
 
         steps:
             - uses: actions/checkout@v4
@@ -83,7 +83,7 @@ jobs:
 
             - name: Output versions
               id: capture
-              run: echo "versions=$(cat ./automation/workload.txt)"
+              run: echo "captured=$(cat ./automation/workload.txt)"
 
     debug-versions:
         runs-on: ubuntu-latest
@@ -93,5 +93,5 @@ jobs:
 
         steps:
           - env:
-              WORKLOAD: ${{needs.workload.outputs.versions}}
+              WORKLOAD: ${{needs.workload.outputs.work}}
             run: echo "[[$WORKLOAD]]"
