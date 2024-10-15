@@ -92,6 +92,9 @@ jobs:
           matrix:
             version: ${{ fromJSON(needs.workload.outputs.work )}}
 
+        env:
+          MONGO_VERSION: ${{ matrix.version }}
+
         steps:
           - uses: actions/checkout@v4
 
@@ -107,6 +110,6 @@ jobs:
               mongodb-version: ${{ matrix.version }}
     
           - run: npm install
-    
+
           - run: npm run update:mongo-collect
     
