@@ -45,14 +45,14 @@ readJSONFile(catalogQueryFile)
             if (record.hash !== checksum) {
                 if (record.update.length) {
                     record.update.push({
-                        type: 'update',
+                        type: 'UPDATE',
                         before: record.hash,
                         date: Date.now(),
                     });
                 }
                 else {
                     record.update.push({
-                        type: 'initial',
+                        type: 'INITIAL',
                         date: Date.now(),
                     });
                 }
