@@ -26,7 +26,7 @@ readJSONFile<Array<any>>(catalogFile)
         return [...outdated];
     })
     .then(async (outdated: Array<string>) => {
-        await writeFile(resolve(automation, 'workload.txt'), outdated.join(' | '));
+        await writeFile(resolve(automation, 'workload.txt'), outdated.join(','));
 
         console.log(`found ${outdated.length} versions to update`);
     });
