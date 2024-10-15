@@ -64,7 +64,7 @@ jobs:
           - catalog-queries
 
         outputs:
-          versions: ${{steps.workload.outputs.versions}}
+          versions: ${{ steps.workload.outputs.versions }}
 
         steps:
             - uses: actions/checkout@v4
@@ -79,8 +79,11 @@ jobs:
               run: npm install
 
             - name: Determine Workload
+              run: npm run update:workload
+
+            - name: Output versions
               id: workload
-              run: echo "versions=$(npm run --silent update:workload)" >> $GITHUB_OUTPUT
+              run: echo "versions=$(cat ./automation/versions.txt)"
 
     debug-versions:
         runs-on: ubuntu-latest
@@ -90,5 +93,5 @@ jobs:
 
         steps:
           - env:
-              WORKLOAD: ${{steps.workload.outputs.versions}}
+              WORKLOAD: ${{needs.workload.outputs.versions}}
             run: echo "$WORKLOAD"

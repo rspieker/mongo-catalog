@@ -1,6 +1,7 @@
 import { glob } from "glob";
 import { resolve } from "path";
 import { readJSONFile } from "../source/domain/json";
+import { writeFile } from "fs/promises";
 
 const automation = resolve(__dirname, '..', 'automation');
 const catalogFile = resolve(automation, 'catalog-queries.json');
@@ -24,6 +25,8 @@ readJSONFile<Array<any>>(catalogFile)
 
         return [...outdated];
     })
-    .then((outdated: Array<string>) => {
-        console.log(outdated.join(' '));
+    .then(async (outdated: Array<string>) => {
+        await writeFile(resolve(automation, 'workload.txt'), outdated.join(' | '));
+
+        console.log(`found ${outdated.length} versions to update`);
     });
