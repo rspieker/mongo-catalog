@@ -89,7 +89,7 @@ getTags<DockerTag>('mongo')
                 return false;
             });
 
-        if (removed.length || added.length || modified.Length) {
+        if (removed.length || added.length || modified.length) {
             const found = meta.history.find((record: any) => record.date === now.getTime());
             const record = found || { type: meta.history.length ? 'UPDATE' : 'INITIAL', date: now.getTime(), actions: [] };
 
