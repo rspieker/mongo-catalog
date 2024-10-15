@@ -83,7 +83,7 @@ jobs:
 
             - name: Output versions
               id: capture
-              run: echo "captured=$(cat ./automation/workload.txt)"
+              run: echo "captured=$(cat ./automation/workload.txt)" >> "$GITHUB_OUTPUT"
 
     debug-versions:
         runs-on: ubuntu-latest
