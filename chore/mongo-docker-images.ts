@@ -21,15 +21,16 @@ const now = new Date();
 const collation = new Intl.Collator('en', { numeric: true });
 
 getTags<DockerTag>('mongo')
-    .then(async (tags) => tags
+    .then(async (tags: Array<any>) => tags
         .filter(({ name, v2, images }) => v2 && Version.isVersionString(name) && images.some(({ architecture, os }: any) => architecture === 'amd64' && os === 'linux'))
-        .map(({ name, digest, last_updated }) => {
+        .map(({ name, digest, last_updated, images }) => {
             const version = new Version(name);
+            const checksum = digest || images.find(({ architecture, os }: any) => architecture === 'amd64' && os === 'linux')?.digest;
 
             return <BasicDockerTag>{
                 name,
                 version,
-                digest,
+                digest: checksum,
                 released: new Date(last_updated),
             };
         })
