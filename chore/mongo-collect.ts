@@ -1,6 +1,6 @@
 import { resolve } from 'node:path';
 import { Version } from '../source/domain/version';
-import { readJSONFile } from '../source/domain/json';
+import { readJSONFile, writeJSONFile } from '../source/domain/json';
 
 const { MONGO_VERSION = '8' } = process.env;
 const version = new Version(MONGO_VERSION);
@@ -14,7 +14,22 @@ Promise.resolve()
     })
     .then(() => readJSONFile(metaFile))
     .then(async (meta: any) => {
-        const catalog = await readJSONFile(catalogFile);
+        const catalog = await readJSONFile<Array<any>>(catalogFile);
+        const outdated = catalog.filter(({ path, hash }) => !meta.catalog.find((m: any) => m.path === path && m.hash === hash));
 
-        console.log({ meta, catalog });
+        // dummy data, testing gradual version updates
+        outdated.forEach(({ name, path, hash }) => {
+            const found = meta.catalog.find((m: any) => m.name === name);
+            const record = found || { name, path, hash };
+
+            if (!found) {
+                meta.catalog.push(record);
+            }
+            else {
+                found.path = path;
+                found.hash = hash;
+            }
+        });
+
+        await writeJSONFile(metaFile, meta);
     });
