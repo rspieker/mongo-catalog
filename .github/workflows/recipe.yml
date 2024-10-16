@@ -112,4 +112,9 @@ jobs:
           - run: npm install
 
           - run: npm run update:mongo-collect
-    
+
+          - name: git config
+            run: |
+              git config user.name "GutHub Actions Recipe Bot"
+              git config user.email "<>"
+              git add ./automation && git commit -m "mongo catalog ${{ matrix.version }} $(date +"%Y-%m-%dT%H:%M:%S%z")" && while ! git push origin main; do git pull --rebase; done || exit 0
