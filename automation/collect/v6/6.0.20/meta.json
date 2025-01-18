@@ -30,16 +30,34 @@
 	],
 	"releases": [
 		{
+			"name": "6.0.20",
+			"version": "6.0.20",
+			"digest": "sha256:594e2842e1bb62dcf35f892739192f897cf730ae5211e20b11693c18fb6a7e38",
+			"released": "2025-01-16T20:08:57.682Z"
+		},
+		{
 			"name": "6.0.20-rc3",
 			"version": "6.0.20",
-			"digest": "sha256:5a7e96cf29996ac8d418ee3e77c799c4f55972457c79b330bae446f52477a417",
-			"released": "2024-12-13T02:08:06.925Z"
+			"digest": "sha256:1f9abf8df39a59a6ca16b829bdfaa29a139a2f01b8ed25383ea9df1bd2409e11",
+			"released": "2025-01-15T20:09:38.688Z"
 		},
 		{
 			"name": "6.0.20-rc2",
 			"version": "6.0.20",
 			"digest": "sha256:dbab5049756526d7496957a708a33154dc9d6bb97b4297235dd65338afa46e5a",
 			"released": "2024-12-11T23:09:02.409Z"
+		},
+		{
+			"name": "6",
+			"version": "6",
+			"digest": "sha256:594e2842e1bb62dcf35f892739192f897cf730ae5211e20b11693c18fb6a7e38",
+			"released": "2025-01-16T20:08:28.069Z"
+		},
+		{
+			"name": "6.0",
+			"version": "6.0",
+			"digest": "sha256:594e2842e1bb62dcf35f892739192f897cf730ae5211e20b11693c18fb6a7e38",
+			"released": "2025-01-16T20:08:47.791Z"
 		}
 	],
 	"history": [
@@ -58,6 +76,43 @@
 					"version": "6.0.20",
 					"name": "6.0.20-rc2",
 					"digest": "sha256:dbab5049756526d7496957a708a33154dc9d6bb97b4297235dd65338afa46e5a"
+				}
+			]
+		},
+		{
+			"type": "UPDATE",
+			"date": 1737184033067,
+			"actions": [
+				{
+					"type": "UPDATED",
+					"name": "6.0.20-rc3",
+					"version": "6.0.20",
+					"digest": "sha256:1f9abf8df39a59a6ca16b829bdfaa29a139a2f01b8ed25383ea9df1bd2409e11",
+					"released": "2025-01-15T20:09:38.688Z",
+					"before": {
+						"name": "6.0.20-rc3",
+						"version": "6.0.20",
+						"digest": "sha256:5a7e96cf29996ac8d418ee3e77c799c4f55972457c79b330bae446f52477a417",
+						"released": "2024-12-13T02:08:06.925Z"
+					}
+				},
+				{
+					"type": "ADDED",
+					"version": "6.0.20",
+					"name": "6.0.20",
+					"digest": "sha256:594e2842e1bb62dcf35f892739192f897cf730ae5211e20b11693c18fb6a7e38"
+				},
+				{
+					"type": "ADDED",
+					"version": "6.0",
+					"name": "6.0",
+					"digest": "sha256:594e2842e1bb62dcf35f892739192f897cf730ae5211e20b11693c18fb6a7e38"
+				},
+				{
+					"type": "ADDED",
+					"version": "6",
+					"name": "6",
+					"digest": "sha256:594e2842e1bb62dcf35f892739192f897cf730ae5211e20b11693c18fb6a7e38"
 				}
 			]
 		}
