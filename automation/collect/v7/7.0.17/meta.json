@@ -32,8 +32,8 @@
 		{
 			"name": "7.0.17",
 			"version": "7.0.17",
-			"digest": "sha256:ccac38202342a813cf0bc4568ff6e4a2cf9e59f5ffadb44f6a48028fc88665cd",
-			"released": "2025-02-27T23:07:34.744Z"
+			"digest": "sha256:ac9e83c57e32bf767f875ac2b9a9d87800d2d91a7829180c3a4826e0599698e8",
+			"released": "2025-03-12T22:11:10.561Z"
 		},
 		{
 			"name": "7.0.17-rc1",
@@ -50,14 +50,14 @@
 		{
 			"name": "7",
 			"version": "7",
-			"digest": "sha256:ccac38202342a813cf0bc4568ff6e4a2cf9e59f5ffadb44f6a48028fc88665cd",
-			"released": "2025-02-27T23:07:24.793Z"
+			"digest": "sha256:ac9e83c57e32bf767f875ac2b9a9d87800d2d91a7829180c3a4826e0599698e8",
+			"released": "2025-03-12T22:10:49.579Z"
 		},
 		{
 			"name": "7.0",
 			"version": "7.0",
-			"digest": "sha256:ccac38202342a813cf0bc4568ff6e4a2cf9e59f5ffadb44f6a48028fc88665cd",
-			"released": "2025-02-27T23:07:30.040Z"
+			"digest": "sha256:ac9e83c57e32bf767f875ac2b9a9d87800d2d91a7829180c3a4826e0599698e8",
+			"released": "2025-03-12T22:11:03.639Z"
 		}
 	],
 	"history": [
@@ -169,6 +169,51 @@
 						"version": "7",
 						"digest": "sha256:048559287a51c5dc3c2f1998c23355f7af5394725494a71b7628cf69dcefe68c",
 						"released": "2025-02-25T05:07:37.347Z"
+					}
+				}
+			]
+		},
+		{
+			"type": "UPDATE",
+			"date": 1742022466039,
+			"actions": [
+				{
+					"type": "UPDATED",
+					"name": "7.0.17",
+					"version": "7.0.17",
+					"digest": "sha256:ac9e83c57e32bf767f875ac2b9a9d87800d2d91a7829180c3a4826e0599698e8",
+					"released": "2025-03-12T22:11:10.561Z",
+					"before": {
+						"name": "7.0.17",
+						"version": "7.0.17",
+						"digest": "sha256:ccac38202342a813cf0bc4568ff6e4a2cf9e59f5ffadb44f6a48028fc88665cd",
+						"released": "2025-02-27T23:07:34.744Z"
+					}
+				},
+				{
+					"type": "UPDATED",
+					"name": "7.0",
+					"version": "7.0",
+					"digest": "sha256:ac9e83c57e32bf767f875ac2b9a9d87800d2d91a7829180c3a4826e0599698e8",
+					"released": "2025-03-12T22:11:03.639Z",
+					"before": {
+						"name": "7.0",
+						"version": "7.0",
+						"digest": "sha256:ccac38202342a813cf0bc4568ff6e4a2cf9e59f5ffadb44f6a48028fc88665cd",
+						"released": "2025-02-27T23:07:30.040Z"
+					}
+				},
+				{
+					"type": "UPDATED",
+					"name": "7",
+					"version": "7",
+					"digest": "sha256:ac9e83c57e32bf767f875ac2b9a9d87800d2d91a7829180c3a4826e0599698e8",
+					"released": "2025-03-12T22:10:49.579Z",
+					"before": {
+						"name": "7",
+						"version": "7",
+						"digest": "sha256:ccac38202342a813cf0bc4568ff6e4a2cf9e59f5ffadb44f6a48028fc88665cd",
+						"released": "2025-02-27T23:07:24.793Z"
 					}
 				}
 			]
