@@ -30,18 +30,6 @@
 	],
 	"releases": [
 		{
-			"name": "8",
-			"version": "8",
-			"digest": "sha256:cc62438c8ef61ce02f89b4f7c026e735df4580e8cd8857980d12e0eae73bf044",
-			"released": "2025-04-18T07:08:25.363Z"
-		},
-		{
-			"name": "8.0",
-			"version": "8.0",
-			"digest": "sha256:cc62438c8ef61ce02f89b4f7c026e735df4580e8cd8857980d12e0eae73bf044",
-			"released": "2025-04-18T07:08:40.022Z"
-		},
-		{
 			"name": "8.0.8",
 			"version": "8.0.8",
 			"digest": "sha256:cc62438c8ef61ce02f89b4f7c026e735df4580e8cd8857980d12e0eae73bf044",
@@ -115,6 +103,24 @@
 						"digest": "sha256:2c5f154f4e47ef5008c53ff0c9006b6f5c7d6b119c96015aba4136c50ef48b98",
 						"released": "2025-04-15T01:08:46.699Z"
 					}
+				}
+			]
+		},
+		{
+			"type": "UPDATE",
+			"date": 1746256108066,
+			"actions": [
+				{
+					"type": "REMOVED",
+					"version": "8",
+					"name": "8",
+					"digest": "sha256:cc62438c8ef61ce02f89b4f7c026e735df4580e8cd8857980d12e0eae73bf044"
+				},
+				{
+					"type": "REMOVED",
+					"version": "8.0",
+					"name": "8.0",
+					"digest": "sha256:cc62438c8ef61ce02f89b4f7c026e735df4580e8cd8857980d12e0eae73bf044"
 				}
 			]
 		}
