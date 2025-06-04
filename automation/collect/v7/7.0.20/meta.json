@@ -30,22 +30,10 @@
 	],
 	"releases": [
 		{
-			"name": "7",
-			"version": "7",
-			"digest": "sha256:e30e473ee65644f2e045840879bdf334accb4e1ddaaa1d15b3522f27d671d3f6",
-			"released": "2025-05-31T01:07:31.483Z"
-		},
-		{
-			"name": "7.0",
-			"version": "7.0",
-			"digest": "sha256:e30e473ee65644f2e045840879bdf334accb4e1ddaaa1d15b3522f27d671d3f6",
-			"released": "2025-05-31T01:07:35.602Z"
-		},
-		{
 			"name": "7.0.20",
 			"version": "7.0.20",
-			"digest": "sha256:e30e473ee65644f2e045840879bdf334accb4e1ddaaa1d15b3522f27d671d3f6",
-			"released": "2025-05-31T01:07:44.234Z"
+			"digest": "sha256:b85a0d9de31547b2ecad89803d74d126ba94ba4656f19d3264e14ed0d69b3e19",
+			"released": "2025-06-03T07:08:09.794Z"
 		}
 	],
 	"history": [
@@ -204,6 +192,37 @@
 						"version": "7",
 						"digest": "sha256:30e5dc22a38342e3dc84e51acb8e4059f87bf6ba9d9f4d04d4250fad89514945",
 						"released": "2025-05-14T22:07:41.327Z"
+					}
+				}
+			]
+		},
+		{
+			"type": "UPDATE",
+			"date": 1749021031100,
+			"actions": [
+				{
+					"type": "REMOVED",
+					"version": "7",
+					"name": "7",
+					"digest": "sha256:e30e473ee65644f2e045840879bdf334accb4e1ddaaa1d15b3522f27d671d3f6"
+				},
+				{
+					"type": "REMOVED",
+					"version": "7.0",
+					"name": "7.0",
+					"digest": "sha256:e30e473ee65644f2e045840879bdf334accb4e1ddaaa1d15b3522f27d671d3f6"
+				},
+				{
+					"type": "UPDATED",
+					"name": "7.0.20",
+					"version": "7.0.20",
+					"digest": "sha256:b85a0d9de31547b2ecad89803d74d126ba94ba4656f19d3264e14ed0d69b3e19",
+					"released": "2025-06-03T07:08:09.794Z",
+					"before": {
+						"name": "7.0.20",
+						"version": "7.0.20",
+						"digest": "sha256:e30e473ee65644f2e045840879bdf334accb4e1ddaaa1d15b3522f27d671d3f6",
+						"released": "2025-05-31T01:07:44.234Z"
 					}
 				}
 			]
