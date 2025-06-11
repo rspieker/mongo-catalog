@@ -32,8 +32,8 @@
 		{
 			"name": "6.0.24",
 			"version": "6.0.24",
-			"digest": "sha256:59640bdc9d4f9c1d3a0f738054cd03964e029d39486d68c8d38ce7044ef6b21d",
-			"released": "2025-06-04T01:07:43.159Z"
+			"digest": "sha256:2c6f0a6f33856597ad3d467a71af506bec71e73d945ead65b1af119be38b4c43",
+			"released": "2025-06-11T01:07:29.931Z"
 		},
 		{
 			"name": "6.0.24-rc0",
@@ -44,14 +44,14 @@
 		{
 			"name": "6",
 			"version": "6",
-			"digest": "sha256:59640bdc9d4f9c1d3a0f738054cd03964e029d39486d68c8d38ce7044ef6b21d",
-			"released": "2025-06-04T01:07:26.542Z"
+			"digest": "sha256:2c6f0a6f33856597ad3d467a71af506bec71e73d945ead65b1af119be38b4c43",
+			"released": "2025-06-11T01:07:14.763Z"
 		},
 		{
 			"name": "6.0",
 			"version": "6.0",
-			"digest": "sha256:59640bdc9d4f9c1d3a0f738054cd03964e029d39486d68c8d38ce7044ef6b21d",
-			"released": "2025-06-04T01:07:37.360Z"
+			"digest": "sha256:2c6f0a6f33856597ad3d467a71af506bec71e73d945ead65b1af119be38b4c43",
+			"released": "2025-06-11T01:07:24.362Z"
 		}
 	],
 	"history": [
@@ -120,6 +120,51 @@
 					"version": "6",
 					"name": "6",
 					"digest": "sha256:59640bdc9d4f9c1d3a0f738054cd03964e029d39486d68c8d38ce7044ef6b21d"
+				}
+			]
+		},
+		{
+			"type": "UPDATE",
+			"date": 1749625836052,
+			"actions": [
+				{
+					"type": "UPDATED",
+					"name": "6.0.24",
+					"version": "6.0.24",
+					"digest": "sha256:2c6f0a6f33856597ad3d467a71af506bec71e73d945ead65b1af119be38b4c43",
+					"released": "2025-06-11T01:07:29.931Z",
+					"before": {
+						"name": "6.0.24",
+						"version": "6.0.24",
+						"digest": "sha256:59640bdc9d4f9c1d3a0f738054cd03964e029d39486d68c8d38ce7044ef6b21d",
+						"released": "2025-06-04T01:07:43.159Z"
+					}
+				},
+				{
+					"type": "UPDATED",
+					"name": "6.0",
+					"version": "6.0",
+					"digest": "sha256:2c6f0a6f33856597ad3d467a71af506bec71e73d945ead65b1af119be38b4c43",
+					"released": "2025-06-11T01:07:24.362Z",
+					"before": {
+						"name": "6.0",
+						"version": "6.0",
+						"digest": "sha256:59640bdc9d4f9c1d3a0f738054cd03964e029d39486d68c8d38ce7044ef6b21d",
+						"released": "2025-06-04T01:07:37.360Z"
+					}
+				},
+				{
+					"type": "UPDATED",
+					"name": "6",
+					"version": "6",
+					"digest": "sha256:2c6f0a6f33856597ad3d467a71af506bec71e73d945ead65b1af119be38b4c43",
+					"released": "2025-06-11T01:07:14.763Z",
+					"before": {
+						"name": "6",
+						"version": "6",
+						"digest": "sha256:59640bdc9d4f9c1d3a0f738054cd03964e029d39486d68c8d38ce7044ef6b21d",
+						"released": "2025-06-04T01:07:26.542Z"
+					}
 				}
 			]
 		}
