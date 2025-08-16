@@ -32,26 +32,14 @@
 		{
 			"name": "7.0.22",
 			"version": "7.0.22",
-			"digest": "sha256:54c57094b11170abc3d9a827be75226da9606ab23485b96563e6cc31ee962781",
-			"released": "2025-07-21T22:08:11.634Z"
+			"digest": "sha256:93a90c2ee50cc151797f668908835896bd2fa0703a69a4716f90453ea0fd355c",
+			"released": "2025-08-12T22:08:25.276Z"
 		},
 		{
 			"name": "7.0.22-rc0",
 			"version": "7.0.22",
 			"digest": "sha256:88d77e76e4dbd4c0585c8487bcd844f346ba99fc99ba4291cda01cba83ad88ab",
 			"released": "2025-07-16T16:08:07.236Z"
-		},
-		{
-			"name": "7",
-			"version": "7",
-			"digest": "sha256:54c57094b11170abc3d9a827be75226da9606ab23485b96563e6cc31ee962781",
-			"released": "2025-07-21T22:07:54.894Z"
-		},
-		{
-			"name": "7.0",
-			"version": "7.0",
-			"digest": "sha256:54c57094b11170abc3d9a827be75226da9606ab23485b96563e6cc31ee962781",
-			"released": "2025-07-21T22:08:05.026Z"
 		}
 	],
 	"history": [
@@ -126,6 +114,37 @@
 					"version": "7",
 					"name": "7",
 					"digest": "sha256:54c57094b11170abc3d9a827be75226da9606ab23485b96563e6cc31ee962781"
+				}
+			]
+		},
+		{
+			"type": "UPDATE",
+			"date": 1755328127599,
+			"actions": [
+				{
+					"type": "REMOVED",
+					"version": "7",
+					"name": "7",
+					"digest": "sha256:54c57094b11170abc3d9a827be75226da9606ab23485b96563e6cc31ee962781"
+				},
+				{
+					"type": "REMOVED",
+					"version": "7.0",
+					"name": "7.0",
+					"digest": "sha256:54c57094b11170abc3d9a827be75226da9606ab23485b96563e6cc31ee962781"
+				},
+				{
+					"type": "UPDATED",
+					"name": "7.0.22",
+					"version": "7.0.22",
+					"digest": "sha256:93a90c2ee50cc151797f668908835896bd2fa0703a69a4716f90453ea0fd355c",
+					"released": "2025-08-12T22:08:25.276Z",
+					"before": {
+						"name": "7.0.22",
+						"version": "7.0.22",
+						"digest": "sha256:54c57094b11170abc3d9a827be75226da9606ab23485b96563e6cc31ee962781",
+						"released": "2025-07-21T22:08:11.634Z"
+					}
 				}
 			]
 		}
