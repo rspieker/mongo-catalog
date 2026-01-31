@@ -30,18 +30,6 @@
 	],
 	"releases": [
 		{
-			"name": "8",
-			"version": "8",
-			"digest": "sha256:d6b569590880bca35e43318418133a426b024bcb649eeb63bb071bc1490bee41",
-			"released": "2026-01-16T02:09:05.752Z"
-		},
-		{
-			"name": "8.2",
-			"version": "8.2",
-			"digest": "sha256:d6b569590880bca35e43318418133a426b024bcb649eeb63bb071bc1490bee41",
-			"released": "2026-01-16T02:09:33.071Z"
-		},
-		{
 			"name": "8.2.3",
 			"version": "8.2.3",
 			"digest": "sha256:d6b569590880bca35e43318418133a426b024bcb649eeb63bb071bc1490bee41",
@@ -160,6 +148,24 @@
 						"digest": "sha256:dfa32f68d02281185978619aac453896c85c46ee4911c93b8e5a5d2167af4856",
 						"released": "2026-01-14T02:08:03.150Z"
 					}
+				}
+			]
+		},
+		{
+			"type": "UPDATE",
+			"date": 1769844011116,
+			"actions": [
+				{
+					"type": "REMOVED",
+					"version": "8",
+					"name": "8",
+					"digest": "sha256:d6b569590880bca35e43318418133a426b024bcb649eeb63bb071bc1490bee41"
+				},
+				{
+					"type": "REMOVED",
+					"version": "8.2",
+					"name": "8.2",
+					"digest": "sha256:d6b569590880bca35e43318418133a426b024bcb649eeb63bb071bc1490bee41"
 				}
 			]
 		}
