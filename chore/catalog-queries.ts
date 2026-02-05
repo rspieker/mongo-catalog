@@ -1,66 +1,154 @@
-import { join, resolve, relative, basename } from 'node:path';
-import { readFile, writeFile } from 'node:fs/promises';
-import { glob } from 'glob';
-import { createHash } from 'node:crypto';
+import { join, resolve, relative, basename } from 'node:path'
+import { readFile, writeFile } from 'node:fs/promises'
+import { glob } from 'glob'
+import { hash } from '@konfirm/checksum'
 
-type QueryFileRecord = {
-    name: string;
-    path: string;
-    hash: string;
-    update: Array<{
-        type: string;
-        date: number;
-        before?: string;
-    }>;
-};
-
-function readJSONFile(path: string): Promise<JSON> {
-    return readFile(path)
-        .then((buffer: Buffer) => buffer.toString('utf-8'))
-        .then((utf8: string) => JSON.parse(utf8));
+type ExportRecord = {
+    name: string // export name (e.g., "comparison")
+    type: string // type of export
+    hash: string // hash of the exported value
 }
 
-const automation = resolve(__dirname, '..', 'automation');
-const catalog = resolve(__dirname, '..', 'catalog');
-const catalogQueryFile = resolve(automation, 'catalog-queries.json');
+type QueryFileRecord = {
+    name: string
+    path: string
+    exports: ExportRecord[]
+    update: Array<{
+        type: 'INITIAL' | 'UPDATE'
+        date: string
+        exportName?: string // which specific export changed
+        before?: string
+    }>
+}
 
-readJSONFile(catalogQueryFile)
-    .catch(() => undefined)
-    .then((result: unknown = []) => (Array.isArray(result) ? result : []) as Array<QueryFileRecord>)
-    .then(async (records) => {
-        const files = await glob(join(catalog, '**', '*.ts'));
+async function importAndInspect(filePath: string): Promise<ExportRecord[]> {
+    try {
+        // Import the module (requires tsx or ts-node)
+        const module = await import(filePath)
+        const exports: ExportRecord[] = []
 
-        for (const file of files) {
-            const name = basename(file, '.ts');
-            const path = relative(process.cwd(), file);
-            const found = records.find((item) => item.path === path);
-            const record = found || { name, path, hash: '', update: [] };
-            const buffer = await readFile(file);
-            const checksum = createHash('sha256').update(buffer).digest('hex');
+        for (const [exportName, exportValue] of Object.entries(module)) {
+            // Skip default and __esModule
+            if (exportName === 'default' || exportName === '__esModule')
+                continue
 
-            if (!found) {
-                records.push(record);
-            }
+            // Check if it's a Catalog-like object
+            if (exportValue && typeof exportValue === 'object') {
+                const hasOperations = 'operations' in exportValue
+                const hasCollection = 'collection' in exportValue
 
-            if (record.hash !== checksum) {
-                if (record.update.length) {
-                    record.update.push({
-                        type: 'UPDATE',
-                        before: record.hash,
-                        date: Date.now(),
-                    });
+                if (hasOperations || hasCollection) {
+                    // Hash just the operations (the "mechanics")
+                    const valueToHash = hasOperations
+                        ? exportValue.operations
+                        : exportValue
+
+                    const serialized = JSON.stringify(valueToHash, (_, v) => {
+                        // Handle functions, Dates, etc.
+                        if (typeof v === 'function') return '[Function]'
+                        if (v instanceof Date) return v.toISOString()
+                        return v
+                    })
+
+                    exports.push({
+                        name: exportName,
+                        type: hasOperations ? 'Catalog' : 'Unknown',
+                        hash: hash(serialized, 'sha256', 'hex'),
+                    })
                 }
-                else {
-                    record.update.push({
-                        type: 'INITIAL',
-                        date: Date.now(),
-                    });
-                }
-                record.hash = checksum;
             }
         }
 
-        return records;
-    })
-    .then((files) => writeFile(catalogQueryFile, JSON.stringify(files, null, '\t')))
-    ;
+        return exports
+    } catch (error) {
+        console.error(`Failed to import ${filePath}:`, error)
+        return []
+    }
+}
+
+// Main execution
+const automation = resolve(__dirname, '..', 'automation')
+const catalog = resolve(__dirname, '..', 'catalog')
+const catalogQueryFile = resolve(automation, 'catalog-queries.json')
+
+// Read existing records
+async function readExistingRecords(): Promise<Array<QueryFileRecord>> {
+    try {
+        const data = await readFile(catalogQueryFile, 'utf-8')
+        const parsed = JSON.parse(data)
+        return Array.isArray(parsed) ? parsed : []
+    } catch {
+        return []
+    }
+}
+
+async function main() {
+    const files = await glob(join(catalog, '**', '*.ts'))
+    const existingRecords = await readExistingRecords()
+    const newRecords: Array<QueryFileRecord> = []
+
+    for (const file of files) {
+        const name = basename(file, '.ts')
+        const path = relative(process.cwd(), file)
+        const existing = existingRecords.find((r) => r.path === path)
+
+        const currentExports = await importAndInspect(file)
+        const record: QueryFileRecord = {
+            name,
+            path,
+            exports: currentExports,
+            update: existing ? [...existing.update] : [],
+        }
+
+        // Check each export for changes
+        for (const currentExport of currentExports) {
+            const previousExport = existing?.exports.find(
+                (e) => e.name === currentExport.name
+            )
+
+            if (!previousExport) {
+                // New export
+                record.update.push({
+                    type: 'INITIAL',
+                    date: new Date().toISOString(),
+                    exportName: currentExport.name,
+                })
+            } else if (previousExport.hash !== currentExport.hash) {
+                // Export changed
+                record.update.push({
+                    type: 'UPDATE',
+                    date: new Date().toISOString(),
+                    exportName: currentExport.name,
+                    before: previousExport.hash,
+                })
+            }
+        }
+
+        // Check for removed exports
+        if (existing?.exports) {
+            for (const oldExport of existing.exports) {
+                if (!currentExports.find((e) => e.name === oldExport.name)) {
+                    record.update.push({
+                        type: 'UPDATE',
+                        date: new Date().toISOString(),
+                        exportName: `${oldExport.name} (removed)`,
+                    })
+                }
+            }
+        }
+
+        newRecords.push(record)
+    }
+
+    const recordsWithData = newRecords.filter(
+        ({ exports, update }) => exports.length || update.length
+    )
+    await writeFile(
+        catalogQueryFile,
+        JSON.stringify(recordsWithData, null, '\t')
+    )
+}
+
+main()
+    .then(() => console.log('DONE'))
+    .catch(console.error)

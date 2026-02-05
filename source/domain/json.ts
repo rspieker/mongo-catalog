@@ -1,6 +1,6 @@
-import { readFile, writeFile } from "fs/promises";
-import { ensure } from "./directory";
-import { dirname } from "path";
+import { readFile, writeFile } from "node:fs/promises";
+import { dirname } from "node:path";
+import { ensure } from "./filesystem";
 
 export type JSONValue = string | number | boolean | null | undefined | Array<JSONValue> | { [key: string]: JSONValue };
 

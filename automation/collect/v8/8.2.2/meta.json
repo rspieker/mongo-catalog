@@ -1,33 +1,7 @@
 {
 	"name": "8.2.2",
 	"version": "8.2.2",
-	"catalog": [
-		{
-			"name": "$ne",
-			"path": "catalog/query/comparison/$ne.ts",
-			"hash": "85a2f2f86f1b54124c457846ea09b2f48173720e6807eb71ba3ffea103ed9612"
-		},
-		{
-			"name": "$gt",
-			"path": "catalog/query/comparison/$gt.ts",
-			"hash": "57d6552953942dd9391639887327a2f8948f7b2ebb704cc1326a1f7de654c4fe"
-		},
-		{
-			"name": "$eq",
-			"path": "catalog/query/comparison/$eq.ts",
-			"hash": "adc202e9c50e8ad8e6feddf3e4bbd22944e0d20af9f34201f41b15c721ebfdf5"
-		},
-		{
-			"name": "$eq-implicit",
-			"path": "catalog/query/comparison/$eq-implicit.ts",
-			"hash": "8c6ffdbd2619b6b333d53cfd8cf3d0e763791213f535db4abf2791c2158b49a0"
-		},
-		{
-			"name": "comparison",
-			"path": "catalog/query/comparison.ts",
-			"hash": "f771df5d8541c2629402f56d75a23c6c715bcc7809c9177387cb3558a0560e81"
-		}
-	],
+	"catalog": [],
 	"releases": [
 		{
 			"name": "8.2.2",
@@ -45,141 +19,22 @@
 	"history": [
 		{
 			"type": "INITIAL",
-			"date": 1761721861971,
-			"actions": [
-				{
-					"type": "ADDED",
-					"version": "8.2.2",
-					"name": "8.2.2-rc0",
-					"digest": "sha256:acbf9f26a41fe9132bc472a6a1ff4f0d5509afb3c25b3e98b9b9f91d02c71653"
-				}
-			]
-		},
-		{
-			"type": "UPDATE",
-			"date": 1762931435028,
-			"actions": [
-				{
-					"type": "UPDATED",
-					"name": "8.2.2-rc0",
-					"version": "8.2.2",
-					"digest": "sha256:8789462559ae6c8d6507d24c72fa3b1833893d023ce19ba88eebbd06a65f9bd0",
-					"released": "2025-11-11T23:10:32.632Z",
-					"before": {
-						"name": "8.2.2-rc0",
-						"version": "8.2.2",
-						"digest": "sha256:acbf9f26a41fe9132bc472a6a1ff4f0d5509afb3c25b3e98b9b9f91d02c71653",
-						"released": "2025-10-28T22:10:12.395Z"
-					}
-				}
-			]
-		},
-		{
-			"type": "UPDATE",
-			"date": 1763190508499,
-			"actions": [
-				{
-					"type": "UPDATED",
-					"name": "8.2.2-rc0",
-					"version": "8.2.2",
-					"digest": "sha256:dca23dea9c4977f042de40fbe4b8e54d5bec56b4873ddf4b500043fed5eecbec",
-					"released": "2025-11-14T02:09:27.378Z",
-					"before": {
-						"name": "8.2.2-rc0",
-						"version": "8.2.2",
-						"digest": "sha256:8789462559ae6c8d6507d24c72fa3b1833893d023ce19ba88eebbd06a65f9bd0",
-						"released": "2025-11-11T23:10:32.632Z"
-					}
-				}
-			]
-		},
-		{
-			"type": "UPDATE",
-			"date": 1763795340282,
+			"date": "2026-02-05T21:18:52.542Z",
 			"actions": [
 				{
 					"type": "ADDED",
 					"version": "8.2.2",
 					"name": "8.2.2",
-					"digest": "sha256:7245ffb851d149dbfac67397caf91bae4974d899972f9fd1d8985fc6eea3c13d"
+					"digest": "sha256:bf5995bcccb65725aa81fd92e68449323c94b96bf1c1fa9f7acbc2a8ad518114"
 				},
 				{
 					"type": "ADDED",
-					"version": "8.2",
-					"name": "8.2",
-					"digest": "sha256:7245ffb851d149dbfac67397caf91bae4974d899972f9fd1d8985fc6eea3c13d"
-				},
-				{
-					"type": "ADDED",
-					"version": "8",
-					"name": "8",
-					"digest": "sha256:7245ffb851d149dbfac67397caf91bae4974d899972f9fd1d8985fc6eea3c13d"
-				}
-			]
-		},
-		{
-			"type": "UPDATE",
-			"date": 1765350841075,
-			"actions": [
-				{
-					"type": "UPDATED",
-					"name": "8.2.2",
 					"version": "8.2.2",
-					"digest": "sha256:bf5995bcccb65725aa81fd92e68449323c94b96bf1c1fa9f7acbc2a8ad518114",
-					"released": "2025-12-09T23:09:41.812Z",
-					"before": {
-						"name": "8.2.2",
-						"version": "8.2.2",
-						"digest": "sha256:7245ffb851d149dbfac67397caf91bae4974d899972f9fd1d8985fc6eea3c13d",
-						"released": "2025-11-20T02:09:10.714Z"
-					}
-				},
-				{
-					"type": "UPDATED",
-					"name": "8.2",
-					"version": "8.2",
-					"digest": "sha256:bf5995bcccb65725aa81fd92e68449323c94b96bf1c1fa9f7acbc2a8ad518114",
-					"released": "2025-12-09T23:09:30.202Z",
-					"before": {
-						"name": "8.2",
-						"version": "8.2",
-						"digest": "sha256:7245ffb851d149dbfac67397caf91bae4974d899972f9fd1d8985fc6eea3c13d",
-						"released": "2025-11-20T02:08:57.396Z"
-					}
-				},
-				{
-					"type": "UPDATED",
-					"name": "8",
-					"version": "8",
-					"digest": "sha256:bf5995bcccb65725aa81fd92e68449323c94b96bf1c1fa9f7acbc2a8ad518114",
-					"released": "2025-12-09T23:08:41.367Z",
-					"before": {
-						"name": "8",
-						"version": "8",
-						"digest": "sha256:7245ffb851d149dbfac67397caf91bae4974d899972f9fd1d8985fc6eea3c13d",
-						"released": "2025-11-20T02:08:04.851Z"
-					}
-				}
-			]
-		},
-		{
-			"type": "UPDATE",
-			"date": 1766214582080,
-			"actions": [
-				{
-					"type": "REMOVED",
-					"version": "8",
-					"name": "8",
-					"digest": "sha256:bf5995bcccb65725aa81fd92e68449323c94b96bf1c1fa9f7acbc2a8ad518114"
-				},
-				{
-					"type": "REMOVED",
-					"version": "8.2",
-					"name": "8.2",
-					"digest": "sha256:bf5995bcccb65725aa81fd92e68449323c94b96bf1c1fa9f7acbc2a8ad518114"
+					"name": "8.2.2-rc0",
+					"digest": "sha256:dca23dea9c4977f042de40fbe4b8e54d5bec56b4873ddf4b500043fed5eecbec"
 				}
 			]
 		}
 	],
-	"updated": "2025-10-29T07:11:01.971Z"
+	"updated": "2026-02-05T21:18:52.542Z"
 }
