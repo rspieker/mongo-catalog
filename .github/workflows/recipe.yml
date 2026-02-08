@@ -139,11 +139,18 @@ jobs:
 
             - name: Merge results
               run: |
+                echo "Before merge - meta.json catalog:"
+                cat ./automation/collect/v6/6.0.1/meta.json 2>/dev/null | jq '.catalog | length' || echo "File not found"
+                
                 for dir in /tmp/results/results-*/; do
                   if [ -d "$dir" ]; then
+                    echo "Merging $dir"
                     rsync -av "$dir" ./automation/collect/
                   fi
                 done
+                
+                echo "After merge - meta.json catalog:"
+                cat ./automation/collect/v6/6.0.1/meta.json 2>/dev/null | jq '.catalog | length' || echo "File not found"
 
             - name: Commit results
               run: |

@@ -274,10 +274,18 @@ Promise.resolve()
         plan.catalogs = []
         plan.updated = new Date().toISOString()
 
+        console.log(`Saving plan with ${plan.catalogs.length} catalogs`)
+        console.log(`Saving meta with ${meta.catalog.length} entries`)
+
         await savePlan(versionDir, plan)
         await saveMeta(versionDir, meta)
 
+        // Verify save
+        const verifyMeta = await loadMeta(versionDir)
+        console.log(`Verified meta has ${verifyMeta?.catalog.length || 0} entries`)
+
         if (hasErrors) {
+            console.error('Completed with errors - check meta.json for failed catalogs')
             process.exit(1)
         }
     })
