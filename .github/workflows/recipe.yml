@@ -7,7 +7,7 @@ on:
     workflow_dispatch:
 
 jobs:
-    mongo-versions:
+    setup:
         runs-on: ubuntu-latest
 
         steps:
@@ -22,48 +22,22 @@ jobs:
             - name: install
               run: npm install
 
-            - name: update Mongo Versions
-              id: update-versions
+            - name: Update Mongo Versions
               run: npm run update:mongo-versions
 
-            - name: Upload results
-              uses: actions/upload-artifact@v4
-              with:
-                  name: mongo-versions
-                  path: ./automation/collect/
-                  retention-days: 1
-
-    catalog-queries:
-        runs-on: ubuntu-latest
-
-        steps:
-            - uses: actions/checkout@v4
-
-            - name: Node.js
-              uses: actions/setup-node@v4
-              with:
-                  node-version: 20.x
-                  cache: 'npm'
-
-            - name: install
-              run: npm install
-
-            - name: update Catalog Queries
+            - name: Update Catalog Queries
               run: npm run update:catalog-queries
 
-            - name: Upload results
+            - name: Upload initial state
               uses: actions/upload-artifact@v4
               with:
-                  name: catalog-queries
-                  path: ./automation/catalog-queries.json
+                  name: mongo-state
+                  path: ./automation/
                   retention-days: 1
 
     workload:
         runs-on: ubuntu-latest
-
-        needs:
-            - mongo-versions
-            - catalog-queries
+        needs: setup
 
         outputs:
             work: ${{ steps.capture.outputs.captured }}
@@ -71,16 +45,10 @@ jobs:
         steps:
             - uses: actions/checkout@v4
 
-            - name: Download mongo-versions
+            - name: Download state
               uses: actions/download-artifact@v4
               with:
-                  name: mongo-versions
-                  path: ./automation/collect/
-
-            - name: Download catalog-queries
-              uses: actions/download-artifact@v4
-              with:
-                  name: catalog-queries
+                  name: mongo-state
                   path: ./automation/
 
             - name: Node.js
@@ -96,18 +64,17 @@ jobs:
               id: capture
               run: echo "captured=$(npm run --silent update:workload)" >> "$GITHUB_OUTPUT"
 
-            - name: Upload workload
+            - name: Upload updated state
               uses: actions/upload-artifact@v4
               with:
-                  name: workload
-                  path: ./automation/collect/**/plan.json
+                  name: mongo-state
+                  path: ./automation/
                   retention-days: 1
+                  overwrite: true
 
     collect-versions:
         runs-on: ubuntu-latest
-
-        needs:
-            - workload
+        needs: workload
 
         strategy:
             matrix:
@@ -119,29 +86,11 @@ jobs:
         steps:
             - uses: actions/checkout@v4
 
-            - name: Download mongo-versions
+            - name: Download state
               uses: actions/download-artifact@v4
               with:
-                  name: mongo-versions
-                  path: ./automation/temp/mongo-versions/
-
-            - name: Download catalog-queries
-              uses: actions/download-artifact@v4
-              with:
-                  name: catalog-queries
+                  name: mongo-state
                   path: ./automation/
-
-            - name: Download workload
-              uses: actions/download-artifact@v4
-              with:
-                  name: workload
-                  path: ./automation/temp/workload/
-
-            - name: Setup collect directory
-              run: |
-                mkdir -p ./automation/collect/
-                cp -r ./automation/temp/mongo-versions/* ./automation/collect/
-                find ./automation/temp/workload -name "plan.json" -exec cp --parents {} ./automation/collect/ \;
 
             - name: Node.js
               uses: actions/setup-node@v4
@@ -167,31 +116,32 @@ jobs:
 
     commit-results:
         runs-on: ubuntu-latest
-
-        needs:
-            - collect-versions
+        needs: collect-versions
 
         steps:
             - uses: actions/checkout@v4
 
-            - name: Download mongo-versions
+            - name: Download mongo-state
               uses: actions/download-artifact@v4
               with:
-                  name: mongo-versions
-                  path: ./automation/collect/
-
-            - name: Download catalog-queries
-              uses: actions/download-artifact@v4
-              with:
-                  name: catalog-queries
+                  name: mongo-state
                   path: ./automation/
 
             - name: Download all results
               uses: actions/download-artifact@v4
               with:
-                  path: ./automation/collect/
+                  path: /tmp/results/
                   pattern: 'results-*'
-                  merge-multiple: true
+                  merge-multiple: false
+
+            - name: Merge results with rsync
+              run: |
+                for dir in /tmp/results/results-*/collect/; do
+                  if [ -d "$dir" ]; then
+                    rsync -av "$dir" ./automation/collect/
+                  fi
+                done
+                rm -rf /tmp/results/
 
             - name: Commit results
               run: |
