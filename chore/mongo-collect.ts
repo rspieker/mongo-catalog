@@ -1,35 +1,258 @@
-import { resolve } from 'node:path';
-import { Version } from '../source/domain/version';
-import { readJSONFile, writeJSONFile } from '../source/domain/json';
+import { resolve, dirname } from 'node:path'
+import { stat } from 'node:fs/promises'
+import { hash } from '@konfirm/checksum'
+import { Version } from '../source/domain/version'
+import { readJSONFile, writeJSONFile } from '../source/domain/json'
+import { driver } from '../source/domain/mongo/driver'
+import { DSN } from '../source/domain/mongo/dsn'
 
-const { MONGO_VERSION = '8' } = process.env;
-const version = new Version(MONGO_VERSION);
-const automation = resolve(__dirname, '..', 'automation');
-const catalogFile = resolve(automation, 'catalog-queries.json');
-const metaFile = resolve(automation, 'collect', `v${version.major}`, String(version), 'meta.json');
+type CatalogWorkItem = {
+    name: string
+    path: string
+    hash: string
+}
+
+type VersionWorkPlan = {
+    version: string
+    catalogs: CatalogWorkItem[]
+    created: string
+    updated: string
+}
+
+type MetaCatalogEntry = {
+    name: string
+    hash: string
+    completed?: string
+    failed?: string
+    error?: string
+}
+
+type CatalogFixture = {
+    name: string
+    operations: any[]
+    indices?: any
+    documents: any[]
+    generatedAt: string
+}
+
+const { MONGO_VERSION = '8' } = process.env
+const automation = resolve(__dirname, '..', 'automation')
+const fixturesDir = resolve(automation, 'fixtures')
+const version = new Version(MONGO_VERSION)
+const dsn = new DSN('/MongoCatalog/CatalogCollection')
+
+async function loadPlan(version: Version): Promise<VersionWorkPlan | null> {
+    const planFile = resolve(
+        automation,
+        'collect',
+        `v${version.major}`,
+        String(version),
+        'plan.json'
+    )
+    try {
+        return await readJSONFile<VersionWorkPlan>(planFile)
+    } catch {
+        return null
+    }
+}
+
+async function savePlan(versionDir: string, plan: VersionWorkPlan): Promise<void> {
+    const planFile = resolve(versionDir, 'plan.json')
+    await writeJSONFile(planFile, plan)
+}
+
+async function loadMeta(versionDir: string): Promise<{ catalog: MetaCatalogEntry[] } | null> {
+    const metaFile = resolve(versionDir, 'meta.json')
+    try {
+        return await readJSONFile<{ catalog: MetaCatalogEntry[] }>(metaFile)
+    } catch {
+        return null
+    }
+}
+
+async function saveMeta(versionDir: string, meta: { catalog: MetaCatalogEntry[] }): Promise<void> {
+    const metaFile = resolve(versionDir, 'meta.json')
+    await writeJSONFile(metaFile, meta)
+}
+
+async function loadOrGenerateFixture(item: CatalogWorkItem): Promise<CatalogFixture> {
+    const fixtureFile = resolve(fixturesDir, `${item.name}.json`)
+    
+    // Try to load existing fixture
+    try {
+        const existing = await readJSONFile<CatalogFixture>(fixtureFile)
+        // Check if it matches the expected hash
+        const fixtureHash = hash(JSON.stringify(existing.documents), 'sha256', 'hex')
+        if (fixtureHash === item.hash) {
+            return existing
+        }
+        console.log(`↻ ${item.name}: Fixture outdated, regenerating...`)
+    } catch {
+        console.log(`↻ ${item.name}: Fixture not found, generating...`)
+    }
+    
+    // Generate from catalog
+    const component = resolve(process.cwd(), item.path)
+    const module = await import(component)
+    const catalog = module[item.name]
+    
+    if (!catalog) {
+        throw new Error(`Export '${item.name}' not found in module`)
+    }
+    
+    const fixture: CatalogFixture = {
+        name: item.name,
+        operations: catalog.operations,
+        indices: catalog.collection?.indices,
+        documents: catalog.collection?.records || [],
+        generatedAt: new Date().toISOString(),
+    }
+    
+    // Save for future use
+    await writeJSONFile(fixtureFile, fixture)
+    console.log(`✓ ${item.name}: Fixture saved`)
+    
+    return fixture
+}
 
 Promise.resolve()
-    .then(() => {
-        console.log({ version, string: String(version), number: Number(version) });
+    .then(() => loadPlan(version))
+    .then(async (plan) => {
+        if (!plan) {
+            console.log(`No plan found for version ${version}`)
+            return
+        }
+
+        if (plan.catalogs.length === 0) {
+            console.log(`No pending catalogs for version ${version}`)
+            return
+        }
+
+        console.log(`Processing ${plan.catalogs.length} pending catalogs...`)
+        
+        const versionDir = resolve(
+            automation,
+            'collect',
+            `v${version.major}`,
+            String(version)
+        )
+        
+        const meta = await loadMeta(versionDir) || { catalog: [] }
+        const db = await driver(dsn, version)
+        let hasErrors = false
+
+        for (const item of plan.catalogs) {
+            let fixture: CatalogFixture
+            
+            try {
+                fixture = await loadOrGenerateFixture(item)
+            } catch (error: any) {
+                // Log full error for debugging
+                console.error(`✗ ${item.name}: Fixture generation failed`)
+                console.error(`  Error: ${error.message || String(error)}`)
+                console.error(`  Stack: ${error.stack || 'no stack trace'}`)
+                
+                // Mark as failed in meta
+                const entry: MetaCatalogEntry = {
+                    name: item.name,
+                    hash: item.hash,
+                    failed: new Date().toISOString(),
+                    error: `${error.message || String(error)}\n${error.stack || ''}`,
+                }
+                const existing = meta.catalog.find((m) => m.name === item.name)
+                if (existing) {
+                    Object.assign(existing, entry)
+                } else {
+                    meta.catalog.push(entry)
+                }
+                hasErrors = true
+                continue
+            }
+
+            try {
+                const { operations, indices, documents } = fixture
+                
+                // Initialize collection with documents and indices
+                await db.initCollection({
+                    name: dsn.collection,
+                    indices,
+                    documents,
+                })
+
+                const result: Array<any> = []
+
+                for (const operation of operations) {
+                    const queryResult = await db.execute(operation)
+                    
+                    const record: any = { 
+                        operation,
+                        documents: queryResult.success ? queryResult.documents : undefined,
+                        error: queryResult.success ? undefined : queryResult.error,
+                    }
+
+                    result.push(record)
+                }
+
+                // Drop collection after processing
+                await db.dropCollection(dsn.collection)
+
+                // Save results
+                const resultHash = hash(result, 'sha256', 'hex')
+                await writeJSONFile(
+                    resolve(versionDir, `${item.name}.json`),
+                    result
+                )
+
+                // Add to meta catalog as completed
+                const entry: MetaCatalogEntry = {
+                    name: item.name,
+                    hash: resultHash,
+                    completed: new Date().toISOString(),
+                }
+                const existing = meta.catalog.find((m) => m.name === item.name)
+                if (existing) {
+                    // Clear any previous failed status
+                    delete existing.failed
+                    delete existing.error
+                    Object.assign(existing, entry)
+                } else {
+                    meta.catalog.push(entry)
+                }
+
+                console.log(`✓ ${item.name}: ${documents.length} docs, ${operations.length} queries`)
+            } catch (error: any) {
+                // Add to meta catalog as failed
+                const entry: MetaCatalogEntry = {
+                    name: item.name,
+                    hash: item.hash,
+                    failed: new Date().toISOString(),
+                    error: error.message || String(error),
+                }
+                const existing = meta.catalog.find((m) => m.name === item.name)
+                if (existing) {
+                    Object.assign(existing, entry)
+                } else {
+                    meta.catalog.push(entry)
+                }
+                hasErrors = true
+                console.error(`✗ ${item.name}: ${entry.error}`)
+            }
+        }
+
+        await db.disconnect()
+
+        // Clear plan catalogs (all processed) and update timestamp
+        plan.catalogs = []
+        plan.updated = new Date().toISOString()
+        
+        await savePlan(versionDir, plan)
+        await saveMeta(versionDir, meta)
+
+        if (hasErrors) {
+            process.exit(1)
+        }
     })
-    .then(() => readJSONFile(metaFile))
-    .then(async (meta: any) => {
-        const catalog = await readJSONFile<Array<any>>(catalogFile);
-        const outdated = catalog.filter(({ path, hash }) => !meta.catalog.find((m: any) => m.path === path && m.hash === hash));
-
-        // dummy data, testing gradual version updates
-        outdated.forEach(({ name, path, hash }) => {
-            const found = meta.catalog.find((m: any) => m.name === name);
-            const record = found || { name, path, hash };
-
-            if (!found) {
-                meta.catalog.push(record);
-            }
-            else {
-                found.path = path;
-                found.hash = hash;
-            }
-        });
-
-        await writeJSONFile(metaFile, meta);
-    });
+    .catch((error) => {
+        console.error('Fatal error:', error)
+        process.exit(1)
+    })

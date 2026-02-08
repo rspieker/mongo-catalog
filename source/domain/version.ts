@@ -6,22 +6,25 @@ type MinorVersionString = `${number}.${number}`;
 type PatchVersionString = `${number}.${number}.${number}`;
 export type VersionString = BuildVersionString<MajorVersionString | MinorVersionString | PatchVersionString>;
 
+const cache: Map<string, Version> = new Map();
+
 export class Version {
     static readonly #pattern = /^v?(\d+)(?:\.(\d+))?(?:\.(\d+))?(?:[.-](.+))?/;
     readonly #version: string;
     readonly #parts: [number, Maybe<number>, Maybe<number>, Maybe<string>];
 
-    constructor(version: string) {
+    constructor(version: string, noval?: 0 | '0') {
         if (!Version.#pattern.test(version)) {
             throw new Error(`Invalid Version; "${version}"`);
         }
 
+        const und = noval || (typeof noval === 'number') ? Number(noval) : undefined;
         this.#version = version;
         const [, major, minor, patch, build] = version.match(Version.#pattern) as RegExpMatchArray;
         this.#parts = [
             Number(major),
-            minor?.length ? Number(minor) : undefined,
-            patch?.length ? Number(patch) : undefined,
+            minor?.length ? Number(minor) : und,
+            patch?.length ? Number(patch) : und,
             build?.length ? build : undefined
         ];
     }
@@ -53,7 +56,7 @@ export class Version {
             return relevant.join('.');
         }
 
-        return relevant.reduce((carry, value, index) => carry + value * Math.pow(100, 2 - index), 0);
+        return relevant.reduce((carry, value, index) => carry + value * Math.pow(100, 3 - index), 0);
     }
 
     toJSON(): string {
@@ -62,5 +65,20 @@ export class Version {
 
     static isVersionString(version: any): version is VersionString {
         return this.#pattern.test(version);
+    }
+
+    static from(version: any): Version {
+        if (this.isVersionString(version)) {
+            const instance = new Version(version);
+            const key = String(instance);
+
+            if (!cache.has(key)) {
+                cache.set(key, instance);
+            }
+
+            return cache.get(key) as Version;
+        }
+
+        throw new Error(`Not a version string: ${JSON.stringify(version)}`);
     }
 }
