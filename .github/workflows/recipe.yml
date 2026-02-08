@@ -59,6 +59,8 @@ jobs:
 
             - name: Apply and commit setup patch
               run: |
+                  git config user.name "GitHub Actions Recipe Bot"
+                  git config user.email "<>"
                   git apply /tmp/setup.patch
                   git add ./automation/
                   git commit -m "Apply setup state"
@@ -78,8 +80,6 @@ jobs:
 
             - name: Create workload patch
               run: |
-                  git config user.name "GitHub Actions Recipe Bot"
-                  git config user.email "<>"
                   # Create patch with only workload changes
                   git diff ./automation/ > /tmp/workload.patch
 
