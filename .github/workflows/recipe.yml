@@ -123,7 +123,7 @@ jobs:
               uses: actions/download-artifact@v4
               with:
                   name: mongo-versions
-                  path: ./automation/collect/
+                  path: ./automation/temp/mongo-versions/
 
             - name: Download catalog-queries
               uses: actions/download-artifact@v4
@@ -135,7 +135,13 @@ jobs:
               uses: actions/download-artifact@v4
               with:
                   name: workload
-                  path: ./automation/collect/
+                  path: ./automation/temp/workload/
+
+            - name: Setup collect directory
+              run: |
+                mkdir -p ./automation/collect/
+                cp -r ./automation/temp/mongo-versions/* ./automation/collect/
+                find ./automation/temp/workload -name "plan.json" -exec cp --parents {} ./automation/collect/ \;
 
             - name: Node.js
               uses: actions/setup-node@v4
@@ -185,6 +191,7 @@ jobs:
               with:
                   path: ./automation/collect/
                   pattern: 'results-*'
+                  merge-multiple: true
 
             - name: Commit results
               run: |
