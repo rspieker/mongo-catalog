@@ -28,18 +28,15 @@ jobs:
             - name: Update Catalog Queries
               run: npm run update:catalog-queries
 
-            - name: Create base patch
-              run: |
-                  git config user.name "GitHub Actions Recipe Bot"
-                  git config user.email "<>"
-                  git add ./automation/
-                  git diff --cached > /tmp/setup.patch
+            - name: Generate Fixtures
+              run: npm run generate:fixtures
 
-            - name: Upload base patch
+            - name: Upload initial state
               uses: actions/upload-artifact@v4
               with:
-                  name: patch-setup
-                  path: /tmp/setup.patch
+                  name: mongo-state
+                  path: ./automation/
+                  retention-days: 1
 
     workload:
         runs-on: ubuntu-latest
@@ -51,19 +48,11 @@ jobs:
         steps:
             - uses: actions/checkout@v4
 
-            - name: Download base patch
+            - name: Download state
               uses: actions/download-artifact@v4
               with:
-                  name: patch-setup
-                  path: /tmp/
-
-            - name: Apply and commit setup patch
-              run: |
-                  git config user.name "GitHub Actions Recipe Bot"
-                  git config user.email "<>"
-                  git apply /tmp/setup.patch
-                  git add ./automation/
-                  git commit -m "Apply setup state"
+                  name: mongo-state
+                  path: ./automation/
 
             - name: Node.js
               uses: actions/setup-node@v4
@@ -76,33 +65,15 @@ jobs:
 
             - name: Determine Workload
               id: capture
-              run: |
-                echo "Running workload..."
-                versions=$(npm run --silent update:workload)
-                echo "Versions: $versions"
-                echo "captured=$versions" >> "$GITHUB_OUTPUT"
+              run: echo "captured=$(npm run --silent update:workload)" >> "$GITHUB_OUTPUT"
 
-            - name: Debug changes
-              run: |
-                echo "Git status:"
-                git status
-                echo "Git diff stats:"
-                git diff --stat ./automation/ || echo "No unstaged changes"
-                echo "Files in automation:"
-                find ./automation/collect -name "plan.json" | head -5
-
-            - name: Create workload patch
-              run: |
-                  # Create patch with all changes including new files
-                  git add ./automation/
-                  git diff --cached > /tmp/workload.patch
-                  echo "Patch size: $(wc -c < /tmp/workload.patch) bytes"
-
-            - name: Upload workload patch
+            - name: Upload updated state
               uses: actions/upload-artifact@v4
               with:
-                  name: patch-workload
-                  path: /tmp/workload.patch
+                  name: mongo-state
+                  path: ./automation/
+                  retention-days: 1
+                  overwrite: true
 
     collect-versions:
         runs-on: ubuntu-latest
@@ -118,19 +89,11 @@ jobs:
         steps:
             - uses: actions/checkout@v4
 
-            - name: Download patches
+            - name: Download state
               uses: actions/download-artifact@v4
               with:
-                  path: /tmp/patches/
-                  pattern: 'patch-*'
-
-            - name: Apply workload patch
-              run: |
-                  git config user.name "GitHub Actions Recipe Bot"
-                  git config user.email "<>"
-                  git apply --allow-empty /tmp/patches/patch-workload/workload.patch
-                  git add ./automation/
-                  git commit -m "Apply workload state" || true
+                  name: mongo-state
+                  path: ./automation/
 
             - name: Node.js
               uses: actions/setup-node@v4
@@ -138,37 +101,21 @@ jobs:
                   node-version: 20.x
                   cache: 'npm'
 
-            - name: install
-              run: npm install
-
             - name: Start MongoDB
               uses: supercharge/mongodb-github-action@1.7.0
               with:
                   mongodb-version: ${{ matrix.version }}
 
+            - run: npm install
+
             - run: npm run update:mongo-collect
 
-            - name: Debug changes
-              run: |
-                echo "Git status after mongo-collect:"
-                git status
-                echo "Git diff stats:"
-                git diff --stat ./automation/ || echo "No unstaged changes"
-
-            - name: Create patch
-              run: |
-                  git config user.name "GitHub Actions Recipe Bot"
-                  git config user.email "<>"
-                  # Create patch with changes from mongo-collect
-                  git add ./automation/
-                  git diff --cached > /tmp/changes-${{ matrix.version }}.patch
-                  echo "Patch size: $(wc -c < /tmp/changes-${{ matrix.version }}.patch) bytes"
-
-            - name: Upload patch
+            - name: Upload results
               uses: actions/upload-artifact@v4
               with:
-                  name: patch-${{ matrix.version }}
-                  path: /tmp/changes-${{ matrix.version }}.patch
+                  name: results-${{ matrix.version }}
+                  path: ./automation/collect/
+                  retention-days: 1
 
     commit-results:
         runs-on: ubuntu-latest
@@ -177,30 +124,30 @@ jobs:
         steps:
             - uses: actions/checkout@v4
 
-            - name: Download patches
+            - name: Download base state
               uses: actions/download-artifact@v4
               with:
-                  path: /tmp/patches/
-                  pattern: 'patch-*'
+                  name: mongo-state
+                  path: ./automation/
 
-            - name: Apply all patches
+            - name: Download results
+              uses: actions/download-artifact@v4
+              with:
+                  path: /tmp/results/
+                  pattern: 'results-*'
+                  merge-multiple: false
+
+            - name: Merge results
               run: |
-                  git config user.name "GitHub Actions Recipe Bot"
-                  git config user.email "<>"
-
-                  # Apply workload patch (contains setup + plan.json)
-                  git apply --allow-empty /tmp/patches/patch-workload/workload.patch
-
-                  # Apply version patches (only specific version changes)
-                  for patch_dir in /tmp/patches/patch-*/; do
-                    patch_file=$(find "$patch_dir" -name "changes-*.patch" -type f 2>/dev/null | head -1)
-                    if [ -n "$patch_file" ]; then
-                      echo "Applying $(basename $patch_file)"
-                      git apply --allow-empty "$patch_file"
-                    fi
-                  done
+                for dir in /tmp/results/results-*/; do
+                  if [ -d "$dir" ]; then
+                    rsync -av "$dir" ./automation/collect/
+                  fi
+                done
 
             - name: Commit results
               run: |
+                  git config user.name "GitHub Actions Recipe Bot"
+                  git config user.email "<>"
                   git add ./automation/
                   git diff --cached --quiet || (git commit -m "Update catalog results $(date +"%Y-%m-%dT%H:%M:%S%z")" && git push origin main)
