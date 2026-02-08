@@ -111,7 +111,8 @@ jobs:
 
             - name: Apply workload patch
               run: |
-                  git apply /tmp/patches/patch-setup/setup.patch
+                  git config user.name "GitHub Actions Recipe Bot"
+                  git config user.email "<>"
                   git apply /tmp/patches/patch-workload/workload.patch
                   git add ./automation/
                   git commit -m "Apply workload state" || true
