@@ -1,5 +1,4 @@
 import { resolve, dirname } from 'node:path'
-import { readFile, writeFile } from 'node:fs/promises'
 import { glob } from 'glob'
 import { Version } from '../source/domain/version'
 import { readJSONFile, writeJSONFile } from '../source/domain/json'
@@ -44,7 +43,7 @@ async function savePlan(
     plan: VersionWorkPlan
 ): Promise<void> {
     const planFile = resolve(versionDir, 'plan.json')
-    await writeFile(planFile, JSON.stringify(plan, null, '\t'))
+    await writeJSONFile(planFile, plan)
 }
 
 readJSONFile<
@@ -133,23 +132,28 @@ readJSONFile<
                 carry[key].push({ plan, version: v })
                 return carry
             },
-            {} as { [key: string]: Array<{ plan: typeof withPending[0]; version: Version }> }
+            {} as {
+                [key: string]: Array<{
+                    plan: (typeof withPending)[0]
+                    version: Version
+                }>
+            }
         )
 
         // For each minor group, pick the version furthest from latest (highest distance)
         const groupReps = Object.entries(byMinor).map(([_, group]) => {
             // Find latest patch version in this minor group
-            const maxPatch = Math.max(...group.map(g => g.version.patch || 0))
-            
+            const maxPatch = Math.max(...group.map((g) => g.version.patch || 0))
+
             // Find the version with highest distance in this group
             const furthestBehind = group
                 .map(({ plan, version }) => ({
                     plan,
                     distance: maxPatch - (version.patch || 0),
-                    version
+                    version,
                 }))
                 .sort((a, b) => b.distance - a.distance)[0]
-            
+
             return furthestBehind
         })
 
