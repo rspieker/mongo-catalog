@@ -108,6 +108,7 @@ jobs:
 
             - name: Apply base patches
               run: |
+                git checkout ./automation/
                 git apply /tmp/patches/patch-setup/setup.patch
                 git apply /tmp/patches/patch-workload/workload.patch
 
@@ -155,6 +156,7 @@ jobs:
 
             - name: Apply all patches
               run: |
+                git checkout ./automation/
                 git config user.name "GitHub Actions Recipe Bot"
                 git config user.email "<>"
                 
