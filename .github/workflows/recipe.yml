@@ -140,12 +140,7 @@ jobs:
                     if [ -d "$dir" ]; then
                       VERSION="$(basename $dir|cut -d- -f2)";
                       MAJOR="v$(echo $VERSION|cut -d. -f1)";
-                      echo "---"
-                      ls -l "${dir}${MAJOR}/${VERSION}/";
-                      echo "---"
-                      ls -l "./automation/collect/${MAJOR}/${VERSION}/"
-                      echo "---"
-                      cp -r "${dir}${MAJOR}/${VERSION}/*" "./automation/collect/${MAJOR}/${VERSION}/"
+                      cp -r "${dir}${MAJOR}/${VERSION}/"* "./automation/collect/${MAJOR}/${VERSION}/"
                     fi
                   done
 
