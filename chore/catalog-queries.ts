@@ -38,10 +38,21 @@ async function importAndInspect(filePath: string): Promise<ExportRecord[]> {
                 const hasCollection = 'collection' in exportValue
 
                 if (hasOperations || hasCollection) {
-                    // Hash just the operations (the "mechanics")
-                    const valueToHash = hasOperations
-                        ? exportValue.operations
-                        : exportValue
+                    // Hash everything: operations, collection.documents, and collection.indices
+                    const catalog = exportValue as {
+                        operations?: unknown[]
+                        collection?: { records?: unknown[]; indices?: unknown[] }
+                    }
+
+                    const valueToHash = {
+                        operations: catalog.operations,
+                        collection: catalog.collection
+                            ? {
+                                  documents: catalog.collection.records,
+                                  indices: catalog.collection.indices,
+                              }
+                            : undefined,
+                    }
 
                     const serialized = JSON.stringify(valueToHash, (_, v) => {
                         // Handle functions, Dates, etc.

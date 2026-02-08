@@ -28,9 +28,6 @@ jobs:
             - name: Update Catalog Queries
               run: npm run update:catalog-queries
 
-            - name: Generate Fixtures
-              run: npm run generate:fixtures
-
             - name: Upload initial state
               uses: actions/upload-artifact@v4
               with:
