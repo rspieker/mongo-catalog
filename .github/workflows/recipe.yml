@@ -142,7 +142,8 @@ jobs:
                       MAJOR="v$(echo $VERSION|cut -d. -f1)";
                       # echo "Merging $dir"
                       # rsync -av "$dir/" ./automation/collect/
-                      cp -r "${dir}/collect/${MAJOR}/${VERSION}/*" "./automation/collect/${MAJOR}/${VERSION}/"
+                      ls -l "$dir";
+                      cp -r "${dir}/${MAJOR}/${VERSION}/*" "./automation/collect/${MAJOR}/${VERSION}/"
                     fi
                   done
 
