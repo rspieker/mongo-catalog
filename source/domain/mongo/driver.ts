@@ -11,6 +11,7 @@ import { createDriverV3 } from './driver/v3';
 import { createDriverV4 } from './driver/v4';
 import { createDriverV5 } from './driver/v5';
 import { createDriverV6 } from './driver/v6';
+import { createDriverV7 } from './driver/v7';
 
 type DriverOption = {
     create: (dsn: DSN) => Promise<CatalogDriver>;
@@ -25,6 +26,7 @@ const drivers: DriverOption[] = [
     { create: createDriverV4, before: new Version('5.0') },    // MongoDB 3.6 - 4.4
     { create: createDriverV5, before: new Version('6.0') },    // MongoDB 5.0 - 5.x
     { create: createDriverV6, before: new Version('7.0') },    // MongoDB 6.0 - 6.x
+    { create: createDriverV7, before: new Version('9.0') },    // MongoDB 7.0 - 8.x
 ];
 
 export async function driver(dsn: DSN, version: Version): Promise<CatalogDriver> {
