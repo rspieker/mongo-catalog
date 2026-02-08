@@ -91,11 +91,7 @@ async function loadCatalog(item: CatalogWorkItem): Promise<Catalog> {
         throw new Error(`Export '${item.name}' not found in module`)
     }
 
-    return {
-        name: item.name,
-        operations: catalog.operations,
-        collection: catalog.collection,
-    }
+    return catalog
 }
 
 Promise.resolve()
@@ -239,10 +235,14 @@ Promise.resolve()
 
         // Verify save
         const verifyMeta = await loadMeta(versionDir)
-        console.log(`Verified meta has ${verifyMeta?.catalog.length || 0} entries`)
+        console.log(
+            `Verified meta has ${verifyMeta?.catalog.length || 0} entries`
+        )
 
         if (hasErrors) {
-            console.error('Completed with errors - check meta.json for failed catalogs')
+            console.error(
+                'Completed with errors - check meta.json for failed catalogs'
+            )
             process.exit(1)
         }
     })
