@@ -29,15 +29,16 @@ const drivers: DriverOption[] = [
 
 export async function driver(dsn: DSN, version: Version): Promise<CatalogDriver> {
     // Find appropriate driver
-    // We want the last driver where version < driver.before
+    // We want the FIRST driver where version < driver.before
     // Or default to the last driver (newest)
     const selected = drivers
-        .filter(({ before }) => version < before)
-        .pop() || drivers[drivers.length - 1];
+        .find(({ before }) => version < before) || drivers[drivers.length - 1];
     
     if (!selected) {
         throw new Error(`No driver available for MongoDB version ${version}`);
     }
+    
+    console.log(`[Driver Factory] Selected driver for MongoDB ${version}: v${drivers.indexOf(selected) + 2}`);
     
     // Create driver instance
     const instance = await selected.create(dsn);
