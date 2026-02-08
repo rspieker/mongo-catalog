@@ -113,7 +113,7 @@ jobs:
               run: |
                   git config user.name "GitHub Actions Recipe Bot"
                   git config user.email "<>"
-                  git apply /tmp/patches/patch-workload/workload.patch
+                  git apply --allow-empty /tmp/patches/patch-workload/workload.patch
                   git add ./automation/
                   git commit -m "Apply workload state" || true
 
@@ -165,14 +165,14 @@ jobs:
                   git config user.email "<>"
 
                   # Apply workload patch (contains setup + plan.json)
-                  git apply /tmp/patches/patch-workload/workload.patch
+                  git apply --allow-empty /tmp/patches/patch-workload/workload.patch
 
                   # Apply version patches (only specific version changes)
                   for patch_dir in /tmp/patches/patch-*/; do
                     patch_file=$(find "$patch_dir" -name "changes-*.patch" -type f 2>/dev/null | head -1)
                     if [ -n "$patch_file" ]; then
                       echo "Applying $(basename $patch_file)"
-                      git apply "$patch_file"
+                      git apply --allow-empty "$patch_file"
                     fi
                   done
 
