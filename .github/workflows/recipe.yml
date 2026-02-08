@@ -76,12 +76,27 @@ jobs:
 
             - name: Determine Workload
               id: capture
-              run: echo "captured=$(npm run --silent update:workload)" >> "$GITHUB_OUTPUT"
+              run: |
+                echo "Running workload..."
+                versions=$(npm run --silent update:workload)
+                echo "Versions: $versions"
+                echo "captured=$versions" >> "$GITHUB_OUTPUT"
+
+            - name: Debug changes
+              run: |
+                echo "Git status:"
+                git status
+                echo "Git diff stats:"
+                git diff --stat ./automation/ || echo "No unstaged changes"
+                echo "Files in automation:"
+                find ./automation/collect -name "plan.json" | head -5
 
             - name: Create workload patch
               run: |
-                  # Create patch with only workload changes
-                  git diff ./automation/ > /tmp/workload.patch
+                  # Create patch with all changes including new files
+                  git add ./automation/
+                  git diff --cached > /tmp/workload.patch
+                  echo "Patch size: $(wc -c < /tmp/workload.patch) bytes"
 
             - name: Upload workload patch
               uses: actions/upload-artifact@v4
@@ -133,12 +148,21 @@ jobs:
 
             - run: npm run update:mongo-collect
 
+            - name: Debug changes
+              run: |
+                echo "Git status after mongo-collect:"
+                git status
+                echo "Git diff stats:"
+                git diff --stat ./automation/ || echo "No unstaged changes"
+
             - name: Create patch
               run: |
                   git config user.name "GitHub Actions Recipe Bot"
                   git config user.email "<>"
-                  # Create patch with only changes from mongo-collect (unstaged changes)
-                  git diff ./automation/ > /tmp/changes-${{ matrix.version }}.patch
+                  # Create patch with changes from mongo-collect
+                  git add ./automation/
+                  git diff --cached > /tmp/changes-${{ matrix.version }}.patch
+                  echo "Patch size: $(wc -c < /tmp/changes-${{ matrix.version }}.patch) bytes"
 
             - name: Upload patch
               uses: actions/upload-artifact@v4
