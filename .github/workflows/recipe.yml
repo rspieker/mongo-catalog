@@ -119,12 +119,23 @@ jobs:
         steps:
             - uses: actions/checkout@v4
 
-            - name: Download previous results
+            - name: Download mongo-versions
               uses: actions/download-artifact@v4
               with:
+                  name: mongo-versions
+                  path: ./automation/collect/
+
+            - name: Download catalog-queries
+              uses: actions/download-artifact@v4
+              with:
+                  name: catalog-queries
                   path: ./automation/
-                  pattern: '*'
-                  merge-multiple: true
+
+            - name: Download workload
+              uses: actions/download-artifact@v4
+              with:
+                  name: workload
+                  path: ./automation/collect/
 
             - name: Node.js
               uses: actions/setup-node@v4
@@ -157,16 +168,29 @@ jobs:
         steps:
             - uses: actions/checkout@v4
 
+            - name: Download mongo-versions
+              uses: actions/download-artifact@v4
+              with:
+                  name: mongo-versions
+                  path: ./automation/collect/
+
+            - name: Download catalog-queries
+              uses: actions/download-artifact@v4
+              with:
+                  name: catalog-queries
+                  path: ./automation/
+
             - name: Download all results
               uses: actions/download-artifact@v4
               with:
-                  path: ./automation/
-                  pattern: '*'
+                  path: ./automation/collect/
+                  pattern: 'results-*'
                   merge-multiple: true
 
             - name: Commit results
               run: |
                   git config user.name "GitHub Actions Recipe Bot"
                   git config user.email "<>"
-                  git add ./automation
+                  git add ./automation/collect/
+                  git add ./automation/catalog-queries.json
                   git diff --cached --quiet || (git commit -m "Update catalog results $(date +"%Y-%m-%dT%H:%M:%S%z")" && git push origin main)
