@@ -11,7 +11,7 @@ export type GenericDocument = {
 
 export type QueryResult = {
     success: boolean;
-    documents?: Array<{ id: number; index: number }>;
+    documents?: number[];
     error?: {
         message: string;
         code?: string | number;
@@ -50,9 +50,6 @@ export function normalizeError(error: any): QueryResult['error'] {
 }
 
 // Document normalization helper
-export function normalizeDocuments(docs: GenericDocument[]): Array<{ id: number; index: number }> {
-    return docs.map((doc) => ({
-        id: doc._id as number,
-        index: doc.index as number,
-    }));
+export function normalizeDocuments(docs: GenericDocument[]): number[] {
+    return docs.map((doc) => doc._id as number);
 }

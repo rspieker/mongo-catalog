@@ -1,8 +1,14 @@
 // MongoDB Driver v2.x implementation
 // v2 uses callbacks, not promises
-import { MongoClient, Db, Collection } from 'mongodb2';
 import { DSN } from '../dsn';
 import { CatalogDriver, GenericDocument, QueryResult, normalizeError, normalizeDocuments } from './interface';
+
+// Import mongodb2 without types
+const mongodb2: any = require('mongodb2');
+const { MongoClient } = mongodb2;
+
+type Db = any;
+type Collection = any;
 
 function promisify<T>(fn: (callback: (err: any, result: T) => void) => void): Promise<T> {
     return new Promise((resolve, reject) => {
@@ -16,7 +22,7 @@ function promisify<T>(fn: (callback: (err: any, result: T) => void) => void): Pr
 export async function createDriverV2(dsn: DSN): Promise<CatalogDriver> {
     let client: any;
     let db: Db;
-    let collection: Collection<GenericDocument> | null = null;
+    let collection: Collection | null = null;
     
     return {
         async connect(): Promise<void> {

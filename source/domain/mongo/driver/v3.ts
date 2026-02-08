@@ -1,13 +1,19 @@
 // MongoDB Driver v3.x implementation
 // v3 is promise-based like v4+ but with slightly different API
-import { MongoClient, Db, Collection } from 'mongodb3';
 import { DSN } from '../dsn';
 import { CatalogDriver, GenericDocument, QueryResult, normalizeError, normalizeDocuments } from './interface';
+
+// Import mongodb3 without types
+const mongodb3: any = require('mongodb3');
+const { MongoClient } = mongodb3;
+
+type Db = any;
+type Collection = any;
 
 export async function createDriverV3(dsn: DSN): Promise<CatalogDriver> {
     const client = new MongoClient(dsn.url, { useUnifiedTopology: true });
     let db: Db;
-    let collection: Collection<GenericDocument> | null = null;
+    let collection: Collection | null = null;
     
     return {
         async connect(): Promise<void> {

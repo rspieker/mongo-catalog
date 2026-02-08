@@ -1,6 +1,7 @@
 import { resolve, dirname } from 'node:path'
 import { readFile, writeFile } from 'node:fs/promises'
 import { glob } from 'glob'
+import { Version } from '../source/domain/version'
 import { readJSONFile, writeJSONFile } from '../source/domain/json'
 
 type CatalogWorkItem = {
@@ -27,7 +28,9 @@ type MetaCatalogEntry = {
 const automation = resolve(__dirname, '..', 'automation')
 const catalogFile = resolve(automation, 'catalog-queries.json')
 
-async function loadExistingPlan(versionDir: string): Promise<VersionWorkPlan | null> {
+async function loadExistingPlan(
+    versionDir: string
+): Promise<VersionWorkPlan | null> {
     const planFile = resolve(versionDir, 'plan.json')
     try {
         return await readJSONFile<VersionWorkPlan>(planFile)
@@ -36,7 +39,10 @@ async function loadExistingPlan(versionDir: string): Promise<VersionWorkPlan | n
     }
 }
 
-async function savePlan(versionDir: string, plan: VersionWorkPlan): Promise<void> {
+async function savePlan(
+    versionDir: string,
+    plan: VersionWorkPlan
+): Promise<void> {
     const planFile = resolve(versionDir, 'plan.json')
     await writeFile(planFile, JSON.stringify(plan, null, '\t'))
 }
@@ -78,11 +84,14 @@ readJSONFile<
             const pendingCatalogs: CatalogWorkItem[] = []
 
             for (const current of currentCatalogs) {
-                const metaEntry = meta.catalog.find((m) => m.name === current.name)
-                
+                const metaEntry = meta.catalog.find(
+                    (m) => m.name === current.name
+                )
+
                 // If not in meta, or hash changed, or failed -> pending
-                const needsRun = !metaEntry || 
-                    metaEntry.hash !== current.hash || 
+                const needsRun =
+                    !metaEntry ||
+                    metaEntry.hash !== current.hash ||
                     metaEntry.failed !== undefined
 
                 if (needsRun) {
@@ -105,12 +114,56 @@ readJSONFile<
         return plans
     })
     .then((plans) => {
-        // Output summary
-        const summary = plans.map((plan) => ({
-            version: plan.version,
-            pending: plan.catalogs.length,
-        }))
+        // Filter to versions with pending work
+        const withPending = plans.filter((p) => p.catalogs.length > 0)
 
-        console.log(JSON.stringify(summary, null, '\t'))
+        if (withPending.length === 0) {
+            console.log(JSON.stringify([]))
+            return
+        }
+
+        // Group by major.minor (e.g., "8.2", "7.0") and calculate distance from latest
+        const byMinor = withPending.reduce(
+            (carry, plan) => {
+                const v = new Version(plan.version)
+                const key = `${v.major}.${v.minor || 0}`
+                if (!carry[key]) {
+                    carry[key] = []
+                }
+                carry[key].push({ plan, version: v })
+                return carry
+            },
+            {} as { [key: string]: Array<{ plan: typeof withPending[0]; version: Version }> }
+        )
+
+        // For each minor group, pick the version furthest from latest (highest distance)
+        const groupReps = Object.entries(byMinor).map(([_, group]) => {
+            // Find latest patch version in this minor group
+            const maxPatch = Math.max(...group.map(g => g.version.patch || 0))
+            
+            // Find the version with highest distance in this group
+            const furthestBehind = group
+                .map(({ plan, version }) => ({
+                    plan,
+                    distance: maxPatch - (version.patch || 0),
+                    version
+                }))
+                .sort((a, b) => b.distance - a.distance)[0]
+            
+            return furthestBehind
+        })
+
+        // Sort representatives by distance descending, then major version descending
+        const prioritized = groupReps
+            .sort((a, b) => {
+                if (b.distance !== a.distance) {
+                    return b.distance - a.distance // Higher distance first
+                }
+                return b.version.major - a.version.major // Higher major first
+            })
+            .slice(0, 5)
+            .map((p) => p.plan.version)
+
+        console.log(JSON.stringify(prioritized))
     })
     .catch(console.error)
