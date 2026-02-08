@@ -145,7 +145,7 @@ jobs:
                 for dir in /tmp/results/results-*/; do
                   if [ -d "$dir" ]; then
                     echo "Merging $dir"
-                    rsync -av "$dir" ./automation/collect/
+                    rsync -av "$dir/" ./automation/collect/
                   fi
                 done
                 

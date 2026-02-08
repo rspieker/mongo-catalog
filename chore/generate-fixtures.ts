@@ -1,5 +1,5 @@
 import { resolve } from 'node:path'
-import { readFile, writeFile } from 'node:fs/promises'
+import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import { hash } from '@konfirm/checksum'
 
 type CatalogWorkItem = {
@@ -84,6 +84,9 @@ async function main() {
             exports: Array<{ name: string; hash: string }>
         }>
     >(catalogFile)
+
+    // Ensure fixtures directory exists
+    await mkdir(fixturesDir, { recursive: true })
 
     // Flatten all catalog exports
     const items: CatalogWorkItem[] = catalog.flatMap((record) =>

@@ -231,9 +231,10 @@ Promise.resolve()
                 )
 
                 // Add to meta catalog as completed
+                // Use item.hash (catalog hash) not resultHash, so workload can detect changes
                 const entry: MetaCatalogEntry = {
                     name: item.name,
-                    hash: resultHash,
+                    hash: item.hash,
                     completed: new Date().toISOString(),
                 }
                 const existing = meta.catalog.find((m) => m.name === item.name)
