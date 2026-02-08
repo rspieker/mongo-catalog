@@ -30,10 +30,10 @@ jobs:
 
             - name: Create base patch
               run: |
-                git config user.name "GitHub Actions Recipe Bot"
-                git config user.email "<>"
-                git add ./automation/
-                git diff --cached > /tmp/setup.patch
+                  git config user.name "GitHub Actions Recipe Bot"
+                  git config user.email "<>"
+                  git add ./automation/
+                  git diff --cached > /tmp/setup.patch
 
             - name: Upload base patch
               uses: actions/upload-artifact@v4
@@ -57,8 +57,11 @@ jobs:
                   name: patch-setup
                   path: /tmp/
 
-            - name: Apply base patch
-              run: git apply /tmp/setup.patch
+            - name: Apply and commit setup patch
+              run: |
+                  git apply /tmp/setup.patch
+                  git add ./automation/
+                  git commit -m "Apply setup state"
 
             - name: Node.js
               uses: actions/setup-node@v4
@@ -75,10 +78,10 @@ jobs:
 
             - name: Create workload patch
               run: |
-                git config user.name "GitHub Actions Recipe Bot"
-                git config user.email "<>"
-                git add ./automation/
-                git diff --cached > /tmp/workload.patch
+                  git config user.name "GitHub Actions Recipe Bot"
+                  git config user.email "<>"
+                  # Create patch with only workload changes
+                  git diff ./automation/ > /tmp/workload.patch
 
             - name: Upload workload patch
               uses: actions/upload-artifact@v4
@@ -106,11 +109,12 @@ jobs:
                   path: /tmp/patches/
                   pattern: 'patch-*'
 
-            - name: Apply base patches
+            - name: Apply workload patch
               run: |
-                git checkout ./automation/
-                git apply /tmp/patches/patch-setup/setup.patch
-                git apply /tmp/patches/patch-workload/workload.patch
+                  git apply /tmp/patches/patch-setup/setup.patch
+                  git apply /tmp/patches/patch-workload/workload.patch
+                  git add ./automation/
+                  git commit -m "Apply workload state" || true
 
             - name: Node.js
               uses: actions/setup-node@v4
@@ -130,10 +134,10 @@ jobs:
 
             - name: Create patch
               run: |
-                git config user.name "GitHub Actions Recipe Bot"
-                git config user.email "<>"
-                git add ./automation/
-                git diff --cached > /tmp/changes-${{ matrix.version }}.patch
+                  git config user.name "GitHub Actions Recipe Bot"
+                  git config user.email "<>"
+                  # Create patch with only changes from mongo-collect (unstaged changes)
+                  git diff ./automation/ > /tmp/changes-${{ matrix.version }}.patch
 
             - name: Upload patch
               uses: actions/upload-artifact@v4
@@ -156,24 +160,20 @@ jobs:
 
             - name: Apply all patches
               run: |
-                git checkout ./automation/
-                git config user.name "GitHub Actions Recipe Bot"
-                git config user.email "<>"
-                
-                # Apply setup patch
-                git apply /tmp/patches/patch-setup/setup.patch
-                
-                # Apply workload patch
-                git apply /tmp/patches/patch-workload/workload.patch
-                
-                # Apply version patches
-                for patch_dir in /tmp/patches/patch-*/; do
-                  patch_file=$(find "$patch_dir" -name "changes-*.patch" -type f 2>/dev/null | head -1)
-                  if [ -n "$patch_file" ]; then
-                    echo "Applying $(basename $patch_file)"
-                    git apply "$patch_file" || echo "Already applied: $(basename $patch_file)"
-                  fi
-                done
+                  git config user.name "GitHub Actions Recipe Bot"
+                  git config user.email "<>"
+
+                  # Apply workload patch (contains setup + plan.json)
+                  git apply /tmp/patches/patch-workload/workload.patch
+
+                  # Apply version patches (only specific version changes)
+                  for patch_dir in /tmp/patches/patch-*/; do
+                    patch_file=$(find "$patch_dir" -name "changes-*.patch" -type f 2>/dev/null | head -1)
+                    if [ -n "$patch_file" ]; then
+                      echo "Applying $(basename $patch_file)"
+                      git apply "$patch_file"
+                    fi
+                  done
 
             - name: Commit results
               run: |
