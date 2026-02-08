@@ -185,7 +185,6 @@ jobs:
               with:
                   path: ./automation/collect/
                   pattern: 'results-*'
-                  merge-multiple: true
 
             - name: Commit results
               run: |
