@@ -28,7 +28,7 @@ jobs:
 
             - name: git config
               run: |
-                  git config user.name "GutHub Actions Recipe Bot"
+                  git config user.name "GitHub Actions Recipe Bot"
                   git config user.email "<>"
                   git add ./automation && git commit -m "mongo versions $(date +"%Y-%m-%dT%H:%M:%S%z")" && while ! git push origin main; do git pull --rebase; done || exit 0
 
@@ -52,7 +52,7 @@ jobs:
 
             - name: git config
               run: |
-                  git config user.name "GutHub Actions Recipe Bot"
+                  git config user.name "GitHub Actions Recipe Bot"
                   git config user.email "<>"
                   git add ./automation && git commit -m "catalog queries $(date +"%Y-%m-%dT%H:%M:%S%z")" && while ! git push origin main; do git pull --rebase; done || exit 0
 
@@ -81,6 +81,12 @@ jobs:
             - name: Determine Workload
               id: capture
               run: echo "captured=$(npm run --silent update:workload)" >> "$GITHUB_OUTPUT"
+
+            - name: git config
+              run: |
+                  git config user.name "GitHub Actions Recipe Bot"
+                  git config user.email "<>"
+                  git add ./automation && git commit -m "workload update $(date +"%Y-%m-%dT%H:%M:%S%z")" && while ! git push origin main; do git pull --rebase; done || exit 0
 
     collect-versions:
         runs-on: ubuntu-latest
