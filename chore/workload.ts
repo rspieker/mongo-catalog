@@ -165,7 +165,7 @@ readJSONFile<
                 }
                 return b.version.major - a.version.major // Higher major first
             })
-            .slice(0, 5)
+            .slice(0, 10)
             .map((p) => p.plan.version)
 
         console.log(JSON.stringify(prioritized))
