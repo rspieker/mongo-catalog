@@ -24,6 +24,14 @@ type MetaCatalogEntry = {
     completed?: string
     failed?: string
     error?: string
+    resultChecksum?: string
+}
+
+type MetaData = {
+    catalog: MetaCatalogEntry[]
+    resultChecksum?: string
+    completedCount?: number
+    totalCount?: number
 }
 
 type Catalog = {
@@ -63,21 +71,16 @@ async function savePlan(
     await writeJSONFile(planFile, plan)
 }
 
-async function loadMeta(
-    versionDir: string
-): Promise<{ catalog: MetaCatalogEntry[] } | null> {
+async function loadMeta(versionDir: string): Promise<MetaData | null> {
     const metaFile = resolve(versionDir, 'meta.json')
     try {
-        return await readJSONFile<{ catalog: MetaCatalogEntry[] }>(metaFile)
+        return await readJSONFile<MetaData>(metaFile)
     } catch {
         return null
     }
 }
 
-async function saveMeta(
-    versionDir: string,
-    meta: { catalog: MetaCatalogEntry[] }
-): Promise<void> {
+async function saveMeta(versionDir: string, meta: MetaData): Promise<void> {
     const metaFile = resolve(versionDir, 'meta.json')
     await writeJSONFile(metaFile, meta)
 }
@@ -184,11 +187,15 @@ Promise.resolve()
                     result
                 )
 
+                // Calculate checksum for this catalog's results
+                const resultChecksum = hash(result)
+
                 // Add to meta catalog as completed
                 const entry: MetaCatalogEntry = {
                     name: item.name,
                     hash: item.hash,
                     completed: new Date().toISOString(),
+                    resultChecksum,
                 }
                 const existing = meta.catalog.find((m) => m.name === item.name)
                 if (existing) {
@@ -227,8 +234,27 @@ Promise.resolve()
         plan.catalogs = []
         plan.updated = new Date().toISOString()
 
+        // Calculate checksums and counts for meta
+        const completedCatalogs = meta.catalog.filter((m) => m.completed && m.resultChecksum)
+        const completedCount = completedCatalogs.length
+        const totalCount = meta.catalog.length
+
+        // Calculate combined checksum from sorted catalog:checksum pairs
+        const sortedChecksums = completedCatalogs
+            .map((c) => `${c.name}:${c.resultChecksum}`)
+            .sort()
+        const combinedChecksum =
+            sortedChecksums.length > 0 ? hash(sortedChecksums.join('|')) : ''
+
+        // Update meta with checksum and counts
+        meta.resultChecksum = combinedChecksum
+        meta.completedCount = completedCount
+        meta.totalCount = totalCount
+
         console.log(`Saving plan with ${plan.catalogs.length} catalogs`)
-        console.log(`Saving meta with ${meta.catalog.length} entries`)
+        console.log(
+            `Saving meta with ${meta.catalog.length} entries (${completedCount} completed)`
+        )
 
         await savePlan(versionDir, plan)
         await saveMeta(versionDir, meta)
