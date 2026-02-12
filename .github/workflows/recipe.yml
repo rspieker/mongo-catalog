@@ -138,9 +138,18 @@ jobs:
               run: |
                   for dir in /tmp/results/results-*/; do
                     if [ -d "$dir" ]; then
-                      VERSION="$(basename $dir|cut -d- -f2)";
-                      MAJOR="v$(echo $VERSION|cut -d. -f1)";
-                      cp -r "${dir}${MAJOR}/${VERSION}/"* "./automation/collect/${MAJOR}/${VERSION}/"
+                      # Find the actual version directory (normalized full version)
+                      MAJOR_DIR=$(find "$dir" -maxdepth 1 -type d -name 'v*' | head -1)
+                      if [ -n "$MAJOR_DIR" ]; then
+                        MAJOR=$(basename "$MAJOR_DIR")
+                        VERSION_DIR=$(find "$MAJOR_DIR" -maxdepth 1 -type d | tail -1)
+                        if [ -n "$VERSION_DIR" ]; then
+                          VERSION=$(basename "$VERSION_DIR")
+                          echo "Copying results for ${MAJOR}/${VERSION}"
+                          mkdir -p "./automation/collect/${MAJOR}/${VERSION}"
+                          cp -r "${VERSION_DIR}/"* "./automation/collect/${MAJOR}/${VERSION}/"
+                        fi
+                      fi
                     fi
                   done
 
