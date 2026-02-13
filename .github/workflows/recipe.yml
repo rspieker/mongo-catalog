@@ -110,8 +110,7 @@ jobs:
             - name: Start MongoDB
               run: |
                   VERSION="${{ matrix.version }}"
-                  MAJOR=$(echo "$VERSION" | cut -d. -f1)
-                  DOCKER_TAG=$(jq -r '.name' "./automation/collect/v${MAJOR}/${VERSION}/plan.json")
+                  DOCKER_TAG="${{ steps.docker.outputs.tag }}"
 
                   # Start MongoDB container in background
                   docker run -d \
