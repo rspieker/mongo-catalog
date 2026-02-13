@@ -118,86 +118,163 @@ function versionsMatch(meta1: MetaData, meta2: MetaData): boolean {
     return true;
 }
 
-function binarySearchPriority(
+/**
+ * Recursively assigns priorities for binary search bisection.
+ * Stops recursion when a middle version has pending work.
+ */
+function recursiveBisect(
     versions: VersionWithMeta[],
     startIdx: number,
     endIdx: number,
-    priority: number,
+    currentPriority: number,
     result: Map<string, { version: VersionWithMeta; priority: number }>
-): number {
-    if (startIdx > endIdx) return priority;
+): void {
+    // Find middle index
+    const midIdx = Math.floor((startIdx + endIdx) / 2);
 
-    // With ascending sort: startIdx = earliest (lowest patch), endIdx = latest (highest patch)
-    const earliestVersion = versions[startIdx];
-    const latestVersion = versions[endIdx];
-
-    // Add latest with highest priority (1), earliest with next priority
-    if (!result.has(latestVersion.plan.version)) {
-        result.set(latestVersion.plan.version, {
-            version: latestVersion,
-            priority,
-        });
-        priority++;
-    }
-    if (startIdx !== endIdx && !result.has(earliestVersion.plan.version)) {
-        result.set(earliestVersion.plan.version, {
-            version: earliestVersion,
-            priority,
-        });
-        priority++;
+    // If middle === start or end, we're done with this range
+    if (midIdx === startIdx || midIdx === endIdx) {
+        return;
     }
 
-    // If only 2 or fewer versions, we're done
-    if (endIdx - startIdx <= 1) return priority;
+    const middleVersion = versions[midIdx];
 
-    // Check if outputs match
-    const outputsMatch = versionsMatch(
-        latestVersion.meta,
-        earliestVersion.meta
+    // Assign priority to middle version if not already assigned
+    if (!result.has(middleVersion.plan.version)) {
+        result.set(middleVersion.plan.version, {
+            version: middleVersion,
+            priority: currentPriority,
+        });
+
+        debug &&
+            console.log(
+                `  Middle bisection: ${middleVersion.plan.version} = priority ${currentPriority}`
+            );
+    }
+
+    // STOP if middle version has pending work
+    if (middleVersion.plan.catalogs.length > 0) {
+        debug &&
+            console.log(
+                `  Stopping recursion - ${middleVersion.plan.version} has pending work`
+            );
+        return;
+    }
+
+    // Middle is complete - check if we can skip based on checksum match
+    const startVersion = versions[startIdx];
+    const endVersion = versions[endIdx];
+
+    const middleMatchesStart = versionsMatch(
+        middleVersion.meta,
+        startVersion.meta
+    );
+    const middleMatchesEnd = versionsMatch(middleVersion.meta, endVersion.meta);
+
+    // If middle matches both start and end, all versions in range are identical
+    if (middleMatchesStart && middleMatchesEnd) {
+        debug &&
+            console.log(
+                `  Range ${startVersion.plan.version}-${endVersion.plan.version} all match - skipping`
+            );
+        return;
+    }
+
+    // Continue bisecting both halves
+    const nextPriority = currentPriority + 1;
+
+    recursiveBisect(versions, startIdx, midIdx, nextPriority, result);
+    recursiveBisect(versions, midIdx, endIdx, nextPriority, result);
+}
+
+/**
+ * Assigns priorities to versions within a major.minor group using binary search strategy.
+ */
+function assignGroupPriorities(
+    versions: VersionWithMeta[]
+): Map<string, { version: VersionWithMeta; priority: number }> {
+    const result = new Map<
+        string,
+        { version: VersionWithMeta; priority: number }
+    >();
+
+    if (versions.length === 0) return result;
+
+    // Sort by patch version (ascending: earliest to latest)
+    const sorted = versions.sort(
+        (a, b) => (a.version.patch || 0) - (b.version.patch || 0)
     );
 
-    if (outputsMatch) {
-        // All versions in between have same output - mark them with low priority
-        for (let i = startIdx + 1; i < endIdx; i++) {
-            if (!result.has(versions[i].plan.version)) {
-                result.set(versions[i].plan.version, {
-                    version: versions[i],
-                    priority: 1000,
-                });
-            }
-        }
-        return priority;
-    } else {
-        // Outputs differ - need to binary search
-        const midIdx = Math.floor((startIdx + endIdx) / 2);
-        const midVersion = versions[midIdx];
+    const latest = sorted[sorted.length - 1];
+    const earliest = sorted[0];
 
-        if (!result.has(midVersion.plan.version)) {
-            result.set(midVersion.plan.version, {
-                version: midVersion,
-                priority,
-            });
-            priority++;
-        }
+    // Priority 1: Latest version
+    result.set(latest.plan.version, {
+        version: latest,
+        priority: 1,
+    });
 
-        // Recurse on both halves
-        priority = binarySearchPriority(
-            versions,
-            startIdx,
-            midIdx,
-            priority,
-            result
-        );
-        priority = binarySearchPriority(
-            versions,
-            midIdx,
-            endIdx,
-            priority,
-            result
-        );
+    debug &&
+        console.log(`  Latest: ${latest.plan.version} = priority 1`);
 
-        return priority;
+    // Priority 2: Earliest version (if different from latest)
+    if (sorted.length > 1) {
+        result.set(earliest.plan.version, {
+            version: earliest,
+            priority: 2,
+        });
+
+        debug &&
+            console.log(`  Earliest: ${earliest.plan.version} = priority 2`);
     }
+
+    // If only 1 or 2 versions, we're done
+    if (sorted.length <= 2) {
+        return result;
+    }
+
+    // Check if latest and earliest match
+    const outputsMatch = versionsMatch(latest.meta, earliest.meta);
+
+    if (outputsMatch) {
+        // All versions in between are identical - skip them (priority 1000)
+        debug &&
+            console.log(
+                `  Latest and earliest match - marking ${sorted.length - 2} middle versions as skipped`
+            );
+
+        for (let i = 1; i < sorted.length - 1; i++) {
+            result.set(sorted[i].plan.version, {
+                version: sorted[i],
+                priority: 1000,
+            });
+        }
+    } else {
+        // Need bisection - start recursive middle assignment
+        debug && console.log(`  Latest and earliest differ - starting bisection`);
+
+        recursiveBisect(sorted, 0, sorted.length - 1, 3, result);
+    }
+
+    // Assign fallback priority (100 - pendingCount) to any unassigned versions
+    for (const version of sorted) {
+        if (!result.has(version.plan.version)) {
+            const pendingCount = version.plan.catalogs.length;
+            const fallbackPriority = 100 - pendingCount;
+
+            result.set(version.plan.version, {
+                version,
+                priority: fallbackPriority,
+            });
+
+            debug &&
+                console.log(
+                    `  Unassigned: ${version.plan.version} = priority ${fallbackPriority} (100 - ${pendingCount} pending)`
+                );
+        }
+    }
+
+    return result;
 }
 
 readJSONFile<
@@ -309,96 +386,52 @@ readJSONFile<
             {} as { [key: string]: VersionWithMeta[] }
         );
 
-        const prioritizedVersions: Array<{
+        const allPrioritizedVersions: Array<{
             version: VersionWithMeta;
             priority: number;
         }> = [];
 
         // Process each minor version group
         for (const [minorKey, versions] of Object.entries(byMinor)) {
-            // Sort by patch version (ascending: 0, 1, 2...)
-            const sortedVersions = versions.sort(
-                (a, b) => (a.version.patch || 0) - (b.version.patch || 0)
-            );
-
             debug &&
                 console.log(
-                    `\nProcessing ${minorKey} (sorted earliest→latest): ${sortedVersions.map((v) => v.plan.version).join(', ')}`
+                    `\nProcessing ${minorKey}: ${versions.map((v) => v.plan.version).join(', ')}`
                 );
 
-            // Apply binary search prioritization
-            const priorityMap = new Map<
-                string,
-                { version: VersionWithMeta; priority: number }
-            >();
-            binarySearchPriority(
-                sortedVersions,
-                0,
-                sortedVersions.length - 1,
-                1,
-                priorityMap
-            );
+            // Assign priorities within this group
+            const priorityMap = assignGroupPriorities(versions);
 
-            // Convert map to array
+            // Convert map to array and add to overall list
             const groupPriorities = Array.from(priorityMap.values());
-
-            // Sort by priority and add to overall list
-            groupPriorities.sort((a, b) => a.priority - b.priority);
-            prioritizedVersions.push(...groupPriorities);
+            allPrioritizedVersions.push(...groupPriorities);
         }
 
-        // Group priorities by minor version for round-robin selection
-        const prioritiesByMinor: {
-            [key: string]: Array<{
-                version: VersionWithMeta;
-                priority: number;
-            }>;
-        } = {};
-        for (const item of prioritizedVersions) {
-            const v = item.version.version;
-            const key = `${v.major}.${v.minor || 0}`;
-            if (!prioritiesByMinor[key]) {
-                prioritiesByMinor[key] = [];
+        // Sort globally by priority (ascending = higher priority first)
+        allPrioritizedVersions.sort((a, b) => {
+            if (a.priority !== b.priority) {
+                return a.priority - b.priority;
             }
-            prioritiesByMinor[key].push(item);
-        }
 
-        // Sort each minor group's priorities
-        for (const key of Object.keys(prioritiesByMinor)) {
-            prioritiesByMinor[key].sort((a, b) => a.priority - b.priority);
-        }
-
-        // Round-robin selection: take one from each group at a time
-        const finalPriorities: string[] = [];
-        const minorKeys = Object.keys(prioritiesByMinor).sort((a, b) => {
-            // Sort by major version descending (so 8.x comes before 7.x)
-            const majorA = parseInt(a.split('.')[0]);
-            const majorB = parseInt(b.split('.')[0]);
-            return majorB - majorA;
+            // Tie-breaker: higher major.minor.patch first
+            const av = a.version.version;
+            const bv = b.version.version;
+            if (av.major !== bv.major) return bv.major - av.major;
+            if (av.minor !== bv.minor) return (bv.minor || 0) - (av.minor || 0);
+            return (bv.patch || 0) - (av.patch || 0);
         });
 
-        let round = 0;
-        while (finalPriorities.length < 5 && minorKeys.length > 0) {
-            let addedInRound = 0;
+        // Take top 5
+        const top5 = allPrioritizedVersions.slice(0, 5);
+        const finalPriorities = top5.map((item) => item.version.plan.version);
 
-            for (const key of minorKeys) {
-                if (finalPriorities.length >= 5) break;
+        debug && console.log('\n=== Final Priority List (Top 5) ===');
+        debug &&
+            top5.forEach((item, idx) => {
+                console.log(
+                    `${idx + 1}. ${item.version.plan.version} (priority ${item.priority})`
+                );
+            });
 
-                const group = prioritiesByMinor[key];
-                if (round < group.length) {
-                    const item = group[round];
-                    // Use plan.name which contains the Docker-compatible version tag
-                    finalPriorities.push(item.version.plan.version!);
-                    addedInRound++;
-                }
-            }
-
-            // If no items added in this round, we're done
-            if (addedInRound === 0) break;
-            round++;
-        }
-
-        debug && console.log('\nFinal priority list:', finalPriorities);
         console.log(JSON.stringify(finalPriorities));
     })
     .catch((error) => debug && console.error(error));
