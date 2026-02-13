@@ -1,0 +1,441 @@
+[
+	{
+		"operation": {
+			"$and": [
+				{
+					"age": {
+						"$gte": 18
+					}
+				},
+				{
+					"status": "active"
+				}
+			]
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			8,
+			11
+		]
+	},
+	{
+		"operation": {
+			"$and": [
+				{
+					"profile.premium": true
+				},
+				{
+					"profile.rating": {
+						"$gte": 4
+					}
+				}
+			]
+		},
+		"documents": [
+			4,
+			18
+		]
+	},
+	{
+		"operation": {
+			"$and": [
+				{
+					"tags": {
+						"$in": [
+							"javascript",
+							"python"
+						]
+					}
+				},
+				{
+					"active": true
+				}
+			]
+		},
+		"documents": [
+			2,
+			17
+		]
+	},
+	{
+		"operation": {
+			"$and": [
+				{
+					"age": {
+						"$gte": 25
+					}
+				},
+				{
+					"$and": [
+						{
+							"status": "active"
+						},
+						{
+							"active": true
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			2,
+			3
+		]
+	},
+	{
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$lt": 25
+					}
+				},
+				{
+					"age": {
+						"$gt": 60
+					}
+				}
+			]
+		},
+		"documents": [
+			7,
+			12,
+			19
+		]
+	},
+	{
+		"operation": {
+			"$or": [
+				{
+					"status": "pending"
+				},
+				{
+					"status": "suspended"
+				}
+			]
+		},
+		"documents": [
+			4,
+			5,
+			9,
+			12,
+			14,
+			15,
+			17,
+			19
+		]
+	},
+	{
+		"operation": {
+			"$or": [
+				{
+					"profile.premium": true
+				},
+				{
+					"profile.rating": {
+						"$gte": 4.5
+					}
+				}
+			]
+		},
+		"documents": [
+			2,
+			3,
+			4,
+			5,
+			6,
+			8,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"$nor": [
+				{
+					"status": "deleted"
+				},
+				{
+					"status": "banned"
+				}
+			]
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			8,
+			9,
+			11,
+			12,
+			13,
+			14,
+			15,
+			17,
+			18,
+			19
+		]
+	},
+	{
+		"operation": {
+			"$nor": [
+				{
+					"age": {
+						"$lt": 18
+					}
+				},
+				{
+					"profile.rating": {
+						"$lt": 2
+					}
+				}
+			]
+		},
+		"documents": [
+			2,
+			3,
+			4,
+			6,
+			7,
+			8,
+			9,
+			10,
+			12,
+			14,
+			15,
+			16,
+			18,
+			20
+		]
+	},
+	{
+		"operation": {
+			"$not": {
+				"status": "deleted"
+			}
+		},
+		"error": {
+			"message": "unknown top level operator: $not. If you are trying to negate an entire expression, use $nor.",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"operation": {
+			"$not": {
+				"profile.premium": false
+			}
+		},
+		"error": {
+			"message": "unknown top level operator: $not. If you are trying to negate an entire expression, use $nor.",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"operation": {
+			"$not": {
+				"age": {
+					"$gt": 65
+				}
+			}
+		},
+		"error": {
+			"message": "unknown top level operator: $not. If you are trying to negate an entire expression, use $nor.",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"operation": {
+			"$and": [
+				{
+					"active": true
+				},
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"age": {
+										"$lt": 25
+									}
+								},
+								{
+									"profile.rating": {
+										"$gte": 4
+									}
+								}
+							]
+						},
+						{
+							"$and": [
+								{
+									"age": {
+										"$gte": 25
+									}
+								},
+								{
+									"profile.premium": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"$not": {
+						"status": "suspended"
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "unknown top level operator: $not. If you are trying to negate an entire expression, use $nor.",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"operation": {
+			"$and": []
+		},
+		"error": {
+			"message": "$and argument must be a non-empty array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"operation": {
+			"$or": []
+		},
+		"error": {
+			"message": "$or argument must be a non-empty array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"operation": {
+			"$and": [
+				{}
+			]
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"$or": [
+				{}
+			]
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"$and": [
+				{
+					"age": {
+						"$gt": "thirty"
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"$or": [
+				{
+					"profile.rating": {
+						"$lt": "low"
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"$not": {
+				"invalid": {
+					"$eq": null
+				}
+			}
+		},
+		"error": {
+			"message": "unknown top level operator: $not. If you are trying to negate an entire expression, use $nor.",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"operation": {
+			"$and": null
+		},
+		"error": {
+			"message": "$and argument must be an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"operation": {
+			"$or": "invalid"
+		},
+		"error": {
+			"message": "$or argument must be an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	}
+]
