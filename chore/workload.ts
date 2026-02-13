@@ -215,7 +215,7 @@ function assignGroupPriorities(
     });
 
     debug &&
-        console.log(`  Latest: ${latest.plan.version} = priority 1`);
+        console.log(`  True latest: ${latest.plan.version} = priority 1`);
 
     // Priority 2: Earliest version (if different from latest)
     if (sorted.length > 1) {
@@ -225,7 +225,7 @@ function assignGroupPriorities(
         });
 
         debug &&
-            console.log(`  Earliest: ${earliest.plan.version} = priority 2`);
+            console.log(`  True earliest: ${earliest.plan.version} = priority 2`);
     }
 
     // If only 1 or 2 versions, we're done
@@ -362,18 +362,8 @@ readJSONFile<
         return allVersions;
     })
     .then((allVersions) => {
-        // Filter to versions with pending work
-        const withPending = allVersions.filter(
-            (v) => v.plan.catalogs.length > 0
-        );
-
-        if (withPending.length === 0) {
-            debug && console.log(JSON.stringify([]));
-            return;
-        }
-
-        // Group by major.minor (e.g., "8.2", "7.0")
-        const byMinor = withPending.reduce(
+        // Group ALL versions by major.minor (not just those with pending)
+        const byMinor = allVersions.reduce(
             (carry, item) => {
                 const v = item.version;
                 const key = `${v.major}.${v.minor || 0}`;
@@ -395,10 +385,10 @@ readJSONFile<
         for (const [minorKey, versions] of Object.entries(byMinor)) {
             debug &&
                 console.log(
-                    `\nProcessing ${minorKey}: ${versions.map((v) => v.plan.version).join(', ')}`
+                    `\nProcessing ${minorKey}: ${versions.length} versions`
                 );
 
-            // Assign priorities within this group
+            // Assign priorities within this group based on ALL versions
             const priorityMap = assignGroupPriorities(versions);
 
             // Convert map to array and add to overall list
@@ -406,8 +396,18 @@ readJSONFile<
             allPrioritizedVersions.push(...groupPriorities);
         }
 
+        // Filter to versions with pending work
+        const withPending = allPrioritizedVersions.filter(
+            (item) => item.version.plan.catalogs.length > 0
+        );
+
+        if (withPending.length === 0) {
+            debug && console.log(JSON.stringify([]));
+            return;
+        }
+
         // Sort globally by priority (ascending = higher priority first)
-        allPrioritizedVersions.sort((a, b) => {
+        withPending.sort((a, b) => {
             if (a.priority !== b.priority) {
                 return a.priority - b.priority;
             }
@@ -421,7 +421,7 @@ readJSONFile<
         });
 
         // Take top 5
-        const top5 = allPrioritizedVersions.slice(0, 5);
+        const top5 = withPending.slice(0, 5);
         const finalPriorities = top5.map((item) => item.version.plan.version);
 
         debug && console.log('\n=== Final Priority List (Top 5) ===');
