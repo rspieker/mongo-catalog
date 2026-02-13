@@ -111,7 +111,7 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                   name: results-${{ matrix.version }}
-                  path: ./automation/collect/
+                  path: /tmp/mongo-catalog-changes
                   retention-days: 1
 
     commit-results:
@@ -134,22 +134,21 @@ jobs:
                   pattern: 'results-*'
                   merge-multiple: false
 
-            - name: Merge results
+            - name: Merge version-specific results
               run: |
-                  for dir in /tmp/results/results-*/; do
-                    if [ -d "$dir" ]; then
-                      # Find the actual version directory (normalized full version)
-                      MAJOR_DIR=$(find "$dir" -maxdepth 1 -type d -name 'v*' | head -1)
-                      if [ -n "$MAJOR_DIR" ]; then
-                        MAJOR=$(basename "$MAJOR_DIR")
-                        VERSION_DIR=$(find "$MAJOR_DIR" -maxdepth 1 -type d | tail -1)
-                        if [ -n "$VERSION_DIR" ]; then
-                          VERSION=$(basename "$VERSION_DIR")
-                          echo "Copying results for ${MAJOR}/${VERSION}"
-                          mkdir -p "./automation/collect/${MAJOR}/${VERSION}"
-                          cp -r "${VERSION_DIR}/"* "./automation/collect/${MAJOR}/${VERSION}/"
+                  for artifact_dir in /tmp/results/results-*/; do
+                    if [ -d "$artifact_dir" ]; then
+                      # artifact_dir contains something like: 5.0.32/
+                      for version_dir in "$artifact_dir"*/; do
+                        if [ -d "$version_dir" ]; then
+                          version_name=$(basename "$version_dir")
+                          major_version="v${version_name%%.*}"
+
+                          echo "Copying $version_name to automation/collect/$major_version/"
+                          mkdir -p "./automation/collect/$major_version"
+                          cp -r "$version_dir" "./automation/collect/$major_version/"
                         fi
-                      fi
+                      done
                     fi
                   done
 
