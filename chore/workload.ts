@@ -36,6 +36,7 @@ type MetaData = {
     resultChecksum?: string;
     completedCount?: number;
     totalCount?: number;
+    skip?: boolean;
 };
 
 type VersionWithMeta = {
@@ -304,6 +305,12 @@ readJSONFile<
             const meta = await loadMeta(metaFile);
 
             if (!meta) continue;
+
+            // Skip versions marked for skipping (e.g., problematic Docker images)
+            if (meta.skip) {
+                debug && console.log(`Skipping ${meta.name} - marked as skip in meta.json`);
+                continue;
+            }
 
             const version = meta.name;
             const release = meta.releases[0]?.name;

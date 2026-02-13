@@ -68,6 +68,10 @@ getTags<DockerTag>('mongo')
 
                 if (!found) {
                     carry.push(record)
+                } else if (found && name.length > found.name.length) {
+                    // Use the longest version name when multiple tags point to same image
+                    found.name = name
+                    found.version = item.version
                 }
 
                 const release = record.releases.find(
