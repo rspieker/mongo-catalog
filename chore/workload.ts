@@ -388,7 +388,7 @@ readJSONFile<
                 if (round < group.length) {
                     const item = group[round];
                     // Use plan.name which contains the Docker-compatible version tag
-                    finalPriorities.push(item.version.plan.name!);
+                    finalPriorities.push(item.version.plan.version!);
                     addedInRound++;
                 }
             }

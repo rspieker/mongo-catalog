@@ -98,10 +98,18 @@ jobs:
                   node-version: 20.x
                   cache: 'npm'
 
+            - name: Get Docker tag
+              id: docker
+              run: |
+                  VERSION="${{ matrix.version }}"
+                  MAJOR=$(echo "$VERSION" | cut -d. -f1)
+                  DOCKER_TAG=$(jq -r '.name' "./automation/collect/v${MAJOR}/${VERSION}/plan.json")
+                  echo "tag=$DOCKER_TAG" >> "$GITHUB_OUTPUT"
+
             - name: Start MongoDB
               uses: supercharge/mongodb-github-action@1.7.0
               with:
-                  mongodb-version: ${{ matrix.version }}
+                  mongodb-version: ${{ steps.docker.outputs.tag }}
 
             - run: npm install
 
