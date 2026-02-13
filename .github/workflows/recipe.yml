@@ -117,7 +117,7 @@ jobs:
                   docker run -d \
                     --name mongodb-$VERSION \
                     -p 27017:27017 \
-                    --health-cmd="mongosh --eval 'db.adminCommand(\"ping\")' || exit 1" \
+                    --health-cmd="nc -z localhost 27017 || exit 1" \
                     --health-interval=10s \
                     --health-timeout=5s \
                     --health-retries=5 \
