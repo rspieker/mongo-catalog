@@ -98,11 +98,6 @@ jobs:
                   node-version: 20.x
                   cache: 'npm'
 
-            - name: Update Docker
-              run: |
-                  sudo apt-get update
-                  sudo apt-get install -y docker-ce docker-ce-cli containerd.io
-
             - name: Get Docker tag
               id: docker
               run: |
@@ -112,13 +107,49 @@ jobs:
                   echo "tag=$DOCKER_TAG" >> "$GITHUB_OUTPUT"
 
             - name: Start MongoDB
-              uses: supercharge/mongodb-github-action@1.12.0
-              with:
-                  mongodb-version: ${{ steps.docker.outputs.tag }}
+              run: |
+                  VERSION="${{ matrix.version }}"
+                  MAJOR=$(echo "$VERSION" | cut -d. -f1)
+                  DOCKER_TAG=$(jq -r '.name' "./automation/collect/v${MAJOR}/${VERSION}/plan.json")
+
+                  # Start MongoDB container in background
+                  docker run -d \
+                    --name mongodb-$VERSION \
+                    -p 27017:27017 \
+                    --health-cmd="mongosh --eval 'db.adminCommand(\"ping\")' || exit 1" \
+                    --health-interval=10s \
+                    --health-timeout=5s \
+                    --health-retries=5 \
+                    mongo:$DOCKER_TAG
+
+                  # Wait for healthy
+                  echo "Waiting for MongoDB to be healthy..."
+                  for i in {1..60}; do
+                    HEALTH=$(docker inspect --format='{{.State.Health.Status}}' mongodb-$VERSION 2>/dev/null || echo "starting")
+                    if [ "$HEALTH" = "healthy" ]; then
+                      echo "MongoDB is healthy!"
+                      break
+                    fi
+                    echo "Status: $HEALTH (attempt $i/60)"
+                    sleep 2
+                  done
+
+                  if [ "$HEALTH" != "healthy" ]; then
+                    echo "MongoDB failed to become healthy"
+                    docker logs mongodb-$VERSION
+                    exit 1
+                  fi
 
             - run: npm install
 
             - run: npm run update:mongo-collect
+
+            - name: Cleanup MongoDB
+              if: always()
+              run: |
+                  VERSION="${{ matrix.version }}"
+                  docker stop mongodb-$VERSION 2>/dev/null || true
+                  docker rm mongodb-$VERSION 2>/dev/null || true
 
             - name: Upload results
               uses: actions/upload-artifact@v4
