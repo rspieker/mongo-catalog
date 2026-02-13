@@ -69,7 +69,8 @@ getTags<DockerTag>('mongo')
                 if (!found) {
                     carry.push(record)
                 } else if (found && name.length > found.name.length) {
-                    // Use the longest version name when multiple tags point to same image
+                    // Use the longest version when multiple tags point to same image
+                    // name is already normalized (String(item.version)), so "3.3.15" > "3.3.0"
                     found.name = name
                     found.version = item.version
                 }
