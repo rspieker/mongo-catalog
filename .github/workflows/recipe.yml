@@ -114,7 +114,6 @@ jobs:
 
                   # Start MongoDB container in background
                   docker run -d \
-                    --name mongodb-$VERSION \
                     -p 27017:27017 \
                     --health-cmd="mongo --eval 'quit(0)' || mongosh --eval 'quit(0)' || exit 1" \
                     --health-interval=10s \
