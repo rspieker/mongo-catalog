@@ -33,6 +33,16 @@ type MetaData = {
     resultChecksum?: string;
     completedCount?: number;
     totalCount?: number;
+    skip?: boolean;
+    history?: Array<{
+        type: string;
+        date: string;
+        actions?: Array<{
+            type: string;
+            reason?: string;
+            date: string;
+        }>;
+    }>;
 };
 
 type Catalog = {
@@ -272,6 +282,13 @@ Promise.resolve()
                 'Completed with errors - check meta.json for failed catalogs'
             );
             process.exit(1);
+        }
+
+        // On successful completion, remove the skip flag if it was set
+        if (meta.skip) {
+            console.log(`Removing skip flag from version ${version} after successful completion`);
+            delete meta.skip;
+            await saveMeta(versionDir, meta);
         }
     })
     .catch((error) => {

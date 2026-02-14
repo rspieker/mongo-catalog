@@ -110,6 +110,22 @@ Workflow: `.github/workflows/recipe.yml`
 - Jobs: setup → workload → collect-versions (matrix) → commit-results
 - Artifacts passed between jobs for state management
 
+### Skip-on-Failure System
+
+When a MongoDB version fails during collection, it's automatically marked as skipped:
+
+1. **Failure Detection**: The workflow detects which step failed (Docker pull, MongoDB start, npm install, or catalog execution)
+2. **Skip Marking**: Adds `skip: true` to the version's `meta.json` with a history entry containing the failure reason
+3. **Exponential Backoff Retry**: Failed versions are retried with increasing intervals:
+   - 1st failure: retry after 1 day
+   - 2nd failure: retry after 2 days
+   - 3rd failure: retry after 4 days
+   - 4th failure: retry after 8 days
+   - 5th+ failure: 16, 32, 64... days (doubling each time)
+4. **Automatic Unskip**: On successful collection, the `skip` flag is removed
+
+This prevents the workflow from getting stuck on persistently failing versions while still giving them retry opportunities.
+
 ## Testing Approach
 
 This is NOT a test suite itself - it's a data collection service that:

@@ -63,7 +63,11 @@ jobs:
 
             - name: Determine Workload
               id: capture
-              run: echo "captured=$(npm run --silent update:workload)" >> "$GITHUB_OUTPUT"
+              run: |
+                  WORKLOAD_OUTPUT=$(npm run --silent update:workload)
+                  # Extract just the versions array from the JSON output
+                  VERSIONS=$(echo "$WORKLOAD_OUTPUT" | jq -c '.versions')
+                  echo "captured=$VERSIONS" >> "$GITHUB_OUTPUT"
 
             - name: Upload updated state
               uses: actions/upload-artifact@v4
@@ -108,12 +112,14 @@ jobs:
                   echo "tag=$DOCKER_TAG" >> "$GITHUB_OUTPUT"
 
             - name: Start MongoDB
+              id: mongodb
               run: |
                   VERSION="${{ matrix.version }}"
                   DOCKER_TAG="${{ steps.docker.outputs.tag }}"
 
                   # Start MongoDB container in background
                   docker run -d \
+                    --name mongodb-$VERSION \
                     -p 27017:27017 \
                     --health-cmd="mongo --eval 'quit(0)' || mongosh --eval 'quit(0)' || exit 1" \
                     --health-interval=10s \
@@ -139,9 +145,13 @@ jobs:
                     exit 1
                   fi
 
-            - run: npm install
+            - name: Install dependencies
+              id: install
+              run: npm install
 
-            - run: npm run update:mongo-collect
+            - name: Run collection
+              id: collect
+              run: npm run update:mongo-collect
 
             - name: Cleanup MongoDB
               if: always()
@@ -151,11 +161,53 @@ jobs:
                   docker rm mongodb-$VERSION 2>/dev/null || true
 
             - name: Upload results
+              if: always()
               uses: actions/upload-artifact@v4
               with:
                   name: results-${{ matrix.version }}
                   path: /tmp/mongo-catalog-changes
                   retention-days: 1
+
+            - name: Mark version as skipped on failure
+              if: failure()
+              run: |
+                  VERSION="${{ matrix.version }}"
+                  MAJOR=$(echo "$VERSION" | cut -d. -f1)
+                  META_FILE="./automation/collect/v${MAJOR}/${VERSION}/meta.json"
+                  
+                  # Determine failure reason based on which step failed
+                  FAILURE_REASON="unknown"
+                  if [ "${{ steps.docker.outcome }}" == "failure" ]; then
+                    FAILURE_REASON="docker-tag-resolution-failed"
+                  elif [ "${{ steps.mongodb.outcome }}" == "failure" ]; then
+                    FAILURE_REASON="mongodb-start-failed"
+                  elif [ "${{ steps.install.outcome }}" == "failure" ]; then
+                    FAILURE_REASON="npm-install-failed"
+                  elif [ "${{ steps.collect.outcome }}" == "failure" ]; then
+                    FAILURE_REASON="catalog-execution-failed"
+                  fi
+                  
+                  echo "Marking $VERSION as skipped due to: $FAILURE_REASON"
+                  
+                  # Update meta.json with skip flag and history entry
+                  NOW=$(date -u +"%Y-%m-%dT%H:%M:%S.%3NZ")
+                  jq --arg reason "$FAILURE_REASON" --arg date "$NOW" \
+                    '. + {
+                      "skip": true,
+                      "history": (.history // []) + [{
+                        "type": "SKIP",
+                        "date": $date,
+                        "actions": [{
+                          "type": "SKIP",
+                          "reason": $reason,
+                          "date": $date
+                        }]
+                      }]
+                    }' "$META_FILE" > "$META_FILE.tmp" && mv "$META_FILE.tmp" "$META_FILE"
+                  
+                  # Stage the modified meta.json for commit
+                  mkdir -p "/tmp/mongo-catalog-changes/${VERSION}"
+                  cp "$META_FILE" "/tmp/mongo-catalog-changes/${VERSION}/meta.json"
 
     commit-results:
         runs-on: ubuntu-latest
