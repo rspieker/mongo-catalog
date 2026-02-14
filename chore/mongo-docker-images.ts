@@ -123,10 +123,8 @@ getTags<DockerTag>('mongo')
                     const meta = await readJSONFile<any>(file).catch(() => ({
                         name: bundle.name,
                         version: String(bundle.version),
-                        catalog: [],
                         releases: [],
                         history: [],
-                        updated: now,
                     }))
                     const removed = meta.releases.filter(
                         ({ name }: any) =>
@@ -156,47 +154,27 @@ getTags<DockerTag>('mongo')
                             return false
                         })
 
-                    if (removed.length || added.length || modified.length) {
-                        const found = meta.history.find(
-                            (record: any) => record.date === now.toISOString()
-                        )
-                        const record = found || {
-                            type: meta.history.length ? 'UPDATE' : 'INITIAL',
+                    // Add RETRACTED records for removed releases
+                    removed.forEach((rel: any) => {
+                        meta.history.push({
+                            type: 'RETRACTED',
                             date: now.toISOString(),
-                            actions: [],
-                        }
-
-                        removed.forEach((rel: any) =>
-                            record.actions.push({
-                                type: 'REMOVED',
-                                version: rel.version,
-                                name: rel.name,
-                                digest: rel.digest,
-                            })
-                        )
-                        modified.forEach((rel: any) => {
-                            const before = meta.releases.find(
-                                ({ name }: any) => name === rel.name
-                            )
-                            record.actions.push({
-                                type: 'UPDATED',
-                                ...rel,
-                                before,
-                            })
+                            name: rel.name,
                         })
-                        added.forEach((rel: any) =>
-                            record.actions.push({
-                                type: 'ADDED',
-                                version: rel.version,
-                                name: rel.name,
-                                digest: rel.digest,
-                            })
-                        )
+                    })
 
-                        if (!found) {
-                            meta.history.push(record)
-                        }
-                    }
+                    // Add DISCOVERED records for added releases
+                    added.forEach((rel: any) => {
+                        meta.history.push({
+                            type: 'DISCOVERED',
+                            date: now.toISOString(),
+                            name: rel.name,
+                            digest: rel.digest,
+                        })
+                    })
+
+                    // Note: Modified releases are not tracked in the new format
+                    // The release data itself is updated in meta.releases
 
                     meta.releases = bundle.releases.sort(
                         ({ version: a }: any, { version: b }: any) =>

@@ -19,33 +19,40 @@ type VersionWorkPlan = {
     updated: string;
 };
 
-type MetaCatalogEntry = {
-    name: string;
+type ProcessedRecord = {
+    type: 'PROCESSED';
+    date: string;
+    catalog: string;
     hash: string;
-    completed?: string;
-    failed?: string;
-    error?: string;
-    resultChecksum?: string;
+    resultChecksum: string;
 };
+
+type FailedRecord = {
+    type: 'FAILED';
+    date: string;
+    reason: string;
+};
+
+type DiscoveredRecord = {
+    type: 'DISCOVERED';
+    date: string;
+    name: string;
+    digest: string;
+};
+
+type RetractedRecord = {
+    type: 'RETRACTED';
+    date: string;
+    name: string;
+};
+
+type HistoryRecord = ProcessedRecord | FailedRecord | DiscoveredRecord | RetractedRecord;
 
 type MetaData = {
     name: string;
     version: string;
-    catalog: MetaCatalogEntry[];
     releases: Array<{ name: string; [key: string]: unknown }>;
-    resultChecksum?: string;
-    completedCount?: number;
-    totalCount?: number;
-    skip?: boolean;
-    history?: Array<{
-        type: string;
-        date: string;
-        actions?: Array<{
-            type: string;
-            reason?: string;
-            date: string;
-        }>;
-    }>;
+    history: HistoryRecord[];
 };
 
 type VersionWithMeta = {
@@ -96,7 +103,17 @@ async function loadMeta(metaFile: string): Promise<MetaData | null> {
 }
 
 function getVersionChecksum(meta: MetaData): string | undefined {
-    return meta.resultChecksum;
+    // Calculate combined checksum from all PROCESSED records
+    const processed = meta.history.filter((h): h is ProcessedRecord => h.type === 'PROCESSED');
+    if (processed.length === 0) return undefined;
+    
+    // Sort by catalog name for consistent ordering
+    const sorted = processed
+        .map(p => `${p.catalog}:${p.resultChecksum}`)
+        .sort();
+    
+    // Simple hash combining (not cryptographically secure but sufficient for comparison)
+    return sorted.join('|');
 }
 
 function versionsMatch(meta1: MetaData, meta2: MetaData): boolean {
@@ -108,19 +125,15 @@ function versionsMatch(meta1: MetaData, meta2: MetaData): boolean {
         return checksum1 === checksum2;
     }
 
-    // Otherwise, compare catalog by catalog
-    const completed1 = meta1.catalog.filter(
-        (c) => c.completed && c.resultChecksum
-    );
-    const completed2 = meta2.catalog.filter(
-        (c) => c.completed && c.resultChecksum
-    );
+    // Otherwise, compare catalog by catalog using PROCESSED records
+    const processed1 = meta1.history.filter((h): h is ProcessedRecord => h.type === 'PROCESSED');
+    const processed2 = meta2.history.filter((h): h is ProcessedRecord => h.type === 'PROCESSED');
 
-    if (completed1.length !== completed2.length) return false;
+    if (processed1.length !== processed2.length) return false;
 
-    for (const cat1 of completed1) {
-        const cat2 = completed2.find((c) => c.name === cat1.name);
-        if (!cat2 || cat1.resultChecksum !== cat2.resultChecksum) {
+    for (const p1 of processed1) {
+        const p2 = processed2.find((p) => p.catalog === p1.catalog);
+        if (!p2 || p1.resultChecksum !== p2.resultChecksum) {
             return false;
         }
     }
@@ -130,55 +143,80 @@ function versionsMatch(meta1: MetaData, meta2: MetaData): boolean {
 
 /**
  * Gets skip information from meta history
+ * Finds the current failure sequence (consecutive FAILED records since last PROCESSED or start)
  */
 function getSkipInfo(meta: MetaData): {
-    isSkipped: boolean;
-    lastSkipDate: Date | null;
-    skipCount: number;
+    isInFailureSequence: boolean;
+    firstFailureDate: Date | null;
+    failureCount: number;
 } {
-    const skipHistory =
-        meta.history?.filter((h) => h.type === 'SKIP') || [];
-    const skipCount = skipHistory.length;
-    const lastSkip = skipHistory.sort(
-        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-    )[0];
+    if (!meta.history || meta.history.length === 0) {
+        return {
+            isInFailureSequence: false,
+            firstFailureDate: null,
+            failureCount: 0,
+        };
+    }
+
+    // Find the index of the most recent PROCESSED record
+    let lastProcessedIndex = -1;
+    for (let i = meta.history.length - 1; i >= 0; i--) {
+        if (meta.history[i].type === 'PROCESSED') {
+            lastProcessedIndex = i;
+            break;
+        }
+    }
+
+    // Get all FAILED records after the last PROCESSED (or from start if none)
+    const failureStartIndex = lastProcessedIndex + 1;
+    const failedRecords = meta.history
+        .slice(failureStartIndex)
+        .filter((h): h is FailedRecord => h.type === 'FAILED');
+
+    if (failedRecords.length === 0) {
+        return {
+            isInFailureSequence: false,
+            firstFailureDate: null,
+            failureCount: 0,
+        };
+    }
+
+    // Get the first failure in the current sequence
+    const firstFailure = failedRecords[0];
 
     return {
-        isSkipped: meta.skip === true,
-        lastSkipDate: lastSkip ? new Date(lastSkip.date) : null,
-        skipCount,
+        isInFailureSequence: true,
+        firstFailureDate: new Date(firstFailure.date),
+        failureCount: failedRecords.length,
     };
 }
 
 /**
- * Checks if a skipped version should be retried today based on exponential backoff
- * Retry intervals: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512... days
- * Versions with skip:true but no history are treated as first retry (eligible immediately)
+ * Checks if a version in a failure sequence should be retried based on exponential backoff
+ * Retry intervals from first failure: 1, 2, 4, 8, 16... days
+ * Once the wait period is reached, the version stays eligible until it succeeds
  */
 function shouldRetrySkip(meta: MetaData): boolean {
     const skipInfo = getSkipInfo(meta);
-    if (!skipInfo.isSkipped) return false;
-    
-    // If skip:true but no history, treat as first day eligible for retry
-    if (!skipInfo.lastSkipDate) return true;
+    if (!skipInfo.isInFailureSequence) return false;
+    if (!skipInfo.firstFailureDate) return true; // First failure, eligible immediately
 
-    const daysSinceSkip =
-        (Date.now() - skipInfo.lastSkipDate.getTime()) / 86400000;
-    const retryInterval = Math.pow(2, skipInfo.skipCount - 1);
+    const daysSinceFirstFailure =
+        (Date.now() - skipInfo.firstFailureDate.getTime()) / 86400000;
+    const retryInterval = Math.pow(2, skipInfo.failureCount - 1);
 
-    // Is today a retry day?
-    const daysSinceLastRetry = daysSinceSkip % retryInterval;
-    return daysSinceLastRetry < 1; // Within 24 hours of the retry day
+    // Eligible if we've waited long enough since the first failure
+    return daysSinceFirstFailure >= retryInterval;
 }
 
 /**
- * Calculates priority for skipped versions
- * Base 1000, minus skip count (older skips = higher priority)
+ * Calculates priority for versions in failure sequences
+ * Base 1000, minus failure count (older failures = higher priority)
  */
 function getSkipPriority(meta: MetaData): number {
     const skipInfo = getSkipInfo(meta);
-    // Priority 1000 - skipCount (1 failure = 999, 5 failures = 995, etc.)
-    return 1000 - skipInfo.skipCount;
+    // Priority 1000 - failureCount (1 failure = 999, 5 failures = 995, etc.)
+    return 1000 - skipInfo.failureCount;
 }
 
 /**
@@ -320,17 +358,18 @@ function assignGroupPriorities(
     }
 
     // Assign fallback priority (100 - pendingCount) to any unassigned versions
-    // For skipped versions that are due for retry, use skip-based priority (1000 - skipCount)
+    // For versions in failure sequences that are due for retry, use failure-based priority (1000 - failureCount)
     for (const version of sorted) {
         if (!result.has(version.plan.version)) {
             let priority: number;
+            const skipInfo = getSkipInfo(version.meta);
             
-            if (version.meta.skip) {
-                // Skipped versions get priority based on skip count
+            if (skipInfo.isInFailureSequence) {
+                // Versions in failure sequences get priority based on failure count
                 priority = getSkipPriority(version.meta);
                 debug &&
                     console.log(
-                        `  Skipped version: ${version.plan.version} = priority ${priority} (skip-based)`
+                        `  Version in failure sequence: ${version.plan.version} = priority ${priority} (failure-based)`
                     );
             } else {
                 const pendingCount = version.plan.catalogs.length;
@@ -379,10 +418,11 @@ readJSONFile<
 
             if (!meta) continue;
 
-            // Handle skipped versions - check if they should be retried today
-            if (meta.skip) {
+            // Handle versions in failure sequences - check if they should be retried
+            const skipInfo = getSkipInfo(meta);
+            if (skipInfo.isInFailureSequence) {
                 if (shouldRetrySkip(meta)) {
-                    debug && console.log(`Including skipped version ${meta.name} - retry due today`);
+                    debug && console.log(`Including version ${meta.name} in failure sequence - retry due`);
                     // Continue processing but will get special priority later
                 } else {
                     debug && console.log(`Skipping ${meta.name} - not due for retry yet`);
@@ -398,15 +438,16 @@ readJSONFile<
             const pendingCatalogs: CatalogWorkItem[] = [];
 
             for (const current of currentCatalogs) {
-                const metaEntry = meta.catalog.find(
-                    (m) => m.name === current.name
+                // Find the most recent PROCESSED record for this catalog
+                const processedRecords = meta.history.filter(
+                    (h): h is ProcessedRecord => h.type === 'PROCESSED' && h.catalog === current.name
                 );
+                const latestProcessed = processedRecords.length > 0
+                    ? processedRecords.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())[0]
+                    : null;
 
-                // If not in meta, or hash changed, or failed -> pending
-                const needsRun =
-                    !metaEntry ||
-                    metaEntry.hash !== current.hash ||
-                    metaEntry.failed !== undefined;
+                // If no PROCESSED record exists, or hash changed -> pending
+                const needsRun = !latestProcessed || latestProcessed.hash !== current.hash;
 
                 if (needsRun) {
                     pendingCatalogs.push(current);
@@ -509,8 +550,8 @@ readJSONFile<
         const top5 = withPending.slice(0, 5);
         const finalPriorities = top5.map((item) => item.version.plan.version);
         
-        // Check if all selected versions are skipped (retry mode)
-        const allSkipped = top5.every((item) => item.version.meta.skip);
+        // Check if all selected versions are in failure sequences (retry mode)
+        const allSkipped = top5.every((item) => getSkipInfo(item.version.meta).isInFailureSequence);
 
         debug && console.log('\n=== Final Priority List (Top 5) ===');
         debug &&

@@ -1,38 +1,6 @@
 {
 	"name": "4.4.27",
 	"version": "4.4.27",
-	"catalog": [
-		{
-			"name": "logical",
-			"hash": "124e2ae3eb5570c1fc1864ae9c0253f061691604180557ab0b4351f5002d8bca",
-			"completed": "2026-02-13T11:05:19.483Z",
-			"resultChecksum": "101485ad3cbc0016d1b02298f807407628b45fb6b3e807ee3fb95a37cfecf08e"
-		},
-		{
-			"name": "evaluation",
-			"hash": "67b6bb601e84b95b9701692fbd39a5fb7e75a8c5a6e5f62090a39288b1285d0f",
-			"completed": "2026-02-13T11:05:19.515Z",
-			"resultChecksum": "f2c8deed2d198c000663bfe72cad7000cf25825a3b8cb8c896b54ee88d0b7e97"
-		},
-		{
-			"name": "element",
-			"hash": "4818a5ac4caad9cca3c40d06c8093bc2305b1adcbbfe5ed94101d159731039a2",
-			"completed": "2026-02-13T11:05:19.682Z",
-			"resultChecksum": "9f30ad69b2db4cb8abd81e32f88cefa55ccae41de92587779db56aa817339152"
-		},
-		{
-			"name": "comparison",
-			"hash": "e5aeef8db811ce1736c8a23d47311d12a783ff6828080b02b5263b51c641d961",
-			"completed": "2026-02-13T11:05:19.809Z",
-			"resultChecksum": "75eb885c5915ecb84927e10a8a6efce1b39c03e4cd98353202112d1f08cb2fc5"
-		},
-		{
-			"name": "array",
-			"hash": "1852a3b4c653a2fe0b8eb90abc5aeff334dca724243fd24f1819cd05a7b2b1e5",
-			"completed": "2026-02-13T11:05:19.948Z",
-			"resultChecksum": "d3b1f26769a6be2b24b60fd7cf2b6bb31d2c9fbf32e8387cea985144e854c9c2"
-		}
-	],
 	"releases": [
 		{
 			"name": "4.4.27",
@@ -49,26 +17,51 @@
 	],
 	"history": [
 		{
-			"type": "INITIAL",
+			"type": "DISCOVERED",
 			"date": "2026-02-13T07:34:18.172Z",
-			"actions": [
-				{
-					"type": "ADDED",
-					"version": "4.4.27",
-					"name": "4.4.27",
-					"digest": "sha256:5e97d22fb95e976d54f1913997dea61a14da6c865d2d5b8c4ad942404cd5dd68"
-				},
-				{
-					"type": "ADDED",
-					"version": "4.4.27",
-					"name": "4.4.27-rc0",
-					"digest": "sha256:1ce37ce11ceb814376b3b40d3fe55bd67a1c37dc778671b8b8989d0ceb046310"
-				}
-			]
+			"name": "4.4.27",
+			"digest": "sha256:5e97d22fb95e976d54f1913997dea61a14da6c865d2d5b8c4ad942404cd5dd68"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "4.4.27-rc0",
+			"digest": "sha256:1ce37ce11ceb814376b3b40d3fe55bd67a1c37dc778671b8b8989d0ceb046310"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-13T11:05:19.483Z",
+			"catalog": "logical",
+			"hash": "124e2ae3eb5570c1fc1864ae9c0253f061691604180557ab0b4351f5002d8bca",
+			"resultChecksum": "101485ad3cbc0016d1b02298f807407628b45fb6b3e807ee3fb95a37cfecf08e"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-13T11:05:19.515Z",
+			"catalog": "evaluation",
+			"hash": "67b6bb601e84b95b9701692fbd39a5fb7e75a8c5a6e5f62090a39288b1285d0f",
+			"resultChecksum": "f2c8deed2d198c000663bfe72cad7000cf25825a3b8cb8c896b54ee88d0b7e97"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-13T11:05:19.682Z",
+			"catalog": "element",
+			"hash": "4818a5ac4caad9cca3c40d06c8093bc2305b1adcbbfe5ed94101d159731039a2",
+			"resultChecksum": "9f30ad69b2db4cb8abd81e32f88cefa55ccae41de92587779db56aa817339152"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-13T11:05:19.809Z",
+			"catalog": "comparison",
+			"hash": "e5aeef8db811ce1736c8a23d47311d12a783ff6828080b02b5263b51c641d961",
+			"resultChecksum": "75eb885c5915ecb84927e10a8a6efce1b39c03e4cd98353202112d1f08cb2fc5"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-13T11:05:19.948Z",
+			"catalog": "array",
+			"hash": "1852a3b4c653a2fe0b8eb90abc5aeff334dca724243fd24f1819cd05a7b2b1e5",
+			"resultChecksum": "d3b1f26769a6be2b24b60fd7cf2b6bb31d2c9fbf32e8387cea985144e854c9c2"
 		}
-	],
-	"updated": "2026-02-13T07:34:18.172Z",
-	"resultChecksum": "3623cb0ca360221feb08b0f778de81fd97760e368712dd7426a2c768afbe8d79",
-	"completedCount": 5,
-	"totalCount": 5
+	]
 }

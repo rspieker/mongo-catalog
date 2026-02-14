@@ -1,38 +1,6 @@
 {
 	"name": "3.4.0",
 	"version": "3.4.0",
-	"catalog": [
-		{
-			"name": "logical",
-			"hash": "124e2ae3eb5570c1fc1864ae9c0253f061691604180557ab0b4351f5002d8bca",
-			"completed": "2026-02-14T02:46:53.336Z",
-			"resultChecksum": "67ac154f2a7a44f555ce87cf85d67815d85a0d0c38d2ac52df6378bc29245473"
-		},
-		{
-			"name": "evaluation",
-			"hash": "67b6bb601e84b95b9701692fbd39a5fb7e75a8c5a6e5f62090a39288b1285d0f",
-			"completed": "2026-02-14T02:46:53.355Z",
-			"resultChecksum": "db2e2fd7e018866effef34f258b6ddca470e9997964e4a57e5b1e9134a1f97ac"
-		},
-		{
-			"name": "element",
-			"hash": "4818a5ac4caad9cca3c40d06c8093bc2305b1adcbbfe5ed94101d159731039a2",
-			"completed": "2026-02-14T02:46:53.510Z",
-			"resultChecksum": "1deaf38775f6323a963b700eddc574b141ef22c2153c47feefd6e5a1afa0eb23"
-		},
-		{
-			"name": "comparison",
-			"hash": "e5aeef8db811ce1736c8a23d47311d12a783ff6828080b02b5263b51c641d961",
-			"completed": "2026-02-14T02:46:53.632Z",
-			"resultChecksum": "6b8fb0800fcb0c95dd6e017908b8b43c4d6b74be1e1319f7b872463fd5feed9a"
-		},
-		{
-			"name": "array",
-			"hash": "1852a3b4c653a2fe0b8eb90abc5aeff334dca724243fd24f1819cd05a7b2b1e5",
-			"completed": "2026-02-14T02:46:53.763Z",
-			"resultChecksum": "b89567248f1ae7c2397e1fee367e5e00cd03d999f2a43dc0dda0f37cbe9ccb1c"
-		}
-	],
 	"releases": [
 		{
 			"name": "3.4.0",
@@ -67,44 +35,69 @@
 	],
 	"history": [
 		{
-			"type": "INITIAL",
+			"type": "DISCOVERED",
 			"date": "2026-02-13T07:34:18.172Z",
-			"actions": [
-				{
-					"type": "ADDED",
-					"version": "3.4.0",
-					"name": "3.4.0",
-					"digest": "sha256:ca01b33b859af5f405aa3ea5030a15246bb970058ac71295eae258527abc8819"
-				},
-				{
-					"type": "ADDED",
-					"version": "3.4.0",
-					"name": "3.4.0-rc5",
-					"digest": "sha256:f655b2a8124ced139e15e0ea876b3b30a701bf3b2891f8a8a94adc363192d31b"
-				},
-				{
-					"type": "ADDED",
-					"version": "3.4.0",
-					"name": "3.4.0-rc4",
-					"digest": "sha256:d35edb8695a24f056108006b06c8831eb72d81f3e5db03e9f798621354b1183c"
-				},
-				{
-					"type": "ADDED",
-					"version": "3.4.0",
-					"name": "3.4.0-rc3",
-					"digest": "sha256:d14a8bab0b3c7946a69e7e0230e09f73e608567fe2e5c0e8f30a1b022ff1f882"
-				},
-				{
-					"type": "ADDED",
-					"version": "3.4.0",
-					"name": "3.4.0-rc2",
-					"digest": "sha256:fa47137ea200a85d9cd098bf869470236952dec1427252a56149fd13eed62af5"
-				}
-			]
+			"name": "3.4.0",
+			"digest": "sha256:ca01b33b859af5f405aa3ea5030a15246bb970058ac71295eae258527abc8819"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "3.4.0-rc5",
+			"digest": "sha256:f655b2a8124ced139e15e0ea876b3b30a701bf3b2891f8a8a94adc363192d31b"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "3.4.0-rc4",
+			"digest": "sha256:d35edb8695a24f056108006b06c8831eb72d81f3e5db03e9f798621354b1183c"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "3.4.0-rc3",
+			"digest": "sha256:d14a8bab0b3c7946a69e7e0230e09f73e608567fe2e5c0e8f30a1b022ff1f882"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "3.4.0-rc2",
+			"digest": "sha256:fa47137ea200a85d9cd098bf869470236952dec1427252a56149fd13eed62af5"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-14T02:46:53.336Z",
+			"catalog": "logical",
+			"hash": "124e2ae3eb5570c1fc1864ae9c0253f061691604180557ab0b4351f5002d8bca",
+			"resultChecksum": "67ac154f2a7a44f555ce87cf85d67815d85a0d0c38d2ac52df6378bc29245473"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-14T02:46:53.355Z",
+			"catalog": "evaluation",
+			"hash": "67b6bb601e84b95b9701692fbd39a5fb7e75a8c5a6e5f62090a39288b1285d0f",
+			"resultChecksum": "db2e2fd7e018866effef34f258b6ddca470e9997964e4a57e5b1e9134a1f97ac"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-14T02:46:53.510Z",
+			"catalog": "element",
+			"hash": "4818a5ac4caad9cca3c40d06c8093bc2305b1adcbbfe5ed94101d159731039a2",
+			"resultChecksum": "1deaf38775f6323a963b700eddc574b141ef22c2153c47feefd6e5a1afa0eb23"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-14T02:46:53.632Z",
+			"catalog": "comparison",
+			"hash": "e5aeef8db811ce1736c8a23d47311d12a783ff6828080b02b5263b51c641d961",
+			"resultChecksum": "6b8fb0800fcb0c95dd6e017908b8b43c4d6b74be1e1319f7b872463fd5feed9a"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-14T02:46:53.763Z",
+			"catalog": "array",
+			"hash": "1852a3b4c653a2fe0b8eb90abc5aeff334dca724243fd24f1819cd05a7b2b1e5",
+			"resultChecksum": "b89567248f1ae7c2397e1fee367e5e00cd03d999f2a43dc0dda0f37cbe9ccb1c"
 		}
-	],
-	"updated": "2026-02-13T07:34:18.172Z",
-	"resultChecksum": "dafdea7448d78a2f08c18f69154d9528bb300bd4495926fd144f0e6814da9218",
-	"completedCount": 5,
-	"totalCount": 5
+	]
 }

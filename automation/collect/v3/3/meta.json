@@ -1,38 +1,6 @@
 {
 	"name": "3",
 	"version": "3",
-	"catalog": [
-		{
-			"name": "logical",
-			"hash": "124e2ae3eb5570c1fc1864ae9c0253f061691604180557ab0b4351f5002d8bca",
-			"completed": "2026-02-14T10:01:18.930Z",
-			"resultChecksum": "67ac154f2a7a44f555ce87cf85d67815d85a0d0c38d2ac52df6378bc29245473"
-		},
-		{
-			"name": "evaluation",
-			"hash": "67b6bb601e84b95b9701692fbd39a5fb7e75a8c5a6e5f62090a39288b1285d0f",
-			"completed": "2026-02-14T10:01:18.971Z",
-			"resultChecksum": "43ca826ea26dfd77ab847d8ed3e353788c791881af33908ccc097332c724b7b3"
-		},
-		{
-			"name": "element",
-			"hash": "4818a5ac4caad9cca3c40d06c8093bc2305b1adcbbfe5ed94101d159731039a2",
-			"completed": "2026-02-14T10:01:19.100Z",
-			"resultChecksum": "167fa92426aff16d37f7c55a967ce4ea5a5da125153c12067501d8444d66bacf"
-		},
-		{
-			"name": "comparison",
-			"hash": "e5aeef8db811ce1736c8a23d47311d12a783ff6828080b02b5263b51c641d961",
-			"completed": "2026-02-14T10:01:19.209Z",
-			"resultChecksum": "6b8fb0800fcb0c95dd6e017908b8b43c4d6b74be1e1319f7b872463fd5feed9a"
-		},
-		{
-			"name": "array",
-			"hash": "1852a3b4c653a2fe0b8eb90abc5aeff334dca724243fd24f1819cd05a7b2b1e5",
-			"completed": "2026-02-14T10:01:19.324Z",
-			"resultChecksum": "b89567248f1ae7c2397e1fee367e5e00cd03d999f2a43dc0dda0f37cbe9ccb1c"
-		}
-	],
 	"releases": [
 		{
 			"name": "3",
@@ -43,20 +11,45 @@
 	],
 	"history": [
 		{
-			"type": "INITIAL",
+			"type": "DISCOVERED",
 			"date": "2026-02-13T07:34:18.172Z",
-			"actions": [
-				{
-					"type": "ADDED",
-					"version": "3",
-					"name": "3",
-					"digest": "sha256:146c1fd999a660e697aac40bc6da842b005c7868232eb0b7d8996c8f3545b05d"
-				}
-			]
+			"name": "3",
+			"digest": "sha256:146c1fd999a660e697aac40bc6da842b005c7868232eb0b7d8996c8f3545b05d"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-14T10:01:18.930Z",
+			"catalog": "logical",
+			"hash": "124e2ae3eb5570c1fc1864ae9c0253f061691604180557ab0b4351f5002d8bca",
+			"resultChecksum": "67ac154f2a7a44f555ce87cf85d67815d85a0d0c38d2ac52df6378bc29245473"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-14T10:01:18.971Z",
+			"catalog": "evaluation",
+			"hash": "67b6bb601e84b95b9701692fbd39a5fb7e75a8c5a6e5f62090a39288b1285d0f",
+			"resultChecksum": "43ca826ea26dfd77ab847d8ed3e353788c791881af33908ccc097332c724b7b3"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-14T10:01:19.100Z",
+			"catalog": "element",
+			"hash": "4818a5ac4caad9cca3c40d06c8093bc2305b1adcbbfe5ed94101d159731039a2",
+			"resultChecksum": "167fa92426aff16d37f7c55a967ce4ea5a5da125153c12067501d8444d66bacf"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-14T10:01:19.209Z",
+			"catalog": "comparison",
+			"hash": "e5aeef8db811ce1736c8a23d47311d12a783ff6828080b02b5263b51c641d961",
+			"resultChecksum": "6b8fb0800fcb0c95dd6e017908b8b43c4d6b74be1e1319f7b872463fd5feed9a"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-14T10:01:19.324Z",
+			"catalog": "array",
+			"hash": "1852a3b4c653a2fe0b8eb90abc5aeff334dca724243fd24f1819cd05a7b2b1e5",
+			"resultChecksum": "b89567248f1ae7c2397e1fee367e5e00cd03d999f2a43dc0dda0f37cbe9ccb1c"
 		}
-	],
-	"updated": "2026-02-13T07:34:18.172Z",
-	"resultChecksum": "87694f2df383849bc312d1a047a865b03e1ea33d358e63d8ca3faa00de1800d5",
-	"completedCount": 5,
-	"totalCount": 5
+	]
 }

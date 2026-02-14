@@ -19,30 +19,22 @@ type VersionWorkPlan = {
     updated: string;
 };
 
-type MetaCatalogEntry = {
-    name: string;
+type ProcessedRecord = {
+    type: 'PROCESSED';
+    date: string;
+    catalog: string;
     hash: string;
-    completed?: string;
-    failed?: string;
-    error?: string;
-    resultChecksum?: string;
+    resultChecksum: string;
+};
+
+type FailedRecord = {
+    type: 'FAILED';
+    date: string;
+    reason: string;
 };
 
 type MetaData = {
-    catalog: MetaCatalogEntry[];
-    resultChecksum?: string;
-    completedCount?: number;
-    totalCount?: number;
-    skip?: boolean;
-    history?: Array<{
-        type: string;
-        date: string;
-        actions?: Array<{
-            type: string;
-            reason?: string;
-            date: string;
-        }>;
-    }>;
+    history: Array<ProcessedRecord | FailedRecord>;
 };
 
 type Catalog = {
@@ -131,7 +123,7 @@ Promise.resolve()
             String(version)
         );
 
-        const meta = (await loadMeta(versionDir)) || { catalog: [] };
+        const meta = (await loadMeta(versionDir)) || { history: [] };
         const db = await driver(dsn, version);
         let hasErrors = false;
 
@@ -144,18 +136,12 @@ Promise.resolve()
                 console.error(`✗ ${item.name}: Catalog loading failed`);
                 console.error(`  Error: ${error.message || String(error)}`);
 
-                const entry: MetaCatalogEntry = {
-                    name: item.name,
-                    hash: item.hash,
-                    failed: new Date().toISOString(),
-                    error: `${error.message || String(error)}\n${error.stack || ''}`,
-                };
-                const existing = meta.catalog.find((m) => m.name === item.name);
-                if (existing) {
-                    Object.assign(existing, entry);
-                } else {
-                    meta.catalog.push(entry);
-                }
+                // Add FAILED record to history
+                meta.history.push({
+                    type: 'FAILED',
+                    date: new Date().toISOString(),
+                    reason: `catalog-loading-failed: ${error.message || String(error)}`,
+                });
                 hasErrors = true;
                 continue;
             }
@@ -202,41 +188,27 @@ Promise.resolve()
                 // Calculate checksum for this catalog's results
                 const resultChecksum = hash(result);
 
-                // Add to meta catalog as completed
-                const entry: MetaCatalogEntry = {
-                    name: item.name,
+                // Add PROCESSED record to history
+                meta.history.push({
+                    type: 'PROCESSED',
+                    date: new Date().toISOString(),
+                    catalog: item.name,
                     hash: item.hash,
-                    completed: new Date().toISOString(),
                     resultChecksum,
-                };
-                const existing = meta.catalog.find((m) => m.name === item.name);
-                if (existing) {
-                    delete existing.failed;
-                    delete existing.error;
-                    Object.assign(existing, entry);
-                } else {
-                    meta.catalog.push(entry);
-                }
+                });
 
                 console.log(
                     `✓ ${item.name}: ${documents.length} docs, ${operations.length} queries`
                 );
             } catch (error: any) {
-                // Add to meta catalog as failed
-                const entry: MetaCatalogEntry = {
-                    name: item.name,
-                    hash: item.hash,
-                    failed: new Date().toISOString(),
-                    error: error.message || String(error),
-                };
-                const existing = meta.catalog.find((m) => m.name === item.name);
-                if (existing) {
-                    Object.assign(existing, entry);
-                } else {
-                    meta.catalog.push(entry);
-                }
+                // Add FAILED record to history
+                meta.history.push({
+                    type: 'FAILED',
+                    date: new Date().toISOString(),
+                    reason: error.message || String(error),
+                });
                 hasErrors = true;
-                console.error(`✗ ${item.name}: ${entry.error}`);
+                console.error(`✗ ${item.name}: ${error.message || String(error)}`);
             }
         }
 
@@ -246,28 +218,13 @@ Promise.resolve()
         plan.catalogs = [];
         plan.updated = new Date().toISOString();
 
-        // Calculate checksums and counts for meta
-        const completedCatalogs = meta.catalog.filter(
-            (m) => m.completed && m.resultChecksum
-        );
-        const completedCount = completedCatalogs.length;
-        const totalCount = meta.catalog.length;
-
-        // Calculate combined checksum from sorted catalog:checksum pairs
-        const sortedChecksums = completedCatalogs
-            .map((c) => `${c.name}:${c.resultChecksum}`)
-            .sort();
-        const combinedChecksum =
-            sortedChecksums.length > 0 ? hash(sortedChecksums.join('|')) : '';
-
-        // Update meta with checksum and counts
-        meta.resultChecksum = combinedChecksum;
-        meta.completedCount = completedCount;
-        meta.totalCount = totalCount;
+        // Count results for logging
+        const processedCount = meta.history.filter(h => h.type === 'PROCESSED').length;
+        const failedCount = meta.history.filter(h => h.type === 'FAILED').length;
 
         console.log(`Saving plan with ${plan.catalogs.length} catalogs`);
         console.log(
-            `Saving meta with ${meta.catalog.length} entries (${completedCount} completed)`
+            `Saving meta with ${processedCount} processed, ${failedCount} failed`
         );
 
         await savePlan(versionDir, plan);
@@ -282,13 +239,6 @@ Promise.resolve()
                 'Completed with errors - check meta.json for failed catalogs'
             );
             process.exit(1);
-        }
-
-        // On successful completion, remove the skip flag if it was set
-        if (meta.skip) {
-            console.log(`Removing skip flag from version ${version} after successful completion`);
-            delete meta.skip;
-            await saveMeta(versionDir, meta);
         }
     })
     .catch((error) => {

@@ -1,38 +1,6 @@
 {
 	"name": "8.0.0",
 	"version": "8.0.0",
-	"catalog": [
-		{
-			"name": "logical",
-			"hash": "124e2ae3eb5570c1fc1864ae9c0253f061691604180557ab0b4351f5002d8bca",
-			"completed": "2026-02-13T20:52:14.266Z",
-			"resultChecksum": "e44bafb0e5943f2b25d6cda1d9f81d23d529df664d3954b722c4d1e57987ce17"
-		},
-		{
-			"name": "evaluation",
-			"hash": "67b6bb601e84b95b9701692fbd39a5fb7e75a8c5a6e5f62090a39288b1285d0f",
-			"completed": "2026-02-13T20:52:14.303Z",
-			"resultChecksum": "e679875d0de882c9fb76b2b8d9f9ccde3c0629cb06fde4bd182113878540a788"
-		},
-		{
-			"name": "element",
-			"hash": "4818a5ac4caad9cca3c40d06c8093bc2305b1adcbbfe5ed94101d159731039a2",
-			"completed": "2026-02-13T20:52:14.482Z",
-			"resultChecksum": "9f30ad69b2db4cb8abd81e32f88cefa55ccae41de92587779db56aa817339152"
-		},
-		{
-			"name": "comparison",
-			"hash": "e5aeef8db811ce1736c8a23d47311d12a783ff6828080b02b5263b51c641d961",
-			"completed": "2026-02-13T20:52:14.618Z",
-			"resultChecksum": "75eb885c5915ecb84927e10a8a6efce1b39c03e4cd98353202112d1f08cb2fc5"
-		},
-		{
-			"name": "array",
-			"hash": "1852a3b4c653a2fe0b8eb90abc5aeff334dca724243fd24f1819cd05a7b2b1e5",
-			"completed": "2026-02-13T20:52:14.778Z",
-			"resultChecksum": "426704a3bfdb3d9dd63bc92f39ef1afd426d83e5842fba7f7fc946836f56dc3d"
-		}
-	],
 	"releases": [
 		{
 			"name": "8.0.0",
@@ -127,104 +95,129 @@
 	],
 	"history": [
 		{
-			"type": "INITIAL",
+			"type": "DISCOVERED",
 			"date": "2026-02-13T07:34:18.172Z",
-			"actions": [
-				{
-					"type": "ADDED",
-					"version": "8.0.0",
-					"name": "8.0.0",
-					"digest": "sha256:0c17421487ae4a5cae88e7652a26ef72a8162adbc599a0730805526f5ff5ee83"
-				},
-				{
-					"type": "ADDED",
-					"version": "8.0.0",
-					"name": "8.0.0-rc20",
-					"digest": "sha256:fab2c3c5cd235594e618bc133cc02d0d034890cfa41a6d23176ea780c9fb403e"
-				},
-				{
-					"type": "ADDED",
-					"version": "8.0.0",
-					"name": "8.0.0-rc19",
-					"digest": "sha256:bc4b19105361e50f4f211f42f70927278317c24951b0cf29c566664e9ac1a7b5"
-				},
-				{
-					"type": "ADDED",
-					"version": "8.0.0",
-					"name": "8.0.0-rc18",
-					"digest": "sha256:abefb57bedbb1fbe6e0d435ceefd5bb38f77b4cd9120b622fbb8d8c213575cce"
-				},
-				{
-					"type": "ADDED",
-					"version": "8.0.0",
-					"name": "8.0.0-rc17",
-					"digest": "sha256:2281ced15f2ee476a5b300b10d927be344afdfd17984ecfc272f9d3b9c3b6ca1"
-				},
-				{
-					"type": "ADDED",
-					"version": "8.0.0",
-					"name": "8.0.0-rc16",
-					"digest": "sha256:e8f2bf090f46cf7cc1740c40c300346899e92056845941b5f1f9d1fe000d7cb1"
-				},
-				{
-					"type": "ADDED",
-					"version": "8.0.0",
-					"name": "8.0.0-rc15",
-					"digest": "sha256:e327d8ac96b3149203b8c10efcf05d79348f0d5830645c236e0e1d4baff39790"
-				},
-				{
-					"type": "ADDED",
-					"version": "8.0.0",
-					"name": "8.0.0-rc13",
-					"digest": "sha256:eaa70988add2d6a5ffa138cbe91c2e745c1d56057c6932aace648083e1d72a4a"
-				},
-				{
-					"type": "ADDED",
-					"version": "8.0.0",
-					"name": "8.0.0-rc11",
-					"digest": "sha256:ca3700eb5a003a8a81e12316ad78cee572833dc96f63a67ba9b2586c53d0c183"
-				},
-				{
-					"type": "ADDED",
-					"version": "8.0.0",
-					"name": "8.0.0-rc9",
-					"digest": "sha256:d98669ed939e65afecd84a85bb9c1a4b88a013074ff9009d21efba528092388e"
-				},
-				{
-					"type": "ADDED",
-					"version": "8.0.0",
-					"name": "8.0.0-rc8",
-					"digest": "sha256:b5e4691d8550c1cbe419e9032f840441527b9a30c82d75cbcdbca7d6e8f6b4c7"
-				},
-				{
-					"type": "ADDED",
-					"version": "8.0.0",
-					"name": "8.0.0-rc7",
-					"digest": "sha256:c1a532c0836d78f27b30f91b74e014bbb22032edc7f1352936723963052760c7"
-				},
-				{
-					"type": "ADDED",
-					"version": "8.0.0",
-					"name": "8.0.0-rc6",
-					"digest": "sha256:8d997764b7154095e4758194a27447fd2f292f3f47059b94d01658d19fd032c0"
-				},
-				{
-					"type": "ADDED",
-					"version": "8.0.0",
-					"name": "8.0.0-rc5",
-					"digest": "sha256:58f3dc6bf358ef3e20f36e68e3871613920a0e5d40e2416ed63c5e91d6a81676"
-				},
-				{
-					"type": "ADDED",
-					"version": "8.0.0",
-					"name": "8.0.0-rc4",
-					"digest": "sha256:be7b615dcf07a1a8e136d371ac1e6d1a7ff467d81a9a4790be196e2984fce536"
-				}
-			]
+			"name": "8.0.0",
+			"digest": "sha256:0c17421487ae4a5cae88e7652a26ef72a8162adbc599a0730805526f5ff5ee83"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "8.0.0-rc20",
+			"digest": "sha256:fab2c3c5cd235594e618bc133cc02d0d034890cfa41a6d23176ea780c9fb403e"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "8.0.0-rc19",
+			"digest": "sha256:bc4b19105361e50f4f211f42f70927278317c24951b0cf29c566664e9ac1a7b5"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "8.0.0-rc18",
+			"digest": "sha256:abefb57bedbb1fbe6e0d435ceefd5bb38f77b4cd9120b622fbb8d8c213575cce"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "8.0.0-rc17",
+			"digest": "sha256:2281ced15f2ee476a5b300b10d927be344afdfd17984ecfc272f9d3b9c3b6ca1"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "8.0.0-rc16",
+			"digest": "sha256:e8f2bf090f46cf7cc1740c40c300346899e92056845941b5f1f9d1fe000d7cb1"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "8.0.0-rc15",
+			"digest": "sha256:e327d8ac96b3149203b8c10efcf05d79348f0d5830645c236e0e1d4baff39790"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "8.0.0-rc13",
+			"digest": "sha256:eaa70988add2d6a5ffa138cbe91c2e745c1d56057c6932aace648083e1d72a4a"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "8.0.0-rc11",
+			"digest": "sha256:ca3700eb5a003a8a81e12316ad78cee572833dc96f63a67ba9b2586c53d0c183"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "8.0.0-rc9",
+			"digest": "sha256:d98669ed939e65afecd84a85bb9c1a4b88a013074ff9009d21efba528092388e"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "8.0.0-rc8",
+			"digest": "sha256:b5e4691d8550c1cbe419e9032f840441527b9a30c82d75cbcdbca7d6e8f6b4c7"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "8.0.0-rc7",
+			"digest": "sha256:c1a532c0836d78f27b30f91b74e014bbb22032edc7f1352936723963052760c7"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "8.0.0-rc6",
+			"digest": "sha256:8d997764b7154095e4758194a27447fd2f292f3f47059b94d01658d19fd032c0"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "8.0.0-rc5",
+			"digest": "sha256:58f3dc6bf358ef3e20f36e68e3871613920a0e5d40e2416ed63c5e91d6a81676"
+		},
+		{
+			"type": "DISCOVERED",
+			"date": "2026-02-13T07:34:18.172Z",
+			"name": "8.0.0-rc4",
+			"digest": "sha256:be7b615dcf07a1a8e136d371ac1e6d1a7ff467d81a9a4790be196e2984fce536"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-13T20:52:14.266Z",
+			"catalog": "logical",
+			"hash": "124e2ae3eb5570c1fc1864ae9c0253f061691604180557ab0b4351f5002d8bca",
+			"resultChecksum": "e44bafb0e5943f2b25d6cda1d9f81d23d529df664d3954b722c4d1e57987ce17"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-13T20:52:14.303Z",
+			"catalog": "evaluation",
+			"hash": "67b6bb601e84b95b9701692fbd39a5fb7e75a8c5a6e5f62090a39288b1285d0f",
+			"resultChecksum": "e679875d0de882c9fb76b2b8d9f9ccde3c0629cb06fde4bd182113878540a788"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-13T20:52:14.482Z",
+			"catalog": "element",
+			"hash": "4818a5ac4caad9cca3c40d06c8093bc2305b1adcbbfe5ed94101d159731039a2",
+			"resultChecksum": "9f30ad69b2db4cb8abd81e32f88cefa55ccae41de92587779db56aa817339152"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-13T20:52:14.618Z",
+			"catalog": "comparison",
+			"hash": "e5aeef8db811ce1736c8a23d47311d12a783ff6828080b02b5263b51c641d961",
+			"resultChecksum": "75eb885c5915ecb84927e10a8a6efce1b39c03e4cd98353202112d1f08cb2fc5"
+		},
+		{
+			"type": "PROCESSED",
+			"date": "2026-02-13T20:52:14.778Z",
+			"catalog": "array",
+			"hash": "1852a3b4c653a2fe0b8eb90abc5aeff334dca724243fd24f1819cd05a7b2b1e5",
+			"resultChecksum": "426704a3bfdb3d9dd63bc92f39ef1afd426d83e5842fba7f7fc946836f56dc3d"
 		}
-	],
-	"updated": "2026-02-13T07:34:18.172Z",
-	"resultChecksum": "253e8d0aae72d14135be25d4fc11d6944a0b7072b0233b4c7a2fdc80088b52d0",
-	"completedCount": 5,
-	"totalCount": 5
+	]
 }
