@@ -153,10 +153,14 @@ function getSkipInfo(meta: MetaData): {
 /**
  * Checks if a skipped version should be retried today based on exponential backoff
  * Retry intervals: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512... days
+ * Versions with skip:true but no history are treated as first retry (eligible immediately)
  */
 function shouldRetrySkip(meta: MetaData): boolean {
     const skipInfo = getSkipInfo(meta);
-    if (!skipInfo.isSkipped || !skipInfo.lastSkipDate) return false;
+    if (!skipInfo.isSkipped) return false;
+    
+    // If skip:true but no history, treat as first day eligible for retry
+    if (!skipInfo.lastSkipDate) return true;
 
     const daysSinceSkip =
         (Date.now() - skipInfo.lastSkipDate.getTime()) / 86400000;
