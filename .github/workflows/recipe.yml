@@ -160,7 +160,7 @@ jobs:
                   VERSION="${{ matrix.version }}"
                   MAJOR=$(echo "$VERSION" | cut -d. -f1)
                   META_FILE="./automation/collect/v${MAJOR}/${VERSION}/meta.json"
-                  
+
                   # Determine failure reason based on which step failed
                   FAILURE_REASON="unknown"
                   if [ "${{ steps.docker.outcome }}" == "failure" ]; then
@@ -172,9 +172,9 @@ jobs:
                   elif [ "${{ steps.collect.outcome }}" == "failure" ]; then
                     FAILURE_REASON="catalog-execution-failed"
                   fi
-                  
+
                   echo "Marking $VERSION as skipped due to: $FAILURE_REASON"
-                  
+
                   # Update meta.json with skip flag and history entry
                   NOW=$(date -u +"%Y-%m-%dT%H:%M:%S.%3NZ")
                   jq --arg reason "$FAILURE_REASON" --arg date "$NOW" '
@@ -189,10 +189,11 @@ jobs:
                       }]
                     }]
                   ' "$META_FILE" > "$META_FILE.tmp" && mv "$META_FILE.tmp" "$META_FILE"
-                  
+
                   # Stage the modified meta.json for commit
                   mkdir -p "/tmp/mongo-catalog-changes/${VERSION}"
                   cp "$META_FILE" "/tmp/mongo-catalog-changes/${VERSION}/meta.json"
+                  exit 0
 
             - name: Cleanup MongoDB
               if: always()
