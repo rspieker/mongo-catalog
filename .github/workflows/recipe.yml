@@ -191,19 +191,18 @@ jobs:
                   
                   # Update meta.json with skip flag and history entry
                   NOW=$(date -u +"%Y-%m-%dT%H:%M:%S.%3NZ")
-                  jq --arg reason "$FAILURE_REASON" --arg date "$NOW" \
-                    '. + {
-                      "skip": true,
-                      "history": (.history // []) + [{
+                  jq --arg reason "$FAILURE_REASON" --arg date "$NOW" '
+                    .skip = true |
+                    .history = (.history // []) + [{
+                      "type": "SKIP",
+                      "date": $date,
+                      "actions": [{
                         "type": "SKIP",
-                        "date": $date,
-                        "actions": [{
-                          "type": "SKIP",
-                          "reason": $reason,
-                          "date": $date
-                        }]
+                        "reason": $reason,
+                        "date": $date
                       }]
-                    }' "$META_FILE" > "$META_FILE.tmp" && mv "$META_FILE.tmp" "$META_FILE"
+                    }]
+                  ' "$META_FILE" > "$META_FILE.tmp" && mv "$META_FILE.tmp" "$META_FILE"
                   
                   # Stage the modified meta.json for commit
                   mkdir -p "/tmp/mongo-catalog-changes/${VERSION}"
