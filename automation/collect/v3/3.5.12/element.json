@@ -1,0 +1,958 @@
+[
+	{
+		"operation": {
+			"name": {
+				"$exists": true
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"age": {
+				"$exists": true
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"middleName": {
+				"$exists": false
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"profile.premium": {
+				"$exists": true
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"profile.nonexistent": {
+				"$exists": false
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"age": {
+				"$exists": true,
+				"$eq": null
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"middleName": {
+				"$exists": false
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"name": {
+				"$type": "string"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"age": {
+				"$type": "number"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"active": {
+				"$type": "bool"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"tags": {
+				"$type": "array"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"profile": {
+				"$type": "object"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"lastLogin": {
+				"$type": "date"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"createdAt": {
+				"$type": "date"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"name": {
+				"$type": 2
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"age": {
+				"$type": 16
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"active": {
+				"$type": 8
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"tags": {
+				"$type": 4
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"profile": {
+				"$type": 3
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"lastLogin": {
+				"$type": 9
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"_id": {
+				"$type": 7
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"age": {
+				"$type": [
+					"number",
+					"null"
+				]
+			}
+		},
+		"error": {
+			"message": "type must be represented as a number or a string",
+			"code": 14,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"status": {
+				"$type": [
+					"string",
+					"null"
+				]
+			}
+		},
+		"error": {
+			"message": "type must be represented as a number or a string",
+			"code": 14,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"$and": [
+				{
+					"name": {
+						"$exists": true,
+						"$type": "string"
+					}
+				},
+				{
+					"age": {
+						"$exists": true,
+						"$type": "number"
+					}
+				},
+				{
+					"middleName": {
+						"$exists": false
+					}
+				}
+			]
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"$or": [
+				{
+					"profile.premium": {
+						"$type": "bool",
+						"$eq": true
+					}
+				},
+				{
+					"profile.rating": {
+						"$type": "number",
+						"$gte": 4.5
+					}
+				}
+			]
+		},
+		"documents": [
+			2,
+			3,
+			4,
+			5,
+			6,
+			8,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"profile.balance": {
+				"$type": "number"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"stats.loginCount": {
+				"$type": "number"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"stats.failedLogins": {
+				"$type": "number"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"nested.deep.value": {
+				"$type": "string"
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"tags.0": {
+				"$type": "string"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			4,
+			5,
+			6,
+			7,
+			8,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"scores.0.score": {
+				"$type": "number"
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"scores.0.subject": {
+				"$type": "string"
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"name": {
+				"$type": "invalid_type"
+			}
+		},
+		"error": {
+			"message": "Unknown type name alias: invalid_type",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"age": {
+				"$type": 999
+			}
+		},
+		"error": {
+			"message": "Invalid numerical type code: 999",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"profile.nonexistent": {
+				"$type": "string"
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"name": {
+				"$exists": "invalid"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"age": {
+				"$type": null
+			}
+		},
+		"error": {
+			"message": "type must be represented as a number or a string",
+			"code": 14,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"tags": {
+				"$type": "string"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			4,
+			5,
+			6,
+			7,
+			8,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"_id": {
+				"$type": "objectId"
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"_id": {
+				"$type": 7
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"age": {
+				"$type": "long"
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"profile.rating": {
+				"$type": "int"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			13,
+			14
+		]
+	},
+	{
+		"operation": {
+			"profile.balance": {
+				"$type": "decimal"
+			}
+		},
+		"documents": []
+	}
+]
