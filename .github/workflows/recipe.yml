@@ -212,6 +212,7 @@ jobs:
     commit-results:
         runs-on: ubuntu-latest
         needs: collect-versions
+        if: always()
 
         steps:
             - uses: actions/checkout@v4
