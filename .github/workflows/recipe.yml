@@ -63,7 +63,11 @@ jobs:
 
             - name: Determine Workload
               id: capture
-              run: echo "captured=$(npm run --silent update:workload)" >> "$GITHUB_OUTPUT"
+              run: |
+                  WORKLOAD_OUTPUT=$(npm run --silent update:workload)
+                  # Extract just the versions array from the JSON output
+                  VERSIONS=$(echo "$WORKLOAD_OUTPUT" | jq -c '.versions')
+                  echo "captured=$VERSIONS" >> "$GITHUB_OUTPUT"
 
             - name: Upload updated state
               uses: actions/upload-artifact@v4
@@ -76,8 +80,10 @@ jobs:
     collect-versions:
         runs-on: ubuntu-latest
         needs: workload
+        continue-on-error: true
 
         strategy:
+            fail-fast: false
             matrix:
                 version: ${{ fromJSON(needs.workload.outputs.work )}}
 
@@ -93,6 +99,9 @@ jobs:
                   name: mongo-state
                   path: ./automation/
 
+            - name: Create staging directory
+              run: mkdir -p /tmp/mongo-catalog-changes
+
             - name: Node.js
               uses: actions/setup-node@v4
               with:
@@ -102,13 +111,26 @@ jobs:
             - name: Get Docker tag
               id: docker
               run: |
+                  # we could've just used continue-on-error, but then we
+                  # couldn't justify to laugh at the joke they really are
+                  trap 'echo "failure_message=docker-tag-resolution-failed" >> $GITHUB_OUTPUT; exit 0' ERR
                   VERSION="${{ matrix.version }}"
                   MAJOR=$(echo "$VERSION" | cut -d. -f1)
                   DOCKER_TAG=$(jq -r '.name' "./automation/collect/v${MAJOR}/${VERSION}/plan.json")
                   echo "tag=$DOCKER_TAG" >> "$GITHUB_OUTPUT"
 
             - name: Start MongoDB
+              id: mongodb
               run: |
+                  # Propagate previous failure if present
+                  if [ "${{ steps.docker.outputs.failure_message }}" != "" ]; then
+                    echo "failure_message=${{ steps.docker.outputs.failure_message }}" >> $GITHUB_OUTPUT
+                    exit 0
+                  fi
+                  
+                  # we could've just used continue-on-error, but then we
+                  # couldn't justify to laugh at the joke they really are
+                  trap 'echo "failure_message=mongodb-start-failed" >> $GITHUB_OUTPUT; exit 0' ERR
                   VERSION="${{ matrix.version }}"
                   DOCKER_TAG="${{ steps.docker.outputs.tag }}"
 
@@ -140,9 +162,76 @@ jobs:
                     exit 1
                   fi
 
-            - run: npm install
+            - name: Install dependencies
+              id: install
+              run: |
+                  # Propagate previous failure if present
+                  if [ "${{ steps.mongodb.outputs.failure_message }}" != "" ]; then
+                    echo "failure_message=${{ steps.mongodb.outputs.failure_message }}" >> $GITHUB_OUTPUT
+                    exit 0
+                  fi
+                  
+                  # we could've just used continue-on-error, but then we
+                  # couldn't justify to laugh at the joke they really are
+                  trap 'echo "failure_message=npm-install-failed" >> $GITHUB_OUTPUT; exit 0' ERR
+                  npm install
 
-            - run: npm run update:mongo-collect
+            - name: Run collection
+              id: collect
+              run: |
+                  # Propagate previous failure if present
+                  if [ "${{ steps.install.outputs.failure_message }}" != "" ]; then
+                    echo "failure_message=${{ steps.install.outputs.failure_message }}" >> $GITHUB_OUTPUT
+                    exit 0
+                  fi
+                  
+                  # we could've just used continue-on-error, but then we
+                  # couldn't justify to laugh at the joke they really are
+                  trap 'echo "failure_message=catalog-execution-failed" >> $GITHUB_OUTPUT; exit 0' ERR
+                  npm run update:mongo-collect
+
+            - name: Gate
+              if: always()
+              run: |
+                  # Check all failure_message outputs
+                  FAILED=""
+
+                  if [ "${{ steps.docker.outputs.failure_message }}" != "" ]; then
+                    FAILED="${{ steps.docker.outputs.failure_message }}"
+                  elif [ "${{ steps.mongodb.outputs.failure_message }}" != "" ]; then
+                    FAILED="${{ steps.mongodb.outputs.failure_message }}"
+                  elif [ "${{ steps.install.outputs.failure_message }}" != "" ]; then
+                    FAILED="${{ steps.install.outputs.failure_message }}"
+                  elif [ "${{ steps.collect.outputs.failure_message }}" != "" ]; then
+                    FAILED="${{ steps.collect.outputs.failure_message }}"
+                  fi
+
+                  if [ -n "$FAILED" ]; then
+                    VERSION="${{ matrix.version }}"
+                    MAJOR=$(echo "$VERSION" | cut -d. -f1)
+                    META_FILE="./automation/collect/v${MAJOR}/${VERSION}/meta.json"
+
+                    echo "Marking $VERSION as skipped due to: $FAILED"
+
+                    NOW=$(date -u +"%Y-%m-%dT%H:%M:%S.%3NZ")
+                    jq --arg reason "$FAILED" --arg date "$NOW" '
+                      .skip = true |
+                      .history = (.history // []) + [{
+                        "type": "SKIP",
+                        "date": $date,
+                        "actions": [{
+                          "type": "SKIP",
+                          "reason": $reason,
+                          "date": $date
+                        }]
+                      }]
+                    ' "$META_FILE" > "$META_FILE.tmp" && mv "$META_FILE.tmp" "$META_FILE"
+
+                    mkdir -p "/tmp/mongo-catalog-changes/${VERSION}"
+                    cp "$META_FILE" "/tmp/mongo-catalog-changes/${VERSION}/meta.json"
+                  fi
+
+                  exit 0
 
             - name: Cleanup MongoDB
               if: always()
@@ -152,6 +241,7 @@ jobs:
                   docker rm mongodb-$VERSION 2>/dev/null || true
 
             - name: Upload results
+              if: always()
               uses: actions/upload-artifact@v4
               with:
                   name: results-${{ matrix.version }}
@@ -161,6 +251,7 @@ jobs:
     commit-results:
         runs-on: ubuntu-latest
         needs: collect-versions
+        if: always()
 
         steps:
             - uses: actions/checkout@v4

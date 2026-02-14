@@ -37,6 +37,15 @@ type MetaData = {
     completedCount?: number;
     totalCount?: number;
     skip?: boolean;
+    history?: Array<{
+        type: string;
+        date: string;
+        actions?: Array<{
+            type: string;
+            reason?: string;
+            date: string;
+        }>;
+    }>;
 };
 
 type VersionWithMeta = {
@@ -117,6 +126,59 @@ function versionsMatch(meta1: MetaData, meta2: MetaData): boolean {
     }
 
     return true;
+}
+
+/**
+ * Gets skip information from meta history
+ */
+function getSkipInfo(meta: MetaData): {
+    isSkipped: boolean;
+    lastSkipDate: Date | null;
+    skipCount: number;
+} {
+    const skipHistory =
+        meta.history?.filter((h) => h.type === 'SKIP') || [];
+    const skipCount = skipHistory.length;
+    const lastSkip = skipHistory.sort(
+        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    )[0];
+
+    return {
+        isSkipped: meta.skip === true,
+        lastSkipDate: lastSkip ? new Date(lastSkip.date) : null,
+        skipCount,
+    };
+}
+
+/**
+ * Checks if a skipped version should be retried today based on exponential backoff
+ * Retry intervals: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512... days
+ * Versions with skip:true but no history are treated as first retry (eligible immediately)
+ */
+function shouldRetrySkip(meta: MetaData): boolean {
+    const skipInfo = getSkipInfo(meta);
+    if (!skipInfo.isSkipped) return false;
+    
+    // If skip:true but no history, treat as first day eligible for retry
+    if (!skipInfo.lastSkipDate) return true;
+
+    const daysSinceSkip =
+        (Date.now() - skipInfo.lastSkipDate.getTime()) / 86400000;
+    const retryInterval = Math.pow(2, skipInfo.skipCount - 1);
+
+    // Is today a retry day?
+    const daysSinceLastRetry = daysSinceSkip % retryInterval;
+    return daysSinceLastRetry < 1; // Within 24 hours of the retry day
+}
+
+/**
+ * Calculates priority for skipped versions
+ * Base 1000, minus skip count (older skips = higher priority)
+ */
+function getSkipPriority(meta: MetaData): number {
+    const skipInfo = getSkipInfo(meta);
+    // Priority 1000 - skipCount (1 failure = 999, 5 failures = 995, etc.)
+    return 1000 - skipInfo.skipCount;
 }
 
 /**
@@ -258,20 +320,31 @@ function assignGroupPriorities(
     }
 
     // Assign fallback priority (100 - pendingCount) to any unassigned versions
+    // For skipped versions that are due for retry, use skip-based priority (1000 - skipCount)
     for (const version of sorted) {
         if (!result.has(version.plan.version)) {
-            const pendingCount = version.plan.catalogs.length;
-            const fallbackPriority = 100 - pendingCount;
+            let priority: number;
+            
+            if (version.meta.skip) {
+                // Skipped versions get priority based on skip count
+                priority = getSkipPriority(version.meta);
+                debug &&
+                    console.log(
+                        `  Skipped version: ${version.plan.version} = priority ${priority} (skip-based)`
+                    );
+            } else {
+                const pendingCount = version.plan.catalogs.length;
+                priority = 100 - pendingCount;
+                debug &&
+                    console.log(
+                        `  Unassigned: ${version.plan.version} = priority ${priority} (100 - ${pendingCount} pending)`
+                    );
+            }
 
             result.set(version.plan.version, {
                 version,
-                priority: fallbackPriority,
+                priority,
             });
-
-            debug &&
-                console.log(
-                    `  Unassigned: ${version.plan.version} = priority ${fallbackPriority} (100 - ${pendingCount} pending)`
-                );
         }
     }
 
@@ -306,10 +379,15 @@ readJSONFile<
 
             if (!meta) continue;
 
-            // Skip versions marked for skipping (e.g., problematic Docker images)
+            // Handle skipped versions - check if they should be retried today
             if (meta.skip) {
-                debug && console.log(`Skipping ${meta.name} - marked as skip in meta.json`);
-                continue;
+                if (shouldRetrySkip(meta)) {
+                    debug && console.log(`Including skipped version ${meta.name} - retry due today`);
+                    // Continue processing but will get special priority later
+                } else {
+                    debug && console.log(`Skipping ${meta.name} - not due for retry yet`);
+                    continue;
+                }
             }
 
             const version = meta.name;
@@ -430,6 +508,9 @@ readJSONFile<
         // Take top 5
         const top5 = withPending.slice(0, 5);
         const finalPriorities = top5.map((item) => item.version.plan.version);
+        
+        // Check if all selected versions are skipped (retry mode)
+        const allSkipped = top5.every((item) => item.version.meta.skip);
 
         debug && console.log('\n=== Final Priority List (Top 5) ===');
         debug &&
@@ -439,6 +520,11 @@ readJSONFile<
                 );
             });
 
-        console.log(JSON.stringify(finalPriorities));
+        // Output JSON with mode indicator
+        const output = {
+            versions: finalPriorities,
+            mode: allSkipped ? 'retry-skipped' : 'normal'
+        };
+        console.log(JSON.stringify(output));
     })
     .catch((error) => debug && console.error(error));
