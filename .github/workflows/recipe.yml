@@ -153,21 +153,6 @@ jobs:
               id: collect
               run: npm run update:mongo-collect
 
-            - name: Cleanup MongoDB
-              if: always()
-              run: |
-                  VERSION="${{ matrix.version }}"
-                  docker stop mongodb-$VERSION 2>/dev/null || true
-                  docker rm mongodb-$VERSION 2>/dev/null || true
-
-            - name: Upload results
-              if: always()
-              uses: actions/upload-artifact@v4
-              with:
-                  name: results-${{ matrix.version }}
-                  path: /tmp/mongo-catalog-changes
-                  retention-days: 1
-
             - name: Mark version as skipped on failure
               if: failure()
               run: |
@@ -207,6 +192,21 @@ jobs:
                   # Stage the modified meta.json for commit
                   mkdir -p "/tmp/mongo-catalog-changes/${VERSION}"
                   cp "$META_FILE" "/tmp/mongo-catalog-changes/${VERSION}/meta.json"
+
+            - name: Cleanup MongoDB
+              if: always()
+              run: |
+                  VERSION="${{ matrix.version }}"
+                  docker stop mongodb-$VERSION 2>/dev/null || true
+                  docker rm mongodb-$VERSION 2>/dev/null || true
+
+            - name: Upload results
+              if: always()
+              uses: actions/upload-artifact@v4
+              with:
+                  name: results-${{ matrix.version }}
+                  path: /tmp/mongo-catalog-changes
+                  retention-days: 1
 
     commit-results:
         runs-on: ubuntu-latest
