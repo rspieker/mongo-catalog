@@ -82,6 +82,7 @@ jobs:
         needs: workload
 
         strategy:
+            fail-fast: false
             matrix:
                 version: ${{ fromJSON(needs.workload.outputs.work )}}
 
