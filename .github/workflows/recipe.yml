@@ -121,8 +121,13 @@ jobs:
 
             - name: Start MongoDB
               id: mongodb
-              if: steps.docker.outputs.failure_message == ''
               run: |
+                  # Propagate previous failure if present
+                  if [ "${{ steps.docker.outputs.failure_message }}" != "" ]; then
+                    echo "failure_message=${{ steps.docker.outputs.failure_message }}" >> $GITHUB_OUTPUT
+                    exit 0
+                  fi
+                  
                   # we could've just used continue-on-error, but then we
                   # couldn't justify to laugh at the joke they really are
                   trap 'echo "failure_message=mongodb-start-failed" >> $GITHUB_OUTPUT; exit 0' ERR
@@ -159,8 +164,13 @@ jobs:
 
             - name: Install dependencies
               id: install
-              if: steps.mongodb.outputs.failure_message == ''
               run: |
+                  # Propagate previous failure if present
+                  if [ "${{ steps.mongodb.outputs.failure_message }}" != "" ]; then
+                    echo "failure_message=${{ steps.mongodb.outputs.failure_message }}" >> $GITHUB_OUTPUT
+                    exit 0
+                  fi
+                  
                   # we could've just used continue-on-error, but then we
                   # couldn't justify to laugh at the joke they really are
                   trap 'echo "failure_message=npm-install-failed" >> $GITHUB_OUTPUT; exit 0' ERR
@@ -168,8 +178,13 @@ jobs:
 
             - name: Run collection
               id: collect
-              if: steps.install.outputs.failure_message == ''
               run: |
+                  # Propagate previous failure if present
+                  if [ "${{ steps.install.outputs.failure_message }}" != "" ]; then
+                    echo "failure_message=${{ steps.install.outputs.failure_message }}" >> $GITHUB_OUTPUT
+                    exit 0
+                  fi
+                  
                   # we could've just used continue-on-error, but then we
                   # couldn't justify to laugh at the joke they really are
                   trap 'echo "failure_message=catalog-execution-failed" >> $GITHUB_OUTPUT; exit 0' ERR
@@ -180,7 +195,7 @@ jobs:
               run: |
                   # Check all failure_message outputs
                   FAILED=""
-                  
+
                   if [ "${{ steps.docker.outputs.failure_message }}" != "" ]; then
                     FAILED="${{ steps.docker.outputs.failure_message }}"
                   elif [ "${{ steps.mongodb.outputs.failure_message }}" != "" ]; then
@@ -190,14 +205,14 @@ jobs:
                   elif [ "${{ steps.collect.outputs.failure_message }}" != "" ]; then
                     FAILED="${{ steps.collect.outputs.failure_message }}"
                   fi
-                  
+
                   if [ -n "$FAILED" ]; then
                     VERSION="${{ matrix.version }}"
                     MAJOR=$(echo "$VERSION" | cut -d. -f1)
                     META_FILE="./automation/collect/v${MAJOR}/${VERSION}/meta.json"
-                    
+
                     echo "Marking $VERSION as skipped due to: $FAILED"
-                    
+
                     NOW=$(date -u +"%Y-%m-%dT%H:%M:%S.%3NZ")
                     jq --arg reason "$FAILED" --arg date "$NOW" '
                       .skip = true |
@@ -211,11 +226,11 @@ jobs:
                         }]
                       }]
                     ' "$META_FILE" > "$META_FILE.tmp" && mv "$META_FILE.tmp" "$META_FILE"
-                    
+
                     mkdir -p "/tmp/mongo-catalog-changes/${VERSION}"
                     cp "$META_FILE" "/tmp/mongo-catalog-changes/${VERSION}/meta.json"
                   fi
-                  
+
                   exit 0
 
             - name: Cleanup MongoDB
