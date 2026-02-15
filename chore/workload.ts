@@ -541,7 +541,7 @@ readJSONFile<
         );
 
         if (withPending.length === 0) {
-            debug && console.log(JSON.stringify([]));
+            console.log(JSON.stringify({ versions: [], mode: 'normal' }));
             return;
         }
 
