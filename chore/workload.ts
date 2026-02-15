@@ -541,7 +541,7 @@ readJSONFile<
         );
 
         if (withPending.length === 0) {
-            console.log(JSON.stringify({ versions: [], mode: 'normal' }));
+            console.log(JSON.stringify([]));
             return;
         }
 
@@ -574,11 +574,6 @@ readJSONFile<
                 );
             });
 
-        // Output JSON with mode indicator
-        const output = {
-            versions: finalPriorities,
-            mode: allSkipped ? 'retry-skipped' : 'normal'
-        };
-        console.log(JSON.stringify(output));
+        console.log(JSON.stringify(finalPriorities));
     })
     .catch((error) => debug && console.error(error));
