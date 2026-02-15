@@ -19,22 +19,23 @@ type VersionWorkPlan = {
     updated: string;
 };
 
-type ProcessedRecord = {
-    type: 'PROCESSED';
+type CollectionCompletedRecord = {
+    type: 'collection-completed';
     date: string;
     catalog: string;
     hash: string;
     resultChecksum: string;
 };
 
-type FailedRecord = {
-    type: 'FAILED';
+type CollectionHaltedRecord = {
+    type: 'collection-halted';
     date: string;
+    catalog: string;
     reason: string;
 };
 
 type MetaData = {
-    history: Array<ProcessedRecord | FailedRecord>;
+    history: Array<CollectionCompletedRecord | CollectionHaltedRecord>;
 };
 
 type Catalog = {
@@ -136,10 +137,11 @@ Promise.resolve()
                 console.error(`✗ ${item.name}: Catalog loading failed`);
                 console.error(`  Error: ${error.message || String(error)}`);
 
-                // Add FAILED record to history
+                // Add collection-halted record to history
                 meta.history.push({
-                    type: 'FAILED',
+                    type: 'collection-halted',
                     date: new Date().toISOString(),
+                    catalog: item.name,
                     reason: `catalog-loading-failed: ${error.message || String(error)}`,
                 });
                 hasErrors = true;
@@ -188,9 +190,9 @@ Promise.resolve()
                 // Calculate checksum for this catalog's results
                 const resultChecksum = hash(result);
 
-                // Add PROCESSED record to history
+                // Add collection-completed record to history
                 meta.history.push({
-                    type: 'PROCESSED',
+                    type: 'collection-completed',
                     date: new Date().toISOString(),
                     catalog: item.name,
                     hash: item.hash,
@@ -201,10 +203,11 @@ Promise.resolve()
                     `✓ ${item.name}: ${documents.length} docs, ${operations.length} queries`
                 );
             } catch (error: any) {
-                // Add FAILED record to history
+                // Add collection-halted record to history
                 meta.history.push({
-                    type: 'FAILED',
+                    type: 'collection-halted',
                     date: new Date().toISOString(),
+                    catalog: item.name,
                     reason: error.message || String(error),
                 });
                 hasErrors = true;
@@ -219,8 +222,8 @@ Promise.resolve()
         plan.updated = new Date().toISOString();
 
         // Count results for logging
-        const processedCount = meta.history.filter(h => h.type === 'PROCESSED').length;
-        const failedCount = meta.history.filter(h => h.type === 'FAILED').length;
+        const processedCount = meta.history.filter(h => h.type === 'collection-completed').length;
+        const failedCount = meta.history.filter(h => h.type === 'collection-halted').length;
 
         console.log(`Saving plan with ${plan.catalogs.length} catalogs`);
         console.log(

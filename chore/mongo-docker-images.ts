@@ -154,19 +154,19 @@ getTags<DockerTag>('mongo')
                             return false
                         })
 
-                    // Add RETRACTED records for removed releases
+                    // Add version-retracted records for removed releases
                     removed.forEach((rel: any) => {
                         meta.history.push({
-                            type: 'RETRACTED',
+                            type: 'version-retracted',
                             date: now.toISOString(),
                             name: rel.name,
                         })
                     })
 
-                    // Add DISCOVERED records for added releases
+                    // Add version-discovered records for added releases
                     added.forEach((rel: any) => {
                         meta.history.push({
-                            type: 'DISCOVERED',
+                            type: 'version-discovered',
                             date: now.toISOString(),
                             name: rel.name,
                             digest: rel.digest,
