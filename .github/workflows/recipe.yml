@@ -287,6 +287,15 @@ jobs:
                     fi
                   done
 
+            - name: Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 20.x
+                  cache: 'npm'
+
+            - name: install
+              run: npm install
+
             - name: Unify Results
               run: npm run update:unify
 
