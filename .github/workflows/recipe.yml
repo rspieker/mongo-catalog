@@ -287,6 +287,9 @@ jobs:
                     fi
                   done
 
+            - name: Unify Results
+              run: npm run update:unify
+
             - name: Commit results
               run: |
                   git config user.name "GitHub Actions Recipe Bot"
