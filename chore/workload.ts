@@ -144,7 +144,9 @@ function versionsMatch(meta1: MetaData, meta2: MetaData): boolean {
 
 /**
  * Gets skip information from meta history
- * Finds the current failure sequence (consecutive FAILED records since last PROCESSED or start)
+ * If the last record is collection-halted, walks back to find the first consecutive
+ * collection-halted (any other state cancels the walk back). Uses the first
+ * collection-halted date for exponential backoff.
  */
 function getSkipInfo(meta: MetaData): {
     isInFailureSequence: boolean;
@@ -159,23 +161,9 @@ function getSkipInfo(meta: MetaData): {
         };
     }
 
-    // Find the index of the most recent PROCESSED record
-    let lastProcessedIndex = -1;
-    for (let i = meta.history.length - 1; i >= 0; i--) {
-        if (meta.history[i].type === 'collection-completed') {
-            lastProcessedIndex = i;
-            break;
-        }
-    }
+    const lastRecord = meta.history[meta.history.length - 1];
 
-    // Get all FAILED records after the last PROCESSED (or from start if none)
-    // Also check for legacy 'FAILED' type for backwards compatibility
-    const failureStartIndex = lastProcessedIndex + 1;
-    const failedRecords = meta.history
-        .slice(failureStartIndex)
-        .filter(h => h.type === 'collection-halted' || (h as any).type === 'FAILED');
-
-    if (failedRecords.length === 0) {
+    if (lastRecord.type !== 'collection-halted') {
         return {
             isInFailureSequence: false,
             firstFailureDate: null,
@@ -183,13 +171,22 @@ function getSkipInfo(meta: MetaData): {
         };
     }
 
-    // Get the first failure in the current sequence
-    const firstFailure = failedRecords[0];
+    let firstHaltedIndex = meta.history.length - 1;
+    for (let i = meta.history.length - 2; i >= 0; i--) {
+        if (meta.history[i].type === 'collection-halted') {
+            firstHaltedIndex = i;
+        } else {
+            break;
+        }
+    }
+
+    const failureCount = meta.history.length - firstHaltedIndex;
+    const firstFailure = meta.history[firstHaltedIndex];
 
     return {
         isInFailureSequence: true,
         firstFailureDate: new Date(firstFailure.date),
-        failureCount: failedRecords.length,
+        failureCount,
     };
 }
 
@@ -341,16 +338,30 @@ function assignGroupPriorities(
 
     if (outputsMatch) {
         // All versions in between are identical - skip them (priority 1000)
+        // UNLESS they are in a failure sequence (those should retry)
         debug &&
             console.log(
                 `  Latest and earliest match - marking ${sorted.length - 2} middle versions as skipped`
             );
 
         for (let i = 1; i < sorted.length - 1; i++) {
-            result.set(sorted[i].plan.version, {
-                version: sorted[i],
-                priority: 1000,
-            });
+            const skipInfo = getSkipInfo(sorted[i].meta);
+
+            if (skipInfo.isInFailureSequence) {
+                result.set(sorted[i].plan.version, {
+                    version: sorted[i],
+                    priority: getSkipPriority(sorted[i].meta),
+                });
+                debug &&
+                    console.log(
+                        `  ${sorted[i].plan.version} in failure sequence - priority ${getSkipPriority(sorted[i].meta)}`
+                    );
+            } else {
+                result.set(sorted[i].plan.version, {
+                    version: sorted[i],
+                    priority: 1000,
+                });
+            }
         }
     } else {
         // Need bisection - start recursive middle assignment
