@@ -2,6 +2,7 @@ import { resolve } from 'path'
 import { type DockerTag, getTags } from '../source/domain/docker'
 import { Version } from '../source/domain/version'
 import { readJSONFile, writeJSONFile } from '../source/domain/json'
+import { readdir, rm } from 'fs/promises'
 
 type BasicDockerTag = {
     name: DockerTag['name']
@@ -189,6 +190,47 @@ getTags<DockerTag>('mongo')
             Promise.resolve()
         )
     )
-    .then(() => {
+    .then(async () => {
+        // Clean up duplicate version directories
+        // (shorter versions that have same digest as longer versions)
+        console.log('Cleaning up duplicate version directories...')
+        const collectDir = resolve(automation, 'collect')
+        
+        for (let major = 2; major <= 8; major++) {
+            const majorDir = resolve(collectDir, `v${major}`)
+            try {
+                const versions = await readdir(majorDir)
+                const versionMeta: { name: string; digests: Set<string> }[] = []
+                
+                for (const v of versions) {
+                    const metaFile = resolve(majorDir, v, 'meta.json')
+                    try {
+                        const meta = await readJSONFile<any>(metaFile)
+                        const digests = new Set<string>(meta.releases?.map((r: any) => r.digest) || [])
+                        versionMeta.push({ name: v, digests })
+                    } catch {
+                        // Skip if meta.json doesn't exist
+                    }
+                }
+                
+                // Find duplicates: shorter version whose digest matches a longer version's digest
+                for (const short of versionMeta) {
+                    for (const long of versionMeta) {
+                        if (short.name.length < long.name.length) {
+                            // Check if they share any digest
+                            for (const digest of short.digests) {
+                                if (long.digests.has(digest)) {
+                                    console.log(`Removing duplicate: ${short.name} (same as ${long.name})`)
+                                    await rm(resolve(majorDir, short.name), { recursive: true, force: true })
+                                    break
+                                }
+                            }
+                        }
+                    }
+                }
+            } catch {
+                // Major version directory doesn't exist, skip
+            }
+        }
         console.log('DONE')
     })
