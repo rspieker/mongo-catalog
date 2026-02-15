@@ -11,45 +11,116 @@
 	],
 	"history": [
 		{
-			"type": "DISCOVERED",
+			"type": "version-discovered",
+			"date": "2024-10-16T08:04:10.236Z",
+			"name": "3.2.13",
+			"digest": "sha256:58dd3a2c2a2472cc3f21ecebca2b1df618ba7d8050d4f60015dab8fe5569be0e"
+		},
+		{
+			"type": "catalog-discovered",
+			"date": "2024-10-16T08:04:10.236Z",
+			"catalog": "$ne",
+			"hash": "85a2f2f86f1b54124c457846ea09b2f48173720e6807eb71ba3ffea103ed9612"
+		},
+		{
+			"type": "catalog-discovered",
+			"date": "2024-10-16T08:04:10.236Z",
+			"catalog": "$gt",
+			"hash": "57d6552953942dd9391639887327a2f8948f7b2ebb704cc1326a1f7de654c4fe"
+		},
+		{
+			"type": "catalog-discovered",
+			"date": "2024-10-16T08:04:10.236Z",
+			"catalog": "$eq",
+			"hash": "adc202e9c50e8ad8e6feddf3e4bbd22944e0d20af9f34201f41b15c721ebfdf5"
+		},
+		{
+			"type": "catalog-discovered",
+			"date": "2024-10-16T08:04:10.236Z",
+			"catalog": "$eq-implicit",
+			"hash": "8c6ffdbd2619b6b333d53cfd8cf3d0e763791213f535db4abf2791c2158b49a0"
+		},
+		{
+			"type": "catalog-discovered",
+			"date": "2024-10-16T08:04:10.236Z",
+			"catalog": "comparison",
+			"hash": "f771df5d8541c2629402f56d75a23c6c715bcc7809c9177387cb3558a0560e81"
+		},
+		{
+			"type": "version-discovered",
 			"date": "2026-02-13T07:34:18.172Z",
 			"name": "3.2.13",
 			"digest": "sha256:58dd3a2c2a2472cc3f21ecebca2b1df618ba7d8050d4f60015dab8fe5569be0e"
 		},
 		{
-			"type": "PROCESSED",
+			"type": "collection-completed",
 			"date": "2026-02-14T07:39:00.882Z",
 			"catalog": "logical",
-			"hash": "124e2ae3eb5570c1fc1864ae9c0253f061691604180557ab0b4351f5002d8bca",
-			"resultChecksum": "436659af28c9abdf1499e4c00d1a5c5e3bbfa81189d4c7d54ef314f75a0173b9"
+			"resultChecksum": "436659af28c9abdf1499e4c00d1a5c5e3bbfa81189d4c7d54ef314f75a0173b9",
+			"hash": "124e2ae3eb5570c1fc1864ae9c0253f061691604180557ab0b4351f5002d8bca"
 		},
 		{
-			"type": "PROCESSED",
+			"type": "collection-completed",
 			"date": "2026-02-14T07:39:00.901Z",
 			"catalog": "evaluation",
-			"hash": "67b6bb601e84b95b9701692fbd39a5fb7e75a8c5a6e5f62090a39288b1285d0f",
-			"resultChecksum": "db2e2fd7e018866effef34f258b6ddca470e9997964e4a57e5b1e9134a1f97ac"
+			"resultChecksum": "db2e2fd7e018866effef34f258b6ddca470e9997964e4a57e5b1e9134a1f97ac",
+			"hash": "67b6bb601e84b95b9701692fbd39a5fb7e75a8c5a6e5f62090a39288b1285d0f"
 		},
 		{
-			"type": "PROCESSED",
+			"type": "collection-completed",
 			"date": "2026-02-14T07:39:01.068Z",
 			"catalog": "element",
-			"hash": "4818a5ac4caad9cca3c40d06c8093bc2305b1adcbbfe5ed94101d159731039a2",
-			"resultChecksum": "cde68b11208b53f6ed9ac567081c00ff3395aa53d0310a6b9f0753559c23b7c6"
+			"resultChecksum": "cde68b11208b53f6ed9ac567081c00ff3395aa53d0310a6b9f0753559c23b7c6",
+			"hash": "4818a5ac4caad9cca3c40d06c8093bc2305b1adcbbfe5ed94101d159731039a2"
 		},
 		{
-			"type": "PROCESSED",
+			"type": "collection-completed",
 			"date": "2026-02-14T07:39:01.200Z",
 			"catalog": "comparison",
-			"hash": "e5aeef8db811ce1736c8a23d47311d12a783ff6828080b02b5263b51c641d961",
-			"resultChecksum": "6b8fb0800fcb0c95dd6e017908b8b43c4d6b74be1e1319f7b872463fd5feed9a"
+			"resultChecksum": "6b8fb0800fcb0c95dd6e017908b8b43c4d6b74be1e1319f7b872463fd5feed9a",
+			"hash": "e5aeef8db811ce1736c8a23d47311d12a783ff6828080b02b5263b51c641d961"
 		},
 		{
-			"type": "PROCESSED",
+			"type": "collection-completed",
 			"date": "2026-02-14T07:39:01.337Z",
 			"catalog": "array",
-			"hash": "1852a3b4c653a2fe0b8eb90abc5aeff334dca724243fd24f1819cd05a7b2b1e5",
-			"resultChecksum": "3fa4011d431de774f1b7548d8b033cfb3fe5e1e623c46a5c651143c8dffaef5f"
+			"resultChecksum": "3fa4011d431de774f1b7548d8b033cfb3fe5e1e623c46a5c651143c8dffaef5f",
+			"hash": "1852a3b4c653a2fe0b8eb90abc5aeff334dca724243fd24f1819cd05a7b2b1e5"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-02-14T07:39:17.000Z",
+			"catalog": "logical",
+			"resultChecksum": "7922e5409d990e97317028f9196c62acfa61614dadd896af87236a59d30f966e",
+			"hash": "124e2ae3eb5570c1fc1864ae9c0253f061691604180557ab0b4351f5002d8bca"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-02-14T07:39:17.000Z",
+			"catalog": "evaluation",
+			"resultChecksum": "b0d696e47f8c5aa6db902ef67087a16797a7c4114dff63245cc6ae2f957d010f",
+			"hash": "67b6bb601e84b95b9701692fbd39a5fb7e75a8c5a6e5f62090a39288b1285d0f"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-02-14T07:39:17.000Z",
+			"catalog": "element",
+			"resultChecksum": "fb5b8814f1e06227aed90e886d0920eb8f3ebf16c14025d61afd12d933021e9d",
+			"hash": "4818a5ac4caad9cca3c40d06c8093bc2305b1adcbbfe5ed94101d159731039a2"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-02-14T07:39:17.000Z",
+			"catalog": "comparison",
+			"resultChecksum": "aca794fde765ca1c0b34d688c6273b5735f50bc85c79afb2e2e03e78c609c0cd",
+			"hash": "e5aeef8db811ce1736c8a23d47311d12a783ff6828080b02b5263b51c641d961"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-02-14T07:39:17.000Z",
+			"catalog": "array",
+			"resultChecksum": "670151ea80a0dadeb0ecfe2724e3fa96f8c3f631f1db894bb6b9f7ba122e01ba",
+			"hash": "1852a3b4c653a2fe0b8eb90abc5aeff334dca724243fd24f1819cd05a7b2b1e5"
 		}
 	]
 }

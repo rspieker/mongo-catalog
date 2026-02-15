@@ -19,34 +19,35 @@ type VersionWorkPlan = {
     updated: string;
 };
 
-type ProcessedRecord = {
-    type: 'PROCESSED';
+type CollectionCompletedRecord = {
+    type: 'collection-completed';
     date: string;
     catalog: string;
     hash: string;
     resultChecksum: string;
 };
 
-type FailedRecord = {
-    type: 'FAILED';
+type CollectionHaltedRecord = {
+    type: 'collection-halted';
     date: string;
+    catalog: string;
     reason: string;
 };
 
-type DiscoveredRecord = {
-    type: 'DISCOVERED';
+type VersionDiscoveredRecord = {
+    type: 'version-discovered';
     date: string;
     name: string;
     digest: string;
 };
 
-type RetractedRecord = {
-    type: 'RETRACTED';
+type VersionRetractedRecord = {
+    type: 'version-retracted';
     date: string;
     name: string;
 };
 
-type HistoryRecord = ProcessedRecord | FailedRecord | DiscoveredRecord | RetractedRecord;
+type HistoryRecord = CollectionCompletedRecord | CollectionHaltedRecord | VersionDiscoveredRecord | VersionRetractedRecord;
 
 type MetaData = {
     name: string;
@@ -104,7 +105,7 @@ async function loadMeta(metaFile: string): Promise<MetaData | null> {
 
 function getVersionChecksum(meta: MetaData): string | undefined {
     // Calculate combined checksum from all PROCESSED records
-    const processed = meta.history.filter((h): h is ProcessedRecord => h.type === 'PROCESSED');
+    const processed = meta.history.filter((h): h is CollectionCompletedRecord => h.type === 'collection-completed');
     if (processed.length === 0) return undefined;
     
     // Sort by catalog name for consistent ordering
@@ -126,8 +127,8 @@ function versionsMatch(meta1: MetaData, meta2: MetaData): boolean {
     }
 
     // Otherwise, compare catalog by catalog using PROCESSED records
-    const processed1 = meta1.history.filter((h): h is ProcessedRecord => h.type === 'PROCESSED');
-    const processed2 = meta2.history.filter((h): h is ProcessedRecord => h.type === 'PROCESSED');
+    const processed1 = meta1.history.filter((h): h is CollectionCompletedRecord => h.type === 'collection-completed');
+    const processed2 = meta2.history.filter((h): h is CollectionCompletedRecord => h.type === 'collection-completed');
 
     if (processed1.length !== processed2.length) return false;
 
@@ -161,17 +162,18 @@ function getSkipInfo(meta: MetaData): {
     // Find the index of the most recent PROCESSED record
     let lastProcessedIndex = -1;
     for (let i = meta.history.length - 1; i >= 0; i--) {
-        if (meta.history[i].type === 'PROCESSED') {
+        if (meta.history[i].type === 'collection-completed') {
             lastProcessedIndex = i;
             break;
         }
     }
 
     // Get all FAILED records after the last PROCESSED (or from start if none)
+    // Also check for legacy 'FAILED' type for backwards compatibility
     const failureStartIndex = lastProcessedIndex + 1;
     const failedRecords = meta.history
         .slice(failureStartIndex)
-        .filter((h): h is FailedRecord => h.type === 'FAILED');
+        .filter(h => h.type === 'collection-halted' || (h as any).type === 'FAILED');
 
     if (failedRecords.length === 0) {
         return {
@@ -440,7 +442,7 @@ readJSONFile<
             for (const current of currentCatalogs) {
                 // Find the most recent PROCESSED record for this catalog
                 const processedRecords = meta.history.filter(
-                    (h): h is ProcessedRecord => h.type === 'PROCESSED' && h.catalog === current.name
+                    (h): h is CollectionCompletedRecord => h.type === 'collection-completed' && h.catalog === current.name
                 );
                 const latestProcessed = processedRecords.length > 0
                     ? processedRecords.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())[0]
