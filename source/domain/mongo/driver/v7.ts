@@ -32,7 +32,7 @@ export async function createDriverV7(dsn: DSN): Promise<CatalogDriver> {
         
         async initCollection(options: {
             name: string;
-            indices?: Array<{ [key: string]: 1 | -1 } | string>;
+            indices?: Array<{ [key: string]: 1 | -1 | 'text' } | string>;
             documents?: GenericDocument[];
         }): Promise<void> {
             // Drop existing

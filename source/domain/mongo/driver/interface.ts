@@ -27,7 +27,7 @@ export interface CatalogDriver {
     // Collection management (per catalog task)
     initCollection(options: {
         name: string;
-        indices?: Array<{ [key: string]: 1 | -1 } | string>;
+        indices?: Array<{ [key: string]: 1 | -1 | 'text' } | string>;
         documents?: GenericDocument[];
     }): Promise<void>;
     

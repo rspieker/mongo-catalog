@@ -41,7 +41,7 @@ export async function createDriverV2(dsn: DSN): Promise<CatalogDriver> {
         
         async initCollection(options: {
             name: string;
-            indices?: Array<{ [key: string]: 1 | -1 } | string>;
+            indices?: Array<{ [key: string]: 1 | -1 | 'text' } | string>;
             documents?: GenericDocument[];
         }): Promise<void> {
             // Drop existing (v2 doesn't have dropCollection on db, need to use collection.drop)
