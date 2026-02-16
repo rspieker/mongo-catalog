@@ -1,79 +1,112 @@
 import {
     compile,
     picker,
+    number,
 } from '../../../source/domain/generator/compiler'
 import { Catalog, MongoDocument } from '../../catalog'
 
 // Generate documents with geospatial data
+// Using coordinates around a central point with variation
 const document = compile({
     name: picker('Location A', 'Location B', 'Location C', 'Point X', 'Point Y'),
-    // GeoJSON Point
-    point: () => ({
-        type: 'Point' as const,
-        coordinates: [5.896975994110107, 51.995886985217844],
-    }),
-    // GeoJSON LineString
-    line: () => ({
-        type: 'LineString' as const,
-        coordinates: [
-            [5.8908069133758545, 52.000709060198815],
-            [5.892062187194824, 51.9990973559411],
-            [5.895602703094482, 52.00068263928538],
-        ],
-    }),
-    // GeoJSON Polygon
-    polygon: () => ({
-        type: 'Polygon' as const,
-        coordinates: [
-            [
-                [5.8908069133758545, 52.000709060198815],
-                [5.892062187194824, 51.9990973559411],
-                [5.895602703094482, 52.00068263928538],
-                [5.8908069133758545, 52.000709060198815],
-            ],
-        ],
-    }),
-    // Legacy coordinates (for 2d index)
-    legacyPoint: () => [5.896975994110107, 51.995886985217844],
+    // GeoJSON Point with varied coordinates
+    point: (seed: string) => {
+        const baseLng = 5.89
+        const baseLat = 51.99
+        const lng = number(baseLng, baseLng + 0.02, 6)(seed + ':lng')
+        const lat = number(baseLat, baseLat + 0.02, 6)(seed + ':lat')
+        return {
+            type: 'Point' as const,
+            coordinates: [lng, lat],
+        }
+    },
+    // GeoJSON LineString with varied coordinates
+    line: (seed: string) => {
+        const baseLng = 5.89
+        const baseLat = 51.99
+        const coords = [
+            [number(baseLng, baseLng + 0.02, 6)(seed + ':l1'), number(baseLat, baseLat + 0.02, 6)(seed + ':l1')],
+            [number(baseLng, baseLng + 0.02, 6)(seed + ':l2'), number(baseLat, baseLat + 0.02, 6)(seed + ':l2')],
+            [number(baseLng, baseLng + 0.02, 6)(seed + ':l3'), number(baseLat, baseLat + 0.02, 6)(seed + ':l3')],
+        ]
+        return {
+            type: 'LineString' as const,
+            coordinates: coords,
+        }
+    },
+    // GeoJSON Polygon with varied coordinates (triangle around center)
+    polygon: (seed: string) => {
+        const baseLng = 5.89
+        const baseLat = 51.99
+        const centerLng = number(baseLng + 0.005, baseLng + 0.015, 6)(seed + ':cx')
+        const centerLat = number(baseLat + 0.005, baseLat + 0.015, 6)(seed + ':cy')
+        const offset = 0.005
+        const coords = [
+            [centerLng - offset, centerLat - offset],
+            [centerLng + offset, centerLat - offset],
+            [centerLng, centerLat + offset],
+            [centerLng - offset, centerLat - offset], // Close the polygon
+        ]
+        return {
+            type: 'Polygon' as const,
+            coordinates: [coords],
+        }
+    },
+    // Legacy coordinates (for 2d index) - varied
+    legacyPoint: (seed: string) => {
+        const baseLng = 5.89
+        const baseLat = 51.99
+        const lng = number(baseLng, baseLng + 0.02, 6)(seed + ':leg')
+        const lat = number(baseLat, baseLat + 0.02, 6)(seed + ':leg')
+        return [lng, lat]
+    },
 })
 
 export type GeospatialDocument = MongoDocument<ReturnType<typeof document>>
 
+// Central reference point for queries (middle of the range)
+const REF_LNG = 5.9
+const REF_LAT = 52.0
+
 export const geo: Catalog<GeospatialDocument> = {
     operations: [
         // $geoIntersects - Geometry intersection
+        // Query for a point that should intersect with some documents
         {
             point: {
                 $geoIntersects: {
                     $geometry: {
                         type: 'Point',
-                        coordinates: [5.896975994110107, 51.995886985217844],
+                        coordinates: [REF_LNG, REF_LAT],
                     },
                 },
             },
         },
+        // Query line against point - should match lines passing through/near the point
         {
             line: {
                 $geoIntersects: {
                     $geometry: {
                         type: 'Point',
-                        coordinates: [5.892062187194824, 51.9990973559411],
+                        coordinates: [REF_LNG, REF_LAT],
                     },
                 },
             },
         },
+        // Query polygon against point - should match polygons containing the point
         {
             polygon: {
                 $geoIntersects: {
                     $geometry: {
                         type: 'Point',
-                        coordinates: [5.892062187194824, 51.9990973559411],
+                        coordinates: [REF_LNG, REF_LAT],
                     },
                 },
             },
         },
 
         // $geoWithin - Within geometry
+        // Large polygon that should contain many points
         {
             point: {
                 $geoWithin: {
@@ -81,10 +114,11 @@ export const geo: Catalog<GeospatialDocument> = {
                         type: 'Polygon',
                         coordinates: [
                             [
-                                [5.8908069133758545, 52.000709060198815],
-                                [5.892062187194824, 51.9990973559411],
-                                [5.895602703094482, 52.00068263928538],
-                                [5.8908069133758545, 52.000709060198815],
+                                [5.88, 51.98],
+                                [5.92, 51.98],
+                                [5.92, 52.02],
+                                [5.88, 52.02],
+                                [5.88, 51.98],
                             ],
                         ],
                     },
@@ -92,35 +126,32 @@ export const geo: Catalog<GeospatialDocument> = {
             },
         },
 
-        // $geoWithin with $box
+        // $geoWithin with $box - large box
         {
             legacyPoint: {
                 $geoWithin: {
                     $box: [
-                        [5.89, 51.99],
-                        [5.90, 52.00],
+                        [5.88, 51.98],
+                        [5.92, 52.02],
                     ],
                 },
             },
         },
 
-        // $geoWithin with $center
+        // $geoWithin with $center - large radius
         {
             legacyPoint: {
                 $geoWithin: {
-                    $center: [[5.896975994110107, 51.995886985217844], 0.005],
+                    $center: [[REF_LNG, REF_LAT], 0.02],
                 },
             },
         },
 
-        // $geoWithin with $centerSphere
+        // $geoWithin with $centerSphere - larger radius in radians
         {
             legacyPoint: {
                 $geoWithin: {
-                    $centerSphere: [
-                        [5.896975994110107, 51.995886985217844],
-                        0.0005,
-                    ],
+                    $centerSphere: [[REF_LNG, REF_LAT], 0.01],
                 },
             },
         },
@@ -130,45 +161,47 @@ export const geo: Catalog<GeospatialDocument> = {
             legacyPoint: {
                 $geoWithin: {
                     $polygon: [
-                        [5.8908069133758545, 52.000709060198815],
-                        [5.892062187194824, 51.9990973559411],
-                        [5.895602703094482, 52.00068263928538],
+                        [5.88, 51.98],
+                        [5.92, 51.98],
+                        [5.92, 52.02],
                     ],
                 },
             },
         },
 
-        // $near - Near a point
+        // $near - Near a point (should return nearest documents)
         {
             point: {
                 $near: {
                     $geometry: {
                         type: 'Point',
-                        coordinates: [5.896975994110107, 51.995886985217844],
+                        coordinates: [REF_LNG, REF_LAT],
                     },
                 },
             },
         },
+        // With maxDistance
         {
             point: {
                 $near: {
                     $geometry: {
                         type: 'Point',
-                        coordinates: [5.896975994110107, 51.995886985217844],
+                        coordinates: [REF_LNG, REF_LAT],
                     },
-                    $maxDistance: 1000,
+                    $maxDistance: 5000,
                 },
             },
         },
+        // With min and max distance
         {
             point: {
                 $near: {
                     $geometry: {
                         type: 'Point',
-                        coordinates: [5.896975994110107, 51.995886985217844],
+                        coordinates: [REF_LNG, REF_LAT],
                     },
                     $minDistance: 100,
-                    $maxDistance: 5000,
+                    $maxDistance: 10000,
                 },
             },
         },
@@ -176,13 +209,13 @@ export const geo: Catalog<GeospatialDocument> = {
         // $near with legacy coordinates
         {
             legacyPoint: {
-                $near: [5.896975994110107, 51.995886985217844],
+                $near: [REF_LNG, REF_LAT],
             },
         },
         {
             legacyPoint: {
-                $near: [5.896975994110107, 51.995886985217844],
-                $maxDistance: 0.01,
+                $near: [REF_LNG, REF_LAT],
+                $maxDistance: 0.02,
             },
         },
 
@@ -192,7 +225,7 @@ export const geo: Catalog<GeospatialDocument> = {
                 $nearSphere: {
                     $geometry: {
                         type: 'Point',
-                        coordinates: [5.896975994110107, 51.995886985217844],
+                        coordinates: [REF_LNG, REF_LAT],
                     },
                 },
             },
@@ -202,9 +235,9 @@ export const geo: Catalog<GeospatialDocument> = {
                 $nearSphere: {
                     $geometry: {
                         type: 'Point',
-                        coordinates: [5.896975994110107, 51.995886985217844],
+                        coordinates: [REF_LNG, REF_LAT],
                     },
-                    $maxDistance: 1000,
+                    $maxDistance: 5000,
                 },
             },
         },
@@ -213,22 +246,20 @@ export const geo: Catalog<GeospatialDocument> = {
                 $nearSphere: {
                     $geometry: {
                         type: 'Point',
-                        coordinates: [5.896975994110107, 51.995886985217844],
+                        coordinates: [REF_LNG, REF_LAT],
                     },
                     $minDistance: 100,
-                    $maxDistance: 5000,
+                    $maxDistance: 10000,
                 },
             },
         },
 
         // Error cases
-        { point: { $geoWithin: { $unknown: {} } } }, // Unknown operator
-        { point: { $geoWithin: { $geometry: {} } } }, // Empty geometry
-        { point: { $geoWithin: { $box: {} } } }, // Invalid box
-        { point: { $geoWithin: { $center: [1] } } }, // Missing radius
-        { point: { $geoWithin: { $center: 'invalid' } } }, // Invalid center
-
-        // Invalid geometries
+        { point: { $geoWithin: { $unknown: {} } } },
+        { point: { $geoWithin: { $geometry: {} } } },
+        { point: { $geoWithin: { $box: {} } } },
+        { point: { $geoWithin: { $center: [1] } } },
+        { point: { $geoWithin: { $center: 'invalid' } } },
         {
             point: {
                 $geoWithin: {
