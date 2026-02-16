@@ -579,6 +579,1945 @@
 		]
 	},
 	{
+		"catalog": "bitwise",
+		"operation": {
+			"bitmask": {
+				"$bitsAllClear": 15
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"bitmask": {
+				"$bitsAllSet": 3
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"flags": {
+				"$bitsAllClear": 1
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					3,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					16,
+					22,
+					24,
+					25,
+					26,
+					28,
+					29,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"flags": {
+				"$bitsAllSet": 8
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					3,
+					9,
+					12,
+					16,
+					17,
+					21,
+					22,
+					23,
+					25,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"permissions": {
+				"$bitsAllClear": 2
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					4,
+					6,
+					12,
+					20,
+					22,
+					23,
+					26,
+					27
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"permissions": {
+				"$bitsAllSet": 4
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					5,
+					7,
+					8,
+					10,
+					15,
+					17,
+					20,
+					22,
+					25,
+					26,
+					28,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": -1
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Expected a positive number in: $bitsAllClear: -1",
+					"code": 9,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": "Expected a non-negative number in: $bitsAllClear: -1",
+					"code": 9,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": [
+					-1
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "bit positions must be >= 0 but got: 0: -1",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": "Failed to parse bit position. Expected a non-negative number in: 0: -1",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": []
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25,
+					26,
+					27,
+					28,
+					29,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": [
+					0,
+					1,
+					2
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					5,
+					11,
+					17,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": [
+					0,
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					5,
+					10,
+					11,
+					17,
+					21,
+					25,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": [
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					5,
+					7,
+					9,
+					10,
+					11,
+					13,
+					14,
+					17,
+					21,
+					25,
+					26,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": [
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					5,
+					6,
+					8,
+					10,
+					11,
+					12,
+					17,
+					21,
+					23,
+					25,
+					28,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": 0
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25,
+					26,
+					27,
+					28,
+					29,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": 1
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					5,
+					7,
+					9,
+					10,
+					11,
+					13,
+					14,
+					17,
+					21,
+					25,
+					26,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": 127
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": 15
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					17,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": 16
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					3,
+					4,
+					5,
+					8,
+					9,
+					10,
+					11,
+					14,
+					19,
+					20,
+					22,
+					24,
+					27,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": 2
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					5,
+					6,
+					8,
+					10,
+					11,
+					12,
+					17,
+					21,
+					23,
+					25,
+					28,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": 3
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					5,
+					10,
+					11,
+					17,
+					21,
+					25,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": 31
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": 32
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					4,
+					5,
+					6,
+					8,
+					9,
+					11,
+					14,
+					16,
+					18,
+					19,
+					22,
+					23,
+					24,
+					25,
+					27,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": 4
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					4,
+					5,
+					6,
+					9,
+					11,
+					16,
+					17,
+					20,
+					24,
+					25,
+					28
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": 63
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": 64
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					3,
+					4,
+					7,
+					11,
+					18,
+					23,
+					24,
+					27,
+					28,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllClear": 8
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					3,
+					6,
+					8,
+					12,
+					14,
+					15,
+					17,
+					18,
+					19,
+					21,
+					22,
+					23,
+					24,
+					25,
+					26,
+					27,
+					29,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": -1
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Expected a positive number in: $bitsAllSet: -1",
+					"code": 9,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": "Expected a non-negative number in: $bitsAllSet: -1",
+					"code": 9,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": [
+					-1
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "bit positions must be >= 0 but got: 0: -1",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": "Failed to parse bit position. Expected a non-negative number in: 0: -1",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": []
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25,
+					26,
+					27,
+					28,
+					29,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": [
+					0,
+					1,
+					2
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					3,
+					15,
+					18,
+					19,
+					22,
+					27,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": [
+					0,
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					3,
+					4,
+					15,
+					16,
+					18,
+					19,
+					20,
+					22,
+					24,
+					27,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": [
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					3,
+					4,
+					6,
+					8,
+					12,
+					15,
+					16,
+					18,
+					19,
+					20,
+					22,
+					23,
+					24,
+					27,
+					28,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": [
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					7,
+					9,
+					13,
+					14,
+					15,
+					16,
+					18,
+					19,
+					20,
+					22,
+					24,
+					26,
+					27,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": 0
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25,
+					26,
+					27,
+					28,
+					29,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": 1
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					3,
+					4,
+					6,
+					8,
+					12,
+					15,
+					16,
+					18,
+					19,
+					20,
+					22,
+					23,
+					24,
+					27,
+					28,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": 127
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": 15
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": 16
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					6,
+					7,
+					12,
+					13,
+					15,
+					16,
+					17,
+					18,
+					21,
+					23,
+					25,
+					26,
+					28,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": 2
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					7,
+					9,
+					13,
+					14,
+					15,
+					16,
+					18,
+					19,
+					20,
+					22,
+					24,
+					26,
+					27,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": 3
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					3,
+					4,
+					15,
+					16,
+					18,
+					19,
+					20,
+					22,
+					24,
+					27,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": 31
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": 32
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					3,
+					7,
+					10,
+					12,
+					13,
+					15,
+					17,
+					20,
+					21,
+					26,
+					28,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": 4
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					7,
+					8,
+					10,
+					12,
+					13,
+					14,
+					15,
+					18,
+					19,
+					21,
+					22,
+					23,
+					26,
+					27,
+					29,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": 63
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": 64
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					5,
+					6,
+					8,
+					9,
+					10,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					19,
+					20,
+					21,
+					22,
+					25,
+					26,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": 7
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					3,
+					15,
+					18,
+					19,
+					22,
+					27,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAllSet": 8
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					4,
+					5,
+					7,
+					9,
+					10,
+					11,
+					13,
+					16,
+					20,
+					28
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnyClear": -1
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Expected a positive number in: $bitsAnyClear: -1",
+					"code": 9,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": "Expected a non-negative number in: $bitsAnyClear: -1",
+					"code": 9,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnyClear": [
+					-1
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "bit positions must be >= 0 but got: 0: -1",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": "Failed to parse bit position. Expected a non-negative number in: 0: -1",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnyClear": []
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnyClear": [
+					0,
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					17,
+					21,
+					23,
+					25,
+					26,
+					28,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnyClear": [
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					5,
+					7,
+					9,
+					10,
+					11,
+					13,
+					14,
+					17,
+					21,
+					25,
+					26,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnyClear": 0
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnyClear": 1
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					5,
+					7,
+					9,
+					10,
+					11,
+					13,
+					14,
+					17,
+					21,
+					25,
+					26,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnyClear": 127
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25,
+					26,
+					27,
+					28,
+					29,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnyClear": 15
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25,
+					26,
+					27,
+					28,
+					29,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnyClear": 2
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					5,
+					6,
+					8,
+					10,
+					11,
+					12,
+					17,
+					21,
+					23,
+					25,
+					28,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnyClear": 3
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					17,
+					21,
+					23,
+					25,
+					26,
+					28,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnySet": -1
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Expected a positive number in: $bitsAnySet: -1",
+					"code": 9,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": "Expected a non-negative number in: $bitsAnySet: -1",
+					"code": 9,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnySet": [
+					-1
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "bit positions must be >= 0 but got: 0: -1",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": "Failed to parse bit position. Expected a non-negative number in: 0: -1",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnySet": []
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnySet": [
+					0,
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					6,
+					7,
+					8,
+					9,
+					12,
+					13,
+					14,
+					15,
+					16,
+					18,
+					19,
+					20,
+					22,
+					23,
+					24,
+					26,
+					27,
+					28,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnySet": [
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					3,
+					4,
+					6,
+					8,
+					12,
+					15,
+					16,
+					18,
+					19,
+					20,
+					22,
+					23,
+					24,
+					27,
+					28,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnySet": 0
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnySet": 1
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					3,
+					4,
+					6,
+					8,
+					12,
+					15,
+					16,
+					18,
+					19,
+					20,
+					22,
+					23,
+					24,
+					27,
+					28,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnySet": 127
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25,
+					26,
+					27,
+					28,
+					29,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnySet": 15
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					26,
+					27,
+					28,
+					29,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnySet": 2
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					7,
+					9,
+					13,
+					14,
+					15,
+					16,
+					18,
+					19,
+					20,
+					22,
+					24,
+					26,
+					27,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "bitwise",
+		"operation": {
+			"value": {
+				"$bitsAnySet": 3
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					6,
+					7,
+					8,
+					9,
+					12,
+					13,
+					14,
+					15,
+					16,
+					18,
+					19,
+					20,
+					22,
+					23,
+					24,
+					26,
+					27,
+					28,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
 		"catalog": "comparison",
 		"operation": {
 			"active": {
@@ -4272,6 +6211,2974 @@
 		]
 	},
 	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$abs": "$a"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$abs": "$b"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$abs": "$bool"
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Executor error during find command :: caused by :: $abs only supports numeric types, not bool",
+					"code": 28765,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $abs only supports numeric types, not bool",
+					"code": 28765,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$abs": "$c"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$abs": "$d"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$abs": "$e"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					7,
+					8,
+					9,
+					10,
+					11,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$abs": "$f.x"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					12,
+					13,
+					15,
+					17,
+					18,
+					19,
+					20,
+					21,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$abs": "$null"
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$abs": "$string"
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Executor error during find command :: caused by :: $abs only supports numeric types, not string",
+					"code": 28765,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $abs only supports numeric types, not string",
+					"code": 28765,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$abs": "$undefined"
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$add": [
+					"$a",
+					"$b",
+					"$c"
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$add": [
+					"$a",
+					"$b"
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$add": [
+					"$a",
+					"$null"
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$add": [
+					"$a",
+					"$string"
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Executor error during find command :: caused by :: $add only supports numeric or date types, not string",
+					"code": 16554,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": "Executor error during find command :: caused by :: $add only supports numeric or date types, not string",
+					"code": 14,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $add only supports numeric or date types, not string",
+					"code": 14,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$add": [
+					"$a",
+					10
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$add": [
+					"$f.x",
+					"$f.y"
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					12,
+					13,
+					15,
+					17,
+					18,
+					19,
+					20,
+					21,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$add": []
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$add": [
+					1,
+					2,
+					3
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$ceil": -1.5
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$ceil": "$a"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$ceil": "$d"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$ceil": "$string"
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Executor error during find command :: caused by :: $ceil only supports numeric types, not string",
+					"code": 28765,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $ceil only supports numeric types, not string",
+					"code": 28765,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$divide": [
+					"$a",
+					"$c"
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$divide": [
+					"$a",
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Executor error during find command :: caused by :: can't $divide by zero",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: can't $divide by zero",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$divide": [
+					"$a"
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Expression $divide takes exactly 2 arguments. 1 were passed in.",
+					"code": 16020,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$divide": [
+					"$b",
+					2
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$divide": [
+					"$f.x",
+					"$f.y"
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Executor error during find command :: caused by :: can't $divide by zero",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: can't $divide by zero",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$divide": [
+					"$string",
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Executor error during find command :: caused by :: $divide only supports numeric types, not string and int",
+					"code": 14,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $divide only supports numeric types, not string and int",
+					"code": 14,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$divide": [
+					100,
+					"$c"
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$eq": [
+					"$a",
+					"$b"
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$exp": "$c"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$exp": 0
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$exp": 1
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$floor": -1.5
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$floor": "$a"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$floor": "$d"
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$gt": [
+					"$a",
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					21,
+					22,
+					23
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$gte": [
+					"$a",
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					21,
+					22,
+					23
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$ln": -1
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Failed to optimize expression :: caused by :: $ln's argument must be a positive number, but is -1",
+					"code": 28766,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$ln": "$c"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$ln": "$string"
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Executor error during find command :: caused by :: $ln only supports numeric types, not string",
+					"code": 28765,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $ln only supports numeric types, not string",
+					"code": 28765,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$ln": 0
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Failed to optimize expression :: caused by :: $ln's argument must be a positive number, but is 0",
+					"code": 28766,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$ln": 1
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$ln": 2.718
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$log": [
+					"$a",
+					-1
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Executor error during find command :: caused by :: $log's base must be a positive number not equal to 1, but is -1",
+					"code": 28759,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $log's base must be a positive number not equal to 1, but is -1",
+					"code": 28759,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$log": [
+					"$a",
+					"$c"
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Executor error during find command :: caused by :: $log's argument must be a positive number, but is -38",
+					"code": 28758,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $log's argument must be a positive number, but is -38",
+					"code": 28758,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$log": [
+					"$a",
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Executor error during find command :: caused by :: $log's base must be a positive number not equal to 1, but is 0",
+					"code": 28759,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $log's base must be a positive number not equal to 1, but is 0",
+					"code": 28759,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$log": [
+					"$a"
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Expression $log takes exactly 2 arguments. 1 were passed in.",
+					"code": 16020,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$log": [
+					"$c",
+					2
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$log": [
+					100,
+					10
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$log10": "$c"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$log10": 1
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$log10": 100
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$lt": [
+					"$a",
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					17,
+					18,
+					19,
+					20,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$lte": [
+					"$a",
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					17,
+					18,
+					19,
+					20,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$multiply": [
+					"$a",
+					"$b",
+					"$c"
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$multiply": [
+					"$a",
+					"$b"
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$multiply": []
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$multiply": [
+					2,
+					3,
+					4
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$ne": [
+					"$a",
+					"$b"
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$pow": [
+					"$a",
+					2
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$pow": [
+					"$c",
+					2
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$pow": [
+					2,
+					"$c"
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$sqrt": -1
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Failed to optimize expression :: caused by :: $sqrt's argument must be greater than or equal to 0",
+					"code": 28714,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$sqrt": "$a"
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Executor error during find command :: caused by :: $sqrt's argument must be greater than or equal to 0",
+					"code": 28714,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $sqrt's argument must be greater than or equal to 0",
+					"code": 28714,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$sqrt": "$c"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$sqrt": 16
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$subtract": [
+					"$a",
+					"$b"
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$subtract": [
+					"$b",
+					"$a"
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$subtract": [
+					100,
+					"$c"
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$trunc": -1.9
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$trunc": "$a"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "expr",
+		"operation": {
+			"$expr": {
+				"$trunc": "$d"
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$box": [
+						[
+							5.89,
+							51.99
+						],
+						[
+							5.9,
+							52
+						]
+					]
+				}
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$center": [
+						[
+							5.896975994110107,
+							51.995886985217844
+						],
+						0.005
+					]
+				}
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$centerSphere": [
+						[
+							5.896975994110107,
+							51.995886985217844
+						],
+						0.0005
+					]
+				}
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$polygon": [
+						[
+							5.8908069133758545,
+							52.000709060198815
+						],
+						[
+							5.892062187194824,
+							51.9990973559411
+						],
+						[
+							5.895602703094482,
+							52.00068263928538
+						]
+					]
+				}
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"legacyPoint": {
+				"$near": [
+					5.896975994110107,
+					51.995886985217844
+				],
+				"$maxDistance": 0.01
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"legacyPoint": {
+				"$near": [
+					5.896975994110107,
+					51.995886985217844
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"line": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.892062187194824,
+							51.9990973559411
+						]
+					}
+				}
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"point": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.896975994110107,
+							51.995886985217844
+						]
+					}
+				}
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$box": {}
+				}
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Point must be an array or object",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": "Point must be an array or object, instead got type missing",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$center": "invalid"
+				}
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "unknown geo specifier: $center: \"invalid\"",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$center": [
+						1
+					]
+				}
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Point must be an array or object",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": "Point must be an array or object, instead got type int",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Invalid",
+						"coordinates": []
+					}
+				}
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "unknown GeoJSON type: { type: \"Invalid\", coordinates: [] }",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.8908069133758545,
+									52.000709060198815
+								],
+								[
+									5.892062187194824,
+									51.9990973559411
+								],
+								[
+									5.895602703094482,
+									52.00068263928538
+								],
+								[
+									5.8908069133758545,
+									52.000709060198815
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {}
+				}
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "unknown GeoJSON type: {}",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$unknown": {}
+				}
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "unknown geo specifier: $unknown: {}",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.896975994110107,
+							51.995886985217844
+						]
+					},
+					"$maxDistance": 1000
+				}
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.896975994110107,
+							51.995886985217844
+						]
+					},
+					"$minDistance": 100,
+					"$maxDistance": 5000
+				}
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.896975994110107,
+							51.995886985217844
+						]
+					}
+				}
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.896975994110107,
+							51.995886985217844
+						]
+					},
+					"$maxDistance": 1000
+				}
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.896975994110107,
+							51.995886985217844
+						]
+					},
+					"$minDistance": 100,
+					"$maxDistance": 5000
+				}
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.896975994110107,
+							51.995886985217844
+						]
+					}
+				}
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "geo",
+		"operation": {
+			"polygon": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.892062187194824,
+							51.9990973559411
+						]
+					}
+				}
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
 		"catalog": "logical",
 		"operation": {
 			"$and": []
@@ -5111,6 +10018,3138 @@
 					20
 				],
 				"versions": "2,2.6,2.6.12,3,3.0,3.0.12..3.0.15,3.2,3.2.9..3.2.21,3.3.8..3.3.12,3.3.14..3.3.15,3.4.0..3.4.24,3.5,3.5.5..3.5.13,3.6.0..3.6.23,3.7..3.7.3,3.7.5,3.7.7,3.7.9,4.0.0..4.0.28,4.1.1..4.1.7,4.1.9..4.1.13,4.2.0..4.2.3,4.2.5..4.2.24,4.4.0..4.4.30,5.0.0..5.0.32,6.0.1..6.0.27,7.0.0..7.0.30,8.0.0..8.0.1,8.0.3..8.0.6,8.0.8..8.0.19,8.2.1..8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"..": "double dot field name"
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			".": "dot field name"
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"": "empty field name"
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"$expr": {
+				"$eq": [
+					{
+						"$divide": [
+							"$bool",
+							0.1
+						]
+					},
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Executor error during find command :: caused by :: $divide only supports numeric types, not bool and double",
+					"code": 14,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $divide only supports numeric types, not bool and double",
+					"code": 14,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"$expr": {
+				"$eq": [
+					{
+						"$divide": [
+							"$bool",
+							0
+						]
+					},
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Executor error during find command :: caused by :: $divide only supports numeric types, not bool and int",
+					"code": 14,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $divide only supports numeric types, not bool and int",
+					"code": 14,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"$expr": {
+				"$eq": [
+					{
+						"$divide": [
+							"$number",
+							0
+						]
+					},
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Executor error during find command :: caused by :: can't $divide by zero",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: can't $divide by zero",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"$expr": {
+				"$eq": [
+					{
+						"$divide": [
+							"$string",
+							0.1
+						]
+					},
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Executor error during find command :: caused by :: $divide only supports numeric types, not string and double",
+					"code": 14,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $divide only supports numeric types, not string and double",
+					"code": 14,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"$expr": {
+				"$eq": [
+					{
+						"$divide": [
+							"$string",
+							0
+						]
+					},
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Executor error during find command :: caused by :: $divide only supports numeric types, not string and int",
+					"code": 14,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $divide only supports numeric types, not string and int",
+					"code": 14,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"$expr": {
+				"$eq": [
+					{
+						"$divide": [
+							"$unknown",
+							0
+						]
+					},
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"$invalid": true
+		},
+		"results": [
+			{
+				"error": {
+					"message": "unknown top level operator: $invalid. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"$nop": false
+		},
+		"results": [
+			{
+				"error": {
+					"message": "unknown top level operator: $nop. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"$nor": [
+				"purple"
+			]
+		},
+		"results": [
+			{
+				"error": {
+					"message": "$or/$and/$nor entries need to be full objects",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "$nor argument's entries must be objects",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"$nor": {
+				"color": "purple"
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "$nor must be an array",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "$nor argument must be an array",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"$unknown": "value"
+		},
+		"results": [
+			{
+				"error": {
+					"message": "unknown top level operator: $unknown. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": "value"
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"bool": {
+				"$in": [
+					"true",
+					"false"
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"color": "purple",
+			"$unknown": "value"
+		},
+		"results": [
+			{
+				"error": {
+					"message": "unknown top level operator: $unknown. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"color": {
+				"$all": "not an array"
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "$all needs an array",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"color": {
+				"$elemMatch": "not an object"
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "$elemMatch needs an Object",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"color": {
+				"$eq": null
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"color": {
+				"$not": "purple"
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "$not needs a regex or a document",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "$not argument must be a regex or an object",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"color": {
+				"$not": {
+					"$not": {
+						"$not": "purple"
+					}
+				}
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "$not needs a regex or a document",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "$not argument must be a regex or an object",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"color": {
+				"$not": 123
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "$not needs a regex or a document",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "$not argument must be a regex or an object",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"color": {
+				"$not": true
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "$not needs a regex or a document",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30"
+			},
+			{
+				"error": {
+					"message": "$not argument must be a regex or an object",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"color": {
+				"$size": -1
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "$size may not be negative",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": "Failed to parse $size. Expected a non-negative number in: $size: -1",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"color": {
+				"$size": "not a number"
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "$size needs a number",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": "Failed to parse $size. Expected a number in: $size: \"not a number\"",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"color": {
+				"$size": 1.5
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "$size must be a whole number",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": "Failed to parse $size. Expected an integer: $size: 1.5",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"field\nwith\nnewlines": "value"
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"field\twith\ttabs": "value"
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"field\u0000with\u0000nulls": "value"
+		},
+		"results": [
+			{
+				"error": {
+					"message": "key field\u0000with\u0000nulls must not contain null bytes",
+					"type": "BSONError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"invalid.path.that.does.not.exist": "value"
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"number": {
+				"$bitsAllClear": -1
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Expected a positive number in: $bitsAllClear: -1",
+					"code": 9,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": "Expected a non-negative number in: $bitsAllClear: -1",
+					"code": 9,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"number": {
+				"$bitsAllSet": -1
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Expected a positive number in: $bitsAllSet: -1",
+					"code": 9,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": "Expected a non-negative number in: $bitsAllSet: -1",
+					"code": 9,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"number": {
+				"$bitsAnyClear": [
+					-1
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "bit positions must be >= 0 but got: 0: -1",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": "Failed to parse bit position. Expected a non-negative number in: 0: -1",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"number": {
+				"$bitsAnySet": [
+					-1
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "bit positions must be >= 0 but got: 0: -1",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": "Failed to parse bit position. Expected a non-negative number in: 0: -1",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"number": {
+				"$gt": "not a number"
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"number": {
+				"$gte": 0,
+				"$invalid": true
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "unknown operator: $invalid",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"number": {
+				"$mod": "invalid"
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "malformed mod, needs to be an array",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"number": {
+				"$mod": []
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "malformed mod, not enough elements",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"number": {
+				"$mod": [
+					0,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "divisor cannot be 0",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"number": {
+				"$mod": [
+					2,
+					5
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"number": {
+				"$mod": [
+					2
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "malformed mod, not enough elements",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"number": null
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"price": {
+				"$gt": {
+					"$lt": 10
+				}
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"price": {
+				"$in": [
+					"cheap",
+					"expensive"
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"price": {}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"string": {
+				"$gt": 123
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"string": {
+				"$regex": "(invalid"
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Regular expression is invalid: missing )",
+					"code": 51091,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27"
+			},
+			{
+				"error": {
+					"message": "Regular expression is invalid: missing closing parenthesis",
+					"code": 51091,
+					"type": "MongoServerError"
+				},
+				"versions": "7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"string": {
+				"$regex": "[invalid"
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Regular expression is invalid: missing terminating ] for character class",
+					"code": 51091,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"string": {
+				"$regex": "pattern",
+				"$options": "imxyz"
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": " invalid flag in regex options: y",
+					"code": 51108,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {
+			"string": {
+				"$regex": "pattern",
+				"$options": "xyz"
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": " invalid flag in regex options: y",
+					"code": 51108,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operation": {},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			},
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"count": {
+				"$mod": [
+					2,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					3,
+					4,
+					9,
+					10,
+					13,
+					14,
+					15,
+					16,
+					17,
+					20,
+					22,
+					25,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"count": {
+				"$mod": [
+					2,
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					5,
+					6,
+					7,
+					8,
+					11,
+					12,
+					18,
+					19,
+					21,
+					23,
+					24,
+					26,
+					27,
+					28,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"index": {
+				"$mod": [
+					10,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					26
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"quantity": {
+				"$mod": [
+					3,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					6,
+					11,
+					16,
+					17,
+					19,
+					20,
+					21,
+					23,
+					24,
+					27
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"quantity": {
+				"$mod": [
+					5,
+					0
+				],
+				"$gte": 50
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					7,
+					8,
+					10,
+					19,
+					24,
+					25,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"quantity": {
+				"$mod": [
+					5,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					7,
+					8,
+					10,
+					11,
+					18,
+					19,
+					24,
+					25,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"quantity": {
+				"$mod": [
+					50,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					10,
+					11,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"quantity": {
+				"$mod": [
+					7,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					5,
+					7,
+					11,
+					16,
+					24,
+					26
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"quantity": {
+				"$mod": [
+					7,
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					10,
+					13,
+					19,
+					27
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"size": {
+				"$mod": [
+					3,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					4,
+					8,
+					10,
+					12,
+					13,
+					17,
+					20,
+					23,
+					27
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"size": {
+				"$mod": [
+					5,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					4,
+					12,
+					21,
+					22,
+					25,
+					26,
+					27,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"size": {
+				"$mod": [
+					7,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					6,
+					7,
+					9,
+					18
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": "invalid"
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "malformed mod, needs to be an array",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					-1,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25,
+					26,
+					27,
+					28,
+					29,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": []
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "malformed mod, not enough elements",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					0,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "divisor cannot be 0",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					0,
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "divisor cannot be 0",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					1,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25,
+					26,
+					27,
+					28,
+					29,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "malformed mod, not enough elements",
+					"code": 2,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					10,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					13
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					10,
+					5
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					8,
+					10,
+					14,
+					20,
+					27,
+					28,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					100,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					13
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					100,
+					50
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					2,
+					-1
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					2,
+					0
+				],
+				"$gte": 10
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					6,
+					9,
+					12,
+					13,
+					15,
+					17,
+					18,
+					19,
+					22,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					2,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					6,
+					9,
+					11,
+					12,
+					13,
+					15,
+					17,
+					18,
+					19,
+					22,
+					24,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					2,
+					1
+				],
+				"$lt": 50
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					3,
+					4,
+					7,
+					23,
+					27,
+					28,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					2,
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					3,
+					4,
+					5,
+					7,
+					8,
+					10,
+					14,
+					16,
+					20,
+					21,
+					23,
+					25,
+					26,
+					27,
+					28,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					2,
+					5
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					20,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					13
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					25,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					13
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					3,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					4,
+					5,
+					11,
+					18,
+					25,
+					26,
+					28
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					3,
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					3,
+					6,
+					7,
+					8,
+					9,
+					10,
+					13,
+					14,
+					15,
+					17,
+					20,
+					21
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					3,
+					2
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					12,
+					16,
+					19,
+					22,
+					23,
+					24,
+					27,
+					29,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					4,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					6,
+					12,
+					13,
+					17,
+					19,
+					22,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					4,
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					4,
+					5,
+					7,
+					10,
+					20,
+					23,
+					26,
+					27,
+					28,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					4,
+					2
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					9,
+					11,
+					15,
+					18,
+					24
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					4,
+					3
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					3,
+					8,
+					14,
+					16,
+					21,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					5,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					8,
+					10,
+					13,
+					14,
+					20,
+					27,
+					28,
+					29
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					5,
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					3,
+					11,
+					16,
+					19,
+					21,
+					22
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					5,
+					2
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					5,
+					12,
+					23,
+					24,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					5,
+					3
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					9,
+					17,
+					18,
+					25,
+					26
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					5,
+					4
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					4,
+					6,
+					7,
+					15
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					7,
+					0
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					7,
+					19,
+					21,
+					22,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "modulo",
+		"operation": {
+			"value": {
+				"$mod": [
+					7,
+					1
+				]
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					5,
+					6,
+					10,
+					12,
+					16,
+					20,
+					30
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"$text": {
+				"$search": "BROWN",
+				"$caseSensitive": false
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					16,
+					25,
+					11,
+					1,
+					15,
+					4,
+					23,
+					21,
+					10,
+					5,
+					20,
+					17,
+					12,
+					6
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"$text": {
+				"$search": "BROWN",
+				"$caseSensitive": true
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"$text": {
+				"$search": "brown"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					16,
+					25,
+					11,
+					1,
+					15,
+					4,
+					23,
+					21,
+					10,
+					5,
+					20,
+					17,
+					12,
+					6
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"$text": {
+				"$search": "guide",
+				"$language": "en",
+				"$caseSensitive": false
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					13,
+					24,
+					21,
+					12,
+					15,
+					9,
+					6,
+					18,
+					2,
+					25,
+					23,
+					19,
+					8,
+					7,
+					4
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"$text": {
+				"$search": "guide",
+				"$language": "en",
+				"$caseSensitive": true
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					24,
+					21,
+					12,
+					25,
+					19,
+					7,
+					4
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"$text": {
+				"$search": "guide",
+				"$language": "en"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					13,
+					24,
+					21,
+					12,
+					15,
+					9,
+					6,
+					18,
+					2,
+					25,
+					23,
+					19,
+					8,
+					7,
+					4
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"$text": {
+				"$search": "JavaScript programming"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					24,
+					22,
+					4,
+					17,
+					8,
+					21,
+					15,
+					10,
+					3,
+					2,
+					25,
+					19,
+					14,
+					13,
+					11
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"$text": {
+				"$search": "quick brown",
+				"$caseSensitive": false,
+				"$diacriticSensitive": false
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					16,
+					25,
+					11,
+					1,
+					15,
+					4,
+					23,
+					21,
+					10,
+					5,
+					20,
+					17,
+					12,
+					6,
+					2,
+					24,
+					14,
+					3,
+					18,
+					7,
+					22,
+					19,
+					9
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"$text": {
+				"$search": "quick brown"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					16,
+					25,
+					11,
+					1,
+					15,
+					4,
+					23,
+					21,
+					10,
+					5,
+					20,
+					17,
+					12,
+					6,
+					2,
+					24,
+					14,
+					3,
+					18,
+					7,
+					22,
+					19,
+					9
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"$text": {
+				"$search": "Quick",
+				"$caseSensitive": false
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					20,
+					24,
+					14,
+					21,
+					16,
+					3,
+					18,
+					7,
+					22,
+					19,
+					17,
+					15,
+					12,
+					11,
+					10,
+					5,
+					9
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"$text": {
+				"$search": "Quick",
+				"$caseSensitive": true
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					20,
+					24,
+					14,
+					21,
+					16,
+					3,
+					18,
+					7,
+					22,
+					19,
+					17,
+					15,
+					12,
+					11,
+					10,
+					5
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"$text": {
+				"$search": "quick",
+				"$diacriticSensitive": false
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					20,
+					24,
+					14,
+					21,
+					16,
+					3,
+					18,
+					7,
+					22,
+					19,
+					17,
+					15,
+					12,
+					11,
+					10,
+					5,
+					9
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"$text": {
+				"$search": "quick",
+				"$diacriticSensitive": true
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					20,
+					24,
+					14,
+					21,
+					16,
+					3,
+					18,
+					7,
+					22,
+					19,
+					17,
+					15,
+					12,
+					11,
+					10,
+					5,
+					9
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"$text": {
+				"$search": "quick",
+				"$language": "en"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					20,
+					24,
+					14,
+					21,
+					16,
+					3,
+					18,
+					7,
+					22,
+					19,
+					17,
+					15,
+					12,
+					11,
+					10,
+					5,
+					9
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"$text": {
+				"$search": "quick"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					20,
+					24,
+					14,
+					21,
+					16,
+					3,
+					18,
+					7,
+					22,
+					19,
+					17,
+					15,
+					12,
+					11,
+					10,
+					5,
+					9
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"category": {
+				"$regex": {}
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					11,
+					14,
+					15,
+					16,
+					19,
+					20,
+					22,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			},
+			{
+				"documents": [
+					1,
+					11,
+					12,
+					14,
+					16,
+					19,
+					20,
+					21,
+					22,
+					24
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"description": {
+				"$regex": {}
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					3,
+					5,
+					9,
+					10,
+					12,
+					14,
+					15,
+					16,
+					17,
+					18,
+					21,
+					22
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			},
+			{
+				"documents": [
+					1,
+					6,
+					11,
+					20
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			},
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			},
+			{
+				"documents": [
+					7,
+					8,
+					13,
+					23
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			},
+			{
+				"documents": [
+					8,
+					9,
+					13,
+					23
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			},
+			{
+				"documents": [
+					2,
+					3,
+					4,
+					10,
+					15,
+					19,
+					21,
+					22,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"manufacturer": {
+				"$regex": {}
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					22,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			},
+			{
+				"documents": [
+					14,
+					20,
+					21,
+					23
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			},
+			{
+				"documents": [
+					12,
+					13,
+					15
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"tags.0": {
+				"$regex": {}
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					17
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"tags.1": {
+				"$regex": {}
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					18,
+					24
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"tags": {
+				"$regex": "quick"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					20,
+					24
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"tags": {
+				"$regex": {}
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					17,
+					24
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"title": {
+				"$regex": "[invalid"
+			}
+		},
+		"results": [
+			{
+				"error": {
+					"message": "Regular expression is invalid: missing terminating ] for character class",
+					"code": 51091,
+					"type": "MongoServerError"
+				},
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"title": {
+				"$regex": "BROWN",
+				"$options": "i"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					1,
+					5,
+					10,
+					12,
+					16,
+					17,
+					21,
+					23,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"title": {
+				"$regex": "pattern",
+				"$options": "xyz"
+			}
+		},
+		"results": [
+			{
+				"documents": [],
+				"versions": "5.0.32"
+			},
+			{
+				"error": {
+					"message": " invalid flag in regex options: y",
+					"code": 51108,
+					"type": "MongoServerError"
+				},
+				"versions": "6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"title": {
+				"$regex": "quick",
+				"$options": "i"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					3,
+					7,
+					11,
+					14,
+					16,
+					18,
+					19,
+					20,
+					21,
+					24
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"title": {
+				"$regex": {},
+				"$options": "i"
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					2,
+					3,
+					7,
+					11,
+					14,
+					16,
+					18,
+					19,
+					20,
+					21,
+					24
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			}
+		]
+	},
+	{
+		"catalog": "textRegex",
+		"operation": {
+			"title": {
+				"$regex": {}
+			}
+		},
+		"results": [
+			{
+				"documents": [
+					7,
+					14,
+					16,
+					20,
+					21
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			},
+			{
+				"documents": [
+					2,
+					3,
+					7,
+					11,
+					14,
+					16,
+					18,
+					19,
+					20,
+					21,
+					24
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			},
+			{
+				"documents": [],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			},
+			{
+				"documents": [
+					16,
+					21
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
+			},
+			{
+				"documents": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				],
+				"versions": "5.0.32,6.0.27,7.0.30,8.0.19,8.2.5"
 			}
 		]
 	}

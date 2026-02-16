@@ -1,0 +1,370 @@
+[
+	{
+		"operation": {
+			"point": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.896975994110107,
+							51.995886985217844
+						]
+					}
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"line": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.892062187194824,
+							51.9990973559411
+						]
+					}
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"polygon": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.892062187194824,
+							51.9990973559411
+						]
+					}
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.8908069133758545,
+									52.000709060198815
+								],
+								[
+									5.892062187194824,
+									51.9990973559411
+								],
+								[
+									5.895602703094482,
+									52.00068263928538
+								],
+								[
+									5.8908069133758545,
+									52.000709060198815
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$box": [
+						[
+							5.89,
+							51.99
+						],
+						[
+							5.9,
+							52
+						]
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$center": [
+						[
+							5.896975994110107,
+							51.995886985217844
+						],
+						0.005
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$centerSphere": [
+						[
+							5.896975994110107,
+							51.995886985217844
+						],
+						0.0005
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$polygon": [
+						[
+							5.8908069133758545,
+							52.000709060198815
+						],
+						[
+							5.892062187194824,
+							51.9990973559411
+						],
+						[
+							5.895602703094482,
+							52.00068263928538
+						]
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.896975994110107,
+							51.995886985217844
+						]
+					}
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.896975994110107,
+							51.995886985217844
+						]
+					},
+					"$maxDistance": 1000
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.896975994110107,
+							51.995886985217844
+						]
+					},
+					"$minDistance": 100,
+					"$maxDistance": 5000
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"legacyPoint": {
+				"$near": [
+					5.896975994110107,
+					51.995886985217844
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"legacyPoint": {
+				"$near": [
+					5.896975994110107,
+					51.995886985217844
+				],
+				"$maxDistance": 0.01
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.896975994110107,
+							51.995886985217844
+						]
+					}
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.896975994110107,
+							51.995886985217844
+						]
+					},
+					"$maxDistance": 1000
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.896975994110107,
+							51.995886985217844
+						]
+					},
+					"$minDistance": 100,
+					"$maxDistance": 5000
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$unknown": {}
+				}
+			}
+		},
+		"error": {
+			"message": "unknown geo specifier: $unknown: {}",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {}
+				}
+			}
+		},
+		"error": {
+			"message": "unknown GeoJSON type: {}",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$box": {}
+				}
+			}
+		},
+		"error": {
+			"message": "Point must be an array or object, instead got type missing",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$center": [
+						1
+					]
+				}
+			}
+		},
+		"error": {
+			"message": "Point must be an array or object, instead got type int",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$center": "invalid"
+				}
+			}
+		},
+		"error": {
+			"message": "unknown geo specifier: $center: \"invalid\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Invalid",
+						"coordinates": []
+					}
+				}
+			}
+		},
+		"error": {
+			"message": "unknown GeoJSON type: { type: \"Invalid\", coordinates: [] }",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	}
+]

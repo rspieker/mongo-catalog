@@ -1,5 +1,59 @@
 [
 	{
+		"name": "text-regex",
+		"path": "catalog/query/common/text-regex.ts",
+		"exports": [
+			{
+				"name": "textRegex",
+				"type": "Catalog",
+				"hash": "e73292ee0e3d031be051eee0e8527546985f5d932ca379fd277ab64abe27e035"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-02-16T06:47:07.444Z",
+				"exportName": "textRegex"
+			}
+		]
+	},
+	{
+		"name": "modulo",
+		"path": "catalog/query/common/modulo.ts",
+		"exports": [
+			{
+				"name": "modulo",
+				"type": "Catalog",
+				"hash": "a69a9800019c589f3cc9c34ace44715c4526225fdf0ad6adb32c438bf730956f"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-02-16T06:47:07.542Z",
+				"exportName": "modulo"
+			}
+		]
+	},
+	{
+		"name": "misc",
+		"path": "catalog/query/common/misc.ts",
+		"exports": [
+			{
+				"name": "misc",
+				"type": "Catalog",
+				"hash": "829978b59c15e7fc6ab19dca729b74e9f2a3338f8994e54ed30d76841779123f"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-02-16T06:47:07.637Z",
+				"exportName": "misc"
+			}
+		]
+	},
+	{
 		"name": "logical",
 		"path": "catalog/query/common/logical.ts",
 		"exports": [
@@ -14,6 +68,42 @@
 				"type": "INITIAL",
 				"date": "2026-02-13T07:34:25.760Z",
 				"exportName": "logical"
+			}
+		]
+	},
+	{
+		"name": "geo",
+		"path": "catalog/query/common/geo.ts",
+		"exports": [
+			{
+				"name": "geo",
+				"type": "Catalog",
+				"hash": "dce2518f4e787a22752cfd2800420c99294e99fde303223d2ccf1c7718a4a3d9"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-02-16T06:47:07.843Z",
+				"exportName": "geo"
+			}
+		]
+	},
+	{
+		"name": "expr",
+		"path": "catalog/query/common/expr.ts",
+		"exports": [
+			{
+				"name": "expr",
+				"type": "Catalog",
+				"hash": "74919c2bc49bf7bf6977ac8563457b804619068a6e5e1fe00aea50468d06b569"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-02-16T06:47:07.961Z",
+				"exportName": "expr"
 			}
 		]
 	},
@@ -68,6 +158,24 @@
 				"type": "INITIAL",
 				"date": "2026-02-13T07:34:25.952Z",
 				"exportName": "comparison"
+			}
+		]
+	},
+	{
+		"name": "bitwise",
+		"path": "catalog/query/common/bitwise.ts",
+		"exports": [
+			{
+				"name": "bitwise",
+				"type": "Catalog",
+				"hash": "03a11828156aa7e7385cec14b99b5b1268487f42140cbdf87a465484b9a6d0a5"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-02-16T06:47:08.210Z",
+				"exportName": "bitwise"
 			}
 		]
 	},
