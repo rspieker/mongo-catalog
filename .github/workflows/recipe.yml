@@ -214,15 +214,11 @@ jobs:
 
                     NOW=$(date -u +"%Y-%m-%dT%H:%M:%S.%3NZ")
                     jq --arg reason "$FAILED" --arg date "$NOW" '
-                      .skip = true |
                       .history = (.history // []) + [{
-                        "type": "SKIP",
+                        "type": "collection-halted",
                         "date": $date,
-                        "actions": [{
-                          "type": "SKIP",
-                          "reason": $reason,
-                          "date": $date
-                        }]
+                        "catalog": "",
+                        "reason": $reason
                       }]
                     ' "$META_FILE" > "$META_FILE.tmp" && mv "$META_FILE.tmp" "$META_FILE"
 
