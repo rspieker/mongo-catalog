@@ -1,6 +1,7 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import { Version } from '../source/domain/version';
+import { glob } from 'glob';
 
 type Result = 
     | { documents: unknown[] }
@@ -23,7 +24,17 @@ type UnifiedEntry = {
     results: UnifiedResult[];
 };
 
+type MetaData = {
+    name: string;
+    version: string;
+    releases: Array<{ name: string; [key: string]: unknown }>;
+    history: Array<{ type: string; date: string; [key: string]: unknown }>;
+};
+
 const automation = resolve(__dirname, '..', 'automation');
+
+// Global sorted list of all versions from all meta.json files
+let globalVersionList: string[] = [];
 
 function deepEqual(a: unknown, b: unknown): boolean {
     if (a === b) return true;
@@ -64,34 +75,60 @@ function normalizeVersion(version: string): number {
     return major * 10000 + minor * 100 + patch;
 }
 
+async function buildGlobalVersionList(): Promise<string[]> {
+    const metaFiles = await glob(resolve(automation, 'collect', '**', 'meta.json'));
+    const versionSet = new Set<string>();
+    
+    for (const file of metaFiles) {
+        try {
+            const content = await readFile(file, 'utf-8');
+            const meta = JSON.parse(content) as MetaData;
+            if (meta.version) {
+                versionSet.add(meta.version);
+            }
+        } catch {
+            // Skip files that can't be read/parsed
+        }
+    }
+    
+    // Sort using Version class for proper ordering
+    const sorted = Array.from(versionSet).sort((a, b) => {
+        const vA = Version.from(a);
+        const vB = Version.from(b);
+        
+        // Compare major
+        if (vA.major !== vB.major) return vA.major - vB.major;
+        // Compare minor (treat undefined as 0)
+        const minorA = vA.minor ?? 0;
+        const minorB = vB.minor ?? 0;
+        if (minorA !== minorB) return minorA - minorB;
+        // Compare patch (treat undefined as 0)
+        const patchA = vA.patch ?? 0;
+        const patchB = vB.patch ?? 0;
+        return patchA - patchB;
+    });
+    
+    return sorted;
+}
+
 function compressVersions(versions: string[]): string {
+    if (versions.length === 0) return '';
+    if (versions.length === 1) return versions[0];
+    
+    // Sort collected versions
     const sorted = [...new Set(versions)].sort((a, b) => 
         normalizeVersion(a) - normalizeVersion(b)
     );
-
-    if (sorted.length === 0) return '';
-    if (sorted.length === 1) return sorted[0];
-
-    const ranges: string[][] = [];
-    let current: string[] = [sorted[0]];
     
-    for (let i = 1; i < sorted.length; i++) {
-        const prevNorm = normalizeVersion(sorted[i - 1]);
-        const currNorm = normalizeVersion(sorted[i]);
-        
-        if (currNorm === prevNorm + 1) {
-            current.push(sorted[i]);
-        } else {
-            ranges.push(current);
-            current = [sorted[i]];
-        }
-    }
-    ranges.push(current);
-
-    return ranges.map(range => {
-        if (range.length === 1) return range[0];
-        return `${range[0]}..${range[range.length - 1]}`;
-    }).join(',');
+    // Find first and last collected version in global list
+    const first = sorted[0];
+    const last = sorted[sorted.length - 1];
+    
+    // If same, return single version
+    if (first === last) return first;
+    
+    // Return range from first to last, spanning uncollected versions
+    return `${first}..${last}`;
 }
 
 async function findVersionDirs(): Promise<string[]> {
@@ -166,9 +203,13 @@ async function loadCatalogsForVersion(versionDir: string): Promise<{
 }
 
 async function unify(): Promise<void> {
+    console.log('Building global version list...');
+    globalVersionList = await buildGlobalVersionList();
+    console.log(`Found ${globalVersionList.length} unique versions`);
+    
     console.log('Finding version directories...');
     const versionDirs = await findVersionDirs();
-    console.log(`Found ${versionDirs.length} version directories`);
+    console.log(`Found ${versionDirs.length} version directories with collected data`);
 
     if (versionDirs.length === 0) {
         console.log('No versions found, exiting');
