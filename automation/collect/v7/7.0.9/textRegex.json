@@ -1,0 +1,828 @@
+[
+	{
+		"operation": {
+			"title": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			7,
+			14,
+			16,
+			20,
+			21
+		]
+	},
+	{
+		"operation": {
+			"title": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			2,
+			3,
+			7,
+			11,
+			14,
+			16,
+			18,
+			19,
+			20,
+			21,
+			24
+		]
+	},
+	{
+		"operation": {
+			"title": {
+				"$regex": {}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"description": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			2,
+			3,
+			5,
+			9,
+			10,
+			12,
+			14,
+			15,
+			16,
+			17,
+			18,
+			21,
+			22
+		]
+	},
+	{
+		"operation": {
+			"description": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			1,
+			6,
+			11,
+			20
+		]
+	},
+	{
+		"operation": {
+			"title": {
+				"$regex": "quick",
+				"$options": "i"
+			}
+		},
+		"documents": [
+			2,
+			3,
+			7,
+			11,
+			14,
+			16,
+			18,
+			19,
+			20,
+			21,
+			24
+		]
+	},
+	{
+		"operation": {
+			"title": {
+				"$regex": "BROWN",
+				"$options": "i"
+			}
+		},
+		"documents": [
+			1,
+			5,
+			10,
+			12,
+			16,
+			17,
+			21,
+			23,
+			25
+		]
+	},
+	{
+		"operation": {
+			"description": {
+				"$regex": {}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"description": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			7,
+			8,
+			13,
+			23
+		]
+	},
+	{
+		"operation": {
+			"title": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			16,
+			21
+		]
+	},
+	{
+		"operation": {
+			"description": {
+				"$regex": {}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"manufacturer": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			22,
+			24,
+			25
+		]
+	},
+	{
+		"operation": {
+			"manufacturer": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			14,
+			20,
+			21,
+			23
+		]
+	},
+	{
+		"operation": {
+			"manufacturer": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			12,
+			13,
+			15
+		]
+	},
+	{
+		"operation": {
+			"title": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			7,
+			14,
+			16,
+			20,
+			21
+		]
+	},
+	{
+		"operation": {
+			"category": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			1,
+			11,
+			14,
+			15,
+			16,
+			19,
+			20,
+			22,
+			24,
+			25
+		]
+	},
+	{
+		"operation": {
+			"category": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			1,
+			11,
+			12,
+			14,
+			16,
+			19,
+			20,
+			21,
+			22,
+			24
+		]
+	},
+	{
+		"operation": {
+			"title": {
+				"$regex": {},
+				"$options": "i"
+			}
+		},
+		"documents": [
+			2,
+			3,
+			7,
+			11,
+			14,
+			16,
+			18,
+			19,
+			20,
+			21,
+			24
+		]
+	},
+	{
+		"operation": {
+			"description": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			8,
+			9,
+			13,
+			23
+		]
+	},
+	{
+		"operation": {
+			"description": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			2,
+			3,
+			4,
+			10,
+			15,
+			19,
+			21,
+			22,
+			24,
+			25
+		]
+	},
+	{
+		"operation": {
+			"title": {
+				"$regex": "[invalid"
+			}
+		},
+		"error": {
+			"message": "Regular expression is invalid: missing terminating ] for character class",
+			"code": 51091,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"operation": {
+			"title": {
+				"$regex": "pattern",
+				"$options": "xyz"
+			}
+		},
+		"error": {
+			"message": " invalid flag in regex options: y",
+			"code": 51108,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"operation": {
+			"$text": {
+				"$search": "quick"
+			}
+		},
+		"documents": [
+			2,
+			20,
+			24,
+			14,
+			21,
+			16,
+			3,
+			18,
+			7,
+			22,
+			19,
+			17,
+			15,
+			12,
+			11,
+			10,
+			5,
+			9
+		]
+	},
+	{
+		"operation": {
+			"$text": {
+				"$search": "brown"
+			}
+		},
+		"documents": [
+			16,
+			25,
+			11,
+			1,
+			15,
+			4,
+			23,
+			21,
+			10,
+			5,
+			20,
+			17,
+			12,
+			6
+		]
+	},
+	{
+		"operation": {
+			"$text": {
+				"$search": "quick brown"
+			}
+		},
+		"documents": [
+			16,
+			25,
+			11,
+			1,
+			15,
+			4,
+			23,
+			21,
+			10,
+			5,
+			20,
+			17,
+			12,
+			6,
+			2,
+			24,
+			14,
+			3,
+			18,
+			7,
+			22,
+			19,
+			9
+		]
+	},
+	{
+		"operation": {
+			"$text": {
+				"$search": "JavaScript programming"
+			}
+		},
+		"documents": [
+			24,
+			22,
+			4,
+			17,
+			8,
+			21,
+			15,
+			10,
+			3,
+			2,
+			25,
+			19,
+			14,
+			13,
+			11
+		]
+	},
+	{
+		"operation": {
+			"$text": {
+				"$search": "quick",
+				"$language": "en"
+			}
+		},
+		"documents": [
+			2,
+			20,
+			24,
+			14,
+			21,
+			16,
+			3,
+			18,
+			7,
+			22,
+			19,
+			17,
+			15,
+			12,
+			11,
+			10,
+			5,
+			9
+		]
+	},
+	{
+		"operation": {
+			"$text": {
+				"$search": "guide",
+				"$language": "en"
+			}
+		},
+		"documents": [
+			13,
+			24,
+			21,
+			12,
+			15,
+			9,
+			6,
+			18,
+			2,
+			25,
+			23,
+			19,
+			8,
+			7,
+			4
+		]
+	},
+	{
+		"operation": {
+			"$text": {
+				"$search": "Quick",
+				"$caseSensitive": true
+			}
+		},
+		"documents": [
+			2,
+			20,
+			24,
+			14,
+			21,
+			16,
+			3,
+			18,
+			7,
+			22,
+			19,
+			17,
+			15,
+			12,
+			11,
+			10,
+			5
+		]
+	},
+	{
+		"operation": {
+			"$text": {
+				"$search": "Quick",
+				"$caseSensitive": false
+			}
+		},
+		"documents": [
+			2,
+			20,
+			24,
+			14,
+			21,
+			16,
+			3,
+			18,
+			7,
+			22,
+			19,
+			17,
+			15,
+			12,
+			11,
+			10,
+			5,
+			9
+		]
+	},
+	{
+		"operation": {
+			"$text": {
+				"$search": "BROWN",
+				"$caseSensitive": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"$text": {
+				"$search": "BROWN",
+				"$caseSensitive": false
+			}
+		},
+		"documents": [
+			16,
+			25,
+			11,
+			1,
+			15,
+			4,
+			23,
+			21,
+			10,
+			5,
+			20,
+			17,
+			12,
+			6
+		]
+	},
+	{
+		"operation": {
+			"$text": {
+				"$search": "quick",
+				"$diacriticSensitive": true
+			}
+		},
+		"documents": [
+			2,
+			20,
+			24,
+			14,
+			21,
+			16,
+			3,
+			18,
+			7,
+			22,
+			19,
+			17,
+			15,
+			12,
+			11,
+			10,
+			5,
+			9
+		]
+	},
+	{
+		"operation": {
+			"$text": {
+				"$search": "quick",
+				"$diacriticSensitive": false
+			}
+		},
+		"documents": [
+			2,
+			20,
+			24,
+			14,
+			21,
+			16,
+			3,
+			18,
+			7,
+			22,
+			19,
+			17,
+			15,
+			12,
+			11,
+			10,
+			5,
+			9
+		]
+	},
+	{
+		"operation": {
+			"$text": {
+				"$search": "guide",
+				"$language": "en",
+				"$caseSensitive": true
+			}
+		},
+		"documents": [
+			24,
+			21,
+			12,
+			25,
+			19,
+			7,
+			4
+		]
+	},
+	{
+		"operation": {
+			"$text": {
+				"$search": "guide",
+				"$language": "en",
+				"$caseSensitive": false
+			}
+		},
+		"documents": [
+			13,
+			24,
+			21,
+			12,
+			15,
+			9,
+			6,
+			18,
+			2,
+			25,
+			23,
+			19,
+			8,
+			7,
+			4
+		]
+	},
+	{
+		"operation": {
+			"$text": {
+				"$search": "quick brown",
+				"$caseSensitive": false,
+				"$diacriticSensitive": false
+			}
+		},
+		"documents": [
+			16,
+			25,
+			11,
+			1,
+			15,
+			4,
+			23,
+			21,
+			10,
+			5,
+			20,
+			17,
+			12,
+			6,
+			2,
+			24,
+			14,
+			3,
+			18,
+			7,
+			22,
+			19,
+			9
+		]
+	},
+	{
+		"operation": {
+			"title": {
+				"$regex": {}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"title": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"operation": {
+			"title": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"operation": {
+			"tags.0": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			17
+		]
+	},
+	{
+		"operation": {
+			"tags.1": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			2,
+			18,
+			24
+		]
+	},
+	{
+		"operation": {
+			"tags": {
+				"$regex": "quick"
+			}
+		},
+		"documents": [
+			2,
+			20,
+			24
+		]
+	},
+	{
+		"operation": {
+			"tags": {
+				"$regex": {}
+			}
+		},
+		"documents": [
+			17,
+			24
+		]
+	}
+]
