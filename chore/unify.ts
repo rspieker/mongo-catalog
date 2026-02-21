@@ -39,7 +39,7 @@ async function main(): Promise<void> {
         const meta = await readFile(metaFile).then((buffer) =>
             JSON.parse(buffer.toString('utf8'))
         );
-        const version = new Version(meta.version);
+        const version = Version.from(meta.version);
         const catalogs = [
             ...new Set(
                 meta.history
