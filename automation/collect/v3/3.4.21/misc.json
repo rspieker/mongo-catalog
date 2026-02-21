@@ -1,0 +1,631 @@
+[
+	{
+		"operation": {},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"$nop": false
+		},
+		"error": {
+			"message": "unknown top level operator: $nop",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"$invalid": true
+		},
+		"error": {
+			"message": "unknown top level operator: $invalid",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"$unknown": "value"
+		},
+		"error": {
+			"message": "unknown top level operator: $unknown",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"color": {
+				"$not": "purple"
+			}
+		},
+		"error": {
+			"message": "$not needs a regex or a document",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"color": {
+				"$not": 123
+			}
+		},
+		"error": {
+			"message": "$not needs a regex or a document",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"color": {
+				"$not": true
+			}
+		},
+		"error": {
+			"message": "$not needs a regex or a document",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"$nor": {
+				"color": "purple"
+			}
+		},
+		"error": {
+			"message": "$nor must be an array",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"$nor": [
+				"purple"
+			]
+		},
+		"error": {
+			"message": "$or/$and/$nor entries need to be full objects",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"$expr": {
+				"$eq": [
+					{
+						"$divide": [
+							"$number",
+							0
+						]
+					},
+					1
+				]
+			}
+		},
+		"error": {
+			"message": "unknown top level operator: $expr",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"$expr": {
+				"$eq": [
+					{
+						"$divide": [
+							"$string",
+							0
+						]
+					},
+					1
+				]
+			}
+		},
+		"error": {
+			"message": "unknown top level operator: $expr",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"$expr": {
+				"$eq": [
+					{
+						"$divide": [
+							"$string",
+							0.1
+						]
+					},
+					1
+				]
+			}
+		},
+		"error": {
+			"message": "unknown top level operator: $expr",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"$expr": {
+				"$eq": [
+					{
+						"$divide": [
+							"$bool",
+							0
+						]
+					},
+					1
+				]
+			}
+		},
+		"error": {
+			"message": "unknown top level operator: $expr",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"$expr": {
+				"$eq": [
+					{
+						"$divide": [
+							"$bool",
+							0.1
+						]
+					},
+					1
+				]
+			}
+		},
+		"error": {
+			"message": "unknown top level operator: $expr",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"$expr": {
+				"$eq": [
+					{
+						"$divide": [
+							"$unknown",
+							0
+						]
+					},
+					1
+				]
+			}
+		},
+		"error": {
+			"message": "unknown top level operator: $expr",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"invalid.path.that.does.not.exist": "value"
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"": "empty field name"
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			".": "dot field name"
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"..": "double dot field name"
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"number": {
+				"$gt": "not a number"
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"string": {
+				"$gt": 123
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"bool": {
+				"$in": [
+					"true",
+					"false"
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"price": {
+				"$in": [
+					"cheap",
+					"expensive"
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"number": null
+		},
+		"documents": []
+	},
+	{
+		"operation": {},
+		"documents": []
+	},
+	{
+		"operation": {
+			"color": {
+				"$eq": null
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"price": {}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"operation": {
+			"string": {
+				"$regex": "[invalid"
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"string": {
+				"$regex": "(invalid"
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"string": {
+				"$regex": "pattern",
+				"$options": "xyz"
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"string": {
+				"$regex": "pattern",
+				"$options": "imxyz"
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"number": {
+				"$mod": [
+					0,
+					0
+				]
+			}
+		},
+		"error": {
+			"message": "divisor cannot be 0",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"number": {
+				"$mod": [
+					2,
+					5
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"number": {
+				"$mod": "invalid"
+			}
+		},
+		"error": {
+			"message": "malformed mod, needs to be an array",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"number": {
+				"$mod": [
+					2
+				]
+			}
+		},
+		"error": {
+			"message": "malformed mod, not enough elements",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"number": {
+				"$mod": []
+			}
+		},
+		"error": {
+			"message": "malformed mod, not enough elements",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"color": {
+				"$all": "not an array"
+			}
+		},
+		"error": {
+			"message": "$all needs an array",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"color": {
+				"$elemMatch": "not an object"
+			}
+		},
+		"error": {
+			"message": "$elemMatch needs an Object",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"color": {
+				"$size": "not a number"
+			}
+		},
+		"error": {
+			"message": "$size needs a number",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"color": {
+				"$size": -1
+			}
+		},
+		"error": {
+			"message": "$size may not be negative",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"color": {
+				"$size": 1.5
+			}
+		},
+		"error": {
+			"message": "$size must be a whole number",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"number": {
+				"$bitsAllClear": -1
+			}
+		},
+		"error": {
+			"message": "number cannot take a negative number: $bitsAllClear: -1",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"number": {
+				"$bitsAllSet": -1
+			}
+		},
+		"error": {
+			"message": "number cannot take a negative number: $bitsAllSet: -1",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"number": {
+				"$bitsAnyClear": [
+					-1
+				]
+			}
+		},
+		"error": {
+			"message": "bit positions must be >= 0 but got: 0: -1",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"number": {
+				"$bitsAnySet": [
+					-1
+				]
+			}
+		},
+		"error": {
+			"message": "bit positions must be >= 0 but got: 0: -1",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"color": {
+				"$not": {
+					"$not": {
+						"$not": "purple"
+					}
+				}
+			}
+		},
+		"error": {
+			"message": "$not needs a regex or a document",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"price": {
+				"$gt": {
+					"$lt": 10
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"number": {
+				"$gte": 0,
+				"$invalid": true
+			}
+		},
+		"error": {
+			"message": "unknown operator: $invalid",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"color": "purple",
+			"$unknown": "value"
+		},
+		"error": {
+			"message": "unknown top level operator: $unknown",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"operation": {
+			"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": "value"
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"field\nwith\nnewlines": "value"
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"field\twith\ttabs": "value"
+		},
+		"documents": []
+	},
+	{
+		"operation": {
+			"field\u0000with\u0000nulls": "value"
+		},
+		"error": {
+			"message": "key field\u0000with\u0000nulls must not contain null bytes",
+			"type": "Error"
+		}
+	}
+]
