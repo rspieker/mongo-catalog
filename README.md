@@ -165,9 +165,14 @@ MONGO_VERSION=8.2.5 npm run update:mongo-collect
 Aggregates results across all collected versions to identify behavioral patterns.
 
 **Process:**
-1. Groups results by catalog + operation
-2. For each unique result, collects all versions that produced it
-3. Compresses consecutive versions into ranges (e.g., "3.6.0..3.6.23")
+1. Loads all meta.json files from `automation/collect/` directory
+2. Filters to only fully qualified versions (major.minor.patch) - excludes aliases like "3" or "3.0"
+3. Deduplicates versions that appear in multiple directories (e.g., "3.5.13" in both v3 and v4)
+4. For each version, loads completed catalogs and groups results by catalog + operation + result hash
+5. Sorts versions using directory order (the order they appear in the filesystem)
+6. Maps each version to an index in the sorted list
+7. Groups consecutive indices into ranges (e.g., indices [0,1,2,3] → "2.6.12..3.0.15")
+8. Versions with the same result that are consecutive in the index list form a range
 
 **Output:** `automation/unified.json`
 ```json

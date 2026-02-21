@@ -48,7 +48,11 @@ async function main(): Promise<void> {
             ),
         ];
         // Only include fully qualified versions (have major, minor, and patch)
-        if (version.major !== undefined && version.minor !== undefined && version.patch !== undefined) {
+        if (
+            version.major !== undefined &&
+            version.minor !== undefined &&
+            version.patch !== undefined
+        ) {
             versionSet.add(meta.version);
         } else {
             continue;
@@ -91,7 +95,9 @@ async function main(): Promise<void> {
         }
     }
 
-    const versions = Array.from(versionSet).sort((a, b) => (a < b ? -1 : Number(a > b)));
+    const versions = Array.from(versionSet).sort((a, b) =>
+        a < b ? -1 : Number(a > b)
+    );
 
     const result: Array<Result> = [];
     for (const { catalog: group, query, results } of collected) {
@@ -146,7 +152,9 @@ async function main(): Promise<void> {
         }
     }
 
-    console.log(JSON.stringify({ versions, result }, null, '\t'));
+    const outputPath = resolve(automation, 'unified.json');
+    await writeFile(outputPath, JSON.stringify(result, null, '\t'));
+    console.log(`Written to ${outputPath}`);
 }
 
 main().catch((error) => {
