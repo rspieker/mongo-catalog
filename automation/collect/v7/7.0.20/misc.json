@@ -1,5 +1,6 @@
 [
 	{
+		"id": "oOz0ewr8TCOK",
 		"operation": {},
 		"documents": [
 			1,
@@ -25,6 +26,7 @@
 		]
 	},
 	{
+		"id": "gbwHWj0FwGKT",
 		"operation": {
 			"$nop": false
 		},
@@ -35,6 +37,7 @@
 		}
 	},
 	{
+		"id": "eSa4nZ5MzqXR",
 		"operation": {
 			"$invalid": true
 		},
@@ -45,6 +48,7 @@
 		}
 	},
 	{
+		"id": "iKBvMzUKRUCU",
 		"operation": {
 			"$unknown": "value"
 		},
@@ -55,6 +59,7 @@
 		}
 	},
 	{
+		"id": "revzucKwxWZw",
 		"operation": {
 			"color": {
 				"$not": "purple"
@@ -67,6 +72,7 @@
 		}
 	},
 	{
+		"id": "tWvmd5FzzJ8A",
 		"operation": {
 			"color": {
 				"$not": 123
@@ -79,6 +85,7 @@
 		}
 	},
 	{
+		"id": "hRrdDKn7UnkE",
 		"operation": {
 			"color": {
 				"$not": true
@@ -91,6 +98,7 @@
 		}
 	},
 	{
+		"id": "b8WfrEiDICV7",
 		"operation": {
 			"$nor": {
 				"color": "purple"
@@ -103,6 +111,7 @@
 		}
 	},
 	{
+		"id": "rblvKH6JLlNX",
 		"operation": {
 			"$nor": [
 				"purple"
@@ -115,6 +124,7 @@
 		}
 	},
 	{
+		"id": "neFbUphT9WM9",
 		"operation": {
 			"$expr": {
 				"$eq": [
@@ -135,6 +145,7 @@
 		}
 	},
 	{
+		"id": "nW73cUHMkOZy",
 		"operation": {
 			"$expr": {
 				"$eq": [
@@ -155,6 +166,7 @@
 		}
 	},
 	{
+		"id": "v0LpmfhDg9ea",
 		"operation": {
 			"$expr": {
 				"$eq": [
@@ -175,6 +187,7 @@
 		}
 	},
 	{
+		"id": "eRwLIudJ3URF",
 		"operation": {
 			"$expr": {
 				"$eq": [
@@ -195,6 +208,7 @@
 		}
 	},
 	{
+		"id": "pfQy3Q65LfVo",
 		"operation": {
 			"$expr": {
 				"$eq": [
@@ -215,6 +229,7 @@
 		}
 	},
 	{
+		"id": "uLalGxOKUBeB",
 		"operation": {
 			"$expr": {
 				"$eq": [
@@ -231,30 +246,35 @@
 		"documents": []
 	},
 	{
+		"id": "iRxsOFJGIMog",
 		"operation": {
 			"invalid.path.that.does.not.exist": "value"
 		},
 		"documents": []
 	},
 	{
+		"id": "ccDSFA6x4SV0",
 		"operation": {
 			"": "empty field name"
 		},
 		"documents": []
 	},
 	{
+		"id": "tzKVnnu8wBMk",
 		"operation": {
 			".": "dot field name"
 		},
 		"documents": []
 	},
 	{
+		"id": "usqOPMco4uL1",
 		"operation": {
 			"..": "double dot field name"
 		},
 		"documents": []
 	},
 	{
+		"id": "sqxymJVXWPsv",
 		"operation": {
 			"number": {
 				"$gt": "not a number"
@@ -263,6 +283,7 @@
 		"documents": []
 	},
 	{
+		"id": "nWpqUu2T1FA5",
 		"operation": {
 			"string": {
 				"$gt": 123
@@ -271,6 +292,7 @@
 		"documents": []
 	},
 	{
+		"id": "rsxF3cr9e00w",
 		"operation": {
 			"bool": {
 				"$in": [
@@ -282,6 +304,7 @@
 		"documents": []
 	},
 	{
+		"id": "gCGLQEOxz7yJ",
 		"operation": {
 			"price": {
 				"$in": [
@@ -293,16 +316,19 @@
 		"documents": []
 	},
 	{
+		"id": "sJNPcSmmNWOu",
 		"operation": {
 			"number": null
 		},
 		"documents": []
 	},
 	{
+		"id": "oOz0ewr8TCOK",
 		"operation": {},
 		"documents": []
 	},
 	{
+		"id": "lVegqZHiljGO",
 		"operation": {
 			"color": {
 				"$eq": null
@@ -311,6 +337,7 @@
 		"documents": []
 	},
 	{
+		"id": "iKeSdyBbDy4j",
 		"operation": {
 			"price": {}
 		},
@@ -338,6 +365,7 @@
 		]
 	},
 	{
+		"id": "gqSHPsbquoL7",
 		"operation": {
 			"string": {
 				"$regex": "[invalid"
@@ -350,6 +378,7 @@
 		}
 	},
 	{
+		"id": "mxLG4timf1FN",
 		"operation": {
 			"string": {
 				"$regex": "(invalid"
@@ -362,6 +391,7 @@
 		}
 	},
 	{
+		"id": "rT2TqxhT4NLk",
 		"operation": {
 			"string": {
 				"$regex": "pattern",
@@ -375,6 +405,7 @@
 		}
 	},
 	{
+		"id": "hXyKSuJOl4jv",
 		"operation": {
 			"string": {
 				"$regex": "pattern",
@@ -388,6 +419,7 @@
 		}
 	},
 	{
+		"id": "bNcSQLab2GGJ",
 		"operation": {
 			"number": {
 				"$mod": [
@@ -403,6 +435,7 @@
 		}
 	},
 	{
+		"id": "qhwDIocp4KXH",
 		"operation": {
 			"number": {
 				"$mod": [
@@ -414,6 +447,7 @@
 		"documents": []
 	},
 	{
+		"id": "pJNrEH8JVISr",
 		"operation": {
 			"number": {
 				"$mod": "invalid"
@@ -426,6 +460,7 @@
 		}
 	},
 	{
+		"id": "tJxPZKx50tg1",
 		"operation": {
 			"number": {
 				"$mod": [
@@ -440,6 +475,7 @@
 		}
 	},
 	{
+		"id": "jWRs7oUGY7ag",
 		"operation": {
 			"number": {
 				"$mod": []
@@ -452,6 +488,7 @@
 		}
 	},
 	{
+		"id": "uzdDIwr4wbxe",
 		"operation": {
 			"color": {
 				"$all": "not an array"
@@ -464,6 +501,7 @@
 		}
 	},
 	{
+		"id": "oVaJEKbBTbRG",
 		"operation": {
 			"color": {
 				"$elemMatch": "not an object"
@@ -476,6 +514,7 @@
 		}
 	},
 	{
+		"id": "wCOynFQ9aMUJ",
 		"operation": {
 			"color": {
 				"$size": "not a number"
@@ -488,6 +527,7 @@
 		}
 	},
 	{
+		"id": "q5KMPlNjSYKg",
 		"operation": {
 			"color": {
 				"$size": -1
@@ -500,6 +540,7 @@
 		}
 	},
 	{
+		"id": "mYfb5zPsPtez",
 		"operation": {
 			"color": {
 				"$size": 1.5
@@ -512,6 +553,7 @@
 		}
 	},
 	{
+		"id": "f1ILzlnDHjpo",
 		"operation": {
 			"number": {
 				"$bitsAllClear": -1
@@ -524,6 +566,7 @@
 		}
 	},
 	{
+		"id": "sCAuPuZADVKH",
 		"operation": {
 			"number": {
 				"$bitsAllSet": -1
@@ -536,6 +579,7 @@
 		}
 	},
 	{
+		"id": "nNJOnOpsm1Le",
 		"operation": {
 			"number": {
 				"$bitsAnyClear": [
@@ -550,6 +594,7 @@
 		}
 	},
 	{
+		"id": "atUQ7KKWa8Su",
 		"operation": {
 			"number": {
 				"$bitsAnySet": [
@@ -564,6 +609,7 @@
 		}
 	},
 	{
+		"id": "kM3rW7S9nLFP",
 		"operation": {
 			"color": {
 				"$not": {
@@ -580,6 +626,7 @@
 		}
 	},
 	{
+		"id": "vZU8OUqk04Lb",
 		"operation": {
 			"price": {
 				"$gt": {
@@ -590,6 +637,7 @@
 		"documents": []
 	},
 	{
+		"id": "dWEPGK9wx0ZC",
 		"operation": {
 			"number": {
 				"$gte": 0,
@@ -603,6 +651,7 @@
 		}
 	},
 	{
+		"id": "abTRz6U1fYL0",
 		"operation": {
 			"color": "purple",
 			"$unknown": "value"
@@ -614,24 +663,28 @@
 		}
 	},
 	{
+		"id": "kf7XBXQ7uHMu",
 		"operation": {
 			"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": "value"
 		},
 		"documents": []
 	},
 	{
+		"id": "pnaG8cFjoDgz",
 		"operation": {
 			"field\nwith\nnewlines": "value"
 		},
 		"documents": []
 	},
 	{
+		"id": "q6OiTeAnERs1",
 		"operation": {
 			"field\twith\ttabs": "value"
 		},
 		"documents": []
 	},
 	{
+		"id": "dMOJWM6DK84i",
 		"operation": {
 			"field\u0000with\u0000nulls": "value"
 		},

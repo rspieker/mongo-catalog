@@ -4,7 +4,8 @@ import { Version } from '../source/domain/version';
 import { readJSONFile, writeJSONFile } from '../source/domain/json';
 import { driver } from '../source/domain/mongo/driver';
 import { DSN } from '../source/domain/mongo/dsn';
-import { cp, mkdir } from 'node:fs/promises';
+import { cp, mkdir, writeFile } from 'node:fs/promises';
+import { id, serialize } from '../source/domain/serialization';
 
 type CatalogWorkItem = {
     name: string;
@@ -166,6 +167,7 @@ Promise.resolve()
                     const queryResult = await db.execute(operation);
 
                     const record: any = {
+                        id: id(operation),
                         operation,
                         documents: queryResult.success
                             ? queryResult.documents
@@ -182,9 +184,9 @@ Promise.resolve()
                 await db.dropCollection(dsn.collection);
 
                 // Save results
-                await writeJSONFile(
+                await writeFile(
                     resolve(versionDir, `${item.name}.json`),
-                    result
+                    serialize(result, '\t')
                 );
 
                 // Calculate checksum for this catalog's results
@@ -211,7 +213,9 @@ Promise.resolve()
                     reason: error.message || String(error),
                 });
                 hasErrors = true;
-                console.error(`✗ ${item.name}: ${error.message || String(error)}`);
+                console.error(
+                    `✗ ${item.name}: ${error.message || String(error)}`
+                );
             }
         }
 
@@ -222,8 +226,12 @@ Promise.resolve()
         plan.updated = new Date().toISOString();
 
         // Count results for logging
-        const processedCount = meta.history.filter(h => h.type === 'collection-completed').length;
-        const failedCount = meta.history.filter(h => h.type === 'collection-halted').length;
+        const processedCount = meta.history.filter(
+            (h) => h.type === 'collection-completed'
+        ).length;
+        const failedCount = meta.history.filter(
+            (h) => h.type === 'collection-halted'
+        ).length;
 
         console.log(`Saving plan with ${plan.catalogs.length} catalogs`);
         console.log(

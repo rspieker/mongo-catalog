@@ -1,5 +1,6 @@
 [
 	{
+		"id": "qXStH4yTKL7U",
 		"operation": {
 			"name": {
 				"$exists": true
@@ -29,6 +30,7 @@
 		]
 	},
 	{
+		"id": "wQqFTpVhAG5E",
 		"operation": {
 			"age": {
 				"$exists": true
@@ -58,6 +60,7 @@
 		]
 	},
 	{
+		"id": "vdtyLNJOL1hd",
 		"operation": {
 			"middleName": {
 				"$exists": false
@@ -87,6 +90,7 @@
 		]
 	},
 	{
+		"id": "tLejtPtmUSVW",
 		"operation": {
 			"profile.premium": {
 				"$exists": true
@@ -116,6 +120,7 @@
 		]
 	},
 	{
+		"id": "otSLH8bGe0qb",
 		"operation": {
 			"profile.nonexistent": {
 				"$exists": false
@@ -145,6 +150,7 @@
 		]
 	},
 	{
+		"id": "ep8BrRqANvUe",
 		"operation": {
 			"age": {
 				"$exists": true,
@@ -154,6 +160,7 @@
 		"documents": []
 	},
 	{
+		"id": "vdtyLNJOL1hd",
 		"operation": {
 			"middleName": {
 				"$exists": false
@@ -183,6 +190,7 @@
 		]
 	},
 	{
+		"id": "mTTQAMADKfQK",
 		"operation": {
 			"name": {
 				"$type": "string"
@@ -212,6 +220,7 @@
 		]
 	},
 	{
+		"id": "cdLswn1wMXmu",
 		"operation": {
 			"age": {
 				"$type": "number"
@@ -241,6 +250,7 @@
 		]
 	},
 	{
+		"id": "njwzkh4byetf",
 		"operation": {
 			"active": {
 				"$type": "bool"
@@ -270,6 +280,7 @@
 		]
 	},
 	{
+		"id": "oTNEEmZh7ZeG",
 		"operation": {
 			"tags": {
 				"$type": "array"
@@ -278,6 +289,7 @@
 		"documents": []
 	},
 	{
+		"id": "rO2W0PyIg3LJ",
 		"operation": {
 			"profile": {
 				"$type": "object"
@@ -307,6 +319,7 @@
 		]
 	},
 	{
+		"id": "gDiRiuJYYXoc",
 		"operation": {
 			"lastLogin": {
 				"$type": "date"
@@ -336,6 +349,7 @@
 		]
 	},
 	{
+		"id": "tZ2R0OX9kZJG",
 		"operation": {
 			"createdAt": {
 				"$type": "date"
@@ -365,6 +379,7 @@
 		]
 	},
 	{
+		"id": "qDGCzRq3TAgk",
 		"operation": {
 			"name": {
 				"$type": 2
@@ -394,6 +409,7 @@
 		]
 	},
 	{
+		"id": "o0Hx8Mn1AkLX",
 		"operation": {
 			"age": {
 				"$type": 16
@@ -423,6 +439,7 @@
 		]
 	},
 	{
+		"id": "bvmmzIP8xjnd",
 		"operation": {
 			"active": {
 				"$type": 8
@@ -452,6 +469,7 @@
 		]
 	},
 	{
+		"id": "kYt2ApRgE6kn",
 		"operation": {
 			"tags": {
 				"$type": 4
@@ -460,6 +478,7 @@
 		"documents": []
 	},
 	{
+		"id": "vxzyvEv5vhIL",
 		"operation": {
 			"profile": {
 				"$type": 3
@@ -489,6 +508,7 @@
 		]
 	},
 	{
+		"id": "b92vpmI716UQ",
 		"operation": {
 			"lastLogin": {
 				"$type": 9
@@ -518,6 +538,7 @@
 		]
 	},
 	{
+		"id": "cGNMe0yKJanC",
 		"operation": {
 			"_id": {
 				"$type": 7
@@ -526,6 +547,7 @@
 		"documents": []
 	},
 	{
+		"id": "tGCnLYHSelqK",
 		"operation": {
 			"age": {
 				"$type": [
@@ -541,6 +563,7 @@
 		}
 	},
 	{
+		"id": "vusySdiMdd0W",
 		"operation": {
 			"status": {
 				"$type": [
@@ -556,6 +579,7 @@
 		}
 	},
 	{
+		"id": "s2VssE6yZJQx",
 		"operation": {
 			"$and": [
 				{
@@ -601,6 +625,7 @@
 		]
 	},
 	{
+		"id": "qumgEe81wB02",
 		"operation": {
 			"$or": [
 				{
@@ -632,6 +657,7 @@
 		]
 	},
 	{
+		"id": "mQaUbBILqRjs",
 		"operation": {
 			"profile.balance": {
 				"$type": "number"
@@ -661,6 +687,7 @@
 		]
 	},
 	{
+		"id": "cGZl5bENbNpD",
 		"operation": {
 			"stats.loginCount": {
 				"$type": "number"
@@ -690,6 +717,7 @@
 		]
 	},
 	{
+		"id": "qlvuVPmaMtIl",
 		"operation": {
 			"stats.failedLogins": {
 				"$type": "number"
@@ -719,6 +747,7 @@
 		]
 	},
 	{
+		"id": "bV7BKG3NIZrB",
 		"operation": {
 			"nested.deep.value": {
 				"$type": "string"
@@ -727,6 +756,7 @@
 		"documents": []
 	},
 	{
+		"id": "lUSE9Ht0tP3M",
 		"operation": {
 			"tags.0": {
 				"$type": "string"
@@ -753,6 +783,7 @@
 		]
 	},
 	{
+		"id": "uTyC71WEBUX5",
 		"operation": {
 			"scores.0.score": {
 				"$type": "number"
@@ -761,6 +792,7 @@
 		"documents": []
 	},
 	{
+		"id": "sTPJbQ9opWjt",
 		"operation": {
 			"scores.0.subject": {
 				"$type": "string"
@@ -769,6 +801,7 @@
 		"documents": []
 	},
 	{
+		"id": "wvhJ9tHGthMU",
 		"operation": {
 			"name": {
 				"$type": "invalid_type"
@@ -781,6 +814,7 @@
 		}
 	},
 	{
+		"id": "h0MRv4fhLOWR",
 		"operation": {
 			"age": {
 				"$type": 999
@@ -793,6 +827,7 @@
 		}
 	},
 	{
+		"id": "qfTKWMJ9Nf5o",
 		"operation": {
 			"profile.nonexistent": {
 				"$type": "string"
@@ -801,6 +836,7 @@
 		"documents": []
 	},
 	{
+		"id": "wNIPzoLwlbAw",
 		"operation": {
 			"name": {
 				"$exists": "invalid"
@@ -830,6 +866,7 @@
 		]
 	},
 	{
+		"id": "ciJeZCHUJLVp",
 		"operation": {
 			"age": {
 				"$type": null
@@ -842,6 +879,7 @@
 		}
 	},
 	{
+		"id": "uFOQPZLJQP8f",
 		"operation": {
 			"tags": {
 				"$type": "string"
@@ -868,6 +906,7 @@
 		]
 	},
 	{
+		"id": "uDqVrOAphrGs",
 		"operation": {
 			"_id": {
 				"$type": "objectId"
@@ -876,6 +915,7 @@
 		"documents": []
 	},
 	{
+		"id": "cGNMe0yKJanC",
 		"operation": {
 			"_id": {
 				"$type": 7
@@ -884,6 +924,7 @@
 		"documents": []
 	},
 	{
+		"id": "uQFpLGCHw2ps",
 		"operation": {
 			"age": {
 				"$type": "long"
@@ -892,6 +933,7 @@
 		"documents": []
 	},
 	{
+		"id": "a2NbcsIGkYTM",
 		"operation": {
 			"profile.rating": {
 				"$type": "int"
@@ -906,6 +948,7 @@
 		]
 	},
 	{
+		"id": "uBpAMyy9Y1F7",
 		"operation": {
 			"profile.balance": {
 				"$type": "decimal"

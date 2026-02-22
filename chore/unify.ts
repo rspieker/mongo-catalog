@@ -8,7 +8,7 @@ const automation = resolve(__dirname, '..', 'automation');
 
 type Collect = {
     catalog: string;
-    hash: string;
+    id: string;
     query: unknown;
     results: Array<{
         hash: string;
@@ -63,15 +63,18 @@ async function main(): Promise<void> {
                 const catalog = await readFile(
                     resolve(path, `${catalogName}.json`)
                 ).then((buffer) => JSON.parse(buffer.toString('utf8')));
-                for (const { operation: query, documents, error } of catalog) {
+                for (const {
+                    id,
+                    operation: query,
+                    documents,
+                    error,
+                } of catalog) {
                     const result = hash(documents || error);
-                    const checksum = hash(query);
-                    const foundQuery = collected.find(
-                        ({ hash }) => hash === checksum
-                    );
+                    const checksum = id;
+                    const foundQuery = collected.find((r) => r.id === id);
                     const recordQuery: Collect = foundQuery || {
                         catalog: String(catalogName),
-                        hash: checksum,
+                        id,
                         query,
                         results: [] as Collect['results'],
                     };
@@ -98,7 +101,6 @@ async function main(): Promise<void> {
     const versions = Array.from(versionSet).sort((a, b) =>
         a < b ? -1 : Number(a > b)
     );
-    console.log(JSON.stringify(versions));
 
     const result: Array<Result> = [];
     for (const { catalog: group, query, results } of collected) {
@@ -115,13 +117,6 @@ async function main(): Promise<void> {
         const collectedVersions = [
             ...new Set(results.flatMap(({ versions }) => versions)),
         ].sort((a, b) => (a < b ? -1 : Number(a > b)));
-
-        console.log(
-            `${group}/${JSON.stringify(query)} unique count:`,
-            new Set(collectedVersions).size,
-            'total:',
-            collectedVersions.length
-        );
 
         for (const result of results) {
             const { hash: _, versions: vers, ...rest } = result;
