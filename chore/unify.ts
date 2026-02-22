@@ -116,6 +116,13 @@ async function main(): Promise<void> {
             ...new Set(results.flatMap(({ versions }) => versions)),
         ].sort((a, b) => (a < b ? -1 : Number(a > b)));
 
+        console.log(
+            `${group}/${JSON.stringify(query)} unique count:`,
+            new Set(collectedVersions).size,
+            'total:',
+            collectedVersions.length
+        );
+
         for (const result of results) {
             const { hash: _, versions: vers, ...rest } = result;
             const indices = vers.map((v) => collectedVersions.indexOf(v));
