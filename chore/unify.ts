@@ -20,6 +20,7 @@ type Collect = {
 type Result = {
     catalog: string;
     operations: Array<{
+        id: Collect['id'];
         operation: Collect['query'];
         results: Array<{
             documents?: unknown;
@@ -98,29 +99,29 @@ async function main(): Promise<void> {
         }
     }
 
-    const versions = Array.from(versionSet).sort((a, b) =>
-        a < b ? -1 : Number(a > b)
-    );
-
     const result: Array<Result> = [];
-    for (const { catalog: group, query, results } of collected) {
+    for (const { id, catalog: group, query, results } of collected) {
         const foundCatalog = result.find(({ catalog }) => catalog === group);
         const catalog = foundCatalog || { catalog: group, operations: [] };
         const foundOperation = catalog.operations.find(
             ({ operation }) => operation === query
         );
-        const operation = foundOperation || { operation: query, results: [] };
+        const operation = foundOperation || {
+            id,
+            operation: query,
+            results: [],
+        };
 
         if (!foundCatalog) result.push(catalog);
         if (!foundOperation) catalog.operations.push(operation);
 
-        const collectedVersions = [
+        const versions = [
             ...new Set(results.flatMap(({ versions }) => versions)),
         ].sort((a, b) => (a < b ? -1 : Number(a > b)));
 
         for (const result of results) {
             const { hash: _, versions: vers, ...rest } = result;
-            const indices = vers.map((v) => collectedVersions.indexOf(v));
+            const indices = vers.map((v) => versions.indexOf(v));
             const normalized = indices
                 .sort((a, b) => (a < b ? -1 : Number(a > b)))
                 .reduce(
@@ -140,7 +141,7 @@ async function main(): Promise<void> {
                 )
                 .map((ranges) => {
                     const mapped = ranges.map((index) =>
-                        String(collectedVersions[index])
+                        String(versions[index])
                     );
                     return mapped.length <= 2
                         ? mapped.join(',')
@@ -148,15 +149,44 @@ async function main(): Promise<void> {
                 })
                 .join(',');
 
-            operation.results.push({
-                ...rest,
-                versions: normalized,
-            });
+            operation.results = operation.results
+                .concat({
+                    ...rest,
+                    versions: normalized,
+                })
+                .sort(({ versions: a }, { versions: b }) =>
+                    a < b ? -1 : Number(a > b)
+                );
         }
     }
 
+    result.sort(({ catalog: a }, { catalog: b }) =>
+        a < b ? -1 : Number(a > b)
+    );
+
     const outputPath = resolve(automation, 'unified.json');
-    await writeFile(outputPath, JSON.stringify(result, null, '\t'));
+    const prettified = JSON.stringify(result, null, '\t')
+        .replace(
+            /(\n\s+)("(?:documents)":\s+)(\[[^\]]*\1\])/gm,
+            (_, indent, key, value) => {
+                try {
+                    return `${indent}${key}${JSON.stringify(JSON.parse(value))}`;
+                } catch (e) {
+                    console.log({ caught: e, _, indent, key, value });
+                }
+                return `${indent}${key}${value}`;
+            }
+        )
+        .replace(
+            /(\n\s+)("(?:operation|error)":\s+)(\{[\s\S]*?\1\})/gm,
+            (_, indent, key, value) => {
+                try {
+                    return `${indent}${key}${JSON.stringify(JSON.parse(value))}`;
+                } catch (e) {}
+                return `${indent}${key}${value}`;
+            }
+        );
+    await writeFile(outputPath, prettified);
     console.log(`Written to ${outputPath}`);
 }
 
