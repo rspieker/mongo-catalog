@@ -1,4 +1,4 @@
-import { readdir, readFile, writeFile } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import { glob } from 'glob';
 import { hash } from '@konfirm/checksum';
@@ -71,7 +71,6 @@ async function main(): Promise<void> {
                     error,
                 } of catalog) {
                     const result = hash(documents || error);
-                    const checksum = id;
                     const foundQuery = collected.find((r) => r.id === id);
                     const recordQuery: Collect = foundQuery || {
                         catalog: String(catalogName),
@@ -89,8 +88,12 @@ async function main(): Promise<void> {
                         error,
                         versions: [] as Array<Version>,
                     };
-                    if (!foundResult) recordQuery.results.push(recordResult);
-                    recordResult.versions.push(version);
+                    if (!foundResult) {
+                        recordQuery.results.push(recordResult);
+                    }
+                    if (!recordResult.versions.includes(version)) {
+                        recordResult.versions.push(version);
+                    }
                 }
             } catch (e) {
                 console.error(e);
