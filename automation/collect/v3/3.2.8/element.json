@@ -1,0 +1,963 @@
+[
+	{
+		"id": "qXStH4yTKL7U",
+		"operation": {
+			"name": {
+				"$exists": true
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "wQqFTpVhAG5E",
+		"operation": {
+			"age": {
+				"$exists": true
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "vdtyLNJOL1hd",
+		"operation": {
+			"middleName": {
+				"$exists": false
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "tLejtPtmUSVW",
+		"operation": {
+			"profile.premium": {
+				"$exists": true
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "otSLH8bGe0qb",
+		"operation": {
+			"profile.nonexistent": {
+				"$exists": false
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "ep8BrRqANvUe",
+		"operation": {
+			"age": {
+				"$exists": true,
+				"$eq": null
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "vdtyLNJOL1hd",
+		"operation": {
+			"middleName": {
+				"$exists": false
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "mTTQAMADKfQK",
+		"operation": {
+			"name": {
+				"$type": "string"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "cdLswn1wMXmu",
+		"operation": {
+			"age": {
+				"$type": "number"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "njwzkh4byetf",
+		"operation": {
+			"active": {
+				"$type": "bool"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "oTNEEmZh7ZeG",
+		"operation": {
+			"tags": {
+				"$type": "array"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "rO2W0PyIg3LJ",
+		"operation": {
+			"profile": {
+				"$type": "object"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "gDiRiuJYYXoc",
+		"operation": {
+			"lastLogin": {
+				"$type": "date"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "tZ2R0OX9kZJG",
+		"operation": {
+			"createdAt": {
+				"$type": "date"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "qDGCzRq3TAgk",
+		"operation": {
+			"name": {
+				"$type": 2
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "o0Hx8Mn1AkLX",
+		"operation": {
+			"age": {
+				"$type": 16
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "bvmmzIP8xjnd",
+		"operation": {
+			"active": {
+				"$type": 8
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "kYt2ApRgE6kn",
+		"operation": {
+			"tags": {
+				"$type": 4
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "vxzyvEv5vhIL",
+		"operation": {
+			"profile": {
+				"$type": 3
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "b92vpmI716UQ",
+		"operation": {
+			"lastLogin": {
+				"$type": 9
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "cGNMe0yKJanC",
+		"operation": {
+			"_id": {
+				"$type": 7
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "tGCnLYHSelqK",
+		"operation": {
+			"age": {
+				"$type": [
+					"number",
+					"null"
+				]
+			}
+		},
+		"error": {
+			"message": "argument to $type is not a number or a string",
+			"code": 14,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "vusySdiMdd0W",
+		"operation": {
+			"status": {
+				"$type": [
+					"string",
+					"null"
+				]
+			}
+		},
+		"error": {
+			"message": "argument to $type is not a number or a string",
+			"code": 14,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "s2VssE6yZJQx",
+		"operation": {
+			"$and": [
+				{
+					"name": {
+						"$exists": true,
+						"$type": "string"
+					}
+				},
+				{
+					"age": {
+						"$exists": true,
+						"$type": "number"
+					}
+				},
+				{
+					"middleName": {
+						"$exists": false
+					}
+				}
+			]
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "qumgEe81wB02",
+		"operation": {
+			"$or": [
+				{
+					"profile.premium": {
+						"$type": "bool",
+						"$eq": true
+					}
+				},
+				{
+					"profile.rating": {
+						"$type": "number",
+						"$gte": 4.5
+					}
+				}
+			]
+		},
+		"documents": [
+			2,
+			3,
+			4,
+			5,
+			6,
+			8,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "mQaUbBILqRjs",
+		"operation": {
+			"profile.balance": {
+				"$type": "number"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "cGZl5bENbNpD",
+		"operation": {
+			"stats.loginCount": {
+				"$type": "number"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "qlvuVPmaMtIl",
+		"operation": {
+			"stats.failedLogins": {
+				"$type": "number"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "bV7BKG3NIZrB",
+		"operation": {
+			"nested.deep.value": {
+				"$type": "string"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "lUSE9Ht0tP3M",
+		"operation": {
+			"tags.0": {
+				"$type": "string"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			4,
+			5,
+			6,
+			7,
+			8,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "uTyC71WEBUX5",
+		"operation": {
+			"scores.0.score": {
+				"$type": "number"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "sTPJbQ9opWjt",
+		"operation": {
+			"scores.0.subject": {
+				"$type": "string"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "wvhJ9tHGthMU",
+		"operation": {
+			"name": {
+				"$type": "invalid_type"
+			}
+		},
+		"error": {
+			"message": "unknown string alias for $type: invalid_type",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "h0MRv4fhLOWR",
+		"operation": {
+			"age": {
+				"$type": 999
+			}
+		},
+		"error": {
+			"message": "Invalid numerical $type code: 999",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "qfTKWMJ9Nf5o",
+		"operation": {
+			"profile.nonexistent": {
+				"$type": "string"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "wNIPzoLwlbAw",
+		"operation": {
+			"name": {
+				"$exists": "invalid"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "ciJeZCHUJLVp",
+		"operation": {
+			"age": {
+				"$type": null
+			}
+		},
+		"error": {
+			"message": "argument to $type is not a number or a string",
+			"code": 14,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "uFOQPZLJQP8f",
+		"operation": {
+			"tags": {
+				"$type": "string"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			4,
+			5,
+			6,
+			7,
+			8,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "uDqVrOAphrGs",
+		"operation": {
+			"_id": {
+				"$type": "objectId"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "cGNMe0yKJanC",
+		"operation": {
+			"_id": {
+				"$type": 7
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "uQFpLGCHw2ps",
+		"operation": {
+			"age": {
+				"$type": "long"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "a2NbcsIGkYTM",
+		"operation": {
+			"profile.rating": {
+				"$type": "int"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			13,
+			14
+		]
+	},
+	{
+		"id": "uBpAMyy9Y1F7",
+		"operation": {
+			"profile.balance": {
+				"$type": "decimal"
+			}
+		},
+		"error": {
+			"message": "Invalid numerical $type code: 19",
+			"code": 2,
+			"type": "MongoError"
+		}
+	}
+]

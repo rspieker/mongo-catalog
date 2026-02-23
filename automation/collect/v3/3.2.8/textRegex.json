@@ -1,0 +1,864 @@
+[
+	{
+		"id": "kJn8NhMXhrbD",
+		"operation": {
+			"title": {
+				"$regex": "@RegExp:$regex/^The/"
+			}
+		},
+		"documents": [
+			7,
+			14,
+			16,
+			20,
+			21
+		]
+	},
+	{
+		"id": "mGKyPBKlM4TX",
+		"operation": {
+			"title": {
+				"$regex": "@RegExp:$regex/Quick/"
+			}
+		},
+		"documents": [
+			2,
+			3,
+			7,
+			11,
+			14,
+			16,
+			18,
+			19,
+			20,
+			21,
+			24
+		]
+	},
+	{
+		"id": "cYV0ysOQAQNl",
+		"operation": {
+			"title": {
+				"$regex": "@RegExp:$regex/Brown$/"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "f4uvHuFEvgMH",
+		"operation": {
+			"description": {
+				"$regex": "@RegExp:$regex/quick/i"
+			}
+		},
+		"documents": [
+			2,
+			3,
+			5,
+			9,
+			10,
+			12,
+			14,
+			15,
+			16,
+			17,
+			18,
+			21,
+			22
+		]
+	},
+	{
+		"id": "rAi2z0Lf9I6e",
+		"operation": {
+			"description": {
+				"$regex": "@RegExp:$regex/brown/i"
+			}
+		},
+		"documents": [
+			1,
+			6,
+			11,
+			20
+		]
+	},
+	{
+		"id": "t7x7PVuU4LaI",
+		"operation": {
+			"title": {
+				"$regex": "quick",
+				"$options": "i"
+			}
+		},
+		"documents": [
+			2,
+			3,
+			7,
+			11,
+			14,
+			16,
+			18,
+			19,
+			20,
+			21,
+			24
+		]
+	},
+	{
+		"id": "cK4TZnRvMnU3",
+		"operation": {
+			"title": {
+				"$regex": "BROWN",
+				"$options": "i"
+			}
+		},
+		"documents": [
+			1,
+			5,
+			10,
+			12,
+			16,
+			17,
+			21,
+			23,
+			25
+		]
+	},
+	{
+		"id": "qNBtFaa83dKN",
+		"operation": {
+			"description": {
+				"$regex": "@RegExp:$regex/^the/i"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "us8jbWlKWDXt",
+		"operation": {
+			"description": {
+				"$regex": "@RegExp:$regex/guide$/i"
+			}
+		},
+		"documents": [
+			7,
+			8,
+			13,
+			23
+		]
+	},
+	{
+		"id": "iZgWrIxVsH2D",
+		"operation": {
+			"title": {
+				"$regex": "@RegExp:$regex/Quick.*Brown/"
+			}
+		},
+		"documents": [
+			16,
+			21
+		]
+	},
+	{
+		"id": "cUGu5SVO9WvU",
+		"operation": {
+			"description": {
+				"$regex": "@RegExp:$regex/quick.*brown/i"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "dEW66XNsxIIw",
+		"operation": {
+			"manufacturer": {
+				"$regex": "@RegExp:$regex/^Quick/"
+			}
+		},
+		"documents": [
+			22,
+			24,
+			25
+		]
+	},
+	{
+		"id": "vUL8y6IRTUAf",
+		"operation": {
+			"manufacturer": {
+				"$regex": "@RegExp:$regex/LLC$/"
+			}
+		},
+		"documents": [
+			14,
+			20,
+			21,
+			23
+		]
+	},
+	{
+		"id": "ajwK1YBLwkJ2",
+		"operation": {
+			"manufacturer": {
+				"$regex": "@RegExp:$regex/Co$/"
+			}
+		},
+		"documents": [
+			12,
+			13,
+			15
+		]
+	},
+	{
+		"id": "pippJ2v82Lqt",
+		"operation": {
+			"title": {
+				"$regex": "@RegExp:$regex/[A-Z].*Quick/"
+			}
+		},
+		"documents": [
+			7,
+			14,
+			16,
+			20,
+			21
+		]
+	},
+	{
+		"id": "wZnonABmsa6g",
+		"operation": {
+			"category": {
+				"$regex": "@RegExp:$regex/^[tg]/"
+			}
+		},
+		"documents": [
+			1,
+			11,
+			14,
+			15,
+			16,
+			19,
+			20,
+			22,
+			24,
+			25
+		]
+	},
+	{
+		"id": "oxRsS9xjlReS",
+		"operation": {
+			"category": {
+				"$regex": "@RegExp:$regex/e$/"
+			}
+		},
+		"documents": [
+			1,
+			11,
+			12,
+			14,
+			16,
+			19,
+			20,
+			21,
+			22,
+			24
+		]
+	},
+	{
+		"id": "cyAdTzuct9Jo",
+		"operation": {
+			"title": {
+				"$regex": "@RegExp:$regex/Quick/",
+				"$options": "i"
+			}
+		},
+		"documents": [
+			2,
+			3,
+			7,
+			11,
+			14,
+			16,
+			18,
+			19,
+			20,
+			21,
+			24
+		]
+	},
+	{
+		"id": "tNDa3m0KP38B",
+		"operation": {
+			"description": {
+				"$regex": "@RegExp:$regex/MongoDB/"
+			}
+		},
+		"documents": [
+			8,
+			9,
+			13,
+			23
+		]
+	},
+	{
+		"id": "d5eNrqfKvlmJ",
+		"operation": {
+			"description": {
+				"$regex": "@RegExp:$regex/JavaScript/i"
+			}
+		},
+		"documents": [
+			2,
+			3,
+			4,
+			10,
+			15,
+			19,
+			21,
+			22,
+			24,
+			25
+		]
+	},
+	{
+		"id": "mOdhaguZGiQJ",
+		"operation": {
+			"title": {
+				"$regex": "[invalid"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "v64YlxNUp7pu",
+		"operation": {
+			"title": {
+				"$regex": "pattern",
+				"$options": "xyz"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "wqOQTXlfUBWO",
+		"operation": {
+			"$text": {
+				"$search": "quick"
+			}
+		},
+		"documents": [
+			9,
+			5,
+			10,
+			11,
+			12,
+			15,
+			17,
+			19,
+			2,
+			24,
+			20,
+			14,
+			3,
+			21,
+			16,
+			18,
+			7,
+			22
+		]
+	},
+	{
+		"id": "rspkMagRtiuj",
+		"operation": {
+			"$text": {
+				"$search": "brown"
+			}
+		},
+		"documents": [
+			6,
+			12,
+			17,
+			20,
+			16,
+			5,
+			25,
+			11,
+			1,
+			23,
+			15,
+			4,
+			21,
+			10
+		]
+	},
+	{
+		"id": "aFQ6xJ80294M",
+		"operation": {
+			"$text": {
+				"$search": "quick brown"
+			}
+		},
+		"documents": [
+			9,
+			10,
+			21,
+			4,
+			15,
+			23,
+			1,
+			24,
+			11,
+			25,
+			2,
+			5,
+			16,
+			20,
+			17,
+			12,
+			6,
+			14,
+			3,
+			18,
+			7,
+			22,
+			19
+		]
+	},
+	{
+		"id": "rhxtsYYnwI38",
+		"operation": {
+			"$text": {
+				"$search": "JavaScript programming"
+			}
+		},
+		"documents": [
+			11,
+			13,
+			14,
+			19,
+			24,
+			25,
+			2,
+			22,
+			4,
+			15,
+			17,
+			8,
+			21,
+			10,
+			3
+		]
+	},
+	{
+		"id": "wv5XXldRL7Ru",
+		"operation": {
+			"$text": {
+				"$search": "quick",
+				"$language": "en"
+			}
+		},
+		"documents": [
+			9,
+			5,
+			10,
+			11,
+			12,
+			15,
+			17,
+			19,
+			2,
+			24,
+			20,
+			14,
+			3,
+			21,
+			16,
+			18,
+			7,
+			22
+		]
+	},
+	{
+		"id": "nLeHxthPae5Z",
+		"operation": {
+			"$text": {
+				"$search": "guide",
+				"$language": "en"
+			}
+		},
+		"documents": [
+			4,
+			7,
+			8,
+			19,
+			23,
+			13,
+			24,
+			21,
+			12,
+			15,
+			9,
+			6,
+			18,
+			2,
+			25
+		]
+	},
+	{
+		"id": "m2WGbNIg3Gtw",
+		"operation": {
+			"$text": {
+				"$search": "Quick",
+				"$caseSensitive": true
+			}
+		},
+		"documents": [
+			5,
+			10,
+			11,
+			12,
+			15,
+			17,
+			19,
+			2,
+			24,
+			20,
+			14,
+			3,
+			21,
+			16,
+			18,
+			7,
+			22
+		]
+	},
+	{
+		"id": "bZSuYrI5ZsfM",
+		"operation": {
+			"$text": {
+				"$search": "Quick",
+				"$caseSensitive": false
+			}
+		},
+		"documents": [
+			9,
+			5,
+			10,
+			11,
+			12,
+			15,
+			17,
+			19,
+			2,
+			24,
+			20,
+			14,
+			3,
+			21,
+			16,
+			18,
+			7,
+			22
+		]
+	},
+	{
+		"id": "dRRk7ouE2wIx",
+		"operation": {
+			"$text": {
+				"$search": "BROWN",
+				"$caseSensitive": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "gZoipl5X5KYS",
+		"operation": {
+			"$text": {
+				"$search": "BROWN",
+				"$caseSensitive": false
+			}
+		},
+		"documents": [
+			6,
+			12,
+			17,
+			20,
+			16,
+			5,
+			25,
+			11,
+			1,
+			23,
+			15,
+			4,
+			21,
+			10
+		]
+	},
+	{
+		"id": "qGAMCPYhv6QX",
+		"operation": {
+			"$text": {
+				"$search": "quick",
+				"$diacriticSensitive": true
+			}
+		},
+		"documents": [
+			9,
+			5,
+			10,
+			11,
+			12,
+			15,
+			17,
+			19,
+			2,
+			24,
+			20,
+			14,
+			3,
+			21,
+			16,
+			18,
+			7,
+			22
+		]
+	},
+	{
+		"id": "uobW2P0PJrcp",
+		"operation": {
+			"$text": {
+				"$search": "quick",
+				"$diacriticSensitive": false
+			}
+		},
+		"documents": [
+			9,
+			5,
+			10,
+			11,
+			12,
+			15,
+			17,
+			19,
+			2,
+			24,
+			20,
+			14,
+			3,
+			21,
+			16,
+			18,
+			7,
+			22
+		]
+	},
+	{
+		"id": "qLW5wMD09O8z",
+		"operation": {
+			"$text": {
+				"$search": "guide",
+				"$language": "en",
+				"$caseSensitive": true
+			}
+		},
+		"documents": [
+			4,
+			7,
+			19,
+			24,
+			21,
+			12,
+			25
+		]
+	},
+	{
+		"id": "ieDO7OQHh0rv",
+		"operation": {
+			"$text": {
+				"$search": "guide",
+				"$language": "en",
+				"$caseSensitive": false
+			}
+		},
+		"documents": [
+			4,
+			7,
+			8,
+			19,
+			23,
+			13,
+			24,
+			21,
+			12,
+			15,
+			9,
+			6,
+			18,
+			2,
+			25
+		]
+	},
+	{
+		"id": "roVQWDOFBZRr",
+		"operation": {
+			"$text": {
+				"$search": "quick brown",
+				"$caseSensitive": false,
+				"$diacriticSensitive": false
+			}
+		},
+		"documents": [
+			9,
+			10,
+			21,
+			4,
+			15,
+			23,
+			1,
+			24,
+			11,
+			25,
+			2,
+			5,
+			16,
+			20,
+			17,
+			12,
+			6,
+			14,
+			3,
+			18,
+			7,
+			22,
+			19
+		]
+	},
+	{
+		"id": "uwxFgZJMFe5i",
+		"operation": {
+			"title": {
+				"$regex": "@RegExp:$regex/^$/"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "q4dGvND8rudW",
+		"operation": {
+			"title": {
+				"$regex": "@RegExp:$regex/.*/"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "lLXuQMGAwDOI",
+		"operation": {
+			"title": {
+				"$regex": "@RegExp:$regex/.+/"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "uPNTiQgImLYx",
+		"operation": {
+			"tags.0": {
+				"$regex": "@RegExp:$regex/java/i"
+			}
+		},
+		"documents": [
+			17
+		]
+	},
+	{
+		"id": "oI1PERtFBfd0",
+		"operation": {
+			"tags.1": {
+				"$regex": "@RegExp:$regex/mongo/i"
+			}
+		},
+		"documents": [
+			2,
+			18,
+			24
+		]
+	},
+	{
+		"id": "kn1SbMS7YTj5",
+		"operation": {
+			"tags": {
+				"$regex": "quick"
+			}
+		},
+		"documents": [
+			2,
+			20,
+			24
+		]
+	},
+	{
+		"id": "ssL2NgYgxNcR",
+		"operation": {
+			"tags": {
+				"$regex": "@RegExp:$regex/^java/i"
+			}
+		},
+		"documents": [
+			17,
+			24
+		]
+	}
+]

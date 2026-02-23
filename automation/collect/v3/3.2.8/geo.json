@@ -1,0 +1,604 @@
+[
+	{
+		"id": "sNqoxs5JdS4n",
+		"operation": {
+			"point": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "a2IrC4I8eE7e",
+		"operation": {
+			"line": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "iXsAZgnIaXY4",
+		"operation": {
+			"polygon": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			2,
+			8,
+			3,
+			10,
+			12,
+			13,
+			15
+		]
+	},
+	{
+		"id": "rnOXE3hGtwBb",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.88,
+									51.98
+								],
+								[
+									5.92,
+									51.98
+								],
+								[
+									5.92,
+									52.02
+								],
+								[
+									5.88,
+									52.02
+								],
+								[
+									5.88,
+									51.98
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			4,
+			11,
+			1,
+			14,
+			9,
+			7,
+			3,
+			2,
+			10,
+			12,
+			6,
+			13,
+			15,
+			5,
+			8
+		]
+	},
+	{
+		"id": "jGjqzR9Qy8HS",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$box": [
+						[
+							5.88,
+							51.98
+						],
+						[
+							5.92,
+							52.02
+						]
+					]
+				}
+			}
+		},
+		"documents": [
+			1,
+			5,
+			3,
+			9,
+			8,
+			12,
+			6,
+			11,
+			2,
+			14,
+			15,
+			7,
+			4,
+			10,
+			13
+		]
+	},
+	{
+		"id": "wKkmx8Dm2136",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$center": [
+						[
+							5.9,
+							52
+						],
+						0.02
+					]
+				}
+			}
+		},
+		"documents": [
+			1,
+			5,
+			3,
+			9,
+			8,
+			12,
+			6,
+			11,
+			2,
+			14,
+			15,
+			7,
+			4,
+			10,
+			13
+		]
+	},
+	{
+		"id": "iv2pzraiBnmo",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$centerSphere": [
+						[
+							5.9,
+							52
+						],
+						0.01
+					]
+				}
+			}
+		},
+		"documents": [
+			1,
+			5,
+			3,
+			9,
+			8,
+			12,
+			6,
+			11,
+			2,
+			14,
+			15,
+			7,
+			4,
+			10,
+			13
+		]
+	},
+	{
+		"id": "erzyShLLGMP4",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$polygon": [
+						[
+							5.88,
+							51.98
+						],
+						[
+							5.92,
+							51.98
+						],
+						[
+							5.92,
+							52.02
+						]
+					]
+				}
+			}
+		},
+		"documents": [
+			1,
+			3,
+			9,
+			8,
+			12,
+			2,
+			15,
+			7
+		]
+	},
+	{
+		"id": "vW1FRAeKg65m",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			8,
+			5,
+			13,
+			15,
+			14,
+			9,
+			6,
+			10,
+			1,
+			12,
+			2,
+			3,
+			7,
+			4,
+			11
+		]
+	},
+	{
+		"id": "mODNIEEIkdZd",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					},
+					"$maxDistance": 5000
+				}
+			}
+		},
+		"documents": [
+			8,
+			5,
+			13,
+			15,
+			14,
+			9,
+			6,
+			10,
+			1,
+			12,
+			2,
+			3,
+			7,
+			4,
+			11
+		]
+	},
+	{
+		"id": "d31CY5SIiZIT",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					},
+					"$minDistance": 100,
+					"$maxDistance": 10000
+				}
+			}
+		},
+		"documents": [
+			5,
+			13,
+			15,
+			14,
+			9,
+			6,
+			10,
+			1,
+			12,
+			2,
+			3,
+			7,
+			4,
+			11
+		]
+	},
+	{
+		"id": "jOc28I97qbzZ",
+		"operation": {
+			"legacyPoint": {
+				"$near": [
+					5.9,
+					52
+				]
+			}
+		},
+		"documents": [
+			8,
+			9,
+			12,
+			6,
+			11,
+			2,
+			14,
+			15,
+			7,
+			4,
+			3,
+			10,
+			5,
+			1,
+			13
+		]
+	},
+	{
+		"id": "puFLObGoqRjj",
+		"operation": {
+			"legacyPoint": {
+				"$near": [
+					5.9,
+					52
+				],
+				"$maxDistance": 0.02
+			}
+		},
+		"documents": [
+			8,
+			9,
+			12,
+			6,
+			11,
+			2,
+			14,
+			15,
+			7,
+			4,
+			3,
+			10,
+			5,
+			1,
+			13
+		]
+	},
+	{
+		"id": "jykBQEkxX5Yx",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			8,
+			5,
+			13,
+			15,
+			14,
+			9,
+			6,
+			10,
+			1,
+			12,
+			2,
+			3,
+			7,
+			4,
+			11
+		]
+	},
+	{
+		"id": "f1MGD7PO2h7T",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					},
+					"$maxDistance": 5000
+				}
+			}
+		},
+		"documents": [
+			8,
+			5,
+			13,
+			15,
+			14,
+			9,
+			6,
+			10,
+			1,
+			12,
+			2,
+			3,
+			7,
+			4,
+			11
+		]
+	},
+	{
+		"id": "bEytUW8Sm36z",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					},
+					"$minDistance": 100,
+					"$maxDistance": 10000
+				}
+			}
+		},
+		"documents": [
+			5,
+			13,
+			15,
+			14,
+			9,
+			6,
+			10,
+			1,
+			12,
+			2,
+			3,
+			7,
+			4,
+			11
+		]
+	},
+	{
+		"id": "jIR3gOROgKln",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$unknown": {}
+				}
+			}
+		},
+		"error": {
+			"message": "unknown geo specifier: $unknown: {}",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "sVks8cJ65GWo",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {}
+				}
+			}
+		},
+		"error": {
+			"message": "unknown GeoJSON type: {}",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "ov5rymvzZ38V",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$box": {}
+				}
+			}
+		},
+		"error": {
+			"message": "Point must be an array or object",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "rIKzSyBDLWMX",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$center": [
+						1
+					]
+				}
+			}
+		},
+		"error": {
+			"message": "Point must be an array or object",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "clGpfzsiUViE",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$center": "invalid"
+				}
+			}
+		},
+		"error": {
+			"message": "unknown geo specifier: $center: \"invalid\"",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "kCFR3SSeLZ5G",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Invalid",
+						"coordinates": []
+					}
+				}
+			}
+		},
+		"error": {
+			"message": "unknown GeoJSON type: { type: \"Invalid\", coordinates: [] }",
+			"code": 2,
+			"type": "MongoError"
+		}
+	}
+]
