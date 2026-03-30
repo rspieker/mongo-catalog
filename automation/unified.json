@@ -2580,7 +2580,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $add only supports numeric or date types, not string","code":14,"type":"MongoServerError"},
-						"versions": "6.0.10..6.0.27,7.0.5..7.0.31"
+						"versions": "6.0.10..6.0.27,7.0.5..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: only numbers and dates are allowed in an $add expression","code":7157723,"type":"MongoServerError"},
@@ -2614,7 +2614,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: can't $divide by zero","code":2,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.31"
+						"versions": "5.0.0..6.0.27,7.0.5..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: can't $divide by zero","code":4848401,"type":"MongoServerError"},
@@ -2648,7 +2648,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: The argument to $size must be an array, but was of type: string","code":17124,"type":"MongoServerError"},
-						"versions": "5.0.0..7.0.31"
+						"versions": "5.0.0..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: The argument to $size must be an array, but was of type: string","code":17124,"type":"MongoServerError"},
@@ -2678,7 +2678,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: can't convert from BSON type int to Date","code":16006,"type":"MongoServerError"},
-						"versions": "5.0.0..7.0.31"
+						"versions": "5.0.0..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: can't convert from BSON type int to Date","code":16006,"type":"MongoServerError"},
@@ -3505,7 +3505,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $log's argument must be a positive number, but is -38","code":28758,"type":"MongoServerError"},
-						"versions": "5.0.0..7.0.31"
+						"versions": "5.0.0..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $log's argument must be a positive number, but is -38","code":28758,"type":"MongoServerError"},
@@ -3777,7 +3777,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $sqrt's argument must be greater than or equal to 0","code":28714,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.31"
+						"versions": "5.0.0..6.0.27,7.0.5..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $sqrt's argument must be greater than or equal to 0","code":7157710,"type":"MongoServerError"},
@@ -3987,7 +3987,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: can't $divide by zero","code":2,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.31"
+						"versions": "5.0.0..6.0.27,7.0.5..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: can't $divide by zero","code":4848401,"type":"MongoServerError"},
@@ -4021,7 +4021,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: can't $divide by zero","code":2,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.31"
+						"versions": "5.0.0..6.0.27,7.0.5..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: can't $divide by zero","code":4848401,"type":"MongoServerError"},
@@ -4055,7 +4055,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types, not string and int","code":14,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.31"
+						"versions": "5.0.0..6.0.27,7.0.5..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types","code":7157719,"type":"MongoServerError"},
@@ -4167,7 +4167,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $log's base must be a positive number not equal to 1, but is 0","code":28759,"type":"MongoServerError"},
-						"versions": "5.0.0..7.0.31"
+						"versions": "5.0.0..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $log's base must be a positive number not equal to 1, but is 0","code":28759,"type":"MongoServerError"},
@@ -4197,7 +4197,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $log's base must be a positive number not equal to 1, but is -1","code":28759,"type":"MongoServerError"},
-						"versions": "5.0.0..7.0.31"
+						"versions": "5.0.0..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $log's base must be a positive number not equal to 1, but is -1","code":28759,"type":"MongoServerError"},
@@ -4319,7 +4319,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $abs only supports numeric types, not string","code":28765,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.31"
+						"versions": "5.0.0..6.0.27,7.0.5..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $abs only supports numeric types","code":7157700,"type":"MongoServerError"},
@@ -4353,7 +4353,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $abs only supports numeric types, not bool","code":28765,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.31"
+						"versions": "5.0.0..6.0.27,7.0.5..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $abs only supports numeric types","code":7157700,"type":"MongoServerError"},
@@ -4391,7 +4391,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $add only supports numeric or date types, not string","code":14,"type":"MongoServerError"},
-						"versions": "6.0.10..6.0.27,7.0.5..7.0.31"
+						"versions": "6.0.10..6.0.27,7.0.5..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: only numbers and dates are allowed in an $add expression","code":7157723,"type":"MongoServerError"},
@@ -4425,7 +4425,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $ceil only supports numeric types, not string","code":28765,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.31"
+						"versions": "5.0.0..6.0.27,7.0.5..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $ceil only supports numeric types","code":7157702,"type":"MongoServerError"},
@@ -4459,7 +4459,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $ln only supports numeric types, not string","code":28765,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.31"
+						"versions": "5.0.0..6.0.27,7.0.5..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $ln only supports numeric types","code":7157705,"type":"MongoServerError"},
@@ -5075,7 +5075,7 @@
 					},
 					{
 						"error": {"message":"$and/$or/$nor must be a nonempty array","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..7.0.31"
+						"versions": "3.6.0..7.0.32"
 					},
 					{
 						"error": {"message":"$and argument must be a non-empty array","code":2,"type":"MongoServerError"},
@@ -5097,7 +5097,7 @@
 					},
 					{
 						"error": {"message":"$and/$or/$nor must be a nonempty array","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..7.0.31"
+						"versions": "3.6.0..7.0.32"
 					},
 					{
 						"error": {"message":"$or argument must be a non-empty array","code":2,"type":"MongoServerError"},
@@ -5189,7 +5189,7 @@
 					},
 					{
 						"error": {"message":"$and must be an array","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..7.0.31"
+						"versions": "3.6.0..7.0.32"
 					},
 					{
 						"error": {"message":"$and argument must be an array","code":2,"type":"MongoServerError"},
@@ -5215,7 +5215,7 @@
 					},
 					{
 						"error": {"message":"$or must be an array","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..7.0.31"
+						"versions": "3.6.0..7.0.32"
 					},
 					{
 						"error": {"message":"$or argument must be an array","code":2,"type":"MongoServerError"},
@@ -5324,7 +5324,7 @@
 					},
 					{
 						"error": {"message":"$not needs a regex or a document","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..7.0.31"
+						"versions": "3.6.0..7.0.32"
 					},
 					{
 						"error": {"message":"$not argument must be a regex or an object","code":2,"type":"MongoServerError"},
@@ -5346,7 +5346,7 @@
 					},
 					{
 						"error": {"message":"$not needs a regex or a document","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..7.0.31"
+						"versions": "3.6.0..7.0.32"
 					},
 					{
 						"error": {"message":"$not argument must be a regex or an object","code":2,"type":"MongoServerError"},
@@ -5368,7 +5368,7 @@
 					},
 					{
 						"error": {"message":"$not needs a regex or a document","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..7.0.31"
+						"versions": "3.6.0..7.0.32"
 					},
 					{
 						"error": {"message":"$not argument must be a regex or an object","code":2,"type":"MongoServerError"},
@@ -5394,7 +5394,7 @@
 					},
 					{
 						"error": {"message":"$nor must be an array","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..7.0.31"
+						"versions": "3.6.0..7.0.32"
 					},
 					{
 						"error": {"message":"$nor argument must be an array","code":2,"type":"MongoServerError"},
@@ -5416,7 +5416,7 @@
 					},
 					{
 						"error": {"message":"$or/$and/$nor entries need to be full objects","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..7.0.31"
+						"versions": "3.6.0..7.0.32"
 					},
 					{
 						"error": {"message":"$nor argument's entries must be objects","code":2,"type":"MongoServerError"},
@@ -5446,7 +5446,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: can't $divide by zero","code":2,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.31"
+						"versions": "5.0.0..6.0.27,7.0.5..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: can't $divide by zero","code":4848401,"type":"MongoServerError"},
@@ -5480,7 +5480,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types, not string and int","code":14,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.31"
+						"versions": "5.0.0..6.0.27,7.0.5..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types","code":7157719,"type":"MongoServerError"},
@@ -5514,7 +5514,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types, not string and double","code":14,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.31"
+						"versions": "5.0.0..6.0.27,7.0.5..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types","code":7157719,"type":"MongoServerError"},
@@ -5548,7 +5548,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types, not bool and int","code":14,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.31"
+						"versions": "5.0.0..6.0.27,7.0.5..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types","code":7157719,"type":"MongoServerError"},
@@ -5582,7 +5582,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types, not bool and double","code":14,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.31"
+						"versions": "5.0.0..6.0.27,7.0.5..7.0.32"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types","code":7157719,"type":"MongoServerError"},
@@ -6088,7 +6088,7 @@
 					},
 					{
 						"error": {"message":"$not needs a regex or a document","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..7.0.31"
+						"versions": "3.6.0..7.0.32"
 					},
 					{
 						"error": {"message":"$not argument must be a regex or an object","code":2,"type":"MongoServerError"},
