@@ -1,0 +1,184 @@
+name: Catalog
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  workload:
+    runs-on: ubuntu-latest
+
+    outputs:
+      work: ${{ steps.capture.outputs.captured }}
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: automation-data
+
+      - name: Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
+          cache: 'npm'
+
+      - name: install
+        run: npm ci
+
+      - name: Determine Workload
+        id: capture
+        run: |
+            WORKLOAD_OUTPUT=$(npm run --silent update:workload)
+            echo "captured=$WORKLOAD_OUTPUT" >> "$GITHUB_OUTPUT"
+
+  collect-versions:
+    runs-on: ubuntu-latest
+    needs: workload
+    if: needs.workload.outputs.work != '[]'
+    continue-on-error: true
+
+    strategy:
+      fail-fast: false
+      matrix:
+        version: ${{ fromJSON(needs.workload.outputs.work) }}
+
+    env:
+      MONGO_VERSION: ${{ matrix.version }}
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: automation-data
+
+      - name: Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
+          cache: 'npm'
+
+      - name: Get Docker tag
+        id: docker
+        run: |
+            trap 'echo "failure_message=docker-tag-resolution-failed" >> $GITHUB_OUTPUT; exit 0' ERR
+            VERSION="${{ matrix.version }}"
+            MAJOR=$(echo "$VERSION" | cut -d. -f1)
+            DOCKER_TAG=$(jq -r '.name' "./automation/collect/v${MAJOR}/${VERSION}/plan.json")
+            echo "tag=$DOCKER_TAG" >> "$GITHUB_OUTPUT"
+
+      - name: Start MongoDB
+        id: mongodb
+        run: |
+            if [ "${{ steps.docker.outputs.failure_message }}" != "" ]; then
+              echo "failure_message=${{ steps.docker.outputs.failure_message }}" >> $GITHUB_OUTPUT
+              exit 0
+            fi
+
+            trap 'echo "failure_message=mongodb-start-failed" >> $GITHUB_OUTPUT; exit 0' ERR
+            VERSION="${{ matrix.version }}"
+            DOCKER_TAG="${{ steps.docker.outputs.tag }}"
+
+            docker run -d \
+              --name mongodb-$VERSION \
+              -p 27017:27017 \
+              --health-cmd="mongo --eval 'quit(0)' || mongosh --eval 'quit(0)' || exit 1" \
+              --health-interval=10s \
+              --health-timeout=5s \
+              --health-retries=5 \
+              mongo:$DOCKER_TAG
+
+            echo "Waiting for MongoDB to be healthy..."
+            for i in {1..60}; do
+              HEALTH=$(docker inspect --format='{{.State.Health.Status}}' mongodb-$VERSION 2>/dev/null || echo "starting")
+              if [ "$HEALTH" = "healthy" ]; then
+                echo "MongoDB is healthy!"
+                break
+              fi
+              echo "Status: $HEALTH (attempt $i/60)"
+              sleep 2
+            done
+
+            if [ "$HEALTH" != "healthy" ]; then
+              echo "MongoDB failed to become healthy"
+              docker logs mongodb-$VERSION
+              exit 1
+            fi
+
+      - name: Install dependencies
+        id: install
+        run: |
+            if [ "${{ steps.mongodb.outputs.failure_message }}" != "" ]; then
+              echo "failure_message=${{ steps.mongodb.outputs.failure_message }}" >> $GITHUB_OUTPUT
+              exit 0
+            fi
+
+            trap 'echo "failure_message=npm-install-failed" >> $GITHUB_OUTPUT; exit 0' ERR
+            npm ci
+
+      - name: Run collection
+        id: collect
+        run: |
+            if [ "${{ steps.install.outputs.failure_message }}" != "" ]; then
+              echo "failure_message=${{ steps.install.outputs.failure_message }}" >> $GITHUB_OUTPUT
+              exit 0
+            fi
+
+            trap 'echo "failure_message=catalog-execution-failed" >> $GITHUB_OUTPUT; exit 0' ERR
+            npm run update:mongo-collect
+
+      - name: Gate
+        if: always()
+        run: |
+            FAILED=""
+
+            if [ "${{ steps.docker.outputs.failure_message }}" != "" ]; then
+              FAILED="${{ steps.docker.outputs.failure_message }}"
+            elif [ "${{ steps.mongodb.outputs.failure_message }}" != "" ]; then
+              FAILED="${{ steps.mongodb.outputs.failure_message }}"
+            elif [ "${{ steps.install.outputs.failure_message }}" != "" ]; then
+              FAILED="${{ steps.install.outputs.failure_message }}"
+            elif [ "${{ steps.collect.outputs.failure_message }}" != "" ]; then
+              FAILED="${{ steps.collect.outputs.failure_message }}"
+            fi
+
+            if [ -n "$FAILED" ]; then
+              VERSION="${{ matrix.version }}"
+              MAJOR=$(echo "$VERSION" | cut -d. -f1)
+              META_FILE="./automation/collect/v${MAJOR}/${VERSION}/meta.json"
+
+              echo "Marking $VERSION as skipped due to: $FAILED"
+
+              NOW=$(date -u +"%Y-%m-%dT%H:%M:%S.%3NZ")
+              jq --arg reason "$FAILED" --arg date "$NOW" '\n                .history = (.history // []) + [{\n                  "type": "collection-halted",\n                  "date": $date,\n                  "catalog": "",\n                  "reason": $reason\n                }]\n              ' "$META_FILE" > "$META_FILE.tmp" && mv "$META_FILE.tmp" "$META_FILE"
+
+              mkdir -p "/tmp/mongo-catalog-changes/${VERSION}"
+              cp "$META_FILE" "/tmp/mongo-catalog-changes/${VERSION}/meta.json"
+            fi
+
+            exit 0
+
+      - name: Cleanup MongoDB
+        if: always()
+        run: |
+            VERSION="${{ matrix.version }}"
+            docker stop mongodb-$VERSION 2>/dev/null || true
+            docker rm mongodb-$VERSION 2>/dev/null || true
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: results-${{ matrix.version }}
+          path: /tmp/mongo-catalog-changes
+          retention-days: 1
+
+  commit:
+    runs-on: ubuntu-latest
+    needs: collect-versions
+    if: always() && needs.collect-versions.result == 'success'
+
+    steps:
+      - name: Trigger commit
+        uses: ./.github/workflows/commit.yml
+        with:
+          artifact-pattern: 'results-*'
+        secrets: inherit
