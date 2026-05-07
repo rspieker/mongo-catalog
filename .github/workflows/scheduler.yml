@@ -11,8 +11,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
-        with:
-          ref: automation-data
 
       - name: Node.js
         uses: actions/setup-node@v6

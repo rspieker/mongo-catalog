@@ -13,8 +13,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
-        with:
-          ref: automation-data
 
       - name: Node.js
         uses: actions/setup-node@v6
@@ -47,8 +45,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
-        with:
-          ref: automation-data
 
       - name: Node.js
         uses: actions/setup-node@v6
@@ -172,12 +168,8 @@ jobs:
           retention-days: 1
 
   commit:
-    runs-on: ubuntu-latest
     needs: collect-versions
     if: always() && needs.collect-versions.result == 'success'
-
-    steps:
-      - name: Trigger commit
-        uses: ./.github/workflows/commit.yml
-        with:
-          artifact-pattern: 'results-*'
+    uses: ./.github/workflows/commit.yml
+    with:
+      artifact-pattern: 'results-*'

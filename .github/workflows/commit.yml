@@ -21,8 +21,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
-        with:
-          ref: automation-data
 
       - name: Node.js
         uses: actions/setup-node@v6
@@ -67,4 +65,4 @@ jobs:
             git config user.name "GitHub Actions Recipe Bot"
             git config user.email "<>"
             git add ./automation/
-            git diff --cached --quiet || (git commit -m "Update catalog results $(date +"%Y-%m-%dT%H:%M:%S%z")" && git pull --rebase origin automation-data && git push origin HEAD:automation-data)
+            git diff --cached --quiet || (git commit -m "Update catalog results $(date +"%Y-%m-%dT%H:%M:%S%z")" && git push origin main)

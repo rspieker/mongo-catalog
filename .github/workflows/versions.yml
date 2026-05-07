@@ -2,12 +2,15 @@ name: Update Versions
 
 on:
   schedule:
-    - cron: '0 7 * * 0/3'  # sunday, wednesday and saturday at 07:00
+    - cron: '0 7 * * 0/3'  # Sunday, Wednesday, Saturday at 07:00 UTC
   workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
+
+    outputs:
+      changed: ${{ steps.changes.outputs.changed }}
 
     steps:
       - uses: actions/checkout@v6
@@ -42,9 +45,10 @@ jobs:
           path: ./automation/
           retention-days: 1
 
-      - name: Trigger commit
-        if: steps.changes.outputs.changed != '0'
-        uses: ./.github/workflows/commit.yml
-        with:
-          artifact-pattern: 'mongo-state'
-          download-path: './automation/'
+  commit:
+    needs: update
+    if: needs.update.outputs.changed != '0'
+    uses: ./.github/workflows/commit.yml
+    with:
+      artifact-pattern: 'mongo-state'
+      download-path: './automation/'
