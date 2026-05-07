@@ -301,4 +301,4 @@ jobs:
                   git config user.name "GitHub Actions Recipe Bot"
                   git config user.email "<>"
                   git add ./automation/
-                  git diff --cached --quiet || (git commit -m "Update catalog results $(date +"%Y-%m-%dT%H:%M:%S%z")" && git pull --rebase origin main && git push origin main)
+                  git diff --cached --quiet || (git commit -m "Update catalog results $(date +"%Y-%m-%dT%H:%M:%S%z")" && git pull --rebase origin automation-data && git push origin HEAD:automation-data)
