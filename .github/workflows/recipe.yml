@@ -12,12 +12,12 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v6
 
             - name: Node.js
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v6
               with:
-                  node-version: 20.x
+                  node-version: 24.x
                   cache: 'npm'
 
             - name: install
@@ -30,7 +30,7 @@ jobs:
               run: npm run update:catalog-queries
 
             - name: Upload initial state
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@v6
               with:
                   name: mongo-state
                   path: ./automation/
@@ -44,18 +44,18 @@ jobs:
             work: ${{ steps.capture.outputs.captured }}
 
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v6
 
             - name: Download state
-              uses: actions/download-artifact@v4
+              uses: actions/download-artifact@v7
               with:
                   name: mongo-state
                   path: ./automation/
 
             - name: Node.js
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v6
               with:
-                  node-version: 20.x
+                  node-version: 24.x
                   cache: 'npm'
 
             - name: install
@@ -68,7 +68,7 @@ jobs:
                   echo "captured=$WORKLOAD_OUTPUT" >> "$GITHUB_OUTPUT"
 
             - name: Upload updated state
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@v6
               with:
                   name: mongo-state
                   path: ./automation/
@@ -90,10 +90,10 @@ jobs:
             MONGO_VERSION: ${{ matrix.version }}
 
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v6
 
             - name: Download state
-              uses: actions/download-artifact@v4
+              uses: actions/download-artifact@v7
               with:
                   name: mongo-state
                   path: ./automation/
@@ -102,9 +102,9 @@ jobs:
               run: mkdir -p /tmp/mongo-catalog-changes
 
             - name: Node.js
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v6
               with:
-                  node-version: 20.x
+                  node-version: 24.x
                   cache: 'npm'
 
             - name: Get Docker tag
@@ -237,7 +237,7 @@ jobs:
 
             - name: Upload results
               if: always()
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@v6
               with:
                   name: results-${{ matrix.version }}
                   path: /tmp/mongo-catalog-changes
@@ -249,16 +249,16 @@ jobs:
         if: always()
 
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v6
 
             - name: Download base state
-              uses: actions/download-artifact@v4
+              uses: actions/download-artifact@v7
               with:
                   name: mongo-state
                   path: ./automation/
 
             - name: Download results
-              uses: actions/download-artifact@v4
+              uses: actions/download-artifact@v7
               with:
                   path: /tmp/results/
                   pattern: 'results-*'
@@ -283,9 +283,9 @@ jobs:
                   done
 
             - name: Node.js
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v6
               with:
-                  node-version: 20.x
+                  node-version: 24.x
                   cache: 'npm'
 
             - name: install
