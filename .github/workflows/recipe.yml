@@ -246,7 +246,9 @@ jobs:
     commit-results:
         runs-on: ubuntu-latest
         needs: collect-versions
-        if: always()
+        if: always() && needs.workload.outputs.work != '[]'
+        permissions:
+            contents: write
 
         steps:
             - uses: actions/checkout@v6
