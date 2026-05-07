@@ -21,7 +21,7 @@ jobs:
                   cache: 'npm'
 
             - name: install
-              run: npm install
+              run: npm ci
 
             - name: Update Mongo Versions
               run: npm run update:mongo-versions
@@ -59,7 +59,7 @@ jobs:
                   cache: 'npm'
 
             - name: install
-              run: npm install
+              run: npm ci
 
             - name: Determine Workload
               id: capture
@@ -173,7 +173,7 @@ jobs:
                   # we could've just used continue-on-error, but then we
                   # couldn't justify to laugh at the joke they really are
                   trap 'echo "failure_message=npm-install-failed" >> $GITHUB_OUTPUT; exit 0' ERR
-                  npm install
+                  npm ci
 
             - name: Run collection
               id: collect
@@ -289,7 +289,7 @@ jobs:
                   cache: 'npm'
 
             - name: install
-              run: npm install
+              run: npm ci
 
             - name: Unify Results
               run: npm run update:unify
