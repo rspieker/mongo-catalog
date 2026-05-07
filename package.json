@@ -2,12 +2,12 @@
   "name": "mongo-catalog",
   "version": "1.0.0",
   "description": "",
-	"scripts": {
-		"update:mongo-versions": "ts-node chore/mongo-docker-images.ts",
-		"update:catalog-queries": "ts-node chore/catalog-queries.ts",
-		"update:workload": "ts-node chore/workload.ts",
-		"update:mongo-collect": "ts-node chore/mongo-collect.ts",
-		"update:unify": "ts-node chore/unify.ts"
+  "scripts": {
+    "update:mongo-versions": "ts-node chore/mongo-docker-images.ts",
+    "update:catalog-queries": "ts-node chore/catalog-queries.ts",
+    "update:workload": "ts-node chore/workload.ts",
+    "update:mongo-collect": "ts-node chore/mongo-collect.ts",
+    "update:unify": "ts-node chore/unify.ts"
   },
   "keywords": [],
   "author": "",
@@ -15,10 +15,10 @@
   "devDependencies": {
     "@konfirm/checksum": "^2.0.2",
     "@types/mongodb": "^4.0.7",
-    "@types/node": "^22.5.4",
-    "glob": "^11.0.0",
+    "@types/node": "^25.6.1",
+    "glob": "^13.0.6",
     "ts-node": "^10.9.2",
-    "typescript": "^5.6.2"
+    "typescript": "^6.0.3"
   },
   "dependencies": {
     "@konfirm/stringify": "^1.0.0",
