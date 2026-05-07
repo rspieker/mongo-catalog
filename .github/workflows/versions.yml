@@ -1,0 +1,50 @@
+name: Update Versions
+
+on:
+  schedule:
+    - cron: '0 7 * * 0/3'  # sunday, wednesday and saturday at 07:00
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
+          cache: 'npm'
+
+      - name: install
+        run: npm ci
+
+      - name: Update Mongo Versions
+        run: npm run update:mongo-versions
+
+      - name: Update Catalog Queries
+        run: npm run update:catalog-queries
+
+      - name: Check for changes
+        id: changes
+        run: |
+            git add ./automation/
+            CHANGED=$(git diff --cached --name-only | wc -l)
+            echo "changed=$CHANGED" >> "$GITHUB_OUTPUT"
+
+      - name: Upload state
+        if: steps.changes.outputs.changed != '0'
+        uses: actions/upload-artifact@v6
+        with:
+          name: mongo-state
+          path: ./automation/
+          retention-days: 1
+
+      - name: Trigger commit
+        if: steps.changes.outputs.changed != '0'
+        uses: ./.github/workflows/commit.yml
+        with:
+          artifact-pattern: 'mongo-state'
+          download-path: './automation/'

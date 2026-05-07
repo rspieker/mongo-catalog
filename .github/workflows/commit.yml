@@ -1,0 +1,70 @@
+name: Commit Results
+
+on:
+  workflow_call:
+    inputs:
+      artifact-pattern:
+        description: 'Pattern to match artifacts to download'
+        required: true
+        type: string
+      download-path:
+        description: 'Path to download artifacts to'
+        required: false
+        type: string
+        default: '/tmp/results/'
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: automation-data
+
+      - name: Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
+          cache: 'npm'
+
+      - name: install
+        run: npm ci
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v7
+        with:
+          path: ${{ inputs.download-path }}
+          pattern: ${{ inputs.artifact-pattern }}
+          merge-multiple: false
+
+      - name: Merge results
+        run: |
+            if [ "${{ inputs.download-path }}" = "/tmp/results/" ]; then
+              # Merge version-specific results from /tmp/results/
+              for artifact_dir in /tmp/results/*/; do
+                if [ -d "$artifact_dir" ]; then
+                  for version_dir in "$artifact_dir"*/; do
+                    if [ -d "$version_dir" ]; then
+                      version_name=$(basename "$version_dir")
+                      major_version="v${version_name%%.*}"
+                      echo "Copying $version_name to automation/collect/$major_version/"
+                      mkdir -p "./automation/collect/$major_version"
+                      cp -r "$version_dir" "./automation/collect/$major_version/"
+                    fi
+                  done
+                fi
+              done
+            fi
+
+      - name: Unify Results
+        run: npm run update:unify
+
+      - name: Commit results
+        run: |
+            git config user.name "GitHub Actions Recipe Bot"
+            git config user.email "<>"
+            git add ./automation/
+            git diff --cached --quiet || (git commit -m "Update catalog results $(date +"%Y-%m-%dT%H:%M:%S%z")" && git pull --rebase origin automation-data && git push origin HEAD:automation-data)
