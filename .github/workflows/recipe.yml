@@ -246,7 +246,7 @@ jobs:
     commit-results:
         runs-on: ubuntu-latest
         needs: collect-versions
-        if: always() && needs.workload.outputs.work != '[]'
+        if: always()
         permissions:
             contents: write
 
