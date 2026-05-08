@@ -138,7 +138,7 @@ jobs:
         if: always()
         run: |
             FAILED=""
-
+  
             if [ "${{ steps.docker.outputs.failure_message }}" != "" ]; then
               FAILED="${{ steps.docker.outputs.failure_message }}"
             elif [ "${{ steps.mongodb.outputs.failure_message }}" != "" ]; then
@@ -148,21 +148,32 @@ jobs:
             elif [ "${{ steps.collect.outputs.failure_message }}" != "" ]; then
               FAILED="${{ steps.collect.outputs.failure_message }}"
             fi
-
+  
+            VERSION="${{ matrix.version }}"
+            MAJOR=$(echo "$VERSION" | cut -d. -f1)
+            META_FILE="./automation/collect/v${MAJOR}/${VERSION}/meta.json"
+            PLAN_FILE="./automation/collect/v${MAJOR}/${VERSION}/plan.json"
+  
+            mkdir -p "/tmp/mongo-catalog-changes/${VERSION}"
+  
             if [ -n "$FAILED" ]; then
-              VERSION="${{ matrix.version }}"
-              MAJOR=$(echo "$VERSION" | cut -d. -f1)
-              META_FILE="./automation/collect/v${MAJOR}/${VERSION}/meta.json"
-
               echo "Marking $VERSION as skipped due to: $FAILED"
-
+  
               NOW=$(date -u +"%Y-%m-%dT%H:%M:%S.%3NZ")
-              jq --arg reason "$FAILED" --arg date "$NOW" '\n                .history = (.history // []) + [{\n                  "type": "collection-halted",\n                  "date": $date,\n                  "catalog": "",\n                  "reason": $reason\n                }]\n              ' "$META_FILE" > "$META_FILE.tmp" && mv "$META_FILE.tmp" "$META_FILE"
-
-              mkdir -p "/tmp/mongo-catalog-changes/${VERSION}"
-              cp "$META_FILE" "/tmp/mongo-catalog-changes/${VERSION}/meta.json"
+              jq --arg reason "$FAILED" --arg date "$NOW" '
+                .history = (.history // []) + [{
+                  "type": "collection-halted",
+                  "date": $date,
+                  "catalog": "",
+                  "reason": $reason
+                }]
+              ' "$META_FILE" > "$META_FILE.tmp" && mv "$META_FILE.tmp" "$META_FILE"
+            else
+              cp "$PLAN_FILE" "/tmp/mongo-catalog-changes/${VERSION}/plan.json"
             fi
-
+  
+            cp "$META_FILE" "/tmp/mongo-catalog-changes/${VERSION}/meta.json"
+  
             exit 0
 
       - name: Cleanup MongoDB
@@ -180,17 +191,9 @@ jobs:
           path: /tmp/mongo-catalog-changes
           retention-days: 1
 
-      - name: Upload updated plan
-        if: always()
-        uses: actions/upload-artifact@v6
-        with:
-          name: plan-${{ matrix.version }}
-          path: automation/collect/**/plan.json
-          retention-days: 1
-
   commit:
     needs: collect-versions
     if: always() && needs.collect-versions.result == 'success'
     uses: ./.github/workflows/commit.yml
     with:
-      artifact-pattern: '{results,plan}-*'
+      artifact-pattern: 'results-*'
