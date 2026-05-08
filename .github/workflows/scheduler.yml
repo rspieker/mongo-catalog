@@ -2,7 +2,7 @@ name: Scheduler
 
 on:
   schedule:
-    - cron: '0 */2 * * *'  # Every 2 hours
+    - cron: '0 */2 * * *' # Every 2 hours
   workflow_dispatch:
 
 jobs:
@@ -24,9 +24,12 @@ jobs:
       - name: Check workload
         id: check
         run: |
-            WORKLOAD=$(npm run --silent update:workload)
-            echo "work=$WORKLOAD" >> "$GITHUB_OUTPUT"
+          WORKLOAD=$(npm run --silent update:workload)
+          echo "work=$WORKLOAD" >> "$GITHUB_OUTPUT"
 
-      - name: Trigger catalog if work exists
-        if: steps.check.outputs.work != '[]'
-        uses: ./.github/workflows/catalog.yml
+  catalog:
+    needs: check
+    if: needs.check.outputs.work != '[]'
+    uses: ./.github/workflows/catalog.yml
+    with:
+      workload: ${{ needs.check.outputs.work }}
