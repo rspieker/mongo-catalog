@@ -108,7 +108,11 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "2.6.12..8.3.1"
+						"versions": "2.6.12..6.0.26,7.0.0..7.0.31,8.0.0..8.0.20,8.2.1..8.2.6,8.3.0"
+					},
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+						"versions": "6.0.27,7.0.32,8.0.21,8.2.7,8.3.1"
 					}
 				]
 			},
@@ -281,6 +285,176 @@
 					{
 						"documents": [],
 						"versions": "2.6.12..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "ogVtVttDiD4T",
+				"operation": {"scores":{"$all":[{"$elemMatch":{"score":{"$gte":90}}}]}},
+				"results": [
+					{
+						"documents": [1,2,5,6,7,9,11,12,13,14,15,16,17,18],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "r2x2VVgYHIng",
+				"operation": {"name":{"$all":["Alice"]}},
+				"results": [
+					{
+						"documents": [4,14,15,18],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "ihHnmjD0q6VL",
+				"operation": {"tags":{"$all":[null]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "pMvVHI46wTQN",
+				"operation": {"tags":{"$all":["javascript","javascript"]}},
+				"results": [
+					{
+						"documents": [2,5,11,12,14],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "qPQPMwLHotwo",
+				"operation": {"scores":{"$elemMatch":{"$or":[{"score":{"$lt":65}},{"score":{"$gt":95}}]}}},
+				"results": [
+					{
+						"documents": [2,5,6,9,10,11,12,13,14,15,16,17,18],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "n6rn3drYtWYH",
+				"operation": {"scores":{"$elemMatch":{"subject":{"$exists":false}}}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "qsiEDXET3Dyx",
+				"operation": {"scores":{"$elemMatch":{"subject":{"$regex":"^m"}}}},
+				"results": [
+					{
+						"documents": [1,2,6,7,9,10,12,13,15,17,20],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "p6fqWwgOaXY9",
+				"operation": {"scores":{"$elemMatch":{"score":{"$not":{"$gte":80}}}}},
+				"results": [
+					{
+						"documents": [1,2,4,5,6,8,9,10,11,12,14,16,17,18,19,20],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "brEHxAO5qArM",
+				"operation": {"name":{"$elemMatch":{"$gt":"A"}}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "e40PXGZQy01w",
+				"operation": {"permissions":{"$size":1}},
+				"results": [
+					{
+						"documents": [3,5,7,9,12,15,19],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "cBO8L7njB71n",
+				"operation": {"scores":{"$size":2}},
+				"results": [
+					{
+						"documents": [3,8,13,20],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "suJZfJv62bth",
+				"operation": {"tags.0":"javascript"},
+				"results": [
+					{
+						"documents": [5,11,14],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "kJkV8IdKpy0t",
+				"operation": {"scores.0.subject":"math"},
+				"results": [
+					{
+						"documents": [1,7,9,10,20],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "j2LcEFzbd083",
+				"operation": {"scores.score":{"$gte":95}},
+				"results": [
+					{
+						"documents": [2,5,6,7,9,11,12,13,14,15,16,18],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "uyXmwLGoFqU2",
+				"operation": {"scores.subject":"math"},
+				"results": [
+					{
+						"documents": [1,2,6,7,9,10,12,13,15,17,20],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "bW9B6QwnF5d1",
+				"operation": {"scores":{"$elemMatch":{"subject":"math","score":{"$gte":90}}}},
+				"results": [
+					{
+						"documents": [1,2,7,13],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "vW955KXRzaI8",
+				"operation": {"scores.subject":"math","scores.score":{"$gte":90}},
+				"results": [
+					{
+						"documents": [1,2,6,7,9,12,13,15,17],
+						"versions": "6.0.27..8.3.1"
 					}
 				]
 			}
@@ -1317,7 +1491,11 @@
 					},
 					{
 						"documents": [],
-						"versions": "3.2.6..8.3.1"
+						"versions": "3.2.6..6.0.26,7.0.0..7.0.31,8.0.0..8.0.20,8.2.1..8.2.6,8.3.0"
+					},
+					{
+						"documents": [1,3,7,11,14,16,17,20,24,25,28,29],
+						"versions": "6.0.27,7.0.32,8.0.21,8.2.7,8.3.1"
 					}
 				]
 			},
@@ -1331,7 +1509,11 @@
 					},
 					{
 						"documents": [],
-						"versions": "3.2.6..8.3.1"
+						"versions": "3.2.6..6.0.26,7.0.0..7.0.31,8.0.0..8.0.20,8.2.1..8.2.6,8.3.0"
+					},
+					{
+						"documents": [4,8,9,13,21,22,30],
+						"versions": "6.0.27,7.0.32,8.0.21,8.2.7,8.3.1"
 					}
 				]
 			}
@@ -4719,6 +4901,160 @@
 					{
 						"documents": [5,13,15,14,9,6,10,1,12,2,3,7,4,11],
 						"versions": "2.6.12..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "iGOHXstxpae3",
+				"operation": {"polygon":{"$geoIntersects":{"$geometry":{"type":"LineString","coordinates":[[5.89,51.99],[5.91,52.01]]}}}},
+				"results": [
+					{
+						"documents": [3,12,10,15,13,1,2,8,5,6,7,9,14,4,11],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "tH0HGRqBl0Y5",
+				"operation": {"polygon":{"$geoIntersects":{"$geometry":{"type":"Polygon","coordinates":[[[5.895,51.995],[5.905,51.995],[5.905,52.005],[5.895,52.005],[5.895,51.995]]]}}}},
+				"results": [
+					{
+						"documents": [13,10,12,15,3,1,2,8,4,11,6,7,9,5,14],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "aYIwwKRBO8Ka",
+				"operation": {"line":{"$geoWithin":{"$geometry":{"type":"Polygon","coordinates":[[[5.88,51.98],[5.92,51.98],[5.92,52.02],[5.88,52.02],[5.88,51.98]]]}}}},
+				"results": [
+					{
+						"documents": [15,11,4,10,7,2,6,5,9,3,12,8,14,1,13],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "sIMUmQJ1Yz7O",
+				"operation": {"legacyPoint":{"$nearSphere":[5.9,52]}},
+				"results": [
+					{
+						"documents": [8,9,12,6,11,2,14,15,7,4,3,10,5,1,13],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "aTrq0hHIJMHa",
+				"operation": {"legacyPoint":{"$nearSphere":[5.9,52],"$maxDistance":0.01}},
+				"results": [
+					{
+						"documents": [8,9,12,6,11,2,14,15,7,4,3,10,5,1,13],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "sFHyzHZPTQqX",
+				"operation": {"point":{"$near":{}}},
+				"results": [
+					{
+						"error": {"message":"$geometry is required for geo near query","code":2,"type":"MongoServerError"},
+						"versions": "6.0.27..8.2.7"
+					},
+					{
+						"error": {"message":"invalid point provided to geo near query: {}","code":2,"type":"MongoServerError"},
+						"versions": "8.3.1"
+					}
+				]
+			},
+			{
+				"id": "aSXSuocIxk92",
+				"operation": {"point":{"$near":{"$geometry":{"type":"Polygon","coordinates":[]}}}},
+				"results": [
+					{
+						"error": {"message":"invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [] }  Point must only contain numeric elements","code":2,"type":"MongoServerError"},
+						"versions": "6.0.27"
+					},
+					{
+						"error": {"message":"invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [] }  Point must only contain numeric elements, instead got type missing","code":2,"type":"MongoServerError"},
+						"versions": "7.0.32"
+					},
+					{
+						"error": {"message":"invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [] }  Expected geojson geometry with type Point, but got type Polygon","code":2,"type":"MongoServerError"},
+						"versions": "8.0.21..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "ghKupmL2PvKM",
+				"operation": {"point":{"$nearSphere":{}}},
+				"results": [
+					{
+						"error": {"message":"$geometry is required for geo near query","code":2,"type":"MongoServerError"},
+						"versions": "6.0.27..8.2.7"
+					},
+					{
+						"error": {"message":"invalid point provided to geo near query: {}","code":2,"type":"MongoServerError"},
+						"versions": "8.3.1"
+					}
+				]
+			},
+			{
+				"id": "ahWkJUByKeYP",
+				"operation": {"point":{"$geoIntersects":{}}},
+				"results": [
+					{
+						"error": {"message":"geo query doesn't have any geometry","code":2,"type":"MongoServerError"},
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "oMsCykPdDXqx",
+				"operation": {"point":{"$geoIntersects":{"$geometry":{"type":"Point","coordinates":[]}}}},
+				"results": [
+					{
+						"error": {"message":"Point must only contain numeric elements","code":2,"type":"MongoServerError"},
+						"versions": "6.0.27"
+					},
+					{
+						"error": {"message":"Point must only contain numeric elements, instead got type missing","code":2,"type":"MongoServerError"},
+						"versions": "7.0.32..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "uJeEYxwQKRVR",
+				"operation": {"point":{"$geoIntersects":{"$geometry":{"type":"Point","coordinates":[0]}}}},
+				"results": [
+					{
+						"error": {"message":"Point must only contain numeric elements","code":2,"type":"MongoServerError"},
+						"versions": "6.0.27"
+					},
+					{
+						"error": {"message":"Point must only contain numeric elements, instead got type missing","code":2,"type":"MongoServerError"},
+						"versions": "7.0.32..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "vTSn24UIzfqX",
+				"operation": {"point":{"$geoWithin":{"$geometry":{"type":"Polygon","coordinates":[[[5.899,51.999],[5.901,51.999],[5.901,52.001],[5.899,52.001],[5.899,51.999]]]}}}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "6.0.27..8.3.1"
+					}
+				]
+			},
+			{
+				"id": "p9ImoBRFW5C8",
+				"operation": {"legacyPoint":{"$geoWithin":{"$center":[[5.9,52],0]}}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "6.0.27..8.3.1"
 					}
 				]
 			},
