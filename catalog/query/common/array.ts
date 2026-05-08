@@ -6,8 +6,8 @@ import {
     picker,
     several,
     range,
-} from '../../../source/domain/generator/compiler'
-import { Catalog, MongoDocument } from '../../catalog'
+} from '../../../source/domain/generator/compiler';
+import { Catalog, MongoDocument } from '../../catalog';
 
 const document = compile({
     name: picker('Alice', 'Bob', 'Charlie', 'Diana', 'Eve'),
@@ -62,11 +62,19 @@ const document = compile({
             'ux'
         ),
     },
-    emptyArray: () => [],
-    mixedArray: () => [1, 'string', true, false, null, undefined, {}],
-})
+    emptyArray: (_seed: string) => [],
+    mixedArray: (_seed: string) => [
+        1,
+        'string',
+        true,
+        false,
+        null,
+        undefined,
+        {},
+    ],
+});
 
-export type TestDocument = MongoDocument<ReturnType<typeof document>>
+export type TestDocument = MongoDocument<ReturnType<typeof document>>;
 
 export const array: Catalog<TestDocument> = {
     operations: [
@@ -138,8 +146,61 @@ export const array: Catalog<TestDocument> = {
         { tags: { $all: ['nonexistent'] } }, // Non-existent element
         { scores: { $elemMatch: {} } }, // Empty condition
         { scores: { $size: 100 } }, // Size larger than any actual array
+
+        // $all with $elemMatch inside (valid but rarely tested)
+        { scores: { $all: [{ $elemMatch: { score: { $gte: 90 } } }] } },
+
+        // $all on a scalar field (should never match)
+        { name: { $all: ['Alice'] } },
+
+        // $all with null element
+        { tags: { $all: [null] } },
+
+        // $all with duplicate elements (should behave same as deduped)
+        { tags: { $all: ['javascript', 'javascript'] } },
+
+        // $elemMatch with logical operators inside
+        {
+            scores: {
+                $elemMatch: {
+                    $or: [{ score: { $lt: 65 } }, { score: { $gt: 95 } }],
+                },
+            },
+        },
+
+        // $elemMatch with $exists
+        { scores: { $elemMatch: { subject: { $exists: false } } } },
+
+        // $elemMatch with $regex
+        { scores: { $elemMatch: { subject: { $regex: '^m' } } } },
+
+        // $elemMatch with $not
+        { scores: { $elemMatch: { score: { $not: { $gte: 80 } } } } },
+
+        // $elemMatch on a non-array field (should not match)
+        { name: { $elemMatch: { $gt: 'A' } } },
+
+        // $size: 0 on emptyArray vs missing field
+        { emptyArray: { $size: 0 } },
+        { nonExistent: { $size: 0 } },
+
+        // $size: 1 and 2
+        { permissions: { $size: 1 } },
+        { scores: { $size: 2 } },
+
+        // positional - first element access
+        { 'tags.0': 'javascript' },
+        { 'scores.0.subject': 'math' },
+
+        // dot notation into arrays (implicit elemMatch behaviour)
+        { 'scores.score': { $gte: 95 } },
+        { 'scores.subject': 'math' },
+
+        // $elemMatch vs dot notation difference (classic gotcha)
+        { scores: { $elemMatch: { subject: 'math', score: { $gte: 90 } } } },
+        { 'scores.subject': 'math', 'scores.score': { $gte: 90 } }, // different semantics!
     ],
     collection: {
         records: Array.from({ length: 20 }, (_, i) => document(i)),
     },
-}
+};

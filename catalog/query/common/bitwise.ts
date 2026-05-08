@@ -3,8 +3,8 @@ import {
     number,
     picker,
     range,
-} from '../../../source/domain/generator/compiler'
-import { Catalog, MongoDocument } from '../../catalog'
+} from '../../../source/domain/generator/compiler';
+import { Catalog, MongoDocument } from '../../catalog';
 
 // Generate documents with various bit patterns
 // Values 0-127 cover all 7-bit combinations
@@ -13,14 +13,10 @@ const document = compile({
     flags: number(0, 15), // 4-bit flags (0-15)
     permissions: number(0, 7), // 3-bit permissions (0-7)
     status: picker('active', 'inactive', 'pending', 'deleted'),
-    bitmask: () => {
-        // Generate specific bit patterns for testing
-        const patterns = [0, 1, 2, 3, 4, 5, 6, 7, 8, 15, 16, 31, 32, 63, 64, 127]
-        return patterns[Math.floor(Math.random() * patterns.length)]
-    },
-})
+    bitmask: picker(0, 1, 2, 3, 4, 5, 6, 7, 8, 15, 16, 31, 32, 63, 64, 127),
+});
 
-export type BitwiseDocument = MongoDocument<ReturnType<typeof document>>
+export type BitwiseDocument = MongoDocument<ReturnType<typeof document>>;
 
 export const bitwise: Catalog<BitwiseDocument> = {
     operations: [
@@ -42,7 +38,7 @@ export const bitwise: Catalog<BitwiseDocument> = {
         { value: { $bitsAllClear: 63 } }, // Bits 0-5 must be clear
         { value: { $bitsAllClear: 64 } }, // Bit 6 must be clear
         { value: { $bitsAllClear: 127 } }, // Bits 0-6 must be clear (only value 0 matches)
-        
+
         // Error cases - negative values
         { value: { $bitsAllClear: -1 } },
         { value: { $bitsAllClear: [-1] } },
@@ -66,7 +62,7 @@ export const bitwise: Catalog<BitwiseDocument> = {
         { value: { $bitsAllSet: 63 } }, // Bits 0-5 must be set
         { value: { $bitsAllSet: 64 } }, // Bit 6 must be set
         { value: { $bitsAllSet: 127 } }, // Bits 0-6 must be set (only value 127 matches)
-        
+
         // Error cases - negative values
         { value: { $bitsAllSet: -1 } },
         { value: { $bitsAllSet: [-1] } },
@@ -80,7 +76,7 @@ export const bitwise: Catalog<BitwiseDocument> = {
         { value: { $bitsAnyClear: [0, 1] } }, // Either bit 0 or 1 is clear
         { value: { $bitsAnyClear: 15 } }, // At least one of bits 0-3 is clear
         { value: { $bitsAnyClear: 127 } }, // At least one of bits 0-6 is clear
-        
+
         // Error cases - negative values
         { value: { $bitsAnyClear: -1 } },
         { value: { $bitsAnyClear: [-1] } },
@@ -94,7 +90,7 @@ export const bitwise: Catalog<BitwiseDocument> = {
         { value: { $bitsAnySet: [0, 1] } }, // Either bit 0 or 1 is set
         { value: { $bitsAnySet: 15 } }, // At least one of bits 0-3 is set
         { value: { $bitsAnySet: 127 } }, // At least one of bits 0-6 is set
-        
+
         // Error cases - negative values
         { value: { $bitsAnySet: -1 } },
         { value: { $bitsAnySet: [-1] } },
@@ -116,4 +112,4 @@ export const bitwise: Catalog<BitwiseDocument> = {
     collection: {
         records: Array.from({ length: 30 }, (_, i) => document(i)),
     },
-}
+};
