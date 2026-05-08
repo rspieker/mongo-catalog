@@ -180,9 +180,17 @@ jobs:
           path: /tmp/mongo-catalog-changes
           retention-days: 1
 
+      - name: Upload updated plan
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: plan-${{ matrix.version }}
+          path: automation/collect/**/plan.json
+          retention-days: 1
+
   commit:
     needs: collect-versions
     if: always() && needs.collect-versions.result == 'success'
     uses: ./.github/workflows/commit.yml
     with:
-      artifact-pattern: 'results-*'
+      artifact-pattern: '{results,plan}-*'
