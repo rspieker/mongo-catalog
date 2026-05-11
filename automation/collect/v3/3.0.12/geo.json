@@ -507,6 +507,357 @@
 		]
 	},
 	{
+		"id": "iGOHXstxpae3",
+		"operation": {
+			"polygon": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "LineString",
+						"coordinates": [
+							[
+								5.89,
+								51.99
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			3,
+			10,
+			12,
+			15,
+			13,
+			1,
+			2,
+			4,
+			6,
+			7,
+			8,
+			9,
+			11,
+			5,
+			14
+		]
+	},
+	{
+		"id": "tH0HGRqBl0Y5",
+		"operation": {
+			"polygon": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.895,
+									51.995
+								],
+								[
+									5.905,
+									51.995
+								],
+								[
+									5.905,
+									52.005
+								],
+								[
+									5.895,
+									52.005
+								],
+								[
+									5.895,
+									51.995
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			3,
+			10,
+			12,
+			15,
+			13,
+			1,
+			2,
+			4,
+			6,
+			7,
+			8,
+			9,
+			11,
+			5,
+			14
+		]
+	},
+	{
+		"id": "aYIwwKRBO8Ka",
+		"operation": {
+			"line": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.88,
+									51.98
+								],
+								[
+									5.92,
+									51.98
+								],
+								[
+									5.92,
+									52.02
+								],
+								[
+									5.88,
+									52.02
+								],
+								[
+									5.88,
+									51.98
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			11,
+			15,
+			4,
+			7,
+			10,
+			2,
+			5,
+			6,
+			9,
+			3,
+			1,
+			8,
+			12,
+			14,
+			13
+		]
+	},
+	{
+		"id": "sIMUmQJ1Yz7O",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": [
+					5.9,
+					52
+				]
+			}
+		},
+		"documents": [
+			8,
+			9,
+			12,
+			6,
+			11,
+			2,
+			14,
+			15,
+			7,
+			4,
+			3,
+			10,
+			5,
+			1,
+			13
+		]
+	},
+	{
+		"id": "aTrq0hHIJMHa",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": [
+					5.9,
+					52
+				],
+				"$maxDistance": 0.01
+			}
+		},
+		"documents": [
+			8,
+			9,
+			12,
+			6,
+			11,
+			2,
+			14,
+			15,
+			7,
+			4,
+			3,
+			10,
+			5,
+			1,
+			13
+		]
+	},
+	{
+		"id": "sFHyzHZPTQqX",
+		"operation": {
+			"point": {
+				"$near": {}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $geometry is required for geo near query",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "aSXSuocIxk92",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": []
+					}
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [] }  Point must only contain numeric elements",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "ghKupmL2PvKM",
+		"operation": {
+			"point": {
+				"$nearSphere": {}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $geometry is required for geo near query",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "ahWkJUByKeYP",
+		"operation": {
+			"point": {
+				"$geoIntersects": {}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue geo query doesn't have any geometry",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "oMsCykPdDXqx",
+		"operation": {
+			"point": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": []
+					}
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue Point must only contain numeric elements",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "uJeEYxwQKRVR",
+		"operation": {
+			"point": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							0
+						]
+					}
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue Point must only contain numeric elements",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "vTSn24UIzfqX",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.899,
+									51.999
+								],
+								[
+									5.901,
+									51.999
+								],
+								[
+									5.901,
+									52.001
+								],
+								[
+									5.899,
+									52.001
+								],
+								[
+									5.899,
+									51.999
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "p9ImoBRFW5C8",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$center": [
+						[
+							5.9,
+							52
+						],
+						0
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
 		"id": "jIR3gOROgKln",
 		"operation": {
 			"point": {
