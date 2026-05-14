@@ -1,5 +1,455 @@
 [
 	{
+		"name": "where",
+		"path": "catalog/query/coverage/where.ts",
+		"exports": [
+			{
+				"name": "where",
+				"type": "Catalog",
+				"hash": "61f984be64502d526270f8d018b0e12470749c4ee6ca3a55c076929ab9c4d80d"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:04.752Z",
+				"exportName": "where"
+			}
+		]
+	},
+	{
+		"name": "type",
+		"path": "catalog/query/coverage/type.ts",
+		"exports": [
+			{
+				"name": "type",
+				"type": "Catalog",
+				"hash": "73d27a4a45fd8116aff6c19e5c0cd7533d0535e86d06eda9dd3dd1917153d20b"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:04.772Z",
+				"exportName": "type"
+			}
+		]
+	},
+	{
+		"name": "sort",
+		"path": "catalog/query/coverage/sort.ts",
+		"exports": [
+			{
+				"name": "sort",
+				"type": "Catalog",
+				"hash": "ede6de22b88b2be056f556d02c766fcb17db20f2428b2292cbbc71340ef7936a"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:04.787Z",
+				"exportName": "sort"
+			}
+		]
+	},
+	{
+		"name": "regex",
+		"path": "catalog/query/coverage/regex.ts",
+		"exports": [
+			{
+				"name": "regex",
+				"type": "Catalog",
+				"hash": "161db15defb779a9d1b8da8ebdd9932503849d22679b819fab81f195ece08047"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:04.802Z",
+				"exportName": "regex"
+			}
+		]
+	},
+	{
+		"name": "project",
+		"path": "catalog/query/coverage/project.ts",
+		"exports": [
+			{
+				"name": "project",
+				"type": "Catalog",
+				"hash": "9edcd98ef9a997b5f566031e13eadcdc52c5a903fe84ee2671d6d497ce4d8651"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:04.816Z",
+				"exportName": "project"
+			}
+		]
+	},
+	{
+		"name": "or",
+		"path": "catalog/query/coverage/or.ts",
+		"exports": [
+			{
+				"name": "or",
+				"type": "Catalog",
+				"hash": "7e0cae368ee6ec407d250a2d66c217a9b5e22057aba9a02507fd19c9106908a4"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:04.841Z",
+				"exportName": "or"
+			}
+		]
+	},
+	{
+		"name": "number",
+		"path": "catalog/query/coverage/number.ts",
+		"exports": [
+			{
+				"name": "number",
+				"type": "Catalog",
+				"hash": "18b80691c5aed72dda10768e681410f34b1dabca12c11a59e9aecad54418110d"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:04.855Z",
+				"exportName": "number"
+			}
+		]
+	},
+	{
+		"name": "not",
+		"path": "catalog/query/coverage/not.ts",
+		"exports": [
+			{
+				"name": "not",
+				"type": "Catalog",
+				"hash": "7937df7cdc88eb02f4bbc053128095b09fc51c91ac7f5823686cf4e26532c7ed"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:04.873Z",
+				"exportName": "not"
+			}
+		]
+	},
+	{
+		"name": "nin",
+		"path": "catalog/query/coverage/nin.ts",
+		"exports": [
+			{
+				"name": "nin",
+				"type": "Catalog",
+				"hash": "f1907dda9afac82e09a1f39c5367196fc8c5c23e7bd501742fb923e6ef30f36f"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:04.889Z",
+				"exportName": "nin"
+			}
+		]
+	},
+	{
+		"name": "ne",
+		"path": "catalog/query/coverage/ne.ts",
+		"exports": [
+			{
+				"name": "ne",
+				"type": "Catalog",
+				"hash": "1fa55b790208fdfe254e44d89656378e524499f4500a57f23dc99ed22a30844a"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:04.912Z",
+				"exportName": "ne"
+			}
+		]
+	},
+	{
+		"name": "mod",
+		"path": "catalog/query/coverage/mod.ts",
+		"exports": [
+			{
+				"name": "mod",
+				"type": "Catalog",
+				"hash": "309eaa80487202dd23ea960ebc2fed14ff73d6f49ab5879ed4b214c7473e4eee"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:04.931Z",
+				"exportName": "mod"
+			}
+		]
+	},
+	{
+		"name": "json_schema",
+		"path": "catalog/query/coverage/json_schema.ts",
+		"exports": [
+			{
+				"name": "json_schema",
+				"type": "Catalog",
+				"hash": "b0aa55d98410cf4a65f71054aee41b560281774438dc274a738324a9e40840b2"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:04.945Z",
+				"exportName": "json_schema"
+			}
+		]
+	},
+	{
+		"name": "in",
+		"path": "catalog/query/coverage/in.ts",
+		"exports": [
+			{
+				"name": "in_",
+				"type": "Catalog",
+				"hash": "8520d2fa50de2c4db7d8e46fde9fc63048d848ff11f2cff00c8ec1eefaafabc6"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:04.963Z",
+				"exportName": "in_"
+			}
+		]
+	},
+	{
+		"name": "geo",
+		"path": "catalog/query/coverage/geo.ts",
+		"exports": [
+			{
+				"name": "geo",
+				"type": "Catalog",
+				"hash": "c1e6f3f2e548f4859ad0dc0634c6395f250b99ac9385df245b73314e892451c6"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:04.977Z",
+				"exportName": "geo"
+			}
+		]
+	},
+	{
+		"name": "find",
+		"path": "catalog/query/coverage/find.ts",
+		"exports": [
+			{
+				"name": "find",
+				"type": "Catalog",
+				"hash": "3da64a6d313dda54b452b79bcf9828a9a69ac79e6a15d16df3314548f8e7d08f"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:04.992Z",
+				"exportName": "find"
+			}
+		]
+	},
+	{
+		"name": "expr",
+		"path": "catalog/query/coverage/expr.ts",
+		"exports": [
+			{
+				"name": "expr",
+				"type": "Catalog",
+				"hash": "f4406e4685212a81be46b1563f2138f4f10c65d1a0e90d5a65cbe6dd18832833"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:05.008Z",
+				"exportName": "expr"
+			}
+		]
+	},
+	{
+		"name": "exists",
+		"path": "catalog/query/coverage/exists.ts",
+		"exports": [
+			{
+				"name": "exists",
+				"type": "Catalog",
+				"hash": "12191b3bc1444ee269a0175fd263e295a63f3ed55568058e09592c6b3424e1f8"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:05.027Z",
+				"exportName": "exists"
+			}
+		]
+	},
+	{
+		"name": "elemmatch",
+		"path": "catalog/query/coverage/elemmatch.ts",
+		"exports": [
+			{
+				"name": "elemmatch",
+				"type": "Catalog",
+				"hash": "ab68560bffa7876a869dacd88436f341b05b7fa259f3f31202ede011938ed8e0"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:05.043Z",
+				"exportName": "elemmatch"
+			}
+		]
+	},
+	{
+		"name": "dbref",
+		"path": "catalog/query/coverage/dbref.ts",
+		"exports": [
+			{
+				"name": "dbref",
+				"type": "Catalog",
+				"hash": "e51aac090de72c8932be5f12641e341813078d1a29748551505a82bb2f1c4a40"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:05.056Z",
+				"exportName": "dbref"
+			}
+		]
+	},
+	{
+		"name": "date",
+		"path": "catalog/query/coverage/date.ts",
+		"exports": [
+			{
+				"name": "date",
+				"type": "Catalog",
+				"hash": "6e7506227825b96e098661fa39d7dac4002d4325bccd38cb956e627dac727c8a"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:05.084Z",
+				"exportName": "date"
+			}
+		]
+	},
+	{
+		"name": "count",
+		"path": "catalog/query/coverage/count.ts",
+		"exports": [
+			{
+				"name": "count",
+				"type": "Catalog",
+				"hash": "86f4e26ed780d5e8b4ffa65d1b201761af43ef12d0b3751716cc48894f338217"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:05.099Z",
+				"exportName": "count"
+			}
+		]
+	},
+	{
+		"name": "collation",
+		"path": "catalog/query/coverage/collation.ts",
+		"exports": [
+			{
+				"name": "collation",
+				"type": "Catalog",
+				"hash": "8a5ef1cfb5ac5720fe41bcc3e273252e4a86773e575fd2e19fe05bc05801aa96"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:05.110Z",
+				"exportName": "collation"
+			}
+		]
+	},
+	{
+		"name": "array",
+		"path": "catalog/query/coverage/array.ts",
+		"exports": [
+			{
+				"name": "array",
+				"type": "Catalog",
+				"hash": "0a147d95942da52f050c8d2df8e0e17c6c10a7e6d9912147796a83aa5ab16ae6"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:05.126Z",
+				"exportName": "array"
+			}
+		]
+	},
+	{
+		"name": "and",
+		"path": "catalog/query/coverage/and.ts",
+		"exports": [
+			{
+				"name": "and",
+				"type": "Catalog",
+				"hash": "241796ace1c89015c8d81cd375e297115a1394f3931010a829fd1e95c8776dcd"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:05.144Z",
+				"exportName": "and"
+			}
+		]
+	},
+	{
+		"name": "all",
+		"path": "catalog/query/coverage/all.ts",
+		"exports": [
+			{
+				"name": "all",
+				"type": "Catalog",
+				"hash": "672762cab877f753e4f06c82530e83082c7e2092a51fe3faa6e6adc723549e97"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-05-14T16:33:05.156Z",
+				"exportName": "all"
+			}
+		]
+	},
+	{
 		"name": "text-regex",
 		"path": "catalog/query/common/text-regex.ts",
 		"exports": [
