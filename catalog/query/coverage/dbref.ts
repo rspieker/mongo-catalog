@@ -14,7 +14,7 @@ const data: CoverageData = JSON.parse(
 
 export type DbrefDocument = MongoDocument<Record<string, unknown>>
 
-export const dbref: Catalog<DbrefDocument> = {
+export const coverage_dbref: Catalog<DbrefDocument> = {
     operations: [
         ...data.queries.map(q => q.query),
         ...data.variants,

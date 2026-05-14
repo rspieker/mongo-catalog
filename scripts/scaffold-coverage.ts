@@ -88,7 +88,7 @@ async function main() {
 
     for (const file of files) {
         const topic = basename(file, '.json')
-        const exportName = toIdentifier(topic)
+        const exportName = `coverage_${toIdentifier(topic)}`
         const typeName = `${toPascalCase(topic)}Document`
         const outPath = join(outputDir, `${topic}.ts`)
 

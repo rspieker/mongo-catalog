@@ -14,7 +14,7 @@ const data: CoverageData = JSON.parse(
 
 export type WhereDocument = MongoDocument<Record<string, unknown>>
 
-export const where: Catalog<WhereDocument> = {
+export const coverage_where: Catalog<WhereDocument> = {
     operations: [
         ...data.queries.map(q => q.query),
         ...data.variants,

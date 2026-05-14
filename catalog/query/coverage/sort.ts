@@ -14,7 +14,7 @@ const data: CoverageData = JSON.parse(
 
 export type SortDocument = MongoDocument<Record<string, unknown>>
 
-export const sort: Catalog<SortDocument> = {
+export const coverage_sort: Catalog<SortDocument> = {
     operations: [
         ...data.queries.map(q => q.query),
         ...data.variants,

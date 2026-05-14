@@ -14,7 +14,7 @@ const data: CoverageData = JSON.parse(
 
 export type OrDocument = MongoDocument<Record<string, unknown>>
 
-export const or: Catalog<OrDocument> = {
+export const coverage_or: Catalog<OrDocument> = {
     operations: [
         ...data.queries.map(q => q.query),
         ...data.variants,

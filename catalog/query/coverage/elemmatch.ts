@@ -14,7 +14,7 @@ const data: CoverageData = JSON.parse(
 
 export type ElemmatchDocument = MongoDocument<Record<string, unknown>>
 
-export const elemmatch: Catalog<ElemmatchDocument> = {
+export const coverage_elemmatch: Catalog<ElemmatchDocument> = {
     operations: [
         ...data.queries.map(q => q.query),
         ...data.variants,

@@ -14,7 +14,7 @@ const data: CoverageData = JSON.parse(
 
 export type ExprDocument = MongoDocument<Record<string, unknown>>
 
-export const expr: Catalog<ExprDocument> = {
+export const coverage_expr: Catalog<ExprDocument> = {
     operations: [
         ...data.queries.map(q => q.query),
         ...data.variants,

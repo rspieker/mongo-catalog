@@ -14,7 +14,7 @@ const data: CoverageData = JSON.parse(
 
 export type CountDocument = MongoDocument<Record<string, unknown>>
 
-export const count: Catalog<CountDocument> = {
+export const coverage_count: Catalog<CountDocument> = {
     operations: [
         ...data.queries.map(q => q.query),
         ...data.variants,

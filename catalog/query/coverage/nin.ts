@@ -14,7 +14,7 @@ const data: CoverageData = JSON.parse(
 
 export type NinDocument = MongoDocument<Record<string, unknown>>
 
-export const nin: Catalog<NinDocument> = {
+export const coverage_nin: Catalog<NinDocument> = {
     operations: [
         ...data.queries.map(q => q.query),
         ...data.variants,

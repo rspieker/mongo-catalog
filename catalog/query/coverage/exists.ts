@@ -14,7 +14,7 @@ const data: CoverageData = JSON.parse(
 
 export type ExistsDocument = MongoDocument<Record<string, unknown>>
 
-export const exists: Catalog<ExistsDocument> = {
+export const coverage_exists: Catalog<ExistsDocument> = {
     operations: [
         ...data.queries.map(q => q.query),
         ...data.variants,

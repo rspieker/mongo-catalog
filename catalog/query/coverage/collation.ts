@@ -14,7 +14,7 @@ const data: CoverageData = JSON.parse(
 
 export type CollationDocument = MongoDocument<Record<string, unknown>>
 
-export const collation: Catalog<CollationDocument> = {
+export const coverage_collation: Catalog<CollationDocument> = {
     operations: [
         ...data.queries.map(q => q.query),
         ...data.variants,
