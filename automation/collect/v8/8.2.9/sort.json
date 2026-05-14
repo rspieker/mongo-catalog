@@ -1,0 +1,1041 @@
+[
+	{
+		"id": "dP3rPq82r4SG",
+		"operation": {
+			"score": 15
+		},
+		"documents": []
+	},
+	{
+		"id": "iTPybDxmm1hh",
+		"operation": {
+			"score": {
+				"$gt": 13
+			},
+			"rank": null
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f91"
+		]
+	},
+	{
+		"id": "tIgDWHC0zOQU",
+		"operation": {
+			"score": {
+				"$gte": 13,
+				"$lte": 23
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f91"
+		]
+	},
+	{
+		"id": "uGMGHpXCkUDx",
+		"operation": {
+			"score": {
+				"$in": [
+					14,
+					15
+				]
+			},
+			"rank": {
+				"$gte": 13
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "wiDPeH4xHKTv",
+		"operation": {
+			"$or": [
+				{
+					"status": "Every",
+					"category": "Every"
+				},
+				{
+					"status": "Empty",
+					"category": "Empty"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "rn7TKm1jIMFM",
+		"operation": {
+			"rank": null
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f91",
+			"6a05fa9b34454b6d48917f92",
+			"6a05fa9b34454b6d48917f93",
+			"6a05fa9b34454b6d48917f94",
+			"6a05fa9b34454b6d48917f95",
+			"6a05fa9b34454b6d48917f96",
+			"6a05fa9b34454b6d48917f97",
+			"6a05fa9b34454b6d48917f98",
+			"6a05fa9b34454b6d48917f99",
+			"6a05fa9b34454b6d48917f9a",
+			"6a05fa9b34454b6d48917f9b"
+		]
+	},
+	{
+		"id": "oOz0ewr8TCOK",
+		"operation": {},
+		"documents": [
+			"6a05fa9b34454b6d48917f91",
+			"6a05fa9b34454b6d48917f92",
+			"6a05fa9b34454b6d48917f93",
+			"6a05fa9b34454b6d48917f94",
+			"6a05fa9b34454b6d48917f95",
+			"6a05fa9b34454b6d48917f96",
+			"6a05fa9b34454b6d48917f97",
+			"6a05fa9b34454b6d48917f98",
+			"6a05fa9b34454b6d48917f99",
+			"6a05fa9b34454b6d48917f9a",
+			"6a05fa9b34454b6d48917f9b"
+		]
+	},
+	{
+		"id": "tT8NweQMuOcv",
+		"operation": {
+			"name": {
+				"$gte": 23
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f94",
+			"6a05fa9b34454b6d48917f95"
+		]
+	},
+	{
+		"id": "reUIARgII4c2",
+		"operation": {
+			"name": {
+				"$lte": 23
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f94",
+			"6a05fa9b34454b6d48917f95"
+		]
+	},
+	{
+		"id": "tSvYBWLq8guK",
+		"operation": {
+			"name": {
+				"$gt": 18
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f94",
+			"6a05fa9b34454b6d48917f95"
+		]
+	},
+	{
+		"id": "s5tIRS34ot3Q",
+		"operation": {
+			"scores": {
+				"$ne": 17
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f91",
+			"6a05fa9b34454b6d48917f92",
+			"6a05fa9b34454b6d48917f93",
+			"6a05fa9b34454b6d48917f94",
+			"6a05fa9b34454b6d48917f95",
+			"6a05fa9b34454b6d48917f96",
+			"6a05fa9b34454b6d48917f97",
+			"6a05fa9b34454b6d48917f98",
+			"6a05fa9b34454b6d48917f99",
+			"6a05fa9b34454b6d48917f9a",
+			"6a05fa9b34454b6d48917f9b"
+		]
+	},
+	{
+		"id": "qz6mg641r3bV",
+		"operation": {
+			"scores.attempts": {
+				"$ne": 17
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f91",
+			"6a05fa9b34454b6d48917f92",
+			"6a05fa9b34454b6d48917f93",
+			"6a05fa9b34454b6d48917f94",
+			"6a05fa9b34454b6d48917f95",
+			"6a05fa9b34454b6d48917f96",
+			"6a05fa9b34454b6d48917f97",
+			"6a05fa9b34454b6d48917f98",
+			"6a05fa9b34454b6d48917f99",
+			"6a05fa9b34454b6d48917f9a",
+			"6a05fa9b34454b6d48917f9b"
+		]
+	},
+	{
+		"id": "h7qIIgnuSJFZ",
+		"operation": {
+			"quantity": {
+				"$exists": 21
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "kGDRnFf0DX2M",
+		"operation": {
+			"size.index": {
+				"$exists": 23
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "wtyOng0mRCR2",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$not": {
+							"$type": "Abundant"
+						}
+					}
+				},
+				{
+					"username": {
+						"$not": {
+							"$type": "Abundant"
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Unknown type name alias: Abundant",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "jna7c9whGXFK",
+		"operation": {
+			"$or": [
+				{
+					"weight": {
+						"$gte": 25
+					},
+					"height": {
+						"$mod": [
+							27,
+							25
+						]
+					}
+				},
+				{
+					"weight": {
+						"$lte": 100025
+					},
+					"height": {
+						"$mod": [
+							27,
+							26
+						]
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "uQypkj2OjIcm",
+		"operation": {
+			"score": null
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f92",
+			"6a05fa9b34454b6d48917f93",
+			"6a05fa9b34454b6d48917f94",
+			"6a05fa9b34454b6d48917f95",
+			"6a05fa9b34454b6d48917f96",
+			"6a05fa9b34454b6d48917f97",
+			"6a05fa9b34454b6d48917f98",
+			"6a05fa9b34454b6d48917f99",
+			"6a05fa9b34454b6d48917f9a",
+			"6a05fa9b34454b6d48917f9b"
+		]
+	},
+	{
+		"id": "a53rmQe8zM66",
+		"operation": {
+			"score": "value"
+		},
+		"documents": []
+	},
+	{
+		"id": "u2M3wuZZMAzC",
+		"operation": {
+			"score": true
+		},
+		"documents": []
+	},
+	{
+		"id": "pXIPUvCVltCC",
+		"operation": {
+			"score": {
+				"$gt": null
+			},
+			"rank": null
+		},
+		"documents": []
+	},
+	{
+		"id": "oD7J302HTRyj",
+		"operation": {
+			"score": {
+				"$gt": "value"
+			},
+			"rank": null
+		},
+		"documents": []
+	},
+	{
+		"id": "uejnGRoDom15",
+		"operation": {
+			"score": {
+				"$gt": true
+			},
+			"rank": null
+		},
+		"documents": []
+	},
+	{
+		"id": "sgzMv55HhWQQ",
+		"operation": {
+			"score": {
+				"$gte": null,
+				"$lte": null
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f92",
+			"6a05fa9b34454b6d48917f93",
+			"6a05fa9b34454b6d48917f94",
+			"6a05fa9b34454b6d48917f95",
+			"6a05fa9b34454b6d48917f96",
+			"6a05fa9b34454b6d48917f97",
+			"6a05fa9b34454b6d48917f98",
+			"6a05fa9b34454b6d48917f99",
+			"6a05fa9b34454b6d48917f9a",
+			"6a05fa9b34454b6d48917f9b"
+		]
+	},
+	{
+		"id": "vKbJKBQzk4Rz",
+		"operation": {
+			"score": {
+				"$gte": "value",
+				"$lte": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "t2jxTsL35W1T",
+		"operation": {
+			"score": {
+				"$gte": true,
+				"$lte": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "oLSHNi4JIK0q",
+		"operation": {
+			"score": {
+				"$in": "active"
+			},
+			"rank": {
+				"$gte": 13
+			}
+		},
+		"error": {
+			"message": "$in needs an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "gYF5G0TsAUVM",
+		"operation": {
+			"score": {
+				"$in": [
+					null,
+					null
+				]
+			},
+			"rank": {
+				"$gte": null
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f92",
+			"6a05fa9b34454b6d48917f93",
+			"6a05fa9b34454b6d48917f94",
+			"6a05fa9b34454b6d48917f95",
+			"6a05fa9b34454b6d48917f96",
+			"6a05fa9b34454b6d48917f97",
+			"6a05fa9b34454b6d48917f98",
+			"6a05fa9b34454b6d48917f99",
+			"6a05fa9b34454b6d48917f9a",
+			"6a05fa9b34454b6d48917f9b"
+		]
+	},
+	{
+		"id": "rBXkBcL6iePG",
+		"operation": {
+			"score": {
+				"$in": [
+					"value",
+					"value"
+				]
+			},
+			"rank": {
+				"$gte": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "hiDqoGfSIFYw",
+		"operation": {
+			"score": {
+				"$in": [
+					true,
+					true
+				]
+			},
+			"rank": {
+				"$gte": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "bIuqf1p4MCXf",
+		"operation": {
+			"$or": [
+				{
+					"status": null,
+					"category": null
+				},
+				{
+					"status": null,
+					"category": null
+				}
+			]
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f91",
+			"6a05fa9b34454b6d48917f93",
+			"6a05fa9b34454b6d48917f94",
+			"6a05fa9b34454b6d48917f95",
+			"6a05fa9b34454b6d48917f96",
+			"6a05fa9b34454b6d48917f97",
+			"6a05fa9b34454b6d48917f98",
+			"6a05fa9b34454b6d48917f99",
+			"6a05fa9b34454b6d48917f9a",
+			"6a05fa9b34454b6d48917f9b"
+		]
+	},
+	{
+		"id": "rjAxSpjlDIRk",
+		"operation": {
+			"$or": [
+				{
+					"status": 42,
+					"category": 42
+				},
+				{
+					"status": 42,
+					"category": 42
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "pchT6ZWpsODs",
+		"operation": {
+			"$or": [
+				{
+					"status": true,
+					"category": true
+				},
+				{
+					"status": true,
+					"category": true
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "pL0zfEQX3DjK",
+		"operation": {
+			"name": {
+				"$gte": null
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f91",
+			"6a05fa9b34454b6d48917f92",
+			"6a05fa9b34454b6d48917f93",
+			"6a05fa9b34454b6d48917f96",
+			"6a05fa9b34454b6d48917f97",
+			"6a05fa9b34454b6d48917f98",
+			"6a05fa9b34454b6d48917f99",
+			"6a05fa9b34454b6d48917f9a",
+			"6a05fa9b34454b6d48917f9b"
+		]
+	},
+	{
+		"id": "dzV6wqH8tWZl",
+		"operation": {
+			"name": {
+				"$gte": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "o6PZ0QUnzeAa",
+		"operation": {
+			"name": {
+				"$gte": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "uMHS4CFkqS0b",
+		"operation": {
+			"name": {
+				"$lte": null
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f91",
+			"6a05fa9b34454b6d48917f92",
+			"6a05fa9b34454b6d48917f93",
+			"6a05fa9b34454b6d48917f96",
+			"6a05fa9b34454b6d48917f97",
+			"6a05fa9b34454b6d48917f98",
+			"6a05fa9b34454b6d48917f99",
+			"6a05fa9b34454b6d48917f9a",
+			"6a05fa9b34454b6d48917f9b"
+		]
+	},
+	{
+		"id": "aVwxoBKGCZnU",
+		"operation": {
+			"name": {
+				"$lte": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "bY6WiARgxcR8",
+		"operation": {
+			"name": {
+				"$lte": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "n8BltCRnlPHX",
+		"operation": {
+			"name": {
+				"$gt": null
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "wBKlylZIJiU4",
+		"operation": {
+			"name": {
+				"$gt": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "kssYHPrKra93",
+		"operation": {
+			"name": {
+				"$gt": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "m8TyPtiAgGZo",
+		"operation": {
+			"scores": {
+				"$ne": null
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f96",
+			"6a05fa9b34454b6d48917f97"
+		]
+	},
+	{
+		"id": "si5U2nBDIltf",
+		"operation": {
+			"scores": {
+				"$ne": "value"
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f91",
+			"6a05fa9b34454b6d48917f92",
+			"6a05fa9b34454b6d48917f93",
+			"6a05fa9b34454b6d48917f94",
+			"6a05fa9b34454b6d48917f95",
+			"6a05fa9b34454b6d48917f96",
+			"6a05fa9b34454b6d48917f97",
+			"6a05fa9b34454b6d48917f98",
+			"6a05fa9b34454b6d48917f99",
+			"6a05fa9b34454b6d48917f9a",
+			"6a05fa9b34454b6d48917f9b"
+		]
+	},
+	{
+		"id": "nSGAGkhMir2I",
+		"operation": {
+			"scores": {
+				"$ne": true
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f91",
+			"6a05fa9b34454b6d48917f92",
+			"6a05fa9b34454b6d48917f93",
+			"6a05fa9b34454b6d48917f94",
+			"6a05fa9b34454b6d48917f95",
+			"6a05fa9b34454b6d48917f96",
+			"6a05fa9b34454b6d48917f97",
+			"6a05fa9b34454b6d48917f98",
+			"6a05fa9b34454b6d48917f99",
+			"6a05fa9b34454b6d48917f9a",
+			"6a05fa9b34454b6d48917f9b"
+		]
+	},
+	{
+		"id": "pZFHKAHSHigh",
+		"operation": {
+			"scores.attempts": {
+				"$ne": null
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f96",
+			"6a05fa9b34454b6d48917f97"
+		]
+	},
+	{
+		"id": "uWrUz50vAy4u",
+		"operation": {
+			"scores.attempts": {
+				"$ne": "value"
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f91",
+			"6a05fa9b34454b6d48917f92",
+			"6a05fa9b34454b6d48917f93",
+			"6a05fa9b34454b6d48917f94",
+			"6a05fa9b34454b6d48917f95",
+			"6a05fa9b34454b6d48917f96",
+			"6a05fa9b34454b6d48917f97",
+			"6a05fa9b34454b6d48917f98",
+			"6a05fa9b34454b6d48917f99",
+			"6a05fa9b34454b6d48917f9a",
+			"6a05fa9b34454b6d48917f9b"
+		]
+	},
+	{
+		"id": "slPbKPDjfT4S",
+		"operation": {
+			"scores.attempts": {
+				"$ne": true
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f91",
+			"6a05fa9b34454b6d48917f92",
+			"6a05fa9b34454b6d48917f93",
+			"6a05fa9b34454b6d48917f94",
+			"6a05fa9b34454b6d48917f95",
+			"6a05fa9b34454b6d48917f96",
+			"6a05fa9b34454b6d48917f97",
+			"6a05fa9b34454b6d48917f98",
+			"6a05fa9b34454b6d48917f99",
+			"6a05fa9b34454b6d48917f9a",
+			"6a05fa9b34454b6d48917f9b"
+		]
+	},
+	{
+		"id": "u3R3z5QXfnXP",
+		"operation": {
+			"quantity": {
+				"$exists": null
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f91",
+			"6a05fa9b34454b6d48917f92",
+			"6a05fa9b34454b6d48917f93",
+			"6a05fa9b34454b6d48917f94",
+			"6a05fa9b34454b6d48917f95",
+			"6a05fa9b34454b6d48917f96",
+			"6a05fa9b34454b6d48917f97",
+			"6a05fa9b34454b6d48917f98",
+			"6a05fa9b34454b6d48917f99",
+			"6a05fa9b34454b6d48917f9a",
+			"6a05fa9b34454b6d48917f9b"
+		]
+	},
+	{
+		"id": "uh8FINDjQUQX",
+		"operation": {
+			"quantity": {
+				"$exists": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "wJvQUfEVY1Hm",
+		"operation": {
+			"quantity": {
+				"$exists": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "sIT4YP6Me5E7",
+		"operation": {
+			"size.index": {
+				"$exists": null
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f91",
+			"6a05fa9b34454b6d48917f92",
+			"6a05fa9b34454b6d48917f93",
+			"6a05fa9b34454b6d48917f94",
+			"6a05fa9b34454b6d48917f95",
+			"6a05fa9b34454b6d48917f96",
+			"6a05fa9b34454b6d48917f97",
+			"6a05fa9b34454b6d48917f98",
+			"6a05fa9b34454b6d48917f99",
+			"6a05fa9b34454b6d48917f9a",
+			"6a05fa9b34454b6d48917f9b"
+		]
+	},
+	{
+		"id": "n3bGLHKMrUBz",
+		"operation": {
+			"size.index": {
+				"$exists": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "kVHDsRfbHc9J",
+		"operation": {
+			"size.index": {
+				"$exists": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "espUVePDy8Ei",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$not": {
+							"$type": null
+						}
+					}
+				},
+				{
+					"username": {
+						"$not": {
+							"$type": null
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "type must be represented as a number or a string",
+			"code": 14,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "szt4RosMMYIR",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$not": {
+							"$type": 42
+						}
+					}
+				},
+				{
+					"username": {
+						"$not": {
+							"$type": 42
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Invalid numerical type code: 42",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sFPxwW1hEKVV",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$not": {
+							"$type": true
+						}
+					}
+				},
+				{
+					"username": {
+						"$not": {
+							"$type": true
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "type must be represented as a number or a string",
+			"code": 14,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "hcRUpef1MyXM",
+		"operation": {
+			"$or": [
+				{
+					"weight": {
+						"$gte": 25
+					},
+					"height": {
+						"$mod": "invalid"
+					}
+				},
+				{
+					"weight": {
+						"$lte": 100025
+					},
+					"height": {
+						"$mod": "invalid"
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "malformed mod, needs to be an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rOfBEDQvRyJd",
+		"operation": {
+			"$or": [
+				{
+					"weight": {
+						"$gte": 25
+					},
+					"height": {
+						"$mod": [
+							2
+						]
+					}
+				},
+				{
+					"weight": {
+						"$lte": 100025
+					},
+					"height": {
+						"$mod": [
+							2
+						]
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "malformed mod, not enough elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pcWoE2l5HBaQ",
+		"operation": {
+			"$or": [
+				{
+					"weight": {
+						"$gte": 25
+					},
+					"height": {
+						"$mod": []
+					}
+				},
+				{
+					"weight": {
+						"$lte": 100025
+					},
+					"height": {
+						"$mod": []
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "malformed mod, not enough elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "m3kHwzFN79Oq",
+		"operation": {
+			"$or": [
+				{
+					"weight": {
+						"$gte": null
+					},
+					"height": {
+						"$mod": [
+							null,
+							null
+						]
+					}
+				},
+				{
+					"weight": {
+						"$lte": null
+					},
+					"height": {
+						"$mod": [
+							null,
+							null
+						]
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "malformed mod, divisor not a number",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bNHJV9wiruCb",
+		"operation": {
+			"$or": [
+				{
+					"weight": {
+						"$gte": "value"
+					},
+					"height": {
+						"$mod": [
+							"value",
+							"value"
+						]
+					}
+				},
+				{
+					"weight": {
+						"$lte": "value"
+					},
+					"height": {
+						"$mod": [
+							"value",
+							"value"
+						]
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "malformed mod, divisor not a number",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sNaXPvVOS9UI",
+		"operation": {
+			"$or": [
+				{
+					"weight": {
+						"$gte": true
+					},
+					"height": {
+						"$mod": [
+							true,
+							true
+						]
+					}
+				},
+				{
+					"weight": {
+						"$lte": true
+					},
+					"height": {
+						"$mod": [
+							true,
+							true
+						]
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "malformed mod, divisor not a number",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	}
+]

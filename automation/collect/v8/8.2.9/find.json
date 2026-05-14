@@ -1,0 +1,1302 @@
+[
+	{
+		"id": "oOz0ewr8TCOK",
+		"operation": {},
+		"documents": [
+			"6a05fa9f34454b6d48917ffd",
+			"6a05fa9f34454b6d48917ffe",
+			"6a05fa9f34454b6d48917fff",
+			"6a05fa9f34454b6d48918000",
+			"6a05fa9f34454b6d48918001",
+			"6a05fa9f34454b6d48918002",
+			"6a05fa9f34454b6d48918003",
+			"6a05fa9f34454b6d48918004",
+			"6a05fa9f34454b6d48918005",
+			"6a05fa9f34454b6d48918006",
+			"6a05fa9f34454b6d48918007",
+			"6a05fa9f34454b6d48918008",
+			"6a05fa9f34454b6d48918009",
+			"6a05fa9f34454b6d4891800a",
+			"6a05fa9f34454b6d4891800b",
+			"6a05fa9f34454b6d4891800c",
+			"6a05fa9f34454b6d4891800d",
+			"6a05fa9f34454b6d4891800e",
+			"6a05fa9f34454b6d4891800f",
+			"6a05fa9f34454b6d48918010",
+			"6a05fa9f34454b6d48918011",
+			"6a05fa9f34454b6d48918012",
+			"6a05fa9f34454b6d48918013",
+			"6a05fa9f34454b6d48918014",
+			"6a05fa9f34454b6d48918015",
+			"6a05fa9f34454b6d48918016",
+			"6a05fa9f34454b6d48918017",
+			"6a05fa9f34454b6d48918018",
+			"6a05fa9f34454b6d48918019",
+			"6a05fa9f34454b6d4891801a",
+			"6a05fa9f34454b6d4891801b",
+			"6a05fa9f34454b6d4891801c",
+			"6a05fa9f34454b6d4891801d",
+			"6a05fa9f34454b6d4891801e",
+			"6a05fa9f34454b6d4891801f",
+			"6a05fa9f34454b6d48918020",
+			"6a05fa9f34454b6d48918021",
+			"6a05fa9f34454b6d48918022"
+		]
+	},
+	{
+		"id": "uQypkj2OjIcm",
+		"operation": {
+			"score": null
+		},
+		"documents": [
+			"6a05fa9f34454b6d48917ffe",
+			"6a05fa9f34454b6d48917fff",
+			"6a05fa9f34454b6d48918000",
+			"6a05fa9f34454b6d48918001",
+			"6a05fa9f34454b6d48918002",
+			"6a05fa9f34454b6d48918003",
+			"6a05fa9f34454b6d48918004",
+			"6a05fa9f34454b6d48918005",
+			"6a05fa9f34454b6d48918006",
+			"6a05fa9f34454b6d48918007",
+			"6a05fa9f34454b6d48918008",
+			"6a05fa9f34454b6d48918009",
+			"6a05fa9f34454b6d4891800a",
+			"6a05fa9f34454b6d4891800b",
+			"6a05fa9f34454b6d4891800c",
+			"6a05fa9f34454b6d4891800d",
+			"6a05fa9f34454b6d4891800e",
+			"6a05fa9f34454b6d4891800f",
+			"6a05fa9f34454b6d48918010",
+			"6a05fa9f34454b6d48918011",
+			"6a05fa9f34454b6d48918012",
+			"6a05fa9f34454b6d48918013",
+			"6a05fa9f34454b6d48918014",
+			"6a05fa9f34454b6d48918015",
+			"6a05fa9f34454b6d48918016",
+			"6a05fa9f34454b6d48918017",
+			"6a05fa9f34454b6d48918018",
+			"6a05fa9f34454b6d48918019",
+			"6a05fa9f34454b6d4891801a",
+			"6a05fa9f34454b6d4891801b",
+			"6a05fa9f34454b6d4891801c",
+			"6a05fa9f34454b6d4891801d",
+			"6a05fa9f34454b6d4891801e",
+			"6a05fa9f34454b6d4891801f",
+			"6a05fa9f34454b6d48918020",
+			"6a05fa9f34454b6d48918021",
+			"6a05fa9f34454b6d48918022"
+		]
+	},
+	{
+		"id": "hLLSCq4KYZc1",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$gte": 1,
+						"$lte": 3
+					},
+					"score": {
+						"$gte": 1,
+						"$lte": 3
+					}
+				},
+				{
+					"age": {
+						"$gte": 2,
+						"$lte": 4
+					},
+					"score": {
+						"$gte": 2,
+						"$lte": 4
+					}
+				},
+				{
+					"age": {
+						"$gte": 2,
+						"$lte": 5
+					},
+					"score": {
+						"$gte": 2,
+						"$lte": 5
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "lvLn5ZuTku0A",
+		"operation": {
+			"scores.0": 27
+		},
+		"documents": [
+			"6a05fa9f34454b6d48917ffe",
+			"6a05fa9f34454b6d48917fff"
+		]
+	},
+	{
+		"id": "wf2FawA92Tfp",
+		"operation": {
+			"scores.0": {
+				"$gt": 34
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "lDIWHkbyk8zM",
+		"operation": {
+			"scores.0": {
+				"$lt": 26
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "nN1TIEzDNhZ3",
+		"operation": {
+			"ratings.0": [
+				12,
+				13
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "hwK2pJkM2hOl",
+		"operation": {
+			"ratings.0.0": 13
+		},
+		"documents": []
+	},
+	{
+		"id": "tgRtLrrD0R8F",
+		"operation": {
+			"level": {
+				"count": 3650,
+				"grade": "Abundant"
+			}
+		},
+		"documents": [
+			"6a05fa9f34454b6d48918001"
+		]
+	},
+	{
+		"id": "v2hgLvH11yML",
+		"operation": {
+			"counts": {
+				"$gt": 5,
+				"$lt": 8
+			}
+		},
+		"documents": [
+			"6a05fa9f34454b6d48918002"
+		]
+	},
+	{
+		"id": "c53wi0TsCcSx",
+		"operation": {
+			"$or": [
+				{
+					"counts": {
+						"$in": [
+							4,
+							5
+						]
+					}
+				},
+				{
+					"capacity": {
+						"$in": [
+							7,
+							8
+						]
+					}
+				}
+			]
+		},
+		"documents": [
+			"6a05fa9f34454b6d48918002"
+		]
+	},
+	{
+		"id": "fVLyDGweMVmW",
+		"operation": {
+			"attempts": 14
+		},
+		"documents": []
+	},
+	{
+		"id": "nQ6PhzWRkA6a",
+		"operation": {
+			"name": {
+				"$size": 9
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "uYKfmRhyfPNJ",
+		"operation": {
+			"title.height": {
+				"$size": 14
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "oUWALM6ATZaq",
+		"operation": {
+			"title.height.age": {
+				"$size": 13
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "gtxjtEQUnLgb",
+		"operation": {
+			"title.height.age.score": {
+				"$size": 13
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "nXXYdRKV0BUS",
+		"operation": {
+			"rank.rank.username": {
+				"$size": 37
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "lz4yHGMNN8SC",
+		"operation": {
+			"username.rank.rank.username": {
+				"$size": 37
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "rGF47W7TPJRG",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$gte": null,
+						"$lte": null
+					},
+					"score": {
+						"$gte": null,
+						"$lte": null
+					}
+				},
+				{
+					"age": {
+						"$gte": null,
+						"$lte": null
+					},
+					"score": {
+						"$gte": null,
+						"$lte": null
+					}
+				},
+				{
+					"age": {
+						"$gte": null,
+						"$lte": null
+					},
+					"score": {
+						"$gte": null,
+						"$lte": null
+					}
+				}
+			]
+		},
+		"documents": [
+			"6a05fa9f34454b6d48917ffe",
+			"6a05fa9f34454b6d48917fff",
+			"6a05fa9f34454b6d48918000",
+			"6a05fa9f34454b6d48918001",
+			"6a05fa9f34454b6d48918002",
+			"6a05fa9f34454b6d48918003",
+			"6a05fa9f34454b6d48918004",
+			"6a05fa9f34454b6d48918005",
+			"6a05fa9f34454b6d48918006",
+			"6a05fa9f34454b6d48918007",
+			"6a05fa9f34454b6d48918008",
+			"6a05fa9f34454b6d48918009",
+			"6a05fa9f34454b6d4891800a",
+			"6a05fa9f34454b6d4891800b",
+			"6a05fa9f34454b6d4891800c",
+			"6a05fa9f34454b6d4891800d",
+			"6a05fa9f34454b6d4891800e",
+			"6a05fa9f34454b6d4891800f",
+			"6a05fa9f34454b6d48918010",
+			"6a05fa9f34454b6d48918011",
+			"6a05fa9f34454b6d48918012",
+			"6a05fa9f34454b6d48918013",
+			"6a05fa9f34454b6d48918014",
+			"6a05fa9f34454b6d48918015",
+			"6a05fa9f34454b6d48918016",
+			"6a05fa9f34454b6d48918017",
+			"6a05fa9f34454b6d48918018",
+			"6a05fa9f34454b6d48918019",
+			"6a05fa9f34454b6d4891801a",
+			"6a05fa9f34454b6d4891801b",
+			"6a05fa9f34454b6d4891801c",
+			"6a05fa9f34454b6d4891801d",
+			"6a05fa9f34454b6d4891801e",
+			"6a05fa9f34454b6d4891801f",
+			"6a05fa9f34454b6d48918020",
+			"6a05fa9f34454b6d48918021",
+			"6a05fa9f34454b6d48918022"
+		]
+	},
+	{
+		"id": "kxIr9m4y3Z9H",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$gte": "value",
+						"$lte": "value"
+					},
+					"score": {
+						"$gte": "value",
+						"$lte": "value"
+					}
+				},
+				{
+					"age": {
+						"$gte": "value",
+						"$lte": "value"
+					},
+					"score": {
+						"$gte": "value",
+						"$lte": "value"
+					}
+				},
+				{
+					"age": {
+						"$gte": "value",
+						"$lte": "value"
+					},
+					"score": {
+						"$gte": "value",
+						"$lte": "value"
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "wX38QPBunSGH",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$gte": true,
+						"$lte": true
+					},
+					"score": {
+						"$gte": true,
+						"$lte": true
+					}
+				},
+				{
+					"age": {
+						"$gte": true,
+						"$lte": true
+					},
+					"score": {
+						"$gte": true,
+						"$lte": true
+					}
+				},
+				{
+					"age": {
+						"$gte": true,
+						"$lte": true
+					},
+					"score": {
+						"$gte": true,
+						"$lte": true
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "mOJHV9KJvROG",
+		"operation": {
+			"scores.0": null
+		},
+		"documents": [
+			"6a05fa9f34454b6d48917ffd",
+			"6a05fa9f34454b6d48918000",
+			"6a05fa9f34454b6d48918001",
+			"6a05fa9f34454b6d48918002",
+			"6a05fa9f34454b6d48918003",
+			"6a05fa9f34454b6d48918004",
+			"6a05fa9f34454b6d48918005",
+			"6a05fa9f34454b6d48918006",
+			"6a05fa9f34454b6d48918007",
+			"6a05fa9f34454b6d48918008",
+			"6a05fa9f34454b6d48918009",
+			"6a05fa9f34454b6d4891800a",
+			"6a05fa9f34454b6d4891800b",
+			"6a05fa9f34454b6d4891800c",
+			"6a05fa9f34454b6d4891800d",
+			"6a05fa9f34454b6d4891800e",
+			"6a05fa9f34454b6d4891800f",
+			"6a05fa9f34454b6d48918010",
+			"6a05fa9f34454b6d48918011",
+			"6a05fa9f34454b6d48918012",
+			"6a05fa9f34454b6d48918013",
+			"6a05fa9f34454b6d48918014",
+			"6a05fa9f34454b6d48918015",
+			"6a05fa9f34454b6d48918016",
+			"6a05fa9f34454b6d48918017",
+			"6a05fa9f34454b6d48918018",
+			"6a05fa9f34454b6d48918019",
+			"6a05fa9f34454b6d4891801a",
+			"6a05fa9f34454b6d4891801b",
+			"6a05fa9f34454b6d4891801c",
+			"6a05fa9f34454b6d4891801d",
+			"6a05fa9f34454b6d4891801e",
+			"6a05fa9f34454b6d4891801f",
+			"6a05fa9f34454b6d48918020",
+			"6a05fa9f34454b6d48918021",
+			"6a05fa9f34454b6d48918022"
+		]
+	},
+	{
+		"id": "nKOgFyrg79wg",
+		"operation": {
+			"scores.0": "value"
+		},
+		"documents": []
+	},
+	{
+		"id": "uLt77HjWIoG1",
+		"operation": {
+			"scores.0": true
+		},
+		"documents": []
+	},
+	{
+		"id": "dIVkX8gNDKdi",
+		"operation": {
+			"scores.0": {
+				"$gt": null
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "cUtyYJme9sOb",
+		"operation": {
+			"scores.0": {
+				"$gt": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "uaLdcHqQi6lQ",
+		"operation": {
+			"scores.0": {
+				"$gt": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "lEXzXi7zqXvF",
+		"operation": {
+			"scores.0": {
+				"$lt": null
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "rx5ZfK7bRisj",
+		"operation": {
+			"scores.0": {
+				"$lt": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "cXBCBLLUbaqu",
+		"operation": {
+			"scores.0": {
+				"$lt": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "ly02LaqHCf7h",
+		"operation": {
+			"ratings.0": [
+				null,
+				null
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "dSLBEiKo1Fz8",
+		"operation": {
+			"ratings.0": [
+				"value",
+				"value"
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "av5ps1FEL6IR",
+		"operation": {
+			"ratings.0": [
+				true,
+				true
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "cpSLNjApVHcu",
+		"operation": {
+			"ratings.0.0": null
+		},
+		"documents": [
+			"6a05fa9f34454b6d48917ffd",
+			"6a05fa9f34454b6d48917ffe",
+			"6a05fa9f34454b6d48917fff",
+			"6a05fa9f34454b6d48918001",
+			"6a05fa9f34454b6d48918002",
+			"6a05fa9f34454b6d48918003",
+			"6a05fa9f34454b6d48918004",
+			"6a05fa9f34454b6d48918005",
+			"6a05fa9f34454b6d48918006",
+			"6a05fa9f34454b6d48918007",
+			"6a05fa9f34454b6d48918008",
+			"6a05fa9f34454b6d48918009",
+			"6a05fa9f34454b6d4891800a",
+			"6a05fa9f34454b6d4891800b",
+			"6a05fa9f34454b6d4891800c",
+			"6a05fa9f34454b6d4891800d",
+			"6a05fa9f34454b6d4891800e",
+			"6a05fa9f34454b6d4891800f",
+			"6a05fa9f34454b6d48918010",
+			"6a05fa9f34454b6d48918011",
+			"6a05fa9f34454b6d48918012",
+			"6a05fa9f34454b6d48918013",
+			"6a05fa9f34454b6d48918014",
+			"6a05fa9f34454b6d48918015",
+			"6a05fa9f34454b6d48918016",
+			"6a05fa9f34454b6d48918017",
+			"6a05fa9f34454b6d48918018",
+			"6a05fa9f34454b6d48918019",
+			"6a05fa9f34454b6d4891801a",
+			"6a05fa9f34454b6d4891801b",
+			"6a05fa9f34454b6d4891801c",
+			"6a05fa9f34454b6d4891801d",
+			"6a05fa9f34454b6d4891801e",
+			"6a05fa9f34454b6d4891801f",
+			"6a05fa9f34454b6d48918020",
+			"6a05fa9f34454b6d48918021",
+			"6a05fa9f34454b6d48918022"
+		]
+	},
+	{
+		"id": "pKQ4WruE7f4n",
+		"operation": {
+			"ratings.0.0": "value"
+		},
+		"documents": []
+	},
+	{
+		"id": "uRhhLLOT98bU",
+		"operation": {
+			"ratings.0.0": true
+		},
+		"documents": []
+	},
+	{
+		"id": "fCXvPHLW7ZFE",
+		"operation": {
+			"level": {
+				"count": null,
+				"grade": "Abundant"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "bTT6BNZLakOR",
+		"operation": {
+			"level": {
+				"count": "value",
+				"grade": "Abundant"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "kWWaDoFccW5Q",
+		"operation": {
+			"level": {
+				"count": true,
+				"grade": "Abundant"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "niAOF2ZAyyi5",
+		"operation": {
+			"level": {
+				"count": 3650,
+				"grade": null
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "i6BNv4GJqUxZ",
+		"operation": {
+			"level": {
+				"count": 3650,
+				"grade": 42
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "kjUjoiOByMr5",
+		"operation": {
+			"level": {
+				"count": 3650,
+				"grade": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "kWsW6OUFKRmu",
+		"operation": {
+			"counts": {
+				"$gt": null,
+				"$lt": null
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "ttQt6huwKg23",
+		"operation": {
+			"counts": {
+				"$gt": "value",
+				"$lt": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "lrxjoBUku00H",
+		"operation": {
+			"counts": {
+				"$gt": true,
+				"$lt": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "b7a8kD9VH2dW",
+		"operation": {
+			"$or": [
+				{
+					"counts": {
+						"$in": "active"
+					}
+				},
+				{
+					"capacity": {
+						"$in": "active"
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "$in needs an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vANonX0wvRHx",
+		"operation": {
+			"$or": [
+				{
+					"counts": {
+						"$in": [
+							null,
+							null
+						]
+					}
+				},
+				{
+					"capacity": {
+						"$in": [
+							null,
+							null
+						]
+					}
+				}
+			]
+		},
+		"documents": [
+			"6a05fa9f34454b6d48917ffd",
+			"6a05fa9f34454b6d48917ffe",
+			"6a05fa9f34454b6d48917fff",
+			"6a05fa9f34454b6d48918000",
+			"6a05fa9f34454b6d48918001",
+			"6a05fa9f34454b6d48918002",
+			"6a05fa9f34454b6d48918003",
+			"6a05fa9f34454b6d48918004",
+			"6a05fa9f34454b6d48918005",
+			"6a05fa9f34454b6d48918006",
+			"6a05fa9f34454b6d48918007",
+			"6a05fa9f34454b6d48918008",
+			"6a05fa9f34454b6d48918009",
+			"6a05fa9f34454b6d4891800a",
+			"6a05fa9f34454b6d4891800b",
+			"6a05fa9f34454b6d4891800c",
+			"6a05fa9f34454b6d4891800d",
+			"6a05fa9f34454b6d4891800e",
+			"6a05fa9f34454b6d4891800f",
+			"6a05fa9f34454b6d48918010",
+			"6a05fa9f34454b6d48918011",
+			"6a05fa9f34454b6d48918012",
+			"6a05fa9f34454b6d48918013",
+			"6a05fa9f34454b6d48918014",
+			"6a05fa9f34454b6d48918015",
+			"6a05fa9f34454b6d48918016",
+			"6a05fa9f34454b6d48918017",
+			"6a05fa9f34454b6d48918018",
+			"6a05fa9f34454b6d48918019",
+			"6a05fa9f34454b6d4891801a",
+			"6a05fa9f34454b6d4891801b",
+			"6a05fa9f34454b6d4891801c",
+			"6a05fa9f34454b6d4891801d",
+			"6a05fa9f34454b6d4891801e",
+			"6a05fa9f34454b6d4891801f",
+			"6a05fa9f34454b6d48918020",
+			"6a05fa9f34454b6d48918021",
+			"6a05fa9f34454b6d48918022"
+		]
+	},
+	{
+		"id": "hpMbZEZWEE8Z",
+		"operation": {
+			"$or": [
+				{
+					"counts": {
+						"$in": [
+							"value",
+							"value"
+						]
+					}
+				},
+				{
+					"capacity": {
+						"$in": [
+							"value",
+							"value"
+						]
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "tk0XJCwyXSby",
+		"operation": {
+			"$or": [
+				{
+					"counts": {
+						"$in": [
+							true,
+							true
+						]
+					}
+				},
+				{
+					"capacity": {
+						"$in": [
+							true,
+							true
+						]
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "motDriRq3JBB",
+		"operation": {
+			"attempts": null
+		},
+		"documents": [
+			"6a05fa9f34454b6d48917ffd",
+			"6a05fa9f34454b6d48917ffe",
+			"6a05fa9f34454b6d48917fff",
+			"6a05fa9f34454b6d48918000",
+			"6a05fa9f34454b6d48918001",
+			"6a05fa9f34454b6d48918002",
+			"6a05fa9f34454b6d4891800c",
+			"6a05fa9f34454b6d4891800d",
+			"6a05fa9f34454b6d4891800e",
+			"6a05fa9f34454b6d4891800f",
+			"6a05fa9f34454b6d48918010",
+			"6a05fa9f34454b6d48918011",
+			"6a05fa9f34454b6d48918012",
+			"6a05fa9f34454b6d48918013",
+			"6a05fa9f34454b6d48918014",
+			"6a05fa9f34454b6d48918015",
+			"6a05fa9f34454b6d48918016",
+			"6a05fa9f34454b6d48918017",
+			"6a05fa9f34454b6d48918018",
+			"6a05fa9f34454b6d48918019",
+			"6a05fa9f34454b6d4891801a",
+			"6a05fa9f34454b6d4891801b",
+			"6a05fa9f34454b6d4891801c",
+			"6a05fa9f34454b6d4891801d",
+			"6a05fa9f34454b6d4891801e",
+			"6a05fa9f34454b6d4891801f",
+			"6a05fa9f34454b6d48918020",
+			"6a05fa9f34454b6d48918021",
+			"6a05fa9f34454b6d48918022"
+		]
+	},
+	{
+		"id": "nfHTgtJDKe6L",
+		"operation": {
+			"attempts": "value"
+		},
+		"documents": []
+	},
+	{
+		"id": "pNA84jBAOJE1",
+		"operation": {
+			"attempts": true
+		},
+		"documents": []
+	},
+	{
+		"id": "aNHhBQRtyNPe",
+		"operation": {
+			"name": {
+				"$size": "large"
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pJNkKnBPezWV",
+		"operation": {
+			"name": {
+				"$size": 2.5
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "q0DkqqZ8Rag0",
+		"operation": {
+			"name": {
+				"$size": null
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: null",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pAYUY0oSA1X1",
+		"operation": {
+			"name": {
+				"$size": "value"
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "aIzK5TJJAeOC",
+		"operation": {
+			"name": {
+				"$size": true
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: true",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "aKoawtvQaIHL",
+		"operation": {
+			"title.height": {
+				"$size": "large"
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "aZAwIshEYoUY",
+		"operation": {
+			"title.height": {
+				"$size": 2.5
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "iUp58NfiBgSf",
+		"operation": {
+			"title.height": {
+				"$size": null
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: null",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sKsmEUKZyXGS",
+		"operation": {
+			"title.height": {
+				"$size": "value"
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ooybKDmncVLR",
+		"operation": {
+			"title.height": {
+				"$size": true
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: true",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pJwj7ab4iuRu",
+		"operation": {
+			"title.height.age": {
+				"$size": "large"
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "awHEmJH6NKnc",
+		"operation": {
+			"title.height.age": {
+				"$size": 2.5
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pYm2BRCYO8V2",
+		"operation": {
+			"title.height.age": {
+				"$size": null
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: null",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "amMhPC1RgF8j",
+		"operation": {
+			"title.height.age": {
+				"$size": "value"
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oPVlg8t84QbU",
+		"operation": {
+			"title.height.age": {
+				"$size": true
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: true",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uQwGvCTgHYHw",
+		"operation": {
+			"title.height.age.score": {
+				"$size": "large"
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uMHI6K8CCjGf",
+		"operation": {
+			"title.height.age.score": {
+				"$size": 2.5
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "umKOKGIg3n0C",
+		"operation": {
+			"title.height.age.score": {
+				"$size": null
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: null",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qj7k67X1QqAA",
+		"operation": {
+			"title.height.age.score": {
+				"$size": "value"
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wuIUHATvWEbq",
+		"operation": {
+			"title.height.age.score": {
+				"$size": true
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: true",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "w7QKqAIXi5XB",
+		"operation": {
+			"rank.rank.username": {
+				"$size": "large"
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sAr85T6rfTKn",
+		"operation": {
+			"rank.rank.username": {
+				"$size": 2.5
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qETiln6sPVIl",
+		"operation": {
+			"rank.rank.username": {
+				"$size": null
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: null",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ethWLb3IIBK2",
+		"operation": {
+			"rank.rank.username": {
+				"$size": "value"
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "a0z3TLPC7Y5o",
+		"operation": {
+			"rank.rank.username": {
+				"$size": true
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: true",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rGaNGz8QrZ7c",
+		"operation": {
+			"username.rank.rank.username": {
+				"$size": "large"
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "jpjF3K2d8xcY",
+		"operation": {
+			"username.rank.rank.username": {
+				"$size": 2.5
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vaCCvcSTil1m",
+		"operation": {
+			"username.rank.rank.username": {
+				"$size": null
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: null",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bcXyuffxJ9iV",
+		"operation": {
+			"username.rank.rank.username": {
+				"$size": "value"
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "c3w4nWtwXY2s",
+		"operation": {
+			"username.rank.rank.username": {
+				"$size": true
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: true",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	}
+]

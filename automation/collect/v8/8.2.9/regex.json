@@ -1,0 +1,897 @@
+[
+	{
+		"id": "uIIu4pIKRFN1",
+		"operation": {
+			"status": {}
+		},
+		"documents": []
+	},
+	{
+		"id": "pAqgW5OK9H6z",
+		"operation": {
+			"status": "Double"
+		},
+		"documents": []
+	},
+	{
+		"id": "sMDOXNgBYVUr",
+		"operation": {
+			"status": {
+				"$regex": "Double"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "nPR8gisubjIf",
+		"operation": {
+			"status": {
+				"$regex": "Couple",
+				"$options": "Light"
+			}
+		},
+		"error": {
+			"message": " invalid flag in regex options: L",
+			"code": 51108,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "lZNjMcG0lbQM",
+		"operation": {
+			"status": {
+				"$options": "Light",
+				"$regex": "Couple"
+			}
+		},
+		"error": {
+			"message": " invalid flag in regex options: L",
+			"code": 51108,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rhH1C6HQF82S",
+		"operation": {
+			"age": {
+				"$regex": "Little",
+				"$gte": "Either"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "rwJrDx0wVWVX",
+		"operation": {
+			"age": {
+				"$gt": "Full",
+				"$regex": "Many"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "oOz0ewr8TCOK",
+		"operation": {},
+		"documents": [
+			"6a05fa9b34454b6d48917f9c",
+			"6a05fa9b34454b6d48917f9d",
+			"6a05fa9b34454b6d48917f9e",
+			"6a05fa9b34454b6d48917f9f",
+			"6a05fa9b34454b6d48917fa0",
+			"6a05fa9b34454b6d48917fa1"
+		]
+	},
+	{
+		"id": "tMST7LOx2kUR",
+		"operation": {
+			"status": {},
+			"rank": {},
+			"level": {},
+			"count": {},
+			"grade": {}
+		},
+		"documents": []
+	},
+	{
+		"id": "fy6rJTsLX6z8",
+		"operation": {
+			"$and": [
+				{
+					"status": {}
+				},
+				{
+					"status": {}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "kH94yYv72tpF",
+		"operation": {
+			"status": {},
+			"rank": {}
+		},
+		"documents": []
+	},
+	{
+		"id": "sl28OdHj1QHT",
+		"operation": {
+			"$or": [
+				{
+					"status": {}
+				},
+				{
+					"status": {}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "d7vQhLLn3LFD",
+		"operation": {
+			"step.priority": {}
+		},
+		"documents": []
+	},
+	{
+		"id": "iZ0d5hSzSmd6",
+		"operation": {
+			"tags": {
+				"$elemMatch": {
+					"$regex": "Empty",
+					"$options": "Enough"
+				}
+			}
+		},
+		"error": {
+			"message": " invalid flag in regex options: E",
+			"code": 51108,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tspJ88fHWQB0",
+		"operation": {
+			"attempts": {
+				"$regex": {}
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pbBJKkGm9J0i",
+		"operation": {
+			"roles": {
+				"$in": [
+					{}
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "oTuzaywEScQu",
+		"operation": {
+			"roles": {
+				"$in": [
+					{},
+					"Double"
+				]
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917fa0"
+		]
+	},
+	{
+		"id": "vD0wRMqWKdfe",
+		"operation": {
+			"roles": {
+				"$all": [
+					{},
+					{}
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "uilxmrGTbC1b",
+		"operation": {
+			"roles": {
+				"$all": [
+					{},
+					"Couple"
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "rfGXXWCyPUiK",
+		"operation": {
+			"roles": {
+				"$nin": [
+					{}
+				]
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f9c",
+			"6a05fa9b34454b6d48917f9d",
+			"6a05fa9b34454b6d48917f9e",
+			"6a05fa9b34454b6d48917f9f",
+			"6a05fa9b34454b6d48917fa0",
+			"6a05fa9b34454b6d48917fa1"
+		]
+	},
+	{
+		"id": "a5YvEB9O8rne",
+		"operation": {
+			"roles": {
+				"$nin": [
+					{},
+					"Double"
+				]
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f9c",
+			"6a05fa9b34454b6d48917f9d",
+			"6a05fa9b34454b6d48917f9e",
+			"6a05fa9b34454b6d48917f9f",
+			"6a05fa9b34454b6d48917fa1"
+		]
+	},
+	{
+		"id": "w4ou0SYM4RhE",
+		"operation": {
+			"roles": {
+				"$not": {
+					"$nin": [
+						{}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "d7Bx0DPI7AZG",
+		"operation": {
+			"roles": {
+				"$all": [
+					"Empty",
+					{}
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "rZpQfuZHtLIn",
+		"operation": {
+			"roles": {
+				"$all": [
+					{}
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "fG3xqaDWVJAg",
+		"operation": {
+			"scores.size": "Abundant"
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917fa1"
+		]
+	},
+	{
+		"id": "bWZmbxoQ5zQg",
+		"operation": {
+			"scores.0.size": "Abundant"
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917fa1"
+		]
+	},
+	{
+		"id": "qwjD3xyDGgKI",
+		"operation": {
+			"scores.0.size": {}
+		},
+		"documents": []
+	},
+	{
+		"id": "dQxmUe8ArA7i",
+		"operation": {
+			"status": null
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f9d",
+			"6a05fa9b34454b6d48917f9e",
+			"6a05fa9b34454b6d48917f9f",
+			"6a05fa9b34454b6d48917fa0",
+			"6a05fa9b34454b6d48917fa1"
+		]
+	},
+	{
+		"id": "s7NE7qoXzk4e",
+		"operation": {
+			"status": 42
+		},
+		"documents": []
+	},
+	{
+		"id": "dWu7Xq4dWNPl",
+		"operation": {
+			"status": true
+		},
+		"documents": []
+	},
+	{
+		"id": "stJYv9X4N77G",
+		"operation": {
+			"status": {
+				"$regex": null
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "v7SmHHAVI4b4",
+		"operation": {
+			"status": {
+				"$regex": 42
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "b2G2vtRf0m7Q",
+		"operation": {
+			"status": {
+				"$regex": true
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sOAIXOEgjNRy",
+		"operation": {
+			"status": {
+				"$regex": null,
+				"$options": null
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oM2B7EBJcX3s",
+		"operation": {
+			"status": {
+				"$regex": 42,
+				"$options": 42
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "dEViPfzgSA9W",
+		"operation": {
+			"status": {
+				"$regex": true,
+				"$options": true
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "piD2UKyMmEzi",
+		"operation": {
+			"status": {
+				"$options": null,
+				"$regex": null
+			}
+		},
+		"error": {
+			"message": "$options has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "c0jhqsyE2G62",
+		"operation": {
+			"status": {
+				"$options": 42,
+				"$regex": 42
+			}
+		},
+		"error": {
+			"message": "$options has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sESeTJV0jOLY",
+		"operation": {
+			"status": {
+				"$options": true,
+				"$regex": true
+			}
+		},
+		"error": {
+			"message": "$options has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vzTeVSqmtWt0",
+		"operation": {
+			"age": {
+				"$regex": null,
+				"$gte": null
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "prqMUOw75RgX",
+		"operation": {
+			"age": {
+				"$regex": 42,
+				"$gte": 42
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rKOaFKUPJmEq",
+		"operation": {
+			"age": {
+				"$regex": true,
+				"$gte": true
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "eTU9IpYN9hXN",
+		"operation": {
+			"age": {
+				"$gt": null,
+				"$regex": null
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "fnLvftiMo9bJ",
+		"operation": {
+			"age": {
+				"$gt": 42,
+				"$regex": 42
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "luOOHjByx6Ee",
+		"operation": {
+			"age": {
+				"$gt": true,
+				"$regex": true
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oOVYLLAYr95a",
+		"operation": {
+			"tags": {
+				"$elemMatch": 42
+			}
+		},
+		"error": {
+			"message": "$elemMatch needs an Object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "diWODgpmNaES",
+		"operation": {
+			"tags": {
+				"$elemMatch": {
+					"$regex": null,
+					"$options": null
+				}
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qBu9BWRX5Rat",
+		"operation": {
+			"tags": {
+				"$elemMatch": {
+					"$regex": 42,
+					"$options": 42
+				}
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qZFtq3tiO4RS",
+		"operation": {
+			"tags": {
+				"$elemMatch": {
+					"$regex": true,
+					"$options": true
+				}
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "quDTtgG1FMTy",
+		"operation": {
+			"roles": {
+				"$in": "active"
+			}
+		},
+		"error": {
+			"message": "$in needs an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qQWymPLW5FYH",
+		"operation": {
+			"roles": {
+				"$in": [
+					{},
+					null
+				]
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f9c",
+			"6a05fa9b34454b6d48917f9d",
+			"6a05fa9b34454b6d48917f9e",
+			"6a05fa9b34454b6d48917f9f",
+			"6a05fa9b34454b6d48917fa1"
+		]
+	},
+	{
+		"id": "nGOvuA1Os6U5",
+		"operation": {
+			"roles": {
+				"$in": [
+					{},
+					42
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "pGUjy9FLSiOL",
+		"operation": {
+			"roles": {
+				"$in": [
+					{},
+					true
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "fKUQVESYnR1M",
+		"operation": {
+			"roles": {
+				"$all": "value"
+			}
+		},
+		"error": {
+			"message": "$all needs an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sc1wqpJeYwka",
+		"operation": {
+			"roles": {
+				"$all": 42
+			}
+		},
+		"error": {
+			"message": "$all needs an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nJKI72QOdPKx",
+		"operation": {
+			"roles": {
+				"$all": [
+					{},
+					null
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "azzmPTJfshTl",
+		"operation": {
+			"roles": {
+				"$all": [
+					{},
+					42
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "sqE616Axtgif",
+		"operation": {
+			"roles": {
+				"$all": [
+					{},
+					true
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "mXXVBF4Z6PVI",
+		"operation": {
+			"roles": {
+				"$nin": "deleted"
+			}
+		},
+		"error": {
+			"message": "$nin needs an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tlz6yaZKO0dj",
+		"operation": {
+			"roles": {
+				"$nin": [
+					{},
+					null
+				]
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917fa0"
+		]
+	},
+	{
+		"id": "mtWt3FFNF6B8",
+		"operation": {
+			"roles": {
+				"$nin": [
+					{},
+					42
+				]
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f9c",
+			"6a05fa9b34454b6d48917f9d",
+			"6a05fa9b34454b6d48917f9e",
+			"6a05fa9b34454b6d48917f9f",
+			"6a05fa9b34454b6d48917fa0",
+			"6a05fa9b34454b6d48917fa1"
+		]
+	},
+	{
+		"id": "pYez02KeC8EX",
+		"operation": {
+			"roles": {
+				"$nin": [
+					{},
+					true
+				]
+			}
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f9c",
+			"6a05fa9b34454b6d48917f9d",
+			"6a05fa9b34454b6d48917f9e",
+			"6a05fa9b34454b6d48917f9f",
+			"6a05fa9b34454b6d48917fa0",
+			"6a05fa9b34454b6d48917fa1"
+		]
+	},
+	{
+		"id": "uEpmaD7pyPlh",
+		"operation": {
+			"roles": {
+				"$not": {
+					"$nin": "deleted"
+				}
+			}
+		},
+		"error": {
+			"message": "$nin needs an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "j84tUmEO2TPO",
+		"operation": {
+			"roles": {
+				"$all": [
+					null,
+					{}
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "tMYxGs84Xl7Q",
+		"operation": {
+			"roles": {
+				"$all": [
+					42,
+					{}
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "mRDbHpg8B8fR",
+		"operation": {
+			"roles": {
+				"$all": [
+					true,
+					{}
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "tZGyeTLKzPFJ",
+		"operation": {
+			"scores.size": null
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f9c",
+			"6a05fa9b34454b6d48917f9d",
+			"6a05fa9b34454b6d48917f9e",
+			"6a05fa9b34454b6d48917f9f",
+			"6a05fa9b34454b6d48917fa0"
+		]
+	},
+	{
+		"id": "c4zjJryYMWIC",
+		"operation": {
+			"scores.size": 42
+		},
+		"documents": []
+	},
+	{
+		"id": "vMYmHpR1ya0F",
+		"operation": {
+			"scores.size": true
+		},
+		"documents": []
+	},
+	{
+		"id": "mYBMFXAHuNfu",
+		"operation": {
+			"scores.0.size": null
+		},
+		"documents": [
+			"6a05fa9b34454b6d48917f9c",
+			"6a05fa9b34454b6d48917f9d",
+			"6a05fa9b34454b6d48917f9e",
+			"6a05fa9b34454b6d48917f9f",
+			"6a05fa9b34454b6d48917fa0",
+			"6a05fa9b34454b6d48917fa1"
+		]
+	},
+	{
+		"id": "nplSKKyLRQg7",
+		"operation": {
+			"scores.0.size": 42
+		},
+		"documents": []
+	},
+	{
+		"id": "pqhmxxY2xGmt",
+		"operation": {
+			"scores.0.size": true
+		},
+		"documents": []
+	}
+]

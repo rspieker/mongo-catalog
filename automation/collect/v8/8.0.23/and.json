@@ -1,0 +1,5254 @@
+[
+	{
+		"id": "eLhM1uBIn2x9",
+		"operation": {
+			"$and": [
+				{
+					"name": 31
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6"
+		]
+	},
+	{
+		"id": "suww3pXj2UUU",
+		"operation": {
+			"$and": [
+				{
+					"name": 31
+				},
+				{
+					"name": 32
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6"
+		]
+	},
+	{
+		"id": "pnrnEZwym18a",
+		"operation": {
+			"$and": [
+				{
+					"name": 31
+				},
+				{
+					"name": 32
+				},
+				{
+					"name": 33
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "vqRoEKnjixB3",
+		"operation": {
+			"$and": [
+				{
+					"name": "Abundant"
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d7"
+		]
+	},
+	{
+		"id": "kMMQJ3oOg9Hb",
+		"operation": {
+			"$and": [
+				{
+					"name": "Abundant"
+				},
+				{
+					"name": "Couple"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "ub33MIBG9iUf",
+		"operation": {
+			"name": 32,
+			"$and": [
+				{
+					"name": 31
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6"
+		]
+	},
+	{
+		"id": "eFzkPISHWKRP",
+		"operation": {
+			"name": 31,
+			"$and": [
+				{
+					"name": 31
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6"
+		]
+	},
+	{
+		"id": "ouWYI5E2hoXf",
+		"operation": {
+			"name": 32,
+			"$and": [
+				{
+					"$and": [
+						{
+							"name": 31
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6"
+		]
+	},
+	{
+		"id": "inBJfQjXRQ0p",
+		"operation": {
+			"name": 31,
+			"$and": [
+				{
+					"$and": [
+						{
+							"name": 31
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6"
+		]
+	},
+	{
+		"id": "tsFxo1KYE34o",
+		"operation": {
+			"$and": [
+				{
+					"name": 32
+				},
+				{
+					"$and": [
+						{
+							"name": 31
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6"
+		]
+	},
+	{
+		"id": "bjLaQIMy0ZeR",
+		"operation": {
+			"$and": [
+				{
+					"name": 31
+				},
+				{
+					"$and": [
+						{
+							"name": 31
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6"
+		]
+	},
+	{
+		"id": "cbpcQTTGxOts",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "aFfrtP5iRz97",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				},
+				{
+					"name": {}
+				},
+				{
+					"name": {}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "lOJvXLEy3AZf",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				},
+				{
+					"name": {}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "b9CQULXWWQF8",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				},
+				{
+					"name": "Abundant"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "rDPZREytObj4",
+		"operation": {
+			"$and": [
+				{
+					"name": {
+						"$gt": 30
+					}
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6"
+		]
+	},
+	{
+		"id": "pO9CLUjLkcLl",
+		"operation": {
+			"name": "Abundant",
+			"$where": "Double"
+		},
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Double is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rvZhE0tqh7aF",
+		"operation": {
+			"$and": [
+				{
+					"name": "Abundant"
+				}
+			],
+			"$where": "Double"
+		},
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Double is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "t33vTPruinYI",
+		"operation": {
+			"$and": [
+				{
+					"$where": "Double"
+				}
+			]
+		},
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Double is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "dM3qe27T5qmX",
+		"operation": {
+			"$and": [
+				{
+					"name": "Abundant"
+				},
+				{
+					"$where": "Double"
+				}
+			]
+		},
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Double is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "lizXhSV8B80r",
+		"operation": {
+			"$and": [
+				{
+					"$where": "Double"
+				}
+			],
+			"$where": "Double"
+		},
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Double is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tQSwI860Gcjc",
+		"operation": {
+			"$and": 34
+		},
+		"error": {
+			"message": "$and argument must be an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "eHaoCnERN88o",
+		"operation": {
+			"$and": []
+		},
+		"error": {
+			"message": "$and argument must be a non-empty array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "fJpYKZVBcPhh",
+		"operation": {
+			"$and": [
+				34
+			]
+		},
+		"error": {
+			"message": "$and argument's entries must be objects",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oOz0ewr8TCOK",
+		"operation": {},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "wDbGh2L8Mcv2",
+		"operation": {
+			"title": {}
+		},
+		"documents": []
+	},
+	{
+		"id": "nSKd1V6kDcf2",
+		"operation": {
+			"title": {
+				"$not": {}
+			}
+		},
+		"error": {
+			"message": "$not argument must be a non-empty object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ryAC2INRlV8l",
+		"operation": {
+			"$and": [
+				{
+					"title": {
+						"$not": {}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "$not argument must be a non-empty object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ugSzsVOsZtFj",
+		"operation": {
+			"$and": [
+				{
+					"title": {}
+				},
+				{
+					"title": {
+						"$not": {}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "$not argument must be a non-empty object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wMjAV0Lw09IB",
+		"operation": {
+			"$or": [
+				{
+					"title": {}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "o1JSl3qYOoRc",
+		"operation": {
+			"$nor": [
+				{
+					"title": {}
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "uPodyAgwyI5x",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": {}
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "w7ufRBIJXAuE",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$not": {}
+							}
+						}
+					]
+				}
+			]
+		},
+		"error": {
+			"message": "$not argument must be a non-empty object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "aUveZQBXiShZ",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": {}
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "hJdfDLNRklkR",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$not": {}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "$not argument must be a non-empty object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "w6MZcBAs2uci",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$not": {}
+							}
+						}
+					]
+				}
+			]
+		},
+		"error": {
+			"message": "$not argument must be a non-empty object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sOyWSrh0SLTd",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": {}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "eCQJHDZJbMm8",
+		"operation": {
+			"$where": "Couple"
+		},
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sSRcn2pgfOKD",
+		"operation": {
+			"title": 13,
+			"$where": "Couple"
+		},
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "w0X2pEvLrTWr",
+		"operation": {
+			"title": 13,
+			"$and": [
+				{
+					"$where": "Couple"
+				}
+			]
+		},
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "hrJUX66DQKX3",
+		"operation": {
+			"$and": [
+				{
+					"title": 13
+				},
+				{
+					"$where": "Couple"
+				}
+			]
+		},
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nR87HMclylPx",
+		"operation": {
+			"$and": [
+				{
+					"title": 13,
+					"$where": "Couple"
+				}
+			]
+		},
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "aTyKi32Jtl1E",
+		"operation": {
+			"title": 13,
+			"$and": [
+				{
+					"title": 13
+				},
+				{
+					"title": 13,
+					"$where": "Couple"
+				}
+			]
+		},
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qPH4hKplfOJV",
+		"operation": {
+			"title": {
+				"$lt": 15
+			}
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "nT4x7BOSvc7r",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": 20
+					}
+				},
+				{
+					"score": {
+						"$lt": 14
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "rkd3uaKv9WSh",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": 20
+					}
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": 17
+							}
+						},
+						{
+							"$or": [
+								{
+									"rank": {
+										"$lt": 17
+									}
+								},
+								{
+									"level": 13
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "ou30OP5gBGoW",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$gt": 17
+							}
+						},
+						{
+							"rank": {
+								"$gt": 14
+							}
+						}
+					]
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": 17
+							}
+						},
+						{
+							"level": 13
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "mX2LBywqQTWd",
+		"operation": {
+			"title": {
+				"$gt": 18
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "vPQA2xCEeaez",
+		"operation": {
+			"title": 13
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "cbAMnTR7HseI",
+		"operation": {
+			"$or": [
+				{
+					"title": 13
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "a4YrEIU2WVPZ",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": 13
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "kuczl7dHfrYX",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": 13
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "kNZOWV614x1T",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": 13
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "rDIZEysQn4GL",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": 13
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "no5ZsKhH6rDy",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": 13
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "ebocoO4S2ySX",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": 13
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "ogbb2t2Id594",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": 13
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "gmuFz3hHqwn2",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": 13
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "tMNcgwQ0J333",
+		"operation": {
+			"$nor": [
+				{
+					"title": 14
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "rqKBg5lXUNWQ",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": 13
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "ovQdq5ZsY0rF",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": 14
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "lzZrLbCpOUAV",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": 14
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "rEX2uJ0Seofo",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": 14
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "tzINb3E3QEWg",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": 14
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "vzZrTEitahOp",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": 14
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "lDZCUneNcQR7",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": 13
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "cULyPhyA3WDC",
+		"operation": {
+			"title": {
+				"$ne": 14
+			}
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "sAiQ2AKYR2VH",
+		"operation": {
+			"$and": [
+				{
+					"title": {
+						"$ne": 14
+					}
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "ui2a3WO1BB4q",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$ne": 14
+					}
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "gbRW6AGpcHO4",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": 14
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "dOpACprAo2RH",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$ne": 14
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "uj1a8NYFKIQd",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$ne": 14
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "cRuOQ0WpIWmU",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": 14
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "dKLkswjYBDe8",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": {
+										"$ne": 14
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "b8wacgPgBCfm",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": 14
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "e7Rjsu1yOHoh",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": 14
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "wlOMzZyO9ReW",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": {
+										"$ne": 14
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "wKovyJWxHQ8X",
+		"operation": {
+			"$nor": [
+				{
+					"title": {
+						"$ne": 13
+					}
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "hutHkGDWNRMj",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": {
+								"$ne": 14
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "rLL3GXMupR0v",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": {
+								"$ne": 13
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "gPHk14hWqV8g",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": 13
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "chSPVHujiUOX",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": {
+										"$ne": 13
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "epHiGwY3Z2zN",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": 13
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "cdv5fQpzOtTA",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": 13
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9"
+		]
+	},
+	{
+		"id": "sIWM7sFYDd4m",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": {
+										"$ne": 14
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "lqWIAvd0F5i6",
+		"operation": {
+			"$and": [
+				{
+					"name": null
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "waetvBzM3tm4",
+		"operation": {
+			"$and": [
+				{
+					"name": "value"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "rENNLGXWSalI",
+		"operation": {
+			"$and": [
+				{
+					"name": true
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "qMFJNKDrl50Z",
+		"operation": {
+			"$and": [
+				{
+					"name": null
+				},
+				{
+					"name": null
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "fPCfRaHiZ0AS",
+		"operation": {
+			"$and": [
+				{
+					"name": "value"
+				},
+				{
+					"name": "value"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "nobVDYwOyiTT",
+		"operation": {
+			"$and": [
+				{
+					"name": true
+				},
+				{
+					"name": true
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "dxYnrbgca2l3",
+		"operation": {
+			"$and": [
+				{
+					"name": null
+				},
+				{
+					"name": null
+				},
+				{
+					"name": null
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "fRoXiaAYNDCR",
+		"operation": {
+			"$and": [
+				{
+					"name": "value"
+				},
+				{
+					"name": "value"
+				},
+				{
+					"name": "value"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "jMnovaBpJTWr",
+		"operation": {
+			"$and": [
+				{
+					"name": true
+				},
+				{
+					"name": true
+				},
+				{
+					"name": true
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "f1wTavMK1fsX",
+		"operation": {
+			"$and": [
+				{
+					"name": 42
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "wPwBQZGw0WYK",
+		"operation": {
+			"$and": [
+				{
+					"name": 42
+				},
+				{
+					"name": 42
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "hA0Alow8tmVV",
+		"operation": {
+			"name": null,
+			"$and": [
+				{
+					"name": null
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "aJELxUIAMRXY",
+		"operation": {
+			"name": "value",
+			"$and": [
+				{
+					"name": "value"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "ne3klKMMfw0K",
+		"operation": {
+			"name": true,
+			"$and": [
+				{
+					"name": true
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "bIxc8F8iAKKj",
+		"operation": {
+			"name": null,
+			"$and": [
+				{
+					"$and": [
+						{
+							"name": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "sEZIKRRBFtcz",
+		"operation": {
+			"name": "value",
+			"$and": [
+				{
+					"$and": [
+						{
+							"name": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "vuZUS0q8EmgW",
+		"operation": {
+			"name": true,
+			"$and": [
+				{
+					"$and": [
+						{
+							"name": true
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "flVjUgAtO1ER",
+		"operation": {
+			"$and": [
+				{
+					"name": null
+				},
+				{
+					"$and": [
+						{
+							"name": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "nRHFKM3enBn7",
+		"operation": {
+			"$and": [
+				{
+					"name": "value"
+				},
+				{
+					"$and": [
+						{
+							"name": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "tFMd6JDSLXkR",
+		"operation": {
+			"$and": [
+				{
+					"name": true
+				},
+				{
+					"$and": [
+						{
+							"name": true
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "aQYmtMB4zEsh",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				},
+				{
+					"name": null
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "iOUIPyvP45lg",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				},
+				{
+					"name": 42
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "pD5UxOiKi6xI",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				},
+				{
+					"name": true
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "a3VKEDLODB3n",
+		"operation": {
+			"$and": [
+				{
+					"name": {
+						"$gt": null
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "wxiRnJfFKr3P",
+		"operation": {
+			"$and": [
+				{
+					"name": {
+						"$gt": "value"
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "vOBAaQCHvPmR",
+		"operation": {
+			"$and": [
+				{
+					"name": {
+						"$gt": true
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "nd57GRFjx1jw",
+		"operation": {
+			"name": null,
+			"$where": null
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uAkoYfuMYB7l",
+		"operation": {
+			"name": 42,
+			"$where": 42
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "cCEWIf66LaFu",
+		"operation": {
+			"name": true,
+			"$where": true
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rviTPN6DtSQ1",
+		"operation": {
+			"$and": [
+				{
+					"name": null
+				}
+			],
+			"$where": null
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nyyqiG8nSTWr",
+		"operation": {
+			"$and": [
+				{
+					"name": 42
+				}
+			],
+			"$where": 42
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "kL3X5VzxfdYZ",
+		"operation": {
+			"$and": [
+				{
+					"name": true
+				}
+			],
+			"$where": true
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qwz5POpyEDRG",
+		"operation": {
+			"$and": [
+				{
+					"$where": null
+				}
+			]
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "buCBYIrpHIpA",
+		"operation": {
+			"$and": [
+				{
+					"$where": 42
+				}
+			]
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "lBGNdkUEPd82",
+		"operation": {
+			"$and": [
+				{
+					"$where": true
+				}
+			]
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "eLRFFy7SF56U",
+		"operation": {
+			"$and": [
+				{
+					"name": null
+				},
+				{
+					"$where": null
+				}
+			]
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bqKFBqaBrvho",
+		"operation": {
+			"$and": [
+				{
+					"name": 42
+				},
+				{
+					"$where": 42
+				}
+			]
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tPCGkcbAxkkt",
+		"operation": {
+			"$and": [
+				{
+					"name": true
+				},
+				{
+					"$where": true
+				}
+			]
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "aS2CCTWBWvdL",
+		"operation": {
+			"$and": [
+				{
+					"$where": null
+				}
+			],
+			"$where": null
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oEFRQtRN7g8o",
+		"operation": {
+			"$and": [
+				{
+					"$where": 42
+				}
+			],
+			"$where": 42
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "o8PGMvER45au",
+		"operation": {
+			"$and": [
+				{
+					"$where": true
+				}
+			],
+			"$where": true
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vNKuJUMn27Fv",
+		"operation": {
+			"$and": null
+		},
+		"error": {
+			"message": "$and argument must be an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oRC7MvMSoTbJ",
+		"operation": {
+			"$and": "value"
+		},
+		"error": {
+			"message": "$and argument must be an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "utUmEKyCw8OC",
+		"operation": {
+			"$and": true
+		},
+		"error": {
+			"message": "$and argument must be an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "srAK3wPMEvxs",
+		"operation": {
+			"$and": [
+				null
+			]
+		},
+		"error": {
+			"message": "$and argument's entries must be objects",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pxE1gcXkXFBW",
+		"operation": {
+			"$and": [
+				"value"
+			]
+		},
+		"error": {
+			"message": "$and argument's entries must be objects",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "a76SyesdHUVA",
+		"operation": {
+			"$and": [
+				true
+			]
+		},
+		"error": {
+			"message": "$and argument's entries must be objects",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "gEWAJcSV6jSN",
+		"operation": {
+			"$where": null
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vVxL2hsXrepR",
+		"operation": {
+			"$where": 42
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nFvLMDTVMpsv",
+		"operation": {
+			"$where": true
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qy17KbDLTN2v",
+		"operation": {
+			"title": null,
+			"$where": "Couple"
+		},
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "al7CKJjkRS5x",
+		"operation": {
+			"title": "value",
+			"$where": "Couple"
+		},
+		"documents": []
+	},
+	{
+		"id": "n9rUs1odyXTH",
+		"operation": {
+			"title": true,
+			"$where": "Couple"
+		},
+		"documents": []
+	},
+	{
+		"id": "fTJCSzfkLPVm",
+		"operation": {
+			"title": 13,
+			"$where": null
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "n4NIJTZkT8wN",
+		"operation": {
+			"title": 13,
+			"$where": 42
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ud6KInOGUl6P",
+		"operation": {
+			"title": 13,
+			"$where": true
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ap8H2KhANWku",
+		"operation": {
+			"title": null,
+			"$and": [
+				{
+					"$where": "Couple"
+				}
+			]
+		},
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ti7HjYGdB3m7",
+		"operation": {
+			"title": "value",
+			"$and": [
+				{
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "bp00KT7v2Rcj",
+		"operation": {
+			"title": true,
+			"$and": [
+				{
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "onKiCOCJthaR",
+		"operation": {
+			"title": 13,
+			"$and": [
+				{
+					"$where": null
+				}
+			]
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vlU5BlGM24Ns",
+		"operation": {
+			"title": 13,
+			"$and": [
+				{
+					"$where": 42
+				}
+			]
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "t24MxXEaGmFI",
+		"operation": {
+			"title": 13,
+			"$and": [
+				{
+					"$where": true
+				}
+			]
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sTrhVhqXKPZz",
+		"operation": {
+			"$and": [
+				{
+					"title": null
+				},
+				{
+					"$where": "Couple"
+				}
+			]
+		},
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "iYxwxQQz41Wu",
+		"operation": {
+			"$and": [
+				{
+					"title": "value"
+				},
+				{
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "jwTCDoLFeG57",
+		"operation": {
+			"$and": [
+				{
+					"title": true
+				},
+				{
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "eC8AmWNzZYDa",
+		"operation": {
+			"$and": [
+				{
+					"title": 13
+				},
+				{
+					"$where": null
+				}
+			]
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "r1sfAxHRQHm5",
+		"operation": {
+			"$and": [
+				{
+					"title": 13
+				},
+				{
+					"$where": 42
+				}
+			]
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wbP0HSXPvIVn",
+		"operation": {
+			"$and": [
+				{
+					"title": 13
+				},
+				{
+					"$where": true
+				}
+			]
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "s3TSsMDYJW8g",
+		"operation": {
+			"$and": [
+				{
+					"title": null,
+					"$where": "Couple"
+				}
+			]
+		},
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nRYDFMpGHOR5",
+		"operation": {
+			"$and": [
+				{
+					"title": "value",
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "qMISQIHwtVrL",
+		"operation": {
+			"$and": [
+				{
+					"title": true,
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "n7KCrLQh8bGw",
+		"operation": {
+			"$and": [
+				{
+					"title": 13,
+					"$where": null
+				}
+			]
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "t3rcsHFOxQZv",
+		"operation": {
+			"$and": [
+				{
+					"title": 13,
+					"$where": 42
+				}
+			]
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "cRI8HfA2Rpmr",
+		"operation": {
+			"$and": [
+				{
+					"title": 13,
+					"$where": true
+				}
+			]
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "kvx5GxSzgRDe",
+		"operation": {
+			"title": null,
+			"$and": [
+				{
+					"title": null
+				},
+				{
+					"title": null,
+					"$where": "Couple"
+				}
+			]
+		},
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "j6WNQA1JaSNv",
+		"operation": {
+			"title": "value",
+			"$and": [
+				{
+					"title": "value"
+				},
+				{
+					"title": "value",
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "tcy6rpzQ7P0S",
+		"operation": {
+			"title": true,
+			"$and": [
+				{
+					"title": true
+				},
+				{
+					"title": true,
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "neLouPJDLA28",
+		"operation": {
+			"title": 13,
+			"$and": [
+				{
+					"title": 13
+				},
+				{
+					"title": 13,
+					"$where": null
+				}
+			]
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tBG7pWNORbS5",
+		"operation": {
+			"title": 13,
+			"$and": [
+				{
+					"title": 13
+				},
+				{
+					"title": 13,
+					"$where": 42
+				}
+			]
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rWUOVX3v4Pe0",
+		"operation": {
+			"title": 13,
+			"$and": [
+				{
+					"title": 13
+				},
+				{
+					"title": 13,
+					"$where": true
+				}
+			]
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bAAsGLvGUZn2",
+		"operation": {
+			"title": {
+				"$lt": null
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "hM4nSIsytL1G",
+		"operation": {
+			"title": {
+				"$lt": "value"
+			}
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "ssNxJPADP80l",
+		"operation": {
+			"title": {
+				"$lt": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "oKVnuQkLqtU1",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": null
+					}
+				},
+				{
+					"score": {
+						"$lt": null
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "cf6EdH7C6Xbq",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": "value"
+					}
+				},
+				{
+					"score": {
+						"$lt": "value"
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "lAYoalV4UJaU",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": true
+					}
+				},
+				{
+					"score": {
+						"$lt": true
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "mP8VFb3lLShI",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": null
+					}
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": null
+							}
+						},
+						{
+							"$or": [
+								{
+									"rank": {
+										"$lt": null
+									}
+								},
+								{
+									"level": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "l5YYZLUKKLr3",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": "value"
+					}
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": "value"
+							}
+						},
+						{
+							"$or": [
+								{
+									"rank": {
+										"$lt": "value"
+									}
+								},
+								{
+									"level": "value"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "iEScwGMG9BcY",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": true
+					}
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": true
+							}
+						},
+						{
+							"$or": [
+								{
+									"rank": {
+										"$lt": true
+									}
+								},
+								{
+									"level": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "wTnVkzNAH65e",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$gt": null
+							}
+						},
+						{
+							"rank": {
+								"$gt": null
+							}
+						}
+					]
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": null
+							}
+						},
+						{
+							"level": null
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "ahIX0STNSogy",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$gt": "value"
+							}
+						},
+						{
+							"rank": {
+								"$gt": "value"
+							}
+						}
+					]
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": "value"
+							}
+						},
+						{
+							"level": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "wMpRcdAgialX",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$gt": true
+							}
+						},
+						{
+							"rank": {
+								"$gt": true
+							}
+						}
+					]
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": true
+							}
+						},
+						{
+							"level": true
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "s6DvitMDNf3j",
+		"operation": {
+			"title": {
+				"$gt": null
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "qUlCQN4ec0WH",
+		"operation": {
+			"title": {
+				"$gt": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "ptQ4OaJ4RUeU",
+		"operation": {
+			"title": {
+				"$gt": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "qHPCvKg41n4Y",
+		"operation": {
+			"title": null
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8"
+		]
+	},
+	{
+		"id": "vZibMJVClQeK",
+		"operation": {
+			"title": "value"
+		},
+		"documents": []
+	},
+	{
+		"id": "c6THdYUrGeAg",
+		"operation": {
+			"title": true
+		},
+		"documents": []
+	},
+	{
+		"id": "r3z1X3OT4TOU",
+		"operation": {
+			"$or": [
+				{
+					"title": null
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8"
+		]
+	},
+	{
+		"id": "kUu1ke0ffTPT",
+		"operation": {
+			"$or": [
+				{
+					"title": "value"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "nsNeCGZCYDaS",
+		"operation": {
+			"$or": [
+				{
+					"title": true
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "oLi9uU0MG13R",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8"
+		]
+	},
+	{
+		"id": "gW3dFcwtY1s7",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "wqEY7tlgT0XW",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": true
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "kjAWtZQ0lyq8",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8"
+		]
+	},
+	{
+		"id": "oy1aSupNo4fL",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "trJuiOhJiftB",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": true
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "ghnHBNKMnxqe",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8"
+		]
+	},
+	{
+		"id": "qsbZ0De4Kabr",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "cFGx24QoOVLf",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": true
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "dWdCR8tI4fYN",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8"
+		]
+	},
+	{
+		"id": "atQc05yPaCXe",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "b7CaWNFnUPso",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": true
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "t2DO32sfCW8M",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8"
+		]
+	},
+	{
+		"id": "iwGOyXKFoaQZ",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": "value"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "wohMk6LoT10O",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "eP5hDTPOQOIi",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8"
+		]
+	},
+	{
+		"id": "lOT7a1RSWbkS",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": "value"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "eVrxtCLBPfNM",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "l6ZoNsWbIxj5",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8"
+		]
+	},
+	{
+		"id": "w0hyKFHOmo8w",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": "value"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "kT3yHNKqa0Y0",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "obNxz1YJ5VdK",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8"
+		]
+	},
+	{
+		"id": "l7TqDEMmJYFT",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": "value"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "cl6LOLZYdEU0",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "bYTZWwGGESk4",
+		"operation": {
+			"$nor": [
+				{
+					"title": null
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "aS3uegTvL8Fm",
+		"operation": {
+			"$nor": [
+				{
+					"title": "value"
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "qYXCJ9t7XHE5",
+		"operation": {
+			"$nor": [
+				{
+					"title": true
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "mR0AcWo1O6dP",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8"
+		]
+	},
+	{
+		"id": "lrnKGHbmKXHA",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "foqsDLwIsITx",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": true
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "uOsKPsEP7FC1",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "fVI6zsmfgv0J",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "vMNsTIAM9umQ",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": true
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "kkfsKIxpU2GM",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "b6solOQPDe8h",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "rg2C3BRKy9fV",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": true
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "qPLKIOzwcQ0K",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "wqY8TQgK1mNl",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": "value"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "teuxwErcT1yk",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "eoV5AU9PsIEg",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "uueSXma84P73",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": "value"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "qQJZfh34dGJB",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "uG0LIMkxkbIS",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "wRRL3CvAbZWc",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": "value"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "a4FgVxBTQNag",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "cMEwIItRXLQN",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8"
+		]
+	},
+	{
+		"id": "vG5GGc8u6GpZ",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": "value"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "uNkbkJSCuNoo",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "nEpz5AEWV6hU",
+		"operation": {
+			"title": {
+				"$ne": null
+			}
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "q0Zy3DmnL3v2",
+		"operation": {
+			"title": {
+				"$ne": "value"
+			}
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "hOetPOPKDcX9",
+		"operation": {
+			"title": {
+				"$ne": true
+			}
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "fOoTK54SUCHH",
+		"operation": {
+			"$and": [
+				{
+					"title": {
+						"$ne": null
+					}
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "hgbZZ2Z0FKYt",
+		"operation": {
+			"$and": [
+				{
+					"title": {
+						"$ne": "value"
+					}
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "gOzBD3WbZmg0",
+		"operation": {
+			"$and": [
+				{
+					"title": {
+						"$ne": true
+					}
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "u4XfzRzQLUQr",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$ne": null
+					}
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "u2iqFZRpc20L",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$ne": "value"
+					}
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "b2SEAdixskNj",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$ne": true
+					}
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "inHc3A7LvApU",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": null
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "kHO4XOrqjGvo",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": "value"
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "gK0LWagVhaHy",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": true
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "p80On1hqi2ls",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$ne": null
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "o1xqIXnEnnNX",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$ne": "value"
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "sNiCRHqi6Xzp",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$ne": true
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "q0PyJkUWVqXn",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$ne": null
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "lIzIQ5VN5W6r",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$ne": "value"
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "h7LhXUtSLipq",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$ne": true
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "wdV732DUZCWi",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": null
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "bzo6B5FHroSk",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": "value"
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "wHCsYU0D4Por",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": true
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "aOwBkTw5We4w",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": {
+										"$ne": null
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "bSEsZcvzA01n",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": {
+										"$ne": "value"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "tvwEVCVGTcMv",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": {
+										"$ne": true
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "r46IDtVhHBM3",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": null
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "jlLQIeryRIDI",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": "value"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "fPBKODiumbkT",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": true
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "jq5rXpt9YbNx",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": null
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "omIeHb6wMGTT",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": "value"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "uUr6VHyuqvOG",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": true
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "wA05PCJ269FF",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": {
+										"$ne": null
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "lmisFzPFs8sy",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": {
+										"$ne": "value"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "uI78JRux6eJt",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": {
+										"$ne": true
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "rsFUQGK9RLf6",
+		"operation": {
+			"$nor": [
+				{
+					"title": {
+						"$ne": null
+					}
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8"
+		]
+	},
+	{
+		"id": "rI3LrOiUy9Zr",
+		"operation": {
+			"$nor": [
+				{
+					"title": {
+						"$ne": "value"
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "nFgSAgWBzOyQ",
+		"operation": {
+			"$nor": [
+				{
+					"title": {
+						"$ne": true
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "ub8nAIQAGdJS",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": {
+								"$ne": null
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "hG5HAebtkopH",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": {
+								"$ne": "value"
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "bQjLJJQFYkGo",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": {
+								"$ne": true
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "sIenIuCGp4KR",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": {
+								"$ne": null
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8"
+		]
+	},
+	{
+		"id": "u2rSirsVScPc",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": {
+								"$ne": "value"
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "cXiyXwhmwe6j",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": {
+								"$ne": true
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "mPu9VNOx1XR4",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": null
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8"
+		]
+	},
+	{
+		"id": "cz2QfHGKTTwG",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": "value"
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "e2Yl2KlGA53r",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": true
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "iACvXfuc0ODG",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": {
+										"$ne": null
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8"
+		]
+	},
+	{
+		"id": "gK6GxIyuITSV",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": {
+										"$ne": "value"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "wzLztBrJMfEF",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": {
+										"$ne": true
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "oWHIHc4zgWIx",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": null
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8"
+		]
+	},
+	{
+		"id": "sH56JpnxtMSR",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": "value"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "o52PWNJtVZFc",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": true
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "pZpT1M8R8Snd",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": null
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8"
+		]
+	},
+	{
+		"id": "gWuJUyLnrJVr",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": "value"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "oLzhskktAmsk",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": true
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "dK6OBGy3LX1Q",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": {
+										"$ne": null
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "b9Hy8ntyE1mu",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": {
+										"$ne": "value"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	},
+	{
+		"id": "nM2yzPRPFpWb",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": {
+										"$ne": true
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			"6a05fa922a79cffd1841f2d6",
+			"6a05fa922a79cffd1841f2d7",
+			"6a05fa922a79cffd1841f2d8",
+			"6a05fa922a79cffd1841f2d9",
+			"6a05fa922a79cffd1841f2da"
+		]
+	}
+]
