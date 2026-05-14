@@ -395,7 +395,8 @@ async function main() {
             }
 
             for (const docFp of docFps) {
-                documents.push(reconstruct(docFp, slots) as Record<string, unknown>)
+                const doc = reconstruct(docFp, slots) as Record<string, unknown>
+                documents.push({ _id: documents.length, ...doc })
             }
         }
 
