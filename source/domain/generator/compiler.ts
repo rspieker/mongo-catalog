@@ -1,23 +1,23 @@
-import { sum, avg, min, max, confine, integer } from './providers/numeric'
-import { codepoints, shortID, uuid } from './providers/character'
-import { hash, sha256 } from './providers/hash'
-import { pick, list } from './providers/list'
+import { sum, avg, min, max, confine, integer } from './providers/numeric';
+import { codepoints, shortID, uuid } from './providers/character';
+import { hash, sha256 } from './providers/hash';
+import { pick, list } from './providers/list';
 import {
     adjectives,
     adjectives_indices,
     countries,
     noun,
-} from './resources/data'
+} from './resources/data';
 
 // Generator type that captures the actual return type
 // TArgs: tuple of argument types after the seed
 // TReturn: the return type of the generator
 type Generator<TArgs extends unknown[] = unknown[], TReturn = unknown> = {
-    (seed: string, ...args: TArgs): TReturn
-}
+    (seed: string, ...args: TArgs): TReturn;
+};
 
 export function picker<T>(...options: Array<T>): (seed: string) => T {
-    return (seed: string) => pick(seed, options)
+    return (seed: string) => pick(seed, options);
 }
 
 export function number(
@@ -25,39 +25,42 @@ export function number(
     max: number,
     decimals: number = 0
 ): (seed: string) => number {
-    const factor = Math.pow(10, decimals)
+    const factor = Math.pow(10, decimals);
 
     return factor
         ? (seed: string) => integer(seed, min * factor, max * factor) / factor
-        : (seed: string) => integer(seed, min, max)
+        : (seed: string) => integer(seed, min, max);
 }
 
 export function several<T>(...options: Array<T>): (seed: string) => Array<T> {
     return (seed: string) => {
-        const max = Math.min(7, Math.round(options.length / 2))
-        const count = integer(seed + ':count', 1, max)
-        const maxAllowed = Math.min(count, options.length)
+        const max = Math.min(7, Math.round(options.length / 2));
+        const count = integer(seed + ':count', 1, max);
+        const maxAllowed = Math.min(count, options.length);
 
-        return list(seed, options, maxAllowed)
-    }
+        return list(seed, options, maxAllowed);
+    };
 }
 
-export function range<T>(min: number, max: number, ...options: Array<T>): (seed: string) => Array<T> {
+export function range<T>(
+    min: number,
+    max: number,
+    ...options: Array<T>
+): (seed: string) => Array<T> {
     return (seed: string) => {
-        const count = integer(seed + ':count', min, max)
-        return list(seed, options, count)
-    }
+        const count = integer(seed + ':count', min, max);
+        return list(seed, options, count);
+    };
 }
 
 export function date(from: string, to: string): (seed: string) => Date {
-    return (seed: string) => dateInRange(seed, from, to)
+    return (seed: string) => dateInRange(seed, from, to);
 }
 
 // Type for the structure - values are either Generators or nested Generations
-type Struct = Record<
-    string,
-    Generator<any, any> | Record<string, Generator<any, any>>
->
+type Struct = {
+    [key: string]: Generator<any, any> | Struct;
+};
 
 // Recursive type to compile a struct into the resulting document type
 // For each key:
@@ -72,12 +75,12 @@ type CompiledDocument<
         ? R
         : S[K] extends Record<string, Generator<any, any>>
           ? CompiledDocument<S[K], false>
-          : never
-}
+          : never;
+};
 
 // Helper to check if a value is a generator function at runtime
 function isGenerator(value: unknown): value is Generator {
-    return typeof value === 'function' && value.length >= 1
+    return typeof value === 'function' && value.length >= 1;
 }
 
 // Internal recursive compile function
@@ -87,31 +90,31 @@ function compileInternal<S extends Struct, IsRoot extends boolean = true>(
     isRoot: IsRoot
 ): (seed: string, index: number) => CompiledDocument<S, IsRoot> {
     return (seed: string, index: number): CompiledDocument<S, IsRoot> => {
-        const result: Record<string, unknown> = isRoot ? { _id: index } : {}
+        const result: Record<string, unknown> = isRoot ? { _id: index } : {};
 
         for (const [key, value] of Object.entries(struct)) {
             if (isGenerator(value)) {
                 // It's a direct generator - call it with the seed
-                result[key] = value(`${seed}:${key}`)
+                result[key] = value(`${seed}:${key}`);
             } else if (typeof value === 'object' && value !== null) {
                 // It's a nested Generation - recursively compile it
                 // Recursive call returns a function that generates the nested document
-                const nestedGenerator = compileInternal(value as Struct, false)
-                result[key] = nestedGenerator(`${seed}:${key}`, index)
+                const nestedGenerator = compileInternal(value as Struct, false);
+                result[key] = nestedGenerator(`${seed}:${key}`, index);
             }
         }
 
-        return result as CompiledDocument<S, IsRoot>
-    }
+        return result as CompiledDocument<S, IsRoot>;
+    };
 }
 
 // Public compile function - entry point that adds _id to root level
 export function compile<S extends Struct>(
     struct: S
 ): (index: number, seed?: string) => CompiledDocument<S, true> {
-    const compiled = compileInternal(struct, true)
+    const compiled = compileInternal(struct, true);
     return (index: number, seed?: string) =>
-        compiled(`${seed || 'seeded'}:${index}`, index + 1)
+        compiled(`${seed || 'seeded'}:${index}`, index + 1);
 }
 
 // Generate multiple sub-documents (for nested arrays)
@@ -121,31 +124,31 @@ export function items<S extends Struct>(
     min: number = 1,
     max: number = 5
 ): (seed: string) => Array<CompiledDocument<S, false>> {
-    const compiled = compileInternal(struct, false)
+    const compiled = compileInternal(struct, false);
 
     return (seed: string) => {
-        const count = integer(seed + ':count', min, max)
-        const result: Array<CompiledDocument<S, false>> = []
+        const count = integer(seed + ':count', min, max);
+        const result: Array<CompiledDocument<S, false>> = [];
 
         for (let i = 0; i < count; i++) {
-            result.push(compiled(`${seed}:${i}`, i + 1))
+            result.push(compiled(`${seed}:${i}`, i + 1));
         }
 
-        return result
-    }
+        return result;
+    };
 }
 
 // Re-export all generators from compiler.ts for convenience
 export function name(seed: string, limit: number = 4): string {
-    const subject = pick(seed, noun)
-    const indices = list(subject + seed, adjectives_indices, limit)
-    const prefix: Array<string> = []
+    const subject = pick(seed, noun);
+    const indices = list(subject + seed, adjectives_indices, limit);
+    const prefix: Array<string> = [];
 
     for (const index of indices) {
-        prefix.push(pick(subject + seed, adjectives[index]))
+        prefix.push(pick(subject + seed, adjectives[index]));
     }
 
-    return prefix.filter(Boolean).concat(subject).join(' ')
+    return prefix.filter(Boolean).concat(subject).join(' ');
 }
 
 export function dateInRange(
@@ -156,64 +159,64 @@ export function dateInRange(
     const [ay = 1980, am = 1, ad = 1] = min
         .split('-')
         .map((v) => Number(v))
-        .map((v) => (isNaN(v) ? undefined : v))
+        .map((v) => (isNaN(v) ? undefined : v));
     const [by = 2020, bm = 12, bd = 31] = max
         .split('-')
         .map((v) => Number(v))
-        .map((v) => (isNaN(v) ? undefined : v))
+        .map((v) => (isNaN(v) ? undefined : v));
     const date = [
         integer(seed, ay, by),
         integer(seed, am, bm),
         integer(seed, ad, bd),
     ]
         .map((v) => (v < 10 ? `0${v}` : v))
-        .join('-')
+        .join('-');
 
-    return new Date(date)
+    return new Date(date);
 }
 
-type Position = [number, number, number?]
+type Position = [number, number, number?];
 
 export type Country = {
-    name: string
+    name: string;
     codes: Array<
         | {
-              type: 'tld' | 'iso3' | 'iso2' | 'fips' | 'tel'
-              code: string
+              type: 'tld' | 'iso3' | 'iso2' | 'fips' | 'tel';
+              code: string;
           }
         | {
-              type: 'isoN'
-              code: number
+              type: 'isoN';
+              code: number;
           }
-    >
+    >;
     geospatial: Array<
         | {
-              type: 'point'
-              category: string
-              name: string
-              coordinates: Position
+              type: 'point';
+              category: string;
+              name: string;
+              coordinates: Position;
           }
         | {
-              type: 'box'
-              category: string
-              name: string
-              coordinates: [Position, Position]
+              type: 'box';
+              category: string;
+              name: string;
+              coordinates: [Position, Position];
           }
-    >
-}
+    >;
+};
 
 export function country(seed: string): Country {
-    return pick(`${seed}:country`, countries)
+    return pick(`${seed}:country`, countries);
 }
 
 export function geospatial(
     seed: string,
     from?: Country
 ): Country['geospatial'][0]['coordinates'] {
-    const { geospatial } = from || country(seed)
-    const picked = pick(`${seed}:geospatial`, geospatial)
+    const { geospatial } = from || country(seed);
+    const picked = pick(`${seed}:geospatial`, geospatial);
 
-    return picked.coordinates
+    return picked.coordinates;
 }
 
 // Export provider functions for convenience
@@ -231,4 +234,4 @@ export {
     sha256,
     pick,
     list,
-}
+};

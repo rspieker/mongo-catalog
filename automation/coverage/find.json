@@ -1,0 +1,1179 @@
+{
+  "queries": [
+    {
+      "checksum": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": {},
+      "query": {}
+    },
+    {
+      "checksum": "925fcbaf12095e73fb7b741a75330a3e548405d1b20c17d658de59e132c78520",
+      "fingerprint": {
+        "field:#1": "null:#1"
+      },
+      "query": {
+        "score": null
+      }
+    },
+    {
+      "checksum": "157a3978e792bf1bc3421ef04f4c240caa6e0b21c395289307e3d707cfa9ec4a",
+      "fingerprint": {
+        "$or": [
+          {
+            "field:#1": {
+              "$gte": "number:#1",
+              "$lte": "number:#2"
+            },
+            "field:#2": {
+              "$gte": "number:#1",
+              "$lte": "number:#2"
+            }
+          },
+          {
+            "field:#1": {
+              "$gte": "number:#3",
+              "$lte": "number:#4"
+            },
+            "field:#2": {
+              "$gte": "number:#3",
+              "$lte": "number:#4"
+            }
+          },
+          {
+            "field:#1": {
+              "$gte": "number:#3",
+              "$lte": "number:#5"
+            },
+            "field:#2": {
+              "$gte": "number:#3",
+              "$lte": "number:#5"
+            }
+          }
+        ]
+      },
+      "query": {
+        "$or": [
+          {
+            "age": {
+              "$gte": 1,
+              "$lte": 3
+            },
+            "score": {
+              "$gte": 1,
+              "$lte": 3
+            }
+          },
+          {
+            "age": {
+              "$gte": 2,
+              "$lte": 4
+            },
+            "score": {
+              "$gte": 2,
+              "$lte": 4
+            }
+          },
+          {
+            "age": {
+              "$gte": 2,
+              "$lte": 5
+            },
+            "score": {
+              "$gte": 2,
+              "$lte": 5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "checksum": "0bf34ee4054fba91325620dee45a16d0476681947a5a4aadbf81851926de5cce",
+      "fingerprint": {
+        "field:#1.index": "number:#1"
+      },
+      "query": {
+        "scores.0": 27
+      }
+    },
+    {
+      "checksum": "0ef492216d61218660aaad500abc36f38140f5c9710d23b1f3fdc65a9ce78a89",
+      "fingerprint": {
+        "field:#1.index": {
+          "$gt": "number:#1"
+        }
+      },
+      "query": {
+        "scores.0": {
+          "$gt": 34
+        }
+      }
+    },
+    {
+      "checksum": "d099562520f822001a198341ac37a1cc54b715b16d825b41bd042a060f5d82bb",
+      "fingerprint": {
+        "field:#1.index": {
+          "$lt": "number:#1"
+        }
+      },
+      "query": {
+        "scores.0": {
+          "$lt": 26
+        }
+      }
+    },
+    {
+      "checksum": "6cdd437384926708e4cac64385bcfdd098992c03cdb6a393a6582156eb33ec4a",
+      "fingerprint": {
+        "field:#1.index": [
+          "number:#1",
+          "number:#2"
+        ]
+      },
+      "query": {
+        "ratings.0": [
+          12,
+          13
+        ]
+      }
+    },
+    {
+      "checksum": "7bfaede5970140bce5c4e7ed2c98d119093efd202b02f86a015c7e403974bfb4",
+      "fingerprint": {
+        "field:#1.index.index": "number:#1"
+      },
+      "query": {
+        "ratings.0.0": 13
+      }
+    },
+    {
+      "checksum": "541ee3e96e005f1c1723bdfd6e25c315f9ca74d1127e92049416de24b3075717",
+      "fingerprint": {
+        "field:#1": {
+          "field:#2": "number:#1",
+          "field:#3": "string:#1"
+        }
+      },
+      "query": {
+        "level": {
+          "count": 3650,
+          "grade": "Abundant"
+        }
+      }
+    },
+    {
+      "checksum": "74ca882c2ecf7e74585db4f2be58397401fac7df89e865199316c4985733d3fd",
+      "fingerprint": {
+        "field:#1": {
+          "$gt": "number:#1",
+          "$lt": "number:#2"
+        }
+      },
+      "query": {
+        "counts": {
+          "$gt": 5,
+          "$lt": 8
+        }
+      }
+    },
+    {
+      "checksum": "789db3ac47385931198d851aa30c26c04b2931adc6076f5c29ce7168393dac11",
+      "fingerprint": {
+        "$or": [
+          {
+            "field:#1": {
+              "$in": [
+                "number:#1",
+                "number:#2"
+              ]
+            }
+          },
+          {
+            "field:#2": {
+              "$in": [
+                "number:#3",
+                "number:#4"
+              ]
+            }
+          }
+        ]
+      },
+      "query": {
+        "$or": [
+          {
+            "counts": {
+              "$in": [
+                4,
+                5
+              ]
+            }
+          },
+          {
+            "capacity": {
+              "$in": [
+                7,
+                8
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "checksum": "2712014956880959295e298969ca92a352dacbf7aed17be59fd0b6333ec08ca3",
+      "fingerprint": {
+        "field:#1": "number:#1"
+      },
+      "query": {
+        "attempts": 14
+      }
+    },
+    {
+      "checksum": "1ba03bfb9c0893a6003ad1703b0285b904ae75137da09f111256580c3c9b2f25",
+      "fingerprint": {
+        "field:#1": {
+          "$size": "number:#1"
+        }
+      },
+      "query": {
+        "name": {
+          "$size": 9
+        }
+      }
+    },
+    {
+      "checksum": "d6f61b2c1804f2f34147a94889c61c8da318141a95579ca46f324cb0976afedb",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$size": "number:#1"
+        }
+      },
+      "query": {
+        "title.height": {
+          "$size": 14
+        }
+      }
+    },
+    {
+      "checksum": "24aa9387263c3ec0954b84d53ba9ca4a44b8966eb8a907e0080103af7c4bec99",
+      "fingerprint": {
+        "field:#1.field:#2.field:#3": {
+          "$size": "number:#1"
+        }
+      },
+      "query": {
+        "title.height.age": {
+          "$size": 13
+        }
+      }
+    },
+    {
+      "checksum": "5349cd6961301285b9953e381f6b6edd4fff16d6511517911eb4fef28d0d7ca3",
+      "fingerprint": {
+        "field:#1.field:#2.field:#3.field:#4": {
+          "$size": "number:#1"
+        }
+      },
+      "query": {
+        "title.height.age.score": {
+          "$size": 13
+        }
+      }
+    },
+    {
+      "checksum": "50ee439654a1c329311176b4b6fb3c1d9b7bf076b97c81ee38af27a551690d85",
+      "fingerprint": {
+        "field:#1.field:#1.field:#2": {
+          "$size": "number:#1"
+        }
+      },
+      "query": {
+        "rank.rank.username": {
+          "$size": 37
+        }
+      }
+    },
+    {
+      "checksum": "049a1da3f9bc935baadad6d8ab5ecb38707bf4e12786b183de5e4795301c7a10",
+      "fingerprint": {
+        "field:#1.field:#2.field:#2.field:#1": {
+          "$size": "number:#1"
+        }
+      },
+      "query": {
+        "username.rank.rank.username": {
+          "$size": 37
+        }
+      }
+    }
+  ],
+  "variants": [
+    {
+      "$or": [
+        {
+          "age": {
+            "$gte": null,
+            "$lte": null
+          },
+          "score": {
+            "$gte": null,
+            "$lte": null
+          }
+        },
+        {
+          "age": {
+            "$gte": null,
+            "$lte": null
+          },
+          "score": {
+            "$gte": null,
+            "$lte": null
+          }
+        },
+        {
+          "age": {
+            "$gte": null,
+            "$lte": null
+          },
+          "score": {
+            "$gte": null,
+            "$lte": null
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "age": {
+            "$gte": "value",
+            "$lte": "value"
+          },
+          "score": {
+            "$gte": "value",
+            "$lte": "value"
+          }
+        },
+        {
+          "age": {
+            "$gte": "value",
+            "$lte": "value"
+          },
+          "score": {
+            "$gte": "value",
+            "$lte": "value"
+          }
+        },
+        {
+          "age": {
+            "$gte": "value",
+            "$lte": "value"
+          },
+          "score": {
+            "$gte": "value",
+            "$lte": "value"
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "age": {
+            "$gte": true,
+            "$lte": true
+          },
+          "score": {
+            "$gte": true,
+            "$lte": true
+          }
+        },
+        {
+          "age": {
+            "$gte": true,
+            "$lte": true
+          },
+          "score": {
+            "$gte": true,
+            "$lte": true
+          }
+        },
+        {
+          "age": {
+            "$gte": true,
+            "$lte": true
+          },
+          "score": {
+            "$gte": true,
+            "$lte": true
+          }
+        }
+      ]
+    },
+    {
+      "scores.0": null
+    },
+    {
+      "scores.0": "value"
+    },
+    {
+      "scores.0": true
+    },
+    {
+      "scores.0": {
+        "$gt": null
+      }
+    },
+    {
+      "scores.0": {
+        "$gt": "value"
+      }
+    },
+    {
+      "scores.0": {
+        "$gt": true
+      }
+    },
+    {
+      "scores.0": {
+        "$lt": null
+      }
+    },
+    {
+      "scores.0": {
+        "$lt": "value"
+      }
+    },
+    {
+      "scores.0": {
+        "$lt": true
+      }
+    },
+    {
+      "ratings.0": [
+        null,
+        null
+      ]
+    },
+    {
+      "ratings.0": [
+        "value",
+        "value"
+      ]
+    },
+    {
+      "ratings.0": [
+        true,
+        true
+      ]
+    },
+    {
+      "ratings.0.0": null
+    },
+    {
+      "ratings.0.0": "value"
+    },
+    {
+      "ratings.0.0": true
+    },
+    {
+      "level": {
+        "count": null,
+        "grade": "Abundant"
+      }
+    },
+    {
+      "level": {
+        "count": "value",
+        "grade": "Abundant"
+      }
+    },
+    {
+      "level": {
+        "count": true,
+        "grade": "Abundant"
+      }
+    },
+    {
+      "level": {
+        "count": 3650,
+        "grade": null
+      }
+    },
+    {
+      "level": {
+        "count": 3650,
+        "grade": 42
+      }
+    },
+    {
+      "level": {
+        "count": 3650,
+        "grade": true
+      }
+    },
+    {
+      "counts": {
+        "$gt": null,
+        "$lt": null
+      }
+    },
+    {
+      "counts": {
+        "$gt": "value",
+        "$lt": "value"
+      }
+    },
+    {
+      "counts": {
+        "$gt": true,
+        "$lt": true
+      }
+    },
+    {
+      "$or": [
+        {
+          "counts": {
+            "$in": "active"
+          }
+        },
+        {
+          "capacity": {
+            "$in": "active"
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "counts": {
+            "$in": [
+              null,
+              null
+            ]
+          }
+        },
+        {
+          "capacity": {
+            "$in": [
+              null,
+              null
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "counts": {
+            "$in": [
+              "value",
+              "value"
+            ]
+          }
+        },
+        {
+          "capacity": {
+            "$in": [
+              "value",
+              "value"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "counts": {
+            "$in": [
+              true,
+              true
+            ]
+          }
+        },
+        {
+          "capacity": {
+            "$in": [
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "attempts": null
+    },
+    {
+      "attempts": "value"
+    },
+    {
+      "attempts": true
+    },
+    {
+      "name": {
+        "$size": "large"
+      }
+    },
+    {
+      "name": {
+        "$size": 2.5
+      }
+    },
+    {
+      "name": {
+        "$size": null
+      }
+    },
+    {
+      "name": {
+        "$size": "value"
+      }
+    },
+    {
+      "name": {
+        "$size": true
+      }
+    },
+    {
+      "title.height": {
+        "$size": "large"
+      }
+    },
+    {
+      "title.height": {
+        "$size": 2.5
+      }
+    },
+    {
+      "title.height": {
+        "$size": null
+      }
+    },
+    {
+      "title.height": {
+        "$size": "value"
+      }
+    },
+    {
+      "title.height": {
+        "$size": true
+      }
+    },
+    {
+      "title.height.age": {
+        "$size": "large"
+      }
+    },
+    {
+      "title.height.age": {
+        "$size": 2.5
+      }
+    },
+    {
+      "title.height.age": {
+        "$size": null
+      }
+    },
+    {
+      "title.height.age": {
+        "$size": "value"
+      }
+    },
+    {
+      "title.height.age": {
+        "$size": true
+      }
+    },
+    {
+      "title.height.age.score": {
+        "$size": "large"
+      }
+    },
+    {
+      "title.height.age.score": {
+        "$size": 2.5
+      }
+    },
+    {
+      "title.height.age.score": {
+        "$size": null
+      }
+    },
+    {
+      "title.height.age.score": {
+        "$size": "value"
+      }
+    },
+    {
+      "title.height.age.score": {
+        "$size": true
+      }
+    },
+    {
+      "rank.rank.username": {
+        "$size": "large"
+      }
+    },
+    {
+      "rank.rank.username": {
+        "$size": 2.5
+      }
+    },
+    {
+      "rank.rank.username": {
+        "$size": null
+      }
+    },
+    {
+      "rank.rank.username": {
+        "$size": "value"
+      }
+    },
+    {
+      "rank.rank.username": {
+        "$size": true
+      }
+    },
+    {
+      "username.rank.rank.username": {
+        "$size": "large"
+      }
+    },
+    {
+      "username.rank.rank.username": {
+        "$size": 2.5
+      }
+    },
+    {
+      "username.rank.rank.username": {
+        "$size": null
+      }
+    },
+    {
+      "username.rank.rank.username": {
+        "$size": "value"
+      }
+    },
+    {
+      "username.rank.rank.username": {
+        "$size": true
+      }
+    }
+  ],
+  "documents": [
+    {
+      "age": 1124,
+      "score": 54333
+    },
+    {
+      "scores": [
+        {
+          "0": 27
+        }
+      ]
+    },
+    {
+      "scores": [
+        27
+      ]
+    },
+    {
+      "ratings": [
+        [],
+        10,
+        [
+          12,
+          13
+        ]
+      ]
+    },
+    {
+      "level": {
+        "count": 3650,
+        "grade": "Abundant"
+      },
+      "step": {
+        "0": 6
+      }
+    },
+    {
+      "counts": [
+        4,
+        13
+      ]
+    },
+    {
+      "attempts": 13,
+      "quantity": 14,
+      "status": "Abundant",
+      "size": 23
+    },
+    {
+      "attempts": 16,
+      "values": {
+        "index": 14
+      }
+    },
+    {
+      "attempts": 18,
+      "values": {
+        "index": [
+          14,
+          15,
+          16
+        ]
+      },
+      "points": {
+        "depth": [
+          17,
+          18,
+          19
+        ]
+      }
+    },
+    {
+      "attempts": 20,
+      "values": [
+        {
+          "index": 14
+        }
+      ],
+      "points": [
+        {
+          "depth": 14
+        }
+      ]
+    },
+    {
+      "attempts": 22,
+      "values": [
+        {
+          "index": 14
+        },
+        {
+          "index": [
+            14,
+            15,
+            16
+          ]
+        }
+      ],
+      "points": [
+        {
+          "depth": 17
+        },
+        {
+          "depth": [
+            17,
+            18,
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "attempts": 25,
+      "rankings": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "attempts": 30,
+      "values": {
+        "index": [
+          {
+            "rankings": 14
+          },
+          {
+            "rankings": 15
+          }
+        ]
+      }
+    },
+    {
+      "attempts": 31,
+      "values": [
+        [
+          {
+            "index": 14
+          },
+          {
+            "index": 15
+          }
+        ],
+        {
+          "index": 16
+        },
+        {
+          "index": 17
+        },
+        [
+          [
+            [
+              {
+                "index": 18
+              }
+            ]
+          ]
+        ],
+        {
+          "index": 19
+        }
+      ]
+    },
+    {
+      "attempts": 33,
+      "values": [
+        [
+          {
+            "index": {
+              "rankings": 14
+            }
+          },
+          {
+            "index": 15
+          }
+        ],
+        {
+          "index": 16
+        },
+        {
+          "index": {
+            "rankings": 15
+          }
+        },
+        [
+          [
+            [
+              {
+                "index": 18
+              },
+              {
+                "index": {
+                  "rankings": 16
+                }
+              }
+            ]
+          ]
+        ],
+        {
+          "index": 19
+        }
+      ]
+    },
+    {
+      "name": [
+        {
+          "weight": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "name": [
+        7,
+        [
+          8
+        ],
+        [
+          9
+        ]
+      ]
+    },
+    {
+      "name": [
+        [
+          7,
+          [
+            7
+          ]
+        ]
+      ]
+    },
+    {
+      "name": [
+        [
+          [
+            7
+          ]
+        ]
+      ]
+    },
+    {
+      "name": 7
+    },
+    {
+      "name": {}
+    },
+    {
+      "title": [
+        {
+          "height": [
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "height": 13
+        }
+      ]
+    },
+    {
+      "title": [
+        13,
+        [
+          14
+        ],
+        [
+          15
+        ]
+      ]
+    },
+    {
+      "title": [
+        [
+          13,
+          [
+            13
+          ]
+        ]
+      ]
+    },
+    {
+      "title": [
+        [
+          [
+            13
+          ]
+        ]
+      ]
+    },
+    {
+      "title": 13
+    },
+    {
+      "title": {}
+    },
+    {
+      "title": {
+        "height": [
+          13,
+          14
+        ]
+      }
+    },
+    {
+      "title": {
+        "height": {
+          "age": [
+            13
+          ]
+        }
+      }
+    },
+    {
+      "username": [
+        {
+          "rank": [
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "rank": 37
+        }
+      ]
+    },
+    {
+      "username": [
+        37,
+        [
+          38
+        ],
+        [
+          39
+        ]
+      ]
+    },
+    {
+      "username": [
+        [
+          37,
+          [
+            37
+          ]
+        ]
+      ]
+    },
+    {
+      "username": [
+        [
+          [
+            37
+          ]
+        ]
+      ]
+    },
+    {
+      "username": 37
+    },
+    {
+      "username": {}
+    },
+    {
+      "username": {
+        "rank": [
+          37,
+          38
+        ]
+      }
+    },
+    {
+      "username": {
+        "rank": {
+          "level": [
+            37
+          ]
+        }
+      }
+    },
+    {
+      "username": {
+        "rank": {
+          "level": [
+            37,
+            [
+              38
+            ]
+          ]
+        }
+      },
+      "rank": {
+        "username": {
+          "level": []
+        },
+        "rank": {
+          "username": [
+            [
+              37,
+              38,
+              39
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}

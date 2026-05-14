@@ -1,0 +1,257 @@
+{
+  "queries": [
+    {
+      "checksum": "d7a660a0687d550a608bde2b93c140e6187530867b4384c4a56b83ff17fa99c6",
+      "fingerprint": {
+        "$or": [
+          {
+            "field:#1": {
+              "$geoWithin": {
+                "$centerSphere": [
+                  [
+                    "number:#1",
+                    "number:#2"
+                  ],
+                  "number:#3"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "$or": [
+          {
+            "age": {
+              "$geoWithin": {
+                "$centerSphere": [
+                  [
+                    182.03531532305314,
+                    3.705070368177687
+                  ],
+                  5.145221550434281
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "checksum": "91919fcb2e40a0e43acc17b0cd4b0a94cdbaee08c55978ba0e19c0ca10b15061",
+      "fingerprint": {
+        "$or": [
+          {
+            "field:#1": {
+              "$geoIntersects": {
+                "$geometry": {
+                  "field:#2": "string:#1",
+                  "field:#3": [
+                    "number:#1",
+                    "number:#2"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      },
+      "query": {
+        "$or": [
+          {
+            "age": {
+              "$geoIntersects": {
+                "$geometry": {
+                  "level": "Couple",
+                  "rank": [
+                    -92.90898701416783,
+                    -75.02003547216432
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "variants": [
+    {
+      "$or": [
+        {
+          "age": {
+            "$geoWithin": {
+              "$centerSphere": [
+                [
+                  null,
+                  null
+                ],
+                null
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "age": {
+            "$geoWithin": {
+              "$centerSphere": [
+                [
+                  "value",
+                  "value"
+                ],
+                "value"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "age": {
+            "$geoWithin": {
+              "$centerSphere": [
+                [
+                  true,
+                  true
+                ],
+                true
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "age": {
+            "$geoIntersects": {
+              "$geometry": {
+                "level": "Couple",
+                "rank": [
+                  null,
+                  null
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "age": {
+            "$geoIntersects": {
+              "$geometry": {
+                "level": "Couple",
+                "rank": [
+                  "value",
+                  "value"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "age": {
+            "$geoIntersects": {
+              "$geometry": {
+                "level": "Couple",
+                "rank": [
+                  true,
+                  true
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "age": {
+            "$geoIntersects": {
+              "$geometry": {
+                "level": null,
+                "rank": [
+                  -92.90898701416783,
+                  -75.02003547216432
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "age": {
+            "$geoIntersects": {
+              "$geometry": {
+                "level": 42,
+                "rank": [
+                  -92.90898701416783,
+                  -75.02003547216432
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "age": {
+            "$geoIntersects": {
+              "$geometry": {
+                "level": true,
+                "rank": [
+                  -92.90898701416783,
+                  -75.02003547216432
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "status": "Abundant",
+      "age": {
+        "score": 209271.984375,
+        "rank": [
+          -92.90898701416783,
+          -75.02003547216432
+        ],
+        "level": "Couple"
+      }
+    },
+    {
+      "status": "Double",
+      "age": {
+        "rank": [
+          -92.90898701416783,
+          -75.02003547216432
+        ],
+        "level": "Couple",
+        "score": 209271.984375
+      }
+    }
+  ]
+}

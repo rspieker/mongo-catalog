@@ -1,0 +1,135 @@
+{
+  "queries": [
+    {
+      "checksum": "23f36de16260634eba2d0eb03b2e393be98a3327f189df262f4c2498849ee9ba",
+      "fingerprint": {
+        "field:#1": {
+          "$elemMatch": {
+            "$ref": "string:#1",
+            "$id": {
+              "$proxy": "string:#2"
+            }
+          }
+        }
+      },
+      "query": {
+        "scores": {
+          "$elemMatch": {
+            "$ref": "Abundant",
+            "$id": {
+              "$proxy": "Double"
+            }
+          }
+        }
+      }
+    },
+    {
+      "checksum": "61f50a22ae16dc232aa66d5c2d3c5049737508314d44b40e98b582bc59368061",
+      "fingerprint": {
+        "field:#1": {
+          "$ref": "string:#1",
+          "$id": "number:#1"
+        }
+      },
+      "query": {
+        "level": {
+          "$ref": "Couple",
+          "$id": 30
+        }
+      }
+    }
+  ],
+  "variants": [
+    {
+      "scores": {
+        "$elemMatch": 42
+      }
+    },
+    {
+      "scores": {
+        "$elemMatch": {
+          "$ref": null,
+          "$id": {
+            "$proxy": null
+          }
+        }
+      }
+    },
+    {
+      "scores": {
+        "$elemMatch": {
+          "$ref": 42,
+          "$id": {
+            "$proxy": 42
+          }
+        }
+      }
+    },
+    {
+      "scores": {
+        "$elemMatch": {
+          "$ref": true,
+          "$id": {
+            "$proxy": true
+          }
+        }
+      }
+    },
+    {
+      "level": {
+        "$ref": "Couple",
+        "$id": null
+      }
+    },
+    {
+      "level": {
+        "$ref": "Couple",
+        "$id": "value"
+      }
+    },
+    {
+      "level": {
+        "$ref": "Couple",
+        "$id": true
+      }
+    },
+    {
+      "level": {
+        "$ref": null,
+        "$id": 30
+      }
+    },
+    {
+      "level": {
+        "$ref": 42,
+        "$id": 30
+      }
+    },
+    {
+      "level": {
+        "$ref": true,
+        "$id": 30
+      }
+    }
+  ],
+  "documents": [
+    {
+      "age": 29,
+      "scores": [
+        {
+          "score": "Abundant",
+          "rank": {
+            "$proxy": "Couple"
+          }
+        }
+      ]
+    },
+    {
+      "status": "Abundant",
+      "level": {
+        "$ref": "Couple",
+        "$id": 30
+      }
+    }
+  ]
+}

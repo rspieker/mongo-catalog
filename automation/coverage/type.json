@@ -1,0 +1,257 @@
+{
+  "queries": [
+    {
+      "checksum": "3a0bf2303ec188df79848ac2c86767b34589fbead8a74504a87627272988da46",
+      "fingerprint": {
+        "field:#1": {
+          "$type": "number:#1"
+        }
+      },
+      "query": {
+        "name": {
+          "$type": 24
+        }
+      }
+    },
+    {
+      "checksum": "fc8454b153a6104f69b486de87bbd73bf2dbc411d3a931a4b10550a4b56d1efa",
+      "fingerprint": {
+        "field:#1": {
+          "$regex": "string:#1",
+          "$type": "number:#1"
+        }
+      },
+      "query": {
+        "name": {
+          "$regex": "Each",
+          "$type": 25
+        }
+      }
+    },
+    {
+      "checksum": "cf31ccc7f6794ae8c52394fb3b58db0cfe9ae20854ae2524d6d70bf726e4b4d3",
+      "fingerprint": {
+        "field:#1": {
+          "$not": {
+            "$type": "string:#1"
+          }
+        }
+      },
+      "query": {
+        "rank": {
+          "$not": {
+            "$type": "Either"
+          }
+        }
+      }
+    },
+    {
+      "checksum": "925fcbaf12095e73fb7b741a75330a3e548405d1b20c17d658de59e132c78520",
+      "fingerprint": {
+        "field:#1": "null:#1"
+      },
+      "query": {
+        "status": null
+      }
+    },
+    {
+      "checksum": "cef55e3dc2c120d021dceca410d90cfcdfe3851d62714f90b9b96c5f888f8b66",
+      "fingerprint": {
+        "field:#1": {
+          "$exists": "boolean:#1"
+        }
+      },
+      "query": {
+        "status": {
+          "$exists": true
+        }
+      }
+    },
+    {
+      "checksum": "fdd7de3fc3c6e4209ed976c3070d6394be16ff5851253f6bd8c50ba43621e54c",
+      "fingerprint": {
+        "field:#1": {}
+      },
+      "query": {
+        "level": {}
+      }
+    },
+    {
+      "checksum": "fafb24ea9f7fc908974d9a4f2ead9f015b4c638638f24628c9f3c6a1bec4c5fd",
+      "fingerprint": {
+        "field:#1": {
+          "$type": "string:#1"
+        }
+      },
+      "query": {
+        "title": {
+          "$type": "Couple"
+        }
+      }
+    }
+  ],
+  "variants": [
+    {
+      "name": {
+        "$type": null
+      }
+    },
+    {
+      "name": {
+        "$type": "value"
+      }
+    },
+    {
+      "name": {
+        "$type": true
+      }
+    },
+    {
+      "name": {
+        "$regex": "Each",
+        "$type": null
+      }
+    },
+    {
+      "name": {
+        "$regex": "Each",
+        "$type": "value"
+      }
+    },
+    {
+      "name": {
+        "$regex": "Each",
+        "$type": true
+      }
+    },
+    {
+      "name": {
+        "$regex": null,
+        "$type": 25
+      }
+    },
+    {
+      "name": {
+        "$regex": 42,
+        "$type": 25
+      }
+    },
+    {
+      "name": {
+        "$regex": true,
+        "$type": 25
+      }
+    },
+    {
+      "rank": {
+        "$not": {
+          "$type": null
+        }
+      }
+    },
+    {
+      "rank": {
+        "$not": {
+          "$type": 42
+        }
+      }
+    },
+    {
+      "rank": {
+        "$not": {
+          "$type": true
+        }
+      }
+    },
+    {
+      "status": {
+        "$exists": null
+      }
+    },
+    {
+      "status": {
+        "$exists": 0
+      }
+    },
+    {
+      "status": {
+        "$exists": "yes"
+      }
+    },
+    {
+      "title": {
+        "$type": null
+      }
+    },
+    {
+      "title": {
+        "$type": 42
+      }
+    },
+    {
+      "title": {
+        "$type": true
+      }
+    }
+  ],
+  "documents": [
+    {
+      "name": 24.1
+    },
+    {
+      "name": "Abundant"
+    },
+    {
+      "status": null
+    },
+    {},
+    {
+      "status": "Abundant"
+    },
+    {
+      "level": {}
+    },
+    {
+      "count": 21,
+      "title": [
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "count": 22,
+      "title": [
+        21,
+        "Abundant",
+        23
+      ]
+    },
+    {
+      "count": 23,
+      "title": []
+    },
+    {
+      "count": 24,
+      "title": [
+        []
+      ]
+    },
+    {
+      "count": 25,
+      "title": [
+        [
+          []
+        ]
+      ]
+    },
+    {
+      "count": 26,
+      "title": 21
+    },
+    {
+      "count": 27,
+      "title": "Abundant"
+    }
+  ]
+}

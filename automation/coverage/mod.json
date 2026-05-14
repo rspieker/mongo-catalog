@@ -1,0 +1,312 @@
+{
+  "queries": [
+    {
+      "checksum": "67bc5e5469ce5a4f013555a91de36709b31fcb3511be707d45ed4d29137e1829",
+      "fingerprint": {
+        "field:#1": {
+          "$mod": [
+            "number:#1",
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "name": {
+          "$mod": [
+            4000000028,
+            28
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "f689e87793767b0048dd14f8b34dfeec12fcd68c6c3727e7b7f7146dbc9274dd",
+      "fingerprint": {
+        "field:#1": {
+          "$gt": "number:#1",
+          "$mod": [
+            "number:#2",
+            "number:#3"
+          ]
+        }
+      },
+      "query": {
+        "name": {
+          "$gt": 33,
+          "$mod": [
+            38,
+            29
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "3b69a78eaeec3ab4b1df6dc535f00ca9a99a5df216ba8f3650aecb67b374faf2",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$mod": [
+            "number:#1",
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "username.rank": {
+          "$mod": [
+            6,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "7bb4d8a59172cee6dd0d2c310e1ef382e5d665cba947749dd552006185c19cda",
+      "fingerprint": {
+        "field:#1.field:#2.field:#3": {
+          "$mod": [
+            "number:#1",
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "username.rank.level": {
+          "$mod": [
+            8,
+            3
+          ]
+        }
+      }
+    }
+  ],
+  "variants": [
+    {
+      "name": {
+        "$mod": "invalid"
+      }
+    },
+    {
+      "name": {
+        "$mod": [
+          2
+        ]
+      }
+    },
+    {
+      "name": {
+        "$mod": []
+      }
+    },
+    {
+      "name": {
+        "$mod": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "name": {
+        "$mod": [
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "name": {
+        "$mod": [
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": {
+        "$gt": 33,
+        "$mod": "invalid"
+      }
+    },
+    {
+      "name": {
+        "$gt": 33,
+        "$mod": [
+          2
+        ]
+      }
+    },
+    {
+      "name": {
+        "$gt": 33,
+        "$mod": []
+      }
+    },
+    {
+      "name": {
+        "$gt": null,
+        "$mod": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "name": {
+        "$gt": "value",
+        "$mod": [
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "name": {
+        "$gt": true,
+        "$mod": [
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "username.rank": {
+        "$mod": "invalid"
+      }
+    },
+    {
+      "username.rank": {
+        "$mod": [
+          2
+        ]
+      }
+    },
+    {
+      "username.rank": {
+        "$mod": []
+      }
+    },
+    {
+      "username.rank": {
+        "$mod": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "username.rank": {
+        "$mod": [
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "username.rank": {
+        "$mod": [
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "username.rank.level": {
+        "$mod": "invalid"
+      }
+    },
+    {
+      "username.rank.level": {
+        "$mod": [
+          2
+        ]
+      }
+    },
+    {
+      "username.rank.level": {
+        "$mod": []
+      }
+    },
+    {
+      "username.rank.level": {
+        "$mod": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "username.rank.level": {
+        "$mod": [
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "username.rank.level": {
+        "$mod": [
+          true,
+          true
+        ]
+      }
+    }
+  ],
+  "documents": [
+    {
+      "age": 29,
+      "name": 4000000028
+    },
+    {
+      "name": "Abundant"
+    },
+    {
+      "score": 4,
+      "status": "Abundant",
+      "title": 3
+    },
+    {
+      "score": 7,
+      "category": "Each",
+      "title": [
+        3,
+        10
+      ]
+    },
+    {
+      "score": 10,
+      "username": [
+        4,
+        [
+          5,
+          6
+        ],
+        [
+          [
+            7
+          ]
+        ]
+      ]
+    },
+    {
+      "score": 11,
+      "username": [
+        {
+          "rank": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "rank": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "score": 13,
+      "username": "Either"
+    }
+  ]
+}

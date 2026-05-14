@@ -1,0 +1,262 @@
+{
+  "queries": [
+    {
+      "checksum": "e7320de8fa073344cf983308a5e180e42963879137c9bac2ab28e142b2aead12",
+      "fingerprint": {
+        "$jsonSchema": {
+          "field:#1": "number:#1"
+        }
+      },
+      "query": {
+        "$jsonSchema": {
+          "age": 25
+        }
+      }
+    },
+    {
+      "checksum": "6cef2f3839436a51799ff6c431066dcd1536481a1e11dbfb887a6e394aee4236",
+      "fingerprint": {
+        "$jsonSchema": {
+          "field:#1": "string:#1"
+        }
+      },
+      "query": {
+        "$jsonSchema": {
+          "age": "Abundant"
+        }
+      }
+    },
+    {
+      "checksum": "93bc9d64c21345dcd403058d3b6034f8796c38af9153c6ba6aefc1d51438d7c6",
+      "fingerprint": {
+        "$jsonSchema": {
+          "field:#1": {
+            "field:#2": {
+              "field:#3": {
+                "field:#4": "string:#1"
+              }
+            }
+          }
+        }
+      },
+      "query": {
+        "$jsonSchema": {
+          "score": {
+            "rank": {
+              "level": {
+                "count": "Couple"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "checksum": "d606020bc90d97b2cf9a2a61377e5fe7f0f2994687e980e40a0b6cf752db6ad4",
+      "fingerprint": {
+        "$jsonSchema": {
+          "field:#1": {
+            "field:#2": {
+              "field:#3": [
+                "number:#1"
+              ]
+            }
+          }
+        }
+      },
+      "query": {
+        "$jsonSchema": {
+          "score": {
+            "rank": {
+              "level": [
+                24
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "checksum": "a1ad0e9996fe84cc22c7e07266af3f6ca0a4d22edd53a958f930ace4cc7173c5",
+      "fingerprint": {
+        "$jsonSchema": {
+          "field:#1": {
+            "field:#2": {
+              "field:#3": [
+                {
+                  "field:#4": "string:#1"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "query": {
+        "$jsonSchema": {
+          "score": {
+            "rank": {
+              "level": [
+                {
+                  "grade": "Couple"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "checksum": "fdce82ecc1b9c4fcaa50d61c081b2aa22dd9f502bb4c7377af6fdea6bfa52e26",
+      "fingerprint": {
+        "$jsonSchema": {
+          "field:#1": {
+            "field:#2": {
+              "field:#3": [
+                {}
+              ]
+            }
+          }
+        }
+      },
+      "query": {
+        "$jsonSchema": {
+          "score": {
+            "rank": {
+              "step": [
+                {}
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "variants": [
+    {
+      "$jsonSchema": {
+        "age": null
+      }
+    },
+    {
+      "$jsonSchema": {
+        "age": "value"
+      }
+    },
+    {
+      "$jsonSchema": {
+        "age": true
+      }
+    },
+    {
+      "$jsonSchema": {
+        "age": 42
+      }
+    },
+    {
+      "$jsonSchema": {
+        "score": {
+          "rank": {
+            "level": {
+              "count": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "$jsonSchema": {
+        "score": {
+          "rank": {
+            "level": {
+              "count": 42
+            }
+          }
+        }
+      }
+    },
+    {
+      "$jsonSchema": {
+        "score": {
+          "rank": {
+            "level": {
+              "count": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "$jsonSchema": {
+        "score": {
+          "rank": {
+            "level": [
+              null
+            ]
+          }
+        }
+      }
+    },
+    {
+      "$jsonSchema": {
+        "score": {
+          "rank": {
+            "level": [
+              "value"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "$jsonSchema": {
+        "score": {
+          "rank": {
+            "level": [
+              true
+            ]
+          }
+        }
+      }
+    },
+    {
+      "$jsonSchema": {
+        "score": {
+          "rank": {
+            "level": [
+              {
+                "grade": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "$jsonSchema": {
+        "score": {
+          "rank": {
+            "level": [
+              {
+                "grade": 42
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "$jsonSchema": {
+        "score": {
+          "rank": {
+            "level": [
+              {
+                "grade": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "documents": []
+}

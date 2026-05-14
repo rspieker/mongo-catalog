@@ -1,0 +1,855 @@
+{
+  "queries": [
+    {
+      "checksum": "7ba0c6ca1697a91159502d7fe7ea0e44ad990147760013f91a16b8427f2fd86e",
+      "fingerprint": {
+        "$expr": {
+          "$and": [
+            {
+              "$eq": [
+                "field:#1",
+                "number:#1"
+              ]
+            }
+          ]
+        }
+      },
+      "query": {
+        "$expr": {
+          "$and": [
+            {
+              "$eq": [
+                "$age",
+                17
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "91e0b5432fa4d9b3c5d65532d1cad10f97c273fc555493cb8e589d2e5aaa9d21",
+      "fingerprint": {
+        "$expr": {
+          "$and": [
+            {
+              "$eq": [
+                "field:#1",
+                "string:#1"
+              ]
+            },
+            {
+              "$eq": [
+                "field:#2",
+                "string:#2"
+              ]
+            }
+          ]
+        },
+        "$or": [
+          {
+            "field:#3": "string:#3"
+          },
+          {
+            "field:#3": "string:#4"
+          }
+        ]
+      },
+      "query": {
+        "$expr": {
+          "$and": [
+            {
+              "$eq": [
+                "$username",
+                "Double"
+              ]
+            },
+            {
+              "$eq": [
+                "$name",
+                "Abundant"
+              ]
+            }
+          ]
+        },
+        "$or": [
+          {
+            "title": "Couple"
+          },
+          {
+            "title": "Each"
+          }
+        ]
+      }
+    },
+    {
+      "checksum": "68269c0a61eb6d62d83cabe2e39f78d467944e845823c2816a89f9a19846c6d9",
+      "fingerprint": {
+        "$expr": {
+          "$in": [
+            "field:#1",
+            [
+              "string:#1",
+              "string:#2"
+            ]
+          ]
+        }
+      },
+      "query": {
+        "$expr": {
+          "$in": [
+            "$email",
+            [
+              "Abundant",
+              "Double"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "377c5b3eea98c067761fac76c0d5024d6f2c9a3948ed857f3c94ee7c58c9bd0e",
+      "fingerprint": {
+        "$expr": {
+          "$eq": [
+            "field:#1",
+            "number:#1"
+          ]
+        }
+      },
+      "query": {
+        "$expr": {
+          "$eq": [
+            "$weight",
+            35
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "f342bf2d5130f88ced8f66a198c88706b6fdd1ee1add13254f68efed2743177f",
+      "fingerprint": {
+        "$expr": {
+          "$eq": [
+            "field:#1",
+            "field:#2"
+          ]
+        }
+      },
+      "query": {
+        "$expr": {
+          "$eq": [
+            "$rank",
+            "$level"
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "0c406dfc577bb0268a1411ab109f5317a093bc8d5eb15b1173f65eea1baf1fc6",
+      "fingerprint": {
+        "$or": [
+          {
+            "$expr": {
+              "$eq": [
+                "field:#1",
+                "field:#2"
+              ]
+            }
+          },
+          {
+            "field:#3": {
+              "$gt": "number:#1"
+            }
+          }
+        ]
+      },
+      "query": {
+        "$or": [
+          {
+            "$expr": {
+              "$eq": [
+                "$rank",
+                "$level"
+              ]
+            }
+          },
+          {
+            "count": {
+              "$gt": 7
+            }
+          }
+        ]
+      }
+    },
+    {
+      "checksum": "db85ca2b3b6cac99d5e0fc8859ea126cebbbd141864fc08408b9d20c54103a28",
+      "fingerprint": {
+        "field:#1": {
+          "$elemMatch": {
+            "$expr": {
+              "$eq": [
+                "field:#2",
+                "field:#3"
+              ]
+            }
+          }
+        }
+      },
+      "query": {
+        "grade": {
+          "$elemMatch": {
+            "$expr": {
+              "$eq": [
+                "$rank",
+                "$level"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "checksum": "77b16009581e7c2059748477d328d97478c2e38e8c826696bcd1b7851008d3a3",
+      "fingerprint": {
+        "field:#1": {
+          "$_internalSchemaObjectMatch": {
+            "$expr": {
+              "$eq": [
+                "field:#2",
+                "field:#3"
+              ]
+            }
+          }
+        }
+      },
+      "query": {
+        "grade": {
+          "$_internalSchemaObjectMatch": {
+            "$expr": {
+              "$eq": [
+                "$rank",
+                "$level"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "variants": [
+    {
+      "$expr": {
+        "$and": [
+          {
+            "$eq": [
+              "$age",
+              null
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "$expr": {
+        "$and": [
+          {
+            "$eq": [
+              "$age",
+              "value"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "$expr": {
+        "$and": [
+          {
+            "$eq": [
+              "$age",
+              true
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "$expr": {
+        "$and": [
+          {
+            "$eq": [
+              null,
+              17
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "$expr": {
+        "$and": [
+          {
+            "$eq": [
+              42,
+              17
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "$expr": {
+        "$and": [
+          {
+            "$eq": [
+              true,
+              17
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "$expr": {
+        "$and": [
+          {
+            "$eq": [
+              null,
+              null
+            ]
+          },
+          {
+            "$eq": [
+              null,
+              null
+            ]
+          }
+        ]
+      },
+      "$or": [
+        {
+          "title": null
+        },
+        {
+          "title": null
+        }
+      ]
+    },
+    {
+      "$expr": {
+        "$and": [
+          {
+            "$eq": [
+              42,
+              42
+            ]
+          },
+          {
+            "$eq": [
+              42,
+              42
+            ]
+          }
+        ]
+      },
+      "$or": [
+        {
+          "title": 42
+        },
+        {
+          "title": 42
+        }
+      ]
+    },
+    {
+      "$expr": {
+        "$and": [
+          {
+            "$eq": [
+              true,
+              true
+            ]
+          },
+          {
+            "$eq": [
+              true,
+              true
+            ]
+          }
+        ]
+      },
+      "$or": [
+        {
+          "title": true
+        },
+        {
+          "title": true
+        }
+      ]
+    },
+    {
+      "$expr": {
+        "$in": "active"
+      }
+    },
+    {
+      "$expr": {
+        "$in": [
+          null,
+          [
+            null,
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "$expr": {
+        "$in": [
+          42,
+          [
+            42,
+            42
+          ]
+        ]
+      }
+    },
+    {
+      "$expr": {
+        "$in": [
+          true,
+          [
+            true,
+            true
+          ]
+        ]
+      }
+    },
+    {
+      "$expr": {
+        "$eq": [
+          "$weight",
+          null
+        ]
+      }
+    },
+    {
+      "$expr": {
+        "$eq": [
+          "$weight",
+          "value"
+        ]
+      }
+    },
+    {
+      "$expr": {
+        "$eq": [
+          "$weight",
+          true
+        ]
+      }
+    },
+    {
+      "$expr": {
+        "$eq": [
+          null,
+          35
+        ]
+      }
+    },
+    {
+      "$expr": {
+        "$eq": [
+          42,
+          35
+        ]
+      }
+    },
+    {
+      "$expr": {
+        "$eq": [
+          true,
+          35
+        ]
+      }
+    },
+    {
+      "$expr": {
+        "$eq": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "$expr": {
+        "$eq": [
+          42,
+          42
+        ]
+      }
+    },
+    {
+      "$expr": {
+        "$eq": [
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "$or": [
+        {
+          "$expr": {
+            "$eq": [
+              "$rank",
+              "$level"
+            ]
+          }
+        },
+        {
+          "count": {
+            "$gt": null
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "$expr": {
+            "$eq": [
+              "$rank",
+              "$level"
+            ]
+          }
+        },
+        {
+          "count": {
+            "$gt": "value"
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "$expr": {
+            "$eq": [
+              "$rank",
+              "$level"
+            ]
+          }
+        },
+        {
+          "count": {
+            "$gt": true
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "$expr": {
+            "$eq": [
+              null,
+              null
+            ]
+          }
+        },
+        {
+          "count": {
+            "$gt": 7
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "$expr": {
+            "$eq": [
+              42,
+              42
+            ]
+          }
+        },
+        {
+          "count": {
+            "$gt": 7
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "$expr": {
+            "$eq": [
+              true,
+              true
+            ]
+          }
+        },
+        {
+          "count": {
+            "$gt": 7
+          }
+        }
+      ]
+    },
+    {
+      "grade": {
+        "$elemMatch": 42
+      }
+    },
+    {
+      "grade": {
+        "$elemMatch": {
+          "$expr": {
+            "$eq": [
+              null,
+              null
+            ]
+          }
+        }
+      }
+    },
+    {
+      "grade": {
+        "$elemMatch": {
+          "$expr": {
+            "$eq": [
+              42,
+              42
+            ]
+          }
+        }
+      }
+    },
+    {
+      "grade": {
+        "$elemMatch": {
+          "$expr": {
+            "$eq": [
+              true,
+              true
+            ]
+          }
+        }
+      }
+    },
+    {
+      "grade": {
+        "$_internalSchemaObjectMatch": {
+          "$expr": {
+            "$eq": [
+              null,
+              null
+            ]
+          }
+        }
+      }
+    },
+    {
+      "grade": {
+        "$_internalSchemaObjectMatch": {
+          "$expr": {
+            "$eq": [
+              42,
+              42
+            ]
+          }
+        }
+      }
+    },
+    {
+      "grade": {
+        "$_internalSchemaObjectMatch": {
+          "$expr": {
+            "$eq": [
+              true,
+              true
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "documents": [
+    {
+      "age": 15,
+      "name": 22,
+      "title": 17,
+      "score": 18,
+      "username": 14
+    },
+    {
+      "age": 14,
+      "name": "Abundant",
+      "title": "Couple",
+      "username": "Double"
+    },
+    {
+      "rank": 23,
+      "email": "Abundant"
+    },
+    {
+      "rank": 26
+    },
+    {
+      "rank": 27,
+      "email": null
+    },
+    {
+      "rank": 28,
+      "email": {}
+    },
+    {
+      "rank": 29,
+      "email": []
+    },
+    {
+      "rank": 30,
+      "email": [
+        []
+      ]
+    },
+    {
+      "rank": 31,
+      "email": [
+        null
+      ]
+    },
+    {
+      "rank": 32,
+      "email": [
+        [],
+        [
+          "Each"
+        ]
+      ]
+    },
+    {
+      "rank": 33,
+      "email": [
+        "Abundant",
+        "Couple"
+      ]
+    },
+    {
+      "rank": 35,
+      "email": [
+        [
+          "Abundant"
+        ],
+        [
+          "Couple"
+        ]
+      ]
+    },
+    {
+      "rank": 38,
+      "email": [
+        {}
+      ]
+    },
+    {
+      "rank": 40,
+      "email": [
+        [
+          [
+            "Abundant",
+            "Double",
+            "Couple"
+          ]
+        ]
+      ]
+    },
+    {
+      "rank": 42,
+      "email": [
+        [
+          [
+            null
+          ]
+        ]
+      ]
+    },
+    {
+      "rank": 48,
+      "email": {
+        "$toDouble": 24
+      }
+    },
+    {
+      "rank": 49,
+      "email.level": "Abundant"
+    },
+    {
+      "rank": 50,
+      "email": {
+        "level": "Abundant"
+      }
+    },
+    {
+      "rank": 52,
+      "email": [
+        {
+          "level": "Abundant"
+        },
+        {
+          "level": "Couple"
+        },
+        {}
+      ]
+    },
+    {
+      "scores": {
+        "grade": 35
+      }
+    },
+    {
+      "scores": {
+        "grade": [
+          35
+        ]
+      }
+    },
+    {
+      "scores": [
+        {
+          "grade": 35
+        }
+      ]
+    },
+    {
+      "scores": [
+        {
+          "grade": [
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "ratings": [
+        35
+      ]
+    },
+    {
+      "depth": 35,
+      "status": "Abundant"
+    },
+    {
+      "weight": 34
+    },
+    {},
+    {
+      "age": null
+    }
+  ]
+}

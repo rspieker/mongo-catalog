@@ -1,0 +1,99 @@
+{
+  "queries": [
+    {
+      "checksum": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "fingerprint": {},
+      "query": {}
+    },
+    {
+      "checksum": "f02249aecc24a33832675c355a997b5041146cecdab81b35ab237bda39d24c8e",
+      "fingerprint": {
+        "field:#1": {
+          "$gte": "number:#1"
+        }
+      },
+      "query": {
+        "score": {
+          "$gte": 1
+        }
+      }
+    },
+    {
+      "checksum": "2712014956880959295e298969ca92a352dacbf7aed17be59fd0b6333ec08ca3",
+      "fingerprint": {
+        "field:#1": "number:#1"
+      },
+      "query": {
+        "score": 2
+      }
+    },
+    {
+      "checksum": "d082f75c7fd9bad75524ef3c533cc7c865350623a046dec3e7b7117a0de6eedd",
+      "fingerprint": {
+        "field:#1": {
+          "$gt": "number:#1"
+        }
+      },
+      "query": {
+        "score": {
+          "$gt": 21
+        }
+      }
+    }
+  ],
+  "variants": [
+    {
+      "score": {
+        "$gte": null
+      }
+    },
+    {
+      "score": {
+        "$gte": "value"
+      }
+    },
+    {
+      "score": {
+        "$gte": true
+      }
+    },
+    {
+      "score": null
+    },
+    {
+      "score": "value"
+    },
+    {
+      "score": true
+    },
+    {
+      "score": {
+        "$gt": null
+      }
+    },
+    {
+      "score": {
+        "$gt": "value"
+      }
+    },
+    {
+      "score": {
+        "$gt": true
+      }
+    }
+  ],
+  "documents": [
+    {
+      "age": {
+        "score": 2,
+        "status": 2
+      },
+      "rank": 2
+    },
+    {
+      "age": 2,
+      "score": 11,
+      "status": "Abundant"
+    }
+  ]
+}

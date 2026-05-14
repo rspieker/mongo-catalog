@@ -1,0 +1,3456 @@
+{
+  "queries": [
+    {
+      "checksum": "944aee628a52538a441881848a05c6bc83a79d04b6d85c1e8ba73a27c800f869",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "number:#1"
+          ]
+        }
+      },
+      "query": {
+        "age": {
+          "$in": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "e0ad923e1ed3b528d4e11f96342ee40f73d87d522b1cd3af466a1c023ec97e15",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "number:#1",
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "age": {
+          "$in": [
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "c9e6fb1d23c46e4e1003d8a38828ffd4309b245eab0d4a417d1847db3ffc1992",
+      "fingerprint": {
+        "field:#1": {
+          "$in": []
+        }
+      },
+      "query": {
+        "age": {
+          "$in": []
+        }
+      }
+    },
+    {
+      "checksum": "a47bb4e255ed7a031cc6601ec7186099ae6be316469afabf1ec0ad611629d96e",
+      "fingerprint": {
+        "field:#1": {
+          "$gt": "number:#1",
+          "$in": [
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "age": {
+          "$gt": 2,
+          "$in": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "8d94800ee81a8c5efd92896737da0ac3312258edb4a9d057cd7aeb3ecfd2c423",
+      "fingerprint": {
+        "field:#1": {
+          "$in": {
+            "field:#2": "number:#1"
+          }
+        }
+      },
+      "query": {
+        "age": {
+          "$in": {
+            "status": 2
+          }
+        }
+      }
+    },
+    {
+      "checksum": "94ff2f961c7a42d5261a22c65045c34244edf2528224981417012114e256d348",
+      "fingerprint": {
+        "field:#1": {
+          "$in": "number:#1"
+        }
+      },
+      "query": {
+        "age": {
+          "$in": 2
+        }
+      }
+    },
+    {
+      "checksum": "2d0d9ab6402db38d8109060be42bd8ba52c5b1a6f062d1f760c0030f0168177e",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "number:#1",
+            "number:#2"
+          ]
+        },
+        "field:#2": {
+          "$in": [
+            "number:#1",
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "age": {
+          "$in": [
+            2,
+            3
+          ]
+        },
+        "score": {
+          "$in": [
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "037ed0ec5d6066f54826e4880b4ffa8ecb2d62621393f381f13f6f6656870af0",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {},
+            {}
+          ]
+        }
+      },
+      "query": {
+        "status": {
+          "$in": [
+            {},
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "97de5531a5a638899974f5f5f51e69d78e099b23c178f24f7ce601a21eb3f4eb",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "string:#1",
+            "number:#1",
+            "string:#2",
+            "number:#2",
+            "string:#3",
+            "number:#3",
+            "string:#4",
+            "number:#4",
+            "number:#5",
+            "string:#5",
+            "string:#6",
+            "number:#6",
+            "string:#7",
+            "number:#7",
+            "string:#8",
+            "string:#9",
+            "number:#8",
+            "string:#10",
+            "number:#9"
+          ]
+        }
+      },
+      "query": {
+        "status": {
+          "$in": [
+            "No",
+            9,
+            "Numerous",
+            7,
+            "Several",
+            3,
+            "Significant",
+            10,
+            4,
+            "Huge",
+            "Single",
+            5,
+            "Some",
+            2,
+            "Sparse",
+            "Enough",
+            8,
+            "Either",
+            6
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "40eaa5e5751f834f30c74b521aadba5dca8d1aaddf2773927759f58b47846498",
+      "fingerprint": {
+        "field:#1": [
+          "number:#1"
+        ]
+      },
+      "query": {
+        "name": [
+          7
+        ]
+      }
+    },
+    {
+      "checksum": "08abc599f6e5e39f7675fdcb31dd1a069d2f28e5b016461964e80f0fabba9eb3",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            [
+              "number:#1"
+            ]
+          ]
+        }
+      },
+      "query": {
+        "name": {
+          "$in": [
+            [
+              7
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "7abe2445ebce4ea6280cba7b59709bc857a7c4e0d48a8dbd1e6273489a8c3596",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            [
+              "number:#1"
+            ]
+          ],
+          "$ne": [
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "name": {
+          "$in": [
+            [
+              7
+            ]
+          ],
+          "$ne": [
+            8
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "f5fd34cb2515e0b5a5034baf47cde9de6d4e4f6c72b08d9d8fc008d1ceb265be",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            [
+              "string:#1"
+            ]
+          ],
+          "$type": "number:#1"
+        }
+      },
+      "query": {
+        "name": {
+          "$in": [
+            [
+              "Abundant"
+            ]
+          ],
+          "$type": 8
+        }
+      }
+    },
+    {
+      "checksum": "817f18ba28812170c967c8056e49e061ce22e906492c2f7eb3796caa250bf994",
+      "fingerprint": {
+        "field:#1": [
+          "string:#1"
+        ]
+      },
+      "query": {
+        "name": [
+          "Abundant"
+        ]
+      }
+    },
+    {
+      "checksum": "20b55ecc536b45e498709e622e8c772335a7e8555ee97f344a779398027fa99c",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            [
+              "string:#1"
+            ]
+          ]
+        }
+      },
+      "query": {
+        "name": {
+          "$in": [
+            [
+              "Abundant"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "6a05181e1aee66803b401291e18c548fc74eeac6e33005f35a3b9787183e3241",
+      "fingerprint": {
+        "field:#1": []
+      },
+      "query": {
+        "scores": []
+      }
+    },
+    {
+      "checksum": "57269d1f7efb715c8c5602aa740ad748c7f6d6d0b4c933bc10ca807889d33a98",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            []
+          ]
+        }
+      },
+      "query": {
+        "scores": {
+          "$in": [
+            []
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "7af2346371dcb6314a806d9c4453c848dc83fd371ca365f7fafe4f88e9efec70",
+      "fingerprint": {
+        "field:#1": {
+          "field:#2": "number:#1",
+          "field:#3": "number:#2"
+        }
+      },
+      "query": {
+        "level": {
+          "count": 26,
+          "grade": 27
+        }
+      }
+    },
+    {
+      "checksum": "0f9d8831d712b3b05d11a4f6876dc7b20449ebcd8fd513dfb2c1952d2bbc0d44",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {
+              "field:#2": "number:#1",
+              "field:#3": "number:#2"
+            }
+          ]
+        }
+      },
+      "query": {
+        "level": {
+          "$in": [
+            {
+              "count": 26,
+              "grade": 27
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "5f33bcfba4fb26a777dbb82cea5d905427604fafd1bca435c0581e68ff36c6d6",
+      "fingerprint": {
+        "field:#1.field:#2": "number:#1",
+        "field:#1.field:#3": {
+          "$in": [
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "level.count": 26,
+        "level.grade": {
+          "$in": [
+            27
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "925fcbaf12095e73fb7b741a75330a3e548405d1b20c17d658de59e132c78520",
+      "fingerprint": {
+        "field:#1": "null:#1"
+      },
+      "query": {
+        "step": null
+      }
+    },
+    {
+      "checksum": "4c1d56f82c945effda1ddb496e149aa04825ca61efff8e3394861b4b82f7343e",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "null:#1"
+          ]
+        }
+      },
+      "query": {
+        "step": {
+          "$in": [
+            null
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "a1fbcaba9d77880f0a5d8f33fb304028787a490f84d1fb99e96b5758ffcb505f",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {
+              "$elemMatch": {
+                "field:#2": "number:#1"
+              }
+            }
+          ]
+        }
+      },
+      "query": {
+        "priority": {
+          "$in": [
+            {
+              "$elemMatch": {
+                "capacity": 29
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "615e79fbd539f614ae2a76aa77e642e50187a3bda3bafcb4089c32fca532581f",
+      "fingerprint": {
+        "field:#1": {
+          "$not": {
+            "$in": [
+              {
+                "$elemMatch": {
+                  "field:#2": "number:#1"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "query": {
+        "priority": {
+          "$not": {
+            "$in": [
+              {
+                "$elemMatch": {
+                  "capacity": 29
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "checksum": "e3d9ac05abb4c1c2d6349719bb37d7e0674aa08fe1ab85494f7f6b86f45ef380",
+      "fingerprint": {
+        "field:#1": {
+          "$nin": [
+            {
+              "$elemMatch": {
+                "field:#2": "number:#1"
+              }
+            }
+          ]
+        }
+      },
+      "query": {
+        "priority": {
+          "$nin": [
+            {
+              "$elemMatch": {
+                "capacity": 29
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "301827d29cf4f2932422c5ba165c03b89fca62f639579cb1707bfbb9241d3492",
+      "fingerprint": {
+        "field:#1": {
+          "$not": {
+            "$nin": [
+              {
+                "$elemMatch": {
+                  "field:#2": "number:#1"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "query": {
+        "priority": {
+          "$not": {
+            "$nin": [
+              {
+                "$elemMatch": {
+                  "capacity": 29
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "checksum": "21e2dd0346404893e17429db48ab7b9187b0b1578df02b5252987bcd6e855dcf",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "number:#1",
+            {}
+          ]
+        }
+      },
+      "query": {
+        "title": {
+          "$in": [
+            18,
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "f1a35adbf18d7a4e3523a88c6f06248a1f84a95004e1e3908178d56dcb5605fc",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {},
+            "number:#1"
+          ]
+        }
+      },
+      "query": {
+        "title": {
+          "$in": [
+            {},
+            18
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "ee9a227f2c49a2d02e09d593409a5e31ed8b52524acf9fcc881f2195aeb22c35",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {},
+            "number:#1",
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "title": {
+          "$in": [
+            {},
+            18,
+            19
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "9569dc2867f3c09ccb976bfca344fa041f0657d394e3cd92d2a9469814d4a86f",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {},
+            "number:#1",
+            "number:#2",
+            "number:#3"
+          ]
+        }
+      },
+      "query": {
+        "title": {
+          "$in": [
+            {},
+            18,
+            19,
+            20
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "dd493f1059a809f6c3dfeb24ae6f319f4e1206e288ccb49de297516765fcef55",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {},
+            "number:#1",
+            "number:#2",
+            {}
+          ]
+        }
+      },
+      "query": {
+        "title": {
+          "$in": [
+            {},
+            18,
+            19,
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "79abfddc8c980992071e234f6d45769c1e34fedeb4bcdbd0be1311f27cfe0ca2",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "number:#1",
+            {},
+            "number:#2",
+            {}
+          ]
+        }
+      },
+      "query": {
+        "title": {
+          "$in": [
+            18,
+            {},
+            19,
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "8bfddd5506b2694c08f437c041c8bfce1bd556023097be819cfded3eeb283276",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {},
+            "number:#1",
+            "number:#2",
+            "number:#3",
+            {}
+          ]
+        }
+      },
+      "query": {
+        "title": {
+          "$in": [
+            {},
+            18,
+            19,
+            20,
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "c32cbfbb921369474d43d6f90bb7b1c4ac1d1cb08b428811272c885db6253f28",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "number:#1",
+            {},
+            "number:#2",
+            "number:#3",
+            {}
+          ]
+        }
+      },
+      "query": {
+        "title": {
+          "$in": [
+            18,
+            {},
+            19,
+            20,
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "9d4bc5443120612fdb136b2746fa8629d0d0cf2eabf056cf4e193798e83a0afb",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            [
+              "number:#1",
+              "number:#2"
+            ],
+            {}
+          ]
+        }
+      },
+      "query": {
+        "username": {
+          "$in": [
+            [
+              13,
+              14
+            ],
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "ce72685bea695c6d37e2975de2b09cd17b2fd08a22ada2ea588c3ebc2372a514",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {}
+          ]
+        }
+      },
+      "query": {
+        "username": {
+          "$in": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "f9140fde71f661055e4a4a577d729e2e844f3081bcd04d5d9073b86aa8a210b9",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "number:#1",
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "username.attempts": {
+          "$in": [
+            13,
+            14
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "c3ac9285a22cb12c972c7cccde1c94953f0871d5a4827434fb5cb37678bd6efc",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "number:#1",
+            {}
+          ]
+        }
+      },
+      "query": {
+        "username.attempts": {
+          "$in": [
+            13,
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "1a9f89e85a9e314fb9c08fa09e61128a1dc5d9c17122853608f570d7e45dda35",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {
+              "field:#2": "number:#1"
+            },
+            {}
+          ]
+        }
+      },
+      "query": {
+        "username": {
+          "$in": [
+            {
+              "attempts": 13
+            },
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "c258c2306cb5077e7a857e5b2e1ad74214be9c4ad2f823dc4d2d144aebedc56a",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            {
+              "field:#3": "number:#1"
+            },
+            {
+              "field:#3": "number:#2"
+            },
+            {}
+          ]
+        }
+      },
+      "query": {
+        "username.attempts": {
+          "$in": [
+            {
+              "quantity": 22
+            },
+            {
+              "quantity": 13
+            },
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "b54a03805fad851dc633c086a450877e2b78855612766227aae4eda00ce32dad",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            {},
+            "number:#1"
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            {},
+            13
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "a4ab3131a4cf277f24e295f1d3dc4f1a9476d29002d0e3830fb9a2044fe11aab",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "number:#1",
+            "number:#2",
+            {}
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            13,
+            14,
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "7c2bfe9342655990118e18fc205e9c0703bd13413ea7146ae42cd8407a57f1fa",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "number:#1",
+            "number:#2",
+            "number:#3",
+            {}
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            13,
+            14,
+            15,
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "02ac2acce5f03e93ba77ec790601440fa87ee244855278050066bdc1c06788f7",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "number:#1",
+            "number:#2",
+            "number:#3",
+            {},
+            {}
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            13,
+            14,
+            15,
+            {},
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "8d4aed4429851d717bddfba9ccde82f187d9ab86b8b3f6fcb2fd007daa4b4540",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            {},
+            "number:#1",
+            "number:#2",
+            "number:#3"
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            {},
+            13,
+            14,
+            15
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "634ebd6a75b076a8c1318b87aded7c3f55c52bb0233c533f9c286838f60c4444",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "string:#1",
+            "string:#2",
+            "string:#3",
+            "number:#1",
+            "number:#2",
+            "number:#3"
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            "Abundant",
+            "Couple",
+            "Double",
+            13,
+            14,
+            15
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "c49d4cad92b3022deab404cb76cde09c3efa7cc84a9ea451f3210c0d5bb1e821",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "string:#1",
+            "string:#2",
+            "number:#1",
+            "number:#2",
+            "number:#3"
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            "Couple",
+            "Double",
+            13,
+            14,
+            15
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "c659c70babaeab06d6e96cb5c3937f78042ffb05be5a83d2ee64a068d724085f",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "string:#1",
+            "number:#1",
+            "number:#2",
+            "number:#3"
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            "Double",
+            13,
+            14,
+            15
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "b6028e0406ad7e3c5ab44137305b21fed15e737d5fa2398b3b45fdd51fbaadd8",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "string:#1",
+            {}
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            "Double",
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "95bf956e06a698786748c5edef2f8ad6cd58a4deb23090bb1f8df545c11a7b95",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "string:#1",
+            "number:#1"
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            "Each",
+            1011
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "ee88d51edc01310c9ca147d248be50ea08eda4d01b5b6a52689b2938a9fe5909",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "number:#1",
+            {
+              "field:#2": "number:#2",
+              "field:#3": "string:#1"
+            }
+          ]
+        }
+      },
+      "query": {
+        "email": {
+          "$in": [
+            16,
+            {
+              "size": 15,
+              "index": "Couple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "dcaa31b20f961b70044a187578e5685ca104b78f1198b8064bf709af1c492aa8",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            [
+              "number:#1",
+              "number:#2"
+            ],
+            {
+              "field:#2": "number:#3",
+              "field:#3": "string:#1"
+            }
+          ]
+        }
+      },
+      "query": {
+        "email": {
+          "$in": [
+            [
+              16,
+              17
+            ],
+            {
+              "size": 15,
+              "index": "Couple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "29750c7b3b1fdc490eacd2380ed23d9976fa8401e9682d69f09441d3ee3749e6",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {},
+            {
+              "field:#2": "number:#1",
+              "field:#3": "string:#1"
+            }
+          ]
+        }
+      },
+      "query": {
+        "email": {
+          "$in": [
+            {},
+            {
+              "size": 16,
+              "index": "Couple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "266f40860557a18c7eede277fac13486501c98e6f3c0cd4b98aaa47e11b0806b",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "string:#1",
+            {
+              "field:#2": "number:#1",
+              "field:#3": "string:#2"
+            }
+          ]
+        }
+      },
+      "query": {
+        "email": {
+          "$in": [
+            "Empty",
+            {
+              "size": 16,
+              "index": "Couple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "ef99d6280fc9ea4206b6c186fca59a3f9bd84674aa726fee12b18bc2bc23969d",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {
+              "field:#2": "number:#1",
+              "field:#3": "string:#1"
+            },
+            {
+              "field:#2": "number:#1",
+              "field:#3": "string:#2"
+            }
+          ]
+        }
+      },
+      "query": {
+        "email": {
+          "$in": [
+            {
+              "size": 15,
+              "index": "Each"
+            },
+            {
+              "size": 15,
+              "index": "Couple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "931b96f0327242f164f04809e0be632ad688af2c066f1d7cf4a612dc5b4ce210",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {
+              "field:#2": "number:#1",
+              "field:#3": "string:#1"
+            },
+            {
+              "field:#2": "number:#2",
+              "field:#3": "string:#2"
+            }
+          ]
+        }
+      },
+      "query": {
+        "email": {
+          "$in": [
+            {
+              "size": 16,
+              "index": "Each"
+            },
+            {
+              "size": 15,
+              "index": "Couple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "10f9b1fb61c04a6120f0226c3991132647f6dcbba017350a52d8cbbb0bce69c9",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {
+              "field:#2": "number:#1",
+              "field:#3": "string:#1"
+            }
+          ]
+        }
+      },
+      "query": {
+        "email": {
+          "$in": [
+            {
+              "size": 15,
+              "index": "Enough"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "variants": [
+    {
+      "age": {
+        "$in": "active"
+      }
+    },
+    {
+      "age": {
+        "$in": [
+          null
+        ]
+      }
+    },
+    {
+      "age": {
+        "$in": [
+          "value"
+        ]
+      }
+    },
+    {
+      "age": {
+        "$in": [
+          true
+        ]
+      }
+    },
+    {
+      "age": {
+        "$in": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "age": {
+        "$in": [
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "age": {
+        "$in": [
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "age": {
+        "$gt": 2,
+        "$in": "active"
+      }
+    },
+    {
+      "age": {
+        "$gt": null,
+        "$in": [
+          null
+        ]
+      }
+    },
+    {
+      "age": {
+        "$gt": "value",
+        "$in": [
+          "value"
+        ]
+      }
+    },
+    {
+      "age": {
+        "$gt": true,
+        "$in": [
+          true
+        ]
+      }
+    },
+    {
+      "age": {
+        "$in": {
+          "status": null
+        }
+      }
+    },
+    {
+      "age": {
+        "$in": {
+          "status": "value"
+        }
+      }
+    },
+    {
+      "age": {
+        "$in": {
+          "status": true
+        }
+      }
+    },
+    {
+      "age": {
+        "$in": null
+      }
+    },
+    {
+      "age": {
+        "$in": "value"
+      }
+    },
+    {
+      "age": {
+        "$in": true
+      }
+    },
+    {
+      "age": {
+        "$in": "active"
+      },
+      "score": {
+        "$in": "active"
+      }
+    },
+    {
+      "age": {
+        "$in": [
+          null,
+          null
+        ]
+      },
+      "score": {
+        "$in": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "age": {
+        "$in": [
+          "value",
+          "value"
+        ]
+      },
+      "score": {
+        "$in": [
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "age": {
+        "$in": [
+          true,
+          true
+        ]
+      },
+      "score": {
+        "$in": [
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "status": {
+        "$in": "active"
+      }
+    },
+    {
+      "status": {
+        "$in": [
+          "No",
+          null,
+          "Numerous",
+          null,
+          "Several",
+          null,
+          "Significant",
+          null,
+          null,
+          "Huge",
+          "Single",
+          null,
+          "Some",
+          null,
+          "Sparse",
+          "Enough",
+          null,
+          "Either",
+          null
+        ]
+      }
+    },
+    {
+      "status": {
+        "$in": [
+          "No",
+          "value",
+          "Numerous",
+          "value",
+          "Several",
+          "value",
+          "Significant",
+          "value",
+          "value",
+          "Huge",
+          "Single",
+          "value",
+          "Some",
+          "value",
+          "Sparse",
+          "Enough",
+          "value",
+          "Either",
+          "value"
+        ]
+      }
+    },
+    {
+      "status": {
+        "$in": [
+          "No",
+          true,
+          "Numerous",
+          true,
+          "Several",
+          true,
+          "Significant",
+          true,
+          true,
+          "Huge",
+          "Single",
+          true,
+          "Some",
+          true,
+          "Sparse",
+          "Enough",
+          true,
+          "Either",
+          true
+        ]
+      }
+    },
+    {
+      "status": {
+        "$in": [
+          null,
+          9,
+          null,
+          7,
+          null,
+          3,
+          null,
+          10,
+          4,
+          null,
+          null,
+          5,
+          null,
+          2,
+          null,
+          null,
+          8,
+          null,
+          6
+        ]
+      }
+    },
+    {
+      "status": {
+        "$in": [
+          42,
+          9,
+          42,
+          7,
+          42,
+          3,
+          42,
+          10,
+          4,
+          42,
+          42,
+          5,
+          42,
+          2,
+          42,
+          42,
+          8,
+          42,
+          6
+        ]
+      }
+    },
+    {
+      "status": {
+        "$in": [
+          true,
+          9,
+          true,
+          7,
+          true,
+          3,
+          true,
+          10,
+          4,
+          true,
+          true,
+          5,
+          true,
+          2,
+          true,
+          true,
+          8,
+          true,
+          6
+        ]
+      }
+    },
+    {
+      "name": [
+        null
+      ]
+    },
+    {
+      "name": [
+        "value"
+      ]
+    },
+    {
+      "name": [
+        true
+      ]
+    },
+    {
+      "name": {
+        "$in": "active"
+      }
+    },
+    {
+      "name": {
+        "$in": [
+          [
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "name": {
+        "$in": [
+          [
+            "value"
+          ]
+        ]
+      }
+    },
+    {
+      "name": {
+        "$in": [
+          [
+            true
+          ]
+        ]
+      }
+    },
+    {
+      "name": {
+        "$in": "active",
+        "$ne": [
+          8
+        ]
+      }
+    },
+    {
+      "name": {
+        "$in": [
+          [
+            null
+          ]
+        ],
+        "$ne": [
+          null
+        ]
+      }
+    },
+    {
+      "name": {
+        "$in": [
+          [
+            "value"
+          ]
+        ],
+        "$ne": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": {
+        "$in": [
+          [
+            true
+          ]
+        ],
+        "$ne": [
+          true
+        ]
+      }
+    },
+    {
+      "name": {
+        "$in": "active",
+        "$type": 8
+      }
+    },
+    {
+      "name": {
+        "$in": [
+          [
+            "Abundant"
+          ]
+        ],
+        "$type": null
+      }
+    },
+    {
+      "name": {
+        "$in": [
+          [
+            "Abundant"
+          ]
+        ],
+        "$type": "value"
+      }
+    },
+    {
+      "name": {
+        "$in": [
+          [
+            "Abundant"
+          ]
+        ],
+        "$type": true
+      }
+    },
+    {
+      "name": {
+        "$in": [
+          [
+            null
+          ]
+        ],
+        "$type": 8
+      }
+    },
+    {
+      "name": {
+        "$in": [
+          [
+            42
+          ]
+        ],
+        "$type": 8
+      }
+    },
+    {
+      "name": {
+        "$in": [
+          [
+            true
+          ]
+        ],
+        "$type": 8
+      }
+    },
+    {
+      "name": [
+        42
+      ]
+    },
+    {
+      "name": {
+        "$in": [
+          [
+            42
+          ]
+        ]
+      }
+    },
+    {
+      "scores": {
+        "$in": "active"
+      }
+    },
+    {
+      "level": {
+        "count": null,
+        "grade": null
+      }
+    },
+    {
+      "level": {
+        "count": "value",
+        "grade": "value"
+      }
+    },
+    {
+      "level": {
+        "count": true,
+        "grade": true
+      }
+    },
+    {
+      "level": {
+        "$in": "active"
+      }
+    },
+    {
+      "level": {
+        "$in": [
+          {
+            "count": null,
+            "grade": null
+          }
+        ]
+      }
+    },
+    {
+      "level": {
+        "$in": [
+          {
+            "count": "value",
+            "grade": "value"
+          }
+        ]
+      }
+    },
+    {
+      "level": {
+        "$in": [
+          {
+            "count": true,
+            "grade": true
+          }
+        ]
+      }
+    },
+    {
+      "level.count": 26,
+      "level.grade": {
+        "$in": "active"
+      }
+    },
+    {
+      "level.count": null,
+      "level.grade": {
+        "$in": [
+          null
+        ]
+      }
+    },
+    {
+      "level.count": "value",
+      "level.grade": {
+        "$in": [
+          "value"
+        ]
+      }
+    },
+    {
+      "level.count": true,
+      "level.grade": {
+        "$in": [
+          true
+        ]
+      }
+    },
+    {
+      "step": {
+        "$in": "active"
+      }
+    },
+    {
+      "priority": {
+        "$in": "active"
+      }
+    },
+    {
+      "priority": {
+        "$in": [
+          {
+            "$elemMatch": 42
+          }
+        ]
+      }
+    },
+    {
+      "priority": {
+        "$in": [
+          {
+            "$elemMatch": {
+              "capacity": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "priority": {
+        "$in": [
+          {
+            "$elemMatch": {
+              "capacity": "value"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "priority": {
+        "$in": [
+          {
+            "$elemMatch": {
+              "capacity": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$in": "active"
+        }
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$in": [
+            {
+              "$elemMatch": 42
+            }
+          ]
+        }
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$in": [
+            {
+              "$elemMatch": {
+                "capacity": null
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$in": [
+            {
+              "$elemMatch": {
+                "capacity": "value"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$in": [
+            {
+              "$elemMatch": {
+                "capacity": true
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "priority": {
+        "$nin": "deleted"
+      }
+    },
+    {
+      "priority": {
+        "$nin": [
+          {
+            "$elemMatch": 42
+          }
+        ]
+      }
+    },
+    {
+      "priority": {
+        "$nin": [
+          {
+            "$elemMatch": {
+              "capacity": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "priority": {
+        "$nin": [
+          {
+            "$elemMatch": {
+              "capacity": "value"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "priority": {
+        "$nin": [
+          {
+            "$elemMatch": {
+              "capacity": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$nin": "deleted"
+        }
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$nin": [
+            {
+              "$elemMatch": 42
+            }
+          ]
+        }
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$nin": [
+            {
+              "$elemMatch": {
+                "capacity": null
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$nin": [
+            {
+              "$elemMatch": {
+                "capacity": "value"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$nin": [
+            {
+              "$elemMatch": {
+                "capacity": true
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title": {
+        "$in": "active"
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          null,
+          {}
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          "value",
+          {}
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          true,
+          {}
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          {},
+          null
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          {},
+          "value"
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          {},
+          true
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          {},
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          {},
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          {},
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          {},
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          {},
+          "value",
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          {},
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          {},
+          null,
+          null,
+          {}
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          {},
+          "value",
+          "value",
+          {}
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          {},
+          true,
+          true,
+          {}
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          null,
+          {},
+          null,
+          {}
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          "value",
+          {},
+          "value",
+          {}
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          true,
+          {},
+          true,
+          {}
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          {},
+          null,
+          null,
+          null,
+          {}
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          {},
+          "value",
+          "value",
+          "value",
+          {}
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          {},
+          true,
+          true,
+          true,
+          {}
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          null,
+          {},
+          null,
+          null,
+          {}
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          "value",
+          {},
+          "value",
+          "value",
+          {}
+        ]
+      }
+    },
+    {
+      "title": {
+        "$in": [
+          true,
+          {},
+          true,
+          true,
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": "active"
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          [
+            null,
+            null
+          ],
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          [
+            "value",
+            "value"
+          ],
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          [
+            true,
+            true
+          ],
+          {}
+        ]
+      }
+    },
+    {
+      "username.attempts": {
+        "$in": "active"
+      }
+    },
+    {
+      "username.attempts": {
+        "$in": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "username.attempts": {
+        "$in": [
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "username.attempts": {
+        "$in": [
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "username.attempts": {
+        "$in": [
+          null,
+          {}
+        ]
+      }
+    },
+    {
+      "username.attempts": {
+        "$in": [
+          "value",
+          {}
+        ]
+      }
+    },
+    {
+      "username.attempts": {
+        "$in": [
+          true,
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          {
+            "attempts": null
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          {
+            "attempts": "value"
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          {
+            "attempts": true
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "username.attempts": {
+        "$in": [
+          {
+            "quantity": null
+          },
+          {
+            "quantity": null
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "username.attempts": {
+        "$in": [
+          {
+            "quantity": "value"
+          },
+          {
+            "quantity": "value"
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "username.attempts": {
+        "$in": [
+          {
+            "quantity": true
+          },
+          {
+            "quantity": true
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": "active"
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          {},
+          null
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          {},
+          "value"
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          {},
+          true
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          null,
+          null,
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "value",
+          "value",
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          true,
+          true,
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          null,
+          null,
+          null,
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "value",
+          "value",
+          "value",
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          true,
+          true,
+          true,
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          null,
+          null,
+          null,
+          {},
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "value",
+          "value",
+          "value",
+          {},
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          true,
+          true,
+          true,
+          {},
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          {},
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          {},
+          "value",
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          {},
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Abundant",
+          "Couple",
+          "Double",
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Abundant",
+          "Couple",
+          "Double",
+          "value",
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Abundant",
+          "Couple",
+          "Double",
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          null,
+          null,
+          null,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          42,
+          42,
+          42,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          true,
+          true,
+          true,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Couple",
+          "Double",
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Couple",
+          "Double",
+          "value",
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Couple",
+          "Double",
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          null,
+          null,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          42,
+          42,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          true,
+          true,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Double",
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Double",
+          "value",
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Double",
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          null,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          42,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          true,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          null,
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          42,
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          true,
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Each",
+          null
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Each",
+          "value"
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Each",
+          true
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          null,
+          1011
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          42,
+          1011
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          true,
+          1011
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": "active"
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          null,
+          {
+            "size": null,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          "value",
+          {
+            "size": "value",
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          true,
+          {
+            "size": true,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          16,
+          {
+            "size": 15,
+            "index": null
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          16,
+          {
+            "size": 15,
+            "index": 42
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          16,
+          {
+            "size": 15,
+            "index": true
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          [
+            null,
+            null
+          ],
+          {
+            "size": null,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          [
+            "value",
+            "value"
+          ],
+          {
+            "size": "value",
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          [
+            true,
+            true
+          ],
+          {
+            "size": true,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          [
+            16,
+            17
+          ],
+          {
+            "size": 15,
+            "index": null
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          [
+            16,
+            17
+          ],
+          {
+            "size": 15,
+            "index": 42
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          [
+            16,
+            17
+          ],
+          {
+            "size": 15,
+            "index": true
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {},
+          {
+            "size": null,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {},
+          {
+            "size": "value",
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {},
+          {
+            "size": true,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {},
+          {
+            "size": 16,
+            "index": null
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {},
+          {
+            "size": 16,
+            "index": 42
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {},
+          {
+            "size": 16,
+            "index": true
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          "Empty",
+          {
+            "size": null,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          "Empty",
+          {
+            "size": "value",
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          "Empty",
+          {
+            "size": true,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          null,
+          {
+            "size": 16,
+            "index": null
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          42,
+          {
+            "size": 16,
+            "index": 42
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          true,
+          {
+            "size": 16,
+            "index": true
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {
+            "size": null,
+            "index": "Each"
+          },
+          {
+            "size": null,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {
+            "size": "value",
+            "index": "Each"
+          },
+          {
+            "size": "value",
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {
+            "size": true,
+            "index": "Each"
+          },
+          {
+            "size": true,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {
+            "size": 15,
+            "index": null
+          },
+          {
+            "size": 15,
+            "index": null
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {
+            "size": 15,
+            "index": 42
+          },
+          {
+            "size": 15,
+            "index": 42
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {
+            "size": 15,
+            "index": true
+          },
+          {
+            "size": 15,
+            "index": true
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {
+            "size": 16,
+            "index": null
+          },
+          {
+            "size": 15,
+            "index": null
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {
+            "size": 16,
+            "index": 42
+          },
+          {
+            "size": 15,
+            "index": 42
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {
+            "size": 16,
+            "index": true
+          },
+          {
+            "size": 15,
+            "index": true
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {
+            "size": null,
+            "index": "Enough"
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {
+            "size": "value",
+            "index": "Enough"
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {
+            "size": true,
+            "index": "Enough"
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {
+            "size": 15,
+            "index": null
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {
+            "size": 15,
+            "index": 42
+          }
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {
+            "size": 15,
+            "index": true
+          }
+        ]
+      }
+    }
+  ],
+  "documents": [
+    {
+      "age": 2
+    },
+    {
+      "status": "Abundant"
+    },
+    {
+      "name": [
+        7
+      ]
+    },
+    {
+      "name": [
+        "Abundant"
+      ]
+    },
+    {
+      "name": [
+        [
+          8
+        ]
+      ]
+    },
+    {
+      "scores": []
+    },
+    {
+      "level": {
+        "count": 26,
+        "grade": 27
+      }
+    },
+    {},
+    {
+      "title": 18
+    },
+    {
+      "title": "Abundant"
+    },
+    {
+      "title": {}
+    },
+    {
+      "username": 13
+    },
+    {
+      "username": "Abundant"
+    },
+    {
+      "username": [
+        13
+      ]
+    },
+    {
+      "username": [
+        13,
+        "Abundant"
+      ]
+    },
+    {
+      "username": [
+        "Couple",
+        14
+      ]
+    },
+    {
+      "username": {
+        "attempts": 13
+      }
+    },
+    {
+      "username": {
+        "attempts": "Abundant"
+      }
+    },
+    {
+      "username": {
+        "attempts": [
+          111,
+          {
+            "quantity": 13
+          }
+        ]
+      }
+    },
+    {
+      "email": 16
+    },
+    {
+      "email": "Abundant"
+    },
+    {
+      "email": [
+        16,
+        17
+      ]
+    },
+    {
+      "email": null
+    },
+    {
+      "email": {
+        "size": 15,
+        "index": "Couple"
+      }
+    }
+  ]
+}
