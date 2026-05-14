@@ -166,7 +166,28 @@
 				"$size": 0
 			}
 		},
-		"documents": []
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
 	},
 	{
 		"id": "lJXid7s26NOb",
@@ -366,5 +387,373 @@
 			}
 		},
 		"documents": []
+	},
+	{
+		"id": "ogVtVttDiD4T",
+		"operation": {
+			"scores": {
+				"$all": [
+					{
+						"$elemMatch": {
+							"score": {
+								"$gte": 90
+							}
+						}
+					}
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			5,
+			6,
+			7,
+			9,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18
+		]
+	},
+	{
+		"id": "r2x2VVgYHIng",
+		"operation": {
+			"name": {
+				"$all": [
+					"Alice"
+				]
+			}
+		},
+		"documents": [
+			4,
+			14,
+			15,
+			18
+		]
+	},
+	{
+		"id": "ihHnmjD0q6VL",
+		"operation": {
+			"tags": {
+				"$all": [
+					null
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "pMvVHI46wTQN",
+		"operation": {
+			"tags": {
+				"$all": [
+					"javascript",
+					"javascript"
+				]
+			}
+		},
+		"documents": [
+			2,
+			5,
+			11,
+			12,
+			14
+		]
+	},
+	{
+		"id": "qPQPMwLHotwo",
+		"operation": {
+			"scores": {
+				"$elemMatch": {
+					"$or": [
+						{
+							"score": {
+								"$lt": 65
+							}
+						},
+						{
+							"score": {
+								"$gt": 95
+							}
+						}
+					]
+				}
+			}
+		},
+		"documents": [
+			2,
+			5,
+			6,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18
+		]
+	},
+	{
+		"id": "n6rn3drYtWYH",
+		"operation": {
+			"scores": {
+				"$elemMatch": {
+					"subject": {
+						"$exists": false
+					}
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "qsiEDXET3Dyx",
+		"operation": {
+			"scores": {
+				"$elemMatch": {
+					"subject": {
+						"$regex": "^m"
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			2,
+			6,
+			7,
+			9,
+			10,
+			12,
+			13,
+			15,
+			17,
+			20
+		]
+	},
+	{
+		"id": "p6fqWwgOaXY9",
+		"operation": {
+			"scores": {
+				"$elemMatch": {
+					"score": {
+						"$not": {
+							"$gte": 80
+						}
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			2,
+			4,
+			5,
+			6,
+			8,
+			9,
+			10,
+			11,
+			12,
+			14,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "brEHxAO5qArM",
+		"operation": {
+			"name": {
+				"$elemMatch": {
+					"$gt": "A"
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "oHPKY2gPQYc8",
+		"operation": {
+			"emptyArray": {
+				"$size": 0
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "wdJM9P2XNvAr",
+		"operation": {
+			"nonExistent": {
+				"$size": 0
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "e40PXGZQy01w",
+		"operation": {
+			"permissions": {
+				"$size": 1
+			}
+		},
+		"documents": [
+			3,
+			5,
+			7,
+			9,
+			12,
+			15,
+			19
+		]
+	},
+	{
+		"id": "cBO8L7njB71n",
+		"operation": {
+			"scores": {
+				"$size": 2
+			}
+		},
+		"documents": [
+			3,
+			8,
+			13,
+			20
+		]
+	},
+	{
+		"id": "suJZfJv62bth",
+		"operation": {
+			"tags.0": "javascript"
+		},
+		"documents": [
+			5,
+			11,
+			14
+		]
+	},
+	{
+		"id": "kJkV8IdKpy0t",
+		"operation": {
+			"scores.0.subject": "math"
+		},
+		"documents": [
+			1,
+			7,
+			9,
+			10,
+			20
+		]
+	},
+	{
+		"id": "j2LcEFzbd083",
+		"operation": {
+			"scores.score": {
+				"$gte": 95
+			}
+		},
+		"documents": [
+			2,
+			5,
+			6,
+			7,
+			9,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			18
+		]
+	},
+	{
+		"id": "uyXmwLGoFqU2",
+		"operation": {
+			"scores.subject": "math"
+		},
+		"documents": [
+			1,
+			2,
+			6,
+			7,
+			9,
+			10,
+			12,
+			13,
+			15,
+			17,
+			20
+		]
+	},
+	{
+		"id": "bW9B6QwnF5d1",
+		"operation": {
+			"scores": {
+				"$elemMatch": {
+					"subject": "math",
+					"score": {
+						"$gte": 90
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			2,
+			7,
+			13
+		]
+	},
+	{
+		"id": "vW955KXRzaI8",
+		"operation": {
+			"scores.subject": "math",
+			"scores.score": {
+				"$gte": 90
+			}
+		},
+		"documents": [
+			1,
+			2,
+			6,
+			7,
+			9,
+			12,
+			13,
+			15,
+			17
+		]
 	}
 ]
