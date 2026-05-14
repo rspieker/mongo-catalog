@@ -1,1113 +1,1985 @@
 [
 	{
-		"id": "vvN6wVQ1xGMy",
+		"id": "wgV9SHU7TPrX",
 		"operation": {
 			"$expr": {
-				"$and": [
-					{
-						"$eq": [
-							"$age",
-							17
-						]
-					}
+				"$gt": [
+					"$a",
+					0
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			21,
+			22,
+			23
+		]
+	},
+	{
+		"id": "qFVwHcf2PHIi",
+		"operation": {
+			"$expr": {
+				"$gte": [
+					"$a",
+					0
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			21,
+			22,
+			23
+		]
+	},
+	{
+		"id": "kMfjSUPWuF9S",
+		"operation": {
+			"$expr": {
+				"$lt": [
+					"$a",
+					0
+				]
+			}
+		},
+		"documents": [
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			17,
+			18,
+			19,
+			20,
+			24,
+			25
+		]
+	},
+	{
+		"id": "qtDBQqmvOBno",
+		"operation": {
+			"$expr": {
+				"$lte": [
+					"$a",
+					0
+				]
+			}
+		},
+		"documents": [
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			17,
+			18,
+			19,
+			20,
+			24,
+			25
+		]
+	},
+	{
+		"id": "oxRxt39FhZ6n",
+		"operation": {
+			"$expr": {
+				"$eq": [
+					"$a",
+					"$b"
 				]
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "oMvTkA97vGrJ",
+		"id": "eJhETlof72jy",
 		"operation": {
 			"$expr": {
-				"$and": [
-					{
-						"$eq": [
-							"$username",
-							"Double"
-						]
-					},
-					{
-						"$eq": [
-							"$name",
-							"Abundant"
-						]
-					}
-				]
-			},
-			"$or": [
-				{
-					"title": "Couple"
-				},
-				{
-					"title": "Each"
-				}
-			]
-		},
-		"documents": [
-			"6a05fa8fed64c6974957b30a"
-		]
-	},
-	{
-		"id": "qHiIwI6TKpia",
-		"operation": {
-			"$expr": {
-				"$in": [
-					"$email",
-					[
-						"Abundant",
-						"Double"
-					]
+				"$ne": [
+					"$a",
+					"$b"
 				]
 			}
 		},
 		"documents": [
-			"6a05fa8fed64c6974957b30b"
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
 		]
 	},
 	{
-		"id": "pF9jtgBQAp25",
+		"id": "cVJO8zW42qLV",
 		"operation": {
 			"$expr": {
-				"$eq": [
-					"$weight",
-					35
+				"$abs": "$a"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "sIjtjUPWmnST",
+		"operation": {
+			"$expr": {
+				"$abs": "$b"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "vEvHLVRN0439",
+		"operation": {
+			"$expr": {
+				"$abs": "$c"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "oS30E8Ja1aLh",
+		"operation": {
+			"$expr": {
+				"$abs": "$d"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "brHQXMubAfk5",
+		"operation": {
+			"$expr": {
+				"$abs": "$e"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			7,
+			8,
+			9,
+			10,
+			11,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "c6rd1whPOncl",
+		"operation": {
+			"$expr": {
+				"$add": [
+					"$a",
+					"$b"
 				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "pjs6qqZSlY5I",
+		"operation": {
+			"$expr": {
+				"$add": [
+					"$a",
+					"$b",
+					"$c"
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "qAPPH3LiIDjs",
+		"operation": {
+			"$expr": {
+				"$add": [
+					"$a",
+					10
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "m40Vz3MDjxmW",
+		"operation": {
+			"$expr": {
+				"$add": [
+					1,
+					2,
+					3
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "snukOvveRB8E",
+		"operation": {
+			"$expr": {
+				"$ceil": "$a"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "otE7v6y20N31",
+		"operation": {
+			"$expr": {
+				"$ceil": "$d"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "lHOQNIlOLKHS",
+		"operation": {
+			"$expr": {
+				"$ceil": -1.5
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "fdvmSv09g4Yv",
+		"operation": {
+			"$expr": {
+				"$divide": [
+					"$a",
+					"$c"
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "mP3q2SNlySKe",
+		"operation": {
+			"$expr": {
+				"$divide": [
+					"$b",
+					2
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "wCrgEiqy3UMQ",
+		"operation": {
+			"$expr": {
+				"$divide": [
+					100,
+					"$c"
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "fNzRuRWMckWm",
+		"operation": {
+			"$expr": {
+				"$exp": "$c"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "puXqEgyUCRWp",
+		"operation": {
+			"$expr": {
+				"$exp": 1
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "uBTXupKLnZUX",
+		"operation": {
+			"$expr": {
+				"$exp": 0
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "sDJhnJSCIOGf",
+		"operation": {
+			"$expr": {
+				"$floor": "$a"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "vNovU9V6HDUR",
+		"operation": {
+			"$expr": {
+				"$floor": "$d"
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "rSHLuz1tPZXq",
+		"id": "oA2T3EZta2bN",
 		"operation": {
 			"$expr": {
-				"$eq": [
-					"$rank",
-					"$level"
+				"$floor": -1.5
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "sm5KFKgzm9Kx",
+		"operation": {
+			"$expr": {
+				"$ln": "$c"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "rMDZHc3Mq5I8",
+		"operation": {
+			"$expr": {
+				"$ln": 1
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "adjZ5qUjeYMJ",
+		"operation": {
+			"$expr": {
+				"$ln": 2.718
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "iHwQOW3Ay9vi",
+		"operation": {
+			"$expr": {
+				"$log": [
+					"$c",
+					2
 				]
 			}
 		},
 		"documents": [
-			"6a05fa8fed64c6974957b309",
-			"6a05fa8fed64c6974957b30a",
-			"6a05fa8fed64c6974957b31c",
-			"6a05fa8fed64c6974957b31d",
-			"6a05fa8fed64c6974957b31e",
-			"6a05fa8fed64c6974957b31f",
-			"6a05fa8fed64c6974957b320",
-			"6a05fa8fed64c6974957b321",
-			"6a05fa8fed64c6974957b322",
-			"6a05fa8fed64c6974957b323",
-			"6a05fa8fed64c6974957b324"
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
 		]
 	},
 	{
-		"id": "tYKEZwJJDTRy",
+		"id": "tL5xrSOLN0OF",
 		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							"$rank",
-							"$level"
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": 7
-					}
-				}
-			]
+			"$expr": {
+				"$log": [
+					100,
+					10
+				]
+			}
 		},
 		"documents": [
-			"6a05fa8fed64c6974957b309",
-			"6a05fa8fed64c6974957b30a",
-			"6a05fa8fed64c6974957b31c",
-			"6a05fa8fed64c6974957b31d",
-			"6a05fa8fed64c6974957b31e",
-			"6a05fa8fed64c6974957b31f",
-			"6a05fa8fed64c6974957b320",
-			"6a05fa8fed64c6974957b321",
-			"6a05fa8fed64c6974957b322",
-			"6a05fa8fed64c6974957b323",
-			"6a05fa8fed64c6974957b324"
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
 		]
 	},
 	{
-		"id": "t4ZEZTvP6eVZ",
+		"id": "dQ20tfKaGNWv",
 		"operation": {
-			"grade": {
-				"$elemMatch": {
-					"$expr": {
-						"$eq": [
-							"$rank",
-							"$level"
-						]
-					}
-				}
+			"$expr": {
+				"$log": [
+					"$a",
+					"$c"
+				]
 			}
 		},
 		"error": {
-			"message": "$expr can only be applied to the top-level document",
+			"message": "Executor error during find command :: caused by :: $log's argument must be a positive number, but is -38",
+			"code": 28758,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uYdTWNMbGcIc",
+		"operation": {
+			"$expr": {
+				"$log10": "$c"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "ajEUESSuGXjd",
+		"operation": {
+			"$expr": {
+				"$log10": 100
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "iJpVuKG4UR7A",
+		"operation": {
+			"$expr": {
+				"$log10": 1
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "vLgvn4HCGBoN",
+		"operation": {
+			"$expr": {
+				"$multiply": [
+					"$a",
+					"$b"
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "nASriLJrPsDL",
+		"operation": {
+			"$expr": {
+				"$multiply": [
+					"$a",
+					"$b",
+					"$c"
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "ojz5G2zo5O0h",
+		"operation": {
+			"$expr": {
+				"$multiply": [
+					2,
+					3,
+					4
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "t8kc2Sx4FE5p",
+		"operation": {
+			"$expr": {
+				"$pow": [
+					"$c",
+					2
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "gVRyTzwUL0eO",
+		"operation": {
+			"$expr": {
+				"$pow": [
+					2,
+					"$c"
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "kIqrrFKKABDI",
+		"operation": {
+			"$expr": {
+				"$pow": [
+					"$a",
+					2
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "dKME3pXqJRJU",
+		"operation": {
+			"$expr": {
+				"$sqrt": "$c"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "sMFk07XvhZcD",
+		"operation": {
+			"$expr": {
+				"$sqrt": 16
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "vQ5hyTgKt55a",
+		"operation": {
+			"$expr": {
+				"$sqrt": "$a"
+			}
+		},
+		"error": {
+			"message": "Executor error during find command :: caused by :: $sqrt's argument must be greater than or equal to 0",
+			"code": 28714,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wcfVXTcxf4cl",
+		"operation": {
+			"$expr": {
+				"$subtract": [
+					"$a",
+					"$b"
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "eyWlFfCWxar0",
+		"operation": {
+			"$expr": {
+				"$subtract": [
+					"$b",
+					"$a"
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "lxnOqG1RMiwY",
+		"operation": {
+			"$expr": {
+				"$subtract": [
+					100,
+					"$c"
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "vZGaTGWNTI1C",
+		"operation": {
+			"$expr": {
+				"$trunc": "$a"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "rIRdgeQsrPQt",
+		"operation": {
+			"$expr": {
+				"$trunc": "$d"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "e3vTGEX3y3PN",
+		"operation": {
+			"$expr": {
+				"$trunc": -1.9
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "lOiA9gDBD0t7",
+		"operation": {
+			"$expr": {
+				"$abs": "$f.x"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			12,
+			13,
+			15,
+			17,
+			18,
+			19,
+			20,
+			21,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "fshykLDbDAKK",
+		"operation": {
+			"$expr": {
+				"$add": [
+					"$f.x",
+					"$f.y"
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			12,
+			13,
+			15,
+			17,
+			18,
+			19,
+			20,
+			21,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "bGW3Rg22SkJk",
+		"operation": {
+			"$expr": {
+				"$divide": [
+					"$f.x",
+					"$f.y"
+				]
+			}
+		},
+		"error": {
+			"message": "Executor error during find command :: caused by :: can't $divide by zero",
 			"code": 2,
 			"type": "MongoServerError"
 		}
 	},
 	{
-		"id": "k0PYXD4rVqrn",
+		"id": "cKum0GnrJVUd",
 		"operation": {
-			"grade": {
-				"$_internalSchemaObjectMatch": {
-					"$expr": {
-						"$eq": [
-							"$rank",
-							"$level"
-						]
-					}
-				}
+			"$expr": {
+				"$divide": [
+					"$a",
+					0
+				]
 			}
 		},
 		"error": {
-			"message": "$expr can only be applied to the top-level document",
+			"message": "Executor error during find command :: caused by :: can't $divide by zero",
 			"code": 2,
 			"type": "MongoServerError"
 		}
 	},
 	{
-		"id": "wmknGGHvRUfw",
+		"id": "fiLsKMpqVmEo",
 		"operation": {
 			"$expr": {
-				"$and": [
-					{
-						"$eq": [
-							"$age",
-							null
-						]
-					}
+				"$divide": [
+					"$string",
+					1
 				]
-			}
-		},
-		"documents": [
-			"6a05fa8fed64c6974957b324"
-		]
-	},
-	{
-		"id": "dz4Q1YMZ9Q3Q",
-		"operation": {
-			"$expr": {
-				"$and": [
-					{
-						"$eq": [
-							"$age",
-							"value"
-						]
-					}
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "pOmXLo2oVgGj",
-		"operation": {
-			"$expr": {
-				"$and": [
-					{
-						"$eq": [
-							"$age",
-							true
-						]
-					}
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "mUFIn1QfdhUS",
-		"operation": {
-			"$expr": {
-				"$and": [
-					{
-						"$eq": [
-							null,
-							17
-						]
-					}
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "txHAbJJADRF1",
-		"operation": {
-			"$expr": {
-				"$and": [
-					{
-						"$eq": [
-							42,
-							17
-						]
-					}
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "jpJ3K3s1BP0z",
-		"operation": {
-			"$expr": {
-				"$and": [
-					{
-						"$eq": [
-							true,
-							17
-						]
-					}
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "dqqUcnNEstQ6",
-		"operation": {
-			"$expr": {
-				"$and": [
-					{
-						"$eq": [
-							null,
-							null
-						]
-					},
-					{
-						"$eq": [
-							null,
-							null
-						]
-					}
-				]
-			},
-			"$or": [
-				{
-					"title": null
-				},
-				{
-					"title": null
-				}
-			]
-		},
-		"documents": [
-			"6a05fa8fed64c6974957b30b",
-			"6a05fa8fed64c6974957b30c",
-			"6a05fa8fed64c6974957b30d",
-			"6a05fa8fed64c6974957b30e",
-			"6a05fa8fed64c6974957b30f",
-			"6a05fa8fed64c6974957b310",
-			"6a05fa8fed64c6974957b311",
-			"6a05fa8fed64c6974957b312",
-			"6a05fa8fed64c6974957b313",
-			"6a05fa8fed64c6974957b314",
-			"6a05fa8fed64c6974957b315",
-			"6a05fa8fed64c6974957b316",
-			"6a05fa8fed64c6974957b317",
-			"6a05fa8fed64c6974957b318",
-			"6a05fa8fed64c6974957b319",
-			"6a05fa8fed64c6974957b31a",
-			"6a05fa8fed64c6974957b31b",
-			"6a05fa8fed64c6974957b31c",
-			"6a05fa8fed64c6974957b31d",
-			"6a05fa8fed64c6974957b31e",
-			"6a05fa8fed64c6974957b31f",
-			"6a05fa8fed64c6974957b320",
-			"6a05fa8fed64c6974957b321",
-			"6a05fa8fed64c6974957b322",
-			"6a05fa8fed64c6974957b323",
-			"6a05fa8fed64c6974957b324"
-		]
-	},
-	{
-		"id": "k2RVLydKzLJP",
-		"operation": {
-			"$expr": {
-				"$and": [
-					{
-						"$eq": [
-							42,
-							42
-						]
-					},
-					{
-						"$eq": [
-							42,
-							42
-						]
-					}
-				]
-			},
-			"$or": [
-				{
-					"title": 42
-				},
-				{
-					"title": 42
-				}
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "rfhPAWpv0S3v",
-		"operation": {
-			"$expr": {
-				"$and": [
-					{
-						"$eq": [
-							true,
-							true
-						]
-					},
-					{
-						"$eq": [
-							true,
-							true
-						]
-					}
-				]
-			},
-			"$or": [
-				{
-					"title": true
-				},
-				{
-					"title": true
-				}
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "bWF9hzoN1uFu",
-		"operation": {
-			"$expr": {
-				"$in": "active"
 			}
 		},
 		"error": {
-			"message": "Expression $in takes exactly 2 arguments. 1 were passed in.",
+			"message": "Executor error during find command :: caused by :: $divide only supports numeric types, not string and int",
+			"code": 14,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "lzxYJjIQlFG1",
+		"operation": {
+			"$expr": {
+				"$ln": 0
+			}
+		},
+		"error": {
+			"message": "Failed to optimize expression :: caused by :: $ln's argument must be a positive number, but is 0",
+			"code": 28766,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "dRtTaJthPjUt",
+		"operation": {
+			"$expr": {
+				"$ln": -1
+			}
+		},
+		"error": {
+			"message": "Failed to optimize expression :: caused by :: $ln's argument must be a positive number, but is -1",
+			"code": 28766,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "byKjwyxyI0MO",
+		"operation": {
+			"$expr": {
+				"$sqrt": -1
+			}
+		},
+		"error": {
+			"message": "Failed to optimize expression :: caused by :: $sqrt's argument must be greater than or equal to 0",
+			"code": 28714,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uo3XCeJNtkxX",
+		"operation": {
+			"$expr": {
+				"$log": [
+					"$a",
+					0
+				]
+			}
+		},
+		"error": {
+			"message": "Executor error during find command :: caused by :: $log's base must be a positive number not equal to 1, but is 0",
+			"code": 28759,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wCLn23FHqrZU",
+		"operation": {
+			"$expr": {
+				"$log": [
+					"$a",
+					-1
+				]
+			}
+		},
+		"error": {
+			"message": "Executor error during find command :: caused by :: $log's base must be a positive number not equal to 1, but is -1",
+			"code": 28759,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vin79y3UQZHP",
+		"operation": {
+			"$expr": {
+				"$add": []
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "bCjdQgVLMp3G",
+		"operation": {
+			"$expr": {
+				"$multiply": []
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "uDOw4JurBURT",
+		"operation": {
+			"$expr": {
+				"$divide": [
+					"$a"
+				]
+			}
+		},
+		"error": {
+			"message": "Expression $divide takes exactly 2 arguments. 1 were passed in.",
 			"code": 16020,
 			"type": "MongoServerError"
 		}
 	},
 	{
-		"id": "v3qNIN3y4eZw",
+		"id": "l0SN1FEtn43E",
 		"operation": {
 			"$expr": {
-				"$in": [
-					null,
-					[
-						null,
-						null
-					]
+				"$log": [
+					"$a"
 				]
 			}
 		},
-		"documents": [
-			"6a05fa8fed64c6974957b309",
-			"6a05fa8fed64c6974957b30a",
-			"6a05fa8fed64c6974957b30b",
-			"6a05fa8fed64c6974957b30c",
-			"6a05fa8fed64c6974957b30d",
-			"6a05fa8fed64c6974957b30e",
-			"6a05fa8fed64c6974957b30f",
-			"6a05fa8fed64c6974957b310",
-			"6a05fa8fed64c6974957b311",
-			"6a05fa8fed64c6974957b312",
-			"6a05fa8fed64c6974957b313",
-			"6a05fa8fed64c6974957b314",
-			"6a05fa8fed64c6974957b315",
-			"6a05fa8fed64c6974957b316",
-			"6a05fa8fed64c6974957b317",
-			"6a05fa8fed64c6974957b318",
-			"6a05fa8fed64c6974957b319",
-			"6a05fa8fed64c6974957b31a",
-			"6a05fa8fed64c6974957b31b",
-			"6a05fa8fed64c6974957b31c",
-			"6a05fa8fed64c6974957b31d",
-			"6a05fa8fed64c6974957b31e",
-			"6a05fa8fed64c6974957b31f",
-			"6a05fa8fed64c6974957b320",
-			"6a05fa8fed64c6974957b321",
-			"6a05fa8fed64c6974957b322",
-			"6a05fa8fed64c6974957b323",
-			"6a05fa8fed64c6974957b324"
-		]
+		"error": {
+			"message": "Expression $log takes exactly 2 arguments. 1 were passed in.",
+			"code": 16020,
+			"type": "MongoServerError"
+		}
 	},
 	{
-		"id": "iAbTEh3ARRmW",
+		"id": "kJZtsG7IWZZK",
 		"operation": {
 			"$expr": {
-				"$in": [
-					42,
-					[
-						42,
-						42
-					]
+				"$abs": "$string"
+			}
+		},
+		"error": {
+			"message": "Executor error during find command :: caused by :: $abs only supports numeric types, not string",
+			"code": 28765,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pg7niQFDEJCW",
+		"operation": {
+			"$expr": {
+				"$abs": "$bool"
+			}
+		},
+		"error": {
+			"message": "Executor error during find command :: caused by :: $abs only supports numeric types, not bool",
+			"code": 28765,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qJc8fJ33N9i9",
+		"operation": {
+			"$expr": {
+				"$add": [
+					"$a",
+					"$string"
 				]
 			}
 		},
-		"documents": [
-			"6a05fa8fed64c6974957b309",
-			"6a05fa8fed64c6974957b30a",
-			"6a05fa8fed64c6974957b30b",
-			"6a05fa8fed64c6974957b30c",
-			"6a05fa8fed64c6974957b30d",
-			"6a05fa8fed64c6974957b30e",
-			"6a05fa8fed64c6974957b30f",
-			"6a05fa8fed64c6974957b310",
-			"6a05fa8fed64c6974957b311",
-			"6a05fa8fed64c6974957b312",
-			"6a05fa8fed64c6974957b313",
-			"6a05fa8fed64c6974957b314",
-			"6a05fa8fed64c6974957b315",
-			"6a05fa8fed64c6974957b316",
-			"6a05fa8fed64c6974957b317",
-			"6a05fa8fed64c6974957b318",
-			"6a05fa8fed64c6974957b319",
-			"6a05fa8fed64c6974957b31a",
-			"6a05fa8fed64c6974957b31b",
-			"6a05fa8fed64c6974957b31c",
-			"6a05fa8fed64c6974957b31d",
-			"6a05fa8fed64c6974957b31e",
-			"6a05fa8fed64c6974957b31f",
-			"6a05fa8fed64c6974957b320",
-			"6a05fa8fed64c6974957b321",
-			"6a05fa8fed64c6974957b322",
-			"6a05fa8fed64c6974957b323",
-			"6a05fa8fed64c6974957b324"
-		]
+		"error": {
+			"message": "Executor error during find command :: caused by :: $add only supports numeric or date types, not string",
+			"code": 14,
+			"type": "MongoServerError"
+		}
 	},
 	{
-		"id": "nuHdJXdwJ6Sf",
+		"id": "t3450NnxzibM",
 		"operation": {
 			"$expr": {
-				"$in": [
-					true,
-					[
-						true,
-						true
-					]
-				]
+				"$ceil": "$string"
 			}
 		},
-		"documents": [
-			"6a05fa8fed64c6974957b309",
-			"6a05fa8fed64c6974957b30a",
-			"6a05fa8fed64c6974957b30b",
-			"6a05fa8fed64c6974957b30c",
-			"6a05fa8fed64c6974957b30d",
-			"6a05fa8fed64c6974957b30e",
-			"6a05fa8fed64c6974957b30f",
-			"6a05fa8fed64c6974957b310",
-			"6a05fa8fed64c6974957b311",
-			"6a05fa8fed64c6974957b312",
-			"6a05fa8fed64c6974957b313",
-			"6a05fa8fed64c6974957b314",
-			"6a05fa8fed64c6974957b315",
-			"6a05fa8fed64c6974957b316",
-			"6a05fa8fed64c6974957b317",
-			"6a05fa8fed64c6974957b318",
-			"6a05fa8fed64c6974957b319",
-			"6a05fa8fed64c6974957b31a",
-			"6a05fa8fed64c6974957b31b",
-			"6a05fa8fed64c6974957b31c",
-			"6a05fa8fed64c6974957b31d",
-			"6a05fa8fed64c6974957b31e",
-			"6a05fa8fed64c6974957b31f",
-			"6a05fa8fed64c6974957b320",
-			"6a05fa8fed64c6974957b321",
-			"6a05fa8fed64c6974957b322",
-			"6a05fa8fed64c6974957b323",
-			"6a05fa8fed64c6974957b324"
-		]
+		"error": {
+			"message": "Executor error during find command :: caused by :: $ceil only supports numeric types, not string",
+			"code": 28765,
+			"type": "MongoServerError"
+		}
 	},
 	{
-		"id": "nvRd7maPTpAE",
+		"id": "ipOL272Mc2bZ",
 		"operation": {
 			"$expr": {
-				"$eq": [
-					"$weight",
-					null
+				"$ln": "$string"
+			}
+		},
+		"error": {
+			"message": "Executor error during find command :: caused by :: $ln only supports numeric types, not string",
+			"code": 28765,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "jxNYIxbw30XV",
+		"operation": {
+			"$expr": {
+				"$abs": "$null"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "ly9V64nL8vYc",
+		"operation": {
+			"$expr": {
+				"$add": [
+					"$a",
+					"$null"
 				]
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "vzMgh0YDdKQa",
+		"id": "u4WKOCrSWRGP",
 		"operation": {
 			"$expr": {
-				"$eq": [
-					"$weight",
-					"value"
-				]
+				"$abs": "$undefined"
 			}
 		},
 		"documents": []
-	},
-	{
-		"id": "wIJJMVryxb7z",
-		"operation": {
-			"$expr": {
-				"$eq": [
-					"$weight",
-					true
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "fx5Q4WC9KPYo",
-		"operation": {
-			"$expr": {
-				"$eq": [
-					null,
-					35
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "mWAhB2CKIW8j",
-		"operation": {
-			"$expr": {
-				"$eq": [
-					42,
-					35
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "rMCEOPD0L753",
-		"operation": {
-			"$expr": {
-				"$eq": [
-					true,
-					35
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "rx0Lvr2gNLne",
-		"operation": {
-			"$expr": {
-				"$eq": [
-					null,
-					null
-				]
-			}
-		},
-		"documents": [
-			"6a05fa8fed64c6974957b309",
-			"6a05fa8fed64c6974957b30a",
-			"6a05fa8fed64c6974957b30b",
-			"6a05fa8fed64c6974957b30c",
-			"6a05fa8fed64c6974957b30d",
-			"6a05fa8fed64c6974957b30e",
-			"6a05fa8fed64c6974957b30f",
-			"6a05fa8fed64c6974957b310",
-			"6a05fa8fed64c6974957b311",
-			"6a05fa8fed64c6974957b312",
-			"6a05fa8fed64c6974957b313",
-			"6a05fa8fed64c6974957b314",
-			"6a05fa8fed64c6974957b315",
-			"6a05fa8fed64c6974957b316",
-			"6a05fa8fed64c6974957b317",
-			"6a05fa8fed64c6974957b318",
-			"6a05fa8fed64c6974957b319",
-			"6a05fa8fed64c6974957b31a",
-			"6a05fa8fed64c6974957b31b",
-			"6a05fa8fed64c6974957b31c",
-			"6a05fa8fed64c6974957b31d",
-			"6a05fa8fed64c6974957b31e",
-			"6a05fa8fed64c6974957b31f",
-			"6a05fa8fed64c6974957b320",
-			"6a05fa8fed64c6974957b321",
-			"6a05fa8fed64c6974957b322",
-			"6a05fa8fed64c6974957b323",
-			"6a05fa8fed64c6974957b324"
-		]
-	},
-	{
-		"id": "nJm31O1ArvZe",
-		"operation": {
-			"$expr": {
-				"$eq": [
-					42,
-					42
-				]
-			}
-		},
-		"documents": [
-			"6a05fa8fed64c6974957b309",
-			"6a05fa8fed64c6974957b30a",
-			"6a05fa8fed64c6974957b30b",
-			"6a05fa8fed64c6974957b30c",
-			"6a05fa8fed64c6974957b30d",
-			"6a05fa8fed64c6974957b30e",
-			"6a05fa8fed64c6974957b30f",
-			"6a05fa8fed64c6974957b310",
-			"6a05fa8fed64c6974957b311",
-			"6a05fa8fed64c6974957b312",
-			"6a05fa8fed64c6974957b313",
-			"6a05fa8fed64c6974957b314",
-			"6a05fa8fed64c6974957b315",
-			"6a05fa8fed64c6974957b316",
-			"6a05fa8fed64c6974957b317",
-			"6a05fa8fed64c6974957b318",
-			"6a05fa8fed64c6974957b319",
-			"6a05fa8fed64c6974957b31a",
-			"6a05fa8fed64c6974957b31b",
-			"6a05fa8fed64c6974957b31c",
-			"6a05fa8fed64c6974957b31d",
-			"6a05fa8fed64c6974957b31e",
-			"6a05fa8fed64c6974957b31f",
-			"6a05fa8fed64c6974957b320",
-			"6a05fa8fed64c6974957b321",
-			"6a05fa8fed64c6974957b322",
-			"6a05fa8fed64c6974957b323",
-			"6a05fa8fed64c6974957b324"
-		]
-	},
-	{
-		"id": "tVM1ZlMNA5DJ",
-		"operation": {
-			"$expr": {
-				"$eq": [
-					true,
-					true
-				]
-			}
-		},
-		"documents": [
-			"6a05fa8fed64c6974957b309",
-			"6a05fa8fed64c6974957b30a",
-			"6a05fa8fed64c6974957b30b",
-			"6a05fa8fed64c6974957b30c",
-			"6a05fa8fed64c6974957b30d",
-			"6a05fa8fed64c6974957b30e",
-			"6a05fa8fed64c6974957b30f",
-			"6a05fa8fed64c6974957b310",
-			"6a05fa8fed64c6974957b311",
-			"6a05fa8fed64c6974957b312",
-			"6a05fa8fed64c6974957b313",
-			"6a05fa8fed64c6974957b314",
-			"6a05fa8fed64c6974957b315",
-			"6a05fa8fed64c6974957b316",
-			"6a05fa8fed64c6974957b317",
-			"6a05fa8fed64c6974957b318",
-			"6a05fa8fed64c6974957b319",
-			"6a05fa8fed64c6974957b31a",
-			"6a05fa8fed64c6974957b31b",
-			"6a05fa8fed64c6974957b31c",
-			"6a05fa8fed64c6974957b31d",
-			"6a05fa8fed64c6974957b31e",
-			"6a05fa8fed64c6974957b31f",
-			"6a05fa8fed64c6974957b320",
-			"6a05fa8fed64c6974957b321",
-			"6a05fa8fed64c6974957b322",
-			"6a05fa8fed64c6974957b323",
-			"6a05fa8fed64c6974957b324"
-		]
-	},
-	{
-		"id": "azRIswYSx809",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							"$rank",
-							"$level"
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": null
-					}
-				}
-			]
-		},
-		"documents": [
-			"6a05fa8fed64c6974957b309",
-			"6a05fa8fed64c6974957b30a",
-			"6a05fa8fed64c6974957b31c",
-			"6a05fa8fed64c6974957b31d",
-			"6a05fa8fed64c6974957b31e",
-			"6a05fa8fed64c6974957b31f",
-			"6a05fa8fed64c6974957b320",
-			"6a05fa8fed64c6974957b321",
-			"6a05fa8fed64c6974957b322",
-			"6a05fa8fed64c6974957b323",
-			"6a05fa8fed64c6974957b324"
-		]
-	},
-	{
-		"id": "j6QK40zSZAiL",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							"$rank",
-							"$level"
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": "value"
-					}
-				}
-			]
-		},
-		"documents": [
-			"6a05fa8fed64c6974957b309",
-			"6a05fa8fed64c6974957b30a",
-			"6a05fa8fed64c6974957b31c",
-			"6a05fa8fed64c6974957b31d",
-			"6a05fa8fed64c6974957b31e",
-			"6a05fa8fed64c6974957b31f",
-			"6a05fa8fed64c6974957b320",
-			"6a05fa8fed64c6974957b321",
-			"6a05fa8fed64c6974957b322",
-			"6a05fa8fed64c6974957b323",
-			"6a05fa8fed64c6974957b324"
-		]
-	},
-	{
-		"id": "juFTBcXBqASW",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							"$rank",
-							"$level"
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": true
-					}
-				}
-			]
-		},
-		"documents": [
-			"6a05fa8fed64c6974957b309",
-			"6a05fa8fed64c6974957b30a",
-			"6a05fa8fed64c6974957b31c",
-			"6a05fa8fed64c6974957b31d",
-			"6a05fa8fed64c6974957b31e",
-			"6a05fa8fed64c6974957b31f",
-			"6a05fa8fed64c6974957b320",
-			"6a05fa8fed64c6974957b321",
-			"6a05fa8fed64c6974957b322",
-			"6a05fa8fed64c6974957b323",
-			"6a05fa8fed64c6974957b324"
-		]
-	},
-	{
-		"id": "qUJXotX1O3IM",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							null,
-							null
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": 7
-					}
-				}
-			]
-		},
-		"documents": [
-			"6a05fa8fed64c6974957b309",
-			"6a05fa8fed64c6974957b30a",
-			"6a05fa8fed64c6974957b30b",
-			"6a05fa8fed64c6974957b30c",
-			"6a05fa8fed64c6974957b30d",
-			"6a05fa8fed64c6974957b30e",
-			"6a05fa8fed64c6974957b30f",
-			"6a05fa8fed64c6974957b310",
-			"6a05fa8fed64c6974957b311",
-			"6a05fa8fed64c6974957b312",
-			"6a05fa8fed64c6974957b313",
-			"6a05fa8fed64c6974957b314",
-			"6a05fa8fed64c6974957b315",
-			"6a05fa8fed64c6974957b316",
-			"6a05fa8fed64c6974957b317",
-			"6a05fa8fed64c6974957b318",
-			"6a05fa8fed64c6974957b319",
-			"6a05fa8fed64c6974957b31a",
-			"6a05fa8fed64c6974957b31b",
-			"6a05fa8fed64c6974957b31c",
-			"6a05fa8fed64c6974957b31d",
-			"6a05fa8fed64c6974957b31e",
-			"6a05fa8fed64c6974957b31f",
-			"6a05fa8fed64c6974957b320",
-			"6a05fa8fed64c6974957b321",
-			"6a05fa8fed64c6974957b322",
-			"6a05fa8fed64c6974957b323",
-			"6a05fa8fed64c6974957b324"
-		]
-	},
-	{
-		"id": "o2fGxgZ2wj1n",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							42,
-							42
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": 7
-					}
-				}
-			]
-		},
-		"documents": [
-			"6a05fa8fed64c6974957b309",
-			"6a05fa8fed64c6974957b30a",
-			"6a05fa8fed64c6974957b30b",
-			"6a05fa8fed64c6974957b30c",
-			"6a05fa8fed64c6974957b30d",
-			"6a05fa8fed64c6974957b30e",
-			"6a05fa8fed64c6974957b30f",
-			"6a05fa8fed64c6974957b310",
-			"6a05fa8fed64c6974957b311",
-			"6a05fa8fed64c6974957b312",
-			"6a05fa8fed64c6974957b313",
-			"6a05fa8fed64c6974957b314",
-			"6a05fa8fed64c6974957b315",
-			"6a05fa8fed64c6974957b316",
-			"6a05fa8fed64c6974957b317",
-			"6a05fa8fed64c6974957b318",
-			"6a05fa8fed64c6974957b319",
-			"6a05fa8fed64c6974957b31a",
-			"6a05fa8fed64c6974957b31b",
-			"6a05fa8fed64c6974957b31c",
-			"6a05fa8fed64c6974957b31d",
-			"6a05fa8fed64c6974957b31e",
-			"6a05fa8fed64c6974957b31f",
-			"6a05fa8fed64c6974957b320",
-			"6a05fa8fed64c6974957b321",
-			"6a05fa8fed64c6974957b322",
-			"6a05fa8fed64c6974957b323",
-			"6a05fa8fed64c6974957b324"
-		]
-	},
-	{
-		"id": "s467yFGuPNW2",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							true,
-							true
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": 7
-					}
-				}
-			]
-		},
-		"documents": [
-			"6a05fa8fed64c6974957b309",
-			"6a05fa8fed64c6974957b30a",
-			"6a05fa8fed64c6974957b30b",
-			"6a05fa8fed64c6974957b30c",
-			"6a05fa8fed64c6974957b30d",
-			"6a05fa8fed64c6974957b30e",
-			"6a05fa8fed64c6974957b30f",
-			"6a05fa8fed64c6974957b310",
-			"6a05fa8fed64c6974957b311",
-			"6a05fa8fed64c6974957b312",
-			"6a05fa8fed64c6974957b313",
-			"6a05fa8fed64c6974957b314",
-			"6a05fa8fed64c6974957b315",
-			"6a05fa8fed64c6974957b316",
-			"6a05fa8fed64c6974957b317",
-			"6a05fa8fed64c6974957b318",
-			"6a05fa8fed64c6974957b319",
-			"6a05fa8fed64c6974957b31a",
-			"6a05fa8fed64c6974957b31b",
-			"6a05fa8fed64c6974957b31c",
-			"6a05fa8fed64c6974957b31d",
-			"6a05fa8fed64c6974957b31e",
-			"6a05fa8fed64c6974957b31f",
-			"6a05fa8fed64c6974957b320",
-			"6a05fa8fed64c6974957b321",
-			"6a05fa8fed64c6974957b322",
-			"6a05fa8fed64c6974957b323",
-			"6a05fa8fed64c6974957b324"
-		]
-	},
-	{
-		"id": "vxL4dHeV8YAX",
-		"operation": {
-			"grade": {
-				"$elemMatch": 42
-			}
-		},
-		"error": {
-			"message": "$elemMatch needs an Object",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "jsnjqHLh4MQD",
-		"operation": {
-			"grade": {
-				"$elemMatch": {
-					"$expr": {
-						"$eq": [
-							null,
-							null
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$expr can only be applied to the top-level document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "fDtgviOXhOdP",
-		"operation": {
-			"grade": {
-				"$elemMatch": {
-					"$expr": {
-						"$eq": [
-							42,
-							42
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$expr can only be applied to the top-level document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "fZ3HgbtDUHoS",
-		"operation": {
-			"grade": {
-				"$elemMatch": {
-					"$expr": {
-						"$eq": [
-							true,
-							true
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$expr can only be applied to the top-level document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "k0jr6mcGUA1i",
-		"operation": {
-			"grade": {
-				"$_internalSchemaObjectMatch": {
-					"$expr": {
-						"$eq": [
-							null,
-							null
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$expr can only be applied to the top-level document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "wOT6zFOxF342",
-		"operation": {
-			"grade": {
-				"$_internalSchemaObjectMatch": {
-					"$expr": {
-						"$eq": [
-							42,
-							42
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$expr can only be applied to the top-level document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "n4rsTQ2DU8T1",
-		"operation": {
-			"grade": {
-				"$_internalSchemaObjectMatch": {
-					"$expr": {
-						"$eq": [
-							true,
-							true
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$expr can only be applied to the top-level document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
 	}
 ]
