@@ -1,0 +1,413 @@
+[
+	{
+		"id": "qfxtwe7szbel",
+		"operation": {
+			"name": {
+				"$mod": [
+					4000000028,
+					28
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "gNF2YnZAcfC5",
+		"operation": {
+			"name": {
+				"$gt": 33,
+				"$mod": [
+					38,
+					29
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "qIt1qmc293FR",
+		"operation": {
+			"username.rank": {
+				"$mod": [
+					6,
+					3
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "leNLGEu4MMEx",
+		"operation": {
+			"username.rank.level": {
+				"$mod": [
+					8,
+					3
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "eBQQOJltKSUL",
+		"operation": {
+			"name": {
+				"$mod": "invalid"
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, needs to be an array",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "nl2QmvVPtVqm",
+		"operation": {
+			"name": {
+				"$mod": [
+					2
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, not enough elements",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "vVdsM1i9XX0B",
+		"operation": {
+			"name": {
+				"$mod": []
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, not enough elements",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "uqZCLQuJHeza",
+		"operation": {
+			"name": {
+				"$mod": [
+					null,
+					null
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, divisor not a number",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "lKxYduzz8D5D",
+		"operation": {
+			"name": {
+				"$mod": [
+					"value",
+					"value"
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, divisor not a number",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "uVUrcO3ErwWI",
+		"operation": {
+			"name": {
+				"$mod": [
+					true,
+					true
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, divisor not a number",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "gauWtHOOi0zR",
+		"operation": {
+			"name": {
+				"$gt": 33,
+				"$mod": "invalid"
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, needs to be an array",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "vkhWZZbQqZf4",
+		"operation": {
+			"name": {
+				"$gt": 33,
+				"$mod": [
+					2
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, not enough elements",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "u7chz6vFJzkU",
+		"operation": {
+			"name": {
+				"$gt": 33,
+				"$mod": []
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, not enough elements",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "uVqOVhPWU4b7",
+		"operation": {
+			"name": {
+				"$gt": null,
+				"$mod": [
+					null,
+					null
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, divisor not a number",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "iJumawSF8f0P",
+		"operation": {
+			"name": {
+				"$gt": "value",
+				"$mod": [
+					"value",
+					"value"
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, divisor not a number",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "oQAY8bdXe7jh",
+		"operation": {
+			"name": {
+				"$gt": true,
+				"$mod": [
+					true,
+					true
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, divisor not a number",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "wn18u0JlDoLI",
+		"operation": {
+			"username.rank": {
+				"$mod": "invalid"
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, needs to be an array",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "mN3KQrMAH62N",
+		"operation": {
+			"username.rank": {
+				"$mod": [
+					2
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, not enough elements",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "pbJDlKxOx4M7",
+		"operation": {
+			"username.rank": {
+				"$mod": []
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, not enough elements",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "dQKDN9EAPSSy",
+		"operation": {
+			"username.rank": {
+				"$mod": [
+					null,
+					null
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, divisor not a number",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "aWIRgyvYL0lo",
+		"operation": {
+			"username.rank": {
+				"$mod": [
+					"value",
+					"value"
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, divisor not a number",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "qv4oRBYby4rp",
+		"operation": {
+			"username.rank": {
+				"$mod": [
+					true,
+					true
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, divisor not a number",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "tlwEXB5vORbj",
+		"operation": {
+			"username.rank.level": {
+				"$mod": "invalid"
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, needs to be an array",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "ssJTyMtBD5ee",
+		"operation": {
+			"username.rank.level": {
+				"$mod": [
+					2
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, not enough elements",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "nUUVwDovLqUA",
+		"operation": {
+			"username.rank.level": {
+				"$mod": []
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, not enough elements",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "cMuCwlPK04RN",
+		"operation": {
+			"username.rank.level": {
+				"$mod": [
+					null,
+					null
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, divisor not a number",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "c7RWEyrwiDu2",
+		"operation": {
+			"username.rank.level": {
+				"$mod": [
+					"value",
+					"value"
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, divisor not a number",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "tGjeXzYNjB6k",
+		"operation": {
+			"username.rank.level": {
+				"$mod": [
+					true,
+					true
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue malformed mod, divisor not a number",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	}
+]

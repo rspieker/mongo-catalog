@@ -1,0 +1,277 @@
+[
+	{
+		"id": "pNb1N9XvEcKK",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$geoWithin": {
+							"$centerSphere": [
+								[
+									182.03531532305314,
+									3.705070368177687
+								],
+								5.145221550434281
+							]
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue bad geo query: { $geoWithin: { $centerSphere: [ [ 182.0353153230531, 3.705070368177687 ], 5.145221550434281 ] } }",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "dJw2XeGpJ1LC",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$geoIntersects": {
+							"$geometry": {
+								"level": "Couple",
+								"rank": [
+									-92.90898701416783,
+									-75.02003547216432
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue bad geo query: { $geoIntersects: { $geometry: { level: \"Couple\", rank: [ -92.90898701416783, -75.02003547216432 ] } } }",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "qf0GR6YJGMaZ",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$geoWithin": {
+							"$centerSphere": [
+								[
+									null,
+									null
+								],
+								null
+							]
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue bad geo query: { $geoWithin: { $centerSphere: [ [ null, null ], null ] } }",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "wPCHFzzVSRbE",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$geoWithin": {
+							"$centerSphere": [
+								[
+									"value",
+									"value"
+								],
+								"value"
+							]
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue bad geo query: { $geoWithin: { $centerSphere: [ [ \"value\", \"value\" ], \"value\" ] } }",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "uIZfXZEk25TJ",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$geoWithin": {
+							"$centerSphere": [
+								[
+									true,
+									true
+								],
+								true
+							]
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue bad geo query: { $geoWithin: { $centerSphere: [ [ true, true ], true ] } }",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "oyBGpPLmhb6t",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$geoIntersects": {
+							"$geometry": {
+								"level": "Couple",
+								"rank": [
+									null,
+									null
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue bad geo query: { $geoIntersects: { $geometry: { level: \"Couple\", rank: [ null, null ] } } }",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "rbVSLpAIGXof",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$geoIntersects": {
+							"$geometry": {
+								"level": "Couple",
+								"rank": [
+									"value",
+									"value"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue bad geo query: { $geoIntersects: { $geometry: { level: \"Couple\", rank: [ \"value\", \"value\" ] } } }",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "mWwwNELOI7Zv",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$geoIntersects": {
+							"$geometry": {
+								"level": "Couple",
+								"rank": [
+									true,
+									true
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue bad geo query: { $geoIntersects: { $geometry: { level: \"Couple\", rank: [ true, true ] } } }",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "aWUXTRZyLZWh",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$geoIntersects": {
+							"$geometry": {
+								"level": null,
+								"rank": [
+									-92.90898701416783,
+									-75.02003547216432
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue bad geo query: { $geoIntersects: { $geometry: { level: null, rank: [ -92.90898701416783, -75.02003547216432 ] } } }",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "pQW5LIpULPLI",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$geoIntersects": {
+							"$geometry": {
+								"level": 42,
+								"rank": [
+									-92.90898701416783,
+									-75.02003547216432
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue bad geo query: { $geoIntersects: { $geometry: { level: 42, rank: [ -92.90898701416783, -75.02003547216432 ] } } }",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "bQ0PjPIx2PkN",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$geoIntersects": {
+							"$geometry": {
+								"level": true,
+								"rank": [
+									-92.90898701416783,
+									-75.02003547216432
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue bad geo query: { $geoIntersects: { $geometry: { level: true, rank: [ -92.90898701416783, -75.02003547216432 ] } } }",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	}
+]
