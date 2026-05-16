@@ -1,0 +1,1230 @@
+[
+	{
+		"id": "oOz0ewr8TCOK",
+		"operation": {},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25,
+			26,
+			27,
+			28,
+			29,
+			30,
+			31,
+			32,
+			33,
+			34,
+			35,
+			36,
+			37
+		]
+	},
+	{
+		"id": "uQypkj2OjIcm",
+		"operation": {
+			"score": null
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25,
+			26,
+			27,
+			28,
+			29,
+			30,
+			31,
+			32,
+			33,
+			34,
+			35,
+			36,
+			37
+		]
+	},
+	{
+		"id": "hLLSCq4KYZc1",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$gte": 1,
+						"$lte": 3
+					},
+					"score": {
+						"$gte": 1,
+						"$lte": 3
+					}
+				},
+				{
+					"age": {
+						"$gte": 2,
+						"$lte": 4
+					},
+					"score": {
+						"$gte": 2,
+						"$lte": 4
+					}
+				},
+				{
+					"age": {
+						"$gte": 2,
+						"$lte": 5
+					},
+					"score": {
+						"$gte": 2,
+						"$lte": 5
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "lvLn5ZuTku0A",
+		"operation": {
+			"scores.0": 27
+		},
+		"documents": [
+			1,
+			2
+		]
+	},
+	{
+		"id": "wf2FawA92Tfp",
+		"operation": {
+			"scores.0": {
+				"$gt": 34
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "lDIWHkbyk8zM",
+		"operation": {
+			"scores.0": {
+				"$lt": 26
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "nN1TIEzDNhZ3",
+		"operation": {
+			"ratings.0": [
+				12,
+				13
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "hwK2pJkM2hOl",
+		"operation": {
+			"ratings.0.0": 13
+		},
+		"documents": []
+	},
+	{
+		"id": "tgRtLrrD0R8F",
+		"operation": {
+			"level": {
+				"count": 3650,
+				"grade": "Abundant"
+			}
+		},
+		"documents": [
+			4
+		]
+	},
+	{
+		"id": "v2hgLvH11yML",
+		"operation": {
+			"counts": {
+				"$gt": 5,
+				"$lt": 8
+			}
+		},
+		"documents": [
+			5
+		]
+	},
+	{
+		"id": "c53wi0TsCcSx",
+		"operation": {
+			"$or": [
+				{
+					"counts": {
+						"$in": [
+							4,
+							5
+						]
+					}
+				},
+				{
+					"capacity": {
+						"$in": [
+							7,
+							8
+						]
+					}
+				}
+			]
+		},
+		"documents": [
+			5
+		]
+	},
+	{
+		"id": "fVLyDGweMVmW",
+		"operation": {
+			"attempts": 14
+		},
+		"documents": []
+	},
+	{
+		"id": "nQ6PhzWRkA6a",
+		"operation": {
+			"name": {
+				"$size": 9
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "uYKfmRhyfPNJ",
+		"operation": {
+			"title.height": {
+				"$size": 14
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "oUWALM6ATZaq",
+		"operation": {
+			"title.height.age": {
+				"$size": 13
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "gtxjtEQUnLgb",
+		"operation": {
+			"title.height.age.score": {
+				"$size": 13
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "nXXYdRKV0BUS",
+		"operation": {
+			"rank.rank.username": {
+				"$size": 37
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "lz4yHGMNN8SC",
+		"operation": {
+			"username.rank.rank.username": {
+				"$size": 37
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "rGF47W7TPJRG",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$gte": null,
+						"$lte": null
+					},
+					"score": {
+						"$gte": null,
+						"$lte": null
+					}
+				},
+				{
+					"age": {
+						"$gte": null,
+						"$lte": null
+					},
+					"score": {
+						"$gte": null,
+						"$lte": null
+					}
+				},
+				{
+					"age": {
+						"$gte": null,
+						"$lte": null
+					},
+					"score": {
+						"$gte": null,
+						"$lte": null
+					}
+				}
+			]
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25,
+			26,
+			27,
+			28,
+			29,
+			30,
+			31,
+			32,
+			33,
+			34,
+			35,
+			36,
+			37
+		]
+	},
+	{
+		"id": "kxIr9m4y3Z9H",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$gte": "value",
+						"$lte": "value"
+					},
+					"score": {
+						"$gte": "value",
+						"$lte": "value"
+					}
+				},
+				{
+					"age": {
+						"$gte": "value",
+						"$lte": "value"
+					},
+					"score": {
+						"$gte": "value",
+						"$lte": "value"
+					}
+				},
+				{
+					"age": {
+						"$gte": "value",
+						"$lte": "value"
+					},
+					"score": {
+						"$gte": "value",
+						"$lte": "value"
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "wX38QPBunSGH",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$gte": true,
+						"$lte": true
+					},
+					"score": {
+						"$gte": true,
+						"$lte": true
+					}
+				},
+				{
+					"age": {
+						"$gte": true,
+						"$lte": true
+					},
+					"score": {
+						"$gte": true,
+						"$lte": true
+					}
+				},
+				{
+					"age": {
+						"$gte": true,
+						"$lte": true
+					},
+					"score": {
+						"$gte": true,
+						"$lte": true
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "mOJHV9KJvROG",
+		"operation": {
+			"scores.0": null
+		},
+		"documents": [
+			0,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25,
+			26,
+			27,
+			28,
+			29,
+			30,
+			31,
+			32,
+			33,
+			34,
+			35,
+			36,
+			37
+		]
+	},
+	{
+		"id": "nKOgFyrg79wg",
+		"operation": {
+			"scores.0": "value"
+		},
+		"documents": []
+	},
+	{
+		"id": "uLt77HjWIoG1",
+		"operation": {
+			"scores.0": true
+		},
+		"documents": []
+	},
+	{
+		"id": "dIVkX8gNDKdi",
+		"operation": {
+			"scores.0": {
+				"$gt": null
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "cUtyYJme9sOb",
+		"operation": {
+			"scores.0": {
+				"$gt": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "uaLdcHqQi6lQ",
+		"operation": {
+			"scores.0": {
+				"$gt": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "lEXzXi7zqXvF",
+		"operation": {
+			"scores.0": {
+				"$lt": null
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "rx5ZfK7bRisj",
+		"operation": {
+			"scores.0": {
+				"$lt": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "cXBCBLLUbaqu",
+		"operation": {
+			"scores.0": {
+				"$lt": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "ly02LaqHCf7h",
+		"operation": {
+			"ratings.0": [
+				null,
+				null
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "dSLBEiKo1Fz8",
+		"operation": {
+			"ratings.0": [
+				"value",
+				"value"
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "av5ps1FEL6IR",
+		"operation": {
+			"ratings.0": [
+				true,
+				true
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "cpSLNjApVHcu",
+		"operation": {
+			"ratings.0.0": null
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25,
+			26,
+			27,
+			28,
+			29,
+			30,
+			31,
+			32,
+			33,
+			34,
+			35,
+			36,
+			37
+		]
+	},
+	{
+		"id": "pKQ4WruE7f4n",
+		"operation": {
+			"ratings.0.0": "value"
+		},
+		"documents": []
+	},
+	{
+		"id": "uRhhLLOT98bU",
+		"operation": {
+			"ratings.0.0": true
+		},
+		"documents": []
+	},
+	{
+		"id": "fCXvPHLW7ZFE",
+		"operation": {
+			"level": {
+				"count": null,
+				"grade": "Abundant"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "bTT6BNZLakOR",
+		"operation": {
+			"level": {
+				"count": "value",
+				"grade": "Abundant"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "kWWaDoFccW5Q",
+		"operation": {
+			"level": {
+				"count": true,
+				"grade": "Abundant"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "niAOF2ZAyyi5",
+		"operation": {
+			"level": {
+				"count": 3650,
+				"grade": null
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "i6BNv4GJqUxZ",
+		"operation": {
+			"level": {
+				"count": 3650,
+				"grade": 42
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "kjUjoiOByMr5",
+		"operation": {
+			"level": {
+				"count": 3650,
+				"grade": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "kWsW6OUFKRmu",
+		"operation": {
+			"counts": {
+				"$gt": null,
+				"$lt": null
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "ttQt6huwKg23",
+		"operation": {
+			"counts": {
+				"$gt": "value",
+				"$lt": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "lrxjoBUku00H",
+		"operation": {
+			"counts": {
+				"$gt": true,
+				"$lt": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "b7a8kD9VH2dW",
+		"operation": {
+			"$or": [
+				{
+					"counts": {
+						"$in": "active"
+					}
+				},
+				{
+					"capacity": {
+						"$in": "active"
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "$in needs an array",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "vANonX0wvRHx",
+		"operation": {
+			"$or": [
+				{
+					"counts": {
+						"$in": [
+							null,
+							null
+						]
+					}
+				},
+				{
+					"capacity": {
+						"$in": [
+							null,
+							null
+						]
+					}
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25,
+			26,
+			27,
+			28,
+			29,
+			30,
+			31,
+			32,
+			33,
+			34,
+			35,
+			36,
+			37
+		]
+	},
+	{
+		"id": "hpMbZEZWEE8Z",
+		"operation": {
+			"$or": [
+				{
+					"counts": {
+						"$in": [
+							"value",
+							"value"
+						]
+					}
+				},
+				{
+					"capacity": {
+						"$in": [
+							"value",
+							"value"
+						]
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "tk0XJCwyXSby",
+		"operation": {
+			"$or": [
+				{
+					"counts": {
+						"$in": [
+							true,
+							true
+						]
+					}
+				},
+				{
+					"capacity": {
+						"$in": [
+							true,
+							true
+						]
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "motDriRq3JBB",
+		"operation": {
+			"attempts": null
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25,
+			26,
+			27,
+			28,
+			29,
+			30,
+			31,
+			32,
+			33,
+			34,
+			35,
+			36,
+			37
+		]
+	},
+	{
+		"id": "nfHTgtJDKe6L",
+		"operation": {
+			"attempts": "value"
+		},
+		"documents": []
+	},
+	{
+		"id": "pNA84jBAOJE1",
+		"operation": {
+			"attempts": true
+		},
+		"documents": []
+	},
+	{
+		"id": "aNHhBQRtyNPe",
+		"operation": {
+			"name": {
+				"$size": "large"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "pJNkKnBPezWV",
+		"operation": {
+			"name": {
+				"$size": 2.5
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "q0DkqqZ8Rag0",
+		"operation": {
+			"name": {
+				"$size": null
+			}
+		},
+		"error": {
+			"message": "$size needs a number",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "pAYUY0oSA1X1",
+		"operation": {
+			"name": {
+				"$size": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "aIzK5TJJAeOC",
+		"operation": {
+			"name": {
+				"$size": true
+			}
+		},
+		"error": {
+			"message": "$size needs a number",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "aKoawtvQaIHL",
+		"operation": {
+			"title.height": {
+				"$size": "large"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "aZAwIshEYoUY",
+		"operation": {
+			"title.height": {
+				"$size": 2.5
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "iUp58NfiBgSf",
+		"operation": {
+			"title.height": {
+				"$size": null
+			}
+		},
+		"error": {
+			"message": "$size needs a number",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "sKsmEUKZyXGS",
+		"operation": {
+			"title.height": {
+				"$size": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "ooybKDmncVLR",
+		"operation": {
+			"title.height": {
+				"$size": true
+			}
+		},
+		"error": {
+			"message": "$size needs a number",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "pJwj7ab4iuRu",
+		"operation": {
+			"title.height.age": {
+				"$size": "large"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "awHEmJH6NKnc",
+		"operation": {
+			"title.height.age": {
+				"$size": 2.5
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "pYm2BRCYO8V2",
+		"operation": {
+			"title.height.age": {
+				"$size": null
+			}
+		},
+		"error": {
+			"message": "$size needs a number",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "amMhPC1RgF8j",
+		"operation": {
+			"title.height.age": {
+				"$size": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "oPVlg8t84QbU",
+		"operation": {
+			"title.height.age": {
+				"$size": true
+			}
+		},
+		"error": {
+			"message": "$size needs a number",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "uQwGvCTgHYHw",
+		"operation": {
+			"title.height.age.score": {
+				"$size": "large"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "uMHI6K8CCjGf",
+		"operation": {
+			"title.height.age.score": {
+				"$size": 2.5
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "umKOKGIg3n0C",
+		"operation": {
+			"title.height.age.score": {
+				"$size": null
+			}
+		},
+		"error": {
+			"message": "$size needs a number",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "qj7k67X1QqAA",
+		"operation": {
+			"title.height.age.score": {
+				"$size": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "wuIUHATvWEbq",
+		"operation": {
+			"title.height.age.score": {
+				"$size": true
+			}
+		},
+		"error": {
+			"message": "$size needs a number",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "w7QKqAIXi5XB",
+		"operation": {
+			"rank.rank.username": {
+				"$size": "large"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "sAr85T6rfTKn",
+		"operation": {
+			"rank.rank.username": {
+				"$size": 2.5
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "qETiln6sPVIl",
+		"operation": {
+			"rank.rank.username": {
+				"$size": null
+			}
+		},
+		"error": {
+			"message": "$size needs a number",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "ethWLb3IIBK2",
+		"operation": {
+			"rank.rank.username": {
+				"$size": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "a0z3TLPC7Y5o",
+		"operation": {
+			"rank.rank.username": {
+				"$size": true
+			}
+		},
+		"error": {
+			"message": "$size needs a number",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "rGaNGz8QrZ7c",
+		"operation": {
+			"username.rank.rank.username": {
+				"$size": "large"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "jpjF3K2d8xcY",
+		"operation": {
+			"username.rank.rank.username": {
+				"$size": 2.5
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "vaCCvcSTil1m",
+		"operation": {
+			"username.rank.rank.username": {
+				"$size": null
+			}
+		},
+		"error": {
+			"message": "$size needs a number",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "bcXyuffxJ9iV",
+		"operation": {
+			"username.rank.rank.username": {
+				"$size": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "c3w4nWtwXY2s",
+		"operation": {
+			"username.rank.rank.username": {
+				"$size": true
+			}
+		},
+		"error": {
+			"message": "$size needs a number",
+			"code": 2,
+			"type": "MongoError"
+		}
+	}
+]
