@@ -1763,6 +1763,24 @@
 				]
 			},
 			{
+				"id": "sM1wGhIY8Nr8",
+				"operation": {"status":{"$in":"active"}},
+				"results": [
+					{
+						"error": {"message":"Can't canonicalize query: BadValue $in needs an array","code":17287,"type":"MongoError"},
+						"versions": "2.6.12..3.0.15"
+					},
+					{
+						"error": {"message":"$in needs an array","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.5.13"
+					},
+					{
+						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
+						"versions": "3.6.0..8.3.2"
+					}
+				]
+			},
+			{
 				"id": "o008YWqSLmT5",
 				"operation": {"age":{"$lt":null}},
 				"results": [
@@ -31778,24 +31796,6 @@
 					{
 						"documents": [],
 						"versions": "2.6.12..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "sM1wGhIY8Nr8",
-				"operation": {"status":{"$in":"active"}},
-				"results": [
-					{
-						"error": {"message":"Can't canonicalize query: BadValue $in needs an array","code":17287,"type":"MongoError"},
-						"versions": "2.6.12..3.0.15"
-					},
-					{
-						"error": {"message":"$in needs an array","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.5.13"
-					},
-					{
-						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..8.3.2"
 					}
 				]
 			},
