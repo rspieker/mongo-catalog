@@ -1,13 +1,9 @@
 // MongoDB Driver v3.x implementation
 // v3 is promise-based like v4+ but with slightly different API
 import { DSN } from '../dsn'
-import {
-    CatalogDriver,
-    GenericDocument,
-    QueryResult,
-    normalizeError,
-    normalizeDocuments,
-} from './interface'
+import type { CatalogDriver, GenericDocument, QueryResult } from './interface'
+import { normalizeDocuments, normalizeError, insertDocumentsSafely } from './helpers'
+import type { Bootstrap } from './interface'
 
 // Import mongodb3 without types
 const mongodb3: any = require('mongodb3')
@@ -40,7 +36,7 @@ export async function createDriverV3(dsn: DSN): Promise<CatalogDriver> {
             name: string
             indices?: Array<{ [key: string]: 1 | -1 | 'text' } | string>
             documents?: GenericDocument[]
-        }): Promise<void> {
+        }): Promise<Bootstrap> {
             // Drop existing
             try {
                 await db.collection(options.name).drop()
@@ -61,10 +57,7 @@ export async function createDriverV3(dsn: DSN): Promise<CatalogDriver> {
                 }
             }
 
-            // Insert documents
-            if (options.documents?.length) {
-                await collection.insertMany(options.documents)
-            }
+            return insertDocumentsSafely(options.documents ?? [], doc => collection!.insertOne(doc))
         },
 
         async dropCollection(name: string): Promise<void> {

@@ -1,7 +1,9 @@
 // MongoDB Driver v2.x implementation
 // v2 uses callbacks, not promises
 import { DSN } from '../dsn';
-import { CatalogDriver, GenericDocument, QueryResult, normalizeError, normalizeDocuments } from './interface';
+import type { CatalogDriver, GenericDocument, QueryResult } from './interface'
+import { normalizeDocuments, normalizeError, insertDocumentsSafely } from './helpers'
+import type { Bootstrap } from './interface'
 
 // Import mongodb2 without types
 const mongodb2: any = require('mongodb2');
@@ -43,7 +45,7 @@ export async function createDriverV2(dsn: DSN): Promise<CatalogDriver> {
             name: string;
             indices?: Array<{ [key: string]: 1 | -1 | 'text' } | string>;
             documents?: GenericDocument[];
-        }): Promise<void> {
+        }): Promise<Bootstrap> {
             // Drop existing (v2 doesn't have dropCollection on db, need to use collection.drop)
             try {
                 const existingCollection = db.collection(options.name);
@@ -65,10 +67,10 @@ export async function createDriverV2(dsn: DSN): Promise<CatalogDriver> {
                 }
             }
             
-            // Insert documents
-            if (options.documents?.length) {
-                await promisify<any>((cb) => collection!.insertMany(options.documents!, cb));
-            }
+            return insertDocumentsSafely(
+                options.documents ?? [],
+                (doc) => promisify<any>((cb) => collection!.insertOne(doc, cb))
+            )
         },
         
         async dropCollection(name: string): Promise<void> {

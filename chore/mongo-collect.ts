@@ -26,6 +26,12 @@ type CollectionCompletedRecord = {
     catalog: string;
     hash: string;
     resultChecksum: string;
+    bootstrap?: {
+        problems: Array<{
+            error: { message: string; code?: string | number; type?: string };
+            documents: number[];
+        }>;
+    };
 };
 
 type CollectionHaltedRecord = {
@@ -155,7 +161,7 @@ Promise.resolve()
                 const indices = catalog.collection?.indices;
 
                 // Initialize collection with documents and indices
-                await db.initCollection({
+                const bootstrap = await db.initCollection({
                     name: dsn.collection,
                     indices,
                     documents,
@@ -199,6 +205,7 @@ Promise.resolve()
                     catalog: item.name,
                     hash: item.hash,
                     resultChecksum,
+                    ...(bootstrap.problems.length > 0 && { bootstrap }),
                 });
 
                 console.log(
