@@ -1,6 +1,13 @@
 name: Update Versions
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'catalog/**'
+      - 'source/**'
+      - '.github/workflows/**'
   schedule:
     - cron: '0 7 * * 0/3'  # Sunday, Wednesday, Saturday at 07:00 UTC
   workflow_dispatch:
