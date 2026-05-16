@@ -339,6 +339,55 @@
 			"date": "2026-05-15T15:26:18.145Z",
 			"catalog": "",
 			"reason": "catalog-execution-failed"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-16T15:33:57.680Z",
+			"catalog": "coverage_expr",
+			"hash": "53221d232d965dacf5dba6478916ae397c185bf58ddbd9051411021ca51efd9e",
+			"resultChecksum": "7394a2f6ee207c17880d52d1c681c867d31027251cb34b62ce2c301a096bd4ca",
+			"bootstrap": {
+				"problems": [
+					{
+						"error": {
+							"message": "key $toDouble must not start with '$'",
+							"type": "Error"
+						},
+						"documents": [
+							15
+						]
+					},
+					{
+						"error": {
+							"message": "key email.level must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							16
+						]
+					}
+				]
+			}
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-16T15:33:57.712Z",
+			"catalog": "coverage_dbref",
+			"hash": "280f7968c3417d0b683658c307dad7cc8f029b3180bef6ec4e7fe4524b32559f",
+			"resultChecksum": "3f93d851da082c9d93e53f95f19642ab102cbcfd0944cfccace801905291dacb",
+			"bootstrap": {
+				"problems": [
+					{
+						"error": {
+							"message": "key $proxy must not start with '$'",
+							"type": "Error"
+						},
+						"documents": [
+							0
+						]
+					}
+				]
+			}
 		}
 	]
 }
