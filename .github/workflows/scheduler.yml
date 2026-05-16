@@ -2,7 +2,8 @@ name: Scheduler
 
 on:
     schedule:
-        - cron: '*/30 * * * *' # Every 30 minutes
+        - cron: '0 * * * *'    # Every hour
+        - cron: '30 * * * 0,6' # Also at :30 on weekends
     workflow_dispatch:
 
 jobs:
