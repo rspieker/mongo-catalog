@@ -130,7 +130,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..5.0.32"
+						"versions": "3.6.0..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: { $gte: 2 }","code":2,"type":"MongoServerError"},
@@ -198,7 +198,7 @@
 					},
 					{
 						"error": {"message":"$size may not be negative","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..5.0.32"
+						"versions": "3.6.0..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a non-negative number in: $size: -1","code":2,"type":"MongoServerError"},
@@ -220,7 +220,7 @@
 					},
 					{
 						"error": {"message":"$size must be a whole number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..5.0.32"
+						"versions": "3.6.0..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected an integer: $size: 3.5","code":2,"type":"MongoServerError"},
@@ -719,7 +719,7 @@
 					},
 					{
 						"error": {"message":"Expected a positive number in: $bitsAllClear: -1","code":9,"type":"MongoServerError"},
-						"versions": "3.6.0..5.0.32"
+						"versions": "3.6.0..5.0.33"
 					},
 					{
 						"error": {"message":"Expected a non-negative number in: $bitsAllClear: -1","code":9,"type":"MongoServerError"},
@@ -741,7 +741,7 @@
 					},
 					{
 						"error": {"message":"bit positions must be >= 0 but got: 0: -1","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..5.0.32"
+						"versions": "3.6.0..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse bit position. Expected a non-negative number in: 0: -1","code":2,"type":"MongoServerError"},
@@ -1019,7 +1019,7 @@
 					},
 					{
 						"error": {"message":"Expected a positive number in: $bitsAllSet: -1","code":9,"type":"MongoServerError"},
-						"versions": "3.6.0..5.0.32"
+						"versions": "3.6.0..5.0.33"
 					},
 					{
 						"error": {"message":"Expected a non-negative number in: $bitsAllSet: -1","code":9,"type":"MongoServerError"},
@@ -1041,7 +1041,7 @@
 					},
 					{
 						"error": {"message":"bit positions must be >= 0 but got: 0: -1","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..5.0.32"
+						"versions": "3.6.0..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse bit position. Expected a non-negative number in: 0: -1","code":2,"type":"MongoServerError"},
@@ -1179,7 +1179,7 @@
 					},
 					{
 						"error": {"message":"Expected a positive number in: $bitsAnyClear: -1","code":9,"type":"MongoServerError"},
-						"versions": "3.6.0..5.0.32"
+						"versions": "3.6.0..5.0.33"
 					},
 					{
 						"error": {"message":"Expected a non-negative number in: $bitsAnyClear: -1","code":9,"type":"MongoServerError"},
@@ -1201,7 +1201,7 @@
 					},
 					{
 						"error": {"message":"bit positions must be >= 0 but got: 0: -1","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..5.0.32"
+						"versions": "3.6.0..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse bit position. Expected a non-negative number in: 0: -1","code":2,"type":"MongoServerError"},
@@ -1339,7 +1339,7 @@
 					},
 					{
 						"error": {"message":"Expected a positive number in: $bitsAnySet: -1","code":9,"type":"MongoServerError"},
-						"versions": "3.6.0..5.0.32"
+						"versions": "3.6.0..5.0.33"
 					},
 					{
 						"error": {"message":"Expected a non-negative number in: $bitsAnySet: -1","code":9,"type":"MongoServerError"},
@@ -1361,7 +1361,7 @@
 					},
 					{
 						"error": {"message":"bit positions must be >= 0 but got: 0: -1","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..5.0.32"
+						"versions": "3.6.0..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse bit position. Expected a non-negative number in: 0: -1","code":2,"type":"MongoServerError"},
@@ -1759,6 +1759,24 @@
 					{
 						"documents": [],
 						"versions": "2.6.12..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "sM1wGhIY8Nr8",
+				"operation": {"status":{"$in":"active"}},
+				"results": [
+					{
+						"error": {"message":"Can't canonicalize query: BadValue $in needs an array","code":17287,"type":"MongoError"},
+						"versions": "2.6.12..3.0.15"
+					},
+					{
+						"error": {"message":"$in needs an array","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.5.13"
+					},
+					{
+						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
+						"versions": "3.6.0..8.3.2"
 					}
 				]
 			},
@@ -9322,7 +9340,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "3.6.23..8.3.2"
+						"versions": "3.3.9..8.3.2"
 					}
 				]
 			},
@@ -9332,7 +9350,7 @@
 				"results": [
 					{
 						"documents": [1],
-						"versions": "3.6.23..8.3.2"
+						"versions": "3.3.9..8.3.2"
 					}
 				]
 			},
@@ -9360,7 +9378,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "3.6.23..8.3.2"
+						"versions": "3.3.9..8.3.2"
 					}
 				]
 			},
@@ -9370,7 +9388,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "3.6.23..8.3.2"
+						"versions": "3.3.9..8.3.2"
 					}
 				]
 			},
@@ -9380,7 +9398,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "3.6.23..8.3.2"
+						"versions": "3.3.9..8.3.2"
 					}
 				]
 			},
@@ -9390,7 +9408,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "3.6.23..8.3.2"
+						"versions": "3.3.9..8.3.2"
 					}
 				]
 			},
@@ -9400,7 +9418,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "3.6.23..8.3.2"
+						"versions": "3.3.9..8.3.2"
 					}
 				]
 			},
@@ -9410,7 +9428,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "3.6.23..8.3.2"
+						"versions": "3.3.9..8.3.2"
 					}
 				]
 			},
@@ -9420,7 +9438,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "3.6.23..8.3.2"
+						"versions": "3.3.9..8.3.2"
 					}
 				]
 			},
@@ -9430,7 +9448,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "3.6.23..8.3.2"
+						"versions": "3.3.9..8.3.2"
 					}
 				]
 			},
@@ -9440,7 +9458,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "3.6.23..8.3.2"
+						"versions": "3.3.9..8.3.2"
 					}
 				]
 			}
@@ -11016,6 +11034,10 @@
 				"operation": {"$expr":{"$and":[{"$eq":["$age",17]}]}},
 				"results": [
 					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"documents": [],
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11025,6 +11047,10 @@
 				"id": "oMvTkA97vGrJ",
 				"operation": {"$expr":{"$and":[{"$eq":["$username","Double"]},{"$eq":["$name","Abundant"]}]},"$or":[{"title":"Couple"},{"title":"Each"}]},
 				"results": [
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"documents": [1],
 						"versions": "3.6.23..8.3.2"
@@ -11036,6 +11062,10 @@
 				"operation": {"$expr":{"$in":["$email",["Abundant","Double"]]}},
 				"results": [
 					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"documents": [2],
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11045,6 +11075,10 @@
 				"id": "pF9jtgBQAp25",
 				"operation": {"$expr":{"$eq":["$weight",35]}},
 				"results": [
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"documents": [],
 						"versions": "3.6.23..8.3.2"
@@ -11056,6 +11090,10 @@
 				"operation": {"$expr":{"$eq":["$rank","$level"]}},
 				"results": [
 					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"documents": [0,1,19,20,21,22,23,24,25,26,27],
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11065,6 +11103,10 @@
 				"id": "tYKEZwJJDTRy",
 				"operation": {"$or":[{"$expr":{"$eq":["$rank","$level"]}},{"count":{"$gt":7}}]},
 				"results": [
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"documents": [0,1,19,20,21,22,23,24,25,26,27],
 						"versions": "3.6.23..8.3.2"
@@ -11076,6 +11118,10 @@
 				"operation": {"grade":{"$elemMatch":{"$expr":{"$eq":["$rank","$level"]}}}},
 				"results": [
 					{
+						"error": {"message":"unknown operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"error": {"message":"$expr can only be applied to the top-level document","code":2,"type":"MongoServerError"},
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11085,6 +11131,10 @@
 				"id": "k0PYXD4rVqrn",
 				"operation": {"grade":{"$_internalSchemaObjectMatch":{"$expr":{"$eq":["$rank","$level"]}}}},
 				"results": [
+					{
+						"error": {"message":"unknown operator: $_internalSchemaObjectMatch","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"error": {"message":"$expr can only be applied to the top-level document","code":2,"type":"MongoServerError"},
 						"versions": "3.6.23..8.3.2"
@@ -11096,6 +11146,10 @@
 				"operation": {"$expr":{"$and":[{"$eq":["$age",null]}]}},
 				"results": [
 					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"documents": [27],
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11105,6 +11159,10 @@
 				"id": "dz4Q1YMZ9Q3Q",
 				"operation": {"$expr":{"$and":[{"$eq":["$age","value"]}]}},
 				"results": [
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"documents": [],
 						"versions": "3.6.23..8.3.2"
@@ -11116,6 +11174,10 @@
 				"operation": {"$expr":{"$and":[{"$eq":["$age",true]}]}},
 				"results": [
 					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"documents": [],
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11125,6 +11187,10 @@
 				"id": "mUFIn1QfdhUS",
 				"operation": {"$expr":{"$and":[{"$eq":[null,17]}]}},
 				"results": [
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"documents": [],
 						"versions": "3.6.23..8.3.2"
@@ -11136,6 +11202,10 @@
 				"operation": {"$expr":{"$and":[{"$eq":[42,17]}]}},
 				"results": [
 					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"documents": [],
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11145,6 +11215,10 @@
 				"id": "jpJ3K3s1BP0z",
 				"operation": {"$expr":{"$and":[{"$eq":[true,17]}]}},
 				"results": [
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"documents": [],
 						"versions": "3.6.23..8.3.2"
@@ -11156,6 +11230,10 @@
 				"operation": {"$expr":{"$and":[{"$eq":[null,null]},{"$eq":[null,null]}]},"$or":[{"title":null},{"title":null}]},
 				"results": [
 					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"documents": [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27],
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11165,6 +11243,10 @@
 				"id": "k2RVLydKzLJP",
 				"operation": {"$expr":{"$and":[{"$eq":[42,42]},{"$eq":[42,42]}]},"$or":[{"title":42},{"title":42}]},
 				"results": [
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"documents": [],
 						"versions": "3.6.23..8.3.2"
@@ -11176,6 +11258,10 @@
 				"operation": {"$expr":{"$and":[{"$eq":[true,true]},{"$eq":[true,true]}]},"$or":[{"title":true},{"title":true}]},
 				"results": [
 					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"documents": [],
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11185,6 +11271,10 @@
 				"id": "bWF9hzoN1uFu",
 				"operation": {"$expr":{"$in":"active"}},
 				"results": [
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"error": {"message":"Expression $in takes exactly 2 arguments. 1 were passed in.","code":16020,"type":"MongoServerError"},
 						"versions": "3.6.23..8.3.2"
@@ -11196,6 +11286,10 @@
 				"operation": {"$expr":{"$in":[null,[null,null]]}},
 				"results": [
 					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27],
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11205,6 +11299,10 @@
 				"id": "iAbTEh3ARRmW",
 				"operation": {"$expr":{"$in":[42,[42,42]]}},
 				"results": [
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27],
 						"versions": "3.6.23..8.3.2"
@@ -11216,6 +11314,10 @@
 				"operation": {"$expr":{"$in":[true,[true,true]]}},
 				"results": [
 					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27],
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11225,6 +11327,10 @@
 				"id": "nvRd7maPTpAE",
 				"operation": {"$expr":{"$eq":["$weight",null]}},
 				"results": [
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"documents": [],
 						"versions": "3.6.23..8.3.2"
@@ -11236,6 +11342,10 @@
 				"operation": {"$expr":{"$eq":["$weight","value"]}},
 				"results": [
 					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"documents": [],
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11245,6 +11355,10 @@
 				"id": "wIJJMVryxb7z",
 				"operation": {"$expr":{"$eq":["$weight",true]}},
 				"results": [
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"documents": [],
 						"versions": "3.6.23..8.3.2"
@@ -11256,6 +11370,10 @@
 				"operation": {"$expr":{"$eq":[null,35]}},
 				"results": [
 					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"documents": [],
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11265,6 +11383,10 @@
 				"id": "mWAhB2CKIW8j",
 				"operation": {"$expr":{"$eq":[42,35]}},
 				"results": [
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"documents": [],
 						"versions": "3.6.23..8.3.2"
@@ -11276,6 +11398,10 @@
 				"operation": {"$expr":{"$eq":[true,35]}},
 				"results": [
 					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"documents": [],
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11285,6 +11411,10 @@
 				"id": "nJm31O1ArvZe",
 				"operation": {"$expr":{"$eq":[42,42]}},
 				"results": [
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27],
 						"versions": "3.6.23..8.3.2"
@@ -11296,6 +11426,10 @@
 				"operation": {"$expr":{"$eq":[true,true]}},
 				"results": [
 					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27],
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11305,6 +11439,10 @@
 				"id": "azRIswYSx809",
 				"operation": {"$or":[{"$expr":{"$eq":["$rank","$level"]}},{"count":{"$gt":null}}]},
 				"results": [
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"documents": [0,1,19,20,21,22,23,24,25,26,27],
 						"versions": "3.6.23..8.3.2"
@@ -11316,6 +11454,10 @@
 				"operation": {"$or":[{"$expr":{"$eq":["$rank","$level"]}},{"count":{"$gt":"value"}}]},
 				"results": [
 					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"documents": [0,1,19,20,21,22,23,24,25,26,27],
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11325,6 +11467,10 @@
 				"id": "juFTBcXBqASW",
 				"operation": {"$or":[{"$expr":{"$eq":["$rank","$level"]}},{"count":{"$gt":true}}]},
 				"results": [
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"documents": [0,1,19,20,21,22,23,24,25,26,27],
 						"versions": "3.6.23..8.3.2"
@@ -11336,6 +11482,10 @@
 				"operation": {"$or":[{"$expr":{"$eq":[null,null]}},{"count":{"$gt":7}}]},
 				"results": [
 					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27],
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11345,6 +11495,10 @@
 				"id": "o2fGxgZ2wj1n",
 				"operation": {"$or":[{"$expr":{"$eq":[42,42]}},{"count":{"$gt":7}}]},
 				"results": [
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27],
 						"versions": "3.6.23..8.3.2"
@@ -11356,6 +11510,10 @@
 				"operation": {"$or":[{"$expr":{"$eq":[true,true]}},{"count":{"$gt":7}}]},
 				"results": [
 					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27],
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11365,6 +11523,10 @@
 				"id": "vxL4dHeV8YAX",
 				"operation": {"grade":{"$elemMatch":42}},
 				"results": [
+					{
+						"error": {"message":"$elemMatch needs an Object","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"error": {"message":"$elemMatch needs an Object","code":2,"type":"MongoServerError"},
 						"versions": "3.6.23..8.3.2"
@@ -11376,6 +11538,10 @@
 				"operation": {"grade":{"$elemMatch":{"$expr":{"$eq":[null,null]}}}},
 				"results": [
 					{
+						"error": {"message":"unknown operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"error": {"message":"$expr can only be applied to the top-level document","code":2,"type":"MongoServerError"},
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11385,6 +11551,10 @@
 				"id": "fDtgviOXhOdP",
 				"operation": {"grade":{"$elemMatch":{"$expr":{"$eq":[42,42]}}}},
 				"results": [
+					{
+						"error": {"message":"unknown operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"error": {"message":"$expr can only be applied to the top-level document","code":2,"type":"MongoServerError"},
 						"versions": "3.6.23..8.3.2"
@@ -11396,6 +11566,10 @@
 				"operation": {"grade":{"$elemMatch":{"$expr":{"$eq":[true,true]}}}},
 				"results": [
 					{
+						"error": {"message":"unknown operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"error": {"message":"$expr can only be applied to the top-level document","code":2,"type":"MongoServerError"},
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11405,6 +11579,10 @@
 				"id": "k0jr6mcGUA1i",
 				"operation": {"grade":{"$_internalSchemaObjectMatch":{"$expr":{"$eq":[null,null]}}}},
 				"results": [
+					{
+						"error": {"message":"unknown operator: $_internalSchemaObjectMatch","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"error": {"message":"$expr can only be applied to the top-level document","code":2,"type":"MongoServerError"},
 						"versions": "3.6.23..8.3.2"
@@ -11416,6 +11594,10 @@
 				"operation": {"grade":{"$_internalSchemaObjectMatch":{"$expr":{"$eq":[42,42]}}}},
 				"results": [
 					{
+						"error": {"message":"unknown operator: $_internalSchemaObjectMatch","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
+					{
 						"error": {"message":"$expr can only be applied to the top-level document","code":2,"type":"MongoServerError"},
 						"versions": "3.6.23..8.3.2"
 					}
@@ -11425,6 +11607,10 @@
 				"id": "n4rsTQ2DU8T1",
 				"operation": {"grade":{"$_internalSchemaObjectMatch":{"$expr":{"$eq":[true,true]}}}},
 				"results": [
+					{
+						"error": {"message":"unknown operator: $_internalSchemaObjectMatch","code":2,"type":"MongoError"},
+						"versions": "3.3.9..3.5.8"
+					},
 					{
 						"error": {"message":"$expr can only be applied to the top-level document","code":2,"type":"MongoServerError"},
 						"versions": "3.6.23..8.3.2"
@@ -11958,7 +12144,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"large\"","code":2,"type":"MongoServerError"},
@@ -11980,7 +12166,7 @@
 					},
 					{
 						"error": {"message":"$size must be a whole number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected an integer: $size: 2.5","code":2,"type":"MongoServerError"},
@@ -12002,7 +12188,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: null","code":2,"type":"MongoServerError"},
@@ -12024,7 +12210,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"value\"","code":2,"type":"MongoServerError"},
@@ -12046,7 +12232,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: true","code":2,"type":"MongoServerError"},
@@ -12068,7 +12254,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"large\"","code":2,"type":"MongoServerError"},
@@ -12090,7 +12276,7 @@
 					},
 					{
 						"error": {"message":"$size must be a whole number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected an integer: $size: 2.5","code":2,"type":"MongoServerError"},
@@ -12112,7 +12298,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: null","code":2,"type":"MongoServerError"},
@@ -12134,7 +12320,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"value\"","code":2,"type":"MongoServerError"},
@@ -12156,7 +12342,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: true","code":2,"type":"MongoServerError"},
@@ -12178,7 +12364,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"large\"","code":2,"type":"MongoServerError"},
@@ -12200,7 +12386,7 @@
 					},
 					{
 						"error": {"message":"$size must be a whole number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected an integer: $size: 2.5","code":2,"type":"MongoServerError"},
@@ -12222,7 +12408,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: null","code":2,"type":"MongoServerError"},
@@ -12244,7 +12430,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"value\"","code":2,"type":"MongoServerError"},
@@ -12266,7 +12452,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: true","code":2,"type":"MongoServerError"},
@@ -12288,7 +12474,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"large\"","code":2,"type":"MongoServerError"},
@@ -12310,7 +12496,7 @@
 					},
 					{
 						"error": {"message":"$size must be a whole number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected an integer: $size: 2.5","code":2,"type":"MongoServerError"},
@@ -12332,7 +12518,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: null","code":2,"type":"MongoServerError"},
@@ -12354,7 +12540,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"value\"","code":2,"type":"MongoServerError"},
@@ -12376,7 +12562,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: true","code":2,"type":"MongoServerError"},
@@ -12398,7 +12584,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"large\"","code":2,"type":"MongoServerError"},
@@ -12420,7 +12606,7 @@
 					},
 					{
 						"error": {"message":"$size must be a whole number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected an integer: $size: 2.5","code":2,"type":"MongoServerError"},
@@ -12442,7 +12628,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: null","code":2,"type":"MongoServerError"},
@@ -12464,7 +12650,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"value\"","code":2,"type":"MongoServerError"},
@@ -12486,7 +12672,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: true","code":2,"type":"MongoServerError"},
@@ -12508,7 +12694,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"large\"","code":2,"type":"MongoServerError"},
@@ -12530,7 +12716,7 @@
 					},
 					{
 						"error": {"message":"$size must be a whole number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected an integer: $size: 2.5","code":2,"type":"MongoServerError"},
@@ -12552,7 +12738,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: null","code":2,"type":"MongoServerError"},
@@ -12574,7 +12760,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"value\"","code":2,"type":"MongoServerError"},
@@ -12596,7 +12782,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: true","code":2,"type":"MongoServerError"},
@@ -12627,7 +12813,7 @@
 					},
 					{
 						"error": {"message":"longitude/latitude is out of bounds, lng: 182.035 lat: 3.70507","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..6.0.27"
+						"versions": "3.6.23..6.0.28"
 					},
 					{
 						"error": {"message":"Longitude/latitude is out of bounds, lng: 182.035 lat: 3.70507","code":2,"type":"MongoServerError"},
@@ -12675,7 +12861,7 @@
 					},
 					{
 						"error": {"message":"Point must only contain numeric elements","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..6.0.27"
+						"versions": "3.6.23..6.0.28"
 					},
 					{
 						"error": {"message":"Point must only contain numeric elements, instead got type null","code":2,"type":"MongoServerError"},
@@ -12701,7 +12887,7 @@
 					},
 					{
 						"error": {"message":"Point must only contain numeric elements","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..6.0.27"
+						"versions": "3.6.23..6.0.28"
 					},
 					{
 						"error": {"message":"Point must only contain numeric elements, instead got type string","code":2,"type":"MongoServerError"},
@@ -12727,7 +12913,7 @@
 					},
 					{
 						"error": {"message":"Point must only contain numeric elements","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..6.0.27"
+						"versions": "3.6.23..6.0.28"
 					},
 					{
 						"error": {"message":"Point must only contain numeric elements, instead got type bool","code":2,"type":"MongoServerError"},
@@ -12841,7 +13027,7 @@
 					},
 					{
 						"error": {"message":"Point must only contain numeric elements","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..6.0.27"
+						"versions": "3.6.23..6.0.28"
 					},
 					{
 						"error": {"message":"Point must only contain numeric elements, instead got type array","code":2,"type":"MongoServerError"},
@@ -15728,7 +15914,7 @@
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
-						"versions": "4.0.28,4.1.13..5.0.32"
+						"versions": "4.0.28,4.1.13..5.0.33"
 					},
 					{
 						"error": {"message":" invalid flag in regex options: E","code":51108,"type":"MongoServerError"},
@@ -17076,7 +17262,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"large\"","code":2,"type":"MongoServerError"},
@@ -17098,7 +17284,7 @@
 					},
 					{
 						"error": {"message":"$size must be a whole number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected an integer: $size: 2.5","code":2,"type":"MongoServerError"},
@@ -17120,7 +17306,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: null","code":2,"type":"MongoServerError"},
@@ -17142,7 +17328,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"value\"","code":2,"type":"MongoServerError"},
@@ -17164,7 +17350,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: true","code":2,"type":"MongoServerError"},
@@ -17683,7 +17869,7 @@
 					},
 					{
 						"error": {"message":"geoNear must be top-level expr","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..5.0.32"
+						"versions": "3.6.23..5.0.33"
 					},
 					{
 						"error": {"message":"geo $near must be top-level expr","code":2,"type":"MongoServerError"},
@@ -23731,7 +23917,7 @@
 					},
 					{
 						"error": {"message":"Point must only contain numeric elements","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..6.0.27"
+						"versions": "3.6.23..6.0.28"
 					},
 					{
 						"error": {"message":"Point must only contain numeric elements, instead got type array","code":2,"type":"MongoServerError"},
@@ -23867,7 +24053,7 @@
 					},
 					{
 						"error": {"message":"Point must only contain numeric elements","code":2,"type":"MongoServerError"},
-						"versions": "3.6.23..6.0.27"
+						"versions": "3.6.23..6.0.28"
 					},
 					{
 						"error": {"message":"Point must only contain numeric elements, instead got type array","code":2,"type":"MongoServerError"},
@@ -24177,7 +24363,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "2.6.12..5.0.32"
+						"versions": "2.6.12..5.0.33"
 					},
 					{
 						"error": {"message":" invalid flag in regex options: L","code":51108,"type":"MongoServerError"},
@@ -24191,7 +24377,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "2.6.12..5.0.32"
+						"versions": "2.6.12..5.0.33"
 					},
 					{
 						"error": {"message":" invalid flag in regex options: L","code":51108,"type":"MongoServerError"},
@@ -24275,7 +24461,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "2.6.12..5.0.32"
+						"versions": "2.6.12..5.0.33"
 					},
 					{
 						"error": {"message":" invalid flag in regex options: E","code":51108,"type":"MongoServerError"},
@@ -27389,7 +27575,7 @@
 				"results": [
 					{
 						"documents": [2,3],
-						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32,6.0.1,6.0.27,7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
+						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32..6.0.1,6.0.27..7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
 					},
 					{
 						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
@@ -27403,7 +27589,7 @@
 				"results": [
 					{
 						"documents": [1,2,3,4],
-						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32,6.0.1,6.0.27,7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
+						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32..6.0.1,6.0.27..7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
 					},
 					{
 						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
@@ -28348,7 +28534,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $add only supports numeric or date types, not string","code":14,"type":"MongoServerError"},
-						"versions": "6.0.10..6.0.27,7.0.5..7.0.34"
+						"versions": "6.0.10..6.0.28,7.0.5..7.0.34"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: only numbers and dates are allowed in an $add expression","code":7157723,"type":"MongoServerError"},
@@ -28382,7 +28568,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: can't $divide by zero","code":2,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.34"
+						"versions": "5.0.0..6.0.28,7.0.5..7.0.34"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: can't $divide by zero","code":4848401,"type":"MongoServerError"},
@@ -28391,6 +28577,32 @@
 					{
 						"error": {"message":"Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: can't $divide by zero","code":2,"type":"MongoServerError"},
 						"versions": "8.0.0..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "bCjdQgVLMp3G",
+				"operation": {"$expr":{"$multiply":[]}},
+				"results": [
+					{
+						"error": {"message":"Can't canonicalize query: BadValue unknown top level operator: $expr","code":17287,"type":"MongoError"},
+						"versions": "2.6.12..3.0.15"
+					},
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.5.12"
+					},
+					{
+						"error": {"message":"$expr is not allowed in this context","code":2,"type":"MongoError"},
+						"versions": "3.5.13"
+					},
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+						"versions": "3.6.0..8.3.2"
+					},
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
+						"versions": "3.6.0..8.3.2"
 					}
 				]
 			},
@@ -28476,7 +28688,7 @@
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27],
-						"versions": "3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32,6.0.1,6.0.27,7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
+						"versions": "3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32..6.0.1,6.0.27..7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
 					}
 				]
 			},
@@ -28520,6 +28732,28 @@
 					},
 					{
 						"error": {"message":"Expression $size takes exactly 1 arguments. 0 were passed in.","code":16020,"type":"MongoServerError"},
+						"versions": "3.6.0..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "vin79y3UQZHP",
+				"operation": {"$expr":{"$add":[]}},
+				"results": [
+					{
+						"error": {"message":"Can't canonicalize query: BadValue unknown top level operator: $expr","code":17287,"type":"MongoError"},
+						"versions": "2.6.12..3.0.15"
+					},
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.5.12"
+					},
+					{
+						"error": {"message":"$expr is not allowed in this context","code":2,"type":"MongoError"},
+						"versions": "3.5.13"
+					},
+					{
+						"documents": [],
 						"versions": "3.6.0..8.3.2"
 					}
 				]
@@ -29549,7 +29783,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $sqrt's argument must be greater than or equal to 0","code":28714,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.34"
+						"versions": "5.0.0..6.0.28,7.0.5..7.0.34"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $sqrt's argument must be greater than or equal to 0","code":7157710,"type":"MongoServerError"},
@@ -29759,7 +29993,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: can't $divide by zero","code":2,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.34"
+						"versions": "5.0.0..6.0.28,7.0.5..7.0.34"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: can't $divide by zero","code":4848401,"type":"MongoServerError"},
@@ -29793,7 +30027,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: can't $divide by zero","code":2,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.34"
+						"versions": "5.0.0..6.0.28,7.0.5..7.0.34"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: can't $divide by zero","code":4848401,"type":"MongoServerError"},
@@ -29827,7 +30061,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types, not string and int","code":14,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.34"
+						"versions": "5.0.0..6.0.28,7.0.5..7.0.34"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types","code":7157719,"type":"MongoServerError"},
@@ -29978,54 +30212,6 @@
 				]
 			},
 			{
-				"id": "vin79y3UQZHP",
-				"operation": {"$expr":{"$add":[]}},
-				"results": [
-					{
-						"error": {"message":"Can't canonicalize query: BadValue unknown top level operator: $expr","code":17287,"type":"MongoError"},
-						"versions": "2.6.12..3.0.15"
-					},
-					{
-						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.5.12"
-					},
-					{
-						"error": {"message":"$expr is not allowed in this context","code":2,"type":"MongoError"},
-						"versions": "3.5.13"
-					},
-					{
-						"documents": [],
-						"versions": "3.6.0..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "bCjdQgVLMp3G",
-				"operation": {"$expr":{"$multiply":[]}},
-				"results": [
-					{
-						"error": {"message":"Can't canonicalize query: BadValue unknown top level operator: $expr","code":17287,"type":"MongoError"},
-						"versions": "2.6.12..3.0.15"
-					},
-					{
-						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.5.12"
-					},
-					{
-						"error": {"message":"$expr is not allowed in this context","code":2,"type":"MongoError"},
-						"versions": "3.5.13"
-					},
-					{
-						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
-						"versions": "3.6.0..8.3.2"
-					},
-					{
-						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
-						"versions": "3.6.0..8.3.2"
-					}
-				]
-			},
-			{
 				"id": "uDOw4JurBURT",
 				"operation": {"$expr":{"$divide":["$a"]}},
 				"results": [
@@ -30091,7 +30277,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $abs only supports numeric types, not string","code":28765,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.34"
+						"versions": "5.0.0..6.0.28,7.0.5..7.0.34"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $abs only supports numeric types","code":7157700,"type":"MongoServerError"},
@@ -30125,7 +30311,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $abs only supports numeric types, not bool","code":28765,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.34"
+						"versions": "5.0.0..6.0.28,7.0.5..7.0.34"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $abs only supports numeric types","code":7157700,"type":"MongoServerError"},
@@ -30163,7 +30349,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $add only supports numeric or date types, not string","code":14,"type":"MongoServerError"},
-						"versions": "6.0.10..6.0.27,7.0.5..7.0.34"
+						"versions": "6.0.10..6.0.28,7.0.5..7.0.34"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: only numbers and dates are allowed in an $add expression","code":7157723,"type":"MongoServerError"},
@@ -30197,7 +30383,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $ceil only supports numeric types, not string","code":28765,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.34"
+						"versions": "5.0.0..6.0.28,7.0.5..7.0.34"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $ceil only supports numeric types","code":7157702,"type":"MongoServerError"},
@@ -30231,7 +30417,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $ln only supports numeric types, not string","code":28765,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.34"
+						"versions": "5.0.0..6.0.28,7.0.5..7.0.34"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $ln only supports numeric types","code":7157705,"type":"MongoServerError"},
@@ -30596,7 +30782,7 @@
 					},
 					{
 						"error": {"message":"invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [] }  Point must only contain numeric elements","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..6.0.27"
+						"versions": "3.6.0..6.0.28"
 					},
 					{
 						"error": {"message":"invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [] }  Point must only contain numeric elements, instead got type missing","code":2,"type":"MongoServerError"},
@@ -30670,7 +30856,7 @@
 					},
 					{
 						"error": {"message":"Point must only contain numeric elements","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..6.0.27"
+						"versions": "3.6.0..6.0.28"
 					},
 					{
 						"error": {"message":"Point must only contain numeric elements, instead got type missing","code":2,"type":"MongoServerError"},
@@ -30696,7 +30882,7 @@
 					},
 					{
 						"error": {"message":"Point must only contain numeric elements","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..6.0.27"
+						"versions": "3.6.0..6.0.28"
 					},
 					{
 						"error": {"message":"Point must only contain numeric elements, instead got type missing","code":2,"type":"MongoServerError"},
@@ -31778,24 +31964,6 @@
 					{
 						"documents": [],
 						"versions": "2.6.12..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "sM1wGhIY8Nr8",
-				"operation": {"status":{"$in":"active"}},
-				"results": [
-					{
-						"error": {"message":"Can't canonicalize query: BadValue $in needs an array","code":17287,"type":"MongoError"},
-						"versions": "2.6.12..3.0.15"
-					},
-					{
-						"error": {"message":"$in needs an array","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.5.13"
-					},
-					{
-						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..8.3.2"
 					}
 				]
 			},
@@ -34048,7 +34216,7 @@
 					},
 					{
 						"error": {"message":"unknown top level operator: $not. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.","code":2,"type":"MongoServerError"},
-						"versions": "5.0.0..5.0.32"
+						"versions": "5.0.0..5.0.33"
 					},
 					{
 						"error": {"message":"unknown top level operator: $not. If you are trying to negate an entire expression, use $nor.","code":2,"type":"MongoServerError"},
@@ -34074,7 +34242,7 @@
 					},
 					{
 						"error": {"message":"unknown top level operator: $not. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.","code":2,"type":"MongoServerError"},
-						"versions": "5.0.0..5.0.32"
+						"versions": "5.0.0..5.0.33"
 					},
 					{
 						"error": {"message":"unknown top level operator: $not. If you are trying to negate an entire expression, use $nor.","code":2,"type":"MongoServerError"},
@@ -34100,7 +34268,7 @@
 					},
 					{
 						"error": {"message":"unknown top level operator: $not. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.","code":2,"type":"MongoServerError"},
-						"versions": "5.0.0..5.0.32"
+						"versions": "5.0.0..5.0.33"
 					},
 					{
 						"error": {"message":"unknown top level operator: $not. If you are trying to negate an entire expression, use $nor.","code":2,"type":"MongoServerError"},
@@ -34126,7 +34294,7 @@
 					},
 					{
 						"error": {"message":"unknown top level operator: $not. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.","code":2,"type":"MongoServerError"},
-						"versions": "5.0.0..5.0.32"
+						"versions": "5.0.0..5.0.33"
 					},
 					{
 						"error": {"message":"unknown top level operator: $not. If you are trying to negate an entire expression, use $nor.","code":2,"type":"MongoServerError"},
@@ -34236,7 +34404,7 @@
 					},
 					{
 						"error": {"message":"unknown top level operator: $not. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.","code":2,"type":"MongoServerError"},
-						"versions": "5.0.0..5.0.32"
+						"versions": "5.0.0..5.0.33"
 					},
 					{
 						"error": {"message":"unknown top level operator: $not. If you are trying to negate an entire expression, use $nor.","code":2,"type":"MongoServerError"},
@@ -34307,43 +34475,43 @@
 				"results": [
 					{
 						"documents": [0],
-						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32,6.0.1,6.0.27,7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
+						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32..6.0.1,6.0.27..7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10],
-						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32,6.0.1,6.0.27,7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
+						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32..6.0.1,6.0.27..7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
 					},
 					{
 						"documents": [0,1,2,3,4,5],
-						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32,6.0.1,6.0.27,7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
+						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32..6.0.1,6.0.27..7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
 					},
 					{
 						"documents": [0,1],
-						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32,6.0.1,6.0.27,7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
+						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32..6.0.1,6.0.27..7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
-						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32,6.0.1,6.0.27,7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
+						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32..6.0.1,6.0.27..7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37],
-						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32,6.0.1,6.0.27,7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
+						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32..6.0.1,6.0.27..7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29],
-						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32,6.0.1,6.0.27,7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
+						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32..6.0.1,6.0.27..7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
-						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32,6.0.1,6.0.27,7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
+						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32..6.0.1,6.0.27..7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33],
-						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32,6.0.1,6.0.27,7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
+						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32..6.0.1,6.0.27..7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
 					},
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32,6.0.1,6.0.27,7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
+						"versions": "2.6.12..3.0.15,3.2.10..3.3.15,3.4.13..3.5.13,3.6.23,3.7.9,4.0.28,4.1.1,4.1.13,4.2.0,4.2.24,4.4.0,4.4.30,5.0.0,5.0.32..6.0.1,6.0.27..7.0.0,7.0.34,8.0.0,8.0.23,8.2.1,8.2.9,8.3.0,8.3.2"
 					},
 					{
 						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
@@ -34559,7 +34727,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: can't $divide by zero","code":2,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.34"
+						"versions": "5.0.0..6.0.28,7.0.5..7.0.34"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: can't $divide by zero","code":4848401,"type":"MongoServerError"},
@@ -34593,7 +34761,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types, not string and int","code":14,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.34"
+						"versions": "5.0.0..6.0.28,7.0.5..7.0.34"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types","code":7157719,"type":"MongoServerError"},
@@ -34627,7 +34795,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types, not string and double","code":14,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.34"
+						"versions": "5.0.0..6.0.28,7.0.5..7.0.34"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types","code":7157719,"type":"MongoServerError"},
@@ -34661,7 +34829,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types, not bool and int","code":14,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.34"
+						"versions": "5.0.0..6.0.28,7.0.5..7.0.34"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types","code":7157719,"type":"MongoServerError"},
@@ -34695,7 +34863,7 @@
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types, not bool and double","code":14,"type":"MongoServerError"},
-						"versions": "5.0.0..6.0.27,7.0.5..7.0.34"
+						"versions": "5.0.0..6.0.28,7.0.5..7.0.34"
 					},
 					{
 						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types","code":7157719,"type":"MongoServerError"},
@@ -34871,7 +35039,7 @@
 					},
 					{
 						"error": {"message":"Regular expression is invalid: missing )","code":51091,"type":"MongoServerError"},
-						"versions": "4.1.9..6.0.27"
+						"versions": "4.1.9..6.0.28"
 					},
 					{
 						"error": {"message":"Regular expression is invalid: missing closing parenthesis","code":51091,"type":"MongoServerError"},
@@ -34885,7 +35053,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "2.6.12..5.0.32"
+						"versions": "2.6.12..5.0.33"
 					},
 					{
 						"error": {"message":" invalid flag in regex options: y","code":51108,"type":"MongoServerError"},
@@ -34899,7 +35067,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "2.6.12..5.0.32"
+						"versions": "2.6.12..5.0.33"
 					},
 					{
 						"error": {"message":" invalid flag in regex options: y","code":51108,"type":"MongoServerError"},
@@ -35039,7 +35207,7 @@
 					},
 					{
 						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..5.0.32"
+						"versions": "3.6.0..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"not a number\"","code":2,"type":"MongoServerError"},
@@ -35061,7 +35229,7 @@
 					},
 					{
 						"error": {"message":"$size may not be negative","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..5.0.32"
+						"versions": "3.6.0..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a non-negative number in: $size: -1","code":2,"type":"MongoServerError"},
@@ -35083,7 +35251,7 @@
 					},
 					{
 						"error": {"message":"$size must be a whole number","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..5.0.32"
+						"versions": "3.6.0..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected an integer: $size: 1.5","code":2,"type":"MongoServerError"},
@@ -35109,7 +35277,7 @@
 					},
 					{
 						"error": {"message":"Expected a positive number in: $bitsAllClear: -1","code":9,"type":"MongoServerError"},
-						"versions": "3.6.0..5.0.32"
+						"versions": "3.6.0..5.0.33"
 					},
 					{
 						"error": {"message":"Expected a non-negative number in: $bitsAllClear: -1","code":9,"type":"MongoServerError"},
@@ -35135,7 +35303,7 @@
 					},
 					{
 						"error": {"message":"Expected a positive number in: $bitsAllSet: -1","code":9,"type":"MongoServerError"},
-						"versions": "3.6.0..5.0.32"
+						"versions": "3.6.0..5.0.33"
 					},
 					{
 						"error": {"message":"Expected a non-negative number in: $bitsAllSet: -1","code":9,"type":"MongoServerError"},
@@ -35157,7 +35325,7 @@
 					},
 					{
 						"error": {"message":"bit positions must be >= 0 but got: 0: -1","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..5.0.32"
+						"versions": "3.6.0..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse bit position. Expected a non-negative number in: 0: -1","code":2,"type":"MongoServerError"},
@@ -35179,7 +35347,7 @@
 					},
 					{
 						"error": {"message":"bit positions must be >= 0 but got: 0: -1","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..5.0.32"
+						"versions": "3.6.0..5.0.33"
 					},
 					{
 						"error": {"message":"Failed to parse bit position. Expected a non-negative number in: 0: -1","code":2,"type":"MongoServerError"},
@@ -36027,7 +36195,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "2.6.12..5.0.32"
+						"versions": "2.6.12..5.0.33"
 					},
 					{
 						"error": {"message":" invalid flag in regex options: y","code":51108,"type":"MongoServerError"},
