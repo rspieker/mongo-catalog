@@ -1,0 +1,490 @@
+[
+	{
+		"id": "tCAU30LGYHSX",
+		"operation": {
+			"score": 5,
+			"scores": {
+				"$elemMatch": {
+					"$or": [
+						{
+							"rank": 8
+						},
+						{
+							"rank": 9
+						}
+					]
+				}
+			}
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "oTGTFs2zKN9D",
+		"operation": {
+			"score": 5,
+			"$or": [
+				{
+					"score": 6
+				},
+				{
+					"scores": {
+						"$elemMatch": {
+							"$or": [
+								{
+									"rank": 8
+								},
+								{
+									"rank": 9
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "dVQtZV89CiOI",
+		"operation": {
+			"score": 9,
+			"scores": {
+				"$elemMatch": {
+					"rank": {
+						"$elemMatch": {
+							"level": 12
+						}
+					},
+					"$or": [
+						{
+							"count": 10
+						},
+						{
+							"grade": 11
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "oOz0ewr8TCOK",
+		"operation": {},
+		"documents": [
+			0,
+			1
+		]
+	},
+	{
+		"id": "objSjLOS2lO1",
+		"operation": {
+			"ratings": {
+				"$elemMatch": {
+					"capacity": {
+						"$ne": 21
+					},
+					"$or": [
+						{
+							"attempts": 22
+						},
+						{
+							"attempts": 23
+						}
+					]
+				}
+			},
+			"$or": [
+				{
+					"quantity": 24,
+					"size": 25
+				},
+				{
+					"quantity": 26,
+					"size": 27
+				}
+			]
+		},
+		"documents": [
+			1
+		]
+	},
+	{
+		"id": "q19W2uyCjSNy",
+		"operation": {
+			"score": 5,
+			"scores": {
+				"$elemMatch": 42
+			}
+		},
+		"error": {
+			"message": "$elemMatch needs an Object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bzcJvFzdagrQ",
+		"operation": {
+			"score": null,
+			"scores": {
+				"$elemMatch": {
+					"$or": [
+						{
+							"rank": null
+						},
+						{
+							"rank": null
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "cZjHECEWkMWs",
+		"operation": {
+			"score": "value",
+			"scores": {
+				"$elemMatch": {
+					"$or": [
+						{
+							"rank": "value"
+						},
+						{
+							"rank": "value"
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "sSNoPz0MJ1Lx",
+		"operation": {
+			"score": true,
+			"scores": {
+				"$elemMatch": {
+					"$or": [
+						{
+							"rank": true
+						},
+						{
+							"rank": true
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "vKUvIlptXW6W",
+		"operation": {
+			"score": 5,
+			"$or": [
+				{
+					"score": 6
+				},
+				{
+					"scores": {
+						"$elemMatch": 42
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "$elemMatch needs an Object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ktI7tkyMGG0v",
+		"operation": {
+			"score": null,
+			"$or": [
+				{
+					"score": null
+				},
+				{
+					"scores": {
+						"$elemMatch": {
+							"$or": [
+								{
+									"rank": null
+								},
+								{
+									"rank": null
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		"documents": [
+			1
+		]
+	},
+	{
+		"id": "a17CcmGQOVNS",
+		"operation": {
+			"score": "value",
+			"$or": [
+				{
+					"score": "value"
+				},
+				{
+					"scores": {
+						"$elemMatch": {
+							"$or": [
+								{
+									"rank": "value"
+								},
+								{
+									"rank": "value"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "bW5yj7JRvJwS",
+		"operation": {
+			"score": true,
+			"$or": [
+				{
+					"score": true
+				},
+				{
+					"scores": {
+						"$elemMatch": {
+							"$or": [
+								{
+									"rank": true
+								},
+								{
+									"rank": true
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "rlfIgqVyHOSC",
+		"operation": {
+			"score": 9,
+			"scores": {
+				"$elemMatch": 42
+			}
+		},
+		"error": {
+			"message": "$elemMatch needs an Object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pSdVlBX1BhOm",
+		"operation": {
+			"score": null,
+			"scores": {
+				"$elemMatch": {
+					"rank": {
+						"$elemMatch": {
+							"level": null
+						}
+					},
+					"$or": [
+						{
+							"count": null
+						},
+						{
+							"grade": null
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "sEdcljXZPbLc",
+		"operation": {
+			"score": "value",
+			"scores": {
+				"$elemMatch": {
+					"rank": {
+						"$elemMatch": {
+							"level": "value"
+						}
+					},
+					"$or": [
+						{
+							"count": "value"
+						},
+						{
+							"grade": "value"
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "d2F58h3JEFPG",
+		"operation": {
+			"score": true,
+			"scores": {
+				"$elemMatch": {
+					"rank": {
+						"$elemMatch": {
+							"level": true
+						}
+					},
+					"$or": [
+						{
+							"count": true
+						},
+						{
+							"grade": true
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "hLueytQlR7FV",
+		"operation": {
+			"ratings": {
+				"$elemMatch": 42
+			},
+			"$or": [
+				{
+					"quantity": 24,
+					"size": 25
+				},
+				{
+					"quantity": 26,
+					"size": 27
+				}
+			]
+		},
+		"error": {
+			"message": "$elemMatch needs an Object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oJUfdU2mABwQ",
+		"operation": {
+			"ratings": {
+				"$elemMatch": {
+					"capacity": {
+						"$ne": null
+					},
+					"$or": [
+						{
+							"attempts": null
+						},
+						{
+							"attempts": null
+						}
+					]
+				}
+			},
+			"$or": [
+				{
+					"quantity": null,
+					"size": null
+				},
+				{
+					"quantity": null,
+					"size": null
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "pdJeMQQPQfzS",
+		"operation": {
+			"ratings": {
+				"$elemMatch": {
+					"capacity": {
+						"$ne": "value"
+					},
+					"$or": [
+						{
+							"attempts": "value"
+						},
+						{
+							"attempts": "value"
+						}
+					]
+				}
+			},
+			"$or": [
+				{
+					"quantity": "value",
+					"size": "value"
+				},
+				{
+					"quantity": "value",
+					"size": "value"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "tCU0gIRMvuVS",
+		"operation": {
+			"ratings": {
+				"$elemMatch": {
+					"capacity": {
+						"$ne": true
+					},
+					"$or": [
+						{
+							"attempts": true
+						},
+						{
+							"attempts": true
+						}
+					]
+				}
+			},
+			"$or": [
+				{
+					"quantity": true,
+					"size": true
+				},
+				{
+					"quantity": true,
+					"size": true
+				}
+			]
+		},
+		"documents": []
+	}
+]
