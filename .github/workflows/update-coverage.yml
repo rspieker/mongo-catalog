@@ -1,0 +1,81 @@
+name: Update coverage
+
+on:
+  schedule:
+    - cron: "0 7 * * 3,6" # 07:00 wed,sat (1h after mongo-test-extractor)
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
+          cache: npm
+
+      - name: install
+        run: npm ci
+
+      - name: Get latest extraction release tag
+        id: release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG=$(gh release view --repo rspieker/mongo-test-extractor --json tagName -q .tagName)
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+
+      - name: Check if already processed
+        id: check
+        run: |
+          META="automation/coverage/meta.json"
+          if [ -f "$META" ]; then
+            LAST=$(jq -r '.release // ""' "$META")
+          else
+            LAST=""
+          fi
+          if [ "$LAST" = "${{ steps.release.outputs.tag }}" ]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Download test cases
+        if: steps.check.outputs.skip == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release download --repo rspieker/mongo-test-extractor \
+            --pattern 'test-cases.ndjson' --dir /tmp
+
+      - name: Fingerprint
+        if: steps.check.outputs.skip == 'false'
+        run: npm run coverage:fingerprint -- /tmp/test-cases.ndjson /tmp/fingerprints.ndjson
+
+      - name: Detect gaps
+        if: steps.check.outputs.skip == 'false'
+        run: npm run coverage:gaps -- /tmp/fingerprints.ndjson /tmp/gaps.ndjson
+
+      - name: Generate coverage
+        if: steps.check.outputs.skip == 'false'
+        run: npm run coverage:generate -- /tmp/gaps.ndjson automation/coverage
+
+      - name: Update meta
+        if: steps.check.outputs.skip == 'false'
+        run: |
+          echo '{"release":"${{ steps.release.outputs.tag }}","processed":"'"$(date -u +%Y-%m-%dT%H:%M:%SZ)"'"}' \
+            > automation/coverage/meta.json
+
+      - name: Commit
+        if: steps.check.outputs.skip == 'false'
+        run: |
+          git config user.name "GitHub Actions Recipe Bot"
+          git config user.email "<>"
+          git add automation/coverage/
+          git diff --cached --quiet || (git commit -m "Update coverage from ${{ steps.release.outputs.tag }}" && git push origin main)

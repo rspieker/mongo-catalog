@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "coverage:fingerprint": "ts-node scripts/fingerprint.ts",
+    "coverage:gaps": "ts-node scripts/detect-gaps.ts",
+    "coverage:generate": "ts-node scripts/generate-coverage.ts",
     "update:mongo-versions": "ts-node chore/mongo-docker-images.ts",
     "update:catalog-queries": "ts-node chore/catalog-queries.ts",
     "update:workload": "ts-node chore/workload.ts",
