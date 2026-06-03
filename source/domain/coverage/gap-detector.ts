@@ -10,6 +10,7 @@ export type FingerprintRecord = {
     source: string
     query: Record<string, unknown>
     context: Array<Record<string, unknown>>
+    indices: Array<Record<string, unknown>>
     fingerprint: QueryFingerprint
     checksum: string
 }

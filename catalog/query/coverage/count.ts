@@ -1,12 +1,6 @@
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import type { Catalog, MongoDocument } from '../../catalog'
-
-type CoverageData = {
-    queries: Array<{ checksum: string; fingerprint: unknown; query: Record<string, unknown> }>
-    variants: Record<string, unknown>[]
-    documents: Record<string, unknown>[]
-}
+import type { Catalog, CoverageData, MongoDocument } from '../../catalog'
 
 const data: CoverageData = JSON.parse(
     readFileSync(join(__dirname, '../../../automation/coverage/count.json'), 'utf-8')
@@ -21,5 +15,6 @@ export const coverage_count: Catalog<CountDocument> = {
     ],
     collection: {
         records: data.documents,
+        ...(data.indices ? { indices: data.indices } : {}),
     },
 }

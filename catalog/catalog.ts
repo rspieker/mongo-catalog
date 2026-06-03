@@ -37,3 +37,10 @@ export type Catalog<T extends MongoDocument<Record<string, unknown>>> = {
     operations: Array<MongoQuery<T>>
     collection: MongoCollection<T>
 }
+
+export type CoverageData = {
+    queries: Array<{ checksum: string; fingerprint: unknown; query: Record<string, unknown> }>
+    variants: Record<string, unknown>[]
+    documents: Record<string, unknown>[]
+    indices?: Array<Record<string, -1 | 0 | 1 | 'text' | '2dsphere' | '2d'>>
+}

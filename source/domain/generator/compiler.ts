@@ -209,6 +209,8 @@ export function country(seed: string): Country {
     return pick(`${seed}:country`, countries);
 }
 
+// Returns coordinates in [lat, lng] order as stored in countries.json.
+// GeoJSON requires [lng, lat] — swap before use in any GeoJSON context.
 export function geospatial(
     seed: string,
     from?: Country

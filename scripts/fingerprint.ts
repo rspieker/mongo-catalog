@@ -21,6 +21,7 @@ type TestCase = {
     method: string
     filter: Array<Record<string, unknown>>
     context: Array<Record<string, unknown>>
+    indices?: Array<Record<string, unknown>>
     assertion: { method: string; expected: unknown }
 }
 
@@ -62,6 +63,7 @@ async function main() {
             source: testCase.source,
             query,
             context: testCase.context,
+            indices: testCase.indices ?? [],
             fingerprint: fp,
             checksum: cs,
         }) + '\n')

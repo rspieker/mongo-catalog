@@ -257,6 +257,28 @@ function generateVariants(
     return variants
 }
 
+// ─── Index reconstruction ─────────────────────────────────────────────────────
+
+// Renames index key fields using the slot map while preserving values (index
+// type descriptors like "2dsphere", 1, -1 must not be substituted).
+function reconstructIndexKeys(
+    index: Record<string, unknown>,
+    store: readonly StoreEntry[],
+    slots: SlotMap
+): Record<string, unknown> {
+    return Object.fromEntries(
+        Object.entries(index).map(([key, value]) => {
+            if (key.startsWith('$')) return [key, value]
+            const entry = (store as StoreEntry[]).find(e => e.kind === 'field' && e.value === key)
+            if (entry) {
+                const slotValue = slots.get(entry.reference)
+                return [slotValue !== undefined ? String(slotValue) : key, value]
+            }
+            return [key, value]
+        })
+    )
+}
+
 // ─── Reconstruction ───────────────────────────────────────────────────────────
 
 function reconstructKey(key: string, slots: SlotMap): string {
@@ -360,6 +382,8 @@ async function main() {
         const queries: CoverageQuery[] = []
         const documents: Record<string, unknown>[] = []
         const allReconstructedQueries: Record<string, unknown>[] = []
+        const seenIndices = new Set<string>()
+        const indices: Record<string, unknown>[] = []
 
         for (const groupRecords of finalGroups) {
             const fp = fingerprinter()
@@ -398,17 +422,28 @@ async function main() {
                 const doc = reconstruct(docFp, slots) as Record<string, unknown>
                 documents.push({ _id: documents.length, ...doc })
             }
+
+            // Collect indices, renaming field keys via slot map (values like "2dsphere" are preserved)
+            for (const record of groupRecords) {
+                for (const idx of (record.indices ?? [])) {
+                    const reconstructed = reconstructIndexKeys(idx as Record<string, unknown>, fp.store, slots)
+                    const key = JSON.stringify(reconstructed)
+                    if (seenIndices.has(key)) continue
+                    seenIndices.add(key)
+                    indices.push(reconstructed)
+                }
+            }
         }
 
         const variants = generateVariants(allReconstructedQueries)
 
         await writeFile(
             join(outputDir, `${topic}.json`),
-            JSON.stringify({ queries, variants, documents }, null, 2),
+            JSON.stringify({ queries, variants, documents, indices }, null, 2),
             'utf-8'
         )
         filesWritten++
-        console.log(`  ${topic}.json  (${queries.length} queries, ${variants.length} variants, ${documents.length} documents)`)
+        console.log(`  ${topic}.json  (${queries.length} queries, ${variants.length} variants, ${documents.length} documents, ${indices.length} indices)`)
     }
 
     console.log(`\nWrote ${filesWritten} files → ${outputDir}`)
