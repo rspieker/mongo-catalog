@@ -26,9 +26,18 @@ export async function buildCatalogIndex(
     const index = new Map<string, QueryFingerprint>()
 
     for (const { catalog } of entries) {
+        const indexSig = (catalog.collection.indices ?? [])
+            .map(idx => {
+                const spec = typeof idx === 'string'
+                    ? { [idx]: 1 } as Record<string, unknown>
+                    : idx as Record<string, unknown>
+                return checksum(fingerprintQuery(spec))
+            })
+            .sort()
+
         for (const operation of catalog.operations) {
             const fp = fingerprintQuery(operation as Record<string, unknown>)
-            index.set(checksum(fp), fp)
+            index.set(checksum({ query: fp, indices: indexSig }), fp)
         }
     }
 

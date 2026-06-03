@@ -57,7 +57,10 @@ async function main() {
         const query = testCase.filter[0]
         if (query === null || typeof query !== 'object' || Array.isArray(query)) continue
         const fp = fingerprintQuery(query)
-        const cs = checksum(fp)
+        const indexSig = (testCase.indices ?? [])
+            .map(idx => checksum(fingerprintQuery(idx)))
+            .sort()
+        const cs = checksum({ query: fp, indices: indexSig })
 
         out.write(JSON.stringify({
             source: testCase.source,
