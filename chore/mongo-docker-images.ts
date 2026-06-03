@@ -34,17 +34,6 @@ getTags<DockerTag>('mongo')
                             architecture === 'amd64' && os === 'linux'
                     )
             )
-            .map((v, i, a) => {
-                if (!i) {
-                    writeFileSync(
-                        './mongo-docker.json',
-                        JSON.stringify(a, null, '\t')
-                    );
-                    throw new Error('done');
-                }
-
-                return v;
-            })
             .map(({ name, digest, last_updated, images }) => {
                 const version = new Version(name);
                 const checksum =
