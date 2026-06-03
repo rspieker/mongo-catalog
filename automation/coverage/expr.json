@@ -1,7 +1,7 @@
 {
   "queries": [
     {
-      "checksum": "7ba0c6ca1697a91159502d7fe7ea0e44ad990147760013f91a16b8427f2fd86e",
+      "checksum": "e4c386b595232c255f5af83cfd6338161abf8f262e51ebe9bf47e0ccaa76b46f",
       "fingerprint": {
         "$expr": {
           "$and": [
@@ -20,7 +20,7 @@
             {
               "$eq": [
                 "$age",
-                17
+                33
               ]
             }
           ]
@@ -28,7 +28,7 @@
       }
     },
     {
-      "checksum": "91e0b5432fa4d9b3c5d65532d1cad10f97c273fc555493cb8e589d2e5aaa9d21",
+      "checksum": "b8c6dc9b3943aaca4ab606a1e379c0f746e81f4835b26a48a170a71cf9490c80",
       "fingerprint": {
         "$expr": {
           "$and": [
@@ -83,7 +83,7 @@
       }
     },
     {
-      "checksum": "68269c0a61eb6d62d83cabe2e39f78d467944e845823c2816a89f9a19846c6d9",
+      "checksum": "f1b8199fc5645acc903550ca705c5b6fa682165f9567d9e3d89457e57325c330",
       "fingerprint": {
         "$expr": {
           "$in": [
@@ -108,7 +108,7 @@
       }
     },
     {
-      "checksum": "377c5b3eea98c067761fac76c0d5024d6f2c9a3948ed857f3c94ee7c58c9bd0e",
+      "checksum": "f2f99695ec0f52c487180b4f8ba1b689d9a3e17a7b6b125b0494aaba834da0e2",
       "fingerprint": {
         "$expr": {
           "$eq": [
@@ -121,118 +121,8 @@
         "$expr": {
           "$eq": [
             "$weight",
-            35
+            6
           ]
-        }
-      }
-    },
-    {
-      "checksum": "f342bf2d5130f88ced8f66a198c88706b6fdd1ee1add13254f68efed2743177f",
-      "fingerprint": {
-        "$expr": {
-          "$eq": [
-            "field:#1",
-            "field:#2"
-          ]
-        }
-      },
-      "query": {
-        "$expr": {
-          "$eq": [
-            "$rank",
-            "$level"
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "0c406dfc577bb0268a1411ab109f5317a093bc8d5eb15b1173f65eea1baf1fc6",
-      "fingerprint": {
-        "$or": [
-          {
-            "$expr": {
-              "$eq": [
-                "field:#1",
-                "field:#2"
-              ]
-            }
-          },
-          {
-            "field:#3": {
-              "$gt": "number:#1"
-            }
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "$expr": {
-              "$eq": [
-                "$rank",
-                "$level"
-              ]
-            }
-          },
-          {
-            "count": {
-              "$gt": 7
-            }
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "db85ca2b3b6cac99d5e0fc8859ea126cebbbd141864fc08408b9d20c54103a28",
-      "fingerprint": {
-        "field:#1": {
-          "$elemMatch": {
-            "$expr": {
-              "$eq": [
-                "field:#2",
-                "field:#3"
-              ]
-            }
-          }
-        }
-      },
-      "query": {
-        "grade": {
-          "$elemMatch": {
-            "$expr": {
-              "$eq": [
-                "$rank",
-                "$level"
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "checksum": "77b16009581e7c2059748477d328d97478c2e38e8c826696bcd1b7851008d3a3",
-      "fingerprint": {
-        "field:#1": {
-          "$_internalSchemaObjectMatch": {
-            "$expr": {
-              "$eq": [
-                "field:#2",
-                "field:#3"
-              ]
-            }
-          }
-        }
-      },
-      "query": {
-        "grade": {
-          "$_internalSchemaObjectMatch": {
-            "$expr": {
-              "$eq": [
-                "$rank",
-                "$level"
-              ]
-            }
-          }
         }
       }
     }
@@ -280,7 +170,7 @@
           {
             "$eq": [
               null,
-              17
+              33
             ]
           }
         ]
@@ -292,7 +182,7 @@
           {
             "$eq": [
               42,
-              17
+              33
             ]
           }
         ]
@@ -304,7 +194,7 @@
           {
             "$eq": [
               true,
-              17
+              33
             ]
           }
         ]
@@ -454,7 +344,7 @@
       "$expr": {
         "$eq": [
           null,
-          35
+          6
         ]
       }
     },
@@ -462,7 +352,7 @@
       "$expr": {
         "$eq": [
           42,
-          35
+          6
         ]
       }
     },
@@ -470,271 +360,68 @@
       "$expr": {
         "$eq": [
           true,
-          35
+          6
         ]
-      }
-    },
-    {
-      "$expr": {
-        "$eq": [
-          null,
-          null
-        ]
-      }
-    },
-    {
-      "$expr": {
-        "$eq": [
-          42,
-          42
-        ]
-      }
-    },
-    {
-      "$expr": {
-        "$eq": [
-          true,
-          true
-        ]
-      }
-    },
-    {
-      "$or": [
-        {
-          "$expr": {
-            "$eq": [
-              "$rank",
-              "$level"
-            ]
-          }
-        },
-        {
-          "count": {
-            "$gt": null
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "$expr": {
-            "$eq": [
-              "$rank",
-              "$level"
-            ]
-          }
-        },
-        {
-          "count": {
-            "$gt": "value"
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "$expr": {
-            "$eq": [
-              "$rank",
-              "$level"
-            ]
-          }
-        },
-        {
-          "count": {
-            "$gt": true
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "$expr": {
-            "$eq": [
-              null,
-              null
-            ]
-          }
-        },
-        {
-          "count": {
-            "$gt": 7
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "$expr": {
-            "$eq": [
-              42,
-              42
-            ]
-          }
-        },
-        {
-          "count": {
-            "$gt": 7
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "$expr": {
-            "$eq": [
-              true,
-              true
-            ]
-          }
-        },
-        {
-          "count": {
-            "$gt": 7
-          }
-        }
-      ]
-    },
-    {
-      "grade": {
-        "$elemMatch": 42
-      }
-    },
-    {
-      "grade": {
-        "$elemMatch": {
-          "$expr": {
-            "$eq": [
-              null,
-              null
-            ]
-          }
-        }
-      }
-    },
-    {
-      "grade": {
-        "$elemMatch": {
-          "$expr": {
-            "$eq": [
-              42,
-              42
-            ]
-          }
-        }
-      }
-    },
-    {
-      "grade": {
-        "$elemMatch": {
-          "$expr": {
-            "$eq": [
-              true,
-              true
-            ]
-          }
-        }
-      }
-    },
-    {
-      "grade": {
-        "$_internalSchemaObjectMatch": {
-          "$expr": {
-            "$eq": [
-              null,
-              null
-            ]
-          }
-        }
-      }
-    },
-    {
-      "grade": {
-        "$_internalSchemaObjectMatch": {
-          "$expr": {
-            "$eq": [
-              42,
-              42
-            ]
-          }
-        }
-      }
-    },
-    {
-      "grade": {
-        "$_internalSchemaObjectMatch": {
-          "$expr": {
-            "$eq": [
-              true,
-              true
-            ]
-          }
-        }
       }
     }
   ],
   "documents": [
     {
       "_id": 0,
-      "age": 15,
-      "name": 22,
-      "title": 17,
-      "score": 18,
-      "username": 14
+      "age": 31,
+      "name": 38,
+      "title": 33,
+      "score": 34,
+      "username": 30
     },
     {
       "_id": 1,
-      "age": 14,
+      "age": 30,
       "name": "Abundant",
       "title": "Couple",
       "username": "Double"
     },
     {
       "_id": 2,
-      "rank": 23,
+      "rank": 17,
       "email": "Abundant"
     },
     {
       "_id": 3,
-      "rank": 26
+      "rank": 20
     },
     {
       "_id": 4,
-      "rank": 27,
+      "rank": 21,
       "email": null
     },
     {
       "_id": 5,
-      "rank": 28,
+      "rank": 22,
       "email": {}
     },
     {
       "_id": 6,
-      "rank": 29,
+      "rank": 23,
       "email": []
     },
     {
       "_id": 7,
-      "rank": 30,
+      "rank": 24,
       "email": [
         []
       ]
     },
     {
       "_id": 8,
-      "rank": 31,
+      "rank": 25,
       "email": [
         null
       ]
     },
     {
       "_id": 9,
-      "rank": 32,
+      "rank": 26,
       "email": [
         [],
         [
@@ -744,7 +431,7 @@
     },
     {
       "_id": 10,
-      "rank": 33,
+      "rank": 27,
       "email": [
         "Abundant",
         "Couple"
@@ -752,7 +439,7 @@
     },
     {
       "_id": 11,
-      "rank": 35,
+      "rank": 29,
       "email": [
         [
           "Abundant"
@@ -764,14 +451,14 @@
     },
     {
       "_id": 12,
-      "rank": 38,
+      "rank": 32,
       "email": [
         {}
       ]
     },
     {
       "_id": 13,
-      "rank": 40,
+      "rank": 34,
       "email": [
         [
           [
@@ -784,7 +471,7 @@
     },
     {
       "_id": 14,
-      "rank": 42,
+      "rank": 36,
       "email": [
         [
           [
@@ -795,26 +482,26 @@
     },
     {
       "_id": 15,
-      "rank": 48,
+      "rank": 42,
       "email": {
-        "$toDouble": 24
+        "$toDouble": 18
       }
     },
     {
       "_id": 16,
-      "rank": 49,
+      "rank": 43,
       "email.level": "Abundant"
     },
     {
       "_id": 17,
-      "rank": 50,
+      "rank": 44,
       "email": {
         "level": "Abundant"
       }
     },
     {
       "_id": 18,
-      "rank": 52,
+      "rank": 46,
       "email": [
         {
           "level": "Abundant"
@@ -828,14 +515,14 @@
     {
       "_id": 19,
       "scores": {
-        "grade": 35
+        "grade": 6
       }
     },
     {
       "_id": 20,
       "scores": {
         "grade": [
-          35
+          6
         ]
       }
     },
@@ -843,7 +530,7 @@
       "_id": 21,
       "scores": [
         {
-          "grade": 35
+          "grade": 6
         }
       ]
     },
@@ -852,26 +539,26 @@
       "scores": [
         {
           "grade": [
-            35
+            6
           ]
         }
       ]
     },
     {
       "_id": 23,
-      "index": 35,
+      "index": 6,
       "ratings": [
-        35
+        6
       ]
     },
     {
       "_id": 24,
-      "depth": 35,
+      "depth": 6,
       "status": "Abundant"
     },
     {
       "_id": 25,
-      "weight": 34
+      "weight": 5
     },
     {
       "_id": 26
@@ -879,6 +566,51 @@
     {
       "_id": 27,
       "age": null
+    }
+  ],
+  "indices": [
+    {
+      "name": 1
+    },
+    {
+      "name": 1,
+      "title": 1
+    },
+    {
+      "email": 1
+    },
+    {
+      "category.a": 1
+    },
+    {
+      "a.b": 1
+    },
+    {
+      "c.d": 1
+    },
+    {
+      "e.f": 1
+    },
+    {
+      "g.h": 1
+    },
+    {
+      "index": 1,
+      "ratings": 1
+    },
+    {
+      "depth": 1,
+      "status": "text"
+    },
+    {
+      "weight": 1,
+      "height": 1
+    },
+    {
+      "age": 1
+    },
+    {
+      "w.z": 1
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "queries": [
     {
-      "checksum": "944aee628a52538a441881848a05c6bc83a79d04b6d85c1e8ba73a27c800f869",
+      "checksum": "b9596d68b0246309f5934a165ad338b5adcb1353d7ac099290ea44930456da9c",
       "fingerprint": {
         "field:#1": {
           "$in": [
@@ -12,13 +12,13 @@
       "query": {
         "age": {
           "$in": [
-            2
+            17
           ]
         }
       }
     },
     {
-      "checksum": "e0ad923e1ed3b528d4e11f96342ee40f73d87d522b1cd3af466a1c023ec97e15",
+      "checksum": "23f5f2f0c6f384787bf403851200edc04eb27b3f616da4f6ea464931b8daa242",
       "fingerprint": {
         "field:#1": {
           "$in": [
@@ -30,14 +30,14 @@
       "query": {
         "age": {
           "$in": [
-            2,
-            3
+            17,
+            18
           ]
         }
       }
     },
     {
-      "checksum": "c9e6fb1d23c46e4e1003d8a38828ffd4309b245eab0d4a417d1847db3ffc1992",
+      "checksum": "688dbe579037291ce7789ae68d719d192a54a997b61478c48a3dcddcab553b6e",
       "fingerprint": {
         "field:#1": {
           "$in": []
@@ -50,7 +50,7 @@
       }
     },
     {
-      "checksum": "a47bb4e255ed7a031cc6601ec7186099ae6be316469afabf1ec0ad611629d96e",
+      "checksum": "6ec957ba2936c353e21e9b99788eb48c45f9bf35e9fd374b1fc0ffb3445a7ace",
       "fingerprint": {
         "field:#1": {
           "$gt": "number:#1",
@@ -61,45 +61,15 @@
       },
       "query": {
         "age": {
-          "$gt": 2,
+          "$gt": 17,
           "$in": [
-            3
+            18
           ]
         }
       }
     },
     {
-      "checksum": "8d94800ee81a8c5efd92896737da0ac3312258edb4a9d057cd7aeb3ecfd2c423",
-      "fingerprint": {
-        "field:#1": {
-          "$in": {
-            "field:#2": "number:#1"
-          }
-        }
-      },
-      "query": {
-        "age": {
-          "$in": {
-            "status": 2
-          }
-        }
-      }
-    },
-    {
-      "checksum": "94ff2f961c7a42d5261a22c65045c34244edf2528224981417012114e256d348",
-      "fingerprint": {
-        "field:#1": {
-          "$in": "number:#1"
-        }
-      },
-      "query": {
-        "age": {
-          "$in": 2
-        }
-      }
-    },
-    {
-      "checksum": "2d0d9ab6402db38d8109060be42bd8ba52c5b1a6f062d1f760c0030f0168177e",
+      "checksum": "07d6eb13a954480262245977dac7e646f6f3f5b99a5dfd6935ee48c6f34c9361",
       "fingerprint": {
         "field:#1": {
           "$in": [
@@ -117,92 +87,139 @@
       "query": {
         "age": {
           "$in": [
-            2,
-            3
+            17,
+            18
           ]
         },
         "score": {
           "$in": [
-            2,
-            3
+            17,
+            18
           ]
         }
       }
     },
     {
-      "checksum": "037ed0ec5d6066f54826e4880b4ffa8ecb2d62621393f381f13f6f6656870af0",
+      "checksum": "19cc5a417d1280d061c32e80f2e3327de9a1270342014d3071c2e257c62d84f6",
       "fingerprint": {
         "field:#1": {
           "$in": [
-            {},
-            {}
-          ]
-        }
-      },
-      "query": {
-        "status": {
-          "$in": [
-            {},
-            {}
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "97de5531a5a638899974f5f5f51e69d78e099b23c178f24f7ce601a21eb3f4eb",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            "string:#1",
             "number:#1",
-            "string:#2",
-            "number:#2",
-            "string:#3",
-            "number:#3",
-            "string:#4",
-            "number:#4",
-            "number:#5",
-            "string:#5",
-            "string:#6",
-            "number:#6",
-            "string:#7",
-            "number:#7",
-            "string:#8",
-            "string:#9",
-            "number:#8",
-            "string:#10",
-            "number:#9"
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "age": {
+          "$in": [
+            17,
+            18
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "d9ea128b0e5db1dace01ccd30ad7627ba66a18a48a0982b7cdce9b61440c0be1",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "number:#1",
+            "number:#2"
+          ]
+        },
+        "field:#2": {
+          "$in": [
+            "number:#1",
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "age": {
+          "$in": [
+            17,
+            18
+          ]
+        },
+        "score": {
+          "$in": [
+            17,
+            18
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "5d99fdbbbde206a0c4a8999e941f1a9169d520cfcd655a989aab7b798423035d",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "number:#1",
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "age": {
+          "$in": [
+            17,
+            18
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "0e18d2ba46380397cb5ce43216efcffd09a662aba12f968629820e5540f1150c",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "number:#1",
+            "number:#2"
+          ]
+        },
+        "field:#2": {
+          "$in": [
+            "number:#1",
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "age": {
+          "$in": [
+            17,
+            18
+          ]
+        },
+        "score": {
+          "$in": [
+            17,
+            18
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "9acbdf0b3d75306fcc4b7b14b5a6a2b633ac1678bafb69e5fbf7a002dffc2820",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {},
+            {}
           ]
         }
       },
       "query": {
         "status": {
           "$in": [
-            "No",
-            9,
-            "Numerous",
-            7,
-            "Several",
-            3,
-            "Significant",
-            10,
-            4,
-            "Huge",
-            "Single",
-            5,
-            "Some",
-            2,
-            "Sparse",
-            "Enough",
-            8,
-            "Either",
-            6
+            {},
+            {}
           ]
         }
       }
     },
     {
-      "checksum": "40eaa5e5751f834f30c74b521aadba5dca8d1aaddf2773927759f58b47846498",
+      "checksum": "1245ba77752c5b0623a29b28cb8e6f9f6b61410322b124aceae9a91b0aaf195a",
       "fingerprint": {
         "field:#1": [
           "number:#1"
@@ -210,12 +227,12 @@
       },
       "query": {
         "name": [
-          7
+          17
         ]
       }
     },
     {
-      "checksum": "08abc599f6e5e39f7675fdcb31dd1a069d2f28e5b016461964e80f0fabba9eb3",
+      "checksum": "43ef342c0c8107bc2e1a30b92139e944754bca009a26331a85f5378d6f80c280",
       "fingerprint": {
         "field:#1": {
           "$in": [
@@ -229,14 +246,14 @@
         "name": {
           "$in": [
             [
-              7
+              17
             ]
           ]
         }
       }
     },
     {
-      "checksum": "7abe2445ebce4ea6280cba7b59709bc857a7c4e0d48a8dbd1e6273489a8c3596",
+      "checksum": "2e6fe294d13d84f61f25197f3461598dcc3930136d5ed31ceadfb34949ce3705",
       "fingerprint": {
         "field:#1": {
           "$in": [
@@ -253,17 +270,17 @@
         "name": {
           "$in": [
             [
-              7
+              17
             ]
           ],
           "$ne": [
-            8
+            18
           ]
         }
       }
     },
     {
-      "checksum": "f5fd34cb2515e0b5a5034baf47cde9de6d4e4f6c72b08d9d8fc008d1ceb265be",
+      "checksum": "2c7170df158587c33136d7f5264cc2c6eef708e7ccfbaf4e4450cdb3287e4c2f",
       "fingerprint": {
         "field:#1": {
           "$in": [
@@ -281,12 +298,12 @@
               "Abundant"
             ]
           ],
-          "$type": 8
+          "$type": 18
         }
       }
     },
     {
-      "checksum": "817f18ba28812170c967c8056e49e061ce22e906492c2f7eb3796caa250bf994",
+      "checksum": "74749635aa0f012efcdd358de7f8433d2b1612d86188eedaa887549d4bc6a888",
       "fingerprint": {
         "field:#1": [
           "string:#1"
@@ -299,7 +316,7 @@
       }
     },
     {
-      "checksum": "20b55ecc536b45e498709e622e8c772335a7e8555ee97f344a779398027fa99c",
+      "checksum": "eec44c064a266010447f5be9ba70ab32aa668687232ad41756e98c4448655898",
       "fingerprint": {
         "field:#1": {
           "$in": [
@@ -320,16 +337,16 @@
       }
     },
     {
-      "checksum": "6a05181e1aee66803b401291e18c548fc74eeac6e33005f35a3b9787183e3241",
+      "checksum": "24582a98e1b67cdd1d7c6b90ed46f806713ef733fca38a76de3aa0c0ea851de0",
       "fingerprint": {
         "field:#1": []
       },
       "query": {
-        "scores": []
+        "title": []
       }
     },
     {
-      "checksum": "57269d1f7efb715c8c5602aa740ad748c7f6d6d0b4c933bc10ca807889d33a98",
+      "checksum": "8128b50e89f6846f43dc183e301154f6ed89b274f3366581e5f7cb02ac23b094",
       "fingerprint": {
         "field:#1": {
           "$in": [
@@ -338,7 +355,7 @@
         }
       },
       "query": {
-        "scores": {
+        "title": {
           "$in": [
             []
           ]
@@ -346,7 +363,7 @@
       }
     },
     {
-      "checksum": "7af2346371dcb6314a806d9c4453c848dc83fd371ca365f7fafe4f88e9efec70",
+      "checksum": "e6fe267d3eef20fe7248c69353d9f0be00a323457bb2e9ea720634cb1fee92c1",
       "fingerprint": {
         "field:#1": {
           "field:#2": "number:#1",
@@ -354,14 +371,14 @@
         }
       },
       "query": {
-        "level": {
-          "count": 26,
-          "grade": 27
+        "rank": {
+          "level": 10,
+          "count": 11
         }
       }
     },
     {
-      "checksum": "0f9d8831d712b3b05d11a4f6876dc7b20449ebcd8fd513dfb2c1952d2bbc0d44",
+      "checksum": "db2707fdea2b34a750afe45589945031e94b5de3e1ae2a1cdbd8bb277c602081",
       "fingerprint": {
         "field:#1": {
           "$in": [
@@ -373,18 +390,18 @@
         }
       },
       "query": {
-        "level": {
+        "rank": {
           "$in": [
             {
-              "count": 26,
-              "grade": 27
+              "level": 10,
+              "count": 11
             }
           ]
         }
       }
     },
     {
-      "checksum": "5f33bcfba4fb26a777dbb82cea5d905427604fafd1bca435c0581e68ff36c6d6",
+      "checksum": "369bec82ea8c2262ceb23ebd5042fb401dad2a3866f90f6e3b0487a119d2f2c6",
       "fingerprint": {
         "field:#1.field:#2": "number:#1",
         "field:#1.field:#3": {
@@ -394,16 +411,187 @@
         }
       },
       "query": {
-        "level.count": 26,
-        "level.grade": {
+        "rank.level": 10,
+        "rank.count": {
           "$in": [
-            27
+            11
           ]
         }
       }
     },
     {
-      "checksum": "925fcbaf12095e73fb7b741a75330a3e548405d1b20c17d658de59e132c78520",
+      "checksum": "a85176d366145d154edc946b0985ab49a9e4cfbca6d78e01b14ca15d186dafd5",
+      "fingerprint": {
+        "field:#1": {
+          "field:#2": "number:#1",
+          "field:#3": "number:#2"
+        }
+      },
+      "query": {
+        "rank": {
+          "level": 10,
+          "count": 11
+        }
+      }
+    },
+    {
+      "checksum": "31cf7e1af054779c9573b479fc2d5efe0151abbd0fd1feb30aae24b82c1a4b9f",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {
+              "field:#2": "number:#1",
+              "field:#3": "number:#2"
+            }
+          ]
+        }
+      },
+      "query": {
+        "rank": {
+          "$in": [
+            {
+              "level": 10,
+              "count": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "c62a4023f878935ca4122421e26013aa55a1e25ab1fe45574cecff75f88bde9d",
+      "fingerprint": {
+        "field:#1.field:#2": "number:#1",
+        "field:#1.field:#3": {
+          "$in": [
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "rank.level": 10,
+        "rank.count": {
+          "$in": [
+            11
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "c34dff7409d75f2fc9735274bb75fb12d82acf8c194aefd16078290551dd58aa",
+      "fingerprint": {
+        "field:#1": {
+          "field:#2": "number:#1",
+          "field:#3": "number:#2"
+        }
+      },
+      "query": {
+        "grade": {
+          "level": 10,
+          "count": 11
+        }
+      }
+    },
+    {
+      "checksum": "4bc28ea6eeec8395a11aaffeb13d40184e98b5a26806e4aa28c508d02939f225",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {
+              "field:#2": "number:#1",
+              "field:#3": "number:#2"
+            }
+          ]
+        }
+      },
+      "query": {
+        "grade": {
+          "$in": [
+            {
+              "level": 10,
+              "count": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "4efc8d935459567303ff3074d1d1652e1c3b6748d8a3c415bfa8988d1bab6dcc",
+      "fingerprint": {
+        "field:#1.field:#2": "number:#1",
+        "field:#1.field:#3": {
+          "$in": [
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "grade.level": 10,
+        "grade.count": {
+          "$in": [
+            11
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "21e0245cf050e44953203c56768d905158eece0540e7ca2f397281a4a2274964",
+      "fingerprint": {
+        "field:#1": {
+          "field:#2": "number:#1",
+          "field:#3": "number:#2"
+        }
+      },
+      "query": {
+        "grade": {
+          "level": 10,
+          "count": 11
+        }
+      }
+    },
+    {
+      "checksum": "05d6a48fd099f3b7a6c0bda2f9e05037593255d4a0b582d8d799a014d9ce274e",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {
+              "field:#2": "number:#1",
+              "field:#3": "number:#2"
+            }
+          ]
+        }
+      },
+      "query": {
+        "grade": {
+          "$in": [
+            {
+              "level": 10,
+              "count": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "dd0f224df78b50b6c32ecc10a8aa0c5ef6352670cdcf775c713dbc2c54f7e0ba",
+      "fingerprint": {
+        "field:#1.field:#2": "number:#1",
+        "field:#1.field:#3": {
+          "$in": [
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "grade.level": 10,
+        "grade.count": {
+          "$in": [
+            11
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "c8ab1c060e74806175b5b94617be7ae8c444a1a375754f18aa57dce0209b95e4",
       "fingerprint": {
         "field:#1": "null:#1"
       },
@@ -412,7 +600,7 @@
       }
     },
     {
-      "checksum": "4c1d56f82c945effda1ddb496e149aa04825ca61efff8e3394861b4b82f7343e",
+      "checksum": "94a8b740aab3f9ba250ff5c46a077a5dd4d409960e801367e3bf0d74e0885c9a",
       "fingerprint": {
         "field:#1": {
           "$in": [
@@ -424,839 +612,6 @@
         "step": {
           "$in": [
             null
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "a1fbcaba9d77880f0a5d8f33fb304028787a490f84d1fb99e96b5758ffcb505f",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            {
-              "$elemMatch": {
-                "field:#2": "number:#1"
-              }
-            }
-          ]
-        }
-      },
-      "query": {
-        "priority": {
-          "$in": [
-            {
-              "$elemMatch": {
-                "capacity": 29
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "615e79fbd539f614ae2a76aa77e642e50187a3bda3bafcb4089c32fca532581f",
-      "fingerprint": {
-        "field:#1": {
-          "$not": {
-            "$in": [
-              {
-                "$elemMatch": {
-                  "field:#2": "number:#1"
-                }
-              }
-            ]
-          }
-        }
-      },
-      "query": {
-        "priority": {
-          "$not": {
-            "$in": [
-              {
-                "$elemMatch": {
-                  "capacity": 29
-                }
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "checksum": "e3d9ac05abb4c1c2d6349719bb37d7e0674aa08fe1ab85494f7f6b86f45ef380",
-      "fingerprint": {
-        "field:#1": {
-          "$nin": [
-            {
-              "$elemMatch": {
-                "field:#2": "number:#1"
-              }
-            }
-          ]
-        }
-      },
-      "query": {
-        "priority": {
-          "$nin": [
-            {
-              "$elemMatch": {
-                "capacity": 29
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "301827d29cf4f2932422c5ba165c03b89fca62f639579cb1707bfbb9241d3492",
-      "fingerprint": {
-        "field:#1": {
-          "$not": {
-            "$nin": [
-              {
-                "$elemMatch": {
-                  "field:#2": "number:#1"
-                }
-              }
-            ]
-          }
-        }
-      },
-      "query": {
-        "priority": {
-          "$not": {
-            "$nin": [
-              {
-                "$elemMatch": {
-                  "capacity": 29
-                }
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "checksum": "21e2dd0346404893e17429db48ab7b9187b0b1578df02b5252987bcd6e855dcf",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            "number:#1",
-            {}
-          ]
-        }
-      },
-      "query": {
-        "title": {
-          "$in": [
-            18,
-            {}
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "f1a35adbf18d7a4e3523a88c6f06248a1f84a95004e1e3908178d56dcb5605fc",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            {},
-            "number:#1"
-          ]
-        }
-      },
-      "query": {
-        "title": {
-          "$in": [
-            {},
-            18
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "ee9a227f2c49a2d02e09d593409a5e31ed8b52524acf9fcc881f2195aeb22c35",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            {},
-            "number:#1",
-            "number:#2"
-          ]
-        }
-      },
-      "query": {
-        "title": {
-          "$in": [
-            {},
-            18,
-            19
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "9569dc2867f3c09ccb976bfca344fa041f0657d394e3cd92d2a9469814d4a86f",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            {},
-            "number:#1",
-            "number:#2",
-            "number:#3"
-          ]
-        }
-      },
-      "query": {
-        "title": {
-          "$in": [
-            {},
-            18,
-            19,
-            20
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "dd493f1059a809f6c3dfeb24ae6f319f4e1206e288ccb49de297516765fcef55",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            {},
-            "number:#1",
-            "number:#2",
-            {}
-          ]
-        }
-      },
-      "query": {
-        "title": {
-          "$in": [
-            {},
-            18,
-            19,
-            {}
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "79abfddc8c980992071e234f6d45769c1e34fedeb4bcdbd0be1311f27cfe0ca2",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            "number:#1",
-            {},
-            "number:#2",
-            {}
-          ]
-        }
-      },
-      "query": {
-        "title": {
-          "$in": [
-            18,
-            {},
-            19,
-            {}
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "8bfddd5506b2694c08f437c041c8bfce1bd556023097be819cfded3eeb283276",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            {},
-            "number:#1",
-            "number:#2",
-            "number:#3",
-            {}
-          ]
-        }
-      },
-      "query": {
-        "title": {
-          "$in": [
-            {},
-            18,
-            19,
-            20,
-            {}
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "c32cbfbb921369474d43d6f90bb7b1c4ac1d1cb08b428811272c885db6253f28",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            "number:#1",
-            {},
-            "number:#2",
-            "number:#3",
-            {}
-          ]
-        }
-      },
-      "query": {
-        "title": {
-          "$in": [
-            18,
-            {},
-            19,
-            20,
-            {}
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "9d4bc5443120612fdb136b2746fa8629d0d0cf2eabf056cf4e193798e83a0afb",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            [
-              "number:#1",
-              "number:#2"
-            ],
-            {}
-          ]
-        }
-      },
-      "query": {
-        "username": {
-          "$in": [
-            [
-              13,
-              14
-            ],
-            {}
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "ce72685bea695c6d37e2975de2b09cd17b2fd08a22ada2ea588c3ebc2372a514",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            {}
-          ]
-        }
-      },
-      "query": {
-        "username": {
-          "$in": [
-            {}
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "f9140fde71f661055e4a4a577d729e2e844f3081bcd04d5d9073b86aa8a210b9",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$in": [
-            "number:#1",
-            "number:#2"
-          ]
-        }
-      },
-      "query": {
-        "username.attempts": {
-          "$in": [
-            13,
-            14
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "c3ac9285a22cb12c972c7cccde1c94953f0871d5a4827434fb5cb37678bd6efc",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$in": [
-            "number:#1",
-            {}
-          ]
-        }
-      },
-      "query": {
-        "username.attempts": {
-          "$in": [
-            13,
-            {}
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "1a9f89e85a9e314fb9c08fa09e61128a1dc5d9c17122853608f570d7e45dda35",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            {
-              "field:#2": "number:#1"
-            },
-            {}
-          ]
-        }
-      },
-      "query": {
-        "username": {
-          "$in": [
-            {
-              "attempts": 13
-            },
-            {}
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "c258c2306cb5077e7a857e5b2e1ad74214be9c4ad2f823dc4d2d144aebedc56a",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$in": [
-            {
-              "field:#3": "number:#1"
-            },
-            {
-              "field:#3": "number:#2"
-            },
-            {}
-          ]
-        }
-      },
-      "query": {
-        "username.attempts": {
-          "$in": [
-            {
-              "quantity": 22
-            },
-            {
-              "quantity": 13
-            },
-            {}
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "b54a03805fad851dc633c086a450877e2b78855612766227aae4eda00ce32dad",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$in": [
-            {},
-            "number:#1"
-          ]
-        }
-      },
-      "query": {
-        "attempts.quantity": {
-          "$in": [
-            {},
-            13
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "a4ab3131a4cf277f24e295f1d3dc4f1a9476d29002d0e3830fb9a2044fe11aab",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$in": [
-            "number:#1",
-            "number:#2",
-            {}
-          ]
-        }
-      },
-      "query": {
-        "attempts.quantity": {
-          "$in": [
-            13,
-            14,
-            {}
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "7c2bfe9342655990118e18fc205e9c0703bd13413ea7146ae42cd8407a57f1fa",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$in": [
-            "number:#1",
-            "number:#2",
-            "number:#3",
-            {}
-          ]
-        }
-      },
-      "query": {
-        "attempts.quantity": {
-          "$in": [
-            13,
-            14,
-            15,
-            {}
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "02ac2acce5f03e93ba77ec790601440fa87ee244855278050066bdc1c06788f7",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$in": [
-            "number:#1",
-            "number:#2",
-            "number:#3",
-            {},
-            {}
-          ]
-        }
-      },
-      "query": {
-        "attempts.quantity": {
-          "$in": [
-            13,
-            14,
-            15,
-            {},
-            {}
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "8d4aed4429851d717bddfba9ccde82f187d9ab86b8b3f6fcb2fd007daa4b4540",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$in": [
-            {},
-            "number:#1",
-            "number:#2",
-            "number:#3"
-          ]
-        }
-      },
-      "query": {
-        "attempts.quantity": {
-          "$in": [
-            {},
-            13,
-            14,
-            15
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "634ebd6a75b076a8c1318b87aded7c3f55c52bb0233c533f9c286838f60c4444",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$in": [
-            "string:#1",
-            "string:#2",
-            "string:#3",
-            "number:#1",
-            "number:#2",
-            "number:#3"
-          ]
-        }
-      },
-      "query": {
-        "attempts.quantity": {
-          "$in": [
-            "Abundant",
-            "Couple",
-            "Double",
-            13,
-            14,
-            15
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "c49d4cad92b3022deab404cb76cde09c3efa7cc84a9ea451f3210c0d5bb1e821",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$in": [
-            "string:#1",
-            "string:#2",
-            "number:#1",
-            "number:#2",
-            "number:#3"
-          ]
-        }
-      },
-      "query": {
-        "attempts.quantity": {
-          "$in": [
-            "Couple",
-            "Double",
-            13,
-            14,
-            15
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "c659c70babaeab06d6e96cb5c3937f78042ffb05be5a83d2ee64a068d724085f",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$in": [
-            "string:#1",
-            "number:#1",
-            "number:#2",
-            "number:#3"
-          ]
-        }
-      },
-      "query": {
-        "attempts.quantity": {
-          "$in": [
-            "Double",
-            13,
-            14,
-            15
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "b6028e0406ad7e3c5ab44137305b21fed15e737d5fa2398b3b45fdd51fbaadd8",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$in": [
-            "string:#1",
-            {}
-          ]
-        }
-      },
-      "query": {
-        "attempts.quantity": {
-          "$in": [
-            "Double",
-            {}
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "95bf956e06a698786748c5edef2f8ad6cd58a4deb23090bb1f8df545c11a7b95",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$in": [
-            "string:#1",
-            "number:#1"
-          ]
-        }
-      },
-      "query": {
-        "attempts.quantity": {
-          "$in": [
-            "Each",
-            1011
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "ee88d51edc01310c9ca147d248be50ea08eda4d01b5b6a52689b2938a9fe5909",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            "number:#1",
-            {
-              "field:#2": "number:#2",
-              "field:#3": "string:#1"
-            }
-          ]
-        }
-      },
-      "query": {
-        "email": {
-          "$in": [
-            16,
-            {
-              "size": 15,
-              "index": "Couple"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "dcaa31b20f961b70044a187578e5685ca104b78f1198b8064bf709af1c492aa8",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            [
-              "number:#1",
-              "number:#2"
-            ],
-            {
-              "field:#2": "number:#3",
-              "field:#3": "string:#1"
-            }
-          ]
-        }
-      },
-      "query": {
-        "email": {
-          "$in": [
-            [
-              16,
-              17
-            ],
-            {
-              "size": 15,
-              "index": "Couple"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "29750c7b3b1fdc490eacd2380ed23d9976fa8401e9682d69f09441d3ee3749e6",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            {},
-            {
-              "field:#2": "number:#1",
-              "field:#3": "string:#1"
-            }
-          ]
-        }
-      },
-      "query": {
-        "email": {
-          "$in": [
-            {},
-            {
-              "size": 16,
-              "index": "Couple"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "266f40860557a18c7eede277fac13486501c98e6f3c0cd4b98aaa47e11b0806b",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            "string:#1",
-            {
-              "field:#2": "number:#1",
-              "field:#3": "string:#2"
-            }
-          ]
-        }
-      },
-      "query": {
-        "email": {
-          "$in": [
-            "Empty",
-            {
-              "size": 16,
-              "index": "Couple"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "ef99d6280fc9ea4206b6c186fca59a3f9bd84674aa726fee12b18bc2bc23969d",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            {
-              "field:#2": "number:#1",
-              "field:#3": "string:#1"
-            },
-            {
-              "field:#2": "number:#1",
-              "field:#3": "string:#2"
-            }
-          ]
-        }
-      },
-      "query": {
-        "email": {
-          "$in": [
-            {
-              "size": 15,
-              "index": "Each"
-            },
-            {
-              "size": 15,
-              "index": "Couple"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "931b96f0327242f164f04809e0be632ad688af2c066f1d7cf4a612dc5b4ce210",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            {
-              "field:#2": "number:#1",
-              "field:#3": "string:#1"
-            },
-            {
-              "field:#2": "number:#2",
-              "field:#3": "string:#2"
-            }
-          ]
-        }
-      },
-      "query": {
-        "email": {
-          "$in": [
-            {
-              "size": 16,
-              "index": "Each"
-            },
-            {
-              "size": 15,
-              "index": "Couple"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "10f9b1fb61c04a6120f0226c3991132647f6dcbba017350a52d8cbbb0bce69c9",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            {
-              "field:#2": "number:#1",
-              "field:#3": "string:#1"
-            }
-          ]
-        }
-      },
-      "query": {
-        "email": {
-          "$in": [
-            {
-              "size": 15,
-              "index": "Enough"
-            }
           ]
         }
       }
@@ -1315,7 +670,7 @@
     },
     {
       "age": {
-        "$gt": 2,
+        "$gt": 17,
         "$in": "active"
       }
     },
@@ -1345,42 +700,6 @@
     },
     {
       "age": {
-        "$in": {
-          "status": null
-        }
-      }
-    },
-    {
-      "age": {
-        "$in": {
-          "status": "value"
-        }
-      }
-    },
-    {
-      "age": {
-        "$in": {
-          "status": true
-        }
-      }
-    },
-    {
-      "age": {
-        "$in": null
-      }
-    },
-    {
-      "age": {
-        "$in": "value"
-      }
-    },
-    {
-      "age": {
-        "$in": true
-      }
-    },
-    {
-      "age": {
         "$in": "active"
       },
       "score": {
@@ -1432,156 +751,6 @@
     {
       "status": {
         "$in": "active"
-      }
-    },
-    {
-      "status": {
-        "$in": [
-          "No",
-          null,
-          "Numerous",
-          null,
-          "Several",
-          null,
-          "Significant",
-          null,
-          null,
-          "Huge",
-          "Single",
-          null,
-          "Some",
-          null,
-          "Sparse",
-          "Enough",
-          null,
-          "Either",
-          null
-        ]
-      }
-    },
-    {
-      "status": {
-        "$in": [
-          "No",
-          "value",
-          "Numerous",
-          "value",
-          "Several",
-          "value",
-          "Significant",
-          "value",
-          "value",
-          "Huge",
-          "Single",
-          "value",
-          "Some",
-          "value",
-          "Sparse",
-          "Enough",
-          "value",
-          "Either",
-          "value"
-        ]
-      }
-    },
-    {
-      "status": {
-        "$in": [
-          "No",
-          true,
-          "Numerous",
-          true,
-          "Several",
-          true,
-          "Significant",
-          true,
-          true,
-          "Huge",
-          "Single",
-          true,
-          "Some",
-          true,
-          "Sparse",
-          "Enough",
-          true,
-          "Either",
-          true
-        ]
-      }
-    },
-    {
-      "status": {
-        "$in": [
-          null,
-          9,
-          null,
-          7,
-          null,
-          3,
-          null,
-          10,
-          4,
-          null,
-          null,
-          5,
-          null,
-          2,
-          null,
-          null,
-          8,
-          null,
-          6
-        ]
-      }
-    },
-    {
-      "status": {
-        "$in": [
-          42,
-          9,
-          42,
-          7,
-          42,
-          3,
-          42,
-          10,
-          4,
-          42,
-          42,
-          5,
-          42,
-          2,
-          42,
-          42,
-          8,
-          42,
-          6
-        ]
-      }
-    },
-    {
-      "status": {
-        "$in": [
-          true,
-          9,
-          true,
-          7,
-          true,
-          3,
-          true,
-          10,
-          4,
-          true,
-          true,
-          5,
-          true,
-          2,
-          true,
-          true,
-          8,
-          true,
-          6
-        ]
       }
     },
     {
@@ -1635,7 +804,7 @@
       "name": {
         "$in": "active",
         "$ne": [
-          8
+          18
         ]
       }
     },
@@ -1678,7 +847,7 @@
     {
       "name": {
         "$in": "active",
-        "$type": 8
+        "$type": 18
       }
     },
     {
@@ -1718,7 +887,7 @@
             null
           ]
         ],
-        "$type": 8
+        "$type": 18
       }
     },
     {
@@ -1728,7 +897,7 @@
             42
           ]
         ],
-        "$type": 8
+        "$type": 18
       }
     },
     {
@@ -1738,7 +907,7 @@
             true
           ]
         ],
-        "$type": 8
+        "$type": 18
       }
     },
     {
@@ -1756,88 +925,171 @@
       }
     },
     {
-      "scores": {
+      "title": {
         "$in": "active"
       }
     },
     {
-      "level": {
-        "count": null,
-        "grade": null
+      "rank": {
+        "level": null,
+        "count": null
       }
     },
     {
-      "level": {
-        "count": "value",
-        "grade": "value"
+      "rank": {
+        "level": "value",
+        "count": "value"
       }
     },
     {
-      "level": {
-        "count": true,
-        "grade": true
+      "rank": {
+        "level": true,
+        "count": true
       }
     },
     {
-      "level": {
+      "rank": {
         "$in": "active"
       }
     },
     {
-      "level": {
+      "rank": {
         "$in": [
           {
-            "count": null,
-            "grade": null
+            "level": null,
+            "count": null
           }
         ]
       }
     },
     {
-      "level": {
+      "rank": {
         "$in": [
           {
-            "count": "value",
-            "grade": "value"
+            "level": "value",
+            "count": "value"
           }
         ]
       }
     },
     {
-      "level": {
+      "rank": {
         "$in": [
           {
-            "count": true,
-            "grade": true
+            "level": true,
+            "count": true
           }
         ]
       }
     },
     {
-      "level.count": 26,
-      "level.grade": {
+      "rank.level": 10,
+      "rank.count": {
         "$in": "active"
       }
     },
     {
-      "level.count": null,
-      "level.grade": {
+      "rank.level": null,
+      "rank.count": {
         "$in": [
           null
         ]
       }
     },
     {
-      "level.count": "value",
-      "level.grade": {
+      "rank.level": "value",
+      "rank.count": {
         "$in": [
           "value"
         ]
       }
     },
     {
-      "level.count": true,
-      "level.grade": {
+      "rank.level": true,
+      "rank.count": {
+        "$in": [
+          true
+        ]
+      }
+    },
+    {
+      "grade": {
+        "level": null,
+        "count": null
+      }
+    },
+    {
+      "grade": {
+        "level": "value",
+        "count": "value"
+      }
+    },
+    {
+      "grade": {
+        "level": true,
+        "count": true
+      }
+    },
+    {
+      "grade": {
+        "$in": "active"
+      }
+    },
+    {
+      "grade": {
+        "$in": [
+          {
+            "level": null,
+            "count": null
+          }
+        ]
+      }
+    },
+    {
+      "grade": {
+        "$in": [
+          {
+            "level": "value",
+            "count": "value"
+          }
+        ]
+      }
+    },
+    {
+      "grade": {
+        "$in": [
+          {
+            "level": true,
+            "count": true
+          }
+        ]
+      }
+    },
+    {
+      "grade.level": 10,
+      "grade.count": {
+        "$in": "active"
+      }
+    },
+    {
+      "grade.level": null,
+      "grade.count": {
+        "$in": [
+          null
+        ]
+      }
+    },
+    {
+      "grade.level": "value",
+      "grade.count": {
+        "$in": [
+          "value"
+        ]
+      }
+    },
+    {
+      "grade.level": true,
+      "grade.count": {
         "$in": [
           true
         ]
@@ -1847,1508 +1099,12 @@
       "step": {
         "$in": "active"
       }
-    },
-    {
-      "priority": {
-        "$in": "active"
-      }
-    },
-    {
-      "priority": {
-        "$in": [
-          {
-            "$elemMatch": 42
-          }
-        ]
-      }
-    },
-    {
-      "priority": {
-        "$in": [
-          {
-            "$elemMatch": {
-              "capacity": null
-            }
-          }
-        ]
-      }
-    },
-    {
-      "priority": {
-        "$in": [
-          {
-            "$elemMatch": {
-              "capacity": "value"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "priority": {
-        "$in": [
-          {
-            "$elemMatch": {
-              "capacity": true
-            }
-          }
-        ]
-      }
-    },
-    {
-      "priority": {
-        "$not": {
-          "$in": "active"
-        }
-      }
-    },
-    {
-      "priority": {
-        "$not": {
-          "$in": [
-            {
-              "$elemMatch": 42
-            }
-          ]
-        }
-      }
-    },
-    {
-      "priority": {
-        "$not": {
-          "$in": [
-            {
-              "$elemMatch": {
-                "capacity": null
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "priority": {
-        "$not": {
-          "$in": [
-            {
-              "$elemMatch": {
-                "capacity": "value"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "priority": {
-        "$not": {
-          "$in": [
-            {
-              "$elemMatch": {
-                "capacity": true
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "priority": {
-        "$nin": "deleted"
-      }
-    },
-    {
-      "priority": {
-        "$nin": [
-          {
-            "$elemMatch": 42
-          }
-        ]
-      }
-    },
-    {
-      "priority": {
-        "$nin": [
-          {
-            "$elemMatch": {
-              "capacity": null
-            }
-          }
-        ]
-      }
-    },
-    {
-      "priority": {
-        "$nin": [
-          {
-            "$elemMatch": {
-              "capacity": "value"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "priority": {
-        "$nin": [
-          {
-            "$elemMatch": {
-              "capacity": true
-            }
-          }
-        ]
-      }
-    },
-    {
-      "priority": {
-        "$not": {
-          "$nin": "deleted"
-        }
-      }
-    },
-    {
-      "priority": {
-        "$not": {
-          "$nin": [
-            {
-              "$elemMatch": 42
-            }
-          ]
-        }
-      }
-    },
-    {
-      "priority": {
-        "$not": {
-          "$nin": [
-            {
-              "$elemMatch": {
-                "capacity": null
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "priority": {
-        "$not": {
-          "$nin": [
-            {
-              "$elemMatch": {
-                "capacity": "value"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "priority": {
-        "$not": {
-          "$nin": [
-            {
-              "$elemMatch": {
-                "capacity": true
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "title": {
-        "$in": "active"
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          null,
-          {}
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          "value",
-          {}
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          true,
-          {}
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          {},
-          null
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          {},
-          "value"
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          {},
-          true
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          {},
-          null,
-          null
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          {},
-          "value",
-          "value"
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          {},
-          true,
-          true
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          {},
-          null,
-          null,
-          null
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          {},
-          "value",
-          "value",
-          "value"
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          {},
-          true,
-          true,
-          true
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          {},
-          null,
-          null,
-          {}
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          {},
-          "value",
-          "value",
-          {}
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          {},
-          true,
-          true,
-          {}
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          null,
-          {},
-          null,
-          {}
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          "value",
-          {},
-          "value",
-          {}
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          true,
-          {},
-          true,
-          {}
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          {},
-          null,
-          null,
-          null,
-          {}
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          {},
-          "value",
-          "value",
-          "value",
-          {}
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          {},
-          true,
-          true,
-          true,
-          {}
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          null,
-          {},
-          null,
-          null,
-          {}
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          "value",
-          {},
-          "value",
-          "value",
-          {}
-        ]
-      }
-    },
-    {
-      "title": {
-        "$in": [
-          true,
-          {},
-          true,
-          true,
-          {}
-        ]
-      }
-    },
-    {
-      "username": {
-        "$in": "active"
-      }
-    },
-    {
-      "username": {
-        "$in": [
-          [
-            null,
-            null
-          ],
-          {}
-        ]
-      }
-    },
-    {
-      "username": {
-        "$in": [
-          [
-            "value",
-            "value"
-          ],
-          {}
-        ]
-      }
-    },
-    {
-      "username": {
-        "$in": [
-          [
-            true,
-            true
-          ],
-          {}
-        ]
-      }
-    },
-    {
-      "username.attempts": {
-        "$in": "active"
-      }
-    },
-    {
-      "username.attempts": {
-        "$in": [
-          null,
-          null
-        ]
-      }
-    },
-    {
-      "username.attempts": {
-        "$in": [
-          "value",
-          "value"
-        ]
-      }
-    },
-    {
-      "username.attempts": {
-        "$in": [
-          true,
-          true
-        ]
-      }
-    },
-    {
-      "username.attempts": {
-        "$in": [
-          null,
-          {}
-        ]
-      }
-    },
-    {
-      "username.attempts": {
-        "$in": [
-          "value",
-          {}
-        ]
-      }
-    },
-    {
-      "username.attempts": {
-        "$in": [
-          true,
-          {}
-        ]
-      }
-    },
-    {
-      "username": {
-        "$in": [
-          {
-            "attempts": null
-          },
-          {}
-        ]
-      }
-    },
-    {
-      "username": {
-        "$in": [
-          {
-            "attempts": "value"
-          },
-          {}
-        ]
-      }
-    },
-    {
-      "username": {
-        "$in": [
-          {
-            "attempts": true
-          },
-          {}
-        ]
-      }
-    },
-    {
-      "username.attempts": {
-        "$in": [
-          {
-            "quantity": null
-          },
-          {
-            "quantity": null
-          },
-          {}
-        ]
-      }
-    },
-    {
-      "username.attempts": {
-        "$in": [
-          {
-            "quantity": "value"
-          },
-          {
-            "quantity": "value"
-          },
-          {}
-        ]
-      }
-    },
-    {
-      "username.attempts": {
-        "$in": [
-          {
-            "quantity": true
-          },
-          {
-            "quantity": true
-          },
-          {}
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": "active"
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          {},
-          null
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          {},
-          "value"
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          {},
-          true
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          null,
-          null,
-          {}
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          "value",
-          "value",
-          {}
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          true,
-          true,
-          {}
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          null,
-          null,
-          null,
-          {}
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          "value",
-          "value",
-          "value",
-          {}
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          true,
-          true,
-          true,
-          {}
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          null,
-          null,
-          null,
-          {},
-          {}
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          "value",
-          "value",
-          "value",
-          {},
-          {}
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          true,
-          true,
-          true,
-          {},
-          {}
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          {},
-          null,
-          null,
-          null
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          {},
-          "value",
-          "value",
-          "value"
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          {},
-          true,
-          true,
-          true
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          "Abundant",
-          "Couple",
-          "Double",
-          null,
-          null,
-          null
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          "Abundant",
-          "Couple",
-          "Double",
-          "value",
-          "value",
-          "value"
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          "Abundant",
-          "Couple",
-          "Double",
-          true,
-          true,
-          true
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          null,
-          null,
-          null,
-          13,
-          14,
-          15
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          42,
-          42,
-          42,
-          13,
-          14,
-          15
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          true,
-          true,
-          true,
-          13,
-          14,
-          15
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          "Couple",
-          "Double",
-          null,
-          null,
-          null
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          "Couple",
-          "Double",
-          "value",
-          "value",
-          "value"
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          "Couple",
-          "Double",
-          true,
-          true,
-          true
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          null,
-          null,
-          13,
-          14,
-          15
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          42,
-          42,
-          13,
-          14,
-          15
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          true,
-          true,
-          13,
-          14,
-          15
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          "Double",
-          null,
-          null,
-          null
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          "Double",
-          "value",
-          "value",
-          "value"
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          "Double",
-          true,
-          true,
-          true
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          null,
-          13,
-          14,
-          15
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          42,
-          13,
-          14,
-          15
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          true,
-          13,
-          14,
-          15
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          null,
-          {}
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          42,
-          {}
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          true,
-          {}
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          "Each",
-          null
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          "Each",
-          "value"
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          "Each",
-          true
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          null,
-          1011
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          42,
-          1011
-        ]
-      }
-    },
-    {
-      "attempts.quantity": {
-        "$in": [
-          true,
-          1011
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": "active"
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          null,
-          {
-            "size": null,
-            "index": "Couple"
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          "value",
-          {
-            "size": "value",
-            "index": "Couple"
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          true,
-          {
-            "size": true,
-            "index": "Couple"
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          16,
-          {
-            "size": 15,
-            "index": null
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          16,
-          {
-            "size": 15,
-            "index": 42
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          16,
-          {
-            "size": 15,
-            "index": true
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          [
-            null,
-            null
-          ],
-          {
-            "size": null,
-            "index": "Couple"
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          [
-            "value",
-            "value"
-          ],
-          {
-            "size": "value",
-            "index": "Couple"
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          [
-            true,
-            true
-          ],
-          {
-            "size": true,
-            "index": "Couple"
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          [
-            16,
-            17
-          ],
-          {
-            "size": 15,
-            "index": null
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          [
-            16,
-            17
-          ],
-          {
-            "size": 15,
-            "index": 42
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          [
-            16,
-            17
-          ],
-          {
-            "size": 15,
-            "index": true
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {},
-          {
-            "size": null,
-            "index": "Couple"
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {},
-          {
-            "size": "value",
-            "index": "Couple"
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {},
-          {
-            "size": true,
-            "index": "Couple"
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {},
-          {
-            "size": 16,
-            "index": null
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {},
-          {
-            "size": 16,
-            "index": 42
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {},
-          {
-            "size": 16,
-            "index": true
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          "Empty",
-          {
-            "size": null,
-            "index": "Couple"
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          "Empty",
-          {
-            "size": "value",
-            "index": "Couple"
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          "Empty",
-          {
-            "size": true,
-            "index": "Couple"
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          null,
-          {
-            "size": 16,
-            "index": null
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          42,
-          {
-            "size": 16,
-            "index": 42
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          true,
-          {
-            "size": 16,
-            "index": true
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {
-            "size": null,
-            "index": "Each"
-          },
-          {
-            "size": null,
-            "index": "Couple"
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {
-            "size": "value",
-            "index": "Each"
-          },
-          {
-            "size": "value",
-            "index": "Couple"
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {
-            "size": true,
-            "index": "Each"
-          },
-          {
-            "size": true,
-            "index": "Couple"
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {
-            "size": 15,
-            "index": null
-          },
-          {
-            "size": 15,
-            "index": null
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {
-            "size": 15,
-            "index": 42
-          },
-          {
-            "size": 15,
-            "index": 42
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {
-            "size": 15,
-            "index": true
-          },
-          {
-            "size": 15,
-            "index": true
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {
-            "size": 16,
-            "index": null
-          },
-          {
-            "size": 15,
-            "index": null
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {
-            "size": 16,
-            "index": 42
-          },
-          {
-            "size": 15,
-            "index": 42
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {
-            "size": 16,
-            "index": true
-          },
-          {
-            "size": 15,
-            "index": true
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {
-            "size": null,
-            "index": "Enough"
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {
-            "size": "value",
-            "index": "Enough"
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {
-            "size": true,
-            "index": "Enough"
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {
-            "size": 15,
-            "index": null
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {
-            "size": 15,
-            "index": 42
-          }
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {
-            "size": 15,
-            "index": true
-          }
-        ]
-      }
     }
   ],
   "documents": [
     {
       "_id": 0,
-      "age": 2
+      "age": 17
     },
     {
       "_id": 1,
@@ -3357,7 +1113,7 @@
     {
       "_id": 2,
       "name": [
-        7
+        17
       ]
     },
     {
@@ -3370,112 +1126,78 @@
       "_id": 4,
       "name": [
         [
-          8
+          18
         ]
       ]
     },
     {
       "_id": 5,
-      "scores": []
+      "title": []
     },
     {
       "_id": 6,
-      "level": {
-        "count": 26,
-        "grade": 27
-      }
-    },
-    {
-      "_id": 7
-    },
-    {
-      "_id": 8,
-      "title": 18
-    },
-    {
-      "_id": 9,
-      "title": "Abundant"
-    },
-    {
-      "_id": 10,
-      "title": {}
-    },
-    {
-      "_id": 11,
-      "username": 13
-    },
-    {
-      "_id": 12,
-      "username": "Abundant"
-    },
-    {
-      "_id": 13,
-      "username": [
-        13
+      "title": [
+        19
       ]
     },
     {
-      "_id": 14,
-      "username": [
-        13,
+      "_id": 7,
+      "title": [
         "Abundant"
       ]
     },
     {
-      "_id": 15,
-      "username": [
-        "Couple",
-        14
-      ]
+      "_id": 8,
+      "title": null
     },
     {
-      "_id": 16,
-      "username": {
-        "attempts": 13
+      "_id": 9
+    },
+    {
+      "_id": 10,
+      "rank": {
+        "level": 10,
+        "count": 11
       }
     },
     {
-      "_id": 17,
-      "username": {
-        "attempts": "Abundant"
-      }
+      "_id": 11
+    }
+  ],
+  "indices": [
+    {
+      "age": 1
     },
     {
-      "_id": 18,
-      "username": {
-        "attempts": [
-          111,
-          {
-            "quantity": 13
-          }
-        ]
-      }
+      "score": 1
     },
     {
-      "_id": 19,
-      "email": 16
+      "age": 1,
+      "score": 1
     },
     {
-      "_id": 20,
-      "email": "Abundant"
+      "status": 1
     },
     {
-      "_id": 21,
-      "email": [
-        16,
-        17
-      ]
+      "name": 1
     },
     {
-      "_id": 22,
-      "email": null
+      "title": 1
     },
     {
-      "_id": 23,
-      "email": {
-        "size": 15,
-        "index": "Couple"
-      }
+      "rank": 1
+    },
+    {
+      "x.a": 1
+    },
+    {
+      "grade": 1
+    },
+    {
+      "_id.a": 1
+    },
+    {
+      "step": 1
     }
   ]
 }

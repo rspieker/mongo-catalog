@@ -1,7 +1,7 @@
 {
   "queries": [
     {
-      "checksum": "8f91fdd1da8af06a7d929482c8927521a8b292a4f64d3d280f383cae34b59980",
+      "checksum": "f8e7bdb2daa64b841c517f57ba0996d7628338551ef7f6572a437cbd216b86c7",
       "fingerprint": {
         "field:#1": {
           "$ne": "number:#1"
@@ -9,12 +9,12 @@
       },
       "query": {
         "age": {
-          "$ne": 15
+          "$ne": 8
         }
       }
     },
     {
-      "checksum": "77cbbb9994369af8d1a0d254e0d0098290d0b8a2c21356b18e2768aaa498ea05",
+      "checksum": "e607d9510a85cf282bc9ce732d4116cdf540502257e5ca37366782f589990eb7",
       "fingerprint": {
         "field:#1": {
           "$gt": "number:#1",
@@ -24,96 +24,14 @@
       },
       "query": {
         "score": {
-          "$gt": 12,
-          "$lt": 14,
-          "$ne": 13
+          "$gt": 5,
+          "$lt": 7,
+          "$ne": 6
         }
       }
     },
     {
-      "checksum": "ce72685bea695c6d37e2975de2b09cd17b2fd08a22ada2ea588c3ebc2372a514",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            {}
-          ]
-        }
-      },
-      "query": {
-        "rank": {
-          "$in": [
-            {}
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "89ed4668a0d300386f9aa00cee44afb7c1a61ab1a8d901ca75fb993b40a17f79",
-      "fingerprint": {
-        "field:#1": {
-          "$ne": {}
-        }
-      },
-      "query": {
-        "rank": {
-          "$ne": {}
-        }
-      }
-    },
-    {
-      "checksum": "6fc128ae910b283971f7d2b9bd070a9403b8636363335d9813ed905598532610",
-      "fingerprint": {
-        "field:#1": {
-          "$gt": {}
-        }
-      },
-      "query": {
-        "rank": {
-          "$gt": {}
-        }
-      }
-    },
-    {
-      "checksum": "de61ea4bf2944dbb018a2ebcac662b63188898d3cc135fadcfe80f2966028c1b",
-      "fingerprint": {
-        "field:#1": {
-          "$gte": {}
-        }
-      },
-      "query": {
-        "rank": {
-          "$gte": {}
-        }
-      }
-    },
-    {
-      "checksum": "29578f899c4664a71f478c59638a62d167de3bd392be228b6163b352ef597912",
-      "fingerprint": {
-        "field:#1": {
-          "$lt": {}
-        }
-      },
-      "query": {
-        "rank": {
-          "$lt": {}
-        }
-      }
-    },
-    {
-      "checksum": "3c10dde149ec590556f2f8f0a7979d95cf350f1f4d324e1c6b78d3a29d4e0e3f",
-      "fingerprint": {
-        "field:#1": {
-          "$lte": {}
-        }
-      },
-      "query": {
-        "rank": {
-          "$lte": {}
-        }
-      }
-    },
-    {
-      "checksum": "ddecf86aece49816211325b9692829d30aad75388db248053d51675e83dc27c8",
+      "checksum": "3a29a18823335d9d5507d9209aa8651fb492fbed51146ccf90f50c8f52d338dc",
       "fingerprint": {
         "field:#1": {
           "$ne": [
@@ -125,14 +43,14 @@
       "query": {
         "scores": {
           "$ne": [
-            19,
-            21
+            17,
+            19
           ]
         }
       }
     },
     {
-      "checksum": "520faee9cf13946298489b9762a6908030270287303dcf02be5685a9c7ceb877",
+      "checksum": "b9fa74438d746ef6418a3a97dfa623c00773cd73d4962548551902655510ec27",
       "fingerprint": {
         "field:#1": {
           "$ne": [
@@ -143,13 +61,13 @@
       "query": {
         "scores": {
           "$ne": [
-            19
+            17
           ]
         }
       }
     },
     {
-      "checksum": "d947919db93abe6c36966335d5c6975e2b61b2cb160b966ca9a0ed313c7e4faa",
+      "checksum": "e4eab00e87d3364fffe97cc93f9552bb588b0256a8ad37e3cc701fce9f75b5e6",
       "fingerprint": {
         "field:#1": {
           "$not": {
@@ -166,7 +84,7 @@
           "$not": {
             "$in": [
               [
-                19
+                17
               ]
             ]
           }
@@ -174,7 +92,7 @@
       }
     },
     {
-      "checksum": "98b3fcb9509a4f0d8609925f9c2a5457e9d94759a8aa9459b4bba9b67ae65e90",
+      "checksum": "1ba8f043643ea0a967ad0094e50ec810213551afcd97cc92403c10484936c744",
       "fingerprint": {
         "field:#1": {
           "$not": {
@@ -192,8 +110,8 @@
           "$not": {
             "$in": [
               [
-                19,
-                21
+                17,
+                19
               ]
             ]
           }
@@ -201,7 +119,7 @@
       }
     },
     {
-      "checksum": "b8bf2923529e71757074c28887f563d771ffdd730c9d2201d9266a7215017d0a",
+      "checksum": "af12b4ca24bf1520fc8cee4ba2a99b58c43fddab62b280ef1bbd6ee634badecd",
       "fingerprint": {
         "field:#1": {
           "$not": {
@@ -222,11 +140,11 @@
           "$not": {
             "$in": [
               [
-                19
+                17
               ],
               [
-                19,
-                21
+                17,
+                19
               ]
             ]
           }
@@ -234,7 +152,7 @@
       }
     },
     {
-      "checksum": "e82f8e0744ea845e67e70200abeb60da1f72285bdf5ac839601272eaf26a0e16",
+      "checksum": "33193382f764234a979e3b1b21715d8fed5c4189842821794081c35fb432d43b",
       "fingerprint": {
         "field:#1": {
           "$not": {
@@ -254,8 +172,8 @@
             "$in": [
               "Abundant",
               [
-                19,
-                21
+                17,
+                19
               ]
             ]
           }
@@ -263,7 +181,7 @@
       }
     },
     {
-      "checksum": "f4d202273a4feadb589041c91208fcc497384f94e3f6368a1186ccc309d3258b",
+      "checksum": "912c5d1e8382bb498e275ff80aaf4d5ce2ce4e30d4bae58f23be309146f24dc0",
       "fingerprint": {
         "field:#1": {
           "$elemMatch": {
@@ -280,7 +198,7 @@
           "$elemMatch": {
             "$not": {
               "$eq": [
-                157
+                140
               ]
             }
           }
@@ -288,7 +206,7 @@
       }
     },
     {
-      "checksum": "93129a426baf6a5dcdc0d72d6611d2b8b8f836864526030202c3e4cfc0afe809",
+      "checksum": "8fda73dffd66c2bde0e59e7c2e0087565066b46492e7b6c7d7baf83160c988bb",
       "fingerprint": {
         "field:#1": {
           "$elemMatch": {
@@ -308,7 +226,7 @@
             "$not": {
               "$in": [
                 [
-                  157
+                  140
                 ]
               ]
             }
@@ -317,7 +235,7 @@
       }
     },
     {
-      "checksum": "7f0d33658df17b5479bb181249b584e77cde21d408b3af50486d272a7a568040",
+      "checksum": "0cb552e1f321609e2b06c5b9d92d5239cdd58149835dddfe1f41a1e4d2638ca9",
       "fingerprint": {
         "field:#1": {
           "$not": {
@@ -334,7 +252,7 @@
           "$not": {
             "$elemMatch": {
               "$eq": [
-                157
+                140
               ]
             }
           }
@@ -342,7 +260,7 @@
       }
     },
     {
-      "checksum": "fbd29ec053ab9925a9cea56d753b98d3ae137714762cd218c47f8d6b888f7a77",
+      "checksum": "4268c89551ec1f48d207c923cb5ed6e587f503fc1c7fc7278f6821e65f8f4793",
       "fingerprint": {
         "field:#1": {
           "$not": {
@@ -362,7 +280,7 @@
             "$elemMatch": {
               "$in": [
                 [
-                  157
+                  140
                 ]
               ]
             }
@@ -371,7 +289,7 @@
       }
     },
     {
-      "checksum": "116b082e24f72dbd9337f4497b080952310ce318f5fc2129bd6350f4929b2c7d",
+      "checksum": "b9d6c3e12402722af37bbccbcdcc9c8ef27046daca3f435659b77553a60b6bcb",
       "fingerprint": {
         "field:#1": {
           "$elemMatch": {
@@ -386,9 +304,9 @@
       "query": {
         "counts": {
           "$elemMatch": {
-            "step": {
+            "grade": {
               "$ne": [
-                143
+                153
               ]
             }
           }
@@ -396,7 +314,7 @@
       }
     },
     {
-      "checksum": "435d4496418d02ff94e5e0b58fae1d7d38409cc45e22c04e9939a3db930154ea",
+      "checksum": "04947826eb195e48232a5abaccfe3b1f34d978174915682b94a5cfbb8c6ff041",
       "fingerprint": {
         "field:#1": {
           "$elemMatch": {
@@ -415,11 +333,11 @@
       "query": {
         "counts": {
           "$elemMatch": {
-            "step": {
+            "grade": {
               "$not": {
                 "$in": [
                   [
-                    143
+                    153
                   ]
                 ]
               }
@@ -429,7 +347,7 @@
       }
     },
     {
-      "checksum": "f1b8371327b8594aeae12a5bf522d48c6b9c1331d79f9cdfae3f6c5ecff1fa57",
+      "checksum": "685d0492044795ce6b83d87432fe7eb2900d03570c0ace5665ad6097dca374c3",
       "fingerprint": {
         "field:#1": {
           "$not": {
@@ -445,8 +363,8 @@
         "counts": {
           "$not": {
             "$elemMatch": {
-              "step": [
-                143
+              "grade": [
+                153
               ]
             }
           }
@@ -454,7 +372,7 @@
       }
     },
     {
-      "checksum": "c84911305741ee274f676bde4abebf6e6ad87e4ed515b6c5c874ea1c51c77a5d",
+      "checksum": "0327b88871f4e901f1ab73e6802261c5ae6ffffa23e25b1dded990ef589e4032",
       "fingerprint": {
         "field:#1": {
           "$not": {
@@ -474,10 +392,10 @@
         "counts": {
           "$not": {
             "$elemMatch": {
-              "step": {
+              "grade": {
                 "$in": [
                   [
-                    143
+                    153
                   ]
                 ]
               }
@@ -522,11 +440,6 @@
         "$gt": true,
         "$lt": true,
         "$ne": true
-      }
-    },
-    {
-      "rank": {
-        "$in": "active"
       }
     },
     {
@@ -740,8 +653,8 @@
           "$in": [
             null,
             [
-              19,
-              21
+              17,
+              19
             ]
           ]
         }
@@ -753,8 +666,8 @@
           "$in": [
             42,
             [
-              19,
-              21
+              17,
+              19
             ]
           ]
         }
@@ -766,8 +679,8 @@
           "$in": [
             true,
             [
-              19,
-              21
+              17,
+              19
             ]
           ]
         }
@@ -955,7 +868,7 @@
     {
       "counts": {
         "$elemMatch": {
-          "step": {
+          "grade": {
             "$ne": [
               null
             ]
@@ -966,7 +879,7 @@
     {
       "counts": {
         "$elemMatch": {
-          "step": {
+          "grade": {
             "$ne": [
               "value"
             ]
@@ -977,7 +890,7 @@
     {
       "counts": {
         "$elemMatch": {
-          "step": {
+          "grade": {
             "$ne": [
               true
             ]
@@ -988,7 +901,7 @@
     {
       "counts": {
         "$elemMatch": {
-          "step": {
+          "grade": {
             "$not": {
               "$in": "active"
             }
@@ -999,7 +912,7 @@
     {
       "counts": {
         "$elemMatch": {
-          "step": {
+          "grade": {
             "$not": {
               "$in": [
                 [
@@ -1014,7 +927,7 @@
     {
       "counts": {
         "$elemMatch": {
-          "step": {
+          "grade": {
             "$not": {
               "$in": [
                 [
@@ -1029,7 +942,7 @@
     {
       "counts": {
         "$elemMatch": {
-          "step": {
+          "grade": {
             "$not": {
               "$in": [
                 [
@@ -1052,7 +965,7 @@
       "counts": {
         "$not": {
           "$elemMatch": {
-            "step": [
+            "grade": [
               null
             ]
           }
@@ -1063,7 +976,7 @@
       "counts": {
         "$not": {
           "$elemMatch": {
-            "step": [
+            "grade": [
               "value"
             ]
           }
@@ -1074,7 +987,7 @@
       "counts": {
         "$not": {
           "$elemMatch": {
-            "step": [
+            "grade": [
               true
             ]
           }
@@ -1085,7 +998,7 @@
       "counts": {
         "$not": {
           "$elemMatch": {
-            "step": {
+            "grade": {
               "$in": "active"
             }
           }
@@ -1096,7 +1009,7 @@
       "counts": {
         "$not": {
           "$elemMatch": {
-            "step": {
+            "grade": {
               "$in": [
                 [
                   null
@@ -1111,7 +1024,7 @@
       "counts": {
         "$not": {
           "$elemMatch": {
-            "step": {
+            "grade": {
               "$in": [
                 [
                   "value"
@@ -1126,7 +1039,7 @@
       "counts": {
         "$not": {
           "$elemMatch": {
-            "step": {
+            "grade": {
               "$in": [
                 [
                   true
@@ -1141,87 +1054,87 @@
   "documents": [
     {
       "_id": 0,
-      "age": 14
+      "age": 7
     },
     {
       "_id": 1,
-      "level": 18,
+      "rank": 16,
       "scores": [
-        19
+        17
       ]
     },
     {
       "_id": 2,
-      "count": 34,
+      "level": 17,
       "ratings": [
-        35
+        18
       ]
     },
     {
       "_id": 3,
-      "count": 34,
+      "level": 17,
       "ratings": [
         [
-          157
+          140
         ]
       ]
     },
     {
       "_id": 4,
-      "count": 35,
+      "level": 18,
       "ratings": [
-        38,
-        39,
+        21,
+        22,
         [
-          157
+          140
         ]
       ]
     },
     {
       "_id": 5,
-      "grade": 20,
+      "count": 30,
       "counts": [
-        21
+        31
       ]
     },
     {
       "_id": 6,
-      "grade": 20,
+      "count": 30,
       "counts": [
         [
-          143
+          153
         ]
       ]
     },
     {
       "_id": 7,
-      "grade": 21,
+      "count": 31,
       "counts": [
-        24,
-        25,
+        34,
+        35,
         [
-          143
+          153
         ]
       ]
     },
     {
       "_id": 8,
-      "grade": 21,
+      "count": 31,
       "counts": [
         {
-          "step": 143
+          "grade": 153
         }
       ]
     },
     {
       "_id": 9,
-      "grade": 22,
+      "count": 32,
       "counts": [
         {
-          "step": [
-            24,
+          "grade": [
+            34,
             [
-              143
+              153
             ]
           ]
         }
@@ -1229,16 +1142,36 @@
     },
     {
       "_id": 10,
-      "grade": 23,
+      "count": 33,
       "counts": [
         {
-          "step": [
+          "grade": [
             [
-              143
+              153
             ]
           ]
         }
       ]
+    }
+  ],
+  "indices": [
+    {
+      "age": 1
+    },
+    {
+      "score": 1
+    },
+    {
+      "scores": 1
+    },
+    {
+      "ratings": 1
+    },
+    {
+      "counts": 1
+    },
+    {
+      "a.b": 1
     }
   ]
 }

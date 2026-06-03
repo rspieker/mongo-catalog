@@ -1,16 +1,21 @@
 {
   "queries": [
     {
-      "checksum": "2712014956880959295e298969ca92a352dacbf7aed17be59fd0b6333ec08ca3",
+      "checksum": "f0ba3fbbe2026ecbb0f0c757bc485d5ea655810d245d4eecabb563a6bcbbfe5c",
       "fingerprint": {
         "field:#1": "number:#1"
       },
       "query": {
-        "score": 15
+        "score": 24
       }
     },
     {
-      "checksum": "87c09cdd898d7071dfd1873b38c2a9ad7b013ae1cd989d93234612792a01575a",
+      "checksum": "bcdcb841b1a7c538fbe25b9eb515d00c6ee1838657e464a70094da5bd5fb78bf",
+      "fingerprint": {},
+      "query": {}
+    },
+    {
+      "checksum": "18475817770fe3113cf056bee6dca764d8148d83bf33c055202d9e7f60a58e0f",
       "fingerprint": {
         "field:#1": {
           "$gt": "number:#1"
@@ -19,13 +24,13 @@
       },
       "query": {
         "score": {
-          "$gt": 13
+          "$gt": 22
         },
         "rank": null
       }
     },
     {
-      "checksum": "17f109e8e19edce34fe2a8cc9fd733d0cdfbb2122ec7227873355567ddfe0cde",
+      "checksum": "5e4618a66f339c3801ee2d7f1f743021c67b6fae25a29643d8d52cee3600579d",
       "fingerprint": {
         "field:#1": {
           "$gte": "number:#1",
@@ -34,13 +39,13 @@
       },
       "query": {
         "score": {
-          "$gte": 13,
-          "$lte": 23
+          "$gte": 22,
+          "$lte": 32
         }
       }
     },
     {
-      "checksum": "d720fde7a79fd952ce434405a1569308a44fe9266b6215f580abbe7ff2d9f6b4",
+      "checksum": "a12cf45e3464eb02a9433508529b492ccfe2e2c10e6c0d4cad17784e2bd90499",
       "fingerprint": {
         "field:#1": {
           "$in": [
@@ -55,17 +60,17 @@
       "query": {
         "score": {
           "$in": [
-            14,
-            15
+            23,
+            24
           ]
         },
         "rank": {
-          "$gte": 13
+          "$gte": 22
         }
       }
     },
     {
-      "checksum": "fb5d3982bbfc49496bd96fe11fb3cbb0883ef812c92556ae02ab4b6280f7808e",
+      "checksum": "87f0a9bc28c807de6d99de3f5a63a6681294091193c56e2b5a46efde484b9403",
       "fingerprint": {
         "$or": [
           {
@@ -92,7 +97,21 @@
       }
     },
     {
-      "checksum": "925fcbaf12095e73fb7b741a75330a3e548405d1b20c17d658de59e132c78520",
+      "checksum": "5080167c22dd28941e0766ba4d1b40a91a09f02b7c2c6ef0f2e873a1095ede68",
+      "fingerprint": {
+        "field:#1": "number:#1"
+      },
+      "query": {
+        "score": 23
+      }
+    },
+    {
+      "checksum": "c8a49b96bd093d4fe153eb99b1477f77f4aa4cdc72868f02f002ed9547481d22",
+      "fingerprint": {},
+      "query": {}
+    },
+    {
+      "checksum": "6a775b9c975046bbd77b7600055299bc3fbaeb7cf14ebe7d55db7dc13ce04f36",
       "fingerprint": {
         "field:#1": "null:#1"
       },
@@ -101,12 +120,12 @@
       }
     },
     {
-      "checksum": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "checksum": "e1b86e6c9a05255d8ce75c4c818729beff46f7b4be0f285fa505c9a0827861ae",
       "fingerprint": {},
       "query": {}
     },
     {
-      "checksum": "f02249aecc24a33832675c355a997b5041146cecdab81b35ab237bda39d24c8e",
+      "checksum": "9bf8baa18e475b598bf11bfcb26fddc52c5acd5f59b7ff80f2c68043676fadfa",
       "fingerprint": {
         "field:#1": {
           "$gte": "number:#1"
@@ -114,12 +133,12 @@
       },
       "query": {
         "name": {
-          "$gte": 23
+          "$gte": 11
         }
       }
     },
     {
-      "checksum": "14fa852bdd199aeba92fda08ea42c2b364ec8d8814c999ed36f8f254173370da",
+      "checksum": "3ebb536c7c797d61fd2589b40853af844b17aafc1942e8e201cdc36aa551130a",
       "fingerprint": {
         "field:#1": {
           "$lte": "number:#1"
@@ -127,12 +146,38 @@
       },
       "query": {
         "name": {
-          "$lte": 23
+          "$lte": 11
         }
       }
     },
     {
-      "checksum": "d082f75c7fd9bad75524ef3c533cc7c865350623a046dec3e7b7117a0de6eedd",
+      "checksum": "03cab8d5bce8a0b4800277eee601e97979be698ee87e21dffb7e877c463ecd56",
+      "fingerprint": {
+        "field:#1": {
+          "$gte": "number:#1"
+        }
+      },
+      "query": {
+        "name": {
+          "$gte": 11
+        }
+      }
+    },
+    {
+      "checksum": "85ceca28b946f3a73f58b21a8e3bd6b078e83203c3f057d87833328a2a597852",
+      "fingerprint": {
+        "field:#1": {
+          "$lte": "number:#1"
+        }
+      },
+      "query": {
+        "name": {
+          "$lte": 11
+        }
+      }
+    },
+    {
+      "checksum": "40ae2ff48aba997134d28531b6640294e1f9d62ff4ca3d18bfa381619568aef1",
       "fingerprint": {
         "field:#1": {
           "$gt": "number:#1"
@@ -140,103 +185,12 @@
       },
       "query": {
         "name": {
-          "$gt": 18
+          "$gt": 6
         }
       }
     },
     {
-      "checksum": "8f91fdd1da8af06a7d929482c8927521a8b292a4f64d3d280f383cae34b59980",
-      "fingerprint": {
-        "field:#1": {
-          "$ne": "number:#1"
-        }
-      },
-      "query": {
-        "scores": {
-          "$ne": 17
-        }
-      }
-    },
-    {
-      "checksum": "97c86fba75292552bd0d983c4e7d0a00cdbbeddda5ffbc33b1933eae364b9086",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$ne": "number:#1"
-        }
-      },
-      "query": {
-        "scores.attempts": {
-          "$ne": 17
-        }
-      }
-    },
-    {
-      "checksum": "116c1d2070f75368020b0000f76fdabb6e7470d42e4276b11d1f1b555cd2eb4d",
-      "fingerprint": {
-        "field:#1": {
-          "$exists": "number:#1"
-        }
-      },
-      "query": {
-        "quantity": {
-          "$exists": 21
-        }
-      }
-    },
-    {
-      "checksum": "910d343cb43f1253f485dea864ea4afdd54c1f00a2d8c46e060780573d3f7cc3",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$exists": "number:#1"
-        }
-      },
-      "query": {
-        "size.index": {
-          "$exists": 23
-        }
-      }
-    },
-    {
-      "checksum": "6e9728b90e985eed40b470c861619a94f4fab3dadb8c40be8fb974d5aa67757e",
-      "fingerprint": {
-        "$or": [
-          {
-            "field:#1": {
-              "$not": {
-                "$type": "string:#1"
-              }
-            }
-          },
-          {
-            "field:#2": {
-              "$not": {
-                "$type": "string:#1"
-              }
-            }
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "title": {
-              "$not": {
-                "$type": "Abundant"
-              }
-            }
-          },
-          {
-            "username": {
-              "$not": {
-                "$type": "Abundant"
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "5e542ef1069144835226132c68ac66c7232fe26401c4d7d95d02de5063963047",
+      "checksum": "867a6f3c872d776659514ab1124b22f1b97a55eafd53c4301cb9cf8512395203",
       "fingerprint": {
         "$or": [
           {
@@ -266,24 +220,24 @@
       "query": {
         "$or": [
           {
-            "weight": {
-              "$gte": 25
+            "quantity": {
+              "$gte": 17
             },
-            "height": {
+            "size": {
               "$mod": [
-                27,
-                25
+                19,
+                17
               ]
             }
           },
           {
-            "weight": {
-              "$lte": 100025
+            "quantity": {
+              "$lte": 100017
             },
-            "height": {
+            "size": {
               "$mod": [
-                27,
-                26
+                19,
+                18
               ]
             }
           }
@@ -342,7 +296,7 @@
         "$in": "active"
       },
       "rank": {
-        "$gte": 13
+        "$gte": 22
       }
     },
     {
@@ -460,134 +414,20 @@
       }
     },
     {
-      "scores": {
-        "$ne": null
-      }
-    },
-    {
-      "scores": {
-        "$ne": "value"
-      }
-    },
-    {
-      "scores": {
-        "$ne": true
-      }
-    },
-    {
-      "scores.attempts": {
-        "$ne": null
-      }
-    },
-    {
-      "scores.attempts": {
-        "$ne": "value"
-      }
-    },
-    {
-      "scores.attempts": {
-        "$ne": true
-      }
-    },
-    {
-      "quantity": {
-        "$exists": null
-      }
-    },
-    {
-      "quantity": {
-        "$exists": "value"
-      }
-    },
-    {
-      "quantity": {
-        "$exists": true
-      }
-    },
-    {
-      "size.index": {
-        "$exists": null
-      }
-    },
-    {
-      "size.index": {
-        "$exists": "value"
-      }
-    },
-    {
-      "size.index": {
-        "$exists": true
-      }
-    },
-    {
       "$or": [
         {
-          "title": {
-            "$not": {
-              "$type": null
-            }
-          }
-        },
-        {
-          "username": {
-            "$not": {
-              "$type": null
-            }
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "title": {
-            "$not": {
-              "$type": 42
-            }
-          }
-        },
-        {
-          "username": {
-            "$not": {
-              "$type": 42
-            }
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "title": {
-            "$not": {
-              "$type": true
-            }
-          }
-        },
-        {
-          "username": {
-            "$not": {
-              "$type": true
-            }
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "weight": {
-            "$gte": 25
+          "quantity": {
+            "$gte": 17
           },
-          "height": {
+          "size": {
             "$mod": "invalid"
           }
         },
         {
-          "weight": {
-            "$lte": 100025
+          "quantity": {
+            "$lte": 100017
           },
-          "height": {
+          "size": {
             "$mod": "invalid"
           }
         }
@@ -596,20 +436,20 @@
     {
       "$or": [
         {
-          "weight": {
-            "$gte": 25
+          "quantity": {
+            "$gte": 17
           },
-          "height": {
+          "size": {
             "$mod": [
               2
             ]
           }
         },
         {
-          "weight": {
-            "$lte": 100025
+          "quantity": {
+            "$lte": 100017
           },
-          "height": {
+          "size": {
             "$mod": [
               2
             ]
@@ -620,18 +460,18 @@
     {
       "$or": [
         {
-          "weight": {
-            "$gte": 25
+          "quantity": {
+            "$gte": 17
           },
-          "height": {
+          "size": {
             "$mod": []
           }
         },
         {
-          "weight": {
-            "$lte": 100025
+          "quantity": {
+            "$lte": 100017
           },
-          "height": {
+          "size": {
             "$mod": []
           }
         }
@@ -640,10 +480,10 @@
     {
       "$or": [
         {
-          "weight": {
+          "quantity": {
             "$gte": null
           },
-          "height": {
+          "size": {
             "$mod": [
               null,
               null
@@ -651,10 +491,10 @@
           }
         },
         {
-          "weight": {
+          "quantity": {
             "$lte": null
           },
-          "height": {
+          "size": {
             "$mod": [
               null,
               null
@@ -666,10 +506,10 @@
     {
       "$or": [
         {
-          "weight": {
+          "quantity": {
             "$gte": "value"
           },
-          "height": {
+          "size": {
             "$mod": [
               "value",
               "value"
@@ -677,10 +517,10 @@
           }
         },
         {
-          "weight": {
+          "quantity": {
             "$lte": "value"
           },
-          "height": {
+          "size": {
             "$mod": [
               "value",
               "value"
@@ -692,10 +532,10 @@
     {
       "$or": [
         {
-          "weight": {
+          "quantity": {
             "$gte": true
           },
-          "height": {
+          "size": {
             "$mod": [
               true,
               true
@@ -703,10 +543,10 @@
           }
         },
         {
-          "weight": {
+          "quantity": {
             "$lte": true
           },
-          "height": {
+          "size": {
             "$mod": [
               true,
               true
@@ -719,8 +559,8 @@
   "documents": [
     {
       "_id": 0,
-      "age": 14,
-      "score": 16
+      "age": 23,
+      "score": 25
     },
     {
       "_id": 1,
@@ -731,52 +571,66 @@
     },
     {
       "_id": 2,
-      "count": 6,
-      "grade": 2,
-      "step": {
-        "priority": 6,
-        "capacity": 5
+      "grade": 33,
+      "step": 29,
+      "priority": {
+        "capacity": 33,
+        "attempts": 32
       }
     },
     {
       "_id": 3,
       "name": [
-        19,
-        28
+        7,
+        16
       ]
     },
     {
       "_id": 4,
-      "name": 23
+      "name": 11
+    }
+  ],
+  "indices": [
+    {
+      "score": 1
     },
     {
-      "_id": 5,
-      "scores": []
+      "score": 1,
+      "rank": 1
     },
     {
-      "_id": 6,
-      "scores": [
-        []
-      ]
+      "status": 1,
+      "type": 1,
+      "region": 1
     },
     {
-      "_id": 7
+      "status": 1,
+      "type": -1,
+      "region": -1
     },
     {
-      "_id": 8,
-      "size": {}
+      "type": 1,
+      "region": 1
     },
     {
-      "_id": 9,
-      "depth": 8,
-      "title": [],
-      "username": 8
+      "rank": 1
     },
     {
-      "_id": 10,
-      "depth": 9,
-      "title": 8,
-      "username": []
+      "c": 1
+    },
+    {
+      "y.b": 1,
+      "y.a": -1
+    },
+    {
+      "y.b": 1,
+      "grade": -1
+    },
+    {
+      "name": 1
+    },
+    {
+      "quantity": 1
     }
   ]
 }
