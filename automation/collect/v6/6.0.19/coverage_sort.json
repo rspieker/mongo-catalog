@@ -7,14 +7,15 @@
 		"documents": []
 	},
 	{
-		"id": "oOz0ewr8TCOK",
-		"operation": {},
+		"id": "cxNAl5rMSe4g",
+		"operation": {
+			"score": {
+				"$gt": 22
+			},
+			"rank": null
+		},
 		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4
+			0
 		]
 	},
 	{
@@ -87,20 +88,20 @@
 			1,
 			2,
 			3,
-			4
-		]
-	},
-	{
-		"id": "rn7TKm1jIMFM",
-		"operation": {
-			"rank": null
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17
 		]
 	},
 	{
@@ -111,7 +112,20 @@
 			1,
 			2,
 			3,
-			4
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17
 		]
 	},
 	{
@@ -175,14 +189,110 @@
 		]
 	},
 	{
-		"id": "qjpHFKcYzP8j",
+		"id": "tKCHclgQKVT6",
+		"operation": {
+			"scores.quantity": {
+				"$ne": 16
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17
+		]
+	},
+	{
+		"id": "nBvFR3rjRS5Y",
+		"operation": {
+			"size": {
+				"$exists": 35
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "kEG6ELXRUGTO",
+		"operation": {
+			"index.depth": {
+				"$exists": 28
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "oOz0ewr8TCOK",
+		"operation": {},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17
+		]
+	},
+	{
+		"id": "sJZuDzCIJ5nJ",
 		"operation": {
 			"$or": [
 				{
-					"quantity": {
+					"username": {
+						"$not": {
+							"$type": "Abundant"
+						}
+					}
+				},
+				{
+					"email": {
+						"$not": {
+							"$type": "Abundant"
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Unknown type name alias: Abundant",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nOGbJBPtDAQ5",
+		"operation": {
+			"$or": [
+				{
+					"age": {
 						"$gte": 17
 					},
-					"size": {
+					"score": {
 						"$mod": [
 							19,
 							17
@@ -190,10 +300,10 @@
 					}
 				},
 				{
-					"quantity": {
+					"age": {
 						"$lte": 100017
 					},
-					"size": {
+					"score": {
 						"$mod": [
 							19,
 							18
@@ -213,7 +323,20 @@
 			1,
 			2,
 			3,
-			4
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17
 		]
 	},
 	{
@@ -272,7 +395,20 @@
 			1,
 			2,
 			3,
-			4
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17
 		]
 	},
 	{
@@ -328,7 +464,20 @@
 			1,
 			2,
 			3,
-			4
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17
 		]
 	},
 	{
@@ -379,7 +528,20 @@
 			0,
 			2,
 			3,
-			4
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17
 		]
 	},
 	{
@@ -424,7 +586,20 @@
 		"documents": [
 			0,
 			1,
-			2
+			2,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17
 		]
 	},
 	{
@@ -455,7 +630,20 @@
 		"documents": [
 			0,
 			1,
-			2
+			2,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17
 		]
 	},
 	{
@@ -504,22 +692,260 @@
 		"documents": []
 	},
 	{
-		"id": "ouAhzarWJSh5",
+		"id": "sNvxQKeuu6rZ",
+		"operation": {
+			"scores.quantity": {
+				"$ne": null
+			}
+		},
+		"documents": [
+			5,
+			6
+		]
+	},
+	{
+		"id": "g31AHG4WIKY6",
+		"operation": {
+			"scores.quantity": {
+				"$ne": "value"
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17
+		]
+	},
+	{
+		"id": "k5RFVtNuM5LA",
+		"operation": {
+			"scores.quantity": {
+				"$ne": true
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17
+		]
+	},
+	{
+		"id": "v0D4jNPeLXLa",
+		"operation": {
+			"size": {
+				"$exists": null
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17
+		]
+	},
+	{
+		"id": "d6o70j7YUfTC",
+		"operation": {
+			"size": {
+				"$exists": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "tjgHMHVrEcpb",
+		"operation": {
+			"size": {
+				"$exists": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "rhRgfrvXYkFj",
+		"operation": {
+			"index.depth": {
+				"$exists": null
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17
+		]
+	},
+	{
+		"id": "cWRDvjtPocYE",
+		"operation": {
+			"index.depth": {
+				"$exists": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "gSvHyJJDZtg3",
+		"operation": {
+			"index.depth": {
+				"$exists": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "bMa0YoUOlVGu",
 		"operation": {
 			"$or": [
 				{
-					"quantity": {
+					"username": {
+						"$not": {
+							"$type": null
+						}
+					}
+				},
+				{
+					"email": {
+						"$not": {
+							"$type": null
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "type must be represented as a number or a string",
+			"code": 14,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qBTRfP1bMB3P",
+		"operation": {
+			"$or": [
+				{
+					"username": {
+						"$not": {
+							"$type": 42
+						}
+					}
+				},
+				{
+					"email": {
+						"$not": {
+							"$type": 42
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Invalid numerical type code: 42",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qXf2nrsM1iBY",
+		"operation": {
+			"$or": [
+				{
+					"username": {
+						"$not": {
+							"$type": true
+						}
+					}
+				},
+				{
+					"email": {
+						"$not": {
+							"$type": true
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "type must be represented as a number or a string",
+			"code": 14,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pWTC8nLJPFcS",
+		"operation": {
+			"$or": [
+				{
+					"age": {
 						"$gte": 17
 					},
-					"size": {
+					"score": {
 						"$mod": "invalid"
 					}
 				},
 				{
-					"quantity": {
+					"age": {
 						"$lte": 100017
 					},
-					"size": {
+					"score": {
 						"$mod": "invalid"
 					}
 				}
@@ -532,24 +958,24 @@
 		}
 	},
 	{
-		"id": "pqNXqyLtw8RD",
+		"id": "hmK0XtMrCPe4",
 		"operation": {
 			"$or": [
 				{
-					"quantity": {
+					"age": {
 						"$gte": 17
 					},
-					"size": {
+					"score": {
 						"$mod": [
 							2
 						]
 					}
 				},
 				{
-					"quantity": {
+					"age": {
 						"$lte": 100017
 					},
-					"size": {
+					"score": {
 						"$mod": [
 							2
 						]
@@ -564,22 +990,22 @@
 		}
 	},
 	{
-		"id": "bHvX1xNyifX5",
+		"id": "dLQ51C2LSqXU",
 		"operation": {
 			"$or": [
 				{
-					"quantity": {
+					"age": {
 						"$gte": 17
 					},
-					"size": {
+					"score": {
 						"$mod": []
 					}
 				},
 				{
-					"quantity": {
+					"age": {
 						"$lte": 100017
 					},
-					"size": {
+					"score": {
 						"$mod": []
 					}
 				}
@@ -592,14 +1018,14 @@
 		}
 	},
 	{
-		"id": "rWI1tfu8eyVv",
+		"id": "l1eoWXXWpiMA",
 		"operation": {
 			"$or": [
 				{
-					"quantity": {
+					"age": {
 						"$gte": null
 					},
-					"size": {
+					"score": {
 						"$mod": [
 							null,
 							null
@@ -607,10 +1033,10 @@
 					}
 				},
 				{
-					"quantity": {
+					"age": {
 						"$lte": null
 					},
-					"size": {
+					"score": {
 						"$mod": [
 							null,
 							null
@@ -626,14 +1052,14 @@
 		}
 	},
 	{
-		"id": "uIzfyEEJhTKS",
+		"id": "aNzxyJsAbTTH",
 		"operation": {
 			"$or": [
 				{
-					"quantity": {
+					"age": {
 						"$gte": "value"
 					},
-					"size": {
+					"score": {
 						"$mod": [
 							"value",
 							"value"
@@ -641,10 +1067,10 @@
 					}
 				},
 				{
-					"quantity": {
+					"age": {
 						"$lte": "value"
 					},
-					"size": {
+					"score": {
 						"$mod": [
 							"value",
 							"value"
@@ -660,14 +1086,14 @@
 		}
 	},
 	{
-		"id": "fVX2mT3iuMfC",
+		"id": "v6NsQq5MND4P",
 		"operation": {
 			"$or": [
 				{
-					"quantity": {
+					"age": {
 						"$gte": true
 					},
-					"size": {
+					"score": {
 						"$mod": [
 							true,
 							true
@@ -675,10 +1101,10 @@
 					}
 				},
 				{
-					"quantity": {
+					"age": {
 						"$lte": true
 					},
-					"size": {
+					"score": {
 						"$mod": [
 							true,
 							true
