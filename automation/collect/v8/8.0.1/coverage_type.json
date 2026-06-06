@@ -1,27 +1,40 @@
 [
 	{
-		"id": "iSwSJVY7wppZ",
+		"id": "ovj1QWgDEpWf",
 		"operation": {
 			"name": {
-				"$type": 24
+				"$type": 20
 			}
 		},
 		"error": {
-			"message": "Invalid numerical type code: 24",
+			"message": "Invalid numerical type code: 20",
 			"code": 2,
 			"type": "MongoServerError"
 		}
 	},
 	{
-		"id": "vIAMWUyhyVwB",
+		"id": "ovj1QWgDEpWf",
 		"operation": {
 			"name": {
-				"$regex": "Each",
-				"$type": 25
+				"$type": 20
 			}
 		},
 		"error": {
-			"message": "Invalid numerical type code: 25",
+			"message": "Invalid numerical type code: 20",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "gANZpeJQfWeB",
+		"operation": {
+			"name": {
+				"$regex": "Each",
+				"$type": 21
+			}
+		},
+		"error": {
+			"message": "Invalid numerical type code: 21",
 			"code": 2,
 			"type": "MongoServerError"
 		}
@@ -40,6 +53,18 @@
 			"code": 2,
 			"type": "MongoServerError"
 		}
+	},
+	{
+		"id": "qYgx2n9Dw1P6",
+		"operation": {
+			"status": {
+				"$exists": true
+			}
+		},
+		"documents": [
+			2,
+			4
+		]
 	},
 	{
 		"id": "dQxmUe8ArA7i",
@@ -177,11 +202,11 @@
 		}
 	},
 	{
-		"id": "uZI45QOKA9Iy",
+		"id": "qDAYL490dGYN",
 		"operation": {
 			"name": {
 				"$regex": null,
-				"$type": 25
+				"$type": 21
 			}
 		},
 		"error": {
@@ -191,11 +216,11 @@
 		}
 	},
 	{
-		"id": "mno9N9KF6krS",
+		"id": "ayTq9Al22IV9",
 		"operation": {
 			"name": {
 				"$regex": 42,
-				"$type": 25
+				"$type": 21
 			}
 		},
 		"error": {
@@ -205,11 +230,11 @@
 		}
 	},
 	{
-		"id": "nGNP8BfVvSat",
+		"id": "dNFgM2PXZqcu",
 		"operation": {
 			"name": {
 				"$regex": true,
-				"$type": 25
+				"$type": 21
 			}
 		},
 		"error": {
