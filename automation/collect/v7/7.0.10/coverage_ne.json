@@ -1,13 +1,12 @@
 [
 	{
-		"id": "tJAKML49MeXB",
+		"id": "ngArJLuNi5Z8",
 		"operation": {
 			"age": {
-				"$ne": 15
+				"$ne": 8
 			}
 		},
 		"documents": [
-			0,
 			1,
 			2,
 			3,
@@ -17,27 +16,17 @@
 			7,
 			8,
 			9,
-			10
+			10,
+			0
 		]
 	},
 	{
-		"id": "sLRmvjwFDlXG",
+		"id": "o50ORg5ZO4Mu",
 		"operation": {
 			"score": {
-				"$gt": 12,
-				"$lt": 14,
-				"$ne": 13
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "j8fBbfwhkZO0",
-		"operation": {
-			"rank": {
-				"$in": [
-					{}
-				]
+				"$gt": 5,
+				"$lt": 7,
+				"$ne": 6
 			}
 		},
 		"documents": []
@@ -100,40 +89,18 @@
 		"documents": []
 	},
 	{
-		"id": "vEsuXRYO2HbX",
+		"id": "opiaADuF9Sjj",
 		"operation": {
 			"scores": {
 				"$ne": [
-					19,
-					21
-				]
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "tQNhBhhIxQ54",
-		"operation": {
-			"scores": {
-				"$ne": [
+					17,
 					19
 				]
 			}
 		},
 		"documents": [
 			0,
+			1,
 			2,
 			3,
 			4,
@@ -146,13 +113,35 @@
 		]
 	},
 	{
-		"id": "iKbNpQxQMY1M",
+		"id": "ulOaKGEo3F1m",
+		"operation": {
+			"scores": {
+				"$ne": [
+					17
+				]
+			}
+		},
+		"documents": [
+			0,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10
+		]
+	},
+	{
+		"id": "wS7PwYxHsTi3",
 		"operation": {
 			"scores": {
 				"$not": {
 					"$in": [
 						[
-							19
+							17
 						]
 					]
 				}
@@ -172,14 +161,14 @@
 		]
 	},
 	{
-		"id": "bnG0CQLTuPqq",
+		"id": "ozBfCOLiFS4e",
 		"operation": {
 			"scores": {
 				"$not": {
 					"$in": [
 						[
-							19,
-							21
+							17,
+							19
 						]
 					]
 				}
@@ -200,17 +189,17 @@
 		]
 	},
 	{
-		"id": "aksK9Z4vwMCH",
+		"id": "wCwmzKFTzBkK",
 		"operation": {
 			"scores": {
 				"$not": {
 					"$in": [
 						[
-							19
+							17
 						],
 						[
-							19,
-							21
+							17,
+							19
 						]
 					]
 				}
@@ -230,15 +219,15 @@
 		]
 	},
 	{
-		"id": "sfeQViLoZdXD",
+		"id": "wZmqWCVAvblI",
 		"operation": {
 			"scores": {
 				"$not": {
 					"$in": [
 						"Abundant",
 						[
-							19,
-							21
+							17,
+							19
 						]
 					]
 				}
@@ -259,13 +248,13 @@
 		]
 	},
 	{
-		"id": "uKb0XmavVDey",
+		"id": "v060ykYzeZ1D",
 		"operation": {
 			"ratings": {
 				"$elemMatch": {
 					"$not": {
 						"$eq": [
-							157
+							140
 						]
 					}
 				}
@@ -277,14 +266,14 @@
 		]
 	},
 	{
-		"id": "sTarDLArGWsM",
+		"id": "oGUOomG3HEOM",
 		"operation": {
 			"ratings": {
 				"$elemMatch": {
 					"$not": {
 						"$in": [
 							[
-								157
+								140
 							]
 						]
 					}
@@ -297,13 +286,13 @@
 		]
 	},
 	{
-		"id": "qXPvxOW1lwFS",
+		"id": "vabcAkxWFbjX",
 		"operation": {
 			"ratings": {
 				"$not": {
 					"$elemMatch": {
 						"$eq": [
-							157
+							140
 						]
 					}
 				}
@@ -322,14 +311,14 @@
 		]
 	},
 	{
-		"id": "qTFDy2W0OkPt",
+		"id": "wXJqZ17Pmzyp",
 		"operation": {
 			"ratings": {
 				"$not": {
 					"$elemMatch": {
 						"$in": [
 							[
-								157
+								140
 							]
 						]
 					}
@@ -349,13 +338,13 @@
 		]
 	},
 	{
-		"id": "sG5Oq6mQwSqV",
+		"id": "pusqGLJCLenf",
 		"operation": {
 			"counts": {
 				"$elemMatch": {
 					"step": {
 						"$ne": [
-							143
+							153
 						]
 					}
 				}
@@ -368,7 +357,7 @@
 		]
 	},
 	{
-		"id": "pYUiPKjXU7qe",
+		"id": "g1MRe5rJIX9z",
 		"operation": {
 			"counts": {
 				"$elemMatch": {
@@ -376,7 +365,7 @@
 						"$not": {
 							"$in": [
 								[
-									143
+									153
 								]
 							]
 						}
@@ -391,13 +380,13 @@
 		]
 	},
 	{
-		"id": "wZKp3glrH0TH",
+		"id": "jGzjakjakppm",
 		"operation": {
 			"counts": {
 				"$not": {
 					"$elemMatch": {
 						"step": [
-							143
+							153
 						]
 					}
 				}
@@ -416,7 +405,7 @@
 		]
 	},
 	{
-		"id": "gzxkMSxZyTiY",
+		"id": "qY5e2dzFUGdk",
 		"operation": {
 			"counts": {
 				"$not": {
@@ -424,7 +413,7 @@
 						"step": {
 							"$in": [
 								[
-									143
+									153
 								]
 							]
 						}
@@ -463,7 +452,6 @@
 			}
 		},
 		"documents": [
-			0,
 			1,
 			2,
 			3,
@@ -473,7 +461,8 @@
 			7,
 			8,
 			9,
-			10
+			10,
+			0
 		]
 	},
 	{
@@ -484,7 +473,6 @@
 			}
 		},
 		"documents": [
-			0,
 			1,
 			2,
 			3,
@@ -494,7 +482,8 @@
 			7,
 			8,
 			9,
-			10
+			10,
+			0
 		]
 	},
 	{
@@ -529,19 +518,6 @@
 			}
 		},
 		"documents": []
-	},
-	{
-		"id": "ixEAMoJwW47X",
-		"operation": {
-			"rank": {
-				"$in": "active"
-			}
-		},
-		"error": {
-			"message": "$in needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
 	},
 	{
 		"id": "aGBeWWcuuRkh",
@@ -1045,15 +1021,15 @@
 		]
 	},
 	{
-		"id": "niG9OgTbnmSB",
+		"id": "caw2zVrtjBIi",
 		"operation": {
 			"scores": {
 				"$not": {
 					"$in": [
 						null,
 						[
-							19,
-							21
+							17,
+							19
 						]
 					]
 				}
@@ -1064,15 +1040,15 @@
 		]
 	},
 	{
-		"id": "iJDmTD2HZNMb",
+		"id": "pvl1qHLWoXBm",
 		"operation": {
 			"scores": {
 				"$not": {
 					"$in": [
 						42,
 						[
-							19,
-							21
+							17,
+							19
 						]
 					]
 				}
@@ -1093,15 +1069,15 @@
 		]
 	},
 	{
-		"id": "u5VLJJkgLdcO",
+		"id": "woJKDqcZEhSN",
 		"operation": {
 			"scores": {
 				"$not": {
 					"$in": [
 						true,
 						[
-							19,
-							21
+							17,
+							19
 						]
 					]
 				}
