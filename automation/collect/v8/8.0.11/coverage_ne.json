@@ -32,6 +32,63 @@
 		"documents": []
 	},
 	{
+		"id": "aM5Hz3SjnjEd",
+		"operation": {
+			"rank": {
+				"$ne": {}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10
+		]
+	},
+	{
+		"id": "uU3CE4YsaSQr",
+		"operation": {
+			"rank": {
+				"$gt": {}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "nw8RYyZVT9ZH",
+		"operation": {
+			"rank": {
+				"$gte": {}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "fjNLIjp99dRf",
+		"operation": {
+			"rank": {
+				"$lt": {}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "oRSPUOceJADo",
+		"operation": {
+			"rank": {
+				"$lte": {}
+			}
+		},
+		"documents": []
+	},
+	{
 		"id": "opiaADuF9Sjj",
 		"operation": {
 			"scores": {
@@ -281,11 +338,11 @@
 		]
 	},
 	{
-		"id": "qvPHRkEBFZBv",
+		"id": "pusqGLJCLenf",
 		"operation": {
 			"counts": {
 				"$elemMatch": {
-					"grade": {
+					"step": {
 						"$ne": [
 							153
 						]
@@ -300,11 +357,11 @@
 		]
 	},
 	{
-		"id": "bAGBCD9Qs9cr",
+		"id": "g1MRe5rJIX9z",
 		"operation": {
 			"counts": {
 				"$elemMatch": {
-					"grade": {
+					"step": {
 						"$not": {
 							"$in": [
 								[
@@ -323,12 +380,12 @@
 		]
 	},
 	{
-		"id": "rRvRxPxaZZdg",
+		"id": "jGzjakjakppm",
 		"operation": {
 			"counts": {
 				"$not": {
 					"$elemMatch": {
-						"grade": [
+						"step": [
 							153
 						]
 					}
@@ -348,12 +405,12 @@
 		]
 	},
 	{
-		"id": "nekBeWpVwCXu",
+		"id": "qY5e2dzFUGdk",
 		"operation": {
 			"counts": {
 				"$not": {
 					"$elemMatch": {
-						"grade": {
+						"step": {
 							"$in": [
 								[
 									153
@@ -1404,11 +1461,11 @@
 		}
 	},
 	{
-		"id": "vkFJwbGiRAPx",
+		"id": "vn2wWqbENSr5",
 		"operation": {
 			"counts": {
 				"$elemMatch": {
-					"grade": {
+					"step": {
 						"$ne": [
 							null
 						]
@@ -1425,11 +1482,11 @@
 		]
 	},
 	{
-		"id": "czKT6QC8TXQ9",
+		"id": "pMajOwsF4cGp",
 		"operation": {
 			"counts": {
 				"$elemMatch": {
-					"grade": {
+					"step": {
 						"$ne": [
 							"value"
 						]
@@ -1446,11 +1503,11 @@
 		]
 	},
 	{
-		"id": "pnTYTNGNxviu",
+		"id": "sQg7FHPWZY9g",
 		"operation": {
 			"counts": {
 				"$elemMatch": {
-					"grade": {
+					"step": {
 						"$ne": [
 							true
 						]
@@ -1467,11 +1524,11 @@
 		]
 	},
 	{
-		"id": "t410lG160GHq",
+		"id": "vdRVSB7f5LFb",
 		"operation": {
 			"counts": {
 				"$elemMatch": {
-					"grade": {
+					"step": {
 						"$not": {
 							"$in": "active"
 						}
@@ -1486,11 +1543,11 @@
 		}
 	},
 	{
-		"id": "hAwMOFOxjK6v",
+		"id": "k0dM1Xv36VWb",
 		"operation": {
 			"counts": {
 				"$elemMatch": {
-					"grade": {
+					"step": {
 						"$not": {
 							"$in": [
 								[
@@ -1511,11 +1568,11 @@
 		]
 	},
 	{
-		"id": "cwZYMqs0H6D7",
+		"id": "brKkkgImTgYS",
 		"operation": {
 			"counts": {
 				"$elemMatch": {
-					"grade": {
+					"step": {
 						"$not": {
 							"$in": [
 								[
@@ -1536,11 +1593,11 @@
 		]
 	},
 	{
-		"id": "q6CPscOLMfqY",
+		"id": "rMrtsFXnEaBk",
 		"operation": {
 			"counts": {
 				"$elemMatch": {
-					"grade": {
+					"step": {
 						"$not": {
 							"$in": [
 								[
@@ -1576,12 +1633,12 @@
 		}
 	},
 	{
-		"id": "pAyCSOkrI83S",
+		"id": "sVQAVI7aKrjA",
 		"operation": {
 			"counts": {
 				"$not": {
 					"$elemMatch": {
-						"grade": [
+						"step": [
 							null
 						]
 					}
@@ -1603,12 +1660,12 @@
 		]
 	},
 	{
-		"id": "fW8uXqmrKX8b",
+		"id": "vItxUXGbCY0T",
 		"operation": {
 			"counts": {
 				"$not": {
 					"$elemMatch": {
-						"grade": [
+						"step": [
 							"value"
 						]
 					}
@@ -1630,12 +1687,12 @@
 		]
 	},
 	{
-		"id": "b3cWNFyphFFL",
+		"id": "oihkSUDL1LIi",
 		"operation": {
 			"counts": {
 				"$not": {
 					"$elemMatch": {
-						"grade": [
+						"step": [
 							true
 						]
 					}
@@ -1657,12 +1714,12 @@
 		]
 	},
 	{
-		"id": "iFjB7xI1tLl9",
+		"id": "stzXHmcSYFOn",
 		"operation": {
 			"counts": {
 				"$not": {
 					"$elemMatch": {
-						"grade": {
+						"step": {
 							"$in": "active"
 						}
 					}
@@ -1676,12 +1733,12 @@
 		}
 	},
 	{
-		"id": "eU22yT0NTuQ1",
+		"id": "vzu2oMSYRugz",
 		"operation": {
 			"counts": {
 				"$not": {
 					"$elemMatch": {
-						"grade": {
+						"step": {
 							"$in": [
 								[
 									null
@@ -1707,12 +1764,12 @@
 		]
 	},
 	{
-		"id": "pw80NPtVvPaV",
+		"id": "lXoNpLRPrXX0",
 		"operation": {
 			"counts": {
 				"$not": {
 					"$elemMatch": {
-						"grade": {
+						"step": {
 							"$in": [
 								[
 									"value"
@@ -1738,12 +1795,12 @@
 		]
 	},
 	{
-		"id": "kdI9tJZijiOF",
+		"id": "iJu0EHEyGkVm",
 		"operation": {
 			"counts": {
 				"$not": {
 					"$elemMatch": {
-						"grade": {
+						"step": {
 							"$in": [
 								[
 									true
