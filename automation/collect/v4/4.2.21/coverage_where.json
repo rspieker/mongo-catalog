@@ -18,10 +18,10 @@
 		}
 	},
 	{
-		"id": "twTxiNF10NCX",
+		"id": "lMnFyxMV3LV0",
 		"operation": {
-			"age": 2,
-			"rank": {
+			"age": 9,
+			"score": {
 				"$where": "Couple"
 			}
 		},
@@ -60,10 +60,10 @@
 		}
 	},
 	{
-		"id": "uf24CKWdOObw",
+		"id": "wJzbVF1IFUap",
 		"operation": {
-			"age": 4,
-			"rank.level": {
+			"age": 11,
+			"score.rank": {
 				"$where": "Couple"
 			}
 		},
@@ -74,12 +74,12 @@
 		}
 	},
 	{
-		"id": "gLF3xcCACF5n",
+		"id": "lRaa1FBJ6yDa",
 		"operation": {
 			"age": {
 				"$elemMatch": {
 					"$where": "Couple",
-					"rank": 2
+					"score": 9
 				}
 			}
 		},
@@ -90,11 +90,11 @@
 		}
 	},
 	{
-		"id": "tQgwJeXI63M0",
+		"id": "tWKifBsTs8hS",
 		"operation": {
 			"age": {
 				"$elemMatch": {
-					"rank": 2,
+					"score": 9,
 					"$where": "Couple"
 				}
 			}
@@ -106,13 +106,13 @@
 		}
 	},
 	{
-		"id": "hD5d3qUx6gIy",
+		"id": "t8zOyIRMUXRX",
 		"operation": {
 			"age": {
 				"$elemMatch": {
 					"$and": [
 						{
-							"rank": 2
+							"score": 9
 						},
 						{
 							"$where": "Couple"
@@ -130,23 +130,6 @@
 	{
 		"id": "bIXooHnYqZF6",
 		"operation": {
-			"$where": {}
-		},
-		"error": {
-			"message": "$where got bad type",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "utawyjrQLyJa",
-		"operation": {
-			"age": {
-				"$eq": 3
-			},
-			"rank": {
-				"$eq": 4
-			},
 			"$where": {}
 		},
 		"error": {
@@ -189,10 +172,10 @@
 		}
 	},
 	{
-		"id": "ezM9LmMYqkGn",
+		"id": "aYnRPgTTt0SW",
 		"operation": {
 			"age": null,
-			"rank": {
+			"score": {
 				"$where": "Couple"
 			}
 		},
@@ -203,10 +186,10 @@
 		}
 	},
 	{
-		"id": "sg806SoxnClq",
+		"id": "urgNdLpKBUIG",
 		"operation": {
 			"age": "value",
-			"rank": {
+			"score": {
 				"$where": "Couple"
 			}
 		},
@@ -217,10 +200,10 @@
 		}
 	},
 	{
-		"id": "pUhEE2kDsGC0",
+		"id": "m7mh2AFUQLJY",
 		"operation": {
 			"age": true,
-			"rank": {
+			"score": {
 				"$where": "Couple"
 			}
 		},
@@ -231,10 +214,10 @@
 		}
 	},
 	{
-		"id": "oDv36r1l5VSH",
+		"id": "rYLHDBrX5FVv",
 		"operation": {
-			"age": 2,
-			"rank": {
+			"age": 9,
+			"score": {
 				"$where": null
 			}
 		},
@@ -245,10 +228,10 @@
 		}
 	},
 	{
-		"id": "bQqsRvHaCMAs",
+		"id": "cEe1SB7UWlYb",
 		"operation": {
-			"age": 2,
-			"rank": {
+			"age": 9,
+			"score": {
 				"$where": 42
 			}
 		},
@@ -259,10 +242,10 @@
 		}
 	},
 	{
-		"id": "oLKAa7F2Tz7o",
+		"id": "mivpmw9oDUNF",
 		"operation": {
-			"age": 2,
-			"rank": {
+			"age": 9,
+			"score": {
 				"$where": true
 			}
 		},
@@ -370,10 +353,10 @@
 		}
 	},
 	{
-		"id": "wJMsHINILqa5",
+		"id": "kgt1sdEzE6pu",
 		"operation": {
 			"age": null,
-			"rank.level": {
+			"score.rank": {
 				"$where": "Couple"
 			}
 		},
@@ -384,10 +367,10 @@
 		}
 	},
 	{
-		"id": "hMzmH27IO7QF",
+		"id": "leVFS2HX6G9Z",
 		"operation": {
 			"age": "value",
-			"rank.level": {
+			"score.rank": {
 				"$where": "Couple"
 			}
 		},
@@ -398,10 +381,10 @@
 		}
 	},
 	{
-		"id": "i1fz4KYDDLAS",
+		"id": "jFOsif0JO9QF",
 		"operation": {
 			"age": true,
-			"rank.level": {
+			"score.rank": {
 				"$where": "Couple"
 			}
 		},
@@ -412,10 +395,10 @@
 		}
 	},
 	{
-		"id": "rVrvpyKQQ9dq",
+		"id": "sJCoa7VoEXCm",
 		"operation": {
-			"age": 4,
-			"rank.level": {
+			"age": 11,
+			"score.rank": {
 				"$where": null
 			}
 		},
@@ -426,10 +409,10 @@
 		}
 	},
 	{
-		"id": "r0NFTSFCTmYw",
+		"id": "pWgCK0q84WQL",
 		"operation": {
-			"age": 4,
-			"rank.level": {
+			"age": 11,
+			"score.rank": {
 				"$where": 42
 			}
 		},
@@ -440,10 +423,10 @@
 		}
 	},
 	{
-		"id": "gZyGxBAvWGeU",
+		"id": "wJpztk5i5GbI",
 		"operation": {
-			"age": 4,
-			"rank.level": {
+			"age": 11,
+			"score.rank": {
 				"$where": true
 			}
 		},
@@ -454,12 +437,12 @@
 		}
 	},
 	{
-		"id": "rnCPaaEW7q37",
+		"id": "tV0toKJDHRXf",
 		"operation": {
 			"age": {
 				"$elemMatch": {
 					"$where": "Couple",
-					"rank": null
+					"score": null
 				}
 			}
 		},
@@ -470,12 +453,12 @@
 		}
 	},
 	{
-		"id": "eMQGDH32JB8K",
+		"id": "eZ3xNwK82DY0",
 		"operation": {
 			"age": {
 				"$elemMatch": {
 					"$where": "Couple",
-					"rank": "value"
+					"score": "value"
 				}
 			}
 		},
@@ -486,12 +469,12 @@
 		}
 	},
 	{
-		"id": "oJRiU2JX43F2",
+		"id": "rFqPr5jHZTEK",
 		"operation": {
 			"age": {
 				"$elemMatch": {
 					"$where": "Couple",
-					"rank": true
+					"score": true
 				}
 			}
 		},
@@ -502,12 +485,12 @@
 		}
 	},
 	{
-		"id": "dBLBpFRDfe6E",
+		"id": "gOO9wIROb4nU",
 		"operation": {
 			"age": {
 				"$elemMatch": {
 					"$where": null,
-					"rank": 2
+					"score": 9
 				}
 			}
 		},
@@ -518,12 +501,12 @@
 		}
 	},
 	{
-		"id": "e0tKbBAbWo2J",
+		"id": "pIQnxytLkhZB",
 		"operation": {
 			"age": {
 				"$elemMatch": {
 					"$where": 42,
-					"rank": 2
+					"score": 9
 				}
 			}
 		},
@@ -534,12 +517,12 @@
 		}
 	},
 	{
-		"id": "vHntDe3oOgRD",
+		"id": "uoLjKdbHCOMk",
 		"operation": {
 			"age": {
 				"$elemMatch": {
 					"$where": true,
-					"rank": 2
+					"score": 9
 				}
 			}
 		},
@@ -550,11 +533,11 @@
 		}
 	},
 	{
-		"id": "sFODtxkQq6YB",
+		"id": "wDKsRRQH94NZ",
 		"operation": {
 			"age": {
 				"$elemMatch": {
-					"rank": null,
+					"score": null,
 					"$where": "Couple"
 				}
 			}
@@ -566,11 +549,11 @@
 		}
 	},
 	{
-		"id": "jOR39AFGuXa4",
+		"id": "nIR2RVAY9cij",
 		"operation": {
 			"age": {
 				"$elemMatch": {
-					"rank": "value",
+					"score": "value",
 					"$where": "Couple"
 				}
 			}
@@ -582,11 +565,11 @@
 		}
 	},
 	{
-		"id": "vi6qmMsvMUPh",
+		"id": "fhgY066Dp6kN",
 		"operation": {
 			"age": {
 				"$elemMatch": {
-					"rank": true,
+					"score": true,
 					"$where": "Couple"
 				}
 			}
@@ -598,11 +581,11 @@
 		}
 	},
 	{
-		"id": "qPEwBBSE8cd2",
+		"id": "vHZHh8GcaEWh",
 		"operation": {
 			"age": {
 				"$elemMatch": {
-					"rank": 2,
+					"score": 9,
 					"$where": null
 				}
 			}
@@ -614,11 +597,11 @@
 		}
 	},
 	{
-		"id": "ozuPwltS66PQ",
+		"id": "tBEHGMMcqode",
 		"operation": {
 			"age": {
 				"$elemMatch": {
-					"rank": 2,
+					"score": 9,
 					"$where": 42
 				}
 			}
@@ -630,11 +613,11 @@
 		}
 	},
 	{
-		"id": "usBLyVEjgl4J",
+		"id": "a5dlqGFRISjF",
 		"operation": {
 			"age": {
 				"$elemMatch": {
-					"rank": 2,
+					"score": 9,
 					"$where": true
 				}
 			}
@@ -646,13 +629,13 @@
 		}
 	},
 	{
-		"id": "rH8Gbp1U2472",
+		"id": "vHgzTO6r8RUw",
 		"operation": {
 			"age": {
 				"$elemMatch": {
 					"$and": [
 						{
-							"rank": null
+							"score": null
 						},
 						{
 							"$where": "Couple"
@@ -668,13 +651,13 @@
 		}
 	},
 	{
-		"id": "lI8TBMwyR2eZ",
+		"id": "colzuq1yN7ES",
 		"operation": {
 			"age": {
 				"$elemMatch": {
 					"$and": [
 						{
-							"rank": "value"
+							"score": "value"
 						},
 						{
 							"$where": "Couple"
@@ -690,13 +673,13 @@
 		}
 	},
 	{
-		"id": "gnVSGopRCHoP",
+		"id": "d4mZMI6Ca0aw",
 		"operation": {
 			"age": {
 				"$elemMatch": {
 					"$and": [
 						{
-							"rank": true
+							"score": true
 						},
 						{
 							"$where": "Couple"
@@ -712,13 +695,13 @@
 		}
 	},
 	{
-		"id": "oJABSr9Cq8Q8",
+		"id": "wZp0LVwPXQOT",
 		"operation": {
 			"age": {
 				"$elemMatch": {
 					"$and": [
 						{
-							"rank": 2
+							"score": 9
 						},
 						{
 							"$where": null
@@ -734,13 +717,13 @@
 		}
 	},
 	{
-		"id": "lrYx11SgE8Gg",
+		"id": "qkPtXGdZuJZs",
 		"operation": {
 			"age": {
 				"$elemMatch": {
 					"$and": [
 						{
-							"rank": 2
+							"score": 9
 						},
 						{
 							"$where": 42
@@ -756,13 +739,13 @@
 		}
 	},
 	{
-		"id": "pjJo05ALgCdH",
+		"id": "bWkACudT420I",
 		"operation": {
 			"age": {
 				"$elemMatch": {
 					"$and": [
 						{
-							"rank": 2
+							"score": 9
 						},
 						{
 							"$where": true
@@ -770,57 +753,6 @@
 					]
 				}
 			}
-		},
-		"error": {
-			"message": "$where got bad type",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "oJw24T8VF4bX",
-		"operation": {
-			"age": {
-				"$eq": null
-			},
-			"rank": {
-				"$eq": null
-			},
-			"$where": {}
-		},
-		"error": {
-			"message": "$where got bad type",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "aLBUZ2msZ70I",
-		"operation": {
-			"age": {
-				"$eq": "value"
-			},
-			"rank": {
-				"$eq": "value"
-			},
-			"$where": {}
-		},
-		"error": {
-			"message": "$where got bad type",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "bgIbo8KR7FGi",
-		"operation": {
-			"age": {
-				"$eq": true
-			},
-			"rank": {
-				"$eq": true
-			},
-			"$where": {}
 		},
 		"error": {
 			"message": "$where got bad type",
