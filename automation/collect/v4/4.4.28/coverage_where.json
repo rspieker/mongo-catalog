@@ -1,13 +1,135 @@
 [
 	{
-		"id": "uUAsXeIft47A",
+		"id": "oOz0ewr8TCOK",
+		"operation": {},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "oF3RqOOyWrsL",
 		"operation": {
+			"$where": "Abundant"
+		},
+		"error": {
+			"message": "ReferenceError: Abundant is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "lMnFyxMV3LV0",
+		"operation": {
+			"age": 9,
 			"score": {
-				"$eq": 7
-			},
-			"rank": {
-				"$eq": 8
-			},
+				"$where": "Couple"
+			}
+		},
+		"error": {
+			"message": "$where cannot be applied to a field",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tXlR1fURoaUs",
+		"operation": {
+			"age": {
+				"$where": "Couple"
+			}
+		},
+		"error": {
+			"message": "$where cannot be applied to a field",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oWxKM7aaPeaq",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"$where": "Couple"
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wJzbVF1IFUap",
+		"operation": {
+			"age": 11,
+			"score.rank": {
+				"$where": "Couple"
+			}
+		},
+		"error": {
+			"message": "$where cannot be applied to a field",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "lRaa1FBJ6yDa",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"$where": "Couple",
+					"score": 9
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tWKifBsTs8hS",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"score": 9,
+					"$where": "Couple"
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "t8zOyIRMUXRX",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"$and": [
+						{
+							"score": 9
+						},
+						{
+							"$where": "Couple"
+						}
+					]
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bIXooHnYqZF6",
+		"operation": {
 			"$where": {}
 		},
 		"error": {
@@ -17,15 +139,9 @@
 		}
 	},
 	{
-		"id": "wwXUULuDbmMk",
+		"id": "gEWAJcSV6jSN",
 		"operation": {
-			"score": {
-				"$eq": null
-			},
-			"rank": {
-				"$eq": null
-			},
-			"$where": {}
+			"$where": null
 		},
 		"error": {
 			"message": "$where got bad type",
@@ -34,15 +150,9 @@
 		}
 	},
 	{
-		"id": "vwRuPMogMCvS",
+		"id": "vVxL2hsXrepR",
 		"operation": {
-			"score": {
-				"$eq": "value"
-			},
-			"rank": {
-				"$eq": "value"
-			},
-			"$where": {}
+			"$where": 42
 		},
 		"error": {
 			"message": "$where got bad type",
@@ -51,18 +161,601 @@
 		}
 	},
 	{
-		"id": "iCbawgLNKImK",
+		"id": "nFvLMDTVMpsv",
 		"operation": {
-			"score": {
-				"$eq": true
-			},
-			"rank": {
-				"$eq": true
-			},
-			"$where": {}
+			"$where": true
 		},
 		"error": {
 			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "aYnRPgTTt0SW",
+		"operation": {
+			"age": null,
+			"score": {
+				"$where": "Couple"
+			}
+		},
+		"error": {
+			"message": "$where cannot be applied to a field",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "urgNdLpKBUIG",
+		"operation": {
+			"age": "value",
+			"score": {
+				"$where": "Couple"
+			}
+		},
+		"error": {
+			"message": "$where cannot be applied to a field",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "m7mh2AFUQLJY",
+		"operation": {
+			"age": true,
+			"score": {
+				"$where": "Couple"
+			}
+		},
+		"error": {
+			"message": "$where cannot be applied to a field",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rYLHDBrX5FVv",
+		"operation": {
+			"age": 9,
+			"score": {
+				"$where": null
+			}
+		},
+		"error": {
+			"message": "$where cannot be applied to a field",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "cEe1SB7UWlYb",
+		"operation": {
+			"age": 9,
+			"score": {
+				"$where": 42
+			}
+		},
+		"error": {
+			"message": "$where cannot be applied to a field",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "mivpmw9oDUNF",
+		"operation": {
+			"age": 9,
+			"score": {
+				"$where": true
+			}
+		},
+		"error": {
+			"message": "$where cannot be applied to a field",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "lggEVfsIvTMm",
+		"operation": {
+			"age": {
+				"$where": null
+			}
+		},
+		"error": {
+			"message": "$where cannot be applied to a field",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "q0Jas5mYjGVs",
+		"operation": {
+			"age": {
+				"$where": 42
+			}
+		},
+		"error": {
+			"message": "$where cannot be applied to a field",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tEsUJVQz05WV",
+		"operation": {
+			"age": {
+				"$where": true
+			}
+		},
+		"error": {
+			"message": "$where cannot be applied to a field",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wrHDFE1vZ6u3",
+		"operation": {
+			"age": {
+				"$elemMatch": 42
+			}
+		},
+		"error": {
+			"message": "$elemMatch needs an Object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "iaBvmJZqdbzn",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"$where": null
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bVJk7IGLtkIj",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"$where": 42
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "o6nTShFCK6vU",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"$where": true
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "kgt1sdEzE6pu",
+		"operation": {
+			"age": null,
+			"score.rank": {
+				"$where": "Couple"
+			}
+		},
+		"error": {
+			"message": "$where cannot be applied to a field",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "leVFS2HX6G9Z",
+		"operation": {
+			"age": "value",
+			"score.rank": {
+				"$where": "Couple"
+			}
+		},
+		"error": {
+			"message": "$where cannot be applied to a field",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "jFOsif0JO9QF",
+		"operation": {
+			"age": true,
+			"score.rank": {
+				"$where": "Couple"
+			}
+		},
+		"error": {
+			"message": "$where cannot be applied to a field",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sJCoa7VoEXCm",
+		"operation": {
+			"age": 11,
+			"score.rank": {
+				"$where": null
+			}
+		},
+		"error": {
+			"message": "$where cannot be applied to a field",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pWgCK0q84WQL",
+		"operation": {
+			"age": 11,
+			"score.rank": {
+				"$where": 42
+			}
+		},
+		"error": {
+			"message": "$where cannot be applied to a field",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wJpztk5i5GbI",
+		"operation": {
+			"age": 11,
+			"score.rank": {
+				"$where": true
+			}
+		},
+		"error": {
+			"message": "$where cannot be applied to a field",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tV0toKJDHRXf",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"$where": "Couple",
+					"score": null
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "eZ3xNwK82DY0",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"$where": "Couple",
+					"score": "value"
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rFqPr5jHZTEK",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"$where": "Couple",
+					"score": true
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "gOO9wIROb4nU",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"$where": null,
+					"score": 9
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pIQnxytLkhZB",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"$where": 42,
+					"score": 9
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uoLjKdbHCOMk",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"$where": true,
+					"score": 9
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wDKsRRQH94NZ",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"score": null,
+					"$where": "Couple"
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nIR2RVAY9cij",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"score": "value",
+					"$where": "Couple"
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "fhgY066Dp6kN",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"score": true,
+					"$where": "Couple"
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vHZHh8GcaEWh",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"score": 9,
+					"$where": null
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tBEHGMMcqode",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"score": 9,
+					"$where": 42
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "a5dlqGFRISjF",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"score": 9,
+					"$where": true
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vHgzTO6r8RUw",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"$and": [
+						{
+							"score": null
+						},
+						{
+							"$where": "Couple"
+						}
+					]
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "colzuq1yN7ES",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"$and": [
+						{
+							"score": "value"
+						},
+						{
+							"$where": "Couple"
+						}
+					]
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "d4mZMI6Ca0aw",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"$and": [
+						{
+							"score": true
+						},
+						{
+							"$where": "Couple"
+						}
+					]
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wZp0LVwPXQOT",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"$and": [
+						{
+							"score": 9
+						},
+						{
+							"$where": null
+						}
+					]
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qkPtXGdZuJZs",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"$and": [
+						{
+							"score": 9
+						},
+						{
+							"$where": 42
+						}
+					]
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bWkACudT420I",
+		"operation": {
+			"age": {
+				"$elemMatch": {
+					"$and": [
+						{
+							"score": 9
+						},
+						{
+							"$where": true
+						}
+					]
+				}
+			}
+		},
+		"error": {
+			"message": "$where can only be applied to the top-level document",
 			"code": 2,
 			"type": "MongoServerError"
 		}
