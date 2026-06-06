@@ -31,6 +31,71 @@
       }
     },
     {
+      "checksum": "658c63a241499cf0f77d6fbf1c6f10566c1b1ae55a888deec1cf6deb7e3cf727",
+      "fingerprint": {
+        "field:#1": {
+          "$ne": {}
+        }
+      },
+      "query": {
+        "rank": {
+          "$ne": {}
+        }
+      }
+    },
+    {
+      "checksum": "9f185ceb7c8b7e90895f1a318f90b9379f7e0f8466776e5d906a489e000e55e8",
+      "fingerprint": {
+        "field:#1": {
+          "$gt": {}
+        }
+      },
+      "query": {
+        "rank": {
+          "$gt": {}
+        }
+      }
+    },
+    {
+      "checksum": "8c5a4959f4a6890f5156f711eada276faa1ad6261d2a1e790d0d024fbf6fda97",
+      "fingerprint": {
+        "field:#1": {
+          "$gte": {}
+        }
+      },
+      "query": {
+        "rank": {
+          "$gte": {}
+        }
+      }
+    },
+    {
+      "checksum": "214e29da82cd364194475a0a42a7f66903c50008728d4d63a424fa3dfa90e3c0",
+      "fingerprint": {
+        "field:#1": {
+          "$lt": {}
+        }
+      },
+      "query": {
+        "rank": {
+          "$lt": {}
+        }
+      }
+    },
+    {
+      "checksum": "a552fc2d47e6e33604ab01a377072db20bdfb45409971c5bd5c3dfe9fd76a314",
+      "fingerprint": {
+        "field:#1": {
+          "$lte": {}
+        }
+      },
+      "query": {
+        "rank": {
+          "$lte": {}
+        }
+      }
+    },
+    {
       "checksum": "3a29a18823335d9d5507d9209aa8651fb492fbed51146ccf90f50c8f52d338dc",
       "fingerprint": {
         "field:#1": {
@@ -304,7 +369,7 @@
       "query": {
         "counts": {
           "$elemMatch": {
-            "grade": {
+            "step": {
               "$ne": [
                 153
               ]
@@ -333,7 +398,7 @@
       "query": {
         "counts": {
           "$elemMatch": {
-            "grade": {
+            "step": {
               "$not": {
                 "$in": [
                   [
@@ -363,7 +428,7 @@
         "counts": {
           "$not": {
             "$elemMatch": {
-              "grade": [
+              "step": [
                 153
               ]
             }
@@ -392,7 +457,7 @@
         "counts": {
           "$not": {
             "$elemMatch": {
-              "grade": {
+              "step": {
                 "$in": [
                   [
                     153
@@ -868,7 +933,7 @@
     {
       "counts": {
         "$elemMatch": {
-          "grade": {
+          "step": {
             "$ne": [
               null
             ]
@@ -879,7 +944,7 @@
     {
       "counts": {
         "$elemMatch": {
-          "grade": {
+          "step": {
             "$ne": [
               "value"
             ]
@@ -890,7 +955,7 @@
     {
       "counts": {
         "$elemMatch": {
-          "grade": {
+          "step": {
             "$ne": [
               true
             ]
@@ -901,7 +966,7 @@
     {
       "counts": {
         "$elemMatch": {
-          "grade": {
+          "step": {
             "$not": {
               "$in": "active"
             }
@@ -912,7 +977,7 @@
     {
       "counts": {
         "$elemMatch": {
-          "grade": {
+          "step": {
             "$not": {
               "$in": [
                 [
@@ -927,7 +992,7 @@
     {
       "counts": {
         "$elemMatch": {
-          "grade": {
+          "step": {
             "$not": {
               "$in": [
                 [
@@ -942,7 +1007,7 @@
     {
       "counts": {
         "$elemMatch": {
-          "grade": {
+          "step": {
             "$not": {
               "$in": [
                 [
@@ -965,7 +1030,7 @@
       "counts": {
         "$not": {
           "$elemMatch": {
-            "grade": [
+            "step": [
               null
             ]
           }
@@ -976,7 +1041,7 @@
       "counts": {
         "$not": {
           "$elemMatch": {
-            "grade": [
+            "step": [
               "value"
             ]
           }
@@ -987,7 +1052,7 @@
       "counts": {
         "$not": {
           "$elemMatch": {
-            "grade": [
+            "step": [
               true
             ]
           }
@@ -998,7 +1063,7 @@
       "counts": {
         "$not": {
           "$elemMatch": {
-            "grade": {
+            "step": {
               "$in": "active"
             }
           }
@@ -1009,7 +1074,7 @@
       "counts": {
         "$not": {
           "$elemMatch": {
-            "grade": {
+            "step": {
               "$in": [
                 [
                   null
@@ -1024,7 +1089,7 @@
       "counts": {
         "$not": {
           "$elemMatch": {
-            "grade": {
+            "step": {
               "$in": [
                 [
                   "value"
@@ -1039,7 +1104,7 @@
       "counts": {
         "$not": {
           "$elemMatch": {
-            "grade": {
+            "step": {
               "$in": [
                 [
                   true
@@ -1058,21 +1123,21 @@
     },
     {
       "_id": 1,
-      "rank": 16,
+      "level": 16,
       "scores": [
         17
       ]
     },
     {
       "_id": 2,
-      "level": 17,
+      "count": 17,
       "ratings": [
         18
       ]
     },
     {
       "_id": 3,
-      "level": 17,
+      "count": 17,
       "ratings": [
         [
           140
@@ -1081,7 +1146,7 @@
     },
     {
       "_id": 4,
-      "level": 18,
+      "count": 18,
       "ratings": [
         21,
         22,
@@ -1092,14 +1157,14 @@
     },
     {
       "_id": 5,
-      "count": 30,
+      "grade": 30,
       "counts": [
         31
       ]
     },
     {
       "_id": 6,
-      "count": 30,
+      "grade": 30,
       "counts": [
         [
           153
@@ -1108,7 +1173,7 @@
     },
     {
       "_id": 7,
-      "count": 31,
+      "grade": 31,
       "counts": [
         34,
         35,
@@ -1119,19 +1184,19 @@
     },
     {
       "_id": 8,
-      "count": 31,
+      "grade": 31,
       "counts": [
         {
-          "grade": 153
+          "step": 153
         }
       ]
     },
     {
       "_id": 9,
-      "count": 32,
+      "grade": 32,
       "counts": [
         {
-          "grade": [
+          "step": [
             34,
             [
               153
@@ -1142,10 +1207,10 @@
     },
     {
       "_id": 10,
-      "count": 33,
+      "grade": 33,
       "counts": [
         {
-          "grade": [
+          "step": [
             [
               153
             ]

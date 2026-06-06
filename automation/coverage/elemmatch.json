@@ -124,6 +124,11 @@
       }
     },
     {
+      "checksum": "10f03f0292d2bc311003aa61c9e6e4715ed330c35d3798ef655fc1b5a211bb3d",
+      "fingerprint": {},
+      "query": {}
+    },
+    {
       "checksum": "93d6fcc1965ac29d1e30fdf6183d2a4dab8180715fc9785e1f7b6d75efda8e54",
       "fingerprint": {
         "field:#1": {
@@ -155,27 +160,27 @@
       "query": {
         "ratings": {
           "$elemMatch": {
-            "priority": {
+            "capacity": {
               "$ne": 34
             },
             "$or": [
               {
-                "capacity": 35
+                "attempts": 35
               },
               {
-                "capacity": 36
+                "attempts": 36
               }
             ]
           }
         },
         "$or": [
           {
-            "attempts": 37,
-            "quantity": 38
+            "quantity": 37,
+            "size": 38
           },
           {
-            "attempts": 39,
-            "quantity": 40
+            "quantity": 39,
+            "size": 40
           }
         ]
       }
@@ -384,93 +389,93 @@
       },
       "$or": [
         {
-          "attempts": 37,
-          "quantity": 38
+          "quantity": 37,
+          "size": 38
         },
         {
-          "attempts": 39,
-          "quantity": 40
+          "quantity": 39,
+          "size": 40
         }
       ]
     },
     {
       "ratings": {
         "$elemMatch": {
-          "priority": {
+          "capacity": {
             "$ne": null
           },
           "$or": [
             {
-              "capacity": null
+              "attempts": null
             },
             {
-              "capacity": null
+              "attempts": null
             }
           ]
         }
       },
       "$or": [
         {
-          "attempts": null,
-          "quantity": null
+          "quantity": null,
+          "size": null
         },
         {
-          "attempts": null,
-          "quantity": null
+          "quantity": null,
+          "size": null
         }
       ]
     },
     {
       "ratings": {
         "$elemMatch": {
-          "priority": {
+          "capacity": {
             "$ne": "value"
           },
           "$or": [
             {
-              "capacity": "value"
+              "attempts": "value"
             },
             {
-              "capacity": "value"
+              "attempts": "value"
             }
           ]
         }
       },
       "$or": [
         {
-          "attempts": "value",
-          "quantity": "value"
+          "quantity": "value",
+          "size": "value"
         },
         {
-          "attempts": "value",
-          "quantity": "value"
+          "quantity": "value",
+          "size": "value"
         }
       ]
     },
     {
       "ratings": {
         "$elemMatch": {
-          "priority": {
+          "capacity": {
             "$ne": true
           },
           "$or": [
             {
-              "capacity": true
+              "attempts": true
             },
             {
-              "capacity": true
+              "attempts": true
             }
           ]
         }
       },
       "$or": [
         {
-          "attempts": true,
-          "quantity": true
+          "quantity": true,
+          "size": true
         },
         {
-          "attempts": true,
-          "quantity": true
+          "quantity": true,
+          "size": true
         }
       ]
     }
@@ -488,15 +493,15 @@
     },
     {
       "_id": 1,
-      "step": 33,
+      "priority": 33,
       "ratings": [
         {
-          "priority": 33,
-          "capacity": 35
+          "capacity": 33,
+          "attempts": 35
         }
       ],
-      "attempts": 37,
-      "quantity": 38
+      "quantity": 37,
+      "size": 38
     }
   ],
   "indices": [
@@ -513,14 +518,14 @@
       "b.c.f": 1
     },
     {
-      "priority": 1,
+      "capacity": 1,
       "b.c": 1
     },
     {
       "arr.a": 1,
       "arr.b": 1,
-      "attempts": 1,
-      "quantity": 1
+      "quantity": 1,
+      "size": 1
     }
   ]
 }

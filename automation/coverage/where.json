@@ -1,71 +1,467 @@
 {
   "queries": [
     {
-      "checksum": "da8c5e88100fca685efb3035ceefc9f63d094adcc2dd017ea4107396a4faed92",
+      "checksum": "10f03f0292d2bc311003aa61c9e6e4715ed330c35d3798ef655fc1b5a211bb3d",
+      "fingerprint": {},
+      "query": {}
+    },
+    {
+      "checksum": "b4268949ef785b7e18da78bce0a4c3d89dcabe52861c1b79384362bcc7b1dd12",
+      "fingerprint": {
+        "$where": "string:#1"
+      },
+      "query": {
+        "$where": "Abundant"
+      }
+    },
+    {
+      "checksum": "ce4ec12caa055ffa384b950722e5e2495959419d2bb4e49bd3e19bc27df88b3b",
+      "fingerprint": {
+        "field:#1": "number:#1",
+        "field:#2": {
+          "$where": "string:#1"
+        }
+      },
+      "query": {
+        "age": 9,
+        "score": {
+          "$where": "Couple"
+        }
+      }
+    },
+    {
+      "checksum": "8f79baff66d50d33ed7b33bf02346bc1cefb6d69b18ee2d395baeb67d4a19da3",
       "fingerprint": {
         "field:#1": {
-          "$eq": "number:#1"
-        },
-        "field:#2": {
-          "$eq": "number:#2"
-        },
+          "$where": "string:#1"
+        }
+      },
+      "query": {
+        "age": {
+          "$where": "Couple"
+        }
+      }
+    },
+    {
+      "checksum": "b8fe72aa0a5519fac9e95335bebec2952b513dcbe3cd604582796dd9dbdca051",
+      "fingerprint": {
+        "field:#1": {
+          "$elemMatch": {
+            "$where": "string:#1"
+          }
+        }
+      },
+      "query": {
+        "age": {
+          "$elemMatch": {
+            "$where": "Couple"
+          }
+        }
+      }
+    },
+    {
+      "checksum": "cf608976b00345915c66b3f00f55ae4f838cf847abe1c00368c3263e53ef65cb",
+      "fingerprint": {
+        "field:#1": "number:#1",
+        "field:#2.field:#3": {
+          "$where": "string:#1"
+        }
+      },
+      "query": {
+        "age": 11,
+        "score.rank": {
+          "$where": "Couple"
+        }
+      }
+    },
+    {
+      "checksum": "4a48fab1c99636c91eb843504d2a167296a8679a96593065ac13d42045f8e0ad",
+      "fingerprint": {
+        "field:#1": {
+          "$elemMatch": {
+            "$where": "string:#1",
+            "field:#2": "number:#1"
+          }
+        }
+      },
+      "query": {
+        "age": {
+          "$elemMatch": {
+            "$where": "Couple",
+            "score": 9
+          }
+        }
+      }
+    },
+    {
+      "checksum": "59d7f510bbed646ac7632b6f02603318b6d87aa9090a0c6f50b7b8544010f69b",
+      "fingerprint": {
+        "field:#1": {
+          "$elemMatch": {
+            "field:#2": "number:#1",
+            "$where": "string:#1"
+          }
+        }
+      },
+      "query": {
+        "age": {
+          "$elemMatch": {
+            "score": 9,
+            "$where": "Couple"
+          }
+        }
+      }
+    },
+    {
+      "checksum": "1f5aae5bc53e63d4b8cd4d19ede30f24f55d660418824a121f08e64c76798450",
+      "fingerprint": {
+        "field:#1": {
+          "$elemMatch": {
+            "$and": [
+              {
+                "field:#2": "number:#1"
+              },
+              {
+                "$where": "string:#1"
+              }
+            ]
+          }
+        }
+      },
+      "query": {
+        "age": {
+          "$elemMatch": {
+            "$and": [
+              {
+                "score": 9
+              },
+              {
+                "$where": "Couple"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "checksum": "18b53f9622adc0b7129d3cf61e5a355fc82f69e1aa40ac5a1db3cf3c04724f22",
+      "fingerprint": {
         "$where": {}
       },
       "query": {
-        "score": {
-          "$eq": 7
-        },
-        "rank": {
-          "$eq": 8
-        },
         "$where": {}
       }
     }
   ],
   "variants": [
     {
-      "score": {
-        "$eq": null
-      },
-      "rank": {
-        "$eq": null
-      },
-      "$where": {}
+      "$where": null
     },
     {
-      "score": {
-        "$eq": "value"
-      },
-      "rank": {
-        "$eq": "value"
-      },
-      "$where": {}
+      "$where": 42
     },
     {
+      "$where": true
+    },
+    {
+      "age": null,
       "score": {
-        "$eq": true
-      },
-      "rank": {
-        "$eq": true
-      },
-      "$where": {}
+        "$where": "Couple"
+      }
+    },
+    {
+      "age": "value",
+      "score": {
+        "$where": "Couple"
+      }
+    },
+    {
+      "age": true,
+      "score": {
+        "$where": "Couple"
+      }
+    },
+    {
+      "age": 9,
+      "score": {
+        "$where": null
+      }
+    },
+    {
+      "age": 9,
+      "score": {
+        "$where": 42
+      }
+    },
+    {
+      "age": 9,
+      "score": {
+        "$where": true
+      }
+    },
+    {
+      "age": {
+        "$where": null
+      }
+    },
+    {
+      "age": {
+        "$where": 42
+      }
+    },
+    {
+      "age": {
+        "$where": true
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": 42
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "$where": null
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "$where": 42
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "$where": true
+        }
+      }
+    },
+    {
+      "age": null,
+      "score.rank": {
+        "$where": "Couple"
+      }
+    },
+    {
+      "age": "value",
+      "score.rank": {
+        "$where": "Couple"
+      }
+    },
+    {
+      "age": true,
+      "score.rank": {
+        "$where": "Couple"
+      }
+    },
+    {
+      "age": 11,
+      "score.rank": {
+        "$where": null
+      }
+    },
+    {
+      "age": 11,
+      "score.rank": {
+        "$where": 42
+      }
+    },
+    {
+      "age": 11,
+      "score.rank": {
+        "$where": true
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "$where": "Couple",
+          "score": null
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "$where": "Couple",
+          "score": "value"
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "$where": "Couple",
+          "score": true
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "$where": null,
+          "score": 9
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "$where": 42,
+          "score": 9
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "$where": true,
+          "score": 9
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "score": null,
+          "$where": "Couple"
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "score": "value",
+          "$where": "Couple"
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "score": true,
+          "$where": "Couple"
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "score": 9,
+          "$where": null
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "score": 9,
+          "$where": 42
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "score": 9,
+          "$where": true
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "$and": [
+            {
+              "score": null
+            },
+            {
+              "$where": "Couple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "$and": [
+            {
+              "score": "value"
+            },
+            {
+              "$where": "Couple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "$and": [
+            {
+              "score": true
+            },
+            {
+              "$where": "Couple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "$and": [
+            {
+              "score": 9
+            },
+            {
+              "$where": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "$and": [
+            {
+              "score": 9
+            },
+            {
+              "$where": 42
+            }
+          ]
+        }
+      }
+    },
+    {
+      "age": {
+        "$elemMatch": {
+          "$and": [
+            {
+              "score": 9
+            },
+            {
+              "$where": true
+            }
+          ]
+        }
+      }
     }
   ],
   "documents": [
     {
       "_id": 0,
-      "age": 5,
-      "score": 6,
-      "rank": 8,
-      "level": 9
+      "age": 9
     }
   ],
-  "indices": [
-    {
-      "score": 1
-    },
-    {
-      "rank": 1
-    }
-  ]
+  "indices": []
 }

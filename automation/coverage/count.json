@@ -28,6 +28,21 @@
       "query": {}
     },
     {
+      "checksum": "24e095f96793f462e7de2042c1aae4304ff8ef726abbce26ed193d777026c2ed",
+      "fingerprint": {
+        "field:#1": {
+          "$gt": "number:#1",
+          "$lte": "number:#2"
+        }
+      },
+      "query": {
+        "score": {
+          "$gt": 36,
+          "$lte": 86
+        }
+      }
+    },
+    {
       "checksum": "cff4d345bcd9abac8c15922c672941fdee171c30f3fa9a2ec6d7f640f3a8d5a3",
       "fingerprint": {
         "field:#1": {
@@ -58,6 +73,15 @@
       },
       "query": {
         "rank": 12
+      }
+    },
+    {
+      "checksum": "18b53f9622adc0b7129d3cf61e5a355fc82f69e1aa40ac5a1db3cf3c04724f22",
+      "fingerprint": {
+        "$where": {}
+      },
+      "query": {
+        "$where": {}
       }
     },
     {
