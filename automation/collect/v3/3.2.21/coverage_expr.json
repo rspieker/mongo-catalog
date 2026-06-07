@@ -1,13 +1,13 @@
 [
 	{
-		"id": "vvN6wVQ1xGMy",
+		"id": "bTUBsOtbCWVl",
 		"operation": {
 			"$expr": {
 				"$and": [
 					{
 						"$eq": [
 							"$age",
-							17
+							33
 						]
 					}
 				]
@@ -73,98 +73,17 @@
 		}
 	},
 	{
-		"id": "pF9jtgBQAp25",
+		"id": "mMfs9NGXatYn",
 		"operation": {
 			"$expr": {
 				"$eq": [
 					"$weight",
-					35
+					6
 				]
 			}
 		},
 		"error": {
 			"message": "unknown top level operator: $expr",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "rSHLuz1tPZXq",
-		"operation": {
-			"$expr": {
-				"$eq": [
-					"$rank",
-					"$level"
-				]
-			}
-		},
-		"error": {
-			"message": "unknown top level operator: $expr",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "tYKEZwJJDTRy",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							"$rank",
-							"$level"
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": 7
-					}
-				}
-			]
-		},
-		"error": {
-			"message": "unknown top level operator: $expr",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "t4ZEZTvP6eVZ",
-		"operation": {
-			"grade": {
-				"$elemMatch": {
-					"$expr": {
-						"$eq": [
-							"$rank",
-							"$level"
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "unknown operator: $expr",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "k0PYXD4rVqrn",
-		"operation": {
-			"grade": {
-				"$_internalSchemaObjectMatch": {
-					"$expr": {
-						"$eq": [
-							"$rank",
-							"$level"
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "unknown operator: $_internalSchemaObjectMatch",
 			"code": 2,
 			"type": "MongoError"
 		}
@@ -230,14 +149,14 @@
 		}
 	},
 	{
-		"id": "mUFIn1QfdhUS",
+		"id": "wkLCQ8nPvo2G",
 		"operation": {
 			"$expr": {
 				"$and": [
 					{
 						"$eq": [
 							null,
-							17
+							33
 						]
 					}
 				]
@@ -250,14 +169,14 @@
 		}
 	},
 	{
-		"id": "txHAbJJADRF1",
+		"id": "wLXvbMRyt9JN",
 		"operation": {
 			"$expr": {
 				"$and": [
 					{
 						"$eq": [
 							42,
-							17
+							33
 						]
 					}
 				]
@@ -270,14 +189,14 @@
 		}
 	},
 	{
-		"id": "jpJ3K3s1BP0z",
+		"id": "sWf0H8BwXvD2",
 		"operation": {
 			"$expr": {
 				"$and": [
 					{
 						"$eq": [
 							true,
-							17
+							33
 						]
 					}
 				]
@@ -510,12 +429,12 @@
 		}
 	},
 	{
-		"id": "fx5Q4WC9KPYo",
+		"id": "lVpMUq8xtTen",
 		"operation": {
 			"$expr": {
 				"$eq": [
 					null,
-					35
+					6
 				]
 			}
 		},
@@ -526,12 +445,12 @@
 		}
 	},
 	{
-		"id": "mWAhB2CKIW8j",
+		"id": "rOHHJlHo9nGk",
 		"operation": {
 			"$expr": {
 				"$eq": [
 					42,
-					35
+					6
 				]
 			}
 		},
@@ -542,348 +461,17 @@
 		}
 	},
 	{
-		"id": "rMCEOPD0L753",
+		"id": "rzB5Ywl2zdZF",
 		"operation": {
 			"$expr": {
 				"$eq": [
 					true,
-					35
+					6
 				]
 			}
 		},
 		"error": {
 			"message": "unknown top level operator: $expr",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "rx0Lvr2gNLne",
-		"operation": {
-			"$expr": {
-				"$eq": [
-					null,
-					null
-				]
-			}
-		},
-		"error": {
-			"message": "unknown top level operator: $expr",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "nJm31O1ArvZe",
-		"operation": {
-			"$expr": {
-				"$eq": [
-					42,
-					42
-				]
-			}
-		},
-		"error": {
-			"message": "unknown top level operator: $expr",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "tVM1ZlMNA5DJ",
-		"operation": {
-			"$expr": {
-				"$eq": [
-					true,
-					true
-				]
-			}
-		},
-		"error": {
-			"message": "unknown top level operator: $expr",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "azRIswYSx809",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							"$rank",
-							"$level"
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": null
-					}
-				}
-			]
-		},
-		"error": {
-			"message": "unknown top level operator: $expr",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "j6QK40zSZAiL",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							"$rank",
-							"$level"
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": "value"
-					}
-				}
-			]
-		},
-		"error": {
-			"message": "unknown top level operator: $expr",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "juFTBcXBqASW",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							"$rank",
-							"$level"
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": true
-					}
-				}
-			]
-		},
-		"error": {
-			"message": "unknown top level operator: $expr",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "qUJXotX1O3IM",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							null,
-							null
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": 7
-					}
-				}
-			]
-		},
-		"error": {
-			"message": "unknown top level operator: $expr",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "o2fGxgZ2wj1n",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							42,
-							42
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": 7
-					}
-				}
-			]
-		},
-		"error": {
-			"message": "unknown top level operator: $expr",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "s467yFGuPNW2",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							true,
-							true
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": 7
-					}
-				}
-			]
-		},
-		"error": {
-			"message": "unknown top level operator: $expr",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "vxL4dHeV8YAX",
-		"operation": {
-			"grade": {
-				"$elemMatch": 42
-			}
-		},
-		"error": {
-			"message": "$elemMatch needs an Object",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "jsnjqHLh4MQD",
-		"operation": {
-			"grade": {
-				"$elemMatch": {
-					"$expr": {
-						"$eq": [
-							null,
-							null
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "unknown operator: $expr",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "fDtgviOXhOdP",
-		"operation": {
-			"grade": {
-				"$elemMatch": {
-					"$expr": {
-						"$eq": [
-							42,
-							42
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "unknown operator: $expr",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "fZ3HgbtDUHoS",
-		"operation": {
-			"grade": {
-				"$elemMatch": {
-					"$expr": {
-						"$eq": [
-							true,
-							true
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "unknown operator: $expr",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "k0jr6mcGUA1i",
-		"operation": {
-			"grade": {
-				"$_internalSchemaObjectMatch": {
-					"$expr": {
-						"$eq": [
-							null,
-							null
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "unknown operator: $_internalSchemaObjectMatch",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "wOT6zFOxF342",
-		"operation": {
-			"grade": {
-				"$_internalSchemaObjectMatch": {
-					"$expr": {
-						"$eq": [
-							42,
-							42
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "unknown operator: $_internalSchemaObjectMatch",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "n4rsTQ2DU8T1",
-		"operation": {
-			"grade": {
-				"$_internalSchemaObjectMatch": {
-					"$expr": {
-						"$eq": [
-							true,
-							true
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "unknown operator: $_internalSchemaObjectMatch",
 			"code": 2,
 			"type": "MongoError"
 		}
