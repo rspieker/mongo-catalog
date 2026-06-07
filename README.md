@@ -100,7 +100,36 @@ Versions that fail collection enter a retry queue with exponential backoff:
 
 This prevents wasting resources on persistently failing versions while eventually retrying in case the issue was transient.
 
+A failure is automatically considered **stale** when the failing catalog's hash has changed since the failure — meaning a fix has already been committed and the catalog is already queued for a new run. In that case the backoff is bypassed immediately, without needing to alter the history.
+
 Uses checksum comparison to skip redundant testing when adjacent versions produce identical results.
+
+**Scheduling decision:**
+
+```mermaid
+flowchart TD
+    A([Each known version]) --> B{Trailing\ncollection-halted\nentries?}
+
+    B -- No --> C{Any catalog\nhash changed\nsince last run?}
+    C -- No --> S1([Skip — nothing pending])
+    C -- Yes --> PRIO[Assign priority]
+
+    B -- Yes --> D{Failing catalog\nnow pending\nwith new hash?}
+    D -- Yes --> F1([Include\nstale failure — fix detected])
+    D -- No --> E{"Days since first failure\n≥ 2^(n−1)?"}
+    E -- Yes --> F2([Include — backoff elapsed])
+    E -- No --> S2([Skip — in backoff])
+
+    F1 & F2 --> PF([Priority 1000 − n])
+
+    PRIO --> L{Latest patch\nin minor series?}
+    L -- Yes --> P1([Priority 1])
+    L -- No --> G{Earliest patch\nin minor series?}
+    G -- Yes --> P2([Priority 2])
+    G -- No --> H{Same results as\nadjacent versions?}
+    H -- Yes --> S3([Skip — results inferred])
+    H -- No --> P3([Priority 3+\nbinary bisection])
+```
 
 **Output:** Creates `plan.json` files per version:
 ```json
@@ -189,6 +218,22 @@ Aggregates results across all collected versions to identify behavioral patterns
 ```
 
 **When to run:** After collecting data from multiple versions.
+
+## Coverage Update Pipeline
+
+Coverage catalogs are generated automatically from MongoDB's own jstests on a bi-weekly schedule (`scripts/update-coverage.yml`). They live in `automation/coverage/` and feed directly into the catalog registry.
+
+```mermaid
+flowchart LR
+    A[mongo-test-extractor\nGitHub Release\ntest-cases.ndjson] --> B[fingerprint.ts\nquery + index fingerprints]
+    B --> C[detect-gaps.ts\ncompare vs existing catalog]
+    C --> D[generate-coverage.ts\ndeduplicate by fingerprint shape]
+    D --> E[automation/coverage/*.json]
+    E --> F[catalog-queries.ts\nregister + hash]
+    F --> G[workload.ts\nschedule affected versions]
+```
+
+Each query is fingerprinted together with its index context — `checksum({ query, indices })` — so coverage tracking knows not just *what* query ran but *under what index conditions*. Index shapes are normalised (field names and sort direction are abstracted away), so `{ name: 1 }`, `{ name: -1 }`, and `{ age: 1 }` are all equivalent single-field numeric indices when checking whether a gap is already covered. This keeps the generated index lists minimal and prevents hitting MongoDB's 64-index-per-collection limit.
 
 ## Catalogs
 

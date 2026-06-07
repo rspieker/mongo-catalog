@@ -431,17 +431,7 @@ readJSONFile<
 
             if (!meta) continue;
 
-            // Handle versions in failure sequences - check if they should be retried
             const skipInfo = getSkipInfo(meta);
-            if (skipInfo.isInFailureSequence) {
-                if (shouldRetrySkip(meta)) {
-                    debug && console.log(`Including version ${meta.name} in failure sequence - retry due`);
-                    // Continue processing but will get special priority later
-                } else {
-                    debug && console.log(`Skipping ${meta.name} - not due for retry yet`);
-                    continue;
-                }
-            }
 
             const version = meta.name;
             const release = meta.releases[0]?.name;
@@ -464,6 +454,27 @@ readJSONFile<
 
                 if (needsRun) {
                     pendingCatalogs.push(current);
+                }
+            }
+
+            // Handle versions in failure sequences - check if they should be retried.
+            // A failure is considered stale if the failing catalog has since been updated
+            // (its hash changed), meaning the fix is already reflected in pendingCatalogs.
+            if (skipInfo.isInFailureSequence) {
+                const pendingNames = new Set(pendingCatalogs.map(p => p.name));
+                let stale = false;
+                for (let i = meta.history.length - 1; i >= 0; i--) {
+                    const h = meta.history[i];
+                    if (h.type !== 'collection-halted') break;
+                    if (h.catalog && pendingNames.has(h.catalog)) { stale = true; break; }
+                }
+                if (stale) {
+                    debug && console.log(`Including version ${meta.name} - failing catalog has been updated`);
+                } else if (shouldRetrySkip(meta)) {
+                    debug && console.log(`Including version ${meta.name} in failure sequence - retry due`);
+                } else {
+                    debug && console.log(`Skipping ${meta.name} - not due for retry yet`);
+                    continue;
                 }
             }
 

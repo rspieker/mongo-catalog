@@ -19,7 +19,7 @@ import { createReadStream } from 'node:fs'
 import { writeFile, mkdir } from 'node:fs/promises'
 import { createInterface } from 'node:readline'
 import { resolve, join } from 'node:path'
-import { fingerprinter } from '../source/domain/coverage/fingerprint'
+import { fingerprinter, fingerprintQuery } from '../source/domain/coverage/fingerprint'
 import type { FingerprintNode, StoreEntry } from '../source/domain/coverage/fingerprint'
 import { fieldNames } from '../source/domain/generator/resources/field-names'
 import { adjectives as adjectiveGroups } from '../source/domain/generator/resources/data'
@@ -383,6 +383,7 @@ async function main() {
         const documents: Record<string, unknown>[] = []
         const allReconstructedQueries: Record<string, unknown>[] = []
         const seenIndices = new Set<string>()
+        const seenIndexShapes = new Set<string>()
         const indices: Record<string, unknown>[] = []
 
         for (const groupRecords of finalGroups) {
@@ -423,10 +424,20 @@ async function main() {
                 documents.push({ _id: documents.length, ...doc })
             }
 
-            // Collect indices, renaming field keys via slot map (values like "2dsphere" are preserved)
+            // Collect indices, renaming field keys via slot map (values like "2dsphere" are preserved).
+            // Numeric indices are deduplicated by fingerprint shape (topic-level): { name: 1 },
+            // { name: -1 }, and { age: 1 } all share the same shape and only one is kept.
+            // Non-numeric indices (2dsphere, text, etc.) use reconstructed-key deduplication only,
+            // because their string values carry distinct execution semantics.
             for (const record of groupRecords) {
                 for (const idx of (record.indices ?? [])) {
-                    const reconstructed = reconstructIndexKeys(idx as Record<string, unknown>, fp.store, slots)
+                    const idxSpec = idx as Record<string, unknown>
+                    if (Object.values(idxSpec).every(v => typeof v === 'number')) {
+                        const shape = JSON.stringify(fingerprintQuery(idxSpec))
+                        if (seenIndexShapes.has(shape)) continue
+                        seenIndexShapes.add(shape)
+                    }
+                    const reconstructed = reconstructIndexKeys(idxSpec, fp.store, slots)
                     const key = JSON.stringify(reconstructed)
                     if (seenIndices.has(key)) continue
                     seenIndices.add(key)

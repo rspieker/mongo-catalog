@@ -10,19 +10,9 @@
       }
     },
     {
-      "checksum": "e10798479a1f7c0118eceecd4b756aea274d3ec7d177e3ca40d5f30be8819d63",
-      "fingerprint": {
-        "field:#1": {
-          "$gt": "number:#1"
-        },
-        "field:#2": "null:#1"
-      },
-      "query": {
-        "score": {
-          "$gt": 22
-        },
-        "rank": null
-      }
+      "checksum": "bcdcb841b1a7c538fbe25b9eb515d00c6ee1838657e464a70094da5bd5fb78bf",
+      "fingerprint": {},
+      "query": {}
     },
     {
       "checksum": "18475817770fe3113cf056bee6dca764d8148d83bf33c055202d9e7f60a58e0f",
@@ -121,6 +111,15 @@
       "query": {}
     },
     {
+      "checksum": "6a775b9c975046bbd77b7600055299bc3fbaeb7cf14ebe7d55db7dc13ce04f36",
+      "fingerprint": {
+        "field:#1": "null:#1"
+      },
+      "query": {
+        "rank": null
+      }
+    },
+    {
       "checksum": "e1b86e6c9a05255d8ce75c4c818729beff46f7b4be0f285fa505c9a0827861ae",
       "fingerprint": {},
       "query": {}
@@ -191,89 +190,6 @@
       }
     },
     {
-      "checksum": "75fbfff90bb082fa3d726e0364a4eb13e03130099c02fcf6fd2143e94d29cc20",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$ne": "number:#1"
-        }
-      },
-      "query": {
-        "scores.quantity": {
-          "$ne": 16
-        }
-      }
-    },
-    {
-      "checksum": "8720cd62b8b8e22e3fc45637f883737ef90006366ffb4ed4527798638a2ae16d",
-      "fingerprint": {
-        "field:#1": {
-          "$exists": "number:#1"
-        }
-      },
-      "query": {
-        "size": {
-          "$exists": 35
-        }
-      }
-    },
-    {
-      "checksum": "5948419c47ee9048890df4e629698eebc480cdc9cd5060b8eee556e56ef4a2f6",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$exists": "number:#1"
-        }
-      },
-      "query": {
-        "index.depth": {
-          "$exists": 28
-        }
-      }
-    },
-    {
-      "checksum": "10f03f0292d2bc311003aa61c9e6e4715ed330c35d3798ef655fc1b5a211bb3d",
-      "fingerprint": {},
-      "query": {}
-    },
-    {
-      "checksum": "9836f1ba502c34af511bba48ef996829bf0f8408170fda38e2f650b81dfd57f6",
-      "fingerprint": {
-        "$or": [
-          {
-            "field:#1": {
-              "$not": {
-                "$type": "string:#1"
-              }
-            }
-          },
-          {
-            "field:#2": {
-              "$not": {
-                "$type": "string:#1"
-              }
-            }
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "username": {
-              "$not": {
-                "$type": "Abundant"
-              }
-            }
-          },
-          {
-            "email": {
-              "$not": {
-                "$type": "Abundant"
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
       "checksum": "867a6f3c872d776659514ab1124b22f1b97a55eafd53c4301cb9cf8512395203",
       "fingerprint": {
         "$or": [
@@ -304,10 +220,10 @@
       "query": {
         "$or": [
           {
-            "age": {
+            "quantity": {
               "$gte": 17
             },
-            "score": {
+            "size": {
               "$mod": [
                 19,
                 17
@@ -315,10 +231,10 @@
             }
           },
           {
-            "age": {
+            "quantity": {
               "$lte": 100017
             },
-            "score": {
+            "size": {
               "$mod": [
                 19,
                 18
@@ -498,119 +414,20 @@
       }
     },
     {
-      "scores.quantity": {
-        "$ne": null
-      }
-    },
-    {
-      "scores.quantity": {
-        "$ne": "value"
-      }
-    },
-    {
-      "scores.quantity": {
-        "$ne": true
-      }
-    },
-    {
-      "size": {
-        "$exists": null
-      }
-    },
-    {
-      "size": {
-        "$exists": "value"
-      }
-    },
-    {
-      "size": {
-        "$exists": true
-      }
-    },
-    {
-      "index.depth": {
-        "$exists": null
-      }
-    },
-    {
-      "index.depth": {
-        "$exists": "value"
-      }
-    },
-    {
-      "index.depth": {
-        "$exists": true
-      }
-    },
-    {
       "$or": [
         {
-          "username": {
-            "$not": {
-              "$type": null
-            }
-          }
-        },
-        {
-          "email": {
-            "$not": {
-              "$type": null
-            }
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "username": {
-            "$not": {
-              "$type": 42
-            }
-          }
-        },
-        {
-          "email": {
-            "$not": {
-              "$type": 42
-            }
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "username": {
-            "$not": {
-              "$type": true
-            }
-          }
-        },
-        {
-          "email": {
-            "$not": {
-              "$type": true
-            }
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "age": {
+          "quantity": {
             "$gte": 17
           },
-          "score": {
+          "size": {
             "$mod": "invalid"
           }
         },
         {
-          "age": {
+          "quantity": {
             "$lte": 100017
           },
-          "score": {
+          "size": {
             "$mod": "invalid"
           }
         }
@@ -619,20 +436,20 @@
     {
       "$or": [
         {
-          "age": {
+          "quantity": {
             "$gte": 17
           },
-          "score": {
+          "size": {
             "$mod": [
               2
             ]
           }
         },
         {
-          "age": {
+          "quantity": {
             "$lte": 100017
           },
-          "score": {
+          "size": {
             "$mod": [
               2
             ]
@@ -643,18 +460,18 @@
     {
       "$or": [
         {
-          "age": {
+          "quantity": {
             "$gte": 17
           },
-          "score": {
+          "size": {
             "$mod": []
           }
         },
         {
-          "age": {
+          "quantity": {
             "$lte": 100017
           },
-          "score": {
+          "size": {
             "$mod": []
           }
         }
@@ -663,10 +480,10 @@
     {
       "$or": [
         {
-          "age": {
+          "quantity": {
             "$gte": null
           },
-          "score": {
+          "size": {
             "$mod": [
               null,
               null
@@ -674,10 +491,10 @@
           }
         },
         {
-          "age": {
+          "quantity": {
             "$lte": null
           },
-          "score": {
+          "size": {
             "$mod": [
               null,
               null
@@ -689,10 +506,10 @@
     {
       "$or": [
         {
-          "age": {
+          "quantity": {
             "$gte": "value"
           },
-          "score": {
+          "size": {
             "$mod": [
               "value",
               "value"
@@ -700,10 +517,10 @@
           }
         },
         {
-          "age": {
+          "quantity": {
             "$lte": "value"
           },
-          "score": {
+          "size": {
             "$mod": [
               "value",
               "value"
@@ -715,10 +532,10 @@
     {
       "$or": [
         {
-          "age": {
+          "quantity": {
             "$gte": true
           },
-          "score": {
+          "size": {
             "$mod": [
               true,
               true
@@ -726,10 +543,10 @@
           }
         },
         {
-          "age": {
+          "quantity": {
             "$lte": true
           },
-          "score": {
+          "size": {
             "$mod": [
               true,
               true
@@ -771,85 +588,6 @@
     {
       "_id": 4,
       "name": 11
-    },
-    {
-      "_id": 5,
-      "scores": []
-    },
-    {
-      "_id": 6,
-      "scores": [
-        []
-      ]
-    },
-    {
-      "_id": 7
-    },
-    {
-      "_id": 8,
-      "index": {}
-    },
-    {
-      "_id": 9,
-      "weight": 9,
-      "title": 9
-    },
-    {
-      "_id": 10,
-      "weight": 11,
-      "title": null
-    },
-    {
-      "_id": 11,
-      "weight": 12,
-      "title": {}
-    },
-    {
-      "_id": 12,
-      "weight": 13,
-      "title": []
-    },
-    {
-      "_id": 13,
-      "weight": 14,
-      "title": [
-        8,
-        9,
-        10
-      ]
-    },
-    {
-      "_id": 14,
-      "weight": 15,
-      "title": [
-        [
-          9,
-          10
-        ],
-        [
-          11,
-          12
-        ]
-      ]
-    },
-    {
-      "_id": 15,
-      "weight": 17,
-      "title": [
-        null
-      ]
-    },
-    {
-      "_id": 16,
-      "height": 7,
-      "username": [],
-      "email": 7
-    },
-    {
-      "_id": 17,
-      "height": 8,
-      "username": 7,
-      "email": []
     }
   ],
   "indices": [
@@ -871,28 +609,12 @@
       "region": -1
     },
     {
-      "type": 1,
-      "region": 1
-    },
-    {
-      "rank": 1
-    },
-    {
-      "c": 1
-    },
-    {
       "y.b": 1,
       "y.a": -1
     },
     {
       "y.b": 1,
       "grade": -1
-    },
-    {
-      "name": 1
-    },
-    {
-      "age": 1
     }
   ]
 }

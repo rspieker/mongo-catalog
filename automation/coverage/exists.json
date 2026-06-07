@@ -1,124 +1,6 @@
 {
   "queries": [
     {
-      "checksum": "19745621b434dca882ae80a70a917d3484a4673e1be80a6b5d98f48cb8aaf3ca",
-      "fingerprint": {
-        "field:#1.field:#2": "null:#1"
-      },
-      "query": {
-        "age.score": null
-      }
-    },
-    {
-      "checksum": "96ec8aef10dcb96ae47f6bb0ab71efca3dd0c295e265cb072b7edbe856f25295",
-      "fingerprint": {
-        "field:#1.field:#2.field:#3": "null:#1"
-      },
-      "query": {
-        "age.score.rank": null
-      }
-    },
-    {
-      "checksum": "3e3954e42a31ee1f05fddca0788681c1c0f28178a56b212705e587f6f7b6e84f",
-      "fingerprint": {
-        "field:#1.field:#2.field:#3.field:#4": "null:#1"
-      },
-      "query": {
-        "age.score.rank.level": null
-      }
-    },
-    {
-      "checksum": "349c47d9dfc51356f56642849fa091fb8fc44b4242991ea616ac353a32d93d90",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$ne": "null:#1"
-        }
-      },
-      "query": {
-        "age.score": {
-          "$ne": null
-        }
-      }
-    },
-    {
-      "checksum": "5c8d2bb3d964bd56dcb27a36cfa17de33fc81331b162f69dff6977108058ddb5",
-      "fingerprint": {
-        "field:#1.field:#2.field:#3": {
-          "$ne": "null:#1"
-        }
-      },
-      "query": {
-        "age.score.rank": {
-          "$ne": null
-        }
-      }
-    },
-    {
-      "checksum": "f0ecfd974dc77c7365c9dd8f68cb38d7e82523879badbf1e8c2efa5ac0a02484",
-      "fingerprint": {
-        "field:#1.field:#2.field:#3.field:#4": {
-          "$ne": "null:#1"
-        }
-      },
-      "query": {
-        "age.score.rank.level": {
-          "$ne": null
-        }
-      }
-    },
-    {
-      "checksum": "7c713d3353b550b6251dbc19168e3087cf574e7d57cdb220ce5cf6fd88b1e8ab",
-      "fingerprint": {
-        "field:#1": {
-          "$exists": "boolean:#1"
-        }
-      },
-      "query": {
-        "age": {
-          "$exists": true
-        }
-      }
-    },
-    {
-      "checksum": "457a1a9bf4a438aa9bc189e2a4caad629b242e67655b4c6d2421a1fa12252603",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$exists": "boolean:#1"
-        }
-      },
-      "query": {
-        "age.score": {
-          "$exists": true
-        }
-      }
-    },
-    {
-      "checksum": "7f24409728d6743ad975c9b0956f1cdeb39b532e3165e749538d27dad4f58da7",
-      "fingerprint": {
-        "field:#1.field:#2.field:#3": {
-          "$exists": "boolean:#1"
-        }
-      },
-      "query": {
-        "age.score.rank": {
-          "$exists": true
-        }
-      }
-    },
-    {
-      "checksum": "9ce1226ff8a8a2eb770b5f2b93e5fa3d6b99a155546eca52156e4249d3212c1b",
-      "fingerprint": {
-        "field:#1.field:#2.field:#3.field:#4": {
-          "$exists": "boolean:#1"
-        }
-      },
-      "query": {
-        "age.score.rank.level": {
-          "$exists": true
-        }
-      }
-    },
-    {
       "checksum": "897f393840187ea7415375499e7baeadd37b7f581d84bdb317ef1e65d54f9ac5",
       "fingerprint": {
         "field:#1": "null:#1"
@@ -259,34 +141,6 @@
       }
     },
     {
-      "checksum": "8aaf8179edb3a60add65417c1aa73fc65fad694a2e60a40bb54837be4bb6b77e",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "field:#2": "number:#1"
-      },
-      "query": {
-        "count": 22,
-        "grade": 22
-      }
-    },
-    {
-      "checksum": "7b11081741c775e420c6d6118d97131032dbafe1d104f652b8b8b4dbadc4c208",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "field:#2": "number:#1",
-        "field:#3": {
-          "$exists": "boolean:#1"
-        }
-      },
-      "query": {
-        "count": 22,
-        "grade": 22,
-        "step": {
-          "$exists": true
-        }
-      }
-    },
-    {
       "checksum": "b79b0c3bc85addbe354281e55d3c875f838a089058e970c0606c8ec1214ddca1",
       "fingerprint": {
         "field:#1": "number:#1",
@@ -296,17 +150,12 @@
         }
       },
       "query": {
-        "count": 22,
-        "grade": 22,
+        "count": 15,
+        "grade": 15,
         "step": {
           "$exists": true
         }
       }
-    },
-    {
-      "checksum": "10f03f0292d2bc311003aa61c9e6e4715ed330c35d3798ef655fc1b5a211bb3d",
-      "fingerprint": {},
-      "query": {}
     },
     {
       "checksum": "66ce552e93ee8ff1d853d638ce5cfd9a26b13ba91fc1902e82cb1fd31cc7549f",
@@ -320,6 +169,11 @@
           "$exists": false
         }
       }
+    },
+    {
+      "checksum": "bcdcb841b1a7c538fbe25b9eb515d00c6ee1838657e464a70094da5bd5fb78bf",
+      "fingerprint": {},
+      "query": {}
     },
     {
       "checksum": "92fa29ea51aeac744eaa5e6b24d9e77c7fb6be7367ba7df4a60d73520f7936d7",
@@ -433,23 +287,6 @@
       }
     },
     {
-      "checksum": "c8d10057108b3bc49ac2ba334db09c2fba9cd6e7464ac0fa5191a000be3881b5",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$not": {
-            "$exists": "boolean:#1"
-          }
-        }
-      },
-      "query": {
-        "count.grade": {
-          "$not": {
-            "$exists": true
-          }
-        }
-      }
-    },
-    {
       "checksum": "1ed7ba2e376cfde0e411a0a78b41d70ce92983f9c89d961194f5096b8269a5c0",
       "fingerprint": {
         "field:#1": "number:#1",
@@ -480,91 +317,6 @@
           "$not": {
             "$exists": false
           }
-        }
-      }
-    },
-    {
-      "checksum": "eedf7b6c4d7792ef11e17a0736fa776b1187e65e658ba581d620ed5ca61bb542",
-      "fingerprint": {
-        "field:#1": {
-          "$not": {
-            "$exists": "boolean:#1"
-          }
-        }
-      },
-      "query": {
-        "index": {
-          "$not": {
-            "$exists": false
-          }
-        }
-      }
-    },
-    {
-      "checksum": "d84e5272f7e884aa6427e86193d3b54e5e6c2631a4d8dc44914aeedf1f80c73f",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "field:#2": {
-          "$exists": "boolean:#1"
-        }
-      },
-      "query": {
-        "index": 16,
-        "size": {
-          "$exists": true
-        }
-      }
-    },
-    {
-      "checksum": "5081678c48827618a422c1f40eaf0b2049dc7f1712ce9a1d36cb870beda8332e",
-      "fingerprint": {
-        "field:#1": {
-          "$exists": "boolean:#1"
-        },
-        "field:#2": "number:#1"
-      },
-      "query": {
-        "index": {
-          "$exists": true
-        },
-        "size": 16
-      }
-    },
-    {
-      "checksum": "0de1116c0f0c269013c054c6923d86ff692e8e8cd68f4578d44a2f61e71eccb7",
-      "fingerprint": {
-        "field:#1": {
-          "$exists": "boolean:#1"
-        },
-        "field:#2": {
-          "$exists": "boolean:#1"
-        }
-      },
-      "query": {
-        "index": {
-          "$exists": true
-        },
-        "size": {
-          "$exists": true
-        }
-      }
-    },
-    {
-      "checksum": "fad520a93ec9a6ae1bb966d6ec94b63c9ba04f95df8ffcedb2e85f20df250339",
-      "fingerprint": {
-        "field:#1": {
-          "$exists": "boolean:#1"
-        },
-        "field:#2": {
-          "$exists": "boolean:#2"
-        }
-      },
-      "query": {
-        "index": {
-          "$exists": true
-        },
-        "size": {
-          "$exists": false
         }
       }
     },
@@ -633,6 +385,19 @@
         },
         "size": {
           "$exists": false
+        }
+      }
+    },
+    {
+      "checksum": "6493897e39ed7d315799fc14dea58d4c3bac363558e3f1cfebf7cedb48bace78",
+      "fingerprint": {
+        "field:#1": {
+          "$exists": "boolean:#1"
+        }
+      },
+      "query": {
+        "index": {
+          "$exists": true
         }
       }
     },
@@ -918,19 +683,6 @@
       }
     },
     {
-      "checksum": "8720cd62b8b8e22e3fc45637f883737ef90006366ffb4ed4527798638a2ae16d",
-      "fingerprint": {
-        "field:#1": {
-          "$exists": "number:#1"
-        }
-      },
-      "query": {
-        "size": {
-          "$exists": 16
-        }
-      }
-    },
-    {
       "checksum": "b7f75f95aa2eeb850bdfd500249420232052a34b14ef90b2164ff4685834cd7c",
       "fingerprint": {
         "field:#1": {
@@ -1039,97 +791,6 @@
       }
     },
     {
-      "checksum": "5c89de02bb4967a215d11f4c3f1e300af7e4c36198a25243fa65e0df7002cb5d",
-      "fingerprint": {
-        "field:#1.index": {
-          "$exists": "boolean:#1"
-        }
-      },
-      "query": {
-        "scores.0": {
-          "$exists": true
-        }
-      }
-    },
-    {
-      "checksum": "814efd626a4ad24b887937b218749fbcd87a3ae920e3a3f6bf1ed0952dd8b430",
-      "fingerprint": {
-        "field:#1.field:#1": {
-          "$exists": "boolean:#1"
-        }
-      },
-      "query": {
-        "ratings.ratings": {
-          "$exists": true
-        }
-      }
-    },
-    {
-      "checksum": "bd1d8151d0af0505eea7ce9d7f120e042446f6a263eb9d8c8c6ae9bae5abc02c",
-      "fingerprint": {
-        "field:#1.index.field:#1": {
-          "$exists": "boolean:#1"
-        }
-      },
-      "query": {
-        "ratings.0.ratings": {
-          "$exists": true
-        }
-      }
-    },
-    {
-      "checksum": "0ebfa2986ea0d98ce2b54014717261a764e709938598c2fcf43887c2fe78d301",
-      "fingerprint": {
-        "field:#1.index.index": {
-          "$exists": "boolean:#1"
-        }
-      },
-      "query": {
-        "counts.0.0": {
-          "$exists": true
-        }
-      }
-    },
-    {
-      "checksum": "7e5c48e977fa52820eb73b62cd1f801b266464e086f5ae70cfc7a12376e47abd",
-      "fingerprint": {
-        "field:#1.index.index.index": {
-          "$exists": "boolean:#1"
-        }
-      },
-      "query": {
-        "counts.0.0.0": {
-          "$exists": true
-        }
-      }
-    },
-    {
-      "checksum": "9a5d86617afa562a9b2b0771cc1538f9bf36e609bbb483fe0d021b143144019e",
-      "fingerprint": {
-        "field:#1.index.field:#2": {
-          "$exists": "boolean:#1"
-        }
-      },
-      "query": {
-        "values.0.age": {
-          "$exists": true
-        }
-      }
-    },
-    {
-      "checksum": "4533d02f57da07160b6e6035b2562cd7b6e360cc6063104e5efcfc0fa270721d",
-      "fingerprint": {
-        "field:#1.index.index.field:#2": {
-          "$exists": "boolean:#1"
-        }
-      },
-      "query": {
-        "points.0.0.score": {
-          "$exists": true
-        }
-      }
-    },
-    {
       "checksum": "9f8284af673ebe5633e48299de6ae34756b578323473cdb7801bfcd3c5a51acf",
       "fingerprint": {
         "field:#1.field:#2": {
@@ -1137,7 +798,7 @@
         }
       },
       "query": {
-        "rank.level": {
+        "weight.height": {
           "$exists": false
         }
       }
@@ -1150,7 +811,7 @@
         }
       },
       "query": {
-        "rankings": {
+        "scores": {
           "$exists": true
         }
       }
@@ -1163,7 +824,7 @@
         }
       },
       "query": {
-        "rankings": {
+        "scores": {
           "$exists": true
         }
       }
@@ -1176,7 +837,7 @@
         }
       },
       "query": {
-        "indices.0": {
+        "ratings.0": {
           "$exists": true
         }
       }
@@ -1189,7 +850,7 @@
         }
       },
       "query": {
-        "indices.0": {
+        "ratings.0": {
           "$exists": true
         }
       }
@@ -1258,18 +919,6 @@
     },
     {
       "count": null,
-      "grade": null
-    },
-    {
-      "count": "value",
-      "grade": "value"
-    },
-    {
-      "count": true,
-      "grade": true
-    },
-    {
-      "count": null,
       "grade": null,
       "step": {
         "$exists": true
@@ -1290,22 +939,22 @@
       }
     },
     {
-      "count": 22,
-      "grade": 22,
+      "count": 15,
+      "grade": 15,
       "step": {
         "$exists": null
       }
     },
     {
-      "count": 22,
-      "grade": 22,
+      "count": 15,
+      "grade": 15,
       "step": {
         "$exists": 0
       }
     },
     {
-      "count": 22,
-      "grade": 22,
+      "count": 15,
+      "grade": 15,
       "step": {
         "$exists": "yes"
       }
@@ -1411,27 +1060,6 @@
         "$exists": "yes"
       },
       "quantity": null
-    },
-    {
-      "count.grade": {
-        "$not": {
-          "$exists": null
-        }
-      }
-    },
-    {
-      "count.grade": {
-        "$not": {
-          "$exists": 0
-        }
-      }
-    },
-    {
-      "count.grade": {
-        "$not": {
-          "$exists": "yes"
-        }
-      }
     },
     {
       "index": null,
@@ -1512,27 +1140,6 @@
     {
       "index": 16,
       "size": {
-        "$not": {
-          "$exists": "yes"
-        }
-      }
-    },
-    {
-      "index": {
-        "$not": {
-          "$exists": null
-        }
-      }
-    },
-    {
-      "index": {
-        "$not": {
-          "$exists": 0
-        }
-      }
-    },
-    {
-      "index": {
         "$not": {
           "$exists": "yes"
         }
@@ -1611,6 +1218,27 @@
     {
       "index": {
         "$exists": "yes"
+      }
+    },
+    {
+      "index": {
+        "$not": {
+          "$exists": null
+        }
+      }
+    },
+    {
+      "index": {
+        "$not": {
+          "$exists": 0
+        }
+      }
+    },
+    {
+      "index": {
+        "$not": {
+          "$exists": "yes"
+        }
       }
     },
     {
@@ -1773,152 +1401,47 @@
       }
     },
     {
-      "scores.0": {
+      "weight.height": {
         "$exists": null
       }
     },
     {
-      "scores.0": {
+      "weight.height": {
         "$exists": 0
       }
     },
     {
-      "scores.0": {
+      "weight.height": {
         "$exists": "yes"
       }
     },
     {
-      "ratings.ratings": {
+      "scores": {
         "$exists": null
       }
     },
     {
-      "ratings.ratings": {
+      "scores": {
         "$exists": 0
       }
     },
     {
-      "ratings.ratings": {
+      "scores": {
         "$exists": "yes"
       }
     },
     {
-      "ratings.0.ratings": {
+      "ratings.0": {
         "$exists": null
       }
     },
     {
-      "ratings.0.ratings": {
+      "ratings.0": {
         "$exists": 0
       }
     },
     {
-      "ratings.0.ratings": {
-        "$exists": "yes"
-      }
-    },
-    {
-      "counts.0.0": {
-        "$exists": null
-      }
-    },
-    {
-      "counts.0.0": {
-        "$exists": 0
-      }
-    },
-    {
-      "counts.0.0": {
-        "$exists": "yes"
-      }
-    },
-    {
-      "counts.0.0.0": {
-        "$exists": null
-      }
-    },
-    {
-      "counts.0.0.0": {
-        "$exists": 0
-      }
-    },
-    {
-      "counts.0.0.0": {
-        "$exists": "yes"
-      }
-    },
-    {
-      "values.0.age": {
-        "$exists": null
-      }
-    },
-    {
-      "values.0.age": {
-        "$exists": 0
-      }
-    },
-    {
-      "values.0.age": {
-        "$exists": "yes"
-      }
-    },
-    {
-      "points.0.0.score": {
-        "$exists": null
-      }
-    },
-    {
-      "points.0.0.score": {
-        "$exists": 0
-      }
-    },
-    {
-      "points.0.0.score": {
-        "$exists": "yes"
-      }
-    },
-    {
-      "rank.level": {
-        "$exists": null
-      }
-    },
-    {
-      "rank.level": {
-        "$exists": 0
-      }
-    },
-    {
-      "rank.level": {
-        "$exists": "yes"
-      }
-    },
-    {
-      "rankings": {
-        "$exists": null
-      }
-    },
-    {
-      "rankings": {
-        "$exists": 0
-      }
-    },
-    {
-      "rankings": {
-        "$exists": "yes"
-      }
-    },
-    {
-      "indices.0": {
-        "$exists": null
-      }
-    },
-    {
-      "indices.0": {
-        "$exists": 0
-      }
-    },
-    {
-      "indices.0": {
+      "ratings.0": {
         "$exists": "yes"
       }
     }
@@ -1929,19 +1452,19 @@
     },
     {
       "_id": 1,
-      "age": 6
+      "age": 14
     },
     {
       "_id": 2,
       "age": {
-        "score": 6
+        "score": 14
       }
     },
     {
       "_id": 3,
       "age": {
         "score": {
-          "rank": 6
+          "rank": 14
         }
       }
     },
@@ -1957,8 +1480,8 @@
     },
     {
       "_id": 5,
-      "count": 22,
-      "grade": 22
+      "count": 15,
+      "grade": 15
     },
     {
       "_id": 6
@@ -1973,197 +1496,24 @@
     },
     {
       "_id": 9,
-      "scores": [
-        11
-      ]
+      "weight": {}
     },
     {
-      "_id": 10,
-      "ratings": [
-        26
-      ]
+      "_id": 10
     },
     {
       "_id": 11,
-      "ratings": [
-        {}
-      ]
+      "scores": []
     },
     {
       "_id": 12,
-      "ratings": [
-        {
-          "weight": 27
-        },
-        {
-          "ratings": 26
-        }
-      ]
-    },
-    {
-      "_id": 13,
-      "counts": [
-        3
-      ]
-    },
-    {
-      "_id": 14,
-      "counts": [
-        {}
-      ]
-    },
-    {
-      "_id": 15,
-      "counts": [
-        {
-          "height": 4
-        },
-        {
-          "counts": 3
-        }
-      ]
-    },
-    {
-      "_id": 16,
-      "counts": [
-        [
-          3
-        ]
-      ]
-    },
-    {
-      "_id": 17,
-      "values": [
-        3
-      ]
-    },
-    {
-      "_id": 18,
-      "values": [
-        {}
-      ]
-    },
-    {
-      "_id": 19,
-      "values": [
-        {
-          "age": 4
-        },
-        {
-          "values": 3
-        }
-      ]
-    },
-    {
-      "_id": 20,
-      "values": [
-        [
-          3
-        ]
-      ]
-    },
-    {
-      "_id": 21,
-      "values": [
-        [
-          [
-            3
-          ]
-        ]
-      ]
-    },
-    {
-      "_id": 22,
-      "values": [
-        [
-          {
-            "age": 3
-          }
-        ]
-      ]
-    },
-    {
-      "_id": 23,
-      "points": [
-        31
-      ]
-    },
-    {
-      "_id": 24,
-      "points": [
-        {}
-      ]
-    },
-    {
-      "_id": 25,
-      "points": [
-        {
-          "score": 32
-        },
-        {
-          "points": 31
-        }
-      ]
-    },
-    {
-      "_id": 26,
-      "points": [
-        [
-          31
-        ]
-      ]
-    },
-    {
-      "_id": 27,
-      "points": [
-        [
-          [
-            31
-          ]
-        ]
-      ]
-    },
-    {
-      "_id": 28,
-      "points": [
-        [
-          {
-            "score": 31
-          }
-        ]
-      ]
-    },
-    {
-      "_id": 29,
-      "points": [
-        [],
-        [
-          {
-            "score": 31
-          }
-        ]
-      ]
-    },
-    {
-      "_id": 30,
-      "rank": {}
-    },
-    {
-      "_id": 31
-    },
-    {
-      "_id": 32,
-      "rankings": []
-    },
-    {
-      "_id": 33,
-      "indices": {
+      "ratings": {
         "0": 32
       }
     },
     {
-      "_id": 34,
-      "indices": []
+      "_id": 13,
+      "ratings": []
     }
   ],
   "indices": [
@@ -2185,28 +1535,13 @@
       "step": 1
     },
     {
-      "step": -1
-    },
-    {
       "priority": -1,
       "attempts": 1,
       "quantity": 1
     },
     {
-      "size": 1
-    },
-    {
       "index": 1,
       "size": 1
-    },
-    {
-      "index": 1
-    },
-    {
-      "rankings": 1
-    },
-    {
-      "indices": 1
     },
     {
       "a.0": 1

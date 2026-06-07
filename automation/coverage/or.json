@@ -1,46 +1,6 @@
 {
   "queries": [
     {
-      "checksum": "5295230c657e0846ec6443aba9107ee59f43bb57ad47fc6b9494ae89c714b0eb",
-      "fingerprint": {
-        "$or": [
-          {
-            "field:#1": "number:#1"
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "name": 16
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "3107f295bacddfbe105cbdd227daf96bfeda1e55ec338ee85bc08a19473f657c",
-      "fingerprint": {
-        "$or": [
-          {
-            "field:#1": "number:#1"
-          },
-          {
-            "field:#2": "number:#2"
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "name": 16
-          },
-          {
-            "score": 17
-          }
-        ]
-      }
-    },
-    {
       "checksum": "5cf317d7f5850cf37f6c966fa99418b5e72d5a2e60f3249eebc3a1701c74094b",
       "fingerprint": {
         "$or": [
@@ -52,7 +12,7 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           }
         ]
       }
@@ -72,10 +32,10 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           },
           {
-            "score": 17
+            "score": 7
           }
         ]
       }
@@ -92,7 +52,7 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           }
         ]
       }
@@ -112,10 +72,10 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           },
           {
-            "score": 17
+            "score": 7
           }
         ]
       }
@@ -132,7 +92,7 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           }
         ]
       }
@@ -152,42 +112,11 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           },
           {
-            "score": 17
+            "score": 7
           }
-        ]
-      }
-    },
-    {
-      "checksum": "6bac6695551c5e4b79fdc5dd0b7f9869a71f2d977c4f79daee3add55c406e6ea",
-      "fingerprint": {
-        "$or": "string:#1"
-      },
-      "query": {
-        "$or": "Enough"
-      }
-    },
-    {
-      "checksum": "4e121801dc6a1ea3d30b64d3a5cf89d71be18a26bd02a3e137aa84e910b34167",
-      "fingerprint": {
-        "$or": []
-      },
-      "query": {
-        "$or": []
-      }
-    },
-    {
-      "checksum": "df07d77c9cfbb7d1b14df3d88780b7cfc20b472ad8987d7e6408136b24084c8e",
-      "fingerprint": {
-        "$or": [
-          "string:#1"
-        ]
-      },
-      "query": {
-        "$or": [
-          "Enough"
         ]
       }
     },
@@ -285,50 +214,6 @@
       }
     },
     {
-      "checksum": "02a93e4256d23fe45e950d330ec650523ab634fe5cb140e41d38519cdace52e0",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "$or": [
-          {
-            "field:#2": "number:#2"
-          }
-        ]
-      },
-      "query": {
-        "rank": 15,
-        "$or": [
-          {
-            "name": 16
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "b4b4a308adf4b6f66e167356d95454e007a89ee8c040f44e466ccead896f0b86",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "$or": [
-          {
-            "field:#2": "number:#1"
-          },
-          {
-            "field:#3": "number:#2"
-          }
-        ]
-      },
-      "query": {
-        "rank": 16,
-        "$or": [
-          {
-            "name": 16
-          },
-          {
-            "score": 17
-          }
-        ]
-      }
-    },
-    {
       "checksum": "74832f81f573d7f3d96f01ae865313c25d3ee4d8f92754bc6df709eeecf430f9",
       "fingerprint": {
         "field:#1": "number:#1",
@@ -339,48 +224,11 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           {
-            "name": 16
+            "name": 6
           }
-        ]
-      }
-    },
-    {
-      "checksum": "cc778fdd9d72f0bea8e2d90ac2e93dcbfe37456e9ade827b4bd09bfe173d6b51",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "$or": "string:#1"
-      },
-      "query": {
-        "rank": 15,
-        "$or": "Enough"
-      }
-    },
-    {
-      "checksum": "b6824faf88309d71ac6b40a540e4773c1fcb5fde9b67120c6d07d5b478730fda",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "$or": []
-      },
-      "query": {
-        "rank": 15,
-        "$or": []
-      }
-    },
-    {
-      "checksum": "6b45cf0acce4bdf07dd2b45514651eba4c05bf4e3059e5073782a3b7d0eacd1a",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "$or": [
-          "string:#1"
-        ]
-      },
-      "query": {
-        "rank": 15,
-        "$or": [
-          "Enough"
         ]
       }
     },
@@ -391,7 +239,7 @@
         "$or": "string:#1"
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": "Enough"
       }
     },
@@ -402,7 +250,7 @@
         "$or": []
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": []
       }
     },
@@ -415,71 +263,10 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           "Enough"
         ]
-      }
-    },
-    {
-      "checksum": "c3ee6e835645165066328a674cb922c06e77455ae9ff637bbffcc56e4528539f",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "$nor": [
-          {
-            "field:#2": "number:#1"
-          },
-          {
-            "field:#3": "number:#2"
-          }
-        ]
-      },
-      "query": {
-        "rank": 16,
-        "$nor": [
-          {
-            "name": 16
-          },
-          {
-            "score": 17
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "a01b6c5246e06f76999112137991b117f578fc3c49173e005c7de6f985c066f6",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "field:#2": {
-          "$ne": "number:#1"
-        },
-        "field:#3": {
-          "$ne": "number:#2"
-        }
-      },
-      "query": {
-        "rank": 16,
-        "name": {
-          "$ne": 16
-        },
-        "score": {
-          "$ne": 17
-        }
-      }
-    },
-    {
-      "checksum": "f3e5516785a38f768027aed0d5c05389c2fb0f77fe11595b6fb655762e3662e1",
-      "fingerprint": {
-        "field:#1": {
-          "$ne": "number:#1"
-        },
-        "field:#2": "number:#2"
-      },
-      "query": {
-        "name": {
-          "$ne": 16
-        },
-        "score": 17
       }
     },
     {
@@ -491,7 +278,7 @@
       },
       "query": {
         "name": {
-          "$ne": 16
+          "$ne": 6
         }
       }
     },
@@ -509,13 +296,13 @@
         ]
       },
       "query": {
-        "rank": 16,
+        "rank": 6,
         "$nor": [
           {
-            "name": 16
+            "name": 6
           },
           {
-            "score": 17
+            "score": 7
           }
         ]
       }
@@ -532,94 +319,13 @@
         }
       },
       "query": {
-        "rank": 16,
+        "rank": 6,
         "name": {
-          "$ne": 16
+          "$ne": 6
         },
         "score": {
-          "$ne": 17
+          "$ne": 7
         }
-      }
-    },
-    {
-      "checksum": "2e1d40f0f3cc6bb55d7db5e575567eae21d82d36ad6f5e5ad8dbc5f83c36d5b2",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "$nor": "string:#1"
-      },
-      "query": {
-        "rank": 15,
-        "$nor": "Enough"
-      }
-    },
-    {
-      "checksum": "73173ad35ecf78f864349fc4198598f3b2356b4b96addedf44c12fbfc8c09790",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "$nor": []
-      },
-      "query": {
-        "rank": 15,
-        "$nor": []
-      }
-    },
-    {
-      "checksum": "f99b1b483d9728e29cec1fbf03e7804412a9dd3a9621e5da668127a1f687a65d",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "$nor": [
-          "string:#1"
-        ]
-      },
-      "query": {
-        "rank": 15,
-        "$nor": [
-          "Enough"
-        ]
-      }
-    },
-    {
-      "checksum": "d2253277340204aab8693961bfe8c286f3e356df407531d86585c622a21e160e",
-      "fingerprint": {
-        "$nor": [
-          {
-            "field:#1": "number:#1"
-          }
-        ]
-      },
-      "query": {
-        "$nor": [
-          {
-            "name": 16
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "44ddbd0d13373feab18381adc67fb2c8efdcf61978750a2e90ced765ec4f94ee",
-      "fingerprint": {
-        "$nor": [
-          {
-            "field:#1": "number:#1"
-          }
-        ],
-        "$or": [
-          {
-            "field:#2": "number:#2"
-          }
-        ]
-      },
-      "query": {
-        "$nor": [
-          {
-            "name": 16
-          }
-        ],
-        "$or": [
-          {
-            "score": 17
-          }
-        ]
       }
     },
     {
@@ -629,7 +335,7 @@
         "$nor": "string:#1"
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": "Enough"
       }
     },
@@ -640,7 +346,7 @@
         "$nor": []
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": []
       }
     },
@@ -653,7 +359,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           "Enough"
         ]
@@ -671,7 +377,7 @@
       "query": {
         "$nor": [
           {
-            "name": 16
+            "name": 6
           }
         ]
       }
@@ -691,10 +397,10 @@
       "query": {
         "$or": [
           {
-            "name": 17
+            "name": 7
           },
           {
-            "name": 17
+            "name": 7
           }
         ]
       }
@@ -710,7 +416,7 @@
         "field:#1": "number:#1"
       },
       "query": {
-        "rank": 16
+        "score": 6
       }
     },
     {
@@ -731,13 +437,13 @@
       "query": {
         "$or": [
           {
-            "name": 17
+            "name": 7
           },
           {
-            "score": 18
+            "score": 8
           },
           {
-            "level": 19
+            "level": 9
           }
         ]
       }
@@ -760,13 +466,13 @@
       "query": {
         "$or": [
           {
-            "name": 17
+            "name": 7
           },
           {
-            "score": 18
+            "score": 8
           },
           {
-            "level": 19
+            "level": 9
           }
         ]
       }
@@ -791,15 +497,15 @@
       "query": {
         "$or": [
           {
-            "rank": {
+            "score": {
               "$near": [
-                65,
-                65
+                55,
+                55
               ]
             }
           },
           {
-            "name": 17
+            "name": 7
           }
         ]
       }
@@ -819,10 +525,10 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           },
           {
-            "score": 17
+            "score": 7
           }
         ]
       }
@@ -849,13 +555,13 @@
           {
             "name": {
               "$in": [
-                16,
-                18
+                6,
+                8
               ]
             }
           },
           {
-            "name": 17
+            "name": 7
           }
         ]
       }
@@ -885,10 +591,10 @@
             }
           },
           {
-            "name": 16
+            "name": 6
           },
           {
-            "name": 18
+            "name": 8
           }
         ]
       }
@@ -913,7 +619,7 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           },
           {
             "name": {
@@ -921,7 +627,7 @@
             }
           },
           {
-            "name": 18
+            "name": 8
           }
         ]
       }
@@ -946,10 +652,10 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           },
           {
-            "name": 18
+            "name": 8
           },
           {
             "name": {
@@ -999,12 +705,12 @@
         "$or": [
           {
             "name": {
-              "$gte": 16,
-              "$lte": 18
+              "$gte": 6,
+              "$lte": 8
             }
           },
           {
-            "name": 17
+            "name": 7
           }
         ]
       }
@@ -1028,12 +734,12 @@
         "$or": [
           {
             "name": {
-              "$gt": 17,
-              "$lte": 18
+              "$gt": 7,
+              "$lte": 8
             }
           },
           {
-            "name": 17
+            "name": 7
           }
         ]
       }
@@ -1057,12 +763,12 @@
         "$or": [
           {
             "score": {
-              "$gte": 17,
-              "$lte": 18
+              "$gte": 7,
+              "$lte": 8
             }
           },
           {
-            "score": 17
+            "score": 7
           }
         ]
       }
@@ -1087,13 +793,13 @@
         "$or": [
           {
             "name": {
-              "$gte": 16,
-              "$lte": 18
+              "$gte": 6,
+              "$lte": 8
             }
           },
           {
-            "name": 17,
-            "score": 17
+            "name": 7,
+            "score": 7
           }
         ]
       }
@@ -1118,13 +824,13 @@
         "$or": [
           {
             "name": {
-              "$gte": 16,
-              "$lte": 18
+              "$gte": 6,
+              "$lte": 8
             },
-            "score": 18
+            "score": 8
           },
           {
-            "name": 17
+            "name": 7
           }
         ]
       }
@@ -1150,14 +856,14 @@
         "$or": [
           {
             "name": {
-              "$gte": 16,
-              "$lte": 18
+              "$gte": 6,
+              "$lte": 8
             },
-            "score": 18
+            "score": 8
           },
           {
-            "name": 17,
-            "score": 17
+            "name": 7,
+            "score": 7
           }
         ]
       }
@@ -1183,14 +889,14 @@
         "$or": [
           {
             "name": {
-              "$gte": 17,
-              "$lte": 18
+              "$gte": 7,
+              "$lte": 8
             },
-            "score": 18
+            "score": 8
           },
           {
-            "name": 17,
-            "score": 17
+            "name": 7,
+            "score": 7
           }
         ]
       }
@@ -1216,14 +922,14 @@
         "$or": [
           {
             "name": {
-              "$gte": 16,
-              "$lte": 18
+              "$gte": 6,
+              "$lte": 8
             },
-            "score": 17
+            "score": 7
           },
           {
-            "name": 17,
-            "score": 17
+            "name": 7,
+            "score": 7
           }
         ]
       }
@@ -1249,14 +955,14 @@
         "$or": [
           {
             "score": {
-              "$gte": 16,
-              "$lte": 18
+              "$gte": 6,
+              "$lte": 8
             },
-            "name": 18
+            "name": 8
           },
           {
-            "name": 17,
-            "score": 17
+            "name": 7,
+            "score": 7
           }
         ]
       }
@@ -1282,14 +988,14 @@
         "$or": [
           {
             "score": {
-              "$gte": 17,
-              "$lte": 18
+              "$gte": 7,
+              "$lte": 8
             },
-            "name": 18
+            "name": 8
           },
           {
-            "name": 17,
-            "score": 17
+            "name": 7,
+            "score": 7
           }
         ]
       }
@@ -1315,14 +1021,14 @@
         "$or": [
           {
             "score": {
-              "$gte": 16,
-              "$lte": 18
+              "$gte": 6,
+              "$lte": 8
             },
-            "name": 17
+            "name": 7
           },
           {
-            "name": 17,
-            "score": 17
+            "name": 7,
+            "score": 7
           }
         ]
       }
@@ -1366,28 +1072,28 @@
           {
             "name": {
               "$in": [
-                16,
-                20
+                6,
+                10
               ]
             },
             "score": {
               "$in": [
-                16,
-                20
+                6,
+                10
               ]
             }
           },
           {
             "name": {
               "$in": [
-                16,
-                20
+                6,
+                10
               ]
             },
             "score": {
               "$in": [
-                16,
-                20
+                6,
+                10
               ]
             }
           }
@@ -1432,27 +1138,27 @@
           {
             "name": {
               "$in": [
-                16
+                6
               ]
             },
             "score": {
               "$in": [
-                16,
-                20
+                6,
+                10
               ]
             }
           },
           {
             "name": {
               "$in": [
-                16,
-                20
+                6,
+                10
               ]
             },
             "score": {
               "$in": [
-                16,
-                20
+                6,
+                10
               ]
             }
           }
@@ -1496,26 +1202,26 @@
           {
             "name": {
               "$in": [
-                16
+                6
               ]
             },
             "score": {
               "$in": [
-                16
+                6
               ]
             }
           },
           {
             "name": {
               "$in": [
-                16,
-                20
+                6,
+                10
               ]
             },
             "score": {
               "$in": [
-                16,
-                20
+                6,
+                10
               ]
             }
           }
@@ -1543,77 +1249,10 @@
             "$text": {
               "$search": "Heavily"
             },
-            "count": 18
+            "count": 8
           },
           {
-            "step": 17
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "76fee35cb54b40e4cb6af0e3ef8c22fe2f443855db13bf29d24037b4421c4f70",
-      "fingerprint": {
-        "$or": [
-          {
-            "$where": "string:#1"
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "$where": "Heavy"
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "f288424c5ff7124466cfe50bb2ddbaab260ab3d8b3d526953815ef9f1727b8dc",
-      "fingerprint": {
-        "$or": [
-          {
-            "$where": "string:#1"
-          },
-          {
-            "$where": "string:#2"
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "$where": "Heavy"
-          },
-          {
-            "$where": "Huge"
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "a0957e9282afd7cb2c354933b4564eab9be57ac800388e209d6488fd8116393e",
-      "fingerprint": {
-        "$or": [
-          {
-            "$where": "string:#1"
-          },
-          {
-            "field:#1": {
-              "$ne": "number:#1"
-            }
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "$where": "Heavy"
-          },
-          {
-            "rank": {
-              "$ne": 17
-            }
+            "step": 7
           }
         ]
       }
@@ -1640,14 +1279,14 @@
         "$or": [
           {
             "name": {
-              "$gt": 15,
-              "$lt": 17
+              "$gt": 5,
+              "$lt": 7
             }
           },
           {
             "name": {
-              "$gt": 14,
-              "$lt": 18
+              "$gt": 4,
+              "$lt": 8
             }
           }
         ]
@@ -1675,14 +1314,14 @@
         "$or": [
           {
             "name": {
-              "$gt": 15,
-              "$lt": 17
+              "$gt": 5,
+              "$lt": 7
             }
           },
           {
             "name": {
-              "$gt": 14,
-              "$lt": 18
+              "$gt": 4,
+              "$lt": 8
             }
           }
         ]
@@ -1711,17 +1350,17 @@
       "query": {
         "$or": [
           {
-            "name": 16,
+            "name": 6,
             "score": {
-              "$gt": 15,
-              "$lt": 17
+              "$gt": 5,
+              "$lt": 7
             }
           },
           {
-            "name": 16,
+            "name": 6,
             "score": {
-              "$gt": 14,
-              "$lt": 18
+              "$gt": 4,
+              "$lt": 8
             }
           }
         ]
@@ -1760,23 +1399,23 @@
           {
             "name": null,
             "score": {
-              "$gte": 15,
-              "$lte": 20
+              "$gte": 5,
+              "$lte": 10
             },
             "level": {
-              "$gte": 15,
-              "$lte": 20
+              "$gte": 5,
+              "$lte": 10
             }
           },
           {
             "name": null,
             "score": {
-              "$gte": 18,
-              "$lte": 23
+              "$gte": 8,
+              "$lte": 13
             },
             "level": {
-              "$gte": 18,
-              "$lte": 23
+              "$gte": 8,
+              "$lte": 13
             }
           }
         ]
@@ -1797,10 +1436,10 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           },
           {
-            "score": 16
+            "score": 6
           }
         ]
       }
@@ -1827,1224 +1466,13 @@
           {
             "name": {
               "$in": [
-                16,
-                17
+                6,
+                7
               ]
             }
           },
           {
-            "score": 16
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "044788d332c0dbb391e4f6447933880d1fc36b0f36c900878079dbb17f9dae7f",
-      "fingerprint": {
-        "$or": [
-          {
-            "field:#1": "number:#1"
-          },
-          {
-            "field:#1": "number:#2"
-          },
-          {
-            "field:#1": "number:#3"
-          },
-          {
-            "field:#1": "number:#4"
-          },
-          {
-            "field:#1": "number:#5"
-          },
-          {
-            "field:#1": "number:#6"
-          },
-          {
-            "field:#1": "number:#7"
-          },
-          {
-            "field:#1": "number:#8"
-          },
-          {
-            "field:#1": "number:#9"
-          },
-          {
-            "field:#1": "number:#10"
-          },
-          {
-            "field:#1": "number:#11"
-          },
-          {
-            "field:#1": "number:#12"
-          },
-          {
-            "field:#1": "number:#13"
-          },
-          {
-            "field:#1": "number:#14"
-          },
-          {
-            "field:#1": "number:#15"
-          },
-          {
-            "field:#1": "number:#16"
-          },
-          {
-            "field:#1": "number:#17"
-          },
-          {
-            "field:#1": "number:#18"
-          },
-          {
-            "field:#1": "number:#19"
-          },
-          {
-            "field:#1": "number:#20"
-          },
-          {
-            "field:#1": "number:#21"
-          },
-          {
-            "field:#1": "number:#22"
-          },
-          {
-            "field:#1": "number:#23"
-          },
-          {
-            "field:#1": "number:#24"
-          },
-          {
-            "field:#1": "number:#25"
-          },
-          {
-            "field:#1": "number:#26"
-          },
-          {
-            "field:#1": "number:#27"
-          },
-          {
-            "field:#1": "number:#28"
-          },
-          {
-            "field:#1": "number:#29"
-          },
-          {
-            "field:#1": "number:#30"
-          },
-          {
-            "field:#1": "number:#31"
-          },
-          {
-            "field:#1": "number:#32"
-          },
-          {
-            "field:#1": "number:#33"
-          },
-          {
-            "field:#1": "number:#34"
-          },
-          {
-            "field:#1": "number:#35"
-          },
-          {
-            "field:#1": "number:#36"
-          },
-          {
-            "field:#1": "number:#37"
-          },
-          {
-            "field:#1": "number:#38"
-          },
-          {
-            "field:#1": "number:#39"
-          },
-          {
-            "field:#1": "number:#40"
-          },
-          {
-            "field:#1": "number:#41"
-          },
-          {
-            "field:#1": "number:#42"
-          },
-          {
-            "field:#1": "number:#43"
-          },
-          {
-            "field:#1": "number:#44"
-          },
-          {
-            "field:#1": "number:#45"
-          },
-          {
-            "field:#1": "number:#46"
-          },
-          {
-            "field:#1": "number:#47"
-          },
-          {
-            "field:#1": "number:#48"
-          },
-          {
-            "field:#1": "number:#49"
-          },
-          {
-            "field:#1": "number:#50"
-          },
-          {
-            "field:#1": "number:#51"
-          },
-          {
-            "field:#1": "number:#52"
-          },
-          {
-            "field:#1": "number:#53"
-          },
-          {
-            "field:#1": "number:#54"
-          },
-          {
-            "field:#1": "number:#55"
-          },
-          {
-            "field:#1": "number:#56"
-          },
-          {
-            "field:#1": "number:#57"
-          },
-          {
-            "field:#1": "number:#58"
-          },
-          {
-            "field:#1": "number:#59"
-          },
-          {
-            "field:#1": "number:#60"
-          },
-          {
-            "field:#1": "number:#61"
-          },
-          {
-            "field:#1": "number:#62"
-          },
-          {
-            "field:#1": "number:#63"
-          },
-          {
-            "field:#1": "number:#64"
-          },
-          {
-            "field:#1": "number:#65"
-          },
-          {
-            "field:#1": "number:#66"
-          },
-          {
-            "field:#1": "number:#67"
-          },
-          {
-            "field:#1": "number:#68"
-          },
-          {
-            "field:#1": "number:#69"
-          },
-          {
-            "field:#1": "number:#70"
-          },
-          {
-            "field:#1": "number:#71"
-          },
-          {
-            "field:#1": "number:#72"
-          },
-          {
-            "field:#1": "number:#73"
-          },
-          {
-            "field:#1": "number:#74"
-          },
-          {
-            "field:#1": "number:#75"
-          },
-          {
-            "field:#1": "number:#76"
-          },
-          {
-            "field:#1": "number:#77"
-          },
-          {
-            "field:#1": "number:#78"
-          },
-          {
-            "field:#1": "number:#79"
-          },
-          {
-            "field:#1": "number:#80"
-          },
-          {
-            "field:#1": "number:#81"
-          },
-          {
-            "field:#1": "number:#82"
-          },
-          {
-            "field:#1": "number:#83"
-          },
-          {
-            "field:#1": "number:#84"
-          },
-          {
-            "field:#1": "number:#85"
-          },
-          {
-            "field:#1": "number:#86"
-          },
-          {
-            "field:#1": "number:#87"
-          },
-          {
-            "field:#1": "number:#88"
-          },
-          {
-            "field:#1": "number:#89"
-          },
-          {
-            "field:#1": "number:#90"
-          },
-          {
-            "field:#1": "number:#91"
-          },
-          {
-            "field:#1": "number:#92"
-          },
-          {
-            "field:#1": "number:#93"
-          },
-          {
-            "field:#1": "number:#94"
-          },
-          {
-            "field:#1": "number:#95"
-          },
-          {
-            "field:#1": "number:#96"
-          },
-          {
-            "field:#1": "number:#97"
-          },
-          {
-            "field:#1": "number:#98"
-          },
-          {
-            "field:#1": "number:#99"
-          },
-          {
-            "field:#1": "number:#100"
-          },
-          {
-            "field:#1": "number:#101"
-          },
-          {
-            "field:#1": "number:#102"
-          },
-          {
-            "field:#1": "number:#103"
-          },
-          {
-            "field:#1": "number:#104"
-          },
-          {
-            "field:#1": "number:#105"
-          },
-          {
-            "field:#1": "number:#106"
-          },
-          {
-            "field:#1": "number:#107"
-          },
-          {
-            "field:#1": "number:#108"
-          },
-          {
-            "field:#1": "number:#109"
-          },
-          {
-            "field:#1": "number:#110"
-          },
-          {
-            "field:#1": "number:#111"
-          },
-          {
-            "field:#1": "number:#112"
-          },
-          {
-            "field:#1": "number:#113"
-          },
-          {
-            "field:#1": "number:#114"
-          },
-          {
-            "field:#1": "number:#115"
-          },
-          {
-            "field:#1": "number:#116"
-          },
-          {
-            "field:#1": "number:#117"
-          },
-          {
-            "field:#1": "number:#118"
-          },
-          {
-            "field:#1": "number:#119"
-          },
-          {
-            "field:#1": "number:#120"
-          },
-          {
-            "field:#1": "number:#121"
-          },
-          {
-            "field:#1": "number:#122"
-          },
-          {
-            "field:#1": "number:#123"
-          },
-          {
-            "field:#1": "number:#124"
-          },
-          {
-            "field:#1": "number:#125"
-          },
-          {
-            "field:#1": "number:#126"
-          },
-          {
-            "field:#1": "number:#127"
-          },
-          {
-            "field:#1": "number:#128"
-          },
-          {
-            "field:#1": "number:#129"
-          },
-          {
-            "field:#1": "number:#130"
-          },
-          {
-            "field:#1": "number:#131"
-          },
-          {
-            "field:#1": "number:#132"
-          },
-          {
-            "field:#1": "number:#133"
-          },
-          {
-            "field:#1": "number:#134"
-          },
-          {
-            "field:#1": "number:#135"
-          },
-          {
-            "field:#1": "number:#136"
-          },
-          {
-            "field:#1": "number:#137"
-          },
-          {
-            "field:#1": "number:#138"
-          },
-          {
-            "field:#1": "number:#139"
-          },
-          {
-            "field:#1": "number:#140"
-          },
-          {
-            "field:#1": "number:#141"
-          },
-          {
-            "field:#1": "number:#142"
-          },
-          {
-            "field:#1": "number:#143"
-          },
-          {
-            "field:#1": "number:#144"
-          },
-          {
-            "field:#1": "number:#145"
-          },
-          {
-            "field:#1": "number:#146"
-          },
-          {
-            "field:#1": "number:#147"
-          },
-          {
-            "field:#1": "number:#148"
-          },
-          {
-            "field:#1": "number:#149"
-          },
-          {
-            "field:#1": "number:#150"
-          },
-          {
-            "field:#1": "number:#151"
-          },
-          {
-            "field:#1": "number:#152"
-          },
-          {
-            "field:#1": "number:#153"
-          },
-          {
-            "field:#1": "number:#154"
-          },
-          {
-            "field:#1": "number:#155"
-          },
-          {
-            "field:#1": "number:#156"
-          },
-          {
-            "field:#1": "number:#157"
-          },
-          {
-            "field:#1": "number:#158"
-          },
-          {
-            "field:#1": "number:#159"
-          },
-          {
-            "field:#1": "number:#160"
-          },
-          {
-            "field:#1": "number:#161"
-          },
-          {
-            "field:#1": "number:#162"
-          },
-          {
-            "field:#1": "number:#163"
-          },
-          {
-            "field:#1": "number:#164"
-          },
-          {
-            "field:#1": "number:#165"
-          },
-          {
-            "field:#1": "number:#166"
-          },
-          {
-            "field:#1": "number:#167"
-          },
-          {
-            "field:#1": "number:#168"
-          },
-          {
-            "field:#1": "number:#169"
-          },
-          {
-            "field:#1": "number:#170"
-          },
-          {
-            "field:#1": "number:#171"
-          },
-          {
-            "field:#1": "number:#172"
-          },
-          {
-            "field:#1": "number:#173"
-          },
-          {
-            "field:#1": "number:#174"
-          },
-          {
-            "field:#1": "number:#175"
-          },
-          {
-            "field:#1": "number:#176"
-          },
-          {
-            "field:#1": "number:#177"
-          },
-          {
-            "field:#1": "number:#178"
-          },
-          {
-            "field:#1": "number:#179"
-          },
-          {
-            "field:#1": "number:#180"
-          },
-          {
-            "field:#1": "number:#181"
-          },
-          {
-            "field:#1": "number:#182"
-          },
-          {
-            "field:#1": "number:#183"
-          },
-          {
-            "field:#1": "number:#184"
-          },
-          {
-            "field:#1": "number:#185"
-          },
-          {
-            "field:#1": "number:#186"
-          },
-          {
-            "field:#1": "number:#187"
-          },
-          {
-            "field:#1": "number:#188"
-          },
-          {
-            "field:#1": "number:#189"
-          },
-          {
-            "field:#1": "number:#190"
-          },
-          {
-            "field:#1": "number:#191"
-          },
-          {
-            "field:#1": "number:#192"
-          },
-          {
-            "field:#1": "number:#193"
-          },
-          {
-            "field:#1": "number:#194"
-          },
-          {
-            "field:#1": "number:#195"
-          },
-          {
-            "field:#1": "number:#196"
-          },
-          {
-            "field:#1": "number:#197"
-          },
-          {
-            "field:#1": "number:#198"
-          },
-          {
-            "field:#1": "number:#199"
-          },
-          {
-            "field:#1": "number:#200"
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "age": 15
-          },
-          {
-            "age": 16
-          },
-          {
-            "age": 17
-          },
-          {
-            "age": 18
-          },
-          {
-            "age": 19
-          },
-          {
-            "age": 20
-          },
-          {
-            "age": 21
-          },
-          {
-            "age": 22
-          },
-          {
-            "age": 23
-          },
-          {
-            "age": 24
-          },
-          {
-            "age": 25
-          },
-          {
-            "age": 26
-          },
-          {
-            "age": 27
-          },
-          {
-            "age": 28
-          },
-          {
-            "age": 29
-          },
-          {
-            "age": 30
-          },
-          {
-            "age": 31
-          },
-          {
-            "age": 32
-          },
-          {
-            "age": 33
-          },
-          {
-            "age": 34
-          },
-          {
-            "age": 35
-          },
-          {
-            "age": 36
-          },
-          {
-            "age": 37
-          },
-          {
-            "age": 38
-          },
-          {
-            "age": 39
-          },
-          {
-            "age": 40
-          },
-          {
-            "age": 41
-          },
-          {
-            "age": 42
-          },
-          {
-            "age": 43
-          },
-          {
-            "age": 44
-          },
-          {
-            "age": 45
-          },
-          {
-            "age": 46
-          },
-          {
-            "age": 47
-          },
-          {
-            "age": 48
-          },
-          {
-            "age": 49
-          },
-          {
-            "age": 50
-          },
-          {
-            "age": 51
-          },
-          {
-            "age": 52
-          },
-          {
-            "age": 53
-          },
-          {
-            "age": 54
-          },
-          {
-            "age": 55
-          },
-          {
-            "age": 56
-          },
-          {
-            "age": 57
-          },
-          {
-            "age": 58
-          },
-          {
-            "age": 59
-          },
-          {
-            "age": 60
-          },
-          {
-            "age": 61
-          },
-          {
-            "age": 62
-          },
-          {
-            "age": 63
-          },
-          {
-            "age": 64
-          },
-          {
-            "age": 65
-          },
-          {
-            "age": 66
-          },
-          {
-            "age": 67
-          },
-          {
-            "age": 68
-          },
-          {
-            "age": 69
-          },
-          {
-            "age": 70
-          },
-          {
-            "age": 71
-          },
-          {
-            "age": 72
-          },
-          {
-            "age": 73
-          },
-          {
-            "age": 74
-          },
-          {
-            "age": 75
-          },
-          {
-            "age": 76
-          },
-          {
-            "age": 77
-          },
-          {
-            "age": 78
-          },
-          {
-            "age": 79
-          },
-          {
-            "age": 80
-          },
-          {
-            "age": 81
-          },
-          {
-            "age": 82
-          },
-          {
-            "age": 83
-          },
-          {
-            "age": 84
-          },
-          {
-            "age": 85
-          },
-          {
-            "age": 86
-          },
-          {
-            "age": 87
-          },
-          {
-            "age": 88
-          },
-          {
-            "age": 89
-          },
-          {
-            "age": 90
-          },
-          {
-            "age": 91
-          },
-          {
-            "age": 92
-          },
-          {
-            "age": 93
-          },
-          {
-            "age": 94
-          },
-          {
-            "age": 95
-          },
-          {
-            "age": 96
-          },
-          {
-            "age": 97
-          },
-          {
-            "age": 98
-          },
-          {
-            "age": 99
-          },
-          {
-            "age": 100
-          },
-          {
-            "age": 101
-          },
-          {
-            "age": 102
-          },
-          {
-            "age": 103
-          },
-          {
-            "age": 104
-          },
-          {
-            "age": 105
-          },
-          {
-            "age": 106
-          },
-          {
-            "age": 107
-          },
-          {
-            "age": 108
-          },
-          {
-            "age": 109
-          },
-          {
-            "age": 110
-          },
-          {
-            "age": 111
-          },
-          {
-            "age": 112
-          },
-          {
-            "age": 113
-          },
-          {
-            "age": 114
-          },
-          {
-            "age": 115
-          },
-          {
-            "age": 116
-          },
-          {
-            "age": 117
-          },
-          {
-            "age": 118
-          },
-          {
-            "age": 119
-          },
-          {
-            "age": 120
-          },
-          {
-            "age": 121
-          },
-          {
-            "age": 122
-          },
-          {
-            "age": 123
-          },
-          {
-            "age": 124
-          },
-          {
-            "age": 125
-          },
-          {
-            "age": 126
-          },
-          {
-            "age": 127
-          },
-          {
-            "age": 128
-          },
-          {
-            "age": 129
-          },
-          {
-            "age": 130
-          },
-          {
-            "age": 131
-          },
-          {
-            "age": 132
-          },
-          {
-            "age": 133
-          },
-          {
-            "age": 134
-          },
-          {
-            "age": 135
-          },
-          {
-            "age": 136
-          },
-          {
-            "age": 137
-          },
-          {
-            "age": 138
-          },
-          {
-            "age": 139
-          },
-          {
-            "age": 140
-          },
-          {
-            "age": 141
-          },
-          {
-            "age": 142
-          },
-          {
-            "age": 143
-          },
-          {
-            "age": 144
-          },
-          {
-            "age": 145
-          },
-          {
-            "age": 146
-          },
-          {
-            "age": 147
-          },
-          {
-            "age": 148
-          },
-          {
-            "age": 149
-          },
-          {
-            "age": 150
-          },
-          {
-            "age": 151
-          },
-          {
-            "age": 152
-          },
-          {
-            "age": 153
-          },
-          {
-            "age": 154
-          },
-          {
-            "age": 155
-          },
-          {
-            "age": 156
-          },
-          {
-            "age": 157
-          },
-          {
-            "age": 158
-          },
-          {
-            "age": 159
-          },
-          {
-            "age": 160
-          },
-          {
-            "age": 161
-          },
-          {
-            "age": 162
-          },
-          {
-            "age": 163
-          },
-          {
-            "age": 164
-          },
-          {
-            "age": 165
-          },
-          {
-            "age": 166
-          },
-          {
-            "age": 167
-          },
-          {
-            "age": 168
-          },
-          {
-            "age": 169
-          },
-          {
-            "age": 170
-          },
-          {
-            "age": 171
-          },
-          {
-            "age": 172
-          },
-          {
-            "age": 173
-          },
-          {
-            "age": 174
-          },
-          {
-            "age": 175
-          },
-          {
-            "age": 176
-          },
-          {
-            "age": 177
-          },
-          {
-            "age": 178
-          },
-          {
-            "age": 179
-          },
-          {
-            "age": 180
-          },
-          {
-            "age": 181
-          },
-          {
-            "age": 182
-          },
-          {
-            "age": 183
-          },
-          {
-            "age": 184
-          },
-          {
-            "age": 185
-          },
-          {
-            "age": 186
-          },
-          {
-            "age": 187
-          },
-          {
-            "age": 188
-          },
-          {
-            "age": 189
-          },
-          {
-            "age": 190
-          },
-          {
-            "age": 191
-          },
-          {
-            "age": 192
-          },
-          {
-            "age": 193
-          },
-          {
-            "age": 194
-          },
-          {
-            "age": 195
-          },
-          {
-            "age": 196
-          },
-          {
-            "age": 197
-          },
-          {
-            "age": 198
-          },
-          {
-            "age": 199
-          },
-          {
-            "age": 200
-          },
-          {
-            "age": 201
-          },
-          {
-            "age": 202
-          },
-          {
-            "age": 203
-          },
-          {
-            "age": 204
-          },
-          {
-            "age": 205
-          },
-          {
-            "age": 206
-          },
-          {
-            "age": 207
-          },
-          {
-            "age": 208
-          },
-          {
-            "age": 209
-          },
-          {
-            "age": 210
-          },
-          {
-            "age": 211
-          },
-          {
-            "age": 212
-          },
-          {
-            "age": 213
-          },
-          {
-            "age": 214
+            "score": 6
           }
         ]
       }
@@ -3067,7 +1495,7 @@
             "name": null
           },
           {
-            "score": 17
+            "score": 7
           }
         ]
       }
@@ -3088,7 +1516,7 @@
         "field:#2": "null:#1"
       },
       "query": {
-        "score": 17,
+        "score": 7,
         "name": null
       }
     },
@@ -3108,7 +1536,7 @@
       "query": {
         "$or": [
           {
-            "score": 17,
+            "score": 7,
             "name": null
           },
           {
@@ -3136,735 +1564,8 @@
             "name": null
           },
           {
-            "score": 17,
+            "score": 7,
             "name": null
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "62eb5bafd359a65cb3170020470093d79132fb689628aacf5fe4729ff87963ae",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "field:#2": "number:#2"
-      },
-      "query": {
-        "name": 16,
-        "score": 17
-      }
-    },
-    {
-      "checksum": "12baf7f5141ca2977c6e21468da89a649add31fb60be2dfa74b9af1ad488ad31",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "$or": [
-          {
-            "$or": [
-              {
-                "field:#2": "number:#2"
-              }
-            ]
-          }
-        ]
-      },
-      "query": {
-        "name": 16,
-        "$or": [
-          {
-            "$or": [
-              {
-                "score": 17
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "1009fbb926c1915dee9d4373f43a01fb4531249fec6ba7f0d0440594622dca33",
-      "fingerprint": {
-        "$or": [
-          {
-            "$or": [
-              {
-                "field:#1": "number:#1"
-              },
-              {
-                "field:#2": "number:#1"
-              }
-            ]
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "$or": [
-              {
-                "name": 17
-              },
-              {
-                "score": 17
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "ed79629448f8fabb146d30ccf3364e877f872b036696d98fb44fd9307255a083",
-      "fingerprint": {
-        "$or": [
-          {
-            "field:#1": "number:#1"
-          },
-          {
-            "$or": [
-              {
-                "field:#2": "number:#1"
-              }
-            ]
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "name": 17
-          },
-          {
-            "$or": [
-              {
-                "score": 17
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "b8e2f37689d695999f38157daef58a09230a207bd4d406aef53eedc4732e7f50",
-      "fingerprint": {
-        "$or": [
-          {
-            "field:#1": "number:#1"
-          },
-          {
-            "$or": [
-              {
-                "field:#2": "number:#2"
-              }
-            ]
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "name": 16
-          },
-          {
-            "$or": [
-              {
-                "score": 18
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "2d313f0e0134dc73dc3efa5e2715fd74d2feab3f2a206576259b900efd5827b4",
-      "fingerprint": {
-        "$or": [
-          {
-            "$or": [
-              {
-                "field:#1": "number:#1"
-              },
-              {
-                "field:#1": "number:#2"
-              }
-            ]
-          },
-          {
-            "$or": [
-              {
-                "field:#2": "number:#3"
-              },
-              {
-                "field:#2": "number:#4"
-              }
-            ]
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "$or": [
-              {
-                "name": 16
-              },
-              {
-                "name": 17
-              }
-            ]
-          },
-          {
-            "$or": [
-              {
-                "score": 18
-              },
-              {
-                "score": 19
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "6b8da62672fd1cc8cc44c486d0246428be9ebe11bed9b3f4ad7a3b059a4e17ff",
-      "fingerprint": {
-        "$or": [
-          {
-            "$or": [
-              {
-                "field:#1": "number:#1"
-              },
-              {
-                "field:#1": "number:#2"
-              }
-            ]
-          },
-          {
-            "$or": [
-              {
-                "field:#2": "number:#2"
-              },
-              {
-                "field:#2": "number:#3"
-              }
-            ]
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "$or": [
-              {
-                "name": 15
-              },
-              {
-                "name": 17
-              }
-            ]
-          },
-          {
-            "$or": [
-              {
-                "score": 17
-              },
-              {
-                "score": 19
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "b2379ce53e0e44aab147242517a67a4855dab09db18578e38a5c263623795411",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "$and": [
-          {
-            "$or": [
-              {
-                "$or": [
-                  {
-                    "field:#2": "number:#2"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      "query": {
-        "name": 16,
-        "$and": [
-          {
-            "$or": [
-              {
-                "$or": [
-                  {
-                    "score": 17
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "004d3f801b9ad6afdbbc38a1774e1a76bdf7a613f6792ac73bfda574df41a6bb",
-      "fingerprint": {
-        "$and": [
-          {
-            "$or": [
-              {
-                "field:#1": "number:#1"
-              },
-              {
-                "field:#1": "number:#2"
-              }
-            ]
-          },
-          {
-            "$or": [
-              {
-                "field:#2": "number:#1"
-              },
-              {
-                "field:#2": "number:#2"
-              }
-            ]
-          }
-        ]
-      },
-      "query": {
-        "$and": [
-          {
-            "$or": [
-              {
-                "name": 16
-              },
-              {
-                "name": 17
-              }
-            ]
-          },
-          {
-            "$or": [
-              {
-                "score": 16
-              },
-              {
-                "score": 17
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "60343995cbdaa87c7422c2ec33094d3d69bf2c70d15c6116584d24f8e971f72f",
-      "fingerprint": {
-        "$and": [
-          {
-            "$or": [
-              {
-                "field:#1": "number:#1"
-              },
-              {
-                "field:#1": "number:#2"
-              }
-            ]
-          },
-          {
-            "$or": [
-              {
-                "field:#2": "number:#3"
-              },
-              {
-                "field:#2": "number:#2"
-              }
-            ]
-          }
-        ]
-      },
-      "query": {
-        "$and": [
-          {
-            "$or": [
-              {
-                "name": 18
-              },
-              {
-                "name": 17
-              }
-            ]
-          },
-          {
-            "$or": [
-              {
-                "score": 16
-              },
-              {
-                "score": 17
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "2278d6f163337d3f1abb6f264472adab635ae1b9a2ae8ab5403f05e962f4ec56",
-      "fingerprint": {
-        "$and": [
-          {
-            "$or": [
-              {
-                "field:#1": "number:#1"
-              },
-              {
-                "field:#1": "number:#2"
-              }
-            ]
-          },
-          {
-            "$or": [
-              {
-                "field:#2": "number:#3"
-              },
-              {
-                "field:#2": "number:#1"
-              }
-            ]
-          }
-        ]
-      },
-      "query": {
-        "$and": [
-          {
-            "$or": [
-              {
-                "name": 16
-              },
-              {
-                "name": 17
-              }
-            ]
-          },
-          {
-            "$or": [
-              {
-                "score": 18
-              },
-              {
-                "score": 16
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "e8a7e3261871a0c5a0fab6dca49c321c321fd479d00a9b4cf231193754ba4243",
-      "fingerprint": {
-        "$and": [
-          {
-            "$nor": [
-              {
-                "field:#1": "number:#1"
-              },
-              {
-                "field:#1": "number:#2"
-              }
-            ]
-          },
-          {
-            "$nor": [
-              {
-                "field:#2": "number:#1"
-              },
-              {
-                "field:#2": "number:#2"
-              }
-            ]
-          }
-        ]
-      },
-      "query": {
-        "$and": [
-          {
-            "$nor": [
-              {
-                "name": 16
-              },
-              {
-                "name": 17
-              }
-            ]
-          },
-          {
-            "$nor": [
-              {
-                "score": 16
-              },
-              {
-                "score": 17
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "ece7737436d01a7a17815ed1181d3782f70fe146776215f377c2ec21b6de369a",
-      "fingerprint": {
-        "$and": [
-          {
-            "$nor": [
-              {
-                "field:#1": "number:#1"
-              },
-              {
-                "field:#1": "number:#2"
-              }
-            ]
-          },
-          {
-            "$nor": [
-              {
-                "field:#2": "number:#3"
-              },
-              {
-                "field:#2": "number:#2"
-              }
-            ]
-          }
-        ]
-      },
-      "query": {
-        "$and": [
-          {
-            "$nor": [
-              {
-                "name": 18
-              },
-              {
-                "name": 17
-              }
-            ]
-          },
-          {
-            "$nor": [
-              {
-                "score": 16
-              },
-              {
-                "score": 17
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "294f37335a36ea04b1426ccc3f71b4890d55ce53c86eacf2f627a9df13f5eae3",
-      "fingerprint": {
-        "$and": [
-          {
-            "$nor": [
-              {
-                "field:#1": "number:#1"
-              },
-              {
-                "field:#1": "number:#2"
-              }
-            ]
-          },
-          {
-            "$nor": [
-              {
-                "field:#2": "number:#1"
-              },
-              {
-                "field:#2": "number:#3"
-              }
-            ]
-          }
-        ]
-      },
-      "query": {
-        "$and": [
-          {
-            "$nor": [
-              {
-                "name": 18
-              },
-              {
-                "name": 17
-              }
-            ]
-          },
-          {
-            "$nor": [
-              {
-                "score": 18
-              },
-              {
-                "score": 16
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "4592bc8597452543641174b037c150d367c9969ace30093c33d84995b7b4e166",
-      "fingerprint": {
-        "$and": [
-          {
-            "$or": [
-              {
-                "field:#1": "number:#1"
-              },
-              {
-                "field:#1": "number:#2"
-              }
-            ]
-          },
-          {
-            "$nor": [
-              {
-                "field:#2": "number:#1"
-              },
-              {
-                "field:#2": "number:#3"
-              }
-            ]
-          }
-        ]
-      },
-      "query": {
-        "$and": [
-          {
-            "$or": [
-              {
-                "name": 16
-              },
-              {
-                "name": 17
-              }
-            ]
-          },
-          {
-            "$nor": [
-              {
-                "score": 16
-              },
-              {
-                "score": 18
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "06928ce258f9ff9eb09d177a0442639b68fd22e8259dd07a5bd33485ac86df1e",
-      "fingerprint": {
-        "$and": [
-          {
-            "$or": [
-              {
-                "field:#1": "number:#1"
-              },
-              {
-                "field:#1": "number:#2"
-              }
-            ]
-          },
-          {
-            "$nor": [
-              {
-                "field:#2": "number:#3"
-              },
-              {
-                "field:#2": "number:#1"
-              }
-            ]
-          }
-        ]
-      },
-      "query": {
-        "$and": [
-          {
-            "$or": [
-              {
-                "name": 18
-              },
-              {
-                "name": 17
-              }
-            ]
-          },
-          {
-            "$nor": [
-              {
-                "score": 16
-              },
-              {
-                "score": 18
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "fdd65809a33a5f1618bbf447dd6ba994535751f4530b80ea00783dbf5e329f64",
-      "fingerprint": {
-        "$and": [
-          {
-            "$or": [
-              {
-                "field:#1": "number:#1"
-              },
-              {
-                "field:#1": "number:#2"
-              }
-            ]
-          },
-          {
-            "$nor": [
-              {
-                "field:#2": "number:#1"
-              },
-              {
-                "field:#2": "number:#2"
-              }
-            ]
-          }
-        ]
-      },
-      "query": {
-        "$and": [
-          {
-            "$or": [
-              {
-                "name": 16
-              },
-              {
-                "name": 17
-              }
-            ]
-          },
-          {
-            "$nor": [
-              {
-                "score": 16
-              },
-              {
-                "score": 17
-              }
-            ]
           }
         ]
       }
@@ -3876,8 +1577,8 @@
         "field:#2": "number:#2"
       },
       "query": {
-        "name": 16,
-        "score": 17
+        "name": 6,
+        "score": 7
       }
     },
     {
@@ -3895,12 +1596,12 @@
         ]
       },
       "query": {
-        "name": 16,
+        "name": 6,
         "$or": [
           {
             "$or": [
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -3928,10 +1629,10 @@
           {
             "$or": [
               {
-                "name": 17
+                "name": 7
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -3957,12 +1658,12 @@
       "query": {
         "$or": [
           {
-            "name": 17
+            "name": 7
           },
           {
             "$or": [
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -3988,12 +1689,12 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           },
           {
             "$or": [
               {
-                "score": 18
+                "score": 8
               }
             ]
           }
@@ -4031,20 +1732,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 18
+                "score": 8
               },
               {
-                "score": 19
+                "score": 9
               }
             ]
           }
@@ -4082,20 +1783,20 @@
           {
             "$or": [
               {
-                "name": 15
+                "name": 5
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 17
+                "score": 7
               },
               {
-                "score": 19
+                "score": 9
               }
             ]
           }
@@ -4121,14 +1822,14 @@
         ]
       },
       "query": {
-        "name": 16,
+        "name": 6,
         "$and": [
           {
             "$or": [
               {
                 "$or": [
                   {
-                    "score": 17
+                    "score": 7
                   }
                 ]
               }
@@ -4168,20 +1869,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -4219,20 +1920,20 @@
           {
             "$or": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -4270,20 +1971,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 18
+                "score": 8
               },
               {
-                "score": 16
+                "score": 6
               }
             ]
           }
@@ -4321,20 +2022,20 @@
           {
             "$nor": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -4372,20 +2073,20 @@
           {
             "$nor": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -4423,20 +2124,20 @@
           {
             "$nor": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 18
+                "score": 8
               },
               {
-                "score": 16
+                "score": 6
               }
             ]
           }
@@ -4474,20 +2175,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 18
+                "score": 8
               }
             ]
           }
@@ -4525,20 +2226,20 @@
           {
             "$or": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 18
+                "score": 8
               }
             ]
           }
@@ -4576,20 +2277,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -4603,8 +2304,8 @@
         "field:#2": "number:#2"
       },
       "query": {
-        "name": 16,
-        "score": 17
+        "name": 6,
+        "score": 7
       }
     },
     {
@@ -4618,10 +2319,10 @@
         ]
       },
       "query": {
-        "name": 16,
+        "name": 6,
         "$or": [
           {
-            "score": 17
+            "score": 7
           }
         ]
       }
@@ -4641,12 +2342,12 @@
         ]
       },
       "query": {
-        "name": 16,
+        "name": 6,
         "$or": [
           {
             "$or": [
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -4674,10 +2375,10 @@
           {
             "$or": [
               {
-                "name": 17
+                "name": 7
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -4703,12 +2404,12 @@
       "query": {
         "$or": [
           {
-            "name": 17
+            "name": 7
           },
           {
             "$or": [
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -4734,12 +2435,12 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           },
           {
             "$or": [
               {
-                "score": 18
+                "score": 8
               }
             ]
           }
@@ -4777,20 +2478,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 18
+                "score": 8
               },
               {
-                "score": 19
+                "score": 9
               }
             ]
           }
@@ -4828,20 +2529,20 @@
           {
             "$or": [
               {
-                "name": 15
+                "name": 5
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 17
+                "score": 7
               },
               {
-                "score": 19
+                "score": 9
               }
             ]
           }
@@ -4867,14 +2568,14 @@
         ]
       },
       "query": {
-        "name": 16,
+        "name": 6,
         "$and": [
           {
             "$or": [
               {
                 "$or": [
                   {
-                    "score": 17
+                    "score": 7
                   }
                 ]
               }
@@ -4914,20 +2615,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -4965,20 +2666,20 @@
           {
             "$or": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -5016,20 +2717,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 18
+                "score": 8
               },
               {
-                "score": 16
+                "score": 6
               }
             ]
           }
@@ -5067,20 +2768,20 @@
           {
             "$nor": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -5118,20 +2819,20 @@
           {
             "$nor": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -5169,20 +2870,20 @@
           {
             "$nor": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 18
+                "score": 8
               },
               {
-                "score": 16
+                "score": 6
               }
             ]
           }
@@ -5220,20 +2921,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 18
+                "score": 8
               }
             ]
           }
@@ -5271,20 +2972,20 @@
           {
             "$or": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 18
+                "score": 8
               }
             ]
           }
@@ -5322,20 +3023,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -5349,8 +3050,8 @@
         "field:#2": "number:#2"
       },
       "query": {
-        "name": 16,
-        "score": 17
+        "name": 6,
+        "score": 7
       }
     },
     {
@@ -5364,10 +3065,10 @@
         ]
       },
       "query": {
-        "name": 16,
+        "name": 6,
         "$or": [
           {
-            "score": 17
+            "score": 7
           }
         ]
       }
@@ -5387,12 +3088,12 @@
         ]
       },
       "query": {
-        "name": 16,
+        "name": 6,
         "$or": [
           {
             "$or": [
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -5420,10 +3121,10 @@
           {
             "$or": [
               {
-                "name": 17
+                "name": 7
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -5449,12 +3150,12 @@
       "query": {
         "$or": [
           {
-            "name": 17
+            "name": 7
           },
           {
             "$or": [
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -5480,12 +3181,12 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           },
           {
             "$or": [
               {
-                "score": 18
+                "score": 8
               }
             ]
           }
@@ -5523,20 +3224,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 18
+                "score": 8
               },
               {
-                "score": 19
+                "score": 9
               }
             ]
           }
@@ -5574,20 +3275,20 @@
           {
             "$or": [
               {
-                "name": 15
+                "name": 5
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 17
+                "score": 7
               },
               {
-                "score": 19
+                "score": 9
               }
             ]
           }
@@ -5613,14 +3314,14 @@
         ]
       },
       "query": {
-        "name": 16,
+        "name": 6,
         "$and": [
           {
             "$or": [
               {
                 "$or": [
                   {
-                    "score": 17
+                    "score": 7
                   }
                 ]
               }
@@ -5660,20 +3361,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -5711,20 +3412,20 @@
           {
             "$or": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -5762,20 +3463,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 18
+                "score": 8
               },
               {
-                "score": 16
+                "score": 6
               }
             ]
           }
@@ -5813,20 +3514,20 @@
           {
             "$nor": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -5864,20 +3565,20 @@
           {
             "$nor": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -5915,20 +3616,20 @@
           {
             "$nor": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 18
+                "score": 8
               },
               {
-                "score": 16
+                "score": 6
               }
             ]
           }
@@ -5966,20 +3667,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 18
+                "score": 8
               }
             ]
           }
@@ -6017,20 +3718,20 @@
           {
             "$or": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 18
+                "score": 8
               }
             ]
           }
@@ -6068,20 +3769,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -6095,8 +3796,8 @@
         "field:#2": "number:#2"
       },
       "query": {
-        "name": 16,
-        "score": 17
+        "name": 6,
+        "score": 7
       }
     },
     {
@@ -6110,10 +3811,10 @@
         ]
       },
       "query": {
-        "name": 16,
+        "name": 6,
         "$or": [
           {
-            "score": 17
+            "score": 7
           }
         ]
       }
@@ -6133,12 +3834,12 @@
         ]
       },
       "query": {
-        "name": 16,
+        "name": 6,
         "$or": [
           {
             "$or": [
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -6166,10 +3867,10 @@
           {
             "$or": [
               {
-                "name": 17
+                "name": 7
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -6195,12 +3896,12 @@
       "query": {
         "$or": [
           {
-            "name": 17
+            "name": 7
           },
           {
             "$or": [
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -6226,12 +3927,12 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           },
           {
             "$or": [
               {
-                "score": 18
+                "score": 8
               }
             ]
           }
@@ -6269,20 +3970,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 18
+                "score": 8
               },
               {
-                "score": 19
+                "score": 9
               }
             ]
           }
@@ -6320,20 +4021,20 @@
           {
             "$or": [
               {
-                "name": 15
+                "name": 5
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 17
+                "score": 7
               },
               {
-                "score": 19
+                "score": 9
               }
             ]
           }
@@ -6359,14 +4060,14 @@
         ]
       },
       "query": {
-        "name": 16,
+        "name": 6,
         "$and": [
           {
             "$or": [
               {
                 "$or": [
                   {
-                    "score": 17
+                    "score": 7
                   }
                 ]
               }
@@ -6406,20 +4107,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -6457,20 +4158,20 @@
           {
             "$or": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -6508,20 +4209,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 18
+                "score": 8
               },
               {
-                "score": 16
+                "score": 6
               }
             ]
           }
@@ -6559,20 +4260,20 @@
           {
             "$nor": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -6610,20 +4311,20 @@
           {
             "$nor": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -6661,20 +4362,20 @@
           {
             "$nor": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 18
+                "score": 8
               },
               {
-                "score": 16
+                "score": 6
               }
             ]
           }
@@ -6712,20 +4413,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 18
+                "score": 8
               }
             ]
           }
@@ -6763,20 +4464,20 @@
           {
             "$or": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 18
+                "score": 8
               }
             ]
           }
@@ -6814,20 +4515,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -6841,8 +4542,8 @@
         "field:#2": "number:#2"
       },
       "query": {
-        "name": 16,
-        "score": 17
+        "name": 6,
+        "score": 7
       }
     },
     {
@@ -6856,10 +4557,10 @@
         ]
       },
       "query": {
-        "name": 16,
+        "name": 6,
         "$or": [
           {
-            "score": 17
+            "score": 7
           }
         ]
       }
@@ -6879,12 +4580,12 @@
         ]
       },
       "query": {
-        "name": 16,
+        "name": 6,
         "$or": [
           {
             "$or": [
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -6912,10 +4613,10 @@
           {
             "$or": [
               {
-                "name": 17
+                "name": 7
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -6941,12 +4642,12 @@
       "query": {
         "$or": [
           {
-            "name": 17
+            "name": 7
           },
           {
             "$or": [
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -6972,12 +4673,12 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           },
           {
             "$or": [
               {
-                "score": 18
+                "score": 8
               }
             ]
           }
@@ -7015,20 +4716,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 18
+                "score": 8
               },
               {
-                "score": 19
+                "score": 9
               }
             ]
           }
@@ -7066,20 +4767,20 @@
           {
             "$or": [
               {
-                "name": 15
+                "name": 5
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 17
+                "score": 7
               },
               {
-                "score": 19
+                "score": 9
               }
             ]
           }
@@ -7105,14 +4806,14 @@
         ]
       },
       "query": {
-        "name": 16,
+        "name": 6,
         "$and": [
           {
             "$or": [
               {
                 "$or": [
                   {
-                    "score": 17
+                    "score": 7
                   }
                 ]
               }
@@ -7152,20 +4853,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -7203,20 +4904,20 @@
           {
             "$or": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -7254,20 +4955,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$or": [
               {
-                "score": 18
+                "score": 8
               },
               {
-                "score": 16
+                "score": 6
               }
             ]
           }
@@ -7305,20 +5006,20 @@
           {
             "$nor": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -7356,20 +5057,20 @@
           {
             "$nor": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
             ]
           }
@@ -7407,20 +5108,20 @@
           {
             "$nor": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 18
+                "score": 8
               },
               {
-                "score": 16
+                "score": 6
               }
             ]
           }
@@ -7458,20 +5159,20 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 18
+                "score": 8
               }
             ]
           }
@@ -7509,20 +5210,20 @@
           {
             "$or": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 18
+                "score": 8
               }
             ]
           }
@@ -7560,143 +5261,21 @@
           {
             "$or": [
               {
-                "name": 16
+                "name": 6
               },
               {
-                "name": 17
+                "name": 7
               }
             ]
           },
           {
             "$nor": [
               {
-                "score": 16
+                "score": 6
               },
               {
-                "score": 17
+                "score": 7
               }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "5d030b56c931ac581713f70397ba118361f7255e9f328beacaedaeed1288eb29",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "$or": [
-          {
-            "$or": "string:#1"
-          }
-        ]
-      },
-      "query": {
-        "rank": 15,
-        "$or": [
-          {
-            "$or": "Enough"
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "05065f14f1c27ae0a792efb644b23bdb45f3d5b4187bd4d64a30ae70f691db7f",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "$or": [
-          {
-            "$or": []
-          }
-        ]
-      },
-      "query": {
-        "rank": 15,
-        "$or": [
-          {
-            "$or": []
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "994e55e02875aec44c90f14107b3e39c904396049800a6cd0204116d875ece25",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "$or": [
-          {
-            "$or": [
-              "string:#1"
-            ]
-          }
-        ]
-      },
-      "query": {
-        "rank": 15,
-        "$or": [
-          {
-            "$or": [
-              "Enough"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "20c0ac163a7971ba5f0af402e549e3b09a6a3d9f68004e9db4242a3abed1b013",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "$nor": [
-          {
-            "$nor": "string:#1"
-          }
-        ]
-      },
-      "query": {
-        "rank": 15,
-        "$nor": [
-          {
-            "$nor": "Enough"
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "73e6768060c6430426d40b3ef43a9974f650934cf2a7f59dd4a35ed9555bb431",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "$nor": [
-          {
-            "$nor": []
-          }
-        ]
-      },
-      "query": {
-        "rank": 15,
-        "$nor": [
-          {
-            "$nor": []
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "cf0288f46701b2d45286111e60fb101a53216b0be594a1441c1f0b9c32998d84",
-      "fingerprint": {
-        "field:#1": "number:#1",
-        "$nor": [
-          {
-            "$nor": [
-              "string:#1"
-            ]
-          }
-        ]
-      },
-      "query": {
-        "rank": 15,
-        "$nor": [
-          {
-            "$nor": [
-              "Enough"
             ]
           }
         ]
@@ -7713,7 +5292,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           {
             "$or": "Enough"
@@ -7732,7 +5311,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           {
             "$or": []
@@ -7753,7 +5332,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           {
             "$or": [
@@ -7774,7 +5353,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           {
             "$nor": "Enough"
@@ -7793,7 +5372,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           {
             "$nor": []
@@ -7814,7 +5393,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           {
             "$nor": [
@@ -7831,7 +5410,7 @@
         "$or": "string:#1"
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": "Enough"
       }
     },
@@ -7842,7 +5421,7 @@
         "$or": []
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": []
       }
     },
@@ -7855,7 +5434,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           "Enough"
         ]
@@ -7872,7 +5451,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           {
             "$or": "Enough"
@@ -7891,7 +5470,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           {
             "$or": []
@@ -7912,7 +5491,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           {
             "$or": [
@@ -7929,7 +5508,7 @@
         "$nor": "string:#1"
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": "Enough"
       }
     },
@@ -7940,7 +5519,7 @@
         "$nor": []
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": []
       }
     },
@@ -7953,7 +5532,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           "Enough"
         ]
@@ -7970,7 +5549,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           {
             "$nor": "Enough"
@@ -7989,7 +5568,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           {
             "$nor": []
@@ -8010,7 +5589,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           {
             "$nor": [
@@ -8027,7 +5606,7 @@
         "$or": "string:#1"
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": "Enough"
       }
     },
@@ -8038,7 +5617,7 @@
         "$or": []
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": []
       }
     },
@@ -8051,7 +5630,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           "Enough"
         ]
@@ -8068,7 +5647,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           {
             "$or": "Enough"
@@ -8087,7 +5666,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           {
             "$or": []
@@ -8108,7 +5687,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           {
             "$or": [
@@ -8125,7 +5704,7 @@
         "$nor": "string:#1"
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": "Enough"
       }
     },
@@ -8136,7 +5715,7 @@
         "$nor": []
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": []
       }
     },
@@ -8149,7 +5728,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           "Enough"
         ]
@@ -8166,7 +5745,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           {
             "$nor": "Enough"
@@ -8185,7 +5764,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           {
             "$nor": []
@@ -8206,7 +5785,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           {
             "$nor": [
@@ -8223,7 +5802,7 @@
         "$or": "string:#1"
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": "Enough"
       }
     },
@@ -8234,7 +5813,7 @@
         "$or": []
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": []
       }
     },
@@ -8247,7 +5826,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           "Enough"
         ]
@@ -8264,7 +5843,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           {
             "$or": "Enough"
@@ -8283,7 +5862,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           {
             "$or": []
@@ -8304,7 +5883,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           {
             "$or": [
@@ -8321,7 +5900,7 @@
         "$nor": "string:#1"
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": "Enough"
       }
     },
@@ -8332,7 +5911,7 @@
         "$nor": []
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": []
       }
     },
@@ -8345,7 +5924,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           "Enough"
         ]
@@ -8362,7 +5941,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           {
             "$nor": "Enough"
@@ -8381,7 +5960,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           {
             "$nor": []
@@ -8402,7 +5981,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           {
             "$nor": [
@@ -8419,7 +5998,7 @@
         "$or": "string:#1"
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": "Enough"
       }
     },
@@ -8430,7 +6009,7 @@
         "$or": []
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": []
       }
     },
@@ -8443,7 +6022,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           "Enough"
         ]
@@ -8460,7 +6039,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           {
             "$or": "Enough"
@@ -8479,7 +6058,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           {
             "$or": []
@@ -8500,7 +6079,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$or": [
           {
             "$or": [
@@ -8517,7 +6096,7 @@
         "$nor": "string:#1"
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": "Enough"
       }
     },
@@ -8528,7 +6107,7 @@
         "$nor": []
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": []
       }
     },
@@ -8541,7 +6120,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           "Enough"
         ]
@@ -8558,7 +6137,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           {
             "$nor": "Enough"
@@ -8577,7 +6156,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           {
             "$nor": []
@@ -8598,7 +6177,7 @@
         ]
       },
       "query": {
-        "rank": 15,
+        "rank": 5,
         "$nor": [
           {
             "$nor": [
@@ -8650,35 +6229,35 @@
       "query": {
         "$or": [
           {
-            "name": 16,
+            "name": 6,
             "$and": [
               {
                 "$or": [
                   {
-                    "name": 17
+                    "name": 7
                   },
                   {
-                    "name": 18
+                    "name": 8
                   }
                 ]
               },
               {
                 "$or": [
                   {
-                    "score": 20
+                    "score": 10
                   }
                 ]
               }
             ]
           },
           {
-            "name": 17,
+            "name": 7,
             "$or": [
               {
-                "name": 18
+                "name": 8
               },
               {
-                "name": 19
+                "name": 9
               }
             ]
           }
@@ -8724,34 +6303,34 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           },
           {
-            "capacity": 16
+            "priority": 6
           },
           {
-            "attempts": 16
+            "capacity": 6
           },
           {
-            "quantity": 16
+            "attempts": 6
           },
           {
-            "size": 16
+            "quantity": 6
           },
           {
-            "index": 16
+            "size": 6
           },
           {
-            "depth": 16
+            "index": 6
           },
           {
-            "weight": 16
+            "depth": 6
           },
           {
-            "height": 16
+            "weight": 6
           },
           {
-            "age": 16
+            "height": 6
           }
         ]
       }
@@ -8771,10 +6350,10 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           },
           {
-            "score": 16
+            "score": 6
           }
         ]
       }
@@ -8797,13 +6376,13 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           },
           {
-            "level": 16
+            "level": 6
           },
           {
-            "score": 16
+            "score": 6
           }
         ]
       }
@@ -8834,18 +6413,18 @@
         "$or": [
           {
             "name": {
-              "$gte": 15
+              "$gte": 5
             },
             "score": {
-              "$gte": 15
+              "$gte": 5
             }
           },
           {
             "name": {
-              "$lte": 26
+              "$lte": 16
             },
             "score": {
-              "$lte": 26
+              "$lte": 16
             }
           }
         ]
@@ -8868,11 +6447,11 @@
       "query": {
         "$or": [
           {
-            "name": 16
+            "name": 6
           },
           {
             "score": {
-              "$gte": 15
+              "$gte": 5
             }
           }
         ]
@@ -8925,7 +6504,7 @@
               "$in": [
                 {}
               ],
-              "$gte": "Hundred"
+              "$gte": "Heavy"
             }
           },
           {
@@ -8984,10 +6563,10 @@
       "query": {
         "$or": [
           {
-            "score": "Few"
+            "age": "Few"
           },
           {
-            "score": {}
+            "age": {}
           }
         ]
       }
@@ -9007,10 +6586,10 @@
       "query": {
         "$or": [
           {
-            "score": {}
+            "age": {}
           },
           {
-            "score": {}
+            "age": {}
           }
         ]
       }
@@ -9036,7 +6615,7 @@
             "$text": {
               "$search": "Heavily"
             },
-            "count": 18
+            "count": 8
           },
           {
             "step": {}
@@ -9066,81 +6645,11 @@
             "$text": {
               "$search": "Heavily"
             },
-            "count": 18,
+            "count": 8,
             "step": "Great"
           },
           {
             "step": {}
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "62f0a81fcc35f9e7ba8e61219a69540ced4bf7477979d6a57418909392320de7",
-      "fingerprint": {
-        "$or": [
-          {
-            "field:#1": {
-              "$in": [
-                "number:#1",
-                "number:#2"
-              ]
-            }
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "scores": {
-              "$in": [
-                21,
-                22
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "805371c906c088bd01986bd0abcf5f8fa73f723639017c5a59f1065b3bb0ba5c",
-      "fingerprint": {
-        "$or": [
-          {
-            "field:#1": {
-              "$in": [
-                "number:#1",
-                "number:#2"
-              ]
-            }
-          },
-          {
-            "field:#2": {
-              "$in": [
-                "number:#1",
-                "number:#2"
-              ]
-            }
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "scores": {
-              "$in": [
-                21,
-                22
-              ]
-            }
-          },
-          {
-            "ratings": {
-              "$in": [
-                21,
-                22
-              ]
-            }
           }
         ]
       }
@@ -9164,8 +6673,8 @@
           {
             "scores": {
               "$in": [
-                21,
-                22
+                29,
+                30
               ]
             }
           }
@@ -9199,16 +6708,16 @@
           {
             "scores": {
               "$in": [
-                21,
-                22
+                29,
+                30
               ]
             }
           },
           {
             "ratings": {
               "$in": [
-                21,
-                22
+                29,
+                30
               ]
             }
           }
@@ -9234,8 +6743,8 @@
           {
             "scores": {
               "$in": [
-                21,
-                22
+                29,
+                30
               ]
             }
           }
@@ -9269,16 +6778,16 @@
           {
             "scores": {
               "$in": [
-                21,
-                22
+                29,
+                30
               ]
             }
           },
           {
             "ratings": {
               "$in": [
-                21,
-                22
+                29,
+                30
               ]
             }
           }
@@ -9304,8 +6813,8 @@
           {
             "scores": {
               "$in": [
-                21,
-                22
+                29,
+                30
               ]
             }
           }
@@ -9339,16 +6848,16 @@
           {
             "scores": {
               "$in": [
-                21,
-                22
+                29,
+                30
               ]
             }
           },
           {
             "ratings": {
               "$in": [
-                21,
-                22
+                29,
+                30
               ]
             }
           }
@@ -9371,8 +6880,8 @@
         "$or": [
           {
             "scores": [
-              22,
-              23
+              30,
+              31
             ]
           }
         ]
@@ -9397,8 +6906,8 @@
           {
             "scores": {
               "$all": [
-                22,
-                23
+                30,
+                31
               ]
             }
           }
@@ -9466,10 +6975,10 @@
       "query": {
         "$or": [
           {
-            "count.grade": 30
+            "level.count": 30
           },
           {
-            "count.step": 30
+            "level.grade": 30
           }
         ]
       }
@@ -9489,101 +6998,10 @@
       "query": {
         "$or": [
           {
-            "counts.priority": 35
+            "counts.step": 35
           },
           {
-            "counts.capacity": 34
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "b150ac9498cdf3d2eec01ba2e24b8ba3fc84969853b5b27b7232809f6df5068f",
-      "fingerprint": {
-        "$or": [
-          {
-            "field:#1": {
-              "$lt": "string:#1"
-            }
-          },
-          {
-            "field:#1": {
-              "$lt": "string:#1",
-              "$gt": "string:#2"
-            }
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "attempts": {
-              "$lt": "Abundant"
-            }
-          },
-          {
-            "attempts": {
-              "$lt": "Abundant",
-              "$gt": "Couple"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "a1f5f63a2b234c466d42d776a9b097026ce95b14ce875db10aba53564d2380ff",
-      "fingerprint": {
-        "$or": [
-          {
-            "field:#1": {
-              "$gte": "number:#1"
-            }
-          },
-          {
-            "field:#2": {
-              "$gte": "number:#1"
-            }
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "quantity": {
-              "$gte": 31
-            }
-          },
-          {
-            "size": {
-              "$gte": 31
-            }
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "4a80b33890f0e2f8f00bab7728eadc1ad137722f5d6662964034657451e94c84",
-      "fingerprint": {
-        "$or": [
-          {
-            "field:#1": {
-              "$near": [
-                "number:#1",
-                "number:#1"
-              ]
-            }
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "index": {
-              "$near": [
-                42,
-                42
-              ]
-            }
+            "counts.priority": 34
           }
         ]
       }
@@ -9689,36 +7107,36 @@
       "query": {
         "$or": [
           {
-            "weight": "Double"
+            "attempts": "Double"
           },
           {
-            "height": {
+            "quantity": {
               "$elemMatch": {
                 "$eq": "Every"
               }
             }
           },
           {
-            "weight": {}
+            "attempts": {}
           },
           {
-            "height": "Few"
+            "quantity": "Few"
           }
         ]
       }
     },
     {
-      "checksum": "4800c928b5414484adba32753988ae2c63ec081460fd4d21dc38c897f0cb606a",
+      "checksum": "a1f5f63a2b234c466d42d776a9b097026ce95b14ce875db10aba53564d2380ff",
       "fingerprint": {
         "$or": [
           {
             "field:#1": {
-              "$eq": {}
+              "$gte": "number:#1"
             }
           },
           {
-            "field:#1": {
-              "$eq": {}
+            "field:#2": {
+              "$gte": "number:#1"
             }
           }
         ]
@@ -9726,13 +7144,40 @@
       "query": {
         "$or": [
           {
-            "score": {
-              "$eq": {}
+            "size": {
+              "$gte": 22
             }
           },
           {
-            "score": {
-              "$eq": {}
+            "index": {
+              "$gte": 22
+            }
+          }
+        ]
+      }
+    },
+    {
+      "checksum": "4a80b33890f0e2f8f00bab7728eadc1ad137722f5d6662964034657451e94c84",
+      "fingerprint": {
+        "$or": [
+          {
+            "field:#1": {
+              "$near": [
+                "number:#1",
+                "number:#1"
+              ]
+            }
+          }
+        ]
+      },
+      "query": {
+        "$or": [
+          {
+            "depth": {
+              "$near": [
+                33,
+                33
+              ]
             }
           }
         ]
@@ -9841,39 +7286,6 @@
     },
     {
       "rank": null,
-      "$or": [
-        {
-          "name": null
-        },
-        {
-          "score": null
-        }
-      ]
-    },
-    {
-      "rank": "value",
-      "$or": [
-        {
-          "name": "value"
-        },
-        {
-          "score": "value"
-        }
-      ]
-    },
-    {
-      "rank": true,
-      "$or": [
-        {
-          "name": true
-        },
-        {
-          "score": true
-        }
-      ]
-    },
-    {
-      "rank": null,
       "$or": "Enough"
     },
     {
@@ -9885,15 +7297,15 @@
       "$or": "Enough"
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$or": null
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$or": 42
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$or": true
     },
     {
@@ -9927,22 +7339,37 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$or": [
         null
       ]
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$or": [
         42
       ]
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$or": [
         true
       ]
+    },
+    {
+      "name": {
+        "$ne": null
+      }
+    },
+    {
+      "name": {
+        "$ne": "value"
+      }
+    },
+    {
+      "name": {
+        "$ne": true
+      }
     },
     {
       "rank": null,
@@ -10005,39 +7432,6 @@
       }
     },
     {
-      "name": {
-        "$ne": null
-      },
-      "score": null
-    },
-    {
-      "name": {
-        "$ne": "value"
-      },
-      "score": "value"
-    },
-    {
-      "name": {
-        "$ne": true
-      },
-      "score": true
-    },
-    {
-      "name": {
-        "$ne": null
-      }
-    },
-    {
-      "name": {
-        "$ne": "value"
-      }
-    },
-    {
-      "name": {
-        "$ne": true
-      }
-    },
-    {
       "rank": null,
       "$nor": "Enough"
     },
@@ -10050,15 +7444,15 @@
       "$nor": "Enough"
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$nor": null
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$nor": 42
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$nor": true
     },
     {
@@ -10092,19 +7486,19 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$nor": [
         null
       ]
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$nor": [
         42
       ]
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$nor": [
         true
       ]
@@ -10131,42 +7525,6 @@
       ]
     },
     {
-      "$nor": [
-        {
-          "name": null
-        }
-      ],
-      "$or": [
-        {
-          "score": null
-        }
-      ]
-    },
-    {
-      "$nor": [
-        {
-          "name": "value"
-        }
-      ],
-      "$or": [
-        {
-          "score": "value"
-        }
-      ]
-    },
-    {
-      "$nor": [
-        {
-          "name": true
-        }
-      ],
-      "$or": [
-        {
-          "score": true
-        }
-      ]
-    },
-    {
       "$or": [
         {
           "name": null
@@ -10197,13 +7555,13 @@
       ]
     },
     {
-      "rank": null
+      "score": null
     },
     {
-      "rank": "value"
+      "score": "value"
     },
     {
-      "rank": true
+      "score": true
     },
     {
       "$or": [
@@ -10247,7 +7605,7 @@
     {
       "$or": [
         {
-          "rank": {
+          "score": {
             "$near": [
               null,
               null
@@ -10262,7 +7620,7 @@
     {
       "$or": [
         {
-          "rank": {
+          "score": {
             "$near": [
               "value",
               "value"
@@ -10277,7 +7635,7 @@
     {
       "$or": [
         {
-          "rank": {
+          "score": {
             "$near": [
               true,
               true
@@ -10297,7 +7655,7 @@
           }
         },
         {
-          "name": 17
+          "name": 7
         }
       ]
     },
@@ -10354,10 +7712,10 @@
           }
         },
         {
-          "name": 16
+          "name": 6
         },
         {
-          "name": 18
+          "name": 8
         }
       ]
     },
@@ -10409,7 +7767,7 @@
     {
       "$or": [
         {
-          "name": 16
+          "name": 6
         },
         {
           "name": {
@@ -10417,7 +7775,7 @@
           }
         },
         {
-          "name": 18
+          "name": 8
         }
       ]
     },
@@ -10469,10 +7827,10 @@
     {
       "$or": [
         {
-          "name": 16
+          "name": 6
         },
         {
-          "name": 18
+          "name": 8
         },
         {
           "name": {
@@ -11170,10 +8528,10 @@
           "$text": {
             "$search": null
           },
-          "count": 18
+          "count": 8
         },
         {
-          "step": 17
+          "step": 7
         }
       ]
     },
@@ -11183,10 +8541,10 @@
           "$text": {
             "$search": 42
           },
-          "count": 18
+          "count": 8
         },
         {
-          "step": 17
+          "step": 7
         }
       ]
     },
@@ -11196,133 +8554,10 @@
           "$text": {
             "$search": true
           },
-          "count": 18
+          "count": 8
         },
         {
-          "step": 17
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "$where": null
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "$where": 42
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "$where": true
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "$where": null
-        },
-        {
-          "$where": null
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "$where": 42
-        },
-        {
-          "$where": 42
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "$where": true
-        },
-        {
-          "$where": true
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "$where": "Heavy"
-        },
-        {
-          "rank": {
-            "$ne": null
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "$where": "Heavy"
-        },
-        {
-          "rank": {
-            "$ne": "value"
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "$where": "Heavy"
-        },
-        {
-          "rank": {
-            "$ne": true
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "$where": null
-        },
-        {
-          "rank": {
-            "$ne": 17
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "$where": 42
-        },
-        {
-          "rank": {
-            "$ne": 17
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "$where": true
-        },
-        {
-          "rank": {
-            "$ne": 17
-          }
+          "step": 7
         }
       ]
     },
@@ -11514,7 +8749,7 @@
           }
         },
         {
-          "score": 16
+          "score": 6
         }
       ]
     },
@@ -11560,1818 +8795,6 @@
         },
         {
           "score": true
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        },
-        {
-          "age": null
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        },
-        {
-          "age": "value"
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
-        },
-        {
-          "age": true
         }
       ]
     },
@@ -13990,7 +9413,7 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$or": [
         {
           "$or": null
@@ -13998,7 +9421,7 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$or": [
         {
           "$or": 42
@@ -14006,7 +9429,7 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$or": [
         {
           "$or": true
@@ -14068,7 +9491,7 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$or": [
         {
           "$or": [
@@ -14078,7 +9501,7 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$or": [
         {
           "$or": [
@@ -14088,7 +9511,7 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$or": [
         {
           "$or": [
@@ -14122,7 +9545,7 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$nor": [
         {
           "$nor": null
@@ -14130,7 +9553,7 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$nor": [
         {
           "$nor": 42
@@ -14138,7 +9561,7 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$nor": [
         {
           "$nor": true
@@ -14200,7 +9623,7 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$nor": [
         {
           "$nor": [
@@ -14210,7 +9633,7 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$nor": [
         {
           "$nor": [
@@ -14220,7 +9643,7 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 5,
       "$nor": [
         {
           "$nor": [
@@ -14346,6 +9769,9 @@
           "name": null
         },
         {
+          "priority": null
+        },
+        {
           "capacity": null
         },
         {
@@ -14368,9 +9794,6 @@
         },
         {
           "height": null
-        },
-        {
-          "age": null
         }
       ]
     },
@@ -14378,6 +9801,9 @@
       "$or": [
         {
           "name": "value"
+        },
+        {
+          "priority": "value"
         },
         {
           "capacity": "value"
@@ -14402,9 +9828,6 @@
         },
         {
           "height": "value"
-        },
-        {
-          "age": "value"
         }
       ]
     },
@@ -14412,6 +9835,9 @@
       "$or": [
         {
           "name": true
+        },
+        {
+          "priority": true
         },
         {
           "capacity": true
@@ -14436,9 +9862,6 @@
         },
         {
           "height": true
-        },
-        {
-          "age": true
         }
       ]
     },
@@ -14582,7 +10005,7 @@
         {
           "name": {
             "$in": "active",
-            "$gte": "Hundred"
+            "$gte": "Heavy"
           }
         },
         {
@@ -14686,30 +10109,30 @@
     {
       "$or": [
         {
-          "score": null
+          "age": null
         },
         {
-          "score": {}
+          "age": {}
         }
       ]
     },
     {
       "$or": [
         {
-          "score": 42
+          "age": 42
         },
         {
-          "score": {}
+          "age": {}
         }
       ]
     },
     {
       "$or": [
         {
-          "score": true
+          "age": true
         },
         {
-          "score": {}
+          "age": {}
         }
       ]
     },
@@ -14758,7 +10181,7 @@
           "$text": {
             "$search": null
           },
-          "count": 18
+          "count": 8
         },
         {
           "step": {}
@@ -14771,7 +10194,7 @@
           "$text": {
             "$search": 42
           },
-          "count": 18
+          "count": 8
         },
         {
           "step": {}
@@ -14784,7 +10207,7 @@
           "$text": {
             "$search": true
           },
-          "count": 18
+          "count": 8
         },
         {
           "step": {}
@@ -14839,7 +10262,7 @@
           "$text": {
             "$search": null
           },
-          "count": 18,
+          "count": 8,
           "step": null
         },
         {
@@ -14853,7 +10276,7 @@
           "$text": {
             "$search": 42
           },
-          "count": 18,
+          "count": 8,
           "step": 42
         },
         {
@@ -14867,7 +10290,7 @@
           "$text": {
             "$search": true
           },
-          "count": 18,
+          "count": 8,
           "step": true
         },
         {
@@ -15141,183 +10564,60 @@
     {
       "$or": [
         {
-          "count.grade": null
+          "level.count": null
         },
         {
-          "count.step": null
+          "level.grade": null
         }
       ]
     },
     {
       "$or": [
         {
-          "count.grade": "value"
+          "level.count": "value"
         },
         {
-          "count.step": "value"
+          "level.grade": "value"
         }
       ]
     },
     {
       "$or": [
         {
-          "count.grade": true
+          "level.count": true
         },
         {
-          "count.step": true
+          "level.grade": true
         }
       ]
     },
     {
       "$or": [
+        {
+          "counts.step": null
+        },
         {
           "counts.priority": null
-        },
-        {
-          "counts.capacity": null
         }
       ]
     },
     {
       "$or": [
+        {
+          "counts.step": "value"
+        },
         {
           "counts.priority": "value"
-        },
-        {
-          "counts.capacity": "value"
         }
       ]
     },
     {
       "$or": [
+        {
+          "counts.step": true
+        },
         {
           "counts.priority": true
-        },
-        {
-          "counts.capacity": true
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "attempts": {
-            "$lt": null
-          }
-        },
-        {
-          "attempts": {
-            "$lt": null,
-            "$gt": null
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "attempts": {
-            "$lt": 42
-          }
-        },
-        {
-          "attempts": {
-            "$lt": 42,
-            "$gt": 42
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "attempts": {
-            "$lt": true
-          }
-        },
-        {
-          "attempts": {
-            "$lt": true,
-            "$gt": true
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "quantity": {
-            "$gte": null
-          }
-        },
-        {
-          "size": {
-            "$gte": null
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "quantity": {
-            "$gte": "value"
-          }
-        },
-        {
-          "size": {
-            "$gte": "value"
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "quantity": {
-            "$gte": true
-          }
-        },
-        {
-          "size": {
-            "$gte": true
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "index": {
-            "$near": [
-              null,
-              null
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "index": {
-            "$near": [
-              "value",
-              "value"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "index": {
-            "$near": [
-              true,
-              true
-            ]
-          }
         }
       ]
     },
@@ -15458,78 +10758,156 @@
     {
       "$or": [
         {
-          "weight": "Double"
+          "attempts": "Double"
         },
         {
-          "height": {
+          "quantity": {
             "$elemMatch": 42
           }
         },
         {
-          "weight": {}
+          "attempts": {}
         },
         {
-          "height": "Few"
+          "quantity": "Few"
         }
       ]
     },
     {
       "$or": [
         {
-          "weight": null
+          "attempts": null
         },
         {
-          "height": {
+          "quantity": {
             "$elemMatch": {
               "$eq": null
             }
           }
         },
         {
-          "weight": {}
+          "attempts": {}
         },
         {
-          "height": null
+          "quantity": null
         }
       ]
     },
     {
       "$or": [
         {
-          "weight": 42
+          "attempts": 42
         },
         {
-          "height": {
+          "quantity": {
             "$elemMatch": {
               "$eq": 42
             }
           }
         },
         {
-          "weight": {}
+          "attempts": {}
         },
         {
-          "height": 42
+          "quantity": 42
         }
       ]
     },
     {
       "$or": [
         {
-          "weight": true
+          "attempts": true
         },
         {
-          "height": {
+          "quantity": {
             "$elemMatch": {
               "$eq": true
             }
           }
         },
         {
-          "weight": {}
+          "attempts": {}
         },
         {
-          "height": true
+          "quantity": true
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "size": {
+            "$gte": null
+          }
+        },
+        {
+          "index": {
+            "$gte": null
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "size": {
+            "$gte": "value"
+          }
+        },
+        {
+          "index": {
+            "$gte": "value"
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "size": {
+            "$gte": true
+          }
+        },
+        {
+          "index": {
+            "$gte": true
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "depth": {
+            "$near": [
+              null,
+              null
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "depth": {
+            "$near": [
+              "value",
+              "value"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "depth": {
+            "$near": [
+              true,
+              true
+            ]
+          }
         }
       ]
     }
@@ -15537,8 +10915,8 @@
   "documents": [
     {
       "_id": 0,
-      "age": 15,
-      "name": 16
+      "age": 5,
+      "name": 6
     },
     {
       "_id": 1,
@@ -15547,17 +10925,17 @@
     {
       "_id": 2,
       "scores": [
-        21,
-        22
+        29,
+        30
       ],
       "ratings": [
-        21,
-        22
+        29,
+        30
       ]
     },
     {
       "_id": 3,
-      "level": 21,
+      "rank": 29,
       "tags": [
         "Abundant",
         "Couple"
@@ -15565,34 +10943,34 @@
     },
     {
       "_id": 4,
-      "count": {
-        "grade": 30,
-        "step": 30
+      "level": {
+        "count": 30,
+        "grade": 30
       }
     },
     {
       "_id": 5,
       "counts": {
-        "priority": 34,
-        "capacity": 34
+        "step": 34,
+        "priority": 34
       }
     },
     {
       "_id": 6,
       "counts": [
         {
-          "priority": 34,
-          "capacity": 34
+          "step": 34,
+          "priority": 34
         },
         {
-          "priority": 35,
-          "capacity": 34
+          "step": 35,
+          "priority": 34
         }
       ]
     },
     {
       "_id": 7,
-      "depth": 25,
+      "capacity": 25,
       "title": [
         "Abundant",
         "Couple"
@@ -15600,43 +10978,8 @@
     },
     {
       "_id": 8,
-      "depth": 26,
+      "capacity": 26,
       "title": "Double"
-    },
-    {
-      "_id": 9,
-      "age": 7,
-      "score": 10,
-      "username": 14
-    },
-    {
-      "_id": 10,
-      "age": 8,
-      "score": 8,
-      "username": [
-        39,
-        49,
-        59,
-        [
-          18
-        ]
-      ]
-    },
-    {
-      "_id": 11,
-      "age": 11,
-      "score": 8,
-      "username": [
-        30,
-        49,
-        20
-      ]
-    },
-    {
-      "_id": 12,
-      "age": 14,
-      "score": null,
-      "username": null
     }
   ],
   "indices": [
@@ -15644,47 +10987,15 @@
       "name": 1
     },
     {
-      "score": 1
-    },
-    {
       "name": 1,
       "score": 1
     },
     {
-      "rank": 1
-    },
-    {
-      "level": 1
-    },
-    {
-      "rank": "2d"
-    },
-    {
-      "name": 1,
-      "level": 1
-    },
-    {
-      "score": 1,
-      "level": 1
-    },
-    {
-      "grade": 1
-    },
-    {
-      "first": 1
-    },
-    {
-      "last": 1
+      "score": "2d"
     },
     {
       "count": 1,
       "grade": "text"
-    },
-    {
-      "step": 1
-    },
-    {
-      "name": -1
     },
     {
       "name": 1,
@@ -15696,76 +11007,13 @@
       "level": 1
     },
     {
-      "score": 1,
-      "name": 1
-    },
-    {
-      "name": -1,
-      "score": 1
-    },
-    {
-      "capacity": 1
-    },
-    {
-      "attempts": 1
-    },
-    {
-      "quantity": 1
-    },
-    {
-      "size": 1
-    },
-    {
-      "index": 1
-    },
-    {
-      "depth": 1
-    },
-    {
-      "weight": 1
-    },
-    {
-      "height": 1
-    },
-    {
-      "age": 1
-    },
-    {
-      "scores": 1
-    },
-    {
-      "ratings": 1
-    },
-    {
-      "scores": 1,
-      "ratings": 1
-    },
-    {
-      "c": 1
-    },
-    {
       "z": "2d"
-    },
-    {
-      "tags": 1
-    },
-    {
-      "count": 1
     },
     {
       "a.b": 1
     },
     {
-      "a.c": 1
-    },
-    {
-      "counts": 1
-    },
-    {
-      "index": "2d"
-    },
-    {
-      "title": 1
+      "depth": "2d"
     }
   ]
 }

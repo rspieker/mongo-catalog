@@ -124,11 +124,6 @@
       }
     },
     {
-      "checksum": "10f03f0292d2bc311003aa61c9e6e4715ed330c35d3798ef655fc1b5a211bb3d",
-      "fingerprint": {},
-      "query": {}
-    },
-    {
       "checksum": "93d6fcc1965ac29d1e30fdf6183d2a4dab8180715fc9785e1f7b6d75efda8e54",
       "fingerprint": {
         "field:#1": {
@@ -160,27 +155,27 @@
       "query": {
         "ratings": {
           "$elemMatch": {
-            "capacity": {
+            "priority": {
               "$ne": 34
             },
             "$or": [
               {
-                "attempts": 35
+                "capacity": 35
               },
               {
-                "attempts": 36
+                "capacity": 36
               }
             ]
           }
         },
         "$or": [
           {
-            "quantity": 37,
-            "size": 38
+            "attempts": 37,
+            "quantity": 38
           },
           {
-            "quantity": 39,
-            "size": 40
+            "attempts": 39,
+            "quantity": 40
           }
         ]
       }
@@ -389,93 +384,93 @@
       },
       "$or": [
         {
-          "quantity": 37,
-          "size": 38
+          "attempts": 37,
+          "quantity": 38
         },
         {
-          "quantity": 39,
-          "size": 40
+          "attempts": 39,
+          "quantity": 40
         }
       ]
     },
     {
       "ratings": {
         "$elemMatch": {
-          "capacity": {
+          "priority": {
             "$ne": null
           },
           "$or": [
             {
-              "attempts": null
+              "capacity": null
             },
             {
-              "attempts": null
+              "capacity": null
             }
           ]
         }
       },
       "$or": [
         {
-          "quantity": null,
-          "size": null
+          "attempts": null,
+          "quantity": null
         },
         {
-          "quantity": null,
-          "size": null
+          "attempts": null,
+          "quantity": null
         }
       ]
     },
     {
       "ratings": {
         "$elemMatch": {
-          "capacity": {
+          "priority": {
             "$ne": "value"
           },
           "$or": [
             {
-              "attempts": "value"
+              "capacity": "value"
             },
             {
-              "attempts": "value"
+              "capacity": "value"
             }
           ]
         }
       },
       "$or": [
         {
-          "quantity": "value",
-          "size": "value"
+          "attempts": "value",
+          "quantity": "value"
         },
         {
-          "quantity": "value",
-          "size": "value"
+          "attempts": "value",
+          "quantity": "value"
         }
       ]
     },
     {
       "ratings": {
         "$elemMatch": {
-          "capacity": {
+          "priority": {
             "$ne": true
           },
           "$or": [
             {
-              "attempts": true
+              "capacity": true
             },
             {
-              "attempts": true
+              "capacity": true
             }
           ]
         }
       },
       "$or": [
         {
-          "quantity": true,
-          "size": true
+          "attempts": true,
+          "quantity": true
         },
         {
-          "quantity": true,
-          "size": true
+          "attempts": true,
+          "quantity": true
         }
       ]
     }
@@ -493,15 +488,15 @@
     },
     {
       "_id": 1,
-      "priority": 33,
+      "step": 33,
       "ratings": [
         {
-          "capacity": 33,
-          "attempts": 35
+          "priority": 33,
+          "capacity": 35
         }
       ],
-      "quantity": 37,
-      "size": 38
+      "attempts": 37,
+      "quantity": 38
     }
   ],
   "indices": [
@@ -514,18 +509,10 @@
       "b.c.f": 1
     },
     {
-      "b.e": 1,
-      "b.c.f": 1
-    },
-    {
-      "capacity": 1,
-      "b.c": 1
-    },
-    {
       "arr.a": 1,
       "arr.b": 1,
-      "quantity": 1,
-      "size": 1
+      "attempts": 1,
+      "quantity": 1
     }
   ]
 }

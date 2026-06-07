@@ -1,38 +1,6 @@
 {
   "queries": [
     {
-      "checksum": "0db63a7f1ca7508a9e8de3788be6f719a855bacf8be5dc1d04fc8c26ce613f31",
-      "fingerprint": {
-        "field:#1": [
-          "number:#1",
-          "number:#2"
-        ]
-      },
-      "query": {
-        "scores": [
-          34,
-          35
-        ]
-      }
-    },
-    {
-      "checksum": "c48b420423f21d4a3e79a16b0c5877474c12baef5a3ac9e4d27f4df771920f04",
-      "fingerprint": {
-        "field:#1": {
-          "$elemMatch": {
-            "index": "string:#1"
-          }
-        }
-      },
-      "query": {
-        "scores": {
-          "$elemMatch": {
-            "0": "Abundant"
-          }
-        }
-      }
-    },
-    {
       "checksum": "4f363fb049b94b721b7e1386e19d9497b5130bded483f2be0db27d60a33619bc",
       "fingerprint": {
         "field:#1": [
@@ -41,34 +9,23 @@
         ]
       },
       "query": {
-        "ratings": [
+        "scores": [
           4,
           5
         ]
       }
     },
     {
-      "checksum": "0ce5d2f6eb07c107fc5efd9c8b922b0bb73141dc0ecaa1df3123271b2f83e86a",
+      "checksum": "9bf8baa18e475b598bf11bfcb26fddc52c5acd5f59b7ff80f2c68043676fadfa",
       "fingerprint": {
-        "field:#1.index": {}
+        "field:#1": {
+          "$gte": "number:#1"
+        }
       },
       "query": {
-        "name.0": {}
-      }
-    },
-    {
-      "checksum": "4f48758f343dc7a4ca9dd4836f1efdb036310b696f79a87ddbf01974ffc50f87",
-      "fingerprint": {
-        "field:#1": [
-          "number:#1",
-          "number:#1"
-        ]
-      },
-      "query": {
-        "name": [
-          14,
-          14
-        ]
+        "age": {
+          "$gte": 6
+        }
       }
     },
     {
@@ -80,29 +37,10 @@
         ]
       },
       "query": {
-        "name": [
-          14,
-          14
+        "ratings": [
+          41,
+          41
         ]
-      }
-    },
-    {
-      "checksum": "9434b1e3102bb9f0d1f9ca66eb9cf8f411b558c68c5a282c7d6676396210f164",
-      "fingerprint": {
-        "field:#1": {
-          "$gte": [
-            "number:#1",
-            "number:#2"
-          ]
-        }
-      },
-      "query": {
-        "name": {
-          "$gte": [
-            10,
-            11
-          ]
-        }
       }
     },
     {
@@ -116,45 +54,11 @@
         }
       },
       "query": {
-        "name": {
+        "ratings": {
           "$gte": [
-            10,
-            11
+            37,
+            38
           ]
-        }
-      }
-    },
-    {
-      "checksum": "8289a585548276f38e367a49dcf82303f97efd22a9556215fe8419f89979c23f",
-      "fingerprint": {
-        "field:#1": {
-          "$gte": "number:#1",
-          "$lte": "number:#2"
-        }
-      },
-      "query": {
-        "name": {
-          "$gte": 12,
-          "$lte": 14
-        }
-      }
-    },
-    {
-      "checksum": "85f29ea643d38365b1149783fa586c73395044618676585eb329b83285c87cf8",
-      "fingerprint": {
-        "field:#1": {
-          "$elemMatch": {
-            "$gte": "number:#1",
-            "$lte": "number:#2"
-          }
-        }
-      },
-      "query": {
-        "name": {
-          "$elemMatch": {
-            "$gte": 12,
-            "$lte": 14
-          }
         }
       }
     },
@@ -167,9 +71,9 @@
         }
       },
       "query": {
-        "name": {
-          "$gte": 12,
-          "$lte": 14
+        "ratings": {
+          "$gte": 39,
+          "$lte": 41
         }
       }
     },
@@ -184,58 +88,11 @@
         }
       },
       "query": {
-        "name": {
+        "ratings": {
           "$elemMatch": {
-            "$gte": 12,
-            "$lte": 14
+            "$gte": 39,
+            "$lte": 41
           }
-        }
-      }
-    },
-    {
-      "checksum": "9f3b24a0124938a3950b20ad322ccf9fbcf0e222d72513c3dc1f406a172f4995",
-      "fingerprint": {
-        "field:#1": {
-          "$elemMatch": {
-            "$not": {
-              "$ne": "number:#1"
-            }
-          }
-        }
-      },
-      "query": {
-        "name": {
-          "$elemMatch": {
-            "$not": {
-              "$ne": 10
-            }
-          }
-        }
-      }
-    },
-    {
-      "checksum": "57aedb6c089206fa834a4db74254ffbfcf300996f84316ee8dc3aa0aaa450485",
-      "fingerprint": {
-        "field:#1": {
-          "$lt": "number:#1"
-        }
-      },
-      "query": {
-        "title": {
-          "$lt": 27
-        }
-      }
-    },
-    {
-      "checksum": "9bf8baa18e475b598bf11bfcb26fddc52c5acd5f59b7ff80f2c68043676fadfa",
-      "fingerprint": {
-        "field:#1": {
-          "$gte": "number:#1"
-        }
-      },
-      "query": {
-        "level": {
-          "$gte": 6
         }
       }
     },
@@ -248,7 +105,7 @@
         ]
       },
       "query": {
-        "grade.step": [
+        "level.count": [
           21,
           21
         ]
@@ -263,54 +120,10 @@
         ]
       },
       "query": {
-        "grade.step": [
+        "level.count": [
           21,
           21
         ]
-      }
-    },
-    {
-      "checksum": "cb22eb1892144606fe99eb4ba6fa7f14e887f9fd16d5e4c8f4346ad2cf5cbe5b",
-      "fingerprint": {
-        "field:#1.index": "number:#1"
-      },
-      "query": {
-        "counts.0": 22
-      }
-    },
-    {
-      "checksum": "ddb3f0641081b74dccaaad4013170b79c07cc9ad03867ac89d3de414e1e7454d",
-      "fingerprint": {
-        "field:#1.index.field:#2": "number:#1"
-      },
-      "query": {
-        "values.0.priority": 39
-      }
-    },
-    {
-      "checksum": "5c89de02bb4967a215d11f4c3f1e300af7e4c36198a25243fa65e0df7002cb5d",
-      "fingerprint": {
-        "field:#1.index": {
-          "$exists": "boolean:#1"
-        }
-      },
-      "query": {
-        "points.0": {
-          "$exists": true
-        }
-      }
-    },
-    {
-      "checksum": "9a5d86617afa562a9b2b0771cc1538f9bf36e609bbb483fe0d021b143144019e",
-      "fingerprint": {
-        "field:#1.index.field:#2": {
-          "$exists": "boolean:#1"
-        }
-      },
-      "query": {
-        "points.0.capacity": {
-          "$exists": true
-        }
       }
     },
     {
@@ -319,72 +132,7 @@
         "field:#1.index": "number:#1"
       },
       "query": {
-        "rankings.0": 33
-      }
-    },
-    {
-      "checksum": "10f03f0292d2bc311003aa61c9e6e4715ed330c35d3798ef655fc1b5a211bb3d",
-      "fingerprint": {},
-      "query": {}
-    },
-    {
-      "checksum": "1c64e83ace07558ed87c60cbf243b85a3b1df3714ef95f37a11102e9696aebde",
-      "fingerprint": {
-        "field:#1.field:#2": "number:#1"
-      },
-      "query": {
-        "indices.quantity": 10
-      }
-    },
-    {
-      "checksum": "2197a3d8bfc9f8f4cfb42719d127aee19e75da2a0036809d5d64dec8410a813a",
-      "fingerprint": {
-        "field:#1": {
-          "field:#2": "number:#1"
-        }
-      },
-      "query": {
-        "indices": {
-          "attempts": 9
-        }
-      }
-    },
-    {
-      "checksum": "f4bb99f0560d181619a8ff319b6a53f91530147b3205e3979e420ed1ea68c48e",
-      "fingerprint": {
-        "field:#1": {
-          "$elemMatch": {
-            "field:#2": "number:#1"
-          }
-        }
-      },
-      "query": {
-        "indices": {
-          "$elemMatch": {
-            "attempts": 9
-          }
-        }
-      }
-    },
-    {
-      "checksum": "565e8d574aef03df1718016371bf0711ac40b065bb1e97d69504b0dc5f80b142",
-      "fingerprint": {
-        "field:#1": {
-          "$elemMatch": {
-            "field:#2": {
-              "$gt": "number:#1"
-            }
-          }
-        }
-      },
-      "query": {
-        "indices": {
-          "$elemMatch": {
-            "attempts": {
-              "$gt": 10
-            }
-          }
-        }
+        "counts.0": 33
       }
     },
     {
@@ -397,9 +145,9 @@
         }
       },
       "query": {
-        "indices": {
+        "values": {
           "$elemMatch": {
-            "attempts": 10
+            "grade": 32
           }
         }
       }
@@ -410,7 +158,7 @@
         "field:#1.field:#2": "number:#1"
       },
       "query": {
-        "indices.attempts": 9
+        "values.grade": 31
       }
     },
     {
@@ -421,8 +169,8 @@
         }
       },
       "query": {
-        "indices.attempts": {
-          "$gt": 9
+        "values.grade": {
+          "$gt": 31
         }
       }
     },
@@ -438,10 +186,10 @@
         }
       },
       "query": {
-        "indices": {
+        "values": {
           "$elemMatch": {
-            "attempts": {
-              "$gt": 10
+            "grade": {
+              "$gt": 32
             }
           }
         }
@@ -460,77 +208,13 @@
         }
       },
       "query": {
-        "indices": {
-          "$ne": 10,
+        "values": {
+          "$ne": 32,
           "$elemMatch": {
-            "attempts": {
-              "$gt": 10
+            "grade": {
+              "$gt": 32
             }
           }
-        }
-      }
-    },
-    {
-      "checksum": "e469d8155d13187494b4e8665beaf57d48582c5b34aaf7287055f6e7ddc03e62",
-      "fingerprint": {
-        "field:#1": {
-          "$elemMatch": {
-            "field:#2": {
-              "$lt": "number:#1"
-            }
-          }
-        }
-      },
-      "query": {
-        "indices": {
-          "$elemMatch": {
-            "attempts": {
-              "$lt": 10
-            }
-          }
-        }
-      }
-    },
-    {
-      "checksum": "061921668f8b8688e09ad3fa849d77bb9b4ed3aca53a61017db9edee7e560ef6",
-      "fingerprint": {
-        "field:#1": {
-          "$all": [
-            {
-              "$elemMatch": {
-                "field:#2": {
-                  "$lt": "number:#1"
-                }
-              }
-            },
-            {
-              "$elemMatch": {
-                "field:#2": {
-                  "$gt": "number:#2"
-                }
-              }
-            }
-          ]
-        }
-      },
-      "query": {
-        "indices": {
-          "$all": [
-            {
-              "$elemMatch": {
-                "attempts": {
-                  "$lt": 12
-                }
-              }
-            },
-            {
-              "$elemMatch": {
-                "attempts": {
-                  "$gt": 13
-                }
-              }
-            }
-          ]
         }
       }
     },
@@ -546,10 +230,10 @@
         }
       },
       "query": {
-        "indices": {
+        "values": {
           "$elemMatch": {
-            "attempts": {
-              "$gt": 12
+            "grade": {
+              "$gt": 34
             }
           }
         }
@@ -567,10 +251,10 @@
         }
       },
       "query": {
-        "indices": {
+        "values": {
           "$elemMatch": {
-            "attempts": {
-              "$lt": 10
+            "grade": {
+              "$lt": 32
             }
           }
         }
@@ -599,74 +283,20 @@
         }
       },
       "query": {
-        "indices": {
+        "values": {
           "$all": [
             {
               "$elemMatch": {
-                "attempts": {
-                  "$lt": 12
+                "grade": {
+                  "$lt": 34
                 }
               }
             },
             {
               "$elemMatch": {
-                "attempts": {
-                  "$gt": 13
+                "grade": {
+                  "$gt": 35
                 }
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "dee95d3cbe05363eb88a3a68bc0db55e869c2e18b65a177226a4602898b61990",
-      "fingerprint": {
-        "field:#1": {
-          "$all": [
-            "number:#1",
-            {
-              "$elemMatch": {
-                "field:#2": "number:#2"
-              }
-            }
-          ]
-        }
-      },
-      "query": {
-        "indices": {
-          "$all": [
-            9,
-            {
-              "$elemMatch": {
-                "attempts": 11
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "169aa3edf913296876936c6dad2964fb87d16b4d1f69a85da089c3964e47fac5",
-      "fingerprint": {
-        "field:#1": {
-          "$all": [
-            {},
-            {
-              "$elemMatch": {
-                "field:#2": "number:#1"
-              }
-            }
-          ]
-        }
-      },
-      "query": {
-        "indices": {
-          "$all": [
-            {},
-            {
-              "$elemMatch": {
-                "attempts": 11
               }
             }
           ]
@@ -688,12 +318,12 @@
         }
       },
       "query": {
-        "indices": {
+        "values": {
           "$all": [
-            9,
+            31,
             {
               "$elemMatch": {
-                "attempts": 11
+                "grade": 33
               }
             }
           ]
@@ -715,84 +345,15 @@
         }
       },
       "query": {
-        "indices": {
+        "values": {
           "$all": [
             {},
             {
               "$elemMatch": {
-                "attempts": 11
+                "grade": 33
               }
             }
           ]
-        }
-      }
-    },
-    {
-      "checksum": "7c15676e6b0d1fee29457fb662777b8be98efe4b83d638cda716ae96169a7cd3",
-      "fingerprint": {
-        "field:#1": {
-          "$elemMatch": {
-            "field:#2": "number:#1",
-            "field:#3": "number:#2"
-          }
-        }
-      },
-      "query": {
-        "indices": {
-          "$elemMatch": {
-            "index": 9,
-            "depth": 10
-          }
-        }
-      }
-    },
-    {
-      "checksum": "dccdb399ec5bead50cc2359809f9ae642474a2a9c62f53b4c66daa19b9b426b8",
-      "fingerprint": {
-        "field:#1": {
-          "$not": {
-            "$elemMatch": {
-              "field:#2": "number:#1",
-              "field:#3": "number:#2"
-            }
-          }
-        }
-      },
-      "query": {
-        "indices": {
-          "$not": {
-            "$elemMatch": {
-              "index": 9,
-              "depth": 10
-            }
-          }
-        }
-      }
-    },
-    {
-      "checksum": "c9235cd473f1a702833571557e7f5f529c30b8fc995e1ca0e51e82ddb4343158",
-      "fingerprint": {
-        "field:#1": {
-          "$not": {
-            "$elemMatch": {
-              "field:#2": {
-                "$ne": "number:#1"
-              },
-              "field:#3": "number:#2"
-            }
-          }
-        }
-      },
-      "query": {
-        "indices": {
-          "$not": {
-            "$elemMatch": {
-              "index": {
-                "$ne": 9
-              },
-              "depth": 11
-            }
-          }
         }
       }
     },
@@ -807,10 +368,10 @@
         }
       },
       "query": {
-        "indices": {
+        "values": {
           "$elemMatch": {
-            "index": 9,
-            "depth": 10
+            "capacity": 31,
+            "attempts": 32
           }
         }
       }
@@ -828,11 +389,11 @@
         }
       },
       "query": {
-        "indices": {
+        "values": {
           "$not": {
             "$elemMatch": {
-              "index": 9,
-              "depth": 10
+              "capacity": 31,
+              "attempts": 32
             }
           }
         }
@@ -853,13 +414,13 @@
         }
       },
       "query": {
-        "indices": {
+        "values": {
           "$not": {
             "$elemMatch": {
-              "index": {
-                "$ne": 9
+              "capacity": {
+                "$ne": 31
               },
-              "depth": 11
+              "attempts": 33
             }
           }
         }
@@ -882,13 +443,13 @@
         }
       },
       "query": {
-        "indices.attempts": 9,
-        "indices": {
+        "values.grade": 31,
+        "values": {
           "$elemMatch": {
-            "index": {
+            "capacity": {
               "$elemMatch": {
-                "depth": {
-                  "$gte": 9
+                "attempts": {
+                  "$gte": 31
                 }
               }
             }
@@ -913,41 +474,16 @@
         }
       },
       "query": {
-        "indices.attempts": 9,
-        "indices": {
+        "values.grade": 31,
+        "values": {
           "$elemMatch": {
-            "index": {
+            "capacity": {
               "$elemMatch": {
-                "depth": {
-                  "$gte": 9
+                "attempts": {
+                  "$gte": 31
                 }
               }
             }
-          }
-        }
-      }
-    },
-    {
-      "checksum": "4ae31521e862f702c73aa949d446d15a95667d2ce2c7ec0b6b3a117185557cae",
-      "fingerprint": {
-        "field:#1": {
-          "$elemMatch": {
-            "field:#2": {
-              "$gte": "number:#1",
-              "$lt": "number:#2"
-            },
-            "field:#3": "number:#3"
-          }
-        }
-      },
-      "query": {
-        "indices": {
-          "$elemMatch": {
-            "index": {
-              "$gte": 10,
-              "$lt": 12
-            },
-            "depth": 33
           }
         }
       }
@@ -966,13 +502,13 @@
         }
       },
       "query": {
-        "indices": {
+        "values": {
           "$elemMatch": {
-            "index": {
-              "$gte": 10,
-              "$lt": 12
+            "capacity": {
+              "$gte": 32,
+              "$lt": 34
             },
-            "depth": 33
+            "attempts": 55
           }
         }
       }
@@ -994,14 +530,14 @@
         }
       },
       "query": {
-        "indices": {
+        "values": {
           "$elemMatch": {
             "$or": [
               {
-                "index": 10
+                "capacity": 32
               },
               {
-                "depth": 10
+                "attempts": 32
               }
             ]
           }
@@ -1025,14 +561,14 @@
         }
       },
       "query": {
-        "indices": {
+        "values": {
           "$elemMatch": {
             "$or": [
               {
-                "index": 10
+                "capacity": 32
               },
               {
-                "depth": 10
+                "attempts": 32
               }
             ]
           }
@@ -1045,7 +581,7 @@
         "field:#1": []
       },
       "query": {
-        "weights": []
+        "points": []
       }
     },
     {
@@ -1058,36 +594,10 @@
         }
       },
       "query": {
-        "weights": {
+        "points": {
           "$in": [
             []
           ]
-        }
-      }
-    },
-    {
-      "checksum": "19745621b434dca882ae80a70a917d3484a4673e1be80a6b5d98f48cb8aaf3ca",
-      "fingerprint": {
-        "field:#1.field:#2": "null:#1"
-      },
-      "query": {
-        "quantities.weight": null
-      }
-    },
-    {
-      "checksum": "09e03f1ffb3a10f33fe2ed6000b5e74a669b990f8a3213609751f85bbb18a466",
-      "fingerprint": {
-        "field:#1": {
-          "$elemMatch": {
-            "field:#2": "null:#1"
-          }
-        }
-      },
-      "query": {
-        "quantities": {
-          "$elemMatch": {
-            "weight": null
-          }
         }
       }
     },
@@ -1097,7 +607,7 @@
         "field:#1.field:#2": "null:#1"
       },
       "query": {
-        "quantities.weight": null
+        "rankings.quantity": null
       }
     },
     {
@@ -1110,9 +620,9 @@
         }
       },
       "query": {
-        "quantities": {
+        "rankings": {
           "$elemMatch": {
-            "weight": null
+            "quantity": null
           }
         }
       }
@@ -1123,7 +633,7 @@
         "field:#1.field:#2": "number:#1"
       },
       "query": {
-        "levels.height": 17
+        "indices.size": 17
       }
     },
     {
@@ -1136,9 +646,9 @@
         }
       },
       "query": {
-        "levels": {
+        "indices": {
           "$elemMatch": {
-            "height": 17
+            "size": 17
           }
         }
       }
@@ -1149,7 +659,7 @@
         "field:#1.field:#2": "null:#1"
       },
       "query": {
-        "levels.height": null
+        "indices.size": null
       }
     },
     {
@@ -1162,36 +672,9 @@
         }
       },
       "query": {
-        "levels": {
+        "indices": {
           "$elemMatch": {
-            "height": null
-          }
-        }
-      }
-    },
-    {
-      "checksum": "24c6256fb53ece8db6fbceeecd7e95cdf9f64b2924ebed2b2ca02fee26bb0b67",
-      "fingerprint": {
-        "field:#1": {
-          "$elemMatch": {
-            "field:#2": {
-              "$elemMatch": {
-                "field:#3": "number:#1",
-                "field:#4": "number:#2"
-              }
-            }
-          }
-        }
-      },
-      "query": {
-        "scores": {
-          "$elemMatch": {
-            "age": {
-              "$elemMatch": {
-                "score": 18,
-                "rank": 19
-              }
-            }
+            "size": null
           }
         }
       }
@@ -1211,12 +694,12 @@
         }
       },
       "query": {
-        "scores": {
+        "weights": {
           "$elemMatch": {
-            "age": {
+            "index": {
               "$elemMatch": {
-                "score": 18,
-                "rank": 19
+                "depth": 3,
+                "weight": 4
               }
             }
           }
@@ -1240,13 +723,13 @@
         }
       },
       "query": {
-        "scores": {
+        "weights": {
           "$elemMatch": {
-            "age": {
+            "index": {
               "$elemMatch": {
-                "score": {
-                  "$gte": 18,
-                  "$lte": 18
+                "depth": {
+                  "$gte": 3,
+                  "$lte": 3
                 }
               }
             }
@@ -1271,13 +754,13 @@
         }
       },
       "query": {
-        "scores": {
+        "weights": {
           "$elemMatch": {
-            "age": {
+            "index": {
               "$elemMatch": {
-                "score": {
-                  "$gte": 18,
-                  "$lte": 18
+                "depth": {
+                  "$gte": 3,
+                  "$lte": 3
                 }
               }
             }
@@ -1304,14 +787,14 @@
         }
       },
       "query": {
-        "scores": {
+        "weights": {
           "$elemMatch": {
-            "age": {
+            "index": {
               "$elemMatch": {
-                "score": {
-                  "$gte": 18,
+                "depth": {
+                  "$gte": 3,
                   "$in": [
-                    19
+                    4
                   ]
                 }
               }
@@ -1339,14 +822,14 @@
         }
       },
       "query": {
-        "scores": {
+        "weights": {
           "$elemMatch": {
-            "age": {
+            "index": {
               "$elemMatch": {
-                "score": {
-                  "$gte": 18,
+                "depth": {
+                  "$gte": 3,
                   "$in": [
-                    19
+                    4
                   ]
                 }
               }
@@ -1378,19 +861,19 @@
         }
       },
       "query": {
-        "scores": {
+        "weights": {
           "$elemMatch": {
-            "rank": {
+            "weight": {
               "$elemMatch": {
-                "level": {
-                  "$lte": 18
+                "height": {
+                  "$lte": 3
                 }
               }
             },
-            "age": {
+            "index": {
               "$elemMatch": {
-                "score": {
-                  "$gte": 18
+                "depth": {
+                  "$gte": 3
                 }
               }
             }
@@ -1421,19 +904,19 @@
         }
       },
       "query": {
-        "scores": {
+        "weights": {
           "$elemMatch": {
-            "rank": {
+            "weight": {
               "$elemMatch": {
-                "level": {
-                  "$lte": 18
+                "height": {
+                  "$lte": 3
                 }
               }
             },
-            "age": {
+            "index": {
               "$elemMatch": {
-                "score": {
-                  "$gte": 18
+                "depth": {
+                  "$gte": 3
                 }
               }
             }
@@ -1456,9 +939,9 @@
         }
       },
       "query": {
-        "ratings": {
+        "quantities": {
           "$elemMatch": {
-            "count.grade": {
+            "age.score": {
               "$elemMatch": {
                 "$gte": 33,
                 "$lte": 33
@@ -1483,52 +966,14 @@
         }
       },
       "query": {
-        "ratings": {
+        "quantities": {
           "$elemMatch": {
-            "count.grade": {
+            "age.score": {
               "$elemMatch": {
                 "$gte": 33,
                 "$lte": 33
               }
             }
-          }
-        }
-      }
-    },
-    {
-      "checksum": "323d4da301dba5d414e857d377a63b038f1748c56f0bd41bfa20feb06b7fae8e",
-      "fingerprint": {
-        "field:#1": {
-          "$elemMatch": {
-            "$gte": {}
-          }
-        }
-      },
-      "query": {
-        "counts": {
-          "$elemMatch": {
-            "$gte": {}
-          }
-        }
-      }
-    },
-    {
-      "checksum": "4c3e55e79a07b39826846df091b3a0a525347f53efca54f2b3024f7fbb19db2b",
-      "fingerprint": {
-        "field:#1": {
-          "$elemMatch": {
-            "$in": [
-              []
-            ]
-          }
-        }
-      },
-      "query": {
-        "values": {
-          "$elemMatch": {
-            "$in": [
-              []
-            ]
           }
         }
       }
@@ -1546,32 +991,11 @@
         }
       },
       "query": {
-        "points": {
+        "levels": {
           "$elemMatch": {
-            "step": {
+            "rank": {
               "$gte": 2,
               "$lte": 2
-            }
-          }
-        }
-      }
-    },
-    {
-      "checksum": "356c38dcc425ac32312b24e9acb41f72dfec65e95e5c2d9930e7a4b2b85b0709",
-      "fingerprint": {
-        "field:#1": {
-          "$elemMatch": {
-            "field:#2": {
-              "$gte": "number:#1"
-            }
-          }
-        }
-      },
-      "query": {
-        "rankings": {
-          "$elemMatch": {
-            "priority": {
-              "$gte": 25
             }
           }
         }
@@ -1589,10 +1013,10 @@
         }
       },
       "query": {
-        "rankings": {
+        "scores": {
           "$elemMatch": {
-            "priority": {
-              "$gte": 25
+            "level": {
+              "$gte": 24
             }
           }
         }
@@ -1608,9 +1032,9 @@
         }
       },
       "query": {
-        "rankings": {
+        "scores": {
           "$elemMatch": {
-            "priority": 25
+            "level": 24
           }
         }
       }
@@ -1636,29 +1060,18 @@
       ]
     },
     {
-      "scores": {
-        "$elemMatch": 42
+      "age": {
+        "$gte": null
       }
     },
     {
-      "scores": {
-        "$elemMatch": {
-          "0": null
-        }
+      "age": {
+        "$gte": "value"
       }
     },
     {
-      "scores": {
-        "$elemMatch": {
-          "0": 42
-        }
-      }
-    },
-    {
-      "scores": {
-        "$elemMatch": {
-          "0": true
-        }
+      "age": {
+        "$gte": true
       }
     },
     {
@@ -1680,25 +1093,7 @@
       ]
     },
     {
-      "name": [
-        null,
-        null
-      ]
-    },
-    {
-      "name": [
-        "value",
-        "value"
-      ]
-    },
-    {
-      "name": [
-        true,
-        true
-      ]
-    },
-    {
-      "name": {
+      "ratings": {
         "$gte": [
           null,
           null
@@ -1706,7 +1101,7 @@
       }
     },
     {
-      "name": {
+      "ratings": {
         "$gte": [
           "value",
           "value"
@@ -1714,7 +1109,7 @@
       }
     },
     {
-      "name": {
+      "ratings": {
         "$gte": [
           true,
           true
@@ -1722,30 +1117,30 @@
       }
     },
     {
-      "name": {
+      "ratings": {
         "$gte": null,
         "$lte": null
       }
     },
     {
-      "name": {
+      "ratings": {
         "$gte": "value",
         "$lte": "value"
       }
     },
     {
-      "name": {
+      "ratings": {
         "$gte": true,
         "$lte": true
       }
     },
     {
-      "name": {
+      "ratings": {
         "$elemMatch": 42
       }
     },
     {
-      "name": {
+      "ratings": {
         "$elemMatch": {
           "$gte": null,
           "$lte": null
@@ -1753,7 +1148,7 @@
       }
     },
     {
-      "name": {
+      "ratings": {
         "$elemMatch": {
           "$gte": "value",
           "$lte": "value"
@@ -1761,7 +1156,7 @@
       }
     },
     {
-      "name": {
+      "ratings": {
         "$elemMatch": {
           "$gte": true,
           "$lte": true
@@ -1769,76 +1164,19 @@
       }
     },
     {
-      "name": {
-        "$elemMatch": {
-          "$not": {
-            "$ne": null
-          }
-        }
-      }
-    },
-    {
-      "name": {
-        "$elemMatch": {
-          "$not": {
-            "$ne": "value"
-          }
-        }
-      }
-    },
-    {
-      "name": {
-        "$elemMatch": {
-          "$not": {
-            "$ne": true
-          }
-        }
-      }
-    },
-    {
-      "title": {
-        "$lt": null
-      }
-    },
-    {
-      "title": {
-        "$lt": "value"
-      }
-    },
-    {
-      "title": {
-        "$lt": true
-      }
-    },
-    {
-      "level": {
-        "$gte": null
-      }
-    },
-    {
-      "level": {
-        "$gte": "value"
-      }
-    },
-    {
-      "level": {
-        "$gte": true
-      }
-    },
-    {
-      "grade.step": [
+      "level.count": [
         null,
         null
       ]
     },
     {
-      "grade.step": [
+      "level.count": [
         "value",
         "value"
       ]
     },
     {
-      "grade.step": [
+      "level.count": [
         true,
         true
       ]
@@ -1853,229 +1191,157 @@
       "counts.0": true
     },
     {
-      "values.0.priority": null
-    },
-    {
-      "values.0.priority": "value"
-    },
-    {
-      "values.0.priority": true
-    },
-    {
-      "points.0": {
-        "$exists": null
-      }
-    },
-    {
-      "points.0": {
-        "$exists": 0
-      }
-    },
-    {
-      "points.0": {
-        "$exists": "yes"
-      }
-    },
-    {
-      "points.0.capacity": {
-        "$exists": null
-      }
-    },
-    {
-      "points.0.capacity": {
-        "$exists": 0
-      }
-    },
-    {
-      "points.0.capacity": {
-        "$exists": "yes"
-      }
-    },
-    {
-      "rankings.0": null
-    },
-    {
-      "rankings.0": "value"
-    },
-    {
-      "rankings.0": true
-    },
-    {
-      "indices.quantity": null
-    },
-    {
-      "indices.quantity": "value"
-    },
-    {
-      "indices.quantity": true
-    },
-    {
-      "indices": {
-        "attempts": null
-      }
-    },
-    {
-      "indices": {
-        "attempts": "value"
-      }
-    },
-    {
-      "indices": {
-        "attempts": true
-      }
-    },
-    {
-      "indices": {
+      "values": {
         "$elemMatch": 42
       }
     },
     {
-      "indices": {
+      "values": {
         "$elemMatch": {
-          "attempts": null
+          "grade": null
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$elemMatch": {
-          "attempts": "value"
+          "grade": "value"
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$elemMatch": {
-          "attempts": true
+          "grade": true
         }
       }
     },
     {
-      "indices": {
-        "$elemMatch": {
-          "attempts": {
-            "$gt": null
-          }
-        }
-      }
+      "values.grade": null
     },
     {
-      "indices": {
-        "$elemMatch": {
-          "attempts": {
-            "$gt": "value"
-          }
-        }
-      }
+      "values.grade": "value"
     },
     {
-      "indices": {
-        "$elemMatch": {
-          "attempts": {
-            "$gt": true
-          }
-        }
-      }
+      "values.grade": true
     },
     {
-      "indices.attempts": null
-    },
-    {
-      "indices.attempts": "value"
-    },
-    {
-      "indices.attempts": true
-    },
-    {
-      "indices.attempts": {
+      "values.grade": {
         "$gt": null
       }
     },
     {
-      "indices.attempts": {
+      "values.grade": {
         "$gt": "value"
       }
     },
     {
-      "indices.attempts": {
+      "values.grade": {
         "$gt": true
       }
     },
     {
-      "indices": {
-        "$ne": 10,
-        "$elemMatch": 42
-      }
-    },
-    {
-      "indices": {
-        "$ne": null,
+      "values": {
         "$elemMatch": {
-          "attempts": {
+          "grade": {
             "$gt": null
           }
         }
       }
     },
     {
-      "indices": {
-        "$ne": "value",
+      "values": {
         "$elemMatch": {
-          "attempts": {
+          "grade": {
             "$gt": "value"
           }
         }
       }
     },
     {
-      "indices": {
-        "$ne": true,
+      "values": {
         "$elemMatch": {
-          "attempts": {
+          "grade": {
             "$gt": true
           }
         }
       }
     },
     {
-      "indices": {
+      "values": {
+        "$ne": 32,
+        "$elemMatch": 42
+      }
+    },
+    {
+      "values": {
+        "$ne": null,
         "$elemMatch": {
-          "attempts": {
+          "grade": {
+            "$gt": null
+          }
+        }
+      }
+    },
+    {
+      "values": {
+        "$ne": "value",
+        "$elemMatch": {
+          "grade": {
+            "$gt": "value"
+          }
+        }
+      }
+    },
+    {
+      "values": {
+        "$ne": true,
+        "$elemMatch": {
+          "grade": {
+            "$gt": true
+          }
+        }
+      }
+    },
+    {
+      "values": {
+        "$elemMatch": {
+          "grade": {
             "$lt": null
           }
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$elemMatch": {
-          "attempts": {
+          "grade": {
             "$lt": "value"
           }
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$elemMatch": {
-          "attempts": {
+          "grade": {
             "$lt": true
           }
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$all": "value"
       }
     },
     {
-      "indices": {
+      "values": {
         "$all": 42
       }
     },
     {
-      "indices": {
+      "values": {
         "$all": [
           {
             "$elemMatch": 42
@@ -2087,18 +1353,18 @@
       }
     },
     {
-      "indices": {
+      "values": {
         "$all": [
           {
             "$elemMatch": {
-              "attempts": {
+              "grade": {
                 "$lt": null
               }
             }
           },
           {
             "$elemMatch": {
-              "attempts": {
+              "grade": {
                 "$gt": null
               }
             }
@@ -2107,18 +1373,18 @@
       }
     },
     {
-      "indices": {
+      "values": {
         "$all": [
           {
             "$elemMatch": {
-              "attempts": {
+              "grade": {
                 "$lt": "value"
               }
             }
           },
           {
             "$elemMatch": {
-              "attempts": {
+              "grade": {
                 "$gt": "value"
               }
             }
@@ -2127,18 +1393,18 @@
       }
     },
     {
-      "indices": {
+      "values": {
         "$all": [
           {
             "$elemMatch": {
-              "attempts": {
+              "grade": {
                 "$lt": true
               }
             }
           },
           {
             "$elemMatch": {
-              "attempts": {
+              "grade": {
                 "$gt": true
               }
             }
@@ -2147,9 +1413,9 @@
       }
     },
     {
-      "indices": {
+      "values": {
         "$all": [
-          9,
+          31,
           {
             "$elemMatch": 42
           }
@@ -2157,43 +1423,43 @@
       }
     },
     {
-      "indices": {
+      "values": {
         "$all": [
           null,
           {
             "$elemMatch": {
-              "attempts": null
+              "grade": null
             }
           }
         ]
       }
     },
     {
-      "indices": {
+      "values": {
         "$all": [
           "value",
           {
             "$elemMatch": {
-              "attempts": "value"
+              "grade": "value"
             }
           }
         ]
       }
     },
     {
-      "indices": {
+      "values": {
         "$all": [
           true,
           {
             "$elemMatch": {
-              "attempts": true
+              "grade": true
             }
           }
         ]
       }
     },
     {
-      "indices": {
+      "values": {
         "$all": [
           {},
           {
@@ -2203,151 +1469,151 @@
       }
     },
     {
-      "indices": {
+      "values": {
         "$all": [
           {},
           {
             "$elemMatch": {
-              "attempts": null
+              "grade": null
             }
           }
         ]
       }
     },
     {
-      "indices": {
+      "values": {
         "$all": [
           {},
           {
             "$elemMatch": {
-              "attempts": "value"
+              "grade": "value"
             }
           }
         ]
       }
     },
     {
-      "indices": {
+      "values": {
         "$all": [
           {},
           {
             "$elemMatch": {
-              "attempts": true
+              "grade": true
             }
           }
         ]
       }
     },
     {
-      "indices": {
+      "values": {
         "$elemMatch": {
-          "index": null,
-          "depth": null
+          "capacity": null,
+          "attempts": null
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$elemMatch": {
-          "index": "value",
-          "depth": "value"
+          "capacity": "value",
+          "attempts": "value"
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$elemMatch": {
-          "index": true,
-          "depth": true
+          "capacity": true,
+          "attempts": true
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$not": {
           "$elemMatch": 42
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$not": {
           "$elemMatch": {
-            "index": null,
-            "depth": null
+            "capacity": null,
+            "attempts": null
           }
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$not": {
           "$elemMatch": {
-            "index": "value",
-            "depth": "value"
+            "capacity": "value",
+            "attempts": "value"
           }
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$not": {
           "$elemMatch": {
-            "index": true,
-            "depth": true
+            "capacity": true,
+            "attempts": true
           }
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$not": {
           "$elemMatch": {
-            "index": {
+            "capacity": {
               "$ne": null
             },
-            "depth": null
+            "attempts": null
           }
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$not": {
           "$elemMatch": {
-            "index": {
+            "capacity": {
               "$ne": "value"
             },
-            "depth": "value"
+            "attempts": "value"
           }
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$not": {
           "$elemMatch": {
-            "index": {
+            "capacity": {
               "$ne": true
             },
-            "depth": true
+            "attempts": true
           }
         }
       }
     },
     {
-      "indices.attempts": 9,
-      "indices": {
+      "values.grade": 31,
+      "values": {
         "$elemMatch": 42
       }
     },
     {
-      "indices.attempts": null,
-      "indices": {
+      "values.grade": null,
+      "values": {
         "$elemMatch": {
-          "index": {
+          "capacity": {
             "$elemMatch": {
-              "depth": {
+              "attempts": {
                 "$gte": null
               }
             }
@@ -2356,12 +1622,12 @@
       }
     },
     {
-      "indices.attempts": "value",
-      "indices": {
+      "values.grade": "value",
+      "values": {
         "$elemMatch": {
-          "index": {
+          "capacity": {
             "$elemMatch": {
-              "depth": {
+              "attempts": {
                 "$gte": "value"
               }
             }
@@ -2370,12 +1636,12 @@
       }
     },
     {
-      "indices.attempts": true,
-      "indices": {
+      "values.grade": true,
+      "values": {
         "$elemMatch": {
-          "index": {
+          "capacity": {
             "$elemMatch": {
-              "depth": {
+              "attempts": {
                 "$gte": true
               }
             }
@@ -2384,157 +1650,162 @@
       }
     },
     {
-      "indices": {
+      "values": {
         "$elemMatch": {
-          "index": {
+          "capacity": {
             "$gte": null,
             "$lt": null
           },
-          "depth": null
+          "attempts": null
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$elemMatch": {
-          "index": {
+          "capacity": {
             "$gte": "value",
             "$lt": "value"
           },
-          "depth": "value"
+          "attempts": "value"
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$elemMatch": {
-          "index": {
+          "capacity": {
             "$gte": true,
             "$lt": true
           },
-          "depth": true
+          "attempts": true
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$elemMatch": {
           "$or": [
             {
-              "index": null
+              "capacity": null
             },
             {
-              "depth": null
+              "attempts": null
             }
           ]
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$elemMatch": {
           "$or": [
             {
-              "index": "value"
+              "capacity": "value"
             },
             {
-              "depth": "value"
+              "attempts": "value"
             }
           ]
         }
       }
     },
     {
-      "indices": {
+      "values": {
         "$elemMatch": {
           "$or": [
             {
-              "index": true
+              "capacity": true
             },
             {
-              "depth": true
+              "attempts": true
             }
           ]
+        }
+      }
+    },
+    {
+      "points": {
+        "$in": "active"
+      }
+    },
+    {
+      "rankings": {
+        "$elemMatch": 42
+      }
+    },
+    {
+      "indices.size": "value"
+    },
+    {
+      "indices.size": true
+    },
+    {
+      "indices": {
+        "$elemMatch": 42
+      }
+    },
+    {
+      "indices": {
+        "$elemMatch": {
+          "size": "value"
+        }
+      }
+    },
+    {
+      "indices": {
+        "$elemMatch": {
+          "size": true
         }
       }
     },
     {
       "weights": {
-        "$in": "active"
-      }
-    },
-    {
-      "quantities": {
         "$elemMatch": 42
       }
     },
     {
-      "levels.height": "value"
-    },
-    {
-      "levels.height": true
-    },
-    {
-      "levels": {
-        "$elemMatch": 42
-      }
-    },
-    {
-      "levels": {
+      "weights": {
         "$elemMatch": {
-          "height": "value"
-        }
-      }
-    },
-    {
-      "levels": {
-        "$elemMatch": {
-          "height": true
-        }
-      }
-    },
-    {
-      "scores": {
-        "$elemMatch": {
-          "age": {
+          "index": {
             "$elemMatch": {
-              "score": null,
-              "rank": null
+              "depth": null,
+              "weight": null
             }
           }
         }
       }
     },
     {
-      "scores": {
+      "weights": {
         "$elemMatch": {
-          "age": {
+          "index": {
             "$elemMatch": {
-              "score": "value",
-              "rank": "value"
+              "depth": "value",
+              "weight": "value"
             }
           }
         }
       }
     },
     {
-      "scores": {
+      "weights": {
         "$elemMatch": {
-          "age": {
+          "index": {
             "$elemMatch": {
-              "score": true,
-              "rank": true
+              "depth": true,
+              "weight": true
             }
           }
         }
       }
     },
     {
-      "scores": {
+      "weights": {
         "$elemMatch": {
-          "age": {
+          "index": {
             "$elemMatch": {
-              "score": {
+              "depth": {
                 "$gte": null,
                 "$lte": null
               }
@@ -2544,11 +1815,11 @@
       }
     },
     {
-      "scores": {
+      "weights": {
         "$elemMatch": {
-          "age": {
+          "index": {
             "$elemMatch": {
-              "score": {
+              "depth": {
                 "$gte": "value",
                 "$lte": "value"
               }
@@ -2558,11 +1829,11 @@
       }
     },
     {
-      "scores": {
+      "weights": {
         "$elemMatch": {
-          "age": {
+          "index": {
             "$elemMatch": {
-              "score": {
+              "depth": {
                 "$gte": true,
                 "$lte": true
               }
@@ -2572,12 +1843,12 @@
       }
     },
     {
-      "scores": {
+      "weights": {
         "$elemMatch": {
-          "age": {
+          "index": {
             "$elemMatch": {
-              "score": {
-                "$gte": 18,
+              "depth": {
+                "$gte": 3,
                 "$in": "active"
               }
             }
@@ -2586,11 +1857,11 @@
       }
     },
     {
-      "scores": {
+      "weights": {
         "$elemMatch": {
-          "age": {
+          "index": {
             "$elemMatch": {
-              "score": {
+              "depth": {
                 "$gte": null,
                 "$in": [
                   null
@@ -2602,11 +1873,11 @@
       }
     },
     {
-      "scores": {
+      "weights": {
         "$elemMatch": {
-          "age": {
+          "index": {
             "$elemMatch": {
-              "score": {
+              "depth": {
                 "$gte": "value",
                 "$in": [
                   "value"
@@ -2618,11 +1889,11 @@
       }
     },
     {
-      "scores": {
+      "weights": {
         "$elemMatch": {
-          "age": {
+          "index": {
             "$elemMatch": {
-              "score": {
+              "depth": {
                 "$gte": true,
                 "$in": [
                   true
@@ -2634,18 +1905,18 @@
       }
     },
     {
-      "scores": {
+      "weights": {
         "$elemMatch": {
-          "rank": {
+          "weight": {
             "$elemMatch": {
-              "level": {
+              "height": {
                 "$lte": null
               }
             }
           },
-          "age": {
+          "index": {
             "$elemMatch": {
-              "score": {
+              "depth": {
                 "$gte": null
               }
             }
@@ -2654,18 +1925,18 @@
       }
     },
     {
-      "scores": {
+      "weights": {
         "$elemMatch": {
-          "rank": {
+          "weight": {
             "$elemMatch": {
-              "level": {
+              "height": {
                 "$lte": "value"
               }
             }
           },
-          "age": {
+          "index": {
             "$elemMatch": {
-              "score": {
+              "depth": {
                 "$gte": "value"
               }
             }
@@ -2674,18 +1945,18 @@
       }
     },
     {
-      "scores": {
+      "weights": {
         "$elemMatch": {
-          "rank": {
+          "weight": {
             "$elemMatch": {
-              "level": {
+              "height": {
                 "$lte": true
               }
             }
           },
-          "age": {
+          "index": {
             "$elemMatch": {
-              "score": {
+              "depth": {
                 "$gte": true
               }
             }
@@ -2694,14 +1965,14 @@
       }
     },
     {
-      "ratings": {
+      "quantities": {
         "$elemMatch": 42
       }
     },
     {
-      "ratings": {
+      "quantities": {
         "$elemMatch": {
-          "count.grade": {
+          "age.score": {
             "$elemMatch": {
               "$gte": null,
               "$lte": null
@@ -2711,9 +1982,9 @@
       }
     },
     {
-      "ratings": {
+      "quantities": {
         "$elemMatch": {
-          "count.grade": {
+          "age.score": {
             "$elemMatch": {
               "$gte": "value",
               "$lte": "value"
@@ -2723,9 +1994,9 @@
       }
     },
     {
-      "ratings": {
+      "quantities": {
         "$elemMatch": {
-          "count.grade": {
+          "age.score": {
             "$elemMatch": {
               "$gte": true,
               "$lte": true
@@ -2735,31 +2006,14 @@
       }
     },
     {
-      "counts": {
+      "levels": {
         "$elemMatch": 42
       }
     },
     {
-      "values": {
-        "$elemMatch": 42
-      }
-    },
-    {
-      "values": {
+      "levels": {
         "$elemMatch": {
-          "$in": "active"
-        }
-      }
-    },
-    {
-      "points": {
-        "$elemMatch": 42
-      }
-    },
-    {
-      "points": {
-        "$elemMatch": {
-          "step": {
+          "rank": {
             "$gte": null,
             "$lte": null
           }
@@ -2767,9 +2021,9 @@
       }
     },
     {
-      "points": {
+      "levels": {
         "$elemMatch": {
-          "step": {
+          "rank": {
             "$gte": "value",
             "$lte": "value"
           }
@@ -2777,9 +2031,9 @@
       }
     },
     {
-      "points": {
+      "levels": {
         "$elemMatch": {
-          "step": {
+          "rank": {
             "$gte": true,
             "$lte": true
           }
@@ -2787,55 +2041,55 @@
       }
     },
     {
-      "rankings": {
+      "scores": {
         "$elemMatch": 42
       }
     },
     {
-      "rankings": {
+      "scores": {
         "$elemMatch": {
-          "priority": {
+          "level": {
             "$gte": null
           }
         }
       }
     },
     {
-      "rankings": {
+      "scores": {
         "$elemMatch": {
-          "priority": {
+          "level": {
             "$gte": "value"
           }
         }
       }
     },
     {
-      "rankings": {
+      "scores": {
         "$elemMatch": {
-          "priority": {
+          "level": {
             "$gte": true
           }
         }
       }
     },
     {
-      "rankings": {
+      "scores": {
         "$elemMatch": {
-          "priority": null
+          "level": null
         }
       }
     },
     {
-      "rankings": {
+      "scores": {
         "$elemMatch": {
-          "priority": "value"
+          "level": "value"
         }
       }
     },
     {
-      "rankings": {
+      "scores": {
         "$elemMatch": {
-          "priority": true
+          "level": true
         }
       }
     }
@@ -2845,281 +2099,98 @@
       "_id": 0,
       "scores": [
         [
-          34,
-          35
-        ]
-      ]
-    },
-    {
-      "_id": 1,
-      "scores": [
-        [
-          "Abundant"
-        ]
-      ]
-    },
-    {
-      "_id": 2,
-      "ratings": [
-        [
           4,
           5
         ]
       ]
     },
     {
-      "_id": 3,
-      "ratings": [
+      "_id": 1,
+      "scores": [
         4,
         5
       ]
     },
     {
-      "_id": 4,
-      "age": 9,
-      "name": [
-        "Abundant",
-        "Couple",
-        "Double"
-      ]
-    },
-    {
-      "_id": 5,
-      "age": 10,
-      "name": [
-        14,
-        14
-      ]
-    },
-    {
-      "_id": 6,
-      "score": 25,
-      "title": [
-        26,
-        27
-      ]
-    },
-    {
-      "_id": 7,
-      "score": 28,
-      "title": {
-        "rank": 30
-      }
-    },
-    {
-      "_id": 8,
-      "score": 29,
-      "title": [
-        {
-          "rank": 32
-        }
-      ]
-    },
-    {
-      "_id": 9,
-      "score": 30,
-      "title": [
-        true,
-        false
-      ]
-    },
-    {
-      "_id": 10,
-      "score": 31,
-      "title": 27
-    },
-    {
-      "_id": 11,
+      "_id": 2,
       "score": 37,
-      "title": [
-        26,
-        true
+      "ratings": [
+        41,
+        41
       ]
     },
     {
-      "_id": 12,
-      "score": 38,
-      "title": [
-        true,
-        26
-      ]
-    },
-    {
-      "_id": 13,
-      "score": 40,
-      "title": [
-        null
-      ]
-    },
-    {
-      "_id": 14,
-      "score": 41,
-      "title": {}
-    },
-    {
-      "_id": 15,
-      "score": 42,
-      "title": [
-        {}
-      ]
-    },
-    {
-      "_id": 16,
-      "score": 43,
-      "title": [
-        {},
-        28
-      ]
-    },
-    {
-      "_id": 17,
-      "score": 44,
-      "title": [
-        28,
-        {}
-      ]
-    },
-    {
-      "_id": 18,
-      "score": 49,
-      "title": true
-    },
-    {
-      "_id": 19,
-      "count": 17,
-      "grade": {
-        "step": [
+      "_id": 3,
+      "rank": 17,
+      "level": {
+        "count": [
           21,
           21
         ]
       }
     },
     {
-      "_id": 20,
-      "counts": [
-        {
-          "0": 22
-        },
-        23
-      ]
-    },
-    {
-      "_id": 21,
-      "values": [
-        {
-          "0": 39
-        },
-        40
-      ]
-    },
-    {
-      "_id": 22,
-      "values": [
-        {
-          "0": {
-            "priority": 39
-          }
-        },
-        {
-          "priority": 40
-        }
-      ]
-    },
-    {
-      "_id": 23,
-      "points": [
-        {
-          "0": 14
-        },
-        15
-      ]
-    },
-    {
-      "_id": 24,
-      "points": [
-        {
-          "0": {
-            "capacity": 14
-          }
-        },
-        {
-          "capacity": 15
-        }
-      ]
-    },
-    {
-      "_id": 25,
-      "points": [
-        {
-          "0": {
-            "capacity": 14
-          }
-        },
-        {}
-      ]
-    },
-    {
-      "_id": 26,
-      "rankings": {
+      "_id": 4,
+      "counts": {
         "0": 33
       }
     },
     {
-      "_id": 27,
-      "rankings": [
+      "_id": 5,
+      "counts": [
         33
       ]
     },
     {
-      "_id": 28,
-      "indices": [
+      "_id": 6,
+      "values": [
         {
-          "attempts": 9
+          "grade": 31
         }
       ]
     },
     {
-      "_id": 29,
-      "weights": []
+      "_id": 7,
+      "points": []
     },
     {
-      "_id": 30,
-      "quantities": [
+      "_id": 8,
+      "rankings": [
         {},
         {
-          "weight": 6
+          "quantity": 26
         }
       ]
     },
     {
-      "_id": 31,
-      "levels": [
+      "_id": 9,
+      "indices": [
         21,
         {
-          "height": 17
+          "size": 17
         }
       ]
     },
     {
-      "_id": 32,
-      "scores": [
+      "_id": 10,
+      "weights": [
         {
-          "age": [
+          "index": [
             {
-              "score": 18,
-              "rank": 19
+              "depth": 3,
+              "weight": 4
             }
           ]
         }
       ]
     },
     {
-      "_id": 33,
-      "ratings": [
+      "_id": 11,
+      "quantities": [
         {
-          "count": [
+          "age": [
             {
-              "grade": [
+              "score": [
                 33
               ]
             }
@@ -3128,22 +2199,10 @@
       ]
     },
     {
-      "_id": 34,
-      "counts": [
-        {}
-      ]
-    },
-    {
-      "_id": 35,
-      "values": [
-        []
-      ]
-    },
-    {
-      "_id": 36,
-      "points": [
+      "_id": 12,
+      "levels": [
         {
-          "step": [
+          "rank": [
             1,
             3
           ]
@@ -3151,44 +2210,29 @@
       ]
     },
     {
-      "_id": 37,
-      "rankings": [
+      "_id": 13,
+      "scores": [
         {
-          "priority": 25
+          "level": 24
         }
       ]
     },
     {
-      "_id": 38,
-      "rankings": {
-        "priority": 25
+      "_id": 14,
+      "scores": {
+        "level": 24
       }
     }
   ],
   "indices": [
     {
-      "ratings": 1
-    },
-    {
-      "name": 1
-    },
-    {
-      "level": 1
-    },
-    {
-      "grade": 1
+      "scores": 1
     },
     {
       "a.0": 1
     },
     {
       "a.x": 1
-    },
-    {
-      "indices": 1
-    },
-    {
-      "a.b": 1
     },
     {
       "a.b.c": 1
@@ -3204,18 +2248,6 @@
     {
       "a.b": 1,
       "a.c": 1
-    },
-    {
-      "a.c": 1
-    },
-    {
-      "weights": 1
-    },
-    {
-      "points": 1
-    },
-    {
-      "rankings": 1
     }
   ]
 }

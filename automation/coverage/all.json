@@ -1,61 +1,6 @@
 {
   "queries": [
     {
-      "checksum": "62868ba513ed21b6370bda044a0e6f9cc19b16f892d65aa6877777e793ee7ac5",
-      "fingerprint": {
-        "field:#1": {
-          "$all": [
-            "number:#1"
-          ]
-        }
-      },
-      "query": {
-        "scores": {
-          "$all": [
-            27
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "dea19262aeff04a1f977e783e1013868219b8f3c2fc131cd369479422d48b0d9",
-      "fingerprint": {
-        "field:#1": {
-          "$all": [
-            "number:#1",
-            "number:#2"
-          ]
-        }
-      },
-      "query": {
-        "scores": {
-          "$all": [
-            27,
-            28
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "893eed4a5f488e96aba05bad64381e1917a6727488ddd89d43df6711cf99d66b",
-      "fingerprint": {
-        "field:#1": {
-          "$all": [
-            "number:#1",
-            "number:#1"
-          ]
-        }
-      },
-      "query": {
-        "scores": {
-          "$all": [
-            28,
-            28
-          ]
-        }
-      }
-    },
-    {
       "checksum": "7fd1b2d55fbc3877382615ba48cde037c98df1238e0a5cfe3df7b28a8a39df6a",
       "fingerprint": {
         "field:#1": {
@@ -67,7 +12,7 @@
       "query": {
         "scores": {
           "$all": [
-            27
+            15
           ]
         }
       }
@@ -85,8 +30,8 @@
       "query": {
         "scores": {
           "$all": [
-            27,
-            28
+            15,
+            16
           ]
         }
       }
@@ -104,25 +49,8 @@
       "query": {
         "scores": {
           "$all": [
-            28,
-            28
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "a4b15d8c4dbdfe712c88bc0ec4daca559c751107470c8b5886ec0b54bc233263",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$all": [
-            "number:#1"
-          ]
-        }
-      },
-      "query": {
-        "ratings.age": {
-          "$all": [
-            29
+            16,
+            16
           ]
         }
       }
@@ -139,40 +67,8 @@
       "query": {
         "ratings.age": {
           "$all": [
-            29
+            17
           ]
-        }
-      }
-    },
-    {
-      "checksum": "8e9241b2286fc1edf0e6e53562dd3a6e6adf77476c4feeb30c8b9bc9b96ea1bc",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$all": [
-            "number:#1",
-            "number:#2"
-          ]
-        }
-      },
-      "query": {
-        "counts.score": {
-          "$all": [
-            37,
-            47
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "df4949479e77539757cac451ae17528cd5218a701ef8c0a680ada4929d623938",
-      "fingerprint": {
-        "field:#1": {
-          "$all": []
-        }
-      },
-      "query": {
-        "counts": {
-          "$all": []
         }
       }
     },
@@ -189,8 +85,8 @@
       "query": {
         "counts.score": {
           "$all": [
-            37,
-            47
+            43,
+            53
           ]
         }
       }
@@ -209,42 +105,6 @@
       }
     },
     {
-      "checksum": "ed07f137a544d6d7e617a775245286e9a5d034f45758ea2467d12400259ddd0e",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$in": [
-            "number:#1"
-          ]
-        }
-      },
-      "query": {
-        "values.rank": {
-          "$in": [
-            38
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "47a243f3494db12baa2c78f2a2385ab5bc636e3848ebe3bf4b97442fd12d7de9",
-      "fingerprint": {
-        "field:#1.field:#2": {
-          "$in": [
-            "number:#1",
-            "number:#2"
-          ]
-        }
-      },
-      "query": {
-        "values.rank": {
-          "$in": [
-            38,
-            39
-          ]
-        }
-      }
-    },
-    {
       "checksum": "4bf3b74fa748c9c8618f1964886618479c8c3dc947dd9a275fa0c48f1bab2ea6",
       "fingerprint": {
         "field:#1.field:#2": {
@@ -256,7 +116,7 @@
       "query": {
         "values.rank": {
           "$in": [
-            38
+            20
           ]
         }
       }
@@ -274,8 +134,8 @@
       "query": {
         "values.rank": {
           "$in": [
-            38,
-            39
+            20,
+            21
           ]
         }
       }
@@ -293,8 +153,8 @@
       "query": {
         "values.rank": {
           "$all": [
-            38,
-            39
+            20,
+            21
           ]
         }
       }
@@ -444,151 +304,6 @@
             "Abundant",
             "Each"
           ]
-        }
-      }
-    },
-    {
-      "checksum": "0e960b976fb1f3198c656c2d46bf91f48250b52a265afd0e369cd307382ee3cc",
-      "fingerprint": {
-        "field:#1": {
-          "$all": [
-            "null:#1"
-          ]
-        }
-      },
-      "query": {
-        "level": {
-          "$all": [
-            null
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "cd4442e3d1066acf7e48cf0da5cf6486ab99356c6a2140f31cf3edeca92eaa5a",
-      "fingerprint": {
-        "field:#1": {
-          "$not": {
-            "$all": [
-              "null:#1"
-            ]
-          }
-        }
-      },
-      "query": {
-        "level": {
-          "$not": {
-            "$all": [
-              null
-            ]
-          }
-        }
-      }
-    },
-    {
-      "checksum": "3a730cd5f2f03fe8fe5c84362d7b9b9dac286dbf6b146b245656dc0473a64db5",
-      "fingerprint": {
-        "field:#1": {
-          "$all": [
-            {
-              "$elemMatch": {
-                "field:#2": "null:#1"
-              }
-            }
-          ]
-        }
-      },
-      "query": {
-        "count": {
-          "$all": [
-            {
-              "$elemMatch": {
-                "grade": null
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "33a9b1c18bc1203b6a13c3fdfa4c35798a1a540a516f01e81e37cfc244ae4b18",
-      "fingerprint": {
-        "field:#1": {
-          "$all": [
-            [
-              "number:#1",
-              "number:#2"
-            ]
-          ]
-        }
-      },
-      "query": {
-        "name": {
-          "$all": [
-            [
-              17,
-              18
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "f3b3e9507dabb0db099d5b9e2439a38e1bb7dfc94a1299f022a3e610a6b6b4a3",
-      "fingerprint": {
-        "field:#1": {
-          "$all": [
-            []
-          ]
-        }
-      },
-      "query": {
-        "title": {
-          "$all": [
-            []
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "3d78d4afd053ee6067112cb85348871fc65442e58ca0f4ca8a2ab23b6193cde1",
-      "fingerprint": {
-        "field:#1": {
-          "$all": [
-            {
-              "$elemMatch": {
-                "field:#2": "number:#1"
-              }
-            }
-          ]
-        }
-      },
-      "query": {
-        "step": {
-          "$all": [
-            {
-              "$elemMatch": {
-                "priority": 13
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "checksum": "09e03f1ffb3a10f33fe2ed6000b5e74a669b990f8a3213609751f85bbb18a466",
-      "fingerprint": {
-        "field:#1": {
-          "$elemMatch": {
-            "field:#2": "null:#1"
-          }
-        }
-      },
-      "query": {
-        "rankings": {
-          "$elemMatch": {
-            "capacity": null
-          }
         }
       }
     }
@@ -925,165 +640,15 @@
           true
         ]
       }
-    },
-    {
-      "level": {
-        "$all": "value"
-      }
-    },
-    {
-      "level": {
-        "$all": 42
-      }
-    },
-    {
-      "level": {
-        "$not": {
-          "$all": "value"
-        }
-      }
-    },
-    {
-      "level": {
-        "$not": {
-          "$all": 42
-        }
-      }
-    },
-    {
-      "count": {
-        "$all": "value"
-      }
-    },
-    {
-      "count": {
-        "$all": 42
-      }
-    },
-    {
-      "count": {
-        "$all": [
-          {
-            "$elemMatch": 42
-          }
-        ]
-      }
-    },
-    {
-      "name": {
-        "$all": "value"
-      }
-    },
-    {
-      "name": {
-        "$all": 42
-      }
-    },
-    {
-      "name": {
-        "$all": [
-          [
-            null,
-            null
-          ]
-        ]
-      }
-    },
-    {
-      "name": {
-        "$all": [
-          [
-            "value",
-            "value"
-          ]
-        ]
-      }
-    },
-    {
-      "name": {
-        "$all": [
-          [
-            true,
-            true
-          ]
-        ]
-      }
-    },
-    {
-      "title": {
-        "$all": "value"
-      }
-    },
-    {
-      "title": {
-        "$all": 42
-      }
-    },
-    {
-      "step": {
-        "$all": "value"
-      }
-    },
-    {
-      "step": {
-        "$all": 42
-      }
-    },
-    {
-      "step": {
-        "$all": [
-          {
-            "$elemMatch": 42
-          }
-        ]
-      }
-    },
-    {
-      "step": {
-        "$all": [
-          {
-            "$elemMatch": {
-              "priority": null
-            }
-          }
-        ]
-      }
-    },
-    {
-      "step": {
-        "$all": [
-          {
-            "$elemMatch": {
-              "priority": "value"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "step": {
-        "$all": [
-          {
-            "$elemMatch": {
-              "priority": true
-            }
-          }
-        ]
-      }
-    },
-    {
-      "rankings": {
-        "$elemMatch": 42
-      }
     }
   ],
   "documents": [
     {
       "_id": 0,
       "scores": [
-        27,
-        28,
-        29
+        15,
+        16,
+        17
       ]
     },
     {
@@ -1096,9 +661,9 @@
     {
       "_id": 3,
       "ratings": [
-        20,
-        21,
-        22
+        8,
+        9,
+        10
       ]
     },
     {
@@ -1112,7 +677,7 @@
       "_id": 6,
       "ratings": [
         [
-          21
+          9
         ]
       ]
     },
@@ -1121,19 +686,19 @@
       "ratings": [
         {
           "age": [
-            29,
-            30
+            17,
+            18
           ]
         },
-        30
+        18
       ]
     },
     {
       "_id": 8,
       "counts": [
-        18,
-        19,
-        20
+        24,
+        25,
+        26
       ]
     },
     {
@@ -1147,7 +712,7 @@
       "_id": 11,
       "counts": [
         [
-          19
+          25
         ]
       ]
     },
@@ -1156,19 +721,19 @@
       "counts": [
         {
           "score": [
-            27,
-            28
+            33,
+            34
           ]
         },
-        28
+        34
       ]
     },
     {
       "_id": 13,
       "counts": {
         "score": [
-          37,
-          47
+          43,
+          53
         ]
       }
     },
@@ -1176,10 +741,10 @@
       "_id": 14,
       "values": [
         {
-          "rank": 38
+          "rank": 20
         },
         {
-          "rank": 39
+          "rank": 21
         }
       ]
     },
@@ -1197,47 +762,6 @@
         "Couple",
         "Double"
       ]
-    },
-    {
-      "_id": 17
-    },
-    {
-      "_id": 18
-    },
-    {
-      "_id": 19,
-      "name": 18
-    },
-    {
-      "_id": 20,
-      "name": [
-        17,
-        18
-      ]
-    },
-    {
-      "_id": 21
-    },
-    {
-      "_id": 22,
-      "title": 7
-    },
-    {
-      "_id": 23,
-      "title": [
-        6,
-        7
-      ]
-    },
-    {
-      "_id": 24,
-      "title": []
-    },
-    {
-      "_id": 25,
-      "rankings": [
-        {}
-      ]
     }
   ],
   "indices": [
@@ -1245,19 +769,7 @@
       "scores": 1
     },
     {
-      "ratings": 1
-    },
-    {
-      "counts": 1
-    },
-    {
       "a.x": 1
-    },
-    {
-      "points": 1
-    },
-    {
-      "tags": 1
     }
   ]
 }
