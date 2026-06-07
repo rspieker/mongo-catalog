@@ -7,156 +7,79 @@
 		"documents": []
 	},
 	{
-		"id": "pAqgW5OK9H6z",
+		"id": "uIIu4pIKRFN1",
 		"operation": {
-			"status": "Double"
+			"status": {}
 		},
 		"documents": []
 	},
 	{
-		"id": "sMDOXNgBYVUr",
+		"id": "uIIu4pIKRFN1",
 		"operation": {
-			"status": {
-				"$regex": "Double"
-			}
+			"status": {}
 		},
 		"documents": []
 	},
 	{
-		"id": "nPR8gisubjIf",
+		"id": "f3L3tn2PCi59",
 		"operation": {
 			"status": {
-				"$regex": "Couple",
-				"$options": "Light"
+				"$regex": "Huge",
+				"$gte": "Couple"
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "lZNjMcG0lbQM",
+		"id": "w3FzxcqWGSFt",
 		"operation": {
 			"status": {
-				"$options": "Light",
-				"$regex": "Couple"
+				"$gt": "Hundred",
+				"$regex": "Hundreds"
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "rhH1C6HQF82S",
-		"operation": {
-			"age": {
-				"$regex": "Little",
-				"$gte": "Either"
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "rwJrDx0wVWVX",
-		"operation": {
-			"age": {
-				"$gt": "Full",
-				"$regex": "Many"
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "oOz0ewr8TCOK",
-		"operation": {},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5
-		]
-	},
-	{
-		"id": "tMST7LOx2kUR",
-		"operation": {
-			"status": {},
-			"rank": {},
-			"level": {},
-			"count": {},
-			"grade": {}
-		},
-		"documents": []
-	},
-	{
-		"id": "fy6rJTsLX6z8",
+		"id": "eKEtnGRgkQUJ",
 		"operation": {
 			"$and": [
 				{
-					"status": {}
+					"age": {}
 				},
 				{
-					"status": {}
+					"age": {}
 				}
 			]
 		},
 		"documents": []
 	},
 	{
-		"id": "kH94yYv72tpF",
+		"id": "lRic2bzaGI5s",
 		"operation": {
-			"status": {},
-			"rank": {}
+			"age": {},
+			"score": {}
 		},
 		"documents": []
 	},
 	{
-		"id": "sl28OdHj1QHT",
+		"id": "pXXNDYGVGvNE",
 		"operation": {
 			"$or": [
 				{
-					"status": {}
+					"age": {}
 				},
 				{
-					"status": {}
+					"age": {}
 				}
 			]
 		},
 		"documents": []
 	},
 	{
-		"id": "d7vQhLLn3LFD",
-		"operation": {
-			"step.priority": {}
-		},
-		"documents": []
-	},
-	{
-		"id": "iZ0d5hSzSmd6",
+		"id": "aWBIiGB4yCXx",
 		"operation": {
 			"tags": {
-				"$elemMatch": {
-					"$regex": "Empty",
-					"$options": "Enough"
-				}
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "tspJ88fHWQB0",
-		"operation": {
-			"attempts": {
-				"$regex": {}
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "pbBJKkGm9J0i",
-		"operation": {
-			"roles": {
 				"$in": [
 					{}
 				]
@@ -165,9 +88,9 @@
 		"documents": []
 	},
 	{
-		"id": "oTuzaywEScQu",
+		"id": "f9aM2RRZ69n3",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$in": [
 					{},
 					"Double"
@@ -175,13 +98,13 @@
 			}
 		},
 		"documents": [
-			4
+			2
 		]
 	},
 	{
-		"id": "vD0wRMqWKdfe",
+		"id": "iUuRtPl8lXAw",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$all": [
 					{},
 					{}
@@ -191,9 +114,9 @@
 		"documents": []
 	},
 	{
-		"id": "uilxmrGTbC1b",
+		"id": "vqPakNKmvKGt",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$all": [
 					{},
 					"Couple"
@@ -203,9 +126,9 @@
 		"documents": []
 	},
 	{
-		"id": "rfGXXWCyPUiK",
+		"id": "bloGWoWguaFM",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$nin": [
 					{}
 				]
@@ -215,15 +138,13 @@
 			0,
 			1,
 			2,
-			3,
-			4,
-			5
+			3
 		]
 	},
 	{
-		"id": "a5YvEB9O8rne",
+		"id": "plElL7UYHbye",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$nin": [
 					{},
 					"Double"
@@ -233,15 +154,13 @@
 		"documents": [
 			0,
 			1,
-			2,
-			3,
-			5
+			3
 		]
 	},
 	{
-		"id": "w4ou0SYM4RhE",
+		"id": "wDCH5WQnDjUU",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$not": {
 					"$nin": [
 						{}
@@ -252,9 +171,9 @@
 		"documents": []
 	},
 	{
-		"id": "d7Bx0DPI7AZG",
+		"id": "ajln9SFEOTEd",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$all": [
 					"Empty",
 					{}
@@ -264,9 +183,9 @@
 		"documents": []
 	},
 	{
-		"id": "rZpQfuZHtLIn",
+		"id": "tQQrxdcxRLQS",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$all": [
 					{}
 				]
@@ -275,184 +194,41 @@
 		"documents": []
 	},
 	{
-		"id": "fG3xqaDWVJAg",
+		"id": "r5czEwazl8UU",
 		"operation": {
-			"scores.size": "Abundant"
+			"scores.level": "Abundant"
 		},
 		"documents": [
-			5
+			3
 		]
 	},
 	{
-		"id": "bWZmbxoQ5zQg",
+		"id": "p4bxyMHMMKWP",
 		"operation": {
-			"scores.0.size": "Abundant"
-		},
-		"documents": [
-			5
-		]
-	},
-	{
-		"id": "qwjD3xyDGgKI",
-		"operation": {
-			"scores.0.size": {}
+			"scores.level": {}
 		},
 		"documents": []
 	},
 	{
-		"id": "dQxmUe8ArA7i",
+		"id": "k785tLZPxLBW",
 		"operation": {
-			"status": null
+			"scores.0.level": "Abundant"
 		},
 		"documents": [
-			1,
-			2,
-			3,
-			4,
-			5
+			3
 		]
 	},
 	{
-		"id": "s7NE7qoXzk4e",
+		"id": "qSWUlMBQfXGV",
 		"operation": {
-			"status": 42
+			"scores.0.level": {}
 		},
 		"documents": []
 	},
 	{
-		"id": "dWu7Xq4dWNPl",
-		"operation": {
-			"status": true
-		},
-		"documents": []
-	},
-	{
-		"id": "stJYv9X4N77G",
+		"id": "pEYnhPNBPfXh",
 		"operation": {
 			"status": {
-				"$regex": null
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "v7SmHHAVI4b4",
-		"operation": {
-			"status": {
-				"$regex": 42
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "b2G2vtRf0m7Q",
-		"operation": {
-			"status": {
-				"$regex": true
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "sOAIXOEgjNRy",
-		"operation": {
-			"status": {
-				"$regex": null,
-				"$options": null
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "oM2B7EBJcX3s",
-		"operation": {
-			"status": {
-				"$regex": 42,
-				"$options": 42
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "dEViPfzgSA9W",
-		"operation": {
-			"status": {
-				"$regex": true,
-				"$options": true
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "piD2UKyMmEzi",
-		"operation": {
-			"status": {
-				"$options": null,
-				"$regex": null
-			}
-		},
-		"error": {
-			"message": "$options has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "c0jhqsyE2G62",
-		"operation": {
-			"status": {
-				"$options": 42,
-				"$regex": 42
-			}
-		},
-		"error": {
-			"message": "$options has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "sESeTJV0jOLY",
-		"operation": {
-			"status": {
-				"$options": true,
-				"$regex": true
-			}
-		},
-		"error": {
-			"message": "$options has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "vzTeVSqmtWt0",
-		"operation": {
-			"age": {
 				"$regex": null,
 				"$gte": null
 			}
@@ -464,9 +240,9 @@
 		}
 	},
 	{
-		"id": "prqMUOw75RgX",
+		"id": "tyYSU8FvQX6l",
 		"operation": {
-			"age": {
+			"status": {
 				"$regex": 42,
 				"$gte": 42
 			}
@@ -478,9 +254,9 @@
 		}
 	},
 	{
-		"id": "rKOaFKUPJmEq",
+		"id": "opNGYxzYl6JP",
 		"operation": {
-			"age": {
+			"status": {
 				"$regex": true,
 				"$gte": true
 			}
@@ -492,9 +268,9 @@
 		}
 	},
 	{
-		"id": "eTU9IpYN9hXN",
+		"id": "deBKmYJWOXDy",
 		"operation": {
-			"age": {
+			"status": {
 				"$gt": null,
 				"$regex": null
 			}
@@ -506,9 +282,9 @@
 		}
 	},
 	{
-		"id": "fnLvftiMo9bJ",
+		"id": "t7DJLpwPC5Vq",
 		"operation": {
-			"age": {
+			"status": {
 				"$gt": 42,
 				"$regex": 42
 			}
@@ -520,9 +296,9 @@
 		}
 	},
 	{
-		"id": "luOOHjByx6Ee",
+		"id": "gBIHqN4HX88P",
 		"operation": {
-			"age": {
+			"status": {
 				"$gt": true,
 				"$regex": true
 			}
@@ -534,70 +310,9 @@
 		}
 	},
 	{
-		"id": "oOVYLLAYr95a",
+		"id": "pGYCN2CbIZ5r",
 		"operation": {
 			"tags": {
-				"$elemMatch": 42
-			}
-		},
-		"error": {
-			"message": "$elemMatch needs an Object",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "diWODgpmNaES",
-		"operation": {
-			"tags": {
-				"$elemMatch": {
-					"$regex": null,
-					"$options": null
-				}
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "qBu9BWRX5Rat",
-		"operation": {
-			"tags": {
-				"$elemMatch": {
-					"$regex": 42,
-					"$options": 42
-				}
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "qZFtq3tiO4RS",
-		"operation": {
-			"tags": {
-				"$elemMatch": {
-					"$regex": true,
-					"$options": true
-				}
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "quDTtgG1FMTy",
-		"operation": {
-			"roles": {
 				"$in": "active"
 			}
 		},
@@ -608,9 +323,9 @@
 		}
 	},
 	{
-		"id": "qQWymPLW5FYH",
+		"id": "fuizBgKWBW58",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$in": [
 					{},
 					null
@@ -620,15 +335,13 @@
 		"documents": [
 			0,
 			1,
-			2,
-			3,
-			5
+			3
 		]
 	},
 	{
-		"id": "nGOvuA1Os6U5",
+		"id": "cGRq1yZDB0Ra",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$in": [
 					{},
 					42
@@ -638,9 +351,9 @@
 		"documents": []
 	},
 	{
-		"id": "pGUjy9FLSiOL",
+		"id": "w6LkIt3mCbNf",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$in": [
 					{},
 					true
@@ -650,9 +363,9 @@
 		"documents": []
 	},
 	{
-		"id": "fKUQVESYnR1M",
+		"id": "urDS7BBIUN4A",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$all": "value"
 			}
 		},
@@ -663,9 +376,9 @@
 		}
 	},
 	{
-		"id": "sc1wqpJeYwka",
+		"id": "v5yrhpepGGUw",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$all": 42
 			}
 		},
@@ -676,9 +389,9 @@
 		}
 	},
 	{
-		"id": "nJKI72QOdPKx",
+		"id": "rsCmMooPnZML",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$all": [
 					{},
 					null
@@ -688,9 +401,9 @@
 		"documents": []
 	},
 	{
-		"id": "azzmPTJfshTl",
+		"id": "rLAnbCNAn1JN",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$all": [
 					{},
 					42
@@ -700,9 +413,9 @@
 		"documents": []
 	},
 	{
-		"id": "sqE616Axtgif",
+		"id": "quWGuSKawuwH",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$all": [
 					{},
 					true
@@ -712,9 +425,9 @@
 		"documents": []
 	},
 	{
-		"id": "mXXVBF4Z6PVI",
+		"id": "uhTqwlK0OiS1",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$nin": "deleted"
 			}
 		},
@@ -725,9 +438,9 @@
 		}
 	},
 	{
-		"id": "tlz6yaZKO0dj",
+		"id": "pktYnK7lx88V",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$nin": [
 					{},
 					null
@@ -735,13 +448,13 @@
 			}
 		},
 		"documents": [
-			4
+			2
 		]
 	},
 	{
-		"id": "mtWt3FFNF6B8",
+		"id": "tFXMzehTaSGU",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$nin": [
 					{},
 					42
@@ -752,15 +465,13 @@
 			0,
 			1,
 			2,
-			3,
-			4,
-			5
+			3
 		]
 	},
 	{
-		"id": "pYez02KeC8EX",
+		"id": "tzbeLsPPfzbE",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$nin": [
 					{},
 					true
@@ -771,15 +482,13 @@
 			0,
 			1,
 			2,
-			3,
-			4,
-			5
+			3
 		]
 	},
 	{
-		"id": "uEpmaD7pyPlh",
+		"id": "t2D04IfQYwFw",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$not": {
 					"$nin": "deleted"
 				}
@@ -792,9 +501,9 @@
 		}
 	},
 	{
-		"id": "j84tUmEO2TPO",
+		"id": "rvxOEtu8ujX8",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$all": [
 					null,
 					{}
@@ -804,9 +513,9 @@
 		"documents": []
 	},
 	{
-		"id": "tMYxGs84Xl7Q",
+		"id": "kc1DuT5j29Lf",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$all": [
 					42,
 					{}
@@ -816,9 +525,9 @@
 		"documents": []
 	},
 	{
-		"id": "mRDbHpg8B8fR",
+		"id": "mLgW3LA3fHCE",
 		"operation": {
-			"roles": {
+			"tags": {
 				"$all": [
 					true,
 					{}
@@ -828,57 +537,53 @@
 		"documents": []
 	},
 	{
-		"id": "tZGyeTLKzPFJ",
+		"id": "vE5MEzLyHS0s",
 		"operation": {
-			"scores.size": null
+			"scores.level": null
+		},
+		"documents": [
+			0,
+			1,
+			2
+		]
+	},
+	{
+		"id": "bX4RfvJK7HF8",
+		"operation": {
+			"scores.level": 42
+		},
+		"documents": []
+	},
+	{
+		"id": "oNQUfCFaCQdE",
+		"operation": {
+			"scores.level": true
+		},
+		"documents": []
+	},
+	{
+		"id": "uJNJ0Mk0tdYS",
+		"operation": {
+			"scores.0.level": null
 		},
 		"documents": [
 			0,
 			1,
 			2,
-			3,
-			4
+			3
 		]
 	},
 	{
-		"id": "c4zjJryYMWIC",
+		"id": "gE4u97uELCXx",
 		"operation": {
-			"scores.size": 42
+			"scores.0.level": 42
 		},
 		"documents": []
 	},
 	{
-		"id": "vMYmHpR1ya0F",
+		"id": "uuLMr7v1ESLc",
 		"operation": {
-			"scores.size": true
-		},
-		"documents": []
-	},
-	{
-		"id": "mYBMFXAHuNfu",
-		"operation": {
-			"scores.0.size": null
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5
-		]
-	},
-	{
-		"id": "nplSKKyLRQg7",
-		"operation": {
-			"scores.0.size": 42
-		},
-		"documents": []
-	},
-	{
-		"id": "pqhmxxY2xGmt",
-		"operation": {
-			"scores.0.size": true
+			"scores.0.level": true
 		},
 		"documents": []
 	}

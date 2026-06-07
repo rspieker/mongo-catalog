@@ -1,13 +1,13 @@
 [
 	{
-		"id": "vvN6wVQ1xGMy",
+		"id": "bTUBsOtbCWVl",
 		"operation": {
 			"$expr": {
 				"$and": [
 					{
 						"$eq": [
 							"$age",
-							17
+							33
 						]
 					}
 				]
@@ -43,9 +43,10 @@
 				}
 			]
 		},
-		"documents": [
-			1
-		]
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
 		"id": "qHiIwI6TKpia",
@@ -60,117 +61,24 @@
 				]
 			}
 		},
-		"documents": [
-			2
-		]
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
-		"id": "pF9jtgBQAp25",
+		"id": "mMfs9NGXatYn",
 		"operation": {
 			"$expr": {
 				"$eq": [
 					"$weight",
-					35
+					6
 				]
 			}
 		},
-		"documents": []
-	},
-	{
-		"id": "rSHLuz1tPZXq",
-		"operation": {
-			"$expr": {
-				"$eq": [
-					"$rank",
-					"$level"
-				]
-			}
-		},
-		"documents": [
-			0,
-			1,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27
-		]
-	},
-	{
-		"id": "tYKEZwJJDTRy",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							"$rank",
-							"$level"
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": 7
-					}
-				}
-			]
-		},
-		"documents": [
-			0,
-			1,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27
-		]
-	},
-	{
-		"id": "t4ZEZTvP6eVZ",
-		"operation": {
-			"grade": {
-				"$elemMatch": {
-					"$expr": {
-						"$eq": [
-							"$rank",
-							"$level"
-						]
-					}
-				}
-			}
-		},
 		"error": {
-			"message": "$expr can only be applied to the top-level document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "k0PYXD4rVqrn",
-		"operation": {
-			"grade": {
-				"$_internalSchemaObjectMatch": {
-					"$expr": {
-						"$eq": [
-							"$rank",
-							"$level"
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$expr can only be applied to the top-level document",
-			"code": 2,
-			"type": "MongoServerError"
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
 		}
 	},
 	{
@@ -187,9 +95,10 @@
 				]
 			}
 		},
-		"documents": [
-			27
-		]
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
 		"id": "dz4Q1YMZ9Q3Q",
@@ -205,7 +114,10 @@
 				]
 			}
 		},
-		"documents": []
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
 		"id": "pOmXLo2oVgGj",
@@ -221,55 +133,67 @@
 				]
 			}
 		},
-		"documents": []
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
-		"id": "mUFIn1QfdhUS",
+		"id": "wkLCQ8nPvo2G",
 		"operation": {
 			"$expr": {
 				"$and": [
 					{
 						"$eq": [
 							null,
-							17
+							33
 						]
 					}
 				]
 			}
 		},
-		"documents": []
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
-		"id": "txHAbJJADRF1",
+		"id": "wLXvbMRyt9JN",
 		"operation": {
 			"$expr": {
 				"$and": [
 					{
 						"$eq": [
 							42,
-							17
+							33
 						]
 					}
 				]
 			}
 		},
-		"documents": []
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
-		"id": "jpJ3K3s1BP0z",
+		"id": "sWf0H8BwXvD2",
 		"operation": {
 			"$expr": {
 				"$and": [
 					{
 						"$eq": [
 							true,
-							17
+							33
 						]
 					}
 				]
 			}
 		},
-		"documents": []
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
 		"id": "dqqUcnNEstQ6",
@@ -299,34 +223,10 @@
 				}
 			]
 		},
-		"documents": [
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12,
-			13,
-			14,
-			15,
-			16,
-			17,
-			18,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27
-		]
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
 		"id": "k2RVLydKzLJP",
@@ -356,7 +256,10 @@
 				}
 			]
 		},
-		"documents": []
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
 		"id": "rfhPAWpv0S3v",
@@ -386,7 +289,10 @@
 				}
 			]
 		},
-		"documents": []
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
 		"id": "bWF9hzoN1uFu",
@@ -396,9 +302,8 @@
 			}
 		},
 		"error": {
-			"message": "Expression $in takes exactly 2 arguments. 1 were passed in.",
-			"code": 16020,
-			"type": "MongoServerError"
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
 		}
 	},
 	{
@@ -414,36 +319,10 @@
 				]
 			}
 		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12,
-			13,
-			14,
-			15,
-			16,
-			17,
-			18,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27
-		]
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
 		"id": "iAbTEh3ARRmW",
@@ -458,36 +337,10 @@
 				]
 			}
 		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12,
-			13,
-			14,
-			15,
-			16,
-			17,
-			18,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27
-		]
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
 		"id": "nuHdJXdwJ6Sf",
@@ -502,36 +355,10 @@
 				]
 			}
 		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12,
-			13,
-			14,
-			15,
-			16,
-			17,
-			18,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27
-		]
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
 		"id": "nvRd7maPTpAE",
@@ -543,7 +370,10 @@
 				]
 			}
 		},
-		"documents": []
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
 		"id": "vzMgh0YDdKQa",
@@ -555,7 +385,10 @@
 				]
 			}
 		},
-		"documents": []
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
 		"id": "wIJJMVryxb7z",
@@ -567,547 +400,54 @@
 				]
 			}
 		},
-		"documents": []
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
-		"id": "fx5Q4WC9KPYo",
+		"id": "lVpMUq8xtTen",
 		"operation": {
 			"$expr": {
 				"$eq": [
 					null,
-					35
+					6
 				]
 			}
 		},
-		"documents": []
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
-		"id": "mWAhB2CKIW8j",
+		"id": "rOHHJlHo9nGk",
 		"operation": {
 			"$expr": {
 				"$eq": [
 					42,
-					35
+					6
 				]
 			}
 		},
-		"documents": []
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
-		"id": "rMCEOPD0L753",
+		"id": "rzB5Ywl2zdZF",
 		"operation": {
 			"$expr": {
 				"$eq": [
 					true,
-					35
+					6
 				]
 			}
 		},
-		"documents": []
-	},
-	{
-		"id": "rx0Lvr2gNLne",
-		"operation": {
-			"$expr": {
-				"$eq": [
-					null,
-					null
-				]
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12,
-			13,
-			14,
-			15,
-			16,
-			17,
-			18,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27
-		]
-	},
-	{
-		"id": "nJm31O1ArvZe",
-		"operation": {
-			"$expr": {
-				"$eq": [
-					42,
-					42
-				]
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12,
-			13,
-			14,
-			15,
-			16,
-			17,
-			18,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27
-		]
-	},
-	{
-		"id": "tVM1ZlMNA5DJ",
-		"operation": {
-			"$expr": {
-				"$eq": [
-					true,
-					true
-				]
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12,
-			13,
-			14,
-			15,
-			16,
-			17,
-			18,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27
-		]
-	},
-	{
-		"id": "azRIswYSx809",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							"$rank",
-							"$level"
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": null
-					}
-				}
-			]
-		},
-		"documents": [
-			0,
-			1,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27
-		]
-	},
-	{
-		"id": "j6QK40zSZAiL",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							"$rank",
-							"$level"
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": "value"
-					}
-				}
-			]
-		},
-		"documents": [
-			0,
-			1,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27
-		]
-	},
-	{
-		"id": "juFTBcXBqASW",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							"$rank",
-							"$level"
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": true
-					}
-				}
-			]
-		},
-		"documents": [
-			0,
-			1,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27
-		]
-	},
-	{
-		"id": "qUJXotX1O3IM",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							null,
-							null
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": 7
-					}
-				}
-			]
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12,
-			13,
-			14,
-			15,
-			16,
-			17,
-			18,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27
-		]
-	},
-	{
-		"id": "o2fGxgZ2wj1n",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							42,
-							42
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": 7
-					}
-				}
-			]
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12,
-			13,
-			14,
-			15,
-			16,
-			17,
-			18,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27
-		]
-	},
-	{
-		"id": "s467yFGuPNW2",
-		"operation": {
-			"$or": [
-				{
-					"$expr": {
-						"$eq": [
-							true,
-							true
-						]
-					}
-				},
-				{
-					"count": {
-						"$gt": 7
-					}
-				}
-			]
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12,
-			13,
-			14,
-			15,
-			16,
-			17,
-			18,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27
-		]
-	},
-	{
-		"id": "vxL4dHeV8YAX",
-		"operation": {
-			"grade": {
-				"$elemMatch": 42
-			}
-		},
 		"error": {
-			"message": "$elemMatch needs an Object",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "jsnjqHLh4MQD",
-		"operation": {
-			"grade": {
-				"$elemMatch": {
-					"$expr": {
-						"$eq": [
-							null,
-							null
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$expr can only be applied to the top-level document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "fDtgviOXhOdP",
-		"operation": {
-			"grade": {
-				"$elemMatch": {
-					"$expr": {
-						"$eq": [
-							42,
-							42
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$expr can only be applied to the top-level document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "fZ3HgbtDUHoS",
-		"operation": {
-			"grade": {
-				"$elemMatch": {
-					"$expr": {
-						"$eq": [
-							true,
-							true
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$expr can only be applied to the top-level document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "k0jr6mcGUA1i",
-		"operation": {
-			"grade": {
-				"$_internalSchemaObjectMatch": {
-					"$expr": {
-						"$eq": [
-							null,
-							null
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$expr can only be applied to the top-level document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "wOT6zFOxF342",
-		"operation": {
-			"grade": {
-				"$_internalSchemaObjectMatch": {
-					"$expr": {
-						"$eq": [
-							42,
-							42
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$expr can only be applied to the top-level document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "n4rsTQ2DU8T1",
-		"operation": {
-			"grade": {
-				"$_internalSchemaObjectMatch": {
-					"$expr": {
-						"$eq": [
-							true,
-							true
-						]
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$expr can only be applied to the top-level document",
-			"code": 2,
-			"type": "MongoServerError"
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
 		}
 	}
 ]
