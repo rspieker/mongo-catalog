@@ -1,16 +1,27 @@
 [
 	{
-		"id": "dP3rPq82r4SG",
+		"id": "pHKtQJwNzk9D",
 		"operation": {
-			"score": 15
+			"score": 24
 		},
 		"documents": []
 	},
 	{
-		"id": "iTPybDxmm1hh",
+		"id": "oOz0ewr8TCOK",
+		"operation": {},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	{
+		"id": "cxNAl5rMSe4g",
 		"operation": {
 			"score": {
-				"$gt": 13
+				"$gt": 22
 			},
 			"rank": null
 		},
@@ -19,11 +30,11 @@
 		]
 	},
 	{
-		"id": "tIgDWHC0zOQU",
+		"id": "irKA3S02J8gw",
 		"operation": {
 			"score": {
-				"$gte": 13,
-				"$lte": 23
+				"$gte": 22,
+				"$lte": 32
 			}
 		},
 		"documents": [
@@ -31,16 +42,16 @@
 		]
 	},
 	{
-		"id": "uGMGHpXCkUDx",
+		"id": "royAtursQPRH",
 		"operation": {
 			"score": {
 				"$in": [
-					14,
-					15
+					23,
+					24
 				]
 			},
 			"rank": {
-				"$gte": 13
+				"$gte": 22
 			}
 		},
 		"documents": []
@@ -62,6 +73,24 @@
 		"documents": []
 	},
 	{
+		"id": "bKHxA55LFrzH",
+		"operation": {
+			"score": 23
+		},
+		"documents": []
+	},
+	{
+		"id": "oOz0ewr8TCOK",
+		"operation": {},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	{
 		"id": "rn7TKm1jIMFM",
 		"operation": {
 			"rank": null
@@ -71,13 +100,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -88,20 +111,14 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
-		"id": "tT8NweQMuOcv",
+		"id": "oKF6u50WaeAK",
 		"operation": {
 			"name": {
-				"$gte": 23
+				"$gte": 11
 			}
 		},
 		"documents": [
@@ -110,10 +127,10 @@
 		]
 	},
 	{
-		"id": "reUIARgII4c2",
+		"id": "mMuA7HUDRBQd",
 		"operation": {
 			"name": {
-				"$lte": 23
+				"$lte": 11
 			}
 		},
 		"documents": [
@@ -122,10 +139,10 @@
 		]
 	},
 	{
-		"id": "tSvYBWLq8guK",
+		"id": "oKF6u50WaeAK",
 		"operation": {
 			"name": {
-				"$gt": 18
+				"$gte": 11
 			}
 		},
 		"documents": [
@@ -134,114 +151,52 @@
 		]
 	},
 	{
-		"id": "s5tIRS34ot3Q",
+		"id": "mMuA7HUDRBQd",
 		"operation": {
-			"scores": {
-				"$ne": 17
+			"name": {
+				"$lte": 11
 			}
 		},
 		"documents": [
-			0,
-			1,
-			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
-		"id": "qz6mg641r3bV",
+		"id": "uWFVORLC5lZN",
 		"operation": {
-			"scores.attempts": {
-				"$ne": 17
+			"name": {
+				"$gt": 6
 			}
 		},
 		"documents": [
-			0,
-			1,
-			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
-		"id": "h7qIIgnuSJFZ",
-		"operation": {
-			"quantity": {
-				"$exists": 21
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "kGDRnFf0DX2M",
-		"operation": {
-			"size.index": {
-				"$exists": 23
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "wtyOng0mRCR2",
+		"id": "qjpHFKcYzP8j",
 		"operation": {
 			"$or": [
 				{
-					"title": {
-						"$not": {
-							"$type": "Abundant"
-						}
-					}
-				},
-				{
-					"username": {
-						"$not": {
-							"$type": "Abundant"
-						}
-					}
-				}
-			]
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue $type has to be a number",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "jna7c9whGXFK",
-		"operation": {
-			"$or": [
-				{
-					"weight": {
-						"$gte": 25
+					"quantity": {
+						"$gte": 17
 					},
-					"height": {
+					"size": {
 						"$mod": [
-							27,
-							25
+							19,
+							17
 						]
 					}
 				},
 				{
-					"weight": {
-						"$lte": 100025
+					"quantity": {
+						"$lte": 100017
 					},
-					"height": {
+					"size": {
 						"$mod": [
-							27,
-							26
+							19,
+							18
 						]
 					}
 				}
@@ -258,13 +213,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -323,13 +272,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -353,13 +296,13 @@
 		"documents": []
 	},
 	{
-		"id": "oLSHNi4JIK0q",
+		"id": "nQC7iPFxDOZ3",
 		"operation": {
 			"score": {
 				"$in": "active"
 			},
 			"rank": {
-				"$gte": 13
+				"$gte": 22
 			}
 		},
 		"error": {
@@ -385,13 +328,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -442,13 +379,7 @@
 			0,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -493,13 +424,7 @@
 		"documents": [
 			0,
 			1,
-			2,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			2
 		]
 	},
 	{
@@ -530,13 +455,7 @@
 		"documents": [
 			0,
 			1,
-			2,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			2
 		]
 	},
 	{
@@ -585,294 +504,22 @@
 		"documents": []
 	},
 	{
-		"id": "m8TyPtiAgGZo",
-		"operation": {
-			"scores": {
-				"$ne": null
-			}
-		},
-		"documents": [
-			5,
-			6
-		]
-	},
-	{
-		"id": "si5U2nBDIltf",
-		"operation": {
-			"scores": {
-				"$ne": "value"
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "nSGAGkhMir2I",
-		"operation": {
-			"scores": {
-				"$ne": true
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "pZFHKAHSHigh",
-		"operation": {
-			"scores.attempts": {
-				"$ne": null
-			}
-		},
-		"documents": [
-			5,
-			6
-		]
-	},
-	{
-		"id": "uWrUz50vAy4u",
-		"operation": {
-			"scores.attempts": {
-				"$ne": "value"
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "slPbKPDjfT4S",
-		"operation": {
-			"scores.attempts": {
-				"$ne": true
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "u3R3z5QXfnXP",
-		"operation": {
-			"quantity": {
-				"$exists": null
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "uh8FINDjQUQX",
-		"operation": {
-			"quantity": {
-				"$exists": "value"
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "wJvQUfEVY1Hm",
-		"operation": {
-			"quantity": {
-				"$exists": true
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "sIT4YP6Me5E7",
-		"operation": {
-			"size.index": {
-				"$exists": null
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "n3bGLHKMrUBz",
-		"operation": {
-			"size.index": {
-				"$exists": "value"
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "kVHDsRfbHc9J",
-		"operation": {
-			"size.index": {
-				"$exists": true
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "espUVePDy8Ei",
+		"id": "ouAhzarWJSh5",
 		"operation": {
 			"$or": [
 				{
-					"title": {
-						"$not": {
-							"$type": null
-						}
-					}
-				},
-				{
-					"username": {
-						"$not": {
-							"$type": null
-						}
-					}
-				}
-			]
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue $type has to be a number",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "szt4RosMMYIR",
-		"operation": {
-			"$or": [
-				{
-					"title": {
-						"$not": {
-							"$type": 42
-						}
-					}
-				},
-				{
-					"username": {
-						"$not": {
-							"$type": 42
-						}
-					}
-				}
-			]
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "sFPxwW1hEKVV",
-		"operation": {
-			"$or": [
-				{
-					"title": {
-						"$not": {
-							"$type": true
-						}
-					}
-				},
-				{
-					"username": {
-						"$not": {
-							"$type": true
-						}
-					}
-				}
-			]
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue $type has to be a number",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "hcRUpef1MyXM",
-		"operation": {
-			"$or": [
-				{
-					"weight": {
-						"$gte": 25
+					"quantity": {
+						"$gte": 17
 					},
-					"height": {
+					"size": {
 						"$mod": "invalid"
 					}
 				},
 				{
-					"weight": {
-						"$lte": 100025
+					"quantity": {
+						"$lte": 100017
 					},
-					"height": {
+					"size": {
 						"$mod": "invalid"
 					}
 				}
@@ -885,24 +532,24 @@
 		}
 	},
 	{
-		"id": "rOfBEDQvRyJd",
+		"id": "pqNXqyLtw8RD",
 		"operation": {
 			"$or": [
 				{
-					"weight": {
-						"$gte": 25
+					"quantity": {
+						"$gte": 17
 					},
-					"height": {
+					"size": {
 						"$mod": [
 							2
 						]
 					}
 				},
 				{
-					"weight": {
-						"$lte": 100025
+					"quantity": {
+						"$lte": 100017
 					},
-					"height": {
+					"size": {
 						"$mod": [
 							2
 						]
@@ -917,22 +564,22 @@
 		}
 	},
 	{
-		"id": "pcWoE2l5HBaQ",
+		"id": "bHvX1xNyifX5",
 		"operation": {
 			"$or": [
 				{
-					"weight": {
-						"$gte": 25
+					"quantity": {
+						"$gte": 17
 					},
-					"height": {
+					"size": {
 						"$mod": []
 					}
 				},
 				{
-					"weight": {
-						"$lte": 100025
+					"quantity": {
+						"$lte": 100017
 					},
-					"height": {
+					"size": {
 						"$mod": []
 					}
 				}
@@ -945,14 +592,14 @@
 		}
 	},
 	{
-		"id": "m3kHwzFN79Oq",
+		"id": "rWI1tfu8eyVv",
 		"operation": {
 			"$or": [
 				{
-					"weight": {
+					"quantity": {
 						"$gte": null
 					},
-					"height": {
+					"size": {
 						"$mod": [
 							null,
 							null
@@ -960,10 +607,10 @@
 					}
 				},
 				{
-					"weight": {
+					"quantity": {
 						"$lte": null
 					},
-					"height": {
+					"size": {
 						"$mod": [
 							null,
 							null
@@ -979,14 +626,14 @@
 		}
 	},
 	{
-		"id": "bNHJV9wiruCb",
+		"id": "uIzfyEEJhTKS",
 		"operation": {
 			"$or": [
 				{
-					"weight": {
+					"quantity": {
 						"$gte": "value"
 					},
-					"height": {
+					"size": {
 						"$mod": [
 							"value",
 							"value"
@@ -994,10 +641,10 @@
 					}
 				},
 				{
-					"weight": {
+					"quantity": {
 						"$lte": "value"
 					},
-					"height": {
+					"size": {
 						"$mod": [
 							"value",
 							"value"
@@ -1013,14 +660,14 @@
 		}
 	},
 	{
-		"id": "sNaXPvVOS9UI",
+		"id": "fVX2mT3iuMfC",
 		"operation": {
 			"$or": [
 				{
-					"weight": {
+					"quantity": {
 						"$gte": true
 					},
-					"height": {
+					"size": {
 						"$mod": [
 							true,
 							true
@@ -1028,10 +675,10 @@
 					}
 				},
 				{
-					"weight": {
+					"quantity": {
 						"$lte": true
 					},
-					"height": {
+					"size": {
 						"$mod": [
 							true,
 							true
