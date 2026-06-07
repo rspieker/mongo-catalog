@@ -432,7 +432,7 @@
 			]
 		},
 		"error": {
-			"message": "error while multiplanner was selecting best plan :: caused by :: ReferenceError: Double is not defined :\n@:1:15\n",
+			"message": "Executor error during find command :: caused by :: ReferenceError: Double is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -1148,7 +1148,7 @@
 			"$where": "Heavily"
 		},
 		"error": {
-			"message": "error while multiplanner was selecting best plan :: caused by :: ReferenceError: Heavily is not defined :\n@:1:15\n",
+			"message": "Executor error during find command :: caused by :: ReferenceError: Heavily is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -1168,7 +1168,7 @@
 			"$where": "Heavily"
 		},
 		"error": {
-			"message": "ReferenceError: Heavily is not defined :\n@:1:15\n",
+			"message": "Executor error during find command :: caused by :: ReferenceError: Heavily is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
