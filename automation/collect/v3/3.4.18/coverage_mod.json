@@ -1,48 +1,26 @@
 [
 	{
-		"id": "qfxtwe7szbel",
+		"id": "okNvBB60PHan",
 		"operation": {
 			"name": {
 				"$mod": [
-					4000000028,
-					28
+					35,
+					26
 				]
 			}
 		},
-		"documents": []
+		"documents": [
+			0
+		]
 	},
 	{
-		"id": "gNF2YnZAcfC5",
+		"id": "nQPvQHOf7bWJ",
 		"operation": {
 			"name": {
-				"$gt": 33,
+				"$gt": 30,
 				"$mod": [
-					38,
-					29
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "qIt1qmc293FR",
-		"operation": {
-			"username.rank": {
-				"$mod": [
-					6,
-					3
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "leNLGEu4MMEx",
-		"operation": {
-			"username.rank.level": {
-				"$mod": [
-					8,
-					3
+					35,
+					26
 				]
 			}
 		},
@@ -138,10 +116,10 @@
 		}
 	},
 	{
-		"id": "gauWtHOOi0zR",
+		"id": "pOtUPTI2DV31",
 		"operation": {
 			"name": {
-				"$gt": 33,
+				"$gt": 30,
 				"$mod": "invalid"
 			}
 		},
@@ -152,10 +130,10 @@
 		}
 	},
 	{
-		"id": "vkhWZZbQqZf4",
+		"id": "dLztxTHXNGNH",
 		"operation": {
 			"name": {
-				"$gt": 33,
+				"$gt": 30,
 				"$mod": [
 					2
 				]
@@ -168,10 +146,10 @@
 		}
 	},
 	{
-		"id": "u7chz6vFJzkU",
+		"id": "fK9PxmH76Uhl",
 		"operation": {
 			"name": {
-				"$gt": 33,
+				"$gt": 30,
 				"$mod": []
 			}
 		},
@@ -220,184 +198,6 @@
 		"operation": {
 			"name": {
 				"$gt": true,
-				"$mod": [
-					true,
-					true
-				]
-			}
-		},
-		"error": {
-			"message": "malformed mod, divisor not a number",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "wn18u0JlDoLI",
-		"operation": {
-			"username.rank": {
-				"$mod": "invalid"
-			}
-		},
-		"error": {
-			"message": "malformed mod, needs to be an array",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "mN3KQrMAH62N",
-		"operation": {
-			"username.rank": {
-				"$mod": [
-					2
-				]
-			}
-		},
-		"error": {
-			"message": "malformed mod, not enough elements",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "pbJDlKxOx4M7",
-		"operation": {
-			"username.rank": {
-				"$mod": []
-			}
-		},
-		"error": {
-			"message": "malformed mod, not enough elements",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "dQKDN9EAPSSy",
-		"operation": {
-			"username.rank": {
-				"$mod": [
-					null,
-					null
-				]
-			}
-		},
-		"error": {
-			"message": "malformed mod, divisor not a number",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "aWIRgyvYL0lo",
-		"operation": {
-			"username.rank": {
-				"$mod": [
-					"value",
-					"value"
-				]
-			}
-		},
-		"error": {
-			"message": "malformed mod, divisor not a number",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "qv4oRBYby4rp",
-		"operation": {
-			"username.rank": {
-				"$mod": [
-					true,
-					true
-				]
-			}
-		},
-		"error": {
-			"message": "malformed mod, divisor not a number",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "tlwEXB5vORbj",
-		"operation": {
-			"username.rank.level": {
-				"$mod": "invalid"
-			}
-		},
-		"error": {
-			"message": "malformed mod, needs to be an array",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "ssJTyMtBD5ee",
-		"operation": {
-			"username.rank.level": {
-				"$mod": [
-					2
-				]
-			}
-		},
-		"error": {
-			"message": "malformed mod, not enough elements",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "nUUVwDovLqUA",
-		"operation": {
-			"username.rank.level": {
-				"$mod": []
-			}
-		},
-		"error": {
-			"message": "malformed mod, not enough elements",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "cMuCwlPK04RN",
-		"operation": {
-			"username.rank.level": {
-				"$mod": [
-					null,
-					null
-				]
-			}
-		},
-		"error": {
-			"message": "malformed mod, divisor not a number",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "c7RWEyrwiDu2",
-		"operation": {
-			"username.rank.level": {
-				"$mod": [
-					"value",
-					"value"
-				]
-			}
-		},
-		"error": {
-			"message": "malformed mod, divisor not a number",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "tGjeXzYNjB6k",
-		"operation": {
-			"username.rank.level": {
 				"$mod": [
 					true,
 					true
