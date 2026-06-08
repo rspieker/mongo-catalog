@@ -1,422 +1,123 @@
 [
 	{
-		"id": "oOz0ewr8TCOK",
-		"operation": {},
+		"id": "sDWYA8SMwXht",
+		"operation": {
+			"scores.0": 8
+		},
 		"documents": [
 			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12,
-			13,
-			14,
-			15,
-			16,
-			17,
-			18,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27,
-			28
+			1
 		]
 	},
 	{
-		"id": "v8M8iCTvo9m6",
+		"id": "tscMpekJC4Im",
 		"operation": {
-			"$or": [
-				{
-					"age": {
-						"$gte": 8,
-						"$lte": 10
-					},
-					"score": {
-						"$gte": 8,
-						"$lte": 10
-					}
-				},
-				{
-					"age": {
-						"$gte": 9,
-						"$lte": 11
-					},
-					"score": {
-						"$gte": 9,
-						"$lte": 11
-					}
-				},
-				{
-					"age": {
-						"$gte": 9,
-						"$lte": 12
-					},
-					"score": {
-						"$gte": 9,
-						"$lte": 12
-					}
-				}
-			]
+			"scores.0": {
+				"$gt": 15
+			}
 		},
 		"documents": []
 	},
 	{
-		"id": "aaE549KBoV1l",
+		"id": "oj0Cr0KudlPJ",
 		"operation": {
-			"scores.0": 19
+			"scores.0": {
+				"$lt": 7
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "tvEXDhAQgPoL",
+		"operation": {
+			"$or": [
+				{
+					"score": {
+						"$gte": 24,
+						"$lte": 26
+					},
+					"rank": {
+						"$gte": 24,
+						"$lte": 26
+					}
+				},
+				{
+					"score": {
+						"$gte": 25,
+						"$lte": 27
+					},
+					"rank": {
+						"$gte": 25,
+						"$lte": 27
+					}
+				},
+				{
+					"score": {
+						"$gte": 25,
+						"$lte": 28
+					},
+					"rank": {
+						"$gte": 25,
+						"$lte": 28
+					}
+				}
+			]
 		},
 		"documents": [
-			1,
 			2
 		]
 	},
 	{
-		"id": "vsmEL6bEzPRf",
-		"operation": {
-			"scores.0": {
-				"$gt": 26
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "og2yxinKwLHw",
-		"operation": {
-			"scores.0": {
-				"$lt": 18
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "aaE549KBoV1l",
-		"operation": {
-			"scores.0": 19
-		},
-		"documents": [
-			1,
-			2
-		]
-	},
-	{
-		"id": "vsmEL6bEzPRf",
-		"operation": {
-			"scores.0": {
-				"$gt": 26
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "og2yxinKwLHw",
-		"operation": {
-			"scores.0": {
-				"$lt": 18
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "eEuBJ6XlPWnz",
-		"operation": {
-			"ratings.0": [
-				32,
-				33
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "kb300wU7j3Fv",
-		"operation": {
-			"ratings.0.0": 33
-		},
-		"documents": []
-	},
-	{
-		"id": "h1TL50m1E2I9",
-		"operation": {
-			"level": {
-				"count": 3669,
-				"grade": "Abundant"
-			}
-		},
-		"documents": [
-			4
-		]
-	},
-	{
-		"id": "cUwcfSmy05R9",
-		"operation": {
-			"counts": {
-				"$gt": 27,
-				"$lt": 30
-			}
-		},
-		"documents": [
-			5
-		]
-	},
-	{
-		"id": "af41OH4y3Zij",
+		"id": "fWoPFOqpL5UN",
 		"operation": {
 			"$or": [
+				{
+					"ratings": {
+						"$in": [
+							9,
+							10
+						]
+					}
+				},
 				{
 					"counts": {
 						"$in": [
-							26,
-							27
-						]
-					}
-				},
-				{
-					"capacity": {
-						"$in": [
-							29,
-							30
+							12,
+							13
 						]
 					}
 				}
 			]
 		},
 		"documents": [
-			5
+			3
 		]
 	},
 	{
-		"id": "af41OH4y3Zij",
+		"id": "fWoPFOqpL5UN",
 		"operation": {
 			"$or": [
+				{
+					"ratings": {
+						"$in": [
+							9,
+							10
+						]
+					}
+				},
 				{
 					"counts": {
 						"$in": [
-							26,
-							27
-						]
-					}
-				},
-				{
-					"capacity": {
-						"$in": [
-							29,
-							30
+							12,
+							13
 						]
 					}
 				}
 			]
 		},
 		"documents": [
-			5
+			3
 		]
-	},
-	{
-		"id": "nUNfKqWDIT57",
-		"operation": {
-			"name": {
-				"$size": 15
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "rArXXW4cCFbo",
-		"operation": {
-			"title.quantity": {
-				"$size": 9
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "vatVojSaX7ES",
-		"operation": {
-			"title.quantity.size": {
-				"$size": 8
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "wK3nORVkffF9",
-		"operation": {
-			"title.quantity.size.index": {
-				"$size": 8
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "tSuyAuw2JNun",
-		"operation": {
-			"depth.depth.username": {
-				"$size": 27
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "lmZBjpO5C6nl",
-		"operation": {
-			"username.depth.depth.username": {
-				"$size": 27
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "rGF47W7TPJRG",
-		"operation": {
-			"$or": [
-				{
-					"age": {
-						"$gte": null,
-						"$lte": null
-					},
-					"score": {
-						"$gte": null,
-						"$lte": null
-					}
-				},
-				{
-					"age": {
-						"$gte": null,
-						"$lte": null
-					},
-					"score": {
-						"$gte": null,
-						"$lte": null
-					}
-				},
-				{
-					"age": {
-						"$gte": null,
-						"$lte": null
-					},
-					"score": {
-						"$gte": null,
-						"$lte": null
-					}
-				}
-			]
-		},
-		"documents": [
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12,
-			13,
-			14,
-			15,
-			16,
-			17,
-			18,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27,
-			28
-		]
-	},
-	{
-		"id": "kxIr9m4y3Z9H",
-		"operation": {
-			"$or": [
-				{
-					"age": {
-						"$gte": "value",
-						"$lte": "value"
-					},
-					"score": {
-						"$gte": "value",
-						"$lte": "value"
-					}
-				},
-				{
-					"age": {
-						"$gte": "value",
-						"$lte": "value"
-					},
-					"score": {
-						"$gte": "value",
-						"$lte": "value"
-					}
-				},
-				{
-					"age": {
-						"$gte": "value",
-						"$lte": "value"
-					},
-					"score": {
-						"$gte": "value",
-						"$lte": "value"
-					}
-				}
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "wX38QPBunSGH",
-		"operation": {
-			"$or": [
-				{
-					"age": {
-						"$gte": true,
-						"$lte": true
-					},
-					"score": {
-						"$gte": true,
-						"$lte": true
-					}
-				},
-				{
-					"age": {
-						"$gte": true,
-						"$lte": true
-					},
-					"score": {
-						"$gte": true,
-						"$lte": true
-					}
-				},
-				{
-					"age": {
-						"$gte": true,
-						"$lte": true
-					},
-					"score": {
-						"$gte": true,
-						"$lte": true
-					}
-				}
-			]
-		},
-		"documents": []
 	},
 	{
 		"id": "mOJHV9KJvROG",
@@ -424,33 +125,8 @@
 			"scores.0": null
 		},
 		"documents": [
-			0,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12,
-			13,
-			14,
-			15,
-			16,
-			17,
-			18,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27,
-			28
+			2,
+			3
 		]
 	},
 	{
@@ -522,186 +198,134 @@
 		"documents": []
 	},
 	{
-		"id": "ly02LaqHCf7h",
+		"id": "wxp3a8mUA1bd",
 		"operation": {
-			"ratings.0": [
-				null,
-				null
+			"$or": [
+				{
+					"score": {
+						"$gte": null,
+						"$lte": null
+					},
+					"rank": {
+						"$gte": null,
+						"$lte": null
+					}
+				},
+				{
+					"score": {
+						"$gte": null,
+						"$lte": null
+					},
+					"rank": {
+						"$gte": null,
+						"$lte": null
+					}
+				},
+				{
+					"score": {
+						"$gte": null,
+						"$lte": null
+					},
+					"rank": {
+						"$gte": null,
+						"$lte": null
+					}
+				}
 			]
-		},
-		"documents": []
-	},
-	{
-		"id": "dSLBEiKo1Fz8",
-		"operation": {
-			"ratings.0": [
-				"value",
-				"value"
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "av5ps1FEL6IR",
-		"operation": {
-			"ratings.0": [
-				true,
-				true
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "cpSLNjApVHcu",
-		"operation": {
-			"ratings.0.0": null
 		},
 		"documents": [
 			0,
 			1,
-			2,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12,
-			13,
-			14,
-			15,
-			16,
-			17,
-			18,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27,
-			28
+			3
 		]
 	},
 	{
-		"id": "pKQ4WruE7f4n",
-		"operation": {
-			"ratings.0.0": "value"
-		},
-		"documents": []
-	},
-	{
-		"id": "uRhhLLOT98bU",
-		"operation": {
-			"ratings.0.0": true
-		},
-		"documents": []
-	},
-	{
-		"id": "fCXvPHLW7ZFE",
-		"operation": {
-			"level": {
-				"count": null,
-				"grade": "Abundant"
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "bTT6BNZLakOR",
-		"operation": {
-			"level": {
-				"count": "value",
-				"grade": "Abundant"
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "kWWaDoFccW5Q",
-		"operation": {
-			"level": {
-				"count": true,
-				"grade": "Abundant"
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "uoL525w4NmMH",
-		"operation": {
-			"level": {
-				"count": 3669,
-				"grade": null
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "dVYOUMeHI0aK",
-		"operation": {
-			"level": {
-				"count": 3669,
-				"grade": 42
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "oVyVXNOnlMJU",
-		"operation": {
-			"level": {
-				"count": 3669,
-				"grade": true
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "kWsW6OUFKRmu",
-		"operation": {
-			"counts": {
-				"$gt": null,
-				"$lt": null
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "ttQt6huwKg23",
-		"operation": {
-			"counts": {
-				"$gt": "value",
-				"$lt": "value"
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "lrxjoBUku00H",
-		"operation": {
-			"counts": {
-				"$gt": true,
-				"$lt": true
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "b7a8kD9VH2dW",
+		"id": "tIwN6xQWWCUJ",
 		"operation": {
 			"$or": [
 				{
-					"counts": {
+					"score": {
+						"$gte": "value",
+						"$lte": "value"
+					},
+					"rank": {
+						"$gte": "value",
+						"$lte": "value"
+					}
+				},
+				{
+					"score": {
+						"$gte": "value",
+						"$lte": "value"
+					},
+					"rank": {
+						"$gte": "value",
+						"$lte": "value"
+					}
+				},
+				{
+					"score": {
+						"$gte": "value",
+						"$lte": "value"
+					},
+					"rank": {
+						"$gte": "value",
+						"$lte": "value"
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "nxaZ4kUEqTbS",
+		"operation": {
+			"$or": [
+				{
+					"score": {
+						"$gte": true,
+						"$lte": true
+					},
+					"rank": {
+						"$gte": true,
+						"$lte": true
+					}
+				},
+				{
+					"score": {
+						"$gte": true,
+						"$lte": true
+					},
+					"rank": {
+						"$gte": true,
+						"$lte": true
+					}
+				},
+				{
+					"score": {
+						"$gte": true,
+						"$lte": true
+					},
+					"rank": {
+						"$gte": true,
+						"$lte": true
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "wlWI0MYLQLzv",
+		"operation": {
+			"$or": [
+				{
+					"ratings": {
 						"$in": "active"
 					}
 				},
 				{
-					"capacity": {
+					"counts": {
 						"$in": "active"
 					}
 				}
@@ -714,11 +338,11 @@
 		}
 	},
 	{
-		"id": "vANonX0wvRHx",
+		"id": "pUK4fxspJfek",
 		"operation": {
 			"$or": [
 				{
-					"counts": {
+					"ratings": {
 						"$in": [
 							null,
 							null
@@ -726,7 +350,7 @@
 					}
 				},
 				{
-					"capacity": {
+					"counts": {
 						"$in": [
 							null,
 							null
@@ -738,41 +362,15 @@
 		"documents": [
 			0,
 			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12,
-			13,
-			14,
-			15,
-			16,
-			17,
-			18,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25,
-			26,
-			27,
-			28
+			2
 		]
 	},
 	{
-		"id": "hpMbZEZWEE8Z",
+		"id": "i9Azgg6aZx3j",
 		"operation": {
 			"$or": [
 				{
-					"counts": {
+					"ratings": {
 						"$in": [
 							"value",
 							"value"
@@ -780,7 +378,7 @@
 					}
 				},
 				{
-					"capacity": {
+					"counts": {
 						"$in": [
 							"value",
 							"value"
@@ -792,11 +390,11 @@
 		"documents": []
 	},
 	{
-		"id": "tk0XJCwyXSby",
+		"id": "j8htsP4DdOWu",
 		"operation": {
 			"$or": [
 				{
-					"counts": {
+					"ratings": {
 						"$in": [
 							true,
 							true
@@ -804,7 +402,7 @@
 					}
 				},
 				{
-					"capacity": {
+					"counts": {
 						"$in": [
 							true,
 							true
@@ -814,395 +412,5 @@
 			]
 		},
 		"documents": []
-	},
-	{
-		"id": "aNHhBQRtyNPe",
-		"operation": {
-			"name": {
-				"$size": "large"
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "pJNkKnBPezWV",
-		"operation": {
-			"name": {
-				"$size": 2.5
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "q0DkqqZ8Rag0",
-		"operation": {
-			"name": {
-				"$size": null
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: null",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "pAYUY0oSA1X1",
-		"operation": {
-			"name": {
-				"$size": "value"
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "aIzK5TJJAeOC",
-		"operation": {
-			"name": {
-				"$size": true
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: true",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "nsDuCVTdCJ3k",
-		"operation": {
-			"title.quantity": {
-				"$size": "large"
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "oCquizWvlVXM",
-		"operation": {
-			"title.quantity": {
-				"$size": 2.5
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "v2OpSlUAiZty",
-		"operation": {
-			"title.quantity": {
-				"$size": null
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: null",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "mswtuve3c1Hk",
-		"operation": {
-			"title.quantity": {
-				"$size": "value"
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "wdMjqEA0AI08",
-		"operation": {
-			"title.quantity": {
-				"$size": true
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: true",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "unnOHGHBmyED",
-		"operation": {
-			"title.quantity.size": {
-				"$size": "large"
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "nMyrFTPATDED",
-		"operation": {
-			"title.quantity.size": {
-				"$size": 2.5
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "smyyNvuxUkTJ",
-		"operation": {
-			"title.quantity.size": {
-				"$size": null
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: null",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "clYNEIWeQW85",
-		"operation": {
-			"title.quantity.size": {
-				"$size": "value"
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "w2Czj3tngLlD",
-		"operation": {
-			"title.quantity.size": {
-				"$size": true
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: true",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "cHGXAOs7A4Fa",
-		"operation": {
-			"title.quantity.size.index": {
-				"$size": "large"
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "wRq3jKOx2QuZ",
-		"operation": {
-			"title.quantity.size.index": {
-				"$size": 2.5
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "p0QdlsjvdUu1",
-		"operation": {
-			"title.quantity.size.index": {
-				"$size": null
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: null",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "u4XWa8kHhWG2",
-		"operation": {
-			"title.quantity.size.index": {
-				"$size": "value"
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "cLQUcGVT4uHZ",
-		"operation": {
-			"title.quantity.size.index": {
-				"$size": true
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: true",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "jUNTUBTbnGHA",
-		"operation": {
-			"depth.depth.username": {
-				"$size": "large"
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "sJ9GPAray5RS",
-		"operation": {
-			"depth.depth.username": {
-				"$size": 2.5
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "djewUXZ2KHus",
-		"operation": {
-			"depth.depth.username": {
-				"$size": null
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: null",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "uJTTFNteaL7x",
-		"operation": {
-			"depth.depth.username": {
-				"$size": "value"
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "vE4T1tBgSKkN",
-		"operation": {
-			"depth.depth.username": {
-				"$size": true
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: true",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "cI2AcXQKUVvY",
-		"operation": {
-			"username.depth.depth.username": {
-				"$size": "large"
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "mXRNT4U2TRa8",
-		"operation": {
-			"username.depth.depth.username": {
-				"$size": 2.5
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "s5jbIGNclVhi",
-		"operation": {
-			"username.depth.depth.username": {
-				"$size": null
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: null",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "unJRNZdCyyA6",
-		"operation": {
-			"username.depth.depth.username": {
-				"$size": "value"
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "kOodQ9HB4R6q",
-		"operation": {
-			"username.depth.depth.username": {
-				"$size": true
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: true",
-			"code": 2,
-			"type": "MongoServerError"
-		}
 	}
 ]
