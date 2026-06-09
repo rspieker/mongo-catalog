@@ -249,6 +249,7 @@
 			}
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -334,6 +335,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -363,6 +365,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -873,7 +876,11 @@
 				}
 			]
 		},
-		"documents": []
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq 8\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0\n    step $eq 7\nSort: {}\nProj: {}\n planner returned error :: caused by :: No query solutions",
+			"code": 291,
+			"type": "MongoServerError"
+		}
 	},
 	{
 		"id": "jmNCzCwzJx53",
@@ -1021,6 +1028,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -1035,6 +1043,7 @@
 			"name": null
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -1065,6 +1074,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -1087,6 +1097,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -1365,6 +1376,7 @@
 		},
 		"documents": [
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -1402,6 +1414,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -1439,6 +1452,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -1817,6 +1831,7 @@
 		},
 		"documents": [
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -1854,6 +1869,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -1891,6 +1907,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -2269,6 +2286,7 @@
 		},
 		"documents": [
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -2306,6 +2324,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -2343,6 +2362,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -2721,6 +2741,7 @@
 		},
 		"documents": [
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -2758,6 +2779,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -2795,6 +2817,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -3173,6 +3196,7 @@
 		},
 		"documents": [
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -3210,6 +3234,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -3247,6 +3272,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -4401,7 +4427,11 @@
 				}
 			]
 		},
-		"documents": []
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq 8\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0\n    step $eq {}\nSort: {}\nProj: {}\n planner returned error :: caused by :: No query solutions",
+			"code": 291,
+			"type": "MongoServerError"
+		}
 	},
 	{
 		"id": "wxqdZtE2Ks9y",
@@ -4419,7 +4449,11 @@
 				}
 			]
 		},
-		"documents": []
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq 8\n        step $eq \"Great\"\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0\n    step $eq {}\nSort: {}\nProj: {}\n planner returned error :: caused by :: No query solutions",
+			"code": 291,
+			"type": "MongoServerError"
+		}
 	},
 	{
 		"id": "hvJyxYVU6MDg",
@@ -4435,7 +4469,9 @@
 				}
 			]
 		},
-		"documents": []
+		"documents": [
+			2
+		]
 	},
 	{
 		"id": "wJvZNFq2U1QM",
@@ -4459,7 +4495,9 @@
 				}
 			]
 		},
-		"documents": []
+		"documents": [
+			2
+		]
 	},
 	{
 		"id": "hvJyxYVU6MDg",
@@ -4475,7 +4513,9 @@
 				}
 			]
 		},
-		"documents": []
+		"documents": [
+			2
+		]
 	},
 	{
 		"id": "wJvZNFq2U1QM",
@@ -4499,7 +4539,9 @@
 				}
 			]
 		},
-		"documents": []
+		"documents": [
+			2
+		]
 	},
 	{
 		"id": "hvJyxYVU6MDg",
@@ -4515,7 +4557,9 @@
 				}
 			]
 		},
-		"documents": []
+		"documents": [
+			2
+		]
 	},
 	{
 		"id": "wJvZNFq2U1QM",
@@ -4539,7 +4583,9 @@
 				}
 			]
 		},
-		"documents": []
+		"documents": [
+			2
+		]
 	},
 	{
 		"id": "btOYzcwCG87C",
@@ -4752,6 +4798,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -4795,14 +4842,15 @@
 			]
 		},
 		"documents": [
+			0,
+			1,
+			2,
 			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			0,
-			1
+			8
 		]
 	},
 	{
@@ -4916,6 +4964,7 @@
 			]
 		},
 		"documents": [
+			2,
 			4,
 			5,
 			6,
@@ -5159,6 +5208,7 @@
 			}
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -5177,6 +5227,7 @@
 			}
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -5487,6 +5538,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -5507,6 +5559,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -5530,6 +5583,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -5574,6 +5628,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -5612,14 +5667,15 @@
 			]
 		},
 		"documents": [
+			0,
+			1,
+			2,
 			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			0,
-			1
+			8
 		]
 	},
 	{
@@ -5763,6 +5819,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -5850,6 +5907,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -5937,6 +5995,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -6024,6 +6083,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -6103,6 +6163,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -6161,6 +6222,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -6221,6 +6283,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -6280,6 +6343,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -6341,6 +6405,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -6403,6 +6468,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -6467,6 +6533,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -6576,6 +6643,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -6690,6 +6758,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -6801,6 +6870,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -6892,16 +6962,11 @@
 				}
 			]
 		},
-		"documents": [
-			0,
-			1,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8
-		]
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq null\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0\n    step $eq null\nSort: {}\nProj: {}\n planner returned error :: caused by :: No query solutions",
+			"code": 291,
+			"type": "MongoServerError"
+		}
 	},
 	{
 		"id": "qLZwtQtJMGww",
@@ -6918,7 +6983,11 @@
 				}
 			]
 		},
-		"documents": []
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq \"value\"\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0\n    step $eq \"value\"\nSort: {}\nProj: {}\n planner returned error :: caused by :: No query solutions",
+			"code": 291,
+			"type": "MongoServerError"
+		}
 	},
 	{
 		"id": "qLjYeOwzp6Uk",
@@ -6935,7 +7004,11 @@
 				}
 			]
 		},
-		"documents": []
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq true\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0\n    step $eq true\nSort: {}\nProj: {}\n planner returned error :: caused by :: No query solutions",
+			"code": 291,
+			"type": "MongoServerError"
+		}
 	},
 	{
 		"id": "qbXY4I0AxGmP",
@@ -7155,6 +7228,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			5,
 			6,
@@ -7260,14 +7334,15 @@
 			]
 		},
 		"documents": [
+			0,
+			1,
+			2,
 			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			0,
-			1
+			8
 		]
 	},
 	{
@@ -7321,6 +7396,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -7342,6 +7418,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -7357,6 +7434,7 @@
 			"name": null
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -7395,6 +7473,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -7417,6 +7496,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -7439,6 +7519,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -7461,6 +7542,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -7483,6 +7565,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -7505,6 +7588,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -7520,6 +7604,7 @@
 			"score": null
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -7559,6 +7644,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -7616,14 +7702,15 @@
 			]
 		},
 		"documents": [
+			0,
+			1,
+			2,
 			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			0,
-			1
+			8
 		]
 	},
 	{
@@ -7679,14 +7766,15 @@
 			]
 		},
 		"documents": [
+			0,
+			1,
+			2,
 			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			0,
-			1
+			8
 		]
 	},
 	{
@@ -7752,14 +7840,15 @@
 			]
 		},
 		"documents": [
+			0,
+			1,
+			2,
 			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			0,
-			1
+			8
 		]
 	},
 	{
@@ -7837,6 +7926,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -7912,6 +8002,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -8033,6 +8124,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -8070,6 +8162,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -8173,6 +8266,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -8749,6 +8843,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -8876,14 +8971,15 @@
 			]
 		},
 		"documents": [
+			0,
+			1,
+			2,
 			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			0,
-			1
+			8
 		]
 	},
 	{
@@ -8978,14 +9074,15 @@
 			]
 		},
 		"documents": [
+			0,
+			1,
+			2,
 			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			0,
-			1
+			8
 		]
 	},
 	{
@@ -9045,6 +9142,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -9116,14 +9214,15 @@
 			]
 		},
 		"documents": [
+			0,
+			1,
+			2,
 			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			0,
-			1
+			8
 		]
 	},
 	{
@@ -9255,6 +9354,7 @@
 			]
 		},
 		"documents": [
+			2,
 			3,
 			4,
 			5,
@@ -9317,6 +9417,7 @@
 		},
 		"documents": [
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -9368,7 +9469,11 @@
 				}
 			]
 		},
-		"documents": []
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq null\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0\n    step $eq {}\nSort: {}\nProj: {}\n planner returned error :: caused by :: No query solutions",
+			"code": 291,
+			"type": "MongoServerError"
+		}
 	},
 	{
 		"id": "t6Hn9spAfOjX",
@@ -9385,7 +9490,11 @@
 				}
 			]
 		},
-		"documents": []
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq \"value\"\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0\n    step $eq {}\nSort: {}\nProj: {}\n planner returned error :: caused by :: No query solutions",
+			"code": 291,
+			"type": "MongoServerError"
+		}
 	},
 	{
 		"id": "u5n9LEibQWRX",
@@ -9402,7 +9511,11 @@
 				}
 			]
 		},
-		"documents": []
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq true\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0\n    step $eq {}\nSort: {}\nProj: {}\n planner returned error :: caused by :: No query solutions",
+			"code": 291,
+			"type": "MongoServerError"
+		}
 	},
 	{
 		"id": "nZvpjKOUC1VY",
@@ -9483,7 +9596,11 @@
 				}
 			]
 		},
-		"documents": []
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq null\n        step $eq \"Great\"\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0\n    step $eq {}\nSort: {}\nProj: {}\n planner returned error :: caused by :: No query solutions",
+			"code": 291,
+			"type": "MongoServerError"
+		}
 	},
 	{
 		"id": "pBr7FPLtKNju",
@@ -9501,7 +9618,11 @@
 				}
 			]
 		},
-		"documents": []
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq \"value\"\n        step $eq \"Great\"\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0\n    step $eq {}\nSort: {}\nProj: {}\n planner returned error :: caused by :: No query solutions",
+			"code": 291,
+			"type": "MongoServerError"
+		}
 	},
 	{
 		"id": "oJyUZkE5YB8H",
@@ -9519,7 +9640,11 @@
 				}
 			]
 		},
-		"documents": []
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq true\n        step $eq \"Great\"\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0\n    step $eq {}\nSort: {}\nProj: {}\n planner returned error :: caused by :: No query solutions",
+			"code": 291,
+			"type": "MongoServerError"
+		}
 	},
 	{
 		"id": "riXJHamRB0Sl",
@@ -9912,6 +10037,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			4,
 			5,
 			6,
@@ -9962,6 +10088,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			4,
 			5,
 			6,
@@ -10012,6 +10139,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			5,
 			6,
@@ -10062,6 +10190,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			7,
@@ -10141,6 +10270,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -10328,6 +10458,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			5,
@@ -10403,6 +10534,7 @@
 		"documents": [
 			0,
 			1,
+			2,
 			3,
 			4,
 			5,
