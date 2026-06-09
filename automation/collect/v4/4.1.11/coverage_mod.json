@@ -1,91 +1,76 @@
 [
 	{
-		"id": "mg6SXeGtII5N",
+		"id": "okNvBB60PHan",
 		"operation": {
-			"score": {
+			"name": {
 				"$mod": [
-					4000000036,
-					36
+					35,
+					26
 				]
 			}
 		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
+		"documents": [
+			0
+		]
 	},
 	{
-		"id": "ghkcGExMhTds",
+		"id": "nQPvQHOf7bWJ",
 		"operation": {
-			"title.level": {
+			"name": {
+				"$gt": 30,
 				"$mod": [
-					14,
-					11
+					35,
+					26
 				]
 			}
 		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
+		"documents": []
 	},
 	{
-		"id": "e8UDniQvKo6w",
+		"id": "eBQQOJltKSUL",
 		"operation": {
-			"title.level.count": {
-				"$mod": [
-					16,
-					11
-				]
-			}
-		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
-	},
-	{
-		"id": "rcMEA87yHGV6",
-		"operation": {
-			"score": {
+			"name": {
 				"$mod": "invalid"
 			}
 		},
 		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
+			"message": "malformed mod, needs to be an array",
+			"code": 2,
+			"type": "MongoServerError"
 		}
 	},
 	{
-		"id": "fLhe60H5y32n",
+		"id": "nl2QmvVPtVqm",
 		"operation": {
-			"score": {
+			"name": {
 				"$mod": [
 					2
 				]
 			}
 		},
 		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
+			"message": "malformed mod, not enough elements",
+			"code": 2,
+			"type": "MongoServerError"
 		}
 	},
 	{
-		"id": "mLwpSWM5XGbS",
+		"id": "vVdsM1i9XX0B",
 		"operation": {
-			"score": {
+			"name": {
 				"$mod": []
 			}
 		},
 		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
+			"message": "malformed mod, not enough elements",
+			"code": 2,
+			"type": "MongoServerError"
 		}
 	},
 	{
-		"id": "eQBWbvGM928q",
+		"id": "uqZCLQuJHeza",
 		"operation": {
-			"score": {
+			"name": {
 				"$mod": [
 					null,
 					null
@@ -93,14 +78,15 @@
 			}
 		},
 		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
+			"message": "malformed mod, divisor not a number",
+			"code": 2,
+			"type": "MongoServerError"
 		}
 	},
 	{
-		"id": "czhzsP4JPftA",
+		"id": "lKxYduzz8D5D",
 		"operation": {
-			"score": {
+			"name": {
 				"$mod": [
 					"value",
 					"value"
@@ -108,14 +94,15 @@
 			}
 		},
 		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
+			"message": "malformed mod, divisor not a number",
+			"code": 2,
+			"type": "MongoServerError"
 		}
 	},
 	{
-		"id": "mqKxyLGU8GZ7",
+		"id": "uVUrcO3ErwWI",
 		"operation": {
-			"score": {
+			"name": {
 				"$mod": [
 					true,
 					true
@@ -123,52 +110,60 @@
 			}
 		},
 		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
+			"message": "malformed mod, divisor not a number",
+			"code": 2,
+			"type": "MongoServerError"
 		}
 	},
 	{
-		"id": "lKJfEENHCFA4",
+		"id": "pOtUPTI2DV31",
 		"operation": {
-			"title.level": {
+			"name": {
+				"$gt": 30,
 				"$mod": "invalid"
 			}
 		},
 		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
+			"message": "malformed mod, needs to be an array",
+			"code": 2,
+			"type": "MongoServerError"
 		}
 	},
 	{
-		"id": "kJLxARivEaHs",
+		"id": "dLztxTHXNGNH",
 		"operation": {
-			"title.level": {
+			"name": {
+				"$gt": 30,
 				"$mod": [
 					2
 				]
 			}
 		},
 		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
+			"message": "malformed mod, not enough elements",
+			"code": 2,
+			"type": "MongoServerError"
 		}
 	},
 	{
-		"id": "qf6EQNHODfKy",
+		"id": "fK9PxmH76Uhl",
 		"operation": {
-			"title.level": {
+			"name": {
+				"$gt": 30,
 				"$mod": []
 			}
 		},
 		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
+			"message": "malformed mod, not enough elements",
+			"code": 2,
+			"type": "MongoServerError"
 		}
 	},
 	{
-		"id": "wGBbFqw3WzB6",
+		"id": "uVqOVhPWU4b7",
 		"operation": {
-			"title.level": {
+			"name": {
+				"$gt": null,
 				"$mod": [
 					null,
 					null
@@ -176,14 +171,16 @@
 			}
 		},
 		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
+			"message": "malformed mod, divisor not a number",
+			"code": 2,
+			"type": "MongoServerError"
 		}
 	},
 	{
-		"id": "bTytOkjUMIL3",
+		"id": "iJumawSF8f0P",
 		"operation": {
-			"title.level": {
+			"name": {
+				"$gt": "value",
 				"$mod": [
 					"value",
 					"value"
@@ -191,14 +188,16 @@
 			}
 		},
 		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
+			"message": "malformed mod, divisor not a number",
+			"code": 2,
+			"type": "MongoServerError"
 		}
 	},
 	{
-		"id": "kZFvF7hZH3Ae",
+		"id": "oQAY8bdXe7jh",
 		"operation": {
-			"title.level": {
+			"name": {
+				"$gt": true,
 				"$mod": [
 					true,
 					true
@@ -206,91 +205,9 @@
 			}
 		},
 		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
-	},
-	{
-		"id": "nMNpueO40iZA",
-		"operation": {
-			"title.level.count": {
-				"$mod": "invalid"
-			}
-		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
-	},
-	{
-		"id": "u6zwYDIVDfMV",
-		"operation": {
-			"title.level.count": {
-				"$mod": [
-					2
-				]
-			}
-		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
-	},
-	{
-		"id": "o4UswsTTRKcL",
-		"operation": {
-			"title.level.count": {
-				"$mod": []
-			}
-		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
-	},
-	{
-		"id": "rPDtEv1PZfjg",
-		"operation": {
-			"title.level.count": {
-				"$mod": [
-					null,
-					null
-				]
-			}
-		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
-	},
-	{
-		"id": "sqUFYLtoxvWm",
-		"operation": {
-			"title.level.count": {
-				"$mod": [
-					"value",
-					"value"
-				]
-			}
-		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
-	},
-	{
-		"id": "qntWG75Zd01F",
-		"operation": {
-			"title.level.count": {
-				"$mod": [
-					true,
-					true
-				]
-			}
-		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
+			"message": "malformed mod, divisor not a number",
+			"code": 2,
+			"type": "MongoServerError"
 		}
 	}
 ]
