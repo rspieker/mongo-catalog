@@ -13,78 +13,19 @@
 		}
 	},
 	{
-		"id": "ovj1QWgDEpWf",
-		"operation": {
-			"name": {
-				"$type": 20
-			}
-		},
-		"error": {
-			"message": "Invalid numerical type code: 20",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "gANZpeJQfWeB",
-		"operation": {
-			"name": {
-				"$regex": "Each",
-				"$type": 21
-			}
-		},
-		"error": {
-			"message": "Invalid numerical type code: 21",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "pKorIO2AgD0o",
+		"id": "sJeJKBTFDMTI",
 		"operation": {
 			"rank": {
 				"$not": {
-					"$type": "Either"
+					"$type": "Each"
 				}
 			}
 		},
 		"error": {
-			"message": "Unknown type name alias: Either",
+			"message": "Unknown type name alias: Each",
 			"code": 2,
 			"type": "MongoServerError"
 		}
-	},
-	{
-		"id": "qYgx2n9Dw1P6",
-		"operation": {
-			"status": {
-				"$exists": true
-			}
-		},
-		"documents": [
-			2,
-			4
-		]
-	},
-	{
-		"id": "dQxmUe8ArA7i",
-		"operation": {
-			"status": null
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12
-		]
 	},
 	{
 		"id": "qYgx2n9Dw1P6",
@@ -156,90 +97,6 @@
 		"error": {
 			"message": "type must be represented as a number or a string",
 			"code": 14,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "mX46AOOMLPjH",
-		"operation": {
-			"name": {
-				"$regex": "Each",
-				"$type": null
-			}
-		},
-		"error": {
-			"message": "type must be represented as a number or a string",
-			"code": 14,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "bo9bFRZWFuzq",
-		"operation": {
-			"name": {
-				"$regex": "Each",
-				"$type": "value"
-			}
-		},
-		"error": {
-			"message": "Unknown type name alias: value",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "cMBFErMCehcM",
-		"operation": {
-			"name": {
-				"$regex": "Each",
-				"$type": true
-			}
-		},
-		"error": {
-			"message": "type must be represented as a number or a string",
-			"code": 14,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "qDAYL490dGYN",
-		"operation": {
-			"name": {
-				"$regex": null,
-				"$type": 21
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "ayTq9Al22IV9",
-		"operation": {
-			"name": {
-				"$regex": 42,
-				"$type": 21
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "dNFgM2PXZqcu",
-		"operation": {
-			"name": {
-				"$regex": true,
-				"$type": 21
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
 			"type": "MongoServerError"
 		}
 	},

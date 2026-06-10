@@ -738,19 +738,6 @@
 		"documents": []
 	},
 	{
-		"id": "nSKd1V6kDcf2",
-		"operation": {
-			"title": {
-				"$not": {}
-			}
-		},
-		"error": {
-			"message": "$not cannot be empty",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
 		"id": "ryAC2INRlV8l",
 		"operation": {
 			"$and": [
@@ -943,7 +930,7 @@
 			"$where": "Couple"
 		},
 		"error": {
-			"message": "error while multiplanner was selecting best plan :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -959,7 +946,7 @@
 			]
 		},
 		"error": {
-			"message": "error while multiplanner was selecting best plan :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -977,7 +964,7 @@
 			]
 		},
 		"error": {
-			"message": "error while multiplanner was selecting best plan :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -993,7 +980,7 @@
 			]
 		},
 		"error": {
-			"message": "error while multiplanner was selecting best plan :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -1013,7 +1000,7 @@
 			]
 		},
 		"error": {
-			"message": "error while multiplanner was selecting best plan :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -1337,112 +1324,6 @@
 		"documents": []
 	},
 	{
-		"id": "urFhqRhzTST0",
-		"operation": {
-			"title": {
-				"$lt": 28
-			}
-		},
-		"documents": [
-			3
-		]
-	},
-	{
-		"id": "wqPXhC6KC13w",
-		"operation": {
-			"$or": [
-				{
-					"title": {
-						"$gt": 33
-					}
-				},
-				{
-					"score": {
-						"$lt": 27
-					}
-				}
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "sKegwAmCLkmA",
-		"operation": {
-			"$or": [
-				{
-					"title": {
-						"$gt": 33
-					}
-				},
-				{
-					"$and": [
-						{
-							"score": {
-								"$lt": 30
-							}
-						},
-						{
-							"$or": [
-								{
-									"rank": {
-										"$lt": 30
-									}
-								},
-								{
-									"level": 26
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "uEK0q5YA5iWD",
-		"operation": {
-			"$or": [
-				{
-					"$and": [
-						{
-							"title": {
-								"$gt": 30
-							}
-						},
-						{
-							"rank": {
-								"$gt": 27
-							}
-						}
-					]
-				},
-				{
-					"$and": [
-						{
-							"score": {
-								"$lt": 30
-							}
-						},
-						{
-							"level": 26
-						}
-					]
-				}
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "vIBFliiuMduI",
-		"operation": {
-			"title": {
-				"$gt": 31
-			}
-		},
-		"documents": []
-	},
-	{
 		"id": "uNgYWywXG7Hl",
 		"operation": {
 			"$or": [
@@ -1780,15 +1661,6 @@
 		]
 	},
 	{
-		"id": "h1IGM7GQSUGV",
-		"operation": {
-			"title": 26
-		},
-		"documents": [
-			3
-		]
-	},
-	{
 		"id": "uNgYWywXG7Hl",
 		"operation": {
 			"$or": [
@@ -2123,21 +1995,6 @@
 		},
 		"documents": [
 			3
-		]
-	},
-	{
-		"id": "pkhzWC81QXy0",
-		"operation": {
-			"title": {
-				"$ne": 27
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4
 		]
 	},
 	{
@@ -3712,7 +3569,7 @@
 			"$where": "Couple"
 		},
 		"error": {
-			"message": "error while multiplanner was selecting best plan :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -3780,7 +3637,7 @@
 			]
 		},
 		"error": {
-			"message": "ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -3870,7 +3727,7 @@
 			]
 		},
 		"error": {
-			"message": "ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -3968,7 +3825,7 @@
 			]
 		},
 		"error": {
-			"message": "ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -4060,7 +3917,7 @@
 			]
 		},
 		"error": {
-			"message": "error while multiplanner was selecting best plan :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -5443,73 +5300,6 @@
 		"documents": []
 	},
 	{
-		"id": "qHPCvKg41n4Y",
-		"operation": {
-			"title": null
-		},
-		"documents": [
-			0,
-			1,
-			2
-		]
-	},
-	{
-		"id": "vZibMJVClQeK",
-		"operation": {
-			"title": "value"
-		},
-		"documents": []
-	},
-	{
-		"id": "c6THdYUrGeAg",
-		"operation": {
-			"title": true
-		},
-		"documents": []
-	},
-	{
-		"id": "nEpz5AEWV6hU",
-		"operation": {
-			"title": {
-				"$ne": null
-			}
-		},
-		"documents": [
-			3,
-			4
-		]
-	},
-	{
-		"id": "q0Zy3DmnL3v2",
-		"operation": {
-			"title": {
-				"$ne": "value"
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4
-		]
-	},
-	{
-		"id": "hOetPOPKDcX9",
-		"operation": {
-			"title": {
-				"$ne": true
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4
-		]
-	},
-	{
 		"id": "fOoTK54SUCHH",
 		"operation": {
 			"$and": [
@@ -6682,6 +6472,48 @@
 					]
 				}
 			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	{
+		"id": "nEpz5AEWV6hU",
+		"operation": {
+			"title": {
+				"$ne": null
+			}
+		},
+		"documents": [
+			3,
+			4
+		]
+	},
+	{
+		"id": "q0Zy3DmnL3v2",
+		"operation": {
+			"title": {
+				"$ne": "value"
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	{
+		"id": "hOetPOPKDcX9",
+		"operation": {
+			"title": {
+				"$ne": true
+			}
 		},
 		"documents": [
 			0,

@@ -1,71 +1,5 @@
 [
 	{
-		"id": "wOLvXe2TOZj9",
-		"operation": {
-			"age": 23
-		},
-		"documents": [
-			0
-		]
-	},
-	{
-		"id": "qZzABCAVY6XF",
-		"operation": {
-			"age": {
-				"$ne": 23
-			}
-		},
-		"documents": [
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11
-		]
-	},
-	{
-		"id": "jENfzDFUAhQP",
-		"operation": {
-			"age": {
-				"$in": [
-					23
-				]
-			}
-		},
-		"documents": [
-			0
-		]
-	},
-	{
-		"id": "rPtvFqu8tSFj",
-		"operation": {
-			"age": {
-				"$nin": [
-					23
-				]
-			}
-		},
-		"documents": [
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11
-		]
-	},
-	{
 		"id": "ixxoRPKTAKzm",
 		"operation": {
 			"name": {
@@ -105,10 +39,7 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -121,7 +52,7 @@
 			}
 		},
 		"documents": [
-			2
+			0
 		]
 	},
 	{
@@ -142,10 +73,7 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -156,8 +84,8 @@
 			}
 		},
 		"documents": [
-			2,
-			3
+			0,
+			1
 		]
 	},
 	{
@@ -170,16 +98,13 @@
 			}
 		},
 		"documents": [
-			0,
-			1,
+			2,
+			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -194,17 +119,14 @@
 			}
 		},
 		"documents": [
-			0,
 			1,
+			2,
 			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -220,17 +142,14 @@
 			}
 		},
 		"documents": [
-			0,
 			1,
+			2,
 			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -245,7 +164,7 @@
 			}
 		},
 		"documents": [
-			2
+			0
 		]
 	},
 	{
@@ -285,17 +204,14 @@
 			}
 		},
 		"documents": [
-			0,
 			1,
+			2,
 			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -414,16 +330,13 @@
 		},
 		"documents": [
 			0,
-			1,
 			2,
+			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -456,10 +369,7 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -479,13 +389,10 @@
 			1,
 			2,
 			3,
-			4,
 			5,
+			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -508,19 +415,16 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
-		"id": "dpmZJj7o8tcF",
+		"id": "rnhsMu9hMaaH",
 		"operation": {
 			"username": {
 				"$not": {
 					"$elemMatch": {
-						"score": "Abundant"
+						"age": "Abundant"
 					}
 				}
 			}
@@ -533,717 +437,7 @@
 			4,
 			5,
 			6,
-			7,
-			8,
-			9,
-			11
-		]
-	},
-	{
-		"id": "tceQsxNvIzdS",
-		"operation": {
-			"username": {
-				"$not": {
-					"$not": {
-						"$gt": "Abundant"
-					}
-				}
-			}
-		},
-		"documents": [
-			9
-		]
-	},
-	{
-		"id": "kH3Bg6gAd1jN",
-		"operation": {
-			"username": {
-				"$gt": "Abundant"
-			}
-		},
-		"documents": [
-			9
-		]
-	},
-	{
-		"id": "wwBSopwKAacT",
-		"operation": {
-			"username": {
-				"$not": {
-					"$gt": "Abundant"
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11,
-			8,
-			7,
-			10
-		]
-	},
-	{
-		"id": "heHZHvxGqSN3",
-		"operation": {
-			"username": {
-				"$not": {
-					"$ne": "Abundant"
-				}
-			}
-		},
-		"documents": [
-			7,
-			9
-		]
-	},
-	{
-		"id": "diEpwnLXbmgj",
-		"operation": {
-			"username": {
-				"$not": {
-					"$gte": "Couple"
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11,
-			8,
-			7,
-			10
-		]
-	},
-	{
-		"id": "q3T3E9i93IUG",
-		"operation": {
-			"username": {
-				"$exists": true
-			}
-		},
-		"documents": [
-			8,
-			7,
-			9,
-			10
-		]
-	},
-	{
-		"id": "sZzrxdAKv0Od",
-		"operation": {
-			"username": {
-				"$not": {
-					"$exists": true
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11
-		]
-	},
-	{
-		"id": "tnhMLWI831ri",
-		"operation": {
-			"username": {
-				"$not": {
-					"$in": [
-						"Abundant"
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11,
-			8,
-			10
-		]
-	},
-	{
-		"id": "ruHHohHcRDaT",
-		"operation": {
-			"username": {
-				"$not": {
-					"$in": [
-						"Abundant",
-						"Couple"
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11,
-			8,
-			10
-		]
-	},
-	{
-		"id": "iSYTTwy74gCp",
-		"operation": {
-			"username": {
-				"$not": {
-					"$nin": [
-						"Abundant"
-					]
-				}
-			}
-		},
-		"documents": [
-			7,
-			9
-		]
-	},
-	{
-		"id": "qXHHV0infTRI",
-		"operation": {
-			"username": {
-				"$not": {}
-			}
-		},
-		"error": {
-			"message": "$not cannot be empty",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "lMAPETvC0aBi",
-		"operation": {
-			"username": {
-				"$not": {},
-				"$regex": "Abundant"
-			}
-		},
-		"error": {
-			"message": "$not cannot be empty",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "l3SFTepK7eCw",
-		"operation": {
-			"username": {
-				"$not": {
-					"$regex": "Abundant"
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			8,
-			10,
-			11
-		]
-	},
-	{
-		"id": "q8zYKoT0bmil",
-		"operation": {
-			"username": {
-				"$not": {
-					"$regex": "Double",
-					"$options": "Each"
-				}
-			}
-		},
-		"error": {
-			"message": " invalid flag in regex options: E",
-			"code": 51108,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "uPKFN9oMxU3H",
-		"operation": {
-			"username": {
-				"$type": 28
-			}
-		},
-		"error": {
-			"message": "Invalid numerical type code: 28",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "u36ulIyGWZOu",
-		"operation": {
-			"username": {
-				"$not": {
-					"$type": 27
-				}
-			}
-		},
-		"error": {
-			"message": "Invalid numerical type code: 27",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "eas3oHyWHFNZ",
-		"operation": {
-			"username": {
-				"$not": {
-					"$mod": [
-						31,
-						27
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			9,
-			10,
-			11
-		]
-	},
-	{
-		"id": "lVvHMpYvK05j",
-		"operation": {
-			"username": {
-				"$not": {
-					"$size": 28
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11
-		]
-	},
-	{
-		"id": "b9IhupD1MN7U",
-		"operation": {
-			"username": {
-				"$not": {
-					"$all": [
-						"Abundant",
-						"Couple"
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			10,
-			11
-		]
-	},
-	{
-		"id": "oxeNvM41wcbz",
-		"operation": {
-			"username": {
-				"$not": {
-					"$all": [
-						"Either"
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11,
-			8,
-			7,
-			9,
-			10
-		]
-	},
-	{
-		"id": "dpmZJj7o8tcF",
-		"operation": {
-			"username": {
-				"$not": {
-					"$elemMatch": {
-						"score": "Abundant"
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			11
-		]
-	},
-	{
-		"id": "cS4mtIkhCT7h",
-		"operation": {
-			"username": {
-				"$not": {
-					"$not": "Abundant"
-				}
-			}
-		},
-		"error": {
-			"message": "$not needs a regex or a document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "opOGtSVqyljw",
-		"operation": {
-			"username": {
-				"$not": "Abundant"
-			}
-		},
-		"error": {
-			"message": "$not needs a regex or a document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "u9xuHVT3Q3Zs",
-		"operation": {
-			"username": {
-				"$not": {
-					"$ref": "Empty"
-				}
-			}
-		},
-		"error": {
-			"message": "unknown operator: $ref",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "wZzdh5dZhved",
-		"operation": {
-			"username": {
-				"$not": {
-					"$options": "Abundant"
-				}
-			}
-		},
-		"error": {
-			"message": "$options needs a $regex",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "tHxQsXC8vnAw",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$gt": 19
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11
-		]
-	},
-	{
-		"id": "n7Yjt9EJsZjS",
-		"operation": {
-			"age": null
-		},
-		"documents": [
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11
-		]
-	},
-	{
-		"id": "kHbAwuVM7WGB",
-		"operation": {
-			"age": "value"
-		},
-		"documents": []
-	},
-	{
-		"id": "aofomZDzIZ6T",
-		"operation": {
-			"age": true
-		},
-		"documents": []
-	},
-	{
-		"id": "kfGZKcGZ72Sg",
-		"operation": {
-			"age": {
-				"$ne": null
-			}
-		},
-		"documents": [
-			0
-		]
-	},
-	{
-		"id": "qYlS2PNwrT6y",
-		"operation": {
-			"age": {
-				"$ne": "value"
-			}
-		},
-		"documents": [
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			0
-		]
-	},
-	{
-		"id": "gWFjzWbGg8tK",
-		"operation": {
-			"age": {
-				"$ne": true
-			}
-		},
-		"documents": [
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			0
-		]
-	},
-	{
-		"id": "nvwzwktRyIh3",
-		"operation": {
-			"age": {
-				"$in": "active"
-			}
-		},
-		"error": {
-			"message": "$in needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "arscExu4r66Z",
-		"operation": {
-			"age": {
-				"$in": [
-					null
-				]
-			}
-		},
-		"documents": [
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11
-		]
-	},
-	{
-		"id": "twBeDuDWESF3",
-		"operation": {
-			"age": {
-				"$in": [
-					"value"
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "c3Y7n03i5ZZt",
-		"operation": {
-			"age": {
-				"$in": [
-					true
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "fD1BgHKXIhRn",
-		"operation": {
-			"age": {
-				"$nin": "deleted"
-			}
-		},
-		"error": {
-			"message": "$nin needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "n5a6orxPSXPV",
-		"operation": {
-			"age": {
-				"$nin": [
-					null
-				]
-			}
-		},
-		"documents": [
-			0
-		]
-	},
-	{
-		"id": "awlADvXeWC8X",
-		"operation": {
-			"age": {
-				"$nin": [
-					"value"
-				]
-			}
-		},
-		"documents": [
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			0
-		]
-	},
-	{
-		"id": "wxntdksGpKek",
-		"operation": {
-			"age": {
-				"$nin": [
-					true
-				]
-			}
-		},
-		"documents": [
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			0
+			7
 		]
 	},
 	{
@@ -1330,10 +524,7 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -1354,10 +545,7 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -1378,10 +566,7 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -1394,16 +579,13 @@
 			}
 		},
 		"documents": [
-			0,
-			1,
+			2,
+			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -1438,8 +620,8 @@
 			}
 		},
 		"documents": [
-			2,
-			3
+			0,
+			1
 		]
 	},
 	{
@@ -1460,10 +642,7 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -1484,10 +663,7 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -1498,16 +674,13 @@
 			}
 		},
 		"documents": [
-			0,
-			1,
+			2,
+			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -1518,16 +691,13 @@
 			}
 		},
 		"documents": [
-			0,
-			1,
+			2,
+			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -1538,8 +708,8 @@
 			}
 		},
 		"documents": [
-			2,
-			3
+			0,
+			1
 		]
 	},
 	{
@@ -1552,8 +722,8 @@
 			}
 		},
 		"documents": [
-			2,
-			3
+			0,
+			1
 		]
 	},
 	{
@@ -1566,8 +736,8 @@
 			}
 		},
 		"documents": [
-			2,
-			3
+			0,
+			1
 		]
 	},
 	{
@@ -1580,16 +750,13 @@
 			}
 		},
 		"documents": [
-			0,
-			1,
+			2,
+			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -1619,8 +786,8 @@
 			}
 		},
 		"documents": [
-			2,
-			3
+			0,
+			1
 		]
 	},
 	{
@@ -1643,10 +810,7 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -1669,10 +833,7 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -1688,8 +849,8 @@
 			}
 		},
 		"documents": [
-			2,
-			3
+			0,
+			1
 		]
 	},
 	{
@@ -1713,10 +874,7 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -1740,10 +898,7 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -1773,16 +928,13 @@
 			}
 		},
 		"documents": [
-			0,
-			1,
+			2,
+			3,
 			4,
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -2512,9 +1664,9 @@
 			}
 		},
 		"documents": [
-			4,
-			5,
-			6
+			2,
+			3,
+			4
 		]
 	},
 	{
@@ -2538,10 +1690,7 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -2565,10 +1714,7 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -2583,9 +1729,9 @@
 			}
 		},
 		"documents": [
-			4,
-			5,
-			6
+			2,
+			3,
+			4
 		]
 	},
 	{
@@ -2608,10 +1754,7 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -2634,10 +1777,7 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
@@ -2656,12 +1796,12 @@
 		}
 	},
 	{
-		"id": "cawwDRzltr69",
+		"id": "nNcXcCRifWLz",
 		"operation": {
 			"username": {
 				"$not": {
 					"$elemMatch": {
-						"score": null
+						"age": null
 					}
 				}
 			}
@@ -2675,19 +1815,16 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
-		"id": "vbO6VG4Ti9SP",
+		"id": "wVx9OQrudg5C",
 		"operation": {
 			"username": {
 				"$not": {
 					"$elemMatch": {
-						"score": 42
+						"age": 42
 					}
 				}
 			}
@@ -2701,19 +1838,16 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	},
 	{
-		"id": "kLIQn4Oitv9F",
+		"id": "fC8J1w2LIsZy",
 		"operation": {
 			"username": {
 				"$not": {
 					"$elemMatch": {
-						"score": true
+						"age": true
 					}
 				}
 			}
@@ -2727,1391 +1861,7 @@
 			5,
 			6,
 			7,
-			8,
-			9,
-			10,
-			11
-		]
-	},
-	{
-		"id": "tjuXyx2Lu0UQ",
-		"operation": {
-			"username": {
-				"$not": {
-					"$not": {
-						"$gt": null
-					}
-				}
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "jmyMz6UggTez",
-		"operation": {
-			"username": {
-				"$not": {
-					"$not": {
-						"$gt": 42
-					}
-				}
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "cdznDYaRP96p",
-		"operation": {
-			"username": {
-				"$not": {
-					"$not": {
-						"$gt": true
-					}
-				}
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "g3n3XVCwM2je",
-		"operation": {
-			"username": {
-				"$gt": null
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "dkJoXIHKreka",
-		"operation": {
-			"username": {
-				"$gt": 42
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "rKhRBk4cC3Ba",
-		"operation": {
-			"username": {
-				"$gt": true
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "o30dQPDybOVM",
-		"operation": {
-			"username": {
-				"$not": {
-					"$gt": null
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11,
-			8,
-			7,
-			9,
-			10
-		]
-	},
-	{
-		"id": "jzVwDNoJR3BJ",
-		"operation": {
-			"username": {
-				"$not": {
-					"$gt": 42
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11,
-			8,
-			7,
-			9,
-			10
-		]
-	},
-	{
-		"id": "uQrBIRJyr045",
-		"operation": {
-			"username": {
-				"$not": {
-					"$gt": true
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11,
-			8,
-			7,
-			9,
-			10
-		]
-	},
-	{
-		"id": "vWENZ7PDxNem",
-		"operation": {
-			"username": {
-				"$not": {
-					"$ne": null
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11
-		]
-	},
-	{
-		"id": "uNQ5cEGYgEIG",
-		"operation": {
-			"username": {
-				"$not": {
-					"$ne": 42
-				}
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "sjQL7LTHFdMO",
-		"operation": {
-			"username": {
-				"$not": {
-					"$ne": true
-				}
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "dHKtfgHFk4cY",
-		"operation": {
-			"username": {
-				"$not": {
-					"$gte": null
-				}
-			}
-		},
-		"documents": [
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "fYPlP3uxBoQs",
-		"operation": {
-			"username": {
-				"$not": {
-					"$gte": 42
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11,
-			8,
-			7,
-			9,
-			10
-		]
-	},
-	{
-		"id": "vlxZrnqmIrKd",
-		"operation": {
-			"username": {
-				"$not": {
-					"$gte": true
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11,
-			8,
-			7,
-			9,
-			10
-		]
-	},
-	{
-		"id": "dtR3BDR8aXxP",
-		"operation": {
-			"username": {
-				"$exists": null
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11
-		]
-	},
-	{
-		"id": "eyGmz1Gfx88u",
-		"operation": {
-			"username": {
-				"$exists": 0
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11
-		]
-	},
-	{
-		"id": "qgkvYPU4gNOw",
-		"operation": {
-			"username": {
-				"$exists": "yes"
-			}
-		},
-		"documents": [
-			8,
-			7,
-			9,
-			10
-		]
-	},
-	{
-		"id": "qazzwdPvBxfw",
-		"operation": {
-			"username": {
-				"$not": {
-					"$exists": null
-				}
-			}
-		},
-		"documents": [
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "bXiVtNXOyWYc",
-		"operation": {
-			"username": {
-				"$not": {
-					"$exists": 0
-				}
-			}
-		},
-		"documents": [
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "mCSpqy6Kr2VQ",
-		"operation": {
-			"username": {
-				"$not": {
-					"$exists": "yes"
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11
-		]
-	},
-	{
-		"id": "wzS9OtcOVRYv",
-		"operation": {
-			"username": {
-				"$not": {
-					"$in": "active"
-				}
-			}
-		},
-		"error": {
-			"message": "$in needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "oDEplYwVLQSD",
-		"operation": {
-			"username": {
-				"$not": {
-					"$in": [
-						null
-					]
-				}
-			}
-		},
-		"documents": [
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "mFKQHsTKo4sH",
-		"operation": {
-			"username": {
-				"$not": {
-					"$in": [
-						42
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11,
-			8,
-			7,
-			9,
-			10
-		]
-	},
-	{
-		"id": "sxVPNZ6ZgOWY",
-		"operation": {
-			"username": {
-				"$not": {
-					"$in": [
-						true
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11,
-			8,
-			7,
-			9,
-			10
-		]
-	},
-	{
-		"id": "wwPIGiegqyPc",
-		"operation": {
-			"username": {
-				"$not": {
-					"$in": [
-						null,
-						null
-					]
-				}
-			}
-		},
-		"documents": [
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "sFiSvwsICDTY",
-		"operation": {
-			"username": {
-				"$not": {
-					"$in": [
-						42,
-						42
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11,
-			8,
-			7,
-			9,
-			10
-		]
-	},
-	{
-		"id": "sPMKA2hD9QTA",
-		"operation": {
-			"username": {
-				"$not": {
-					"$in": [
-						true,
-						true
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11,
-			8,
-			7,
-			9,
-			10
-		]
-	},
-	{
-		"id": "scMouO1rNQ8H",
-		"operation": {
-			"username": {
-				"$not": {
-					"$nin": "deleted"
-				}
-			}
-		},
-		"error": {
-			"message": "$nin needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "lC5mv2sOS4Kf",
-		"operation": {
-			"username": {
-				"$not": {
-					"$nin": [
-						null
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11
-		]
-	},
-	{
-		"id": "fCYrfGPE2Qmg",
-		"operation": {
-			"username": {
-				"$not": {
-					"$nin": [
-						42
-					]
-				}
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "v5NRTMYSOMGn",
-		"operation": {
-			"username": {
-				"$not": {
-					"$nin": [
-						true
-					]
-				}
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "qSQ5MTQkEciz",
-		"operation": {
-			"username": {
-				"$not": {},
-				"$regex": null
-			}
-		},
-		"error": {
-			"message": "$not cannot be empty",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "sUkeX4FjZX7k",
-		"operation": {
-			"username": {
-				"$not": {},
-				"$regex": 42
-			}
-		},
-		"error": {
-			"message": "$not cannot be empty",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "nno9aJcWouCa",
-		"operation": {
-			"username": {
-				"$not": {},
-				"$regex": true
-			}
-		},
-		"error": {
-			"message": "$not cannot be empty",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "ob8dIGCRM6st",
-		"operation": {
-			"username": {
-				"$not": {
-					"$regex": null
-				}
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "oOOzZB5obfKb",
-		"operation": {
-			"username": {
-				"$not": {
-					"$regex": 42
-				}
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "dzCRrsUCMA5t",
-		"operation": {
-			"username": {
-				"$not": {
-					"$regex": true
-				}
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "fMVwFM7vjhLd",
-		"operation": {
-			"username": {
-				"$not": {
-					"$regex": null,
-					"$options": null
-				}
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "oeBFfw7bAnR7",
-		"operation": {
-			"username": {
-				"$not": {
-					"$regex": 42,
-					"$options": 42
-				}
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "oNZ7VwzPH9AU",
-		"operation": {
-			"username": {
-				"$not": {
-					"$regex": true,
-					"$options": true
-				}
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "nytypHQuhLSD",
-		"operation": {
-			"username": {
-				"$type": null
-			}
-		},
-		"error": {
-			"message": "type must be represented as a number or a string",
-			"code": 14,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "v3GBExvKrqv0",
-		"operation": {
-			"username": {
-				"$type": "value"
-			}
-		},
-		"error": {
-			"message": "Unknown type name alias: value",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "aLlexruZIFBf",
-		"operation": {
-			"username": {
-				"$type": true
-			}
-		},
-		"error": {
-			"message": "type must be represented as a number or a string",
-			"code": 14,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "vaeALLUd7MZl",
-		"operation": {
-			"username": {
-				"$not": {
-					"$type": null
-				}
-			}
-		},
-		"error": {
-			"message": "type must be represented as a number or a string",
-			"code": 14,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "h5CRdgZGBkYf",
-		"operation": {
-			"username": {
-				"$not": {
-					"$type": "value"
-				}
-			}
-		},
-		"error": {
-			"message": "Unknown type name alias: value",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "eiDIfBitDRxR",
-		"operation": {
-			"username": {
-				"$not": {
-					"$type": true
-				}
-			}
-		},
-		"error": {
-			"message": "type must be represented as a number or a string",
-			"code": 14,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "slMxyRCzX224",
-		"operation": {
-			"username": {
-				"$not": {
-					"$mod": "invalid"
-				}
-			}
-		},
-		"error": {
-			"message": "malformed mod, needs to be an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "uSXvJQHhakT7",
-		"operation": {
-			"username": {
-				"$not": {
-					"$mod": [
-						2
-					]
-				}
-			}
-		},
-		"error": {
-			"message": "malformed mod, not enough elements",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "sEWLwANyX0dK",
-		"operation": {
-			"username": {
-				"$not": {
-					"$mod": []
-				}
-			}
-		},
-		"error": {
-			"message": "malformed mod, not enough elements",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "tyPE0puSwhZp",
-		"operation": {
-			"username": {
-				"$not": {
-					"$mod": [
-						null,
-						null
-					]
-				}
-			}
-		},
-		"error": {
-			"message": "malformed mod, divisor not a number",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "uEVWHL6cYtEb",
-		"operation": {
-			"username": {
-				"$not": {
-					"$mod": [
-						"value",
-						"value"
-					]
-				}
-			}
-		},
-		"error": {
-			"message": "malformed mod, divisor not a number",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "b4CfAHjcTX17",
-		"operation": {
-			"username": {
-				"$not": {
-					"$mod": [
-						true,
-						true
-					]
-				}
-			}
-		},
-		"error": {
-			"message": "malformed mod, divisor not a number",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "aQsIYexuJa8M",
-		"operation": {
-			"username": {
-				"$not": {
-					"$size": "large"
-				}
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "uMUebuRPLHPn",
-		"operation": {
-			"username": {
-				"$not": {
-					"$size": 2.5
-				}
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "ddJkWc7kkXdX",
-		"operation": {
-			"username": {
-				"$not": {
-					"$size": null
-				}
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: null",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "fLKxjat5z3Vd",
-		"operation": {
-			"username": {
-				"$not": {
-					"$size": "value"
-				}
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "owR6QBXHQAZJ",
-		"operation": {
-			"username": {
-				"$not": {
-					"$size": true
-				}
-			}
-		},
-		"error": {
-			"message": "Failed to parse $size. Expected a number in: $size: true",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "gbQ5ZH3T1I9e",
-		"operation": {
-			"username": {
-				"$not": {
-					"$all": "value"
-				}
-			}
-		},
-		"error": {
-			"message": "$all needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "dZ45SnW4RWzl",
-		"operation": {
-			"username": {
-				"$not": {
-					"$all": 42
-				}
-			}
-		},
-		"error": {
-			"message": "$all needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "w4zUOdSL8dMb",
-		"operation": {
-			"username": {
-				"$not": {
-					"$all": [
-						null,
-						null
-					]
-				}
-			}
-		},
-		"documents": [
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "tKV0uJZOSFxB",
-		"operation": {
-			"username": {
-				"$not": {
-					"$all": [
-						42,
-						42
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11
-		]
-	},
-	{
-		"id": "cORoC6tsMHTC",
-		"operation": {
-			"username": {
-				"$not": {
-					"$all": [
-						true,
-						true
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11
-		]
-	},
-	{
-		"id": "bK16QW0GZRYH",
-		"operation": {
-			"username": {
-				"$not": {
-					"$all": [
-						null
-					]
-				}
-			}
-		},
-		"documents": [
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "oBLpT0LuQpg8",
-		"operation": {
-			"username": {
-				"$not": {
-					"$all": [
-						42
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11,
-			8,
-			7,
-			9,
-			10
-		]
-	},
-	{
-		"id": "rroYXoBOdYWt",
-		"operation": {
-			"username": {
-				"$not": {
-					"$all": [
-						true
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			11,
-			8,
-			7,
-			9,
-			10
-		]
-	},
-	{
-		"id": "ksW156rY4a95",
-		"operation": {
-			"username": {
-				"$not": {
-					"$not": null
-				}
-			}
-		},
-		"error": {
-			"message": "$not needs a regex or a document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "qBPsiWK1EYgy",
-		"operation": {
-			"username": {
-				"$not": {
-					"$not": 42
-				}
-			}
-		},
-		"error": {
-			"message": "$not needs a regex or a document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "t7uyRgJ46YRP",
-		"operation": {
-			"username": {
-				"$not": {
-					"$not": true
-				}
-			}
-		},
-		"error": {
-			"message": "$not needs a regex or a document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "rJFmxLP8ohxZ",
-		"operation": {
-			"username": {
-				"$not": null
-			}
-		},
-		"error": {
-			"message": "$not needs a regex or a document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "phJtGsumJKi0",
-		"operation": {
-			"username": {
-				"$not": 42
-			}
-		},
-		"error": {
-			"message": "$not needs a regex or a document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "oYx57ntqaq7q",
-		"operation": {
-			"username": {
-				"$not": true
-			}
-		},
-		"error": {
-			"message": "$not needs a regex or a document",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "rNbMFfnwqUUA",
-		"operation": {
-			"username": {
-				"$not": {
-					"$ref": null
-				}
-			}
-		},
-		"error": {
-			"message": "unknown operator: $ref",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "tC03P4JMy7Dc",
-		"operation": {
-			"username": {
-				"$not": {
-					"$ref": 42
-				}
-			}
-		},
-		"error": {
-			"message": "unknown operator: $ref",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "c2HCxQTOaM83",
-		"operation": {
-			"username": {
-				"$not": {
-					"$ref": true
-				}
-			}
-		},
-		"error": {
-			"message": "unknown operator: $ref",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "bvhoP2l4NRXz",
-		"operation": {
-			"username": {
-				"$not": {
-					"$options": null
-				}
-			}
-		},
-		"error": {
-			"message": "$options needs a $regex",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "rVey66HOjeTD",
-		"operation": {
-			"username": {
-				"$not": {
-					"$options": 42
-				}
-			}
-		},
-		"error": {
-			"message": "$options needs a $regex",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "nisW53xFrdSh",
-		"operation": {
-			"username": {
-				"$not": {
-					"$options": true
-				}
-			}
-		},
-		"error": {
-			"message": "$options needs a $regex",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "mxAvbLGCch02",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$gt": null
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11
-		]
-	},
-	{
-		"id": "goguJpkXubi9",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$gt": "value"
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11
-		]
-	},
-	{
-		"id": "vRBFQBRqJI5e",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$gt": true
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11
+			8
 		]
 	}
 ]
