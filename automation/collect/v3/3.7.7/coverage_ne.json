@@ -1,51 +1,21 @@
 [
 	{
-		"id": "tJAKML49MeXB",
+		"id": "ofcPKzMPtkg1",
 		"operation": {
 			"age": {
-				"$ne": 15
+				"$gt": 20,
+				"$lt": 22,
+				"$ne": 21
 			}
 		},
 		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			0
 		]
 	},
 	{
-		"id": "sLRmvjwFDlXG",
+		"id": "qjwvIOpBsPsn",
 		"operation": {
 			"score": {
-				"$gt": 12,
-				"$lt": 14,
-				"$ne": 13
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "j8fBbfwhkZO0",
-		"operation": {
-			"rank": {
-				"$in": [
-					{}
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "aM5Hz3SjnjEd",
-		"operation": {
-			"rank": {
 				"$ne": {}
 			}
 		},
@@ -54,105 +24,87 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
-		"id": "uU3CE4YsaSQr",
+		"id": "qZuU6xXrUV23",
 		"operation": {
-			"rank": {
+			"score": {
 				"$gt": {}
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "nw8RYyZVT9ZH",
+		"id": "oxJM5UUwX9Ud",
 		"operation": {
-			"rank": {
+			"score": {
 				"$gte": {}
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "fjNLIjp99dRf",
+		"id": "bEqHV36MJDfK",
 		"operation": {
-			"rank": {
+			"score": {
 				"$lt": {}
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "oRSPUOceJADo",
+		"id": "kRUyXto9NPmX",
 		"operation": {
-			"rank": {
+			"score": {
 				"$lte": {}
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "vEsuXRYO2HbX",
+		"id": "opiaADuF9Sjj",
 		"operation": {
 			"scores": {
 				"$ne": [
-					19,
-					21
-				]
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "tQNhBhhIxQ54",
-		"operation": {
-			"scores": {
-				"$ne": [
+					17,
 					19
 				]
 			}
 		},
 		"documents": [
 			0,
+			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
-		"id": "iKbNpQxQMY1M",
+		"id": "ulOaKGEo3F1m",
+		"operation": {
+			"scores": {
+				"$ne": [
+					17
+				]
+			}
+		},
+		"documents": [
+			0,
+			2,
+			3,
+			4
+		]
+	},
+	{
+		"id": "wS7PwYxHsTi3",
 		"operation": {
 			"scores": {
 				"$not": {
 					"$in": [
 						[
-							19
+							17
 						]
 					]
 				}
@@ -162,24 +114,18 @@
 			0,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
-		"id": "bnG0CQLTuPqq",
+		"id": "ozBfCOLiFS4e",
 		"operation": {
 			"scores": {
 				"$not": {
 					"$in": [
 						[
-							19,
-							21
+							17,
+							19
 						]
 					]
 				}
@@ -190,27 +136,21 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
-		"id": "aksK9Z4vwMCH",
+		"id": "wCwmzKFTzBkK",
 		"operation": {
 			"scores": {
 				"$not": {
 					"$in": [
 						[
-							19
+							17
 						],
 						[
-							19,
-							21
+							17,
+							19
 						]
 					]
 				}
@@ -220,25 +160,19 @@
 			0,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
-		"id": "sfeQViLoZdXD",
+		"id": "wZmqWCVAvblI",
 		"operation": {
 			"scores": {
 				"$not": {
 					"$in": [
 						"Abundant",
 						[
-							19,
-							21
+							17,
+							19
 						]
 					]
 				}
@@ -249,23 +183,17 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
-		"id": "uKb0XmavVDey",
+		"id": "v060ykYzeZ1D",
 		"operation": {
 			"ratings": {
 				"$elemMatch": {
 					"$not": {
 						"$eq": [
-							157
+							140
 						]
 					}
 				}
@@ -277,14 +205,14 @@
 		]
 	},
 	{
-		"id": "sTarDLArGWsM",
+		"id": "oGUOomG3HEOM",
 		"operation": {
 			"ratings": {
 				"$elemMatch": {
 					"$not": {
 						"$in": [
 							[
-								157
+								140
 							]
 						]
 					}
@@ -297,13 +225,13 @@
 		]
 	},
 	{
-		"id": "qXPvxOW1lwFS",
+		"id": "vabcAkxWFbjX",
 		"operation": {
 			"ratings": {
 				"$not": {
 					"$elemMatch": {
 						"$eq": [
-							157
+							140
 						]
 					}
 				}
@@ -312,24 +240,18 @@
 		"documents": [
 			0,
 			1,
-			2,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			2
 		]
 	},
 	{
-		"id": "qTFDy2W0OkPt",
+		"id": "wXJqZ17Pmzyp",
 		"operation": {
 			"ratings": {
 				"$not": {
 					"$elemMatch": {
 						"$in": [
 							[
-								157
+								140
 							]
 						]
 					}
@@ -339,168 +261,13 @@
 		"documents": [
 			0,
 			1,
-			2,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			2
 		]
 	},
 	{
-		"id": "sG5Oq6mQwSqV",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"step": {
-						"$ne": [
-							143
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			6,
-			7,
-			8
-		]
-	},
-	{
-		"id": "pYUiPKjXU7qe",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"step": {
-						"$not": {
-							"$in": [
-								[
-									143
-								]
-							]
-						}
-					}
-				}
-			}
-		},
-		"documents": [
-			6,
-			7,
-			8
-		]
-	},
-	{
-		"id": "wZKp3glrH0TH",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": {
-						"step": [
-							143
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8
-		]
-	},
-	{
-		"id": "gzxkMSxZyTiY",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": {
-						"step": {
-							"$in": [
-								[
-									143
-								]
-							]
-						}
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8
-		]
-	},
-	{
-		"id": "kfGZKcGZ72Sg",
+		"id": "muWZ1I7iXj5C",
 		"operation": {
 			"age": {
-				"$ne": null
-			}
-		},
-		"documents": [
-			0
-		]
-	},
-	{
-		"id": "qYlS2PNwrT6y",
-		"operation": {
-			"age": {
-				"$ne": "value"
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "gWFjzWbGg8tK",
-		"operation": {
-			"age": {
-				"$ne": true
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "rECoJrPL076p",
-		"operation": {
-			"score": {
 				"$gt": null,
 				"$lt": null,
 				"$ne": null
@@ -509,9 +276,9 @@
 		"documents": []
 	},
 	{
-		"id": "pSEYYy7GPWqK",
+		"id": "cwVwQS0NhXJZ",
 		"operation": {
-			"score": {
+			"age": {
 				"$gt": "value",
 				"$lt": "value",
 				"$ne": "value"
@@ -520,28 +287,15 @@
 		"documents": []
 	},
 	{
-		"id": "gbWI7FJka6dM",
+		"id": "wcxPnSNEaSal",
 		"operation": {
-			"score": {
+			"age": {
 				"$gt": true,
 				"$lt": true,
 				"$ne": true
 			}
 		},
 		"documents": []
-	},
-	{
-		"id": "ixEAMoJwW47X",
-		"operation": {
-			"rank": {
-				"$in": "active"
-			}
-		},
-		"error": {
-			"message": "$in needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
 	},
 	{
 		"id": "aGBeWWcuuRkh",
@@ -558,13 +312,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -582,13 +330,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -606,13 +348,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -629,13 +365,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -652,13 +382,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -675,13 +399,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -717,13 +435,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -744,13 +456,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -771,13 +477,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -799,13 +499,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -827,13 +521,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -855,13 +543,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -886,13 +568,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -917,13 +593,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -948,13 +618,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -977,13 +641,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -1006,13 +664,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -1035,25 +687,19 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
-		"id": "niG9OgTbnmSB",
+		"id": "caw2zVrtjBIi",
 		"operation": {
 			"scores": {
 				"$not": {
 					"$in": [
 						null,
 						[
-							19,
-							21
+							17,
+							19
 						]
 					]
 				}
@@ -1064,15 +710,15 @@
 		]
 	},
 	{
-		"id": "iJDmTD2HZNMb",
+		"id": "pvl1qHLWoXBm",
 		"operation": {
 			"scores": {
 				"$not": {
 					"$in": [
 						42,
 						[
-							19,
-							21
+							17,
+							19
 						]
 					]
 				}
@@ -1083,25 +729,19 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
-		"id": "u5VLJJkgLdcO",
+		"id": "woJKDqcZEhSN",
 		"operation": {
 			"scores": {
 				"$not": {
 					"$in": [
 						true,
 						[
-							19,
-							21
+							17,
+							19
 						]
 					]
 				}
@@ -1112,13 +752,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -1304,13 +938,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -1331,13 +959,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -1358,13 +980,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -1404,13 +1020,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -1433,13 +1043,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -1462,391 +1066,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "iW3zbaqHGn1L",
-		"operation": {
-			"counts": {
-				"$elemMatch": 42
-			}
-		},
-		"error": {
-			"message": "$elemMatch needs an Object",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "vn2wWqbENSr5",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"step": {
-						"$ne": [
-							null
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "pMajOwsF4cGp",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"step": {
-						"$ne": [
-							"value"
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "sQg7FHPWZY9g",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"step": {
-						"$ne": [
-							true
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "vdRVSB7f5LFb",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"step": {
-						"$not": {
-							"$in": "active"
-						}
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$in needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "k0dM1Xv36VWb",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"step": {
-						"$not": {
-							"$in": [
-								[
-									null
-								]
-							]
-						}
-					}
-				}
-			}
-		},
-		"documents": [
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "brKkkgImTgYS",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"step": {
-						"$not": {
-							"$in": [
-								[
-									"value"
-								]
-							]
-						}
-					}
-				}
-			}
-		},
-		"documents": [
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "rMrtsFXnEaBk",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"step": {
-						"$not": {
-							"$in": [
-								[
-									true
-								]
-							]
-						}
-					}
-				}
-			}
-		},
-		"documents": [
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "hZnM3mQNy39z",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": 42
-				}
-			}
-		},
-		"error": {
-			"message": "$elemMatch needs an Object",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "sVQAVI7aKrjA",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": {
-						"step": [
-							null
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "vItxUXGbCY0T",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": {
-						"step": [
-							"value"
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "oihkSUDL1LIi",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": {
-						"step": [
-							true
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "stzXHmcSYFOn",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": {
-						"step": {
-							"$in": "active"
-						}
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$in needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "vzu2oMSYRugz",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": {
-						"step": {
-							"$in": [
-								[
-									null
-								]
-							]
-						}
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "lXoNpLRPrXX0",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": {
-						"step": {
-							"$in": [
-								[
-									"value"
-								]
-							]
-						}
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "iJu0EHEyGkVm",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": {
-						"step": {
-							"$in": [
-								[
-									true
-								]
-							]
-						}
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	}
 ]

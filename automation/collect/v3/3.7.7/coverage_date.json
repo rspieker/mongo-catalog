@@ -1,64 +1,26 @@
 [
 	{
-		"id": "n2hDyxW6Btc4",
+		"id": "bEqHV36MJDfK",
 		"operation": {
-			"age": {
-				"$gt": {}
-			}
-		},
-		"documents": [
-			0
-		]
-	},
-	{
-		"id": "o51MIIEgbbYi",
-		"operation": {
-			"age": {
-				"score": 9,
-				"rank": 10
-			}
-		},
-		"documents": [
-			0
-		]
-	},
-	{
-		"id": "pMhiwvPZOAEZ",
-		"operation": {
-			"count": {
+			"score": {
 				"$lt": {}
 			}
 		},
-		"documents": []
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	},
 	{
-		"id": "qnwHFKj6e8Lj",
+		"id": "qZuU6xXrUV23",
 		"operation": {
-			"age": {
-				"score": null,
-				"rank": null
+			"score": {
+				"$gt": {}
 			}
 		},
-		"documents": []
-	},
-	{
-		"id": "abSi9qEAIvwp",
-		"operation": {
-			"age": {
-				"score": "value",
-				"rank": "value"
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "rKZLBvu25bqB",
-		"operation": {
-			"age": {
-				"score": true,
-				"rank": true
-			}
-		},
-		"documents": []
+		"error": {
+			"message": "connect ECONNREFUSED 127.0.0.1:27017",
+			"type": "MongoServerSelectionError"
+		}
 	}
 ]

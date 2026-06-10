@@ -7,13 +7,6 @@
 		"documents": []
 	},
 	{
-		"id": "pAqgW5OK9H6z",
-		"operation": {
-			"status": "Double"
-		},
-		"documents": []
-	},
-	{
 		"id": "sMDOXNgBYVUr",
 		"operation": {
 			"status": {
@@ -23,41 +16,62 @@
 		"documents": []
 	},
 	{
-		"id": "nPR8gisubjIf",
+		"id": "pg15H7mJzYy7",
 		"operation": {
 			"status": {
 				"$regex": "Couple",
-				"$options": "Light"
+				"$options": "Much"
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "lZNjMcG0lbQM",
+		"id": "umIMkuL5dVmQ",
 		"operation": {
 			"status": {
-				"$options": "Light",
+				"$options": "Much",
 				"$regex": "Couple"
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "rhH1C6HQF82S",
+		"id": "kzyJM1DM0KiO",
+		"operation": {
+			"age": {}
+		},
+		"documents": []
+	},
+	{
+		"id": "kzyJM1DM0KiO",
+		"operation": {
+			"age": {}
+		},
+		"documents": []
+	},
+	{
+		"id": "kzyJM1DM0KiO",
+		"operation": {
+			"age": {}
+		},
+		"documents": []
+	},
+	{
+		"id": "tJdQpNC1X2mN",
 		"operation": {
 			"age": {
-				"$regex": "Little",
+				"$regex": "Neither",
 				"$gte": "Either"
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "rwJrDx0wVWVX",
+		"id": "tvWCk1zesUyX",
 		"operation": {
 			"age": {
-				"$gt": "Full",
-				"$regex": "Many"
+				"$gt": "Huge",
+				"$regex": "No"
 			}
 		},
 		"documents": []
@@ -152,6 +166,62 @@
 			"code": 2,
 			"type": "MongoServerError"
 		}
+	},
+	{
+		"id": "oTuzaywEScQu",
+		"operation": {
+			"roles": {
+				"$in": [
+					{},
+					"Double"
+				]
+			}
+		},
+		"documents": [
+			4
+		]
+	},
+	{
+		"id": "vD0wRMqWKdfe",
+		"operation": {
+			"roles": {
+				"$all": [
+					{},
+					{}
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "uilxmrGTbC1b",
+		"operation": {
+			"roles": {
+				"$all": [
+					{},
+					"Couple"
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "a5YvEB9O8rne",
+		"operation": {
+			"roles": {
+				"$nin": [
+					{},
+					"Double"
+				]
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			5
+		]
 	},
 	{
 		"id": "pbBJKkGm9J0i",
@@ -300,29 +370,34 @@
 		"documents": []
 	},
 	{
-		"id": "dQxmUe8ArA7i",
+		"id": "fG3xqaDWVJAg",
 		"operation": {
-			"status": null
+			"scores.size": "Abundant"
 		},
 		"documents": [
-			1,
-			2,
-			3,
-			4,
 			5
 		]
 	},
 	{
-		"id": "s7NE7qoXzk4e",
+		"id": "d1U0JSqglErc",
 		"operation": {
-			"status": 42
+			"scores.size": {}
 		},
 		"documents": []
 	},
 	{
-		"id": "dWu7Xq4dWNPl",
+		"id": "bWZmbxoQ5zQg",
 		"operation": {
-			"status": true
+			"scores.0.size": "Abundant"
+		},
+		"documents": [
+			5
+		]
+	},
+	{
+		"id": "qwjD3xyDGgKI",
+		"operation": {
+			"scores.0.size": {}
 		},
 		"documents": []
 	},
