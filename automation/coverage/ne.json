@@ -1,19 +1,6 @@
 {
   "queries": [
     {
-      "checksum": "f8e7bdb2daa64b841c517f57ba0996d7628338551ef7f6572a437cbd216b86c7",
-      "fingerprint": {
-        "field:#1": {
-          "$ne": "number:#1"
-        }
-      },
-      "query": {
-        "age": {
-          "$ne": 8
-        }
-      }
-    },
-    {
       "checksum": "e607d9510a85cf282bc9ce732d4116cdf540502257e5ca37366782f589990eb7",
       "fingerprint": {
         "field:#1": {
@@ -23,10 +10,75 @@
         }
       },
       "query": {
+        "age": {
+          "$gt": 20,
+          "$lt": 22,
+          "$ne": 21
+        }
+      }
+    },
+    {
+      "checksum": "658c63a241499cf0f77d6fbf1c6f10566c1b1ae55a888deec1cf6deb7e3cf727",
+      "fingerprint": {
+        "field:#1": {
+          "$ne": {}
+        }
+      },
+      "query": {
         "score": {
-          "$gt": 5,
-          "$lt": 7,
-          "$ne": 6
+          "$ne": {}
+        }
+      }
+    },
+    {
+      "checksum": "9f185ceb7c8b7e90895f1a318f90b9379f7e0f8466776e5d906a489e000e55e8",
+      "fingerprint": {
+        "field:#1": {
+          "$gt": {}
+        }
+      },
+      "query": {
+        "score": {
+          "$gt": {}
+        }
+      }
+    },
+    {
+      "checksum": "8c5a4959f4a6890f5156f711eada276faa1ad6261d2a1e790d0d024fbf6fda97",
+      "fingerprint": {
+        "field:#1": {
+          "$gte": {}
+        }
+      },
+      "query": {
+        "score": {
+          "$gte": {}
+        }
+      }
+    },
+    {
+      "checksum": "214e29da82cd364194475a0a42a7f66903c50008728d4d63a424fa3dfa90e3c0",
+      "fingerprint": {
+        "field:#1": {
+          "$lt": {}
+        }
+      },
+      "query": {
+        "score": {
+          "$lt": {}
+        }
+      }
+    },
+    {
+      "checksum": "a552fc2d47e6e33604ab01a377072db20bdfb45409971c5bd5c3dfe9fd76a314",
+      "fingerprint": {
+        "field:#1": {
+          "$lte": {}
+        }
+      },
+      "query": {
+        "score": {
+          "$lte": {}
         }
       }
     },
@@ -287,156 +339,25 @@
           }
         }
       }
-    },
-    {
-      "checksum": "b9d6c3e12402722af37bbccbcdcc9c8ef27046daca3f435659b77553a60b6bcb",
-      "fingerprint": {
-        "field:#1": {
-          "$elemMatch": {
-            "field:#2": {
-              "$ne": [
-                "number:#1"
-              ]
-            }
-          }
-        }
-      },
-      "query": {
-        "counts": {
-          "$elemMatch": {
-            "grade": {
-              "$ne": [
-                153
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "checksum": "04947826eb195e48232a5abaccfe3b1f34d978174915682b94a5cfbb8c6ff041",
-      "fingerprint": {
-        "field:#1": {
-          "$elemMatch": {
-            "field:#2": {
-              "$not": {
-                "$in": [
-                  [
-                    "number:#1"
-                  ]
-                ]
-              }
-            }
-          }
-        }
-      },
-      "query": {
-        "counts": {
-          "$elemMatch": {
-            "grade": {
-              "$not": {
-                "$in": [
-                  [
-                    153
-                  ]
-                ]
-              }
-            }
-          }
-        }
-      }
-    },
-    {
-      "checksum": "685d0492044795ce6b83d87432fe7eb2900d03570c0ace5665ad6097dca374c3",
-      "fingerprint": {
-        "field:#1": {
-          "$not": {
-            "$elemMatch": {
-              "field:#2": [
-                "number:#1"
-              ]
-            }
-          }
-        }
-      },
-      "query": {
-        "counts": {
-          "$not": {
-            "$elemMatch": {
-              "grade": [
-                153
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "checksum": "0327b88871f4e901f1ab73e6802261c5ae6ffffa23e25b1dded990ef589e4032",
-      "fingerprint": {
-        "field:#1": {
-          "$not": {
-            "$elemMatch": {
-              "field:#2": {
-                "$in": [
-                  [
-                    "number:#1"
-                  ]
-                ]
-              }
-            }
-          }
-        }
-      },
-      "query": {
-        "counts": {
-          "$not": {
-            "$elemMatch": {
-              "grade": {
-                "$in": [
-                  [
-                    153
-                  ]
-                ]
-              }
-            }
-          }
-        }
-      }
     }
   ],
   "variants": [
     {
       "age": {
-        "$ne": null
-      }
-    },
-    {
-      "age": {
-        "$ne": "value"
-      }
-    },
-    {
-      "age": {
-        "$ne": true
-      }
-    },
-    {
-      "score": {
         "$gt": null,
         "$lt": null,
         "$ne": null
       }
     },
     {
-      "score": {
+      "age": {
         "$gt": "value",
         "$lt": "value",
         "$ne": "value"
       }
     },
     {
-      "score": {
+      "age": {
         "$gt": true,
         "$lt": true,
         "$ne": true
@@ -859,202 +780,12 @@
           }
         }
       }
-    },
-    {
-      "counts": {
-        "$elemMatch": 42
-      }
-    },
-    {
-      "counts": {
-        "$elemMatch": {
-          "grade": {
-            "$ne": [
-              null
-            ]
-          }
-        }
-      }
-    },
-    {
-      "counts": {
-        "$elemMatch": {
-          "grade": {
-            "$ne": [
-              "value"
-            ]
-          }
-        }
-      }
-    },
-    {
-      "counts": {
-        "$elemMatch": {
-          "grade": {
-            "$ne": [
-              true
-            ]
-          }
-        }
-      }
-    },
-    {
-      "counts": {
-        "$elemMatch": {
-          "grade": {
-            "$not": {
-              "$in": "active"
-            }
-          }
-        }
-      }
-    },
-    {
-      "counts": {
-        "$elemMatch": {
-          "grade": {
-            "$not": {
-              "$in": [
-                [
-                  null
-                ]
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "counts": {
-        "$elemMatch": {
-          "grade": {
-            "$not": {
-              "$in": [
-                [
-                  "value"
-                ]
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "counts": {
-        "$elemMatch": {
-          "grade": {
-            "$not": {
-              "$in": [
-                [
-                  true
-                ]
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "counts": {
-        "$not": {
-          "$elemMatch": 42
-        }
-      }
-    },
-    {
-      "counts": {
-        "$not": {
-          "$elemMatch": {
-            "grade": [
-              null
-            ]
-          }
-        }
-      }
-    },
-    {
-      "counts": {
-        "$not": {
-          "$elemMatch": {
-            "grade": [
-              "value"
-            ]
-          }
-        }
-      }
-    },
-    {
-      "counts": {
-        "$not": {
-          "$elemMatch": {
-            "grade": [
-              true
-            ]
-          }
-        }
-      }
-    },
-    {
-      "counts": {
-        "$not": {
-          "$elemMatch": {
-            "grade": {
-              "$in": "active"
-            }
-          }
-        }
-      }
-    },
-    {
-      "counts": {
-        "$not": {
-          "$elemMatch": {
-            "grade": {
-              "$in": [
-                [
-                  null
-                ]
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "counts": {
-        "$not": {
-          "$elemMatch": {
-            "grade": {
-              "$in": [
-                [
-                  "value"
-                ]
-              ]
-            }
-          }
-        }
-      }
-    },
-    {
-      "counts": {
-        "$not": {
-          "$elemMatch": {
-            "grade": {
-              "$in": [
-                [
-                  true
-                ]
-              ]
-            }
-          }
-        }
-      }
     }
   ],
   "documents": [
     {
       "_id": 0,
-      "age": 7
+      "age": 20.5
     },
     {
       "_id": 1,
@@ -1089,77 +820,11 @@
           140
         ]
       ]
-    },
-    {
-      "_id": 5,
-      "count": 30,
-      "counts": [
-        31
-      ]
-    },
-    {
-      "_id": 6,
-      "count": 30,
-      "counts": [
-        [
-          153
-        ]
-      ]
-    },
-    {
-      "_id": 7,
-      "count": 31,
-      "counts": [
-        34,
-        35,
-        [
-          153
-        ]
-      ]
-    },
-    {
-      "_id": 8,
-      "count": 31,
-      "counts": [
-        {
-          "grade": 153
-        }
-      ]
-    },
-    {
-      "_id": 9,
-      "count": 32,
-      "counts": [
-        {
-          "grade": [
-            34,
-            [
-              153
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "_id": 10,
-      "count": 33,
-      "counts": [
-        {
-          "grade": [
-            [
-              153
-            ]
-          ]
-        }
-      ]
     }
   ],
   "indices": [
     {
       "age": 1
-    },
-    {
-      "a.b": 1
     }
   ]
 }

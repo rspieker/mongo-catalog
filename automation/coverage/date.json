@@ -1,84 +1,39 @@
 {
   "queries": [
     {
-      "checksum": "e732dec3db1d791dcb396ad7125c2608ded87c5289aa0b15b378c211caf35821",
-      "fingerprint": {
-        "field:#1": {
-          "$gt": {}
-        }
-      },
-      "query": {
-        "age": {
-          "$gt": {}
-        }
-      }
-    },
-    {
-      "checksum": "e6fe267d3eef20fe7248c69353d9f0be00a323457bb2e9ea720634cb1fee92c1",
-      "fingerprint": {
-        "field:#1": {
-          "field:#2": "number:#1",
-          "field:#3": "number:#2"
-        }
-      },
-      "query": {
-        "age": {
-          "score": 24,
-          "rank": 25
-        }
-      }
-    },
-    {
-      "checksum": "eea93c80f1aa3b760adfe496a0e4475863062be4a507ce59e6586e7f15043867",
+      "checksum": "214e29da82cd364194475a0a42a7f66903c50008728d4d63a424fa3dfa90e3c0",
       "fingerprint": {
         "field:#1": {
           "$lt": {}
         }
       },
       "query": {
-        "count": {
+        "score": {
           "$lt": {}
+        }
+      }
+    },
+    {
+      "checksum": "9f185ceb7c8b7e90895f1a318f90b9379f7e0f8466776e5d906a489e000e55e8",
+      "fingerprint": {
+        "field:#1": {
+          "$gt": {}
+        }
+      },
+      "query": {
+        "score": {
+          "$gt": {}
         }
       }
     }
   ],
-  "variants": [
-    {
-      "age": {
-        "score": null,
-        "rank": null
-      }
-    },
-    {
-      "age": {
-        "score": "value",
-        "rank": "value"
-      }
-    },
-    {
-      "age": {
-        "score": true,
-        "rank": true
-      }
-    }
-  ],
+  "variants": [],
   "documents": [
     {
       "_id": 0,
-      "age": {
-        "score": 24,
-        "rank": 25
-      }
-    },
-    {
-      "_id": 1,
-      "level": 14,
-      "count": {}
+      "age": 20,
+      "score": {}
     }
   ],
-  "indices": [
-    {
-      "age": 1
-    }
-  ]
+  "indices": []
 }

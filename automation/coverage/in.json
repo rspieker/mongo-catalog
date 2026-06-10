@@ -1,18 +1,20 @@
 {
   "queries": [
     {
-      "checksum": "b9596d68b0246309f5934a165ad338b5adcb1353d7ac099290ea44930456da9c",
+      "checksum": "dd4aceb11d679462983f114e56fe231f6583808f2a501fbfeb632e9b61b5cf8b",
       "fingerprint": {
         "field:#1": {
           "$in": [
-            "number:#1"
+            "number:#1",
+            "number:#2"
           ]
         }
       },
       "query": {
         "age": {
           "$in": [
-            17
+            5,
+            6
           ]
         }
       }
@@ -30,8 +32,8 @@
       "query": {
         "age": {
           "$in": [
-            17,
-            18
+            5,
+            6
           ]
         }
       }
@@ -61,9 +63,70 @@
       },
       "query": {
         "age": {
-          "$gt": 17,
+          "$gt": 5,
           "$in": [
-            18
+            6
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "320ac6db1520a28d01466c5e289b35dd795bbf6bed6fa26f6ee9494c8aa7c916",
+      "fingerprint": {
+        "field:#1": {
+          "$in": {
+            "field:#2": "number:#1"
+          }
+        }
+      },
+      "query": {
+        "age": {
+          "$in": {
+            "status": 5
+          }
+        }
+      }
+    },
+    {
+      "checksum": "5ba909b392fa72d6f0124f950a4f3da954dd9456e4db5a047c3dba953a7e75ef",
+      "fingerprint": {
+        "field:#1": {
+          "$in": "number:#1"
+        }
+      },
+      "query": {
+        "age": {
+          "$in": 5
+        }
+      }
+    },
+    {
+      "checksum": "745c631b758003d2035c779f69b849b64cb457ffe59909f4c08aae2e893eec20",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "number:#1",
+            "number:#2"
+          ]
+        },
+        "field:#2": {
+          "$in": [
+            "number:#1",
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "age": {
+          "$in": [
+            5,
+            6
+          ]
+        },
+        "score": {
+          "$in": [
+            5,
+            6
           ]
         }
       }
@@ -87,14 +150,14 @@
       "query": {
         "age": {
           "$in": [
-            17,
-            18
+            5,
+            6
           ]
         },
         "score": {
           "$in": [
-            17,
-            18
+            5,
+            6
           ]
         }
       }
@@ -112,8 +175,8 @@
       "query": {
         "age": {
           "$in": [
-            17,
-            18
+            5,
+            6
           ]
         }
       }
@@ -137,14 +200,14 @@
       "query": {
         "age": {
           "$in": [
-            17,
-            18
+            5,
+            6
           ]
         },
         "score": {
           "$in": [
-            17,
-            18
+            5,
+            6
           ]
         }
       }
@@ -162,8 +225,8 @@
       "query": {
         "age": {
           "$in": [
-            17,
-            18
+            5,
+            6
           ]
         }
       }
@@ -187,14 +250,14 @@
       "query": {
         "age": {
           "$in": [
-            17,
-            18
+            5,
+            6
           ]
         },
         "score": {
           "$in": [
-            17,
-            18
+            5,
+            6
           ]
         }
       }
@@ -219,6 +282,177 @@
       }
     },
     {
+      "checksum": "ca6b611cbd16528ba3e3d1ba2a89e288675ee42ff23f251630b50dc263a78ad0",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "string:#1",
+            "number:#1",
+            "string:#2",
+            "number:#2",
+            "string:#3",
+            "number:#3",
+            "string:#4",
+            "number:#4",
+            "number:#5",
+            "string:#5",
+            "string:#6",
+            "number:#6",
+            "string:#7",
+            "number:#7",
+            "string:#8",
+            "string:#9",
+            "number:#8",
+            "string:#10",
+            "number:#9"
+          ]
+        }
+      },
+      "query": {
+        "status": {
+          "$in": [
+            "No",
+            12,
+            "Numerous",
+            10,
+            "Several",
+            6,
+            "Significant",
+            13,
+            7,
+            "Huge",
+            "Single",
+            8,
+            "Some",
+            5,
+            "Sparse",
+            "Enough",
+            11,
+            "Either",
+            9
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "9b61db1c64a826e7a1ca63bf9fa3b233e02d2990ea338c46898fa48d4e15dcc6",
+      "fingerprint": {
+        "field:#1": [
+          "number:#1"
+        ]
+      },
+      "query": {
+        "name": [
+          4
+        ]
+      }
+    },
+    {
+      "checksum": "d6b3d6ab08da527204c935c6fa5d52a1f297cf2a5cde6b2ef267178a1c8e7eec",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            [
+              "number:#1"
+            ]
+          ]
+        }
+      },
+      "query": {
+        "name": {
+          "$in": [
+            [
+              4
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "cebec7b91b78fedff11b27515504eb75288ebe22b62af4b7298ae1e782ebd17c",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            [
+              "number:#1"
+            ]
+          ],
+          "$ne": [
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "name": {
+          "$in": [
+            [
+              4
+            ]
+          ],
+          "$ne": [
+            5
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "933cafdf228f8624100d7e23af852f3a38f9e6c492c995d17dcbaab10de79f80",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            [
+              "string:#1"
+            ]
+          ],
+          "$type": "number:#1"
+        }
+      },
+      "query": {
+        "name": {
+          "$in": [
+            [
+              "Abundant"
+            ]
+          ],
+          "$type": 5
+        }
+      }
+    },
+    {
+      "checksum": "2d59c32f67ed7654c3a14a281e4d10fc01fccb735ba63053d3791aa521fc05c9",
+      "fingerprint": {
+        "field:#1": [
+          "string:#1"
+        ]
+      },
+      "query": {
+        "name": [
+          "Abundant"
+        ]
+      }
+    },
+    {
+      "checksum": "9d76fed18f8f3ca5668134810257e0397bc660bdafb57d670a8cabb1249fca88",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            [
+              "string:#1"
+            ]
+          ]
+        }
+      },
+      "query": {
+        "name": {
+          "$in": [
+            [
+              "Abundant"
+            ]
+          ]
+        }
+      }
+    },
+    {
       "checksum": "1245ba77752c5b0623a29b28cb8e6f9f6b61410322b124aceae9a91b0aaf195a",
       "fingerprint": {
         "field:#1": [
@@ -227,7 +461,7 @@
       },
       "query": {
         "name": [
-          17
+          4
         ]
       }
     },
@@ -246,7 +480,7 @@
         "name": {
           "$in": [
             [
-              17
+              4
             ]
           ]
         }
@@ -270,11 +504,11 @@
         "name": {
           "$in": [
             [
-              17
+              4
             ]
           ],
           "$ne": [
-            18
+            5
           ]
         }
       }
@@ -298,7 +532,7 @@
               "Abundant"
             ]
           ],
-          "$type": 18
+          "$type": 5
         }
       }
     },
@@ -337,6 +571,15 @@
       }
     },
     {
+      "checksum": "14da3d5a30ee34480ec48db0596d29a2c036cb0852c3bc94c015e067f5f1840b",
+      "fingerprint": {
+        "field:#1": []
+      },
+      "query": {
+        "scores": []
+      }
+    },
+    {
       "checksum": "24582a98e1b67cdd1d7c6b90ed46f806713ef733fca38a76de3aa0c0ea851de0",
       "fingerprint": {
         "field:#1": []
@@ -363,7 +606,7 @@
       }
     },
     {
-      "checksum": "e6fe267d3eef20fe7248c69353d9f0be00a323457bb2e9ea720634cb1fee92c1",
+      "checksum": "9a7a1d27974856ee054f9c772214c5624ff7b10d60834c05108364dd94957a25",
       "fingerprint": {
         "field:#1": {
           "field:#2": "number:#1",
@@ -371,9 +614,51 @@
         }
       },
       "query": {
-        "rank": {
-          "level": 10,
-          "count": 11
+        "level": {
+          "count": 32,
+          "grade": 33
+        }
+      }
+    },
+    {
+      "checksum": "3890703b5f1a07a40f2a152a43d07c07471337dfeb6c33a26228cf2927f7054c",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {
+              "field:#2": "number:#1",
+              "field:#3": "number:#2"
+            }
+          ]
+        }
+      },
+      "query": {
+        "level": {
+          "$in": [
+            {
+              "count": 32,
+              "grade": 33
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "2a7d608623d3be36909c1548b2ceb03a6fd0c29b9486e196d0990d3ae3b9a214",
+      "fingerprint": {
+        "field:#1.field:#2": "number:#1",
+        "field:#1.field:#3": {
+          "$in": [
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "level.count": 32,
+        "level.grade": {
+          "$in": [
+            33
+          ]
         }
       }
     },
@@ -390,11 +675,11 @@
         }
       },
       "query": {
-        "rank": {
+        "level": {
           "$in": [
             {
-              "level": 10,
-              "count": 11
+              "count": 32,
+              "grade": 33
             }
           ]
         }
@@ -411,10 +696,10 @@
         }
       },
       "query": {
-        "rank.level": 10,
-        "rank.count": {
+        "level.count": 32,
+        "level.grade": {
           "$in": [
-            11
+            33
           ]
         }
       }
@@ -428,9 +713,9 @@
         }
       },
       "query": {
-        "rank": {
-          "level": 10,
-          "count": 11
+        "level": {
+          "count": 32,
+          "grade": 33
         }
       }
     },
@@ -447,11 +732,11 @@
         }
       },
       "query": {
-        "rank": {
+        "level": {
           "$in": [
             {
-              "level": 10,
-              "count": 11
+              "count": 32,
+              "grade": 33
             }
           ]
         }
@@ -468,10 +753,10 @@
         }
       },
       "query": {
-        "rank.level": 10,
-        "rank.count": {
+        "level.count": 32,
+        "level.grade": {
           "$in": [
-            11
+            33
           ]
         }
       }
@@ -485,9 +770,9 @@
         }
       },
       "query": {
-        "grade": {
-          "level": 10,
-          "count": 11
+        "step": {
+          "count": 32,
+          "grade": 33
         }
       }
     },
@@ -504,11 +789,11 @@
         }
       },
       "query": {
-        "grade": {
+        "step": {
           "$in": [
             {
-              "level": 10,
-              "count": 11
+              "count": 32,
+              "grade": 33
             }
           ]
         }
@@ -525,10 +810,10 @@
         }
       },
       "query": {
-        "grade.level": 10,
-        "grade.count": {
+        "step.count": 32,
+        "step.grade": {
           "$in": [
-            11
+            33
           ]
         }
       }
@@ -542,9 +827,9 @@
         }
       },
       "query": {
-        "grade": {
-          "level": 10,
-          "count": 11
+        "step": {
+          "count": 32,
+          "grade": 33
         }
       }
     },
@@ -561,11 +846,11 @@
         }
       },
       "query": {
-        "grade": {
+        "step": {
           "$in": [
             {
-              "level": 10,
-              "count": 11
+              "count": 32,
+              "grade": 33
             }
           ]
         }
@@ -582,36 +867,826 @@
         }
       },
       "query": {
-        "grade.level": 10,
-        "grade.count": {
+        "step.count": 32,
+        "step.grade": {
           "$in": [
-            11
+            33
           ]
         }
       }
     },
     {
-      "checksum": "c8ab1c060e74806175b5b94617be7ae8c444a1a375754f18aa57dce0209b95e4",
-      "fingerprint": {
-        "field:#1": "null:#1"
-      },
-      "query": {
-        "step": null
-      }
-    },
-    {
-      "checksum": "94a8b740aab3f9ba250ff5c46a077a5dd4d409960e801367e3bf0d74e0885c9a",
+      "checksum": "37d3da4453c7d23a653031b82c82866bab0e00c9a22e70ab38f2733a5df9fc54",
       "fingerprint": {
         "field:#1": {
           "$in": [
-            "null:#1"
+            {
+              "$elemMatch": {
+                "field:#2": "number:#1"
+              }
+            }
           ]
         }
       },
       "query": {
-        "step": {
+        "priority": {
           "$in": [
-            null
+            {
+              "$elemMatch": {
+                "capacity": 11
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "c145888e7e5000c33a158d679fb71f8314f0a67b42f1b60cb32eb36dcf26b6a3",
+      "fingerprint": {
+        "field:#1": {
+          "$not": {
+            "$in": [
+              {
+                "$elemMatch": {
+                  "field:#2": "number:#1"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "query": {
+        "priority": {
+          "$not": {
+            "$in": [
+              {
+                "$elemMatch": {
+                  "capacity": 11
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "checksum": "50635d923b5b2ad12867001acd7d6b296d497b90332e792df0a509a9bfb1a9ed",
+      "fingerprint": {
+        "field:#1": {
+          "$nin": [
+            {
+              "$elemMatch": {
+                "field:#2": "number:#1"
+              }
+            }
+          ]
+        }
+      },
+      "query": {
+        "priority": {
+          "$nin": [
+            {
+              "$elemMatch": {
+                "capacity": 11
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "dd87def98e76e4158ea6f0813dfa9359aef6862f95c4ab23176b390a96a1dea2",
+      "fingerprint": {
+        "field:#1": {
+          "$not": {
+            "$nin": [
+              {
+                "$elemMatch": {
+                  "field:#2": "number:#1"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "query": {
+        "priority": {
+          "$not": {
+            "$nin": [
+              {
+                "$elemMatch": {
+                  "capacity": 11
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "checksum": "d043866e4817990deb6172c34f3888fdc2da5d1c9bf6fa9167bd1abb5121210f",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "number:#1",
+            {}
+          ]
+        }
+      },
+      "query": {
+        "username": {
+          "$in": [
+            37,
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "5d2e50102bcf82fa4604b353f98d038b6b501aa9599073197470aece25aff3d7",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {},
+            "number:#1"
+          ]
+        }
+      },
+      "query": {
+        "username": {
+          "$in": [
+            {},
+            37
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "e1a1ab4200dd324ce30eddb22e1f9ff0f3fbf42fd8716a3681efdc8d2813e7e9",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {},
+            "number:#1",
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "username": {
+          "$in": [
+            {},
+            37,
+            38
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "3981ec105865205aa2157e6356d89f3b14f50a2976d01a94b4a33035f9b9ef1c",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {},
+            "number:#1",
+            "number:#2",
+            "number:#3"
+          ]
+        }
+      },
+      "query": {
+        "username": {
+          "$in": [
+            {},
+            37,
+            38,
+            39
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "512d1a78a23546bef1f3aed068385d3b7e38cea299b6e7ae5d2d255d5211dfaf",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {},
+            "number:#1",
+            "number:#2",
+            {}
+          ]
+        }
+      },
+      "query": {
+        "username": {
+          "$in": [
+            {},
+            37,
+            38,
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "af51e8e522414bb134e82484291a4e952300df33287fa0c68a911fe27e84cfa8",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "number:#1",
+            {},
+            "number:#2",
+            {}
+          ]
+        }
+      },
+      "query": {
+        "username": {
+          "$in": [
+            37,
+            {},
+            38,
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "325813b045da6fdac96d722f6f5bc3d3fb4694ca798918c4e9842e75a094fe2f",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {},
+            "number:#1",
+            "number:#2",
+            "number:#3",
+            {}
+          ]
+        }
+      },
+      "query": {
+        "username": {
+          "$in": [
+            {},
+            37,
+            38,
+            39,
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "4ffb351d0b3652a2f60c2ec76fd22447c3277e2e767533dc8ace88d06a4af506",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "number:#1",
+            {},
+            "number:#2",
+            "number:#3",
+            {}
+          ]
+        }
+      },
+      "query": {
+        "username": {
+          "$in": [
+            37,
+            {},
+            38,
+            39,
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "4c9f84301b5e8c5f40cf2abcd2d9d502e27d34fdbfed33feb892130c62e5d7ef",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            [
+              "number:#1",
+              "number:#2"
+            ],
+            {}
+          ]
+        }
+      },
+      "query": {
+        "email": {
+          "$in": [
+            [
+              7,
+              8
+            ],
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "47a243f3494db12baa2c78f2a2385ab5bc636e3848ebe3bf4b97442fd12d7de9",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "number:#1",
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "email.attempts": {
+          "$in": [
+            7,
+            8
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "d7e4547cbdc94025c36740dff00c6bedabbfeaefff34715c6419fcbbdaad2323",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "number:#1",
+            {}
+          ]
+        }
+      },
+      "query": {
+        "email.attempts": {
+          "$in": [
+            7,
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "24140bb6b12a198f4a29f4d23b9aeaa220952ccb0103af4311afdece6b098590",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {
+              "field:#2": "number:#1"
+            },
+            {}
+          ]
+        }
+      },
+      "query": {
+        "email": {
+          "$in": [
+            {
+              "attempts": 7
+            },
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "b92600aa2fec47f0b1ef0ef0782854e17da72655a9668c495d4902b68dac7d59",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            {
+              "field:#3": "number:#1"
+            },
+            {
+              "field:#3": "number:#2"
+            },
+            {}
+          ]
+        }
+      },
+      "query": {
+        "email.attempts": {
+          "$in": [
+            {
+              "quantity": 16
+            },
+            {
+              "quantity": 7
+            },
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "5304fbc7bf4d54f04a6834470158898c056a3ce0f91162d3256c3d2121670aa6",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            {},
+            "number:#1"
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            {},
+            7
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "8acae77f102eb3e52b2b4a9a56b37ae91d5a3291598bac652fc5f7abdfaa7b32",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "number:#1",
+            "number:#2",
+            {}
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            7,
+            8,
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "4c74c7f00779156014e320a51075978501382df8583431e70c94cf6fb66e8cd0",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "number:#1",
+            "number:#2",
+            "number:#3",
+            {}
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            7,
+            8,
+            9,
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "c70a38f479ea399ab1309a69ad4e3cbcbe192a50cf3e3e63a92f244a004476ca",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "number:#1",
+            "number:#2",
+            "number:#3",
+            {},
+            {}
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            7,
+            8,
+            9,
+            {},
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "50c0511efcc994490bdca559021fd7b1a2002b31952382b6efa47157002ec915",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            {},
+            "number:#1",
+            "number:#2",
+            "number:#3"
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            {},
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "c6900f8477bf9128eb91242e74f41281109c8902de81a03a68a7f2aed3986383",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "string:#1",
+            "string:#2",
+            "string:#3",
+            "number:#1",
+            "number:#2",
+            "number:#3"
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            "Abundant",
+            "Couple",
+            "Double",
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "2af749a80ca017e11d5982cc6041f966e0c03281754b9625c230ae51df8467e7",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "string:#1",
+            "string:#2",
+            "number:#1",
+            "number:#2",
+            "number:#3"
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            "Couple",
+            "Double",
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "9ac4f5775afe43ac7c20f4c6074ccfe75aa2fb7b872d7344b6777182d5dcfd73",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "string:#1",
+            "number:#1",
+            "number:#2",
+            "number:#3"
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            "Double",
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "b93fe0a9d9d67722c8f2a550b2b48ab750a5a62c599301b2df659e2b0b4633ea",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "string:#1",
+            {}
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            "Double",
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "b99bd7ca27b5caf176ee9032a03e9f662f1ab2a57c63c9a67cefb4466b4e0188",
+      "fingerprint": {
+        "field:#1.field:#2": {
+          "$in": [
+            "string:#1",
+            "number:#1"
+          ]
+        }
+      },
+      "query": {
+        "attempts.quantity": {
+          "$in": [
+            "Each",
+            1005
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "9c9fafb7f3d7177bb645c2a8b563af09f88f9cf642a4c6eee602cc27f89b5553",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "number:#1",
+            {
+              "field:#2": "number:#2",
+              "field:#3": "string:#1"
+            }
+          ]
+        }
+      },
+      "query": {
+        "address": {
+          "$in": [
+            26,
+            {
+              "size": 25,
+              "index": "Couple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "1f8af2fe56ae209949094fe437d5b27938e9a25757b84590aeb9dbc0803ca61e",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            [
+              "number:#1",
+              "number:#2"
+            ],
+            {
+              "field:#2": "number:#3",
+              "field:#3": "string:#1"
+            }
+          ]
+        }
+      },
+      "query": {
+        "address": {
+          "$in": [
+            [
+              26,
+              27
+            ],
+            {
+              "size": 25,
+              "index": "Couple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "344375be5631558608374a9a157b7502e6f1abe47e5cc3e5cf8f1fae02475f11",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {},
+            {
+              "field:#2": "number:#1",
+              "field:#3": "string:#1"
+            }
+          ]
+        }
+      },
+      "query": {
+        "address": {
+          "$in": [
+            {},
+            {
+              "size": 26,
+              "index": "Couple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "8ca54a6c93e1f8948209e1755498dbe68b0a1250f7725c4a98dd5232447f2fe3",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "string:#1",
+            {
+              "field:#2": "number:#1",
+              "field:#3": "string:#2"
+            }
+          ]
+        }
+      },
+      "query": {
+        "address": {
+          "$in": [
+            "Empty",
+            {
+              "size": 26,
+              "index": "Couple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "58a8ff6bfa9266eeb3611c4a12d1c869bda2f3639976aa0cfb011babbebe6e38",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {
+              "field:#2": "number:#1",
+              "field:#3": "string:#1"
+            },
+            {
+              "field:#2": "number:#1",
+              "field:#3": "string:#2"
+            }
+          ]
+        }
+      },
+      "query": {
+        "address": {
+          "$in": [
+            {
+              "size": 25,
+              "index": "Each"
+            },
+            {
+              "size": 25,
+              "index": "Couple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "ceefe6c63f27153795086c12631cf5afa29bcda1ae7cc2fcebfa2da9d7c3af32",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {
+              "field:#2": "number:#1",
+              "field:#3": "string:#1"
+            },
+            {
+              "field:#2": "number:#2",
+              "field:#3": "string:#2"
+            }
+          ]
+        }
+      },
+      "query": {
+        "address": {
+          "$in": [
+            {
+              "size": 26,
+              "index": "Each"
+            },
+            {
+              "size": 25,
+              "index": "Couple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "93e2b4bccc24c49e8d8981b897e74ab33e141bd198b0780eda678da7a43e6490",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {
+              "field:#2": "number:#1",
+              "field:#3": "string:#1"
+            }
+          ]
+        }
+      },
+      "query": {
+        "address": {
+          "$in": [
+            {
+              "size": 25,
+              "index": "Enough"
+            }
           ]
         }
       }
@@ -621,27 +1696,6 @@
     {
       "age": {
         "$in": "active"
-      }
-    },
-    {
-      "age": {
-        "$in": [
-          null
-        ]
-      }
-    },
-    {
-      "age": {
-        "$in": [
-          "value"
-        ]
-      }
-    },
-    {
-      "age": {
-        "$in": [
-          true
-        ]
       }
     },
     {
@@ -670,7 +1724,7 @@
     },
     {
       "age": {
-        "$gt": 17,
+        "$gt": 5,
         "$in": "active"
       }
     },
@@ -696,6 +1750,42 @@
         "$in": [
           true
         ]
+      }
+    },
+    {
+      "age": {
+        "$in": {
+          "status": null
+        }
+      }
+    },
+    {
+      "age": {
+        "$in": {
+          "status": "value"
+        }
+      }
+    },
+    {
+      "age": {
+        "$in": {
+          "status": true
+        }
+      }
+    },
+    {
+      "age": {
+        "$in": null
+      }
+    },
+    {
+      "age": {
+        "$in": "value"
+      }
+    },
+    {
+      "age": {
+        "$in": true
       }
     },
     {
@@ -754,6 +1844,156 @@
       }
     },
     {
+      "status": {
+        "$in": [
+          "No",
+          null,
+          "Numerous",
+          null,
+          "Several",
+          null,
+          "Significant",
+          null,
+          null,
+          "Huge",
+          "Single",
+          null,
+          "Some",
+          null,
+          "Sparse",
+          "Enough",
+          null,
+          "Either",
+          null
+        ]
+      }
+    },
+    {
+      "status": {
+        "$in": [
+          "No",
+          "value",
+          "Numerous",
+          "value",
+          "Several",
+          "value",
+          "Significant",
+          "value",
+          "value",
+          "Huge",
+          "Single",
+          "value",
+          "Some",
+          "value",
+          "Sparse",
+          "Enough",
+          "value",
+          "Either",
+          "value"
+        ]
+      }
+    },
+    {
+      "status": {
+        "$in": [
+          "No",
+          true,
+          "Numerous",
+          true,
+          "Several",
+          true,
+          "Significant",
+          true,
+          true,
+          "Huge",
+          "Single",
+          true,
+          "Some",
+          true,
+          "Sparse",
+          "Enough",
+          true,
+          "Either",
+          true
+        ]
+      }
+    },
+    {
+      "status": {
+        "$in": [
+          null,
+          12,
+          null,
+          10,
+          null,
+          6,
+          null,
+          13,
+          7,
+          null,
+          null,
+          8,
+          null,
+          5,
+          null,
+          null,
+          11,
+          null,
+          9
+        ]
+      }
+    },
+    {
+      "status": {
+        "$in": [
+          42,
+          12,
+          42,
+          10,
+          42,
+          6,
+          42,
+          13,
+          7,
+          42,
+          42,
+          8,
+          42,
+          5,
+          42,
+          42,
+          11,
+          42,
+          9
+        ]
+      }
+    },
+    {
+      "status": {
+        "$in": [
+          true,
+          12,
+          true,
+          10,
+          true,
+          6,
+          true,
+          13,
+          7,
+          true,
+          true,
+          8,
+          true,
+          5,
+          true,
+          true,
+          11,
+          true,
+          9
+        ]
+      }
+    },
+    {
       "name": [
         null
       ]
@@ -804,7 +2044,7 @@
       "name": {
         "$in": "active",
         "$ne": [
-          18
+          5
         ]
       }
     },
@@ -847,7 +2087,7 @@
     {
       "name": {
         "$in": "active",
-        "$type": 18
+        "$type": 5
       }
     },
     {
@@ -887,7 +2127,7 @@
             null
           ]
         ],
-        "$type": 18
+        "$type": 5
       }
     },
     {
@@ -897,7 +2137,7 @@
             42
           ]
         ],
-        "$type": 18
+        "$type": 5
       }
     },
     {
@@ -907,7 +2147,7 @@
             true
           ]
         ],
-        "$type": 18
+        "$type": 5
       }
     },
     {
@@ -930,166 +2170,83 @@
       }
     },
     {
-      "rank": {
-        "level": null,
-        "count": null
+      "level": {
+        "count": null,
+        "grade": null
       }
     },
     {
-      "rank": {
-        "level": "value",
-        "count": "value"
+      "level": {
+        "count": "value",
+        "grade": "value"
       }
     },
     {
-      "rank": {
-        "level": true,
-        "count": true
+      "level": {
+        "count": true,
+        "grade": true
       }
     },
     {
-      "rank": {
+      "level": {
         "$in": "active"
       }
     },
     {
-      "rank": {
+      "level": {
         "$in": [
           {
-            "level": null,
-            "count": null
+            "count": null,
+            "grade": null
           }
         ]
       }
     },
     {
-      "rank": {
+      "level": {
         "$in": [
           {
-            "level": "value",
-            "count": "value"
+            "count": "value",
+            "grade": "value"
           }
         ]
       }
     },
     {
-      "rank": {
+      "level": {
         "$in": [
           {
-            "level": true,
-            "count": true
+            "count": true,
+            "grade": true
           }
         ]
       }
     },
     {
-      "rank.level": 10,
-      "rank.count": {
+      "level.count": 32,
+      "level.grade": {
         "$in": "active"
       }
     },
     {
-      "rank.level": null,
-      "rank.count": {
+      "level.count": null,
+      "level.grade": {
         "$in": [
           null
         ]
       }
     },
     {
-      "rank.level": "value",
-      "rank.count": {
+      "level.count": "value",
+      "level.grade": {
         "$in": [
           "value"
         ]
       }
     },
     {
-      "rank.level": true,
-      "rank.count": {
-        "$in": [
-          true
-        ]
-      }
-    },
-    {
-      "grade": {
-        "level": null,
-        "count": null
-      }
-    },
-    {
-      "grade": {
-        "level": "value",
-        "count": "value"
-      }
-    },
-    {
-      "grade": {
-        "level": true,
-        "count": true
-      }
-    },
-    {
-      "grade": {
-        "$in": "active"
-      }
-    },
-    {
-      "grade": {
-        "$in": [
-          {
-            "level": null,
-            "count": null
-          }
-        ]
-      }
-    },
-    {
-      "grade": {
-        "$in": [
-          {
-            "level": "value",
-            "count": "value"
-          }
-        ]
-      }
-    },
-    {
-      "grade": {
-        "$in": [
-          {
-            "level": true,
-            "count": true
-          }
-        ]
-      }
-    },
-    {
-      "grade.level": 10,
-      "grade.count": {
-        "$in": "active"
-      }
-    },
-    {
-      "grade.level": null,
-      "grade.count": {
-        "$in": [
-          null
-        ]
-      }
-    },
-    {
-      "grade.level": "value",
-      "grade.count": {
-        "$in": [
-          "value"
-        ]
-      }
-    },
-    {
-      "grade.level": true,
-      "grade.count": {
+      "level.count": true,
+      "level.grade": {
         "$in": [
           true
         ]
@@ -1097,14 +2254,1588 @@
     },
     {
       "step": {
+        "count": null,
+        "grade": null
+      }
+    },
+    {
+      "step": {
+        "count": "value",
+        "grade": "value"
+      }
+    },
+    {
+      "step": {
+        "count": true,
+        "grade": true
+      }
+    },
+    {
+      "step": {
         "$in": "active"
+      }
+    },
+    {
+      "step": {
+        "$in": [
+          {
+            "count": null,
+            "grade": null
+          }
+        ]
+      }
+    },
+    {
+      "step": {
+        "$in": [
+          {
+            "count": "value",
+            "grade": "value"
+          }
+        ]
+      }
+    },
+    {
+      "step": {
+        "$in": [
+          {
+            "count": true,
+            "grade": true
+          }
+        ]
+      }
+    },
+    {
+      "step.count": 32,
+      "step.grade": {
+        "$in": "active"
+      }
+    },
+    {
+      "step.count": null,
+      "step.grade": {
+        "$in": [
+          null
+        ]
+      }
+    },
+    {
+      "step.count": "value",
+      "step.grade": {
+        "$in": [
+          "value"
+        ]
+      }
+    },
+    {
+      "step.count": true,
+      "step.grade": {
+        "$in": [
+          true
+        ]
+      }
+    },
+    {
+      "priority": {
+        "$in": "active"
+      }
+    },
+    {
+      "priority": {
+        "$in": [
+          {
+            "$elemMatch": 42
+          }
+        ]
+      }
+    },
+    {
+      "priority": {
+        "$in": [
+          {
+            "$elemMatch": {
+              "capacity": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "priority": {
+        "$in": [
+          {
+            "$elemMatch": {
+              "capacity": "value"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "priority": {
+        "$in": [
+          {
+            "$elemMatch": {
+              "capacity": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$in": "active"
+        }
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$in": [
+            {
+              "$elemMatch": 42
+            }
+          ]
+        }
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$in": [
+            {
+              "$elemMatch": {
+                "capacity": null
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$in": [
+            {
+              "$elemMatch": {
+                "capacity": "value"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$in": [
+            {
+              "$elemMatch": {
+                "capacity": true
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "priority": {
+        "$nin": "deleted"
+      }
+    },
+    {
+      "priority": {
+        "$nin": [
+          {
+            "$elemMatch": 42
+          }
+        ]
+      }
+    },
+    {
+      "priority": {
+        "$nin": [
+          {
+            "$elemMatch": {
+              "capacity": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "priority": {
+        "$nin": [
+          {
+            "$elemMatch": {
+              "capacity": "value"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "priority": {
+        "$nin": [
+          {
+            "$elemMatch": {
+              "capacity": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$nin": "deleted"
+        }
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$nin": [
+            {
+              "$elemMatch": 42
+            }
+          ]
+        }
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$nin": [
+            {
+              "$elemMatch": {
+                "capacity": null
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$nin": [
+            {
+              "$elemMatch": {
+                "capacity": "value"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "priority": {
+        "$not": {
+          "$nin": [
+            {
+              "$elemMatch": {
+                "capacity": true
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "username": {
+        "$in": "active"
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          null,
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          "value",
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          true,
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          {},
+          null
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          {},
+          "value"
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          {},
+          true
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          {},
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          {},
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          {},
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          {},
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          {},
+          "value",
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          {},
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          {},
+          null,
+          null,
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          {},
+          "value",
+          "value",
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          {},
+          true,
+          true,
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          null,
+          {},
+          null,
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          "value",
+          {},
+          "value",
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          true,
+          {},
+          true,
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          {},
+          null,
+          null,
+          null,
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          {},
+          "value",
+          "value",
+          "value",
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          {},
+          true,
+          true,
+          true,
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          null,
+          {},
+          null,
+          null,
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          "value",
+          {},
+          "value",
+          "value",
+          {}
+        ]
+      }
+    },
+    {
+      "username": {
+        "$in": [
+          true,
+          {},
+          true,
+          true,
+          {}
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": "active"
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          [
+            null,
+            null
+          ],
+          {}
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          [
+            "value",
+            "value"
+          ],
+          {}
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          [
+            true,
+            true
+          ],
+          {}
+        ]
+      }
+    },
+    {
+      "email.attempts": {
+        "$in": "active"
+      }
+    },
+    {
+      "email.attempts": {
+        "$in": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "email.attempts": {
+        "$in": [
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "email.attempts": {
+        "$in": [
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "email.attempts": {
+        "$in": [
+          null,
+          {}
+        ]
+      }
+    },
+    {
+      "email.attempts": {
+        "$in": [
+          "value",
+          {}
+        ]
+      }
+    },
+    {
+      "email.attempts": {
+        "$in": [
+          true,
+          {}
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {
+            "attempts": null
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {
+            "attempts": "value"
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "email": {
+        "$in": [
+          {
+            "attempts": true
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "email.attempts": {
+        "$in": [
+          {
+            "quantity": null
+          },
+          {
+            "quantity": null
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "email.attempts": {
+        "$in": [
+          {
+            "quantity": "value"
+          },
+          {
+            "quantity": "value"
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "email.attempts": {
+        "$in": [
+          {
+            "quantity": true
+          },
+          {
+            "quantity": true
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": "active"
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          {},
+          null
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          {},
+          "value"
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          {},
+          true
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          null,
+          null,
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "value",
+          "value",
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          true,
+          true,
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          null,
+          null,
+          null,
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "value",
+          "value",
+          "value",
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          true,
+          true,
+          true,
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          null,
+          null,
+          null,
+          {},
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "value",
+          "value",
+          "value",
+          {},
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          true,
+          true,
+          true,
+          {},
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          {},
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          {},
+          "value",
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          {},
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Abundant",
+          "Couple",
+          "Double",
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Abundant",
+          "Couple",
+          "Double",
+          "value",
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Abundant",
+          "Couple",
+          "Double",
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          null,
+          null,
+          null,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          42,
+          42,
+          42,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          true,
+          true,
+          true,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Couple",
+          "Double",
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Couple",
+          "Double",
+          "value",
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Couple",
+          "Double",
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          null,
+          null,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          42,
+          42,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          true,
+          true,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Double",
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Double",
+          "value",
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Double",
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          null,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          42,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          true,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          null,
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          42,
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          true,
+          {}
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Each",
+          null
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Each",
+          "value"
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          "Each",
+          true
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          null,
+          1005
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          42,
+          1005
+        ]
+      }
+    },
+    {
+      "attempts.quantity": {
+        "$in": [
+          true,
+          1005
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": "active"
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          null,
+          {
+            "size": null,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          "value",
+          {
+            "size": "value",
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          true,
+          {
+            "size": true,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          26,
+          {
+            "size": 25,
+            "index": null
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          26,
+          {
+            "size": 25,
+            "index": 42
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          26,
+          {
+            "size": 25,
+            "index": true
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          [
+            null,
+            null
+          ],
+          {
+            "size": null,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          [
+            "value",
+            "value"
+          ],
+          {
+            "size": "value",
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          [
+            true,
+            true
+          ],
+          {
+            "size": true,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          [
+            26,
+            27
+          ],
+          {
+            "size": 25,
+            "index": null
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          [
+            26,
+            27
+          ],
+          {
+            "size": 25,
+            "index": 42
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          [
+            26,
+            27
+          ],
+          {
+            "size": 25,
+            "index": true
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {},
+          {
+            "size": null,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {},
+          {
+            "size": "value",
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {},
+          {
+            "size": true,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {},
+          {
+            "size": 26,
+            "index": null
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {},
+          {
+            "size": 26,
+            "index": 42
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {},
+          {
+            "size": 26,
+            "index": true
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          "Empty",
+          {
+            "size": null,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          "Empty",
+          {
+            "size": "value",
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          "Empty",
+          {
+            "size": true,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          null,
+          {
+            "size": 26,
+            "index": null
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          42,
+          {
+            "size": 26,
+            "index": 42
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          true,
+          {
+            "size": 26,
+            "index": true
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {
+            "size": null,
+            "index": "Each"
+          },
+          {
+            "size": null,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {
+            "size": "value",
+            "index": "Each"
+          },
+          {
+            "size": "value",
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {
+            "size": true,
+            "index": "Each"
+          },
+          {
+            "size": true,
+            "index": "Couple"
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {
+            "size": 25,
+            "index": null
+          },
+          {
+            "size": 25,
+            "index": null
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {
+            "size": 25,
+            "index": 42
+          },
+          {
+            "size": 25,
+            "index": 42
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {
+            "size": 25,
+            "index": true
+          },
+          {
+            "size": 25,
+            "index": true
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {
+            "size": 26,
+            "index": null
+          },
+          {
+            "size": 25,
+            "index": null
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {
+            "size": 26,
+            "index": 42
+          },
+          {
+            "size": 25,
+            "index": 42
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {
+            "size": 26,
+            "index": true
+          },
+          {
+            "size": 25,
+            "index": true
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {
+            "size": null,
+            "index": "Enough"
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {
+            "size": "value",
+            "index": "Enough"
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {
+            "size": true,
+            "index": "Enough"
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {
+            "size": 25,
+            "index": null
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {
+            "size": 25,
+            "index": 42
+          }
+        ]
+      }
+    },
+    {
+      "address": {
+        "$in": [
+          {
+            "size": 25,
+            "index": true
+          }
+        ]
       }
     }
   ],
   "documents": [
     {
       "_id": 0,
-      "age": 17
+      "age": 5
     },
     {
       "_id": 1,
@@ -1113,7 +3844,7 @@
     {
       "_id": 2,
       "name": [
-        17
+        4
       ]
     },
     {
@@ -1126,42 +3857,135 @@
       "_id": 4,
       "name": [
         [
-          18
+          5
         ]
       ]
     },
     {
       "_id": 5,
-      "title": []
+      "scores": []
     },
     {
       "_id": 6,
+      "title": []
+    },
+    {
+      "_id": 7,
       "title": [
         19
       ]
     },
     {
-      "_id": 7,
+      "_id": 8,
       "title": [
         "Abundant"
       ]
     },
     {
-      "_id": 8,
+      "_id": 9,
       "title": null
     },
     {
-      "_id": 9
+      "_id": 10
     },
     {
-      "_id": 10,
-      "rank": {
-        "level": 10,
-        "count": 11
+      "_id": 11,
+      "level": {
+        "count": 32,
+        "grade": 33
       }
     },
     {
-      "_id": 11
+      "_id": 12
+    },
+    {
+      "_id": 13,
+      "username": 37
+    },
+    {
+      "_id": 14,
+      "username": "Abundant"
+    },
+    {
+      "_id": 15,
+      "username": {}
+    },
+    {
+      "_id": 16,
+      "email": 7
+    },
+    {
+      "_id": 17,
+      "email": "Abundant"
+    },
+    {
+      "_id": 18,
+      "email": [
+        7
+      ]
+    },
+    {
+      "_id": 19,
+      "email": [
+        7,
+        "Abundant"
+      ]
+    },
+    {
+      "_id": 20,
+      "email": [
+        "Couple",
+        8
+      ]
+    },
+    {
+      "_id": 21,
+      "email": {
+        "attempts": 7
+      }
+    },
+    {
+      "_id": 22,
+      "email": {
+        "attempts": "Abundant"
+      }
+    },
+    {
+      "_id": 23,
+      "email": {
+        "attempts": [
+          105,
+          {
+            "quantity": 7
+          }
+        ]
+      }
+    },
+    {
+      "_id": 24,
+      "address": 26
+    },
+    {
+      "_id": 25,
+      "address": "Abundant"
+    },
+    {
+      "_id": 26,
+      "address": [
+        26,
+        27
+      ]
+    },
+    {
+      "_id": 27,
+      "address": null
+    },
+    {
+      "_id": 28,
+      "address": {
+        "size": 25,
+        "index": "Couple"
+      }
     }
   ],
   "indices": [

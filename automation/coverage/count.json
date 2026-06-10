@@ -28,6 +28,21 @@
       "query": {}
     },
     {
+      "checksum": "24e095f96793f462e7de2042c1aae4304ff8ef726abbce26ed193d777026c2ed",
+      "fingerprint": {
+        "field:#1": {
+          "$gt": "number:#1",
+          "$lte": "number:#2"
+        }
+      },
+      "query": {
+        "score": {
+          "$gt": 36,
+          "$lte": 86
+        }
+      }
+    },
+    {
       "checksum": "cff4d345bcd9abac8c15922c672941fdee171c30f3fa9a2ec6d7f640f3a8d5a3",
       "fingerprint": {
         "field:#1": {
@@ -43,7 +58,7 @@
       }
     },
     {
-      "checksum": "f0ba3fbbe2026ecbb0f0c757bc485d5ea655810d245d4eecabb563a6bcbbfe5c",
+      "checksum": "5080167c22dd28941e0766ba4d1b40a91a09f02b7c2c6ef0f2e873a1095ede68",
       "fingerprint": {
         "field:#1": "number:#1"
       },
@@ -52,12 +67,12 @@
       }
     },
     {
-      "checksum": "5080167c22dd28941e0766ba4d1b40a91a09f02b7c2c6ef0f2e873a1095ede68",
+      "checksum": "18b53f9622adc0b7129d3cf61e5a355fc82f69e1aa40ac5a1db3cf3c04724f22",
       "fingerprint": {
-        "field:#1": "number:#1"
+        "$where": {}
       },
       "query": {
-        "rank": 12
+        "$where": {}
       }
     },
     {
@@ -477,15 +492,6 @@
       }
     },
     {
-      "checksum": "7c6926982883d36b33c2df51b8897444a5c38ce90ad586d5d5ecf9d06ccba1bf",
-      "fingerprint": {
-        "field:#1": "string:#1"
-      },
-      "query": {
-        "name": "Full"
-      }
-    },
-    {
       "checksum": "75c4cca18d9e28421aa7ef190bde3bde14148a3bc032980edc00f643939a7cf4",
       "fingerprint": {
         "field:#1": "number:#1",
@@ -497,40 +503,14 @@
       }
     },
     {
-      "checksum": "40ae2ff48aba997134d28531b6640294e1f9d62ff4ca3d18bfa381619568aef1",
+      "checksum": "5e80893e7f88af9ade93e25b9d15fc3208108041ce384a7306c2ed2301fbbd6e",
       "fingerprint": {
-        "field:#1": {
-          "$gt": "number:#1"
-        }
+        "field:#1.field:#2": "string:#1",
+        "field:#1.field:#3": "string:#2"
       },
       "query": {
-        "title": {
-          "$gt": 21
-        }
-      }
-    },
-    {
-      "checksum": "f1e4b5b5d9e44e41b7a6e0b071e7faf89abe1b3f23f0a8416d97c77ef01c7741",
-      "fingerprint": {
-        "field:#1": {
-          "$gt": "number:#1",
-          "$lt": "number:#2"
-        }
-      },
-      "query": {
-        "title": {
-          "$gt": 20,
-          "$lt": 25
-        }
-      }
-    },
-    {
-      "checksum": "c2d668683723cbaaff6aadfe8203135d8f41026ebcc742a63fb72537d4db7fe0",
-      "fingerprint": {
-        "field:#1": "string:#1"
-      },
-      "query": {
-        "username": "Abundant"
+        "scores.grade": "Abundant",
+        "scores.step": "Couple"
       }
     },
     {
@@ -544,7 +524,7 @@
         }
       },
       "query": {
-        "username": {
+        "title": {
           "$in": [
             "Abundant"
           ],
@@ -569,10 +549,10 @@
       "query": {
         "$and": [
           {
-            "username": "Abundant"
+            "title": "Abundant"
           },
           {
-            "username": {
+            "title": {
               "$gt": "Couple"
             }
           }
@@ -594,7 +574,7 @@
       "query": {
         "$and": [
           {
-            "username": "Abundant"
+            "title": "Abundant"
           },
           {
             "$where": "Double"
@@ -611,21 +591,25 @@
         }
       },
       "query": {
-        "username": {
-          "$gt": 3,
-          "$lte": 5
+        "title": {
+          "$gt": 7,
+          "$lte": 9
         }
       }
     },
     {
-      "checksum": "5e80893e7f88af9ade93e25b9d15fc3208108041ce384a7306c2ed2301fbbd6e",
+      "checksum": "f1e4b5b5d9e44e41b7a6e0b071e7faf89abe1b3f23f0a8416d97c77ef01c7741",
       "fingerprint": {
-        "field:#1.field:#2": "string:#1",
-        "field:#1.field:#3": "string:#2"
+        "field:#1": {
+          "$gt": "number:#1",
+          "$lt": "number:#2"
+        }
       },
       "query": {
-        "scores.priority": "Abundant",
-        "scores.capacity": "Couple"
+        "username": {
+          "$gt": 24,
+          "$lt": 29
+        }
       }
     },
     {
@@ -1152,9 +1136,6 @@
       "active": true
     },
     {
-      "name": 42
-    },
-    {
       "level": null,
       "count": null
     },
@@ -1167,55 +1148,25 @@
       "count": true
     },
     {
-      "title": {
-        "$gt": null
-      }
+      "scores.grade": null,
+      "scores.step": null
+    },
+    {
+      "scores.grade": 42,
+      "scores.step": 42
+    },
+    {
+      "scores.grade": true,
+      "scores.step": true
     },
     {
       "title": {
-        "$gt": "value"
-      }
-    },
-    {
-      "title": {
-        "$gt": true
-      }
-    },
-    {
-      "title": {
-        "$gt": null,
-        "$lt": null
-      }
-    },
-    {
-      "title": {
-        "$gt": "value",
-        "$lt": "value"
-      }
-    },
-    {
-      "title": {
-        "$gt": true,
-        "$lt": true
-      }
-    },
-    {
-      "username": null
-    },
-    {
-      "username": 42
-    },
-    {
-      "username": true
-    },
-    {
-      "username": {
         "$in": "active",
         "$gt": "Couple"
       }
     },
     {
-      "username": {
+      "title": {
         "$in": [
           null
         ],
@@ -1223,7 +1174,7 @@
       }
     },
     {
-      "username": {
+      "title": {
         "$in": [
           42
         ],
@@ -1231,7 +1182,7 @@
       }
     },
     {
-      "username": {
+      "title": {
         "$in": [
           true
         ],
@@ -1241,10 +1192,10 @@
     {
       "$and": [
         {
-          "username": null
+          "title": null
         },
         {
-          "username": {
+          "title": {
             "$gt": null
           }
         }
@@ -1253,10 +1204,10 @@
     {
       "$and": [
         {
-          "username": 42
+          "title": 42
         },
         {
-          "username": {
+          "title": {
             "$gt": 42
           }
         }
@@ -1265,10 +1216,10 @@
     {
       "$and": [
         {
-          "username": true
+          "title": true
         },
         {
-          "username": {
+          "title": {
             "$gt": true
           }
         }
@@ -1277,7 +1228,7 @@
     {
       "$and": [
         {
-          "username": null
+          "title": null
         },
         {
           "$where": null
@@ -1287,7 +1238,7 @@
     {
       "$and": [
         {
-          "username": 42
+          "title": 42
         },
         {
           "$where": 42
@@ -1297,7 +1248,7 @@
     {
       "$and": [
         {
-          "username": true
+          "title": true
         },
         {
           "$where": true
@@ -1305,34 +1256,40 @@
       ]
     },
     {
-      "username": {
+      "title": {
         "$gt": null,
         "$lte": null
       }
     },
     {
-      "username": {
+      "title": {
         "$gt": "value",
         "$lte": "value"
       }
     },
     {
-      "username": {
+      "title": {
         "$gt": true,
         "$lte": true
       }
     },
     {
-      "scores.priority": null,
-      "scores.capacity": null
+      "username": {
+        "$gt": null,
+        "$lt": null
+      }
     },
     {
-      "scores.priority": 42,
-      "scores.capacity": 42
+      "username": {
+        "$gt": "value",
+        "$lt": "value"
+      }
     },
     {
-      "scores.priority": true,
-      "scores.capacity": true
+      "username": {
+        "$gt": true,
+        "$lt": true
+      }
     },
     {
       "ratings.attempts": null,
@@ -1379,52 +1336,47 @@
     },
     {
       "_id": 3,
-      "title": "Abundant"
-    },
-    {
-      "_id": 4,
-      "title": [
-        21,
-        22,
-        23
-      ]
-    },
-    {
-      "_id": 5,
-      "grade": 122,
-      "title": 29
-    },
-    {
-      "_id": 6,
-      "username": [
-        "Abundant",
-        "Couple",
-        "Abundant"
-      ]
-    },
-    {
-      "_id": 7,
-      "step": 121,
-      "username": [
-        4,
-        5
-      ]
-    },
-    {
-      "_id": 8,
       "scores": [
         {
-          "priority": "Abundant",
-          "capacity": "Couple"
+          "grade": "Abundant",
+          "step": "Couple"
         },
         {
-          "priority": "Abundant",
-          "capacity": "Couple"
+          "grade": "Abundant",
+          "step": "Couple"
         }
       ]
     },
     {
-      "_id": 9,
+      "_id": 4,
+      "title": [
+        "Abundant",
+        "Couple"
+      ]
+    },
+    {
+      "_id": 5,
+      "priority": 125,
+      "title": [
+        8,
+        9
+      ]
+    },
+    {
+      "_id": 6,
+      "capacity": 125,
+      "username": [
+        25,
+        26
+      ]
+    },
+    {
+      "_id": 7,
+      "capacity": 126,
+      "username": 33
+    },
+    {
+      "_id": 8,
       "ratings": [
         {
           "attempts": 18,
@@ -1434,17 +1386,17 @@
       ]
     },
     {
-      "_id": 10,
+      "_id": 9,
       "size": 119,
       "email": "Abundant"
     },
     {
-      "_id": 11,
+      "_id": 10,
       "size": 120,
       "email": {}
     },
     {
-      "_id": 12,
+      "_id": 11,
       "size": 122,
       "email": true
     }

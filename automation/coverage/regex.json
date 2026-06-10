@@ -1,12 +1,64 @@
 {
   "queries": [
     {
-      "checksum": "a3d912c80480285cb2d4fcdce21e5cfa6e79d31b21382a7b6080d501b621a416",
+      "checksum": "a8433dba6b0355663f24952ad44e6d3416d906e023a918b428cf34ff3600e050",
       "fingerprint": {
         "field:#1": {}
       },
       "query": {
         "status": {}
+      }
+    },
+    {
+      "checksum": "2cb6220186c1ae327e343d0211c2d559aa8035b7a0623bada5598c1ce582e488",
+      "fingerprint": {
+        "field:#1": {
+          "$regex": "string:#1"
+        }
+      },
+      "query": {
+        "status": {
+          "$regex": "Double"
+        }
+      }
+    },
+    {
+      "checksum": "4b0a57628dc167a68abdba0ca01d8f8709c2b14d4221d22ed1c641754c8ad895",
+      "fingerprint": {
+        "field:#1": {
+          "$regex": "string:#1",
+          "$options": "string:#2"
+        }
+      },
+      "query": {
+        "status": {
+          "$regex": "Couple",
+          "$options": "Much"
+        }
+      }
+    },
+    {
+      "checksum": "6640291332bd4553fe14829268e4e90de332d0328ae5e77f85c45defbffa0844",
+      "fingerprint": {
+        "field:#1": {
+          "$options": "string:#1",
+          "$regex": "string:#2"
+        }
+      },
+      "query": {
+        "status": {
+          "$options": "Much",
+          "$regex": "Couple"
+        }
+      }
+    },
+    {
+      "checksum": "a3d912c80480285cb2d4fcdce21e5cfa6e79d31b21382a7b6080d501b621a416",
+      "fingerprint": {
+        "field:#1": {}
+      },
+      "query": {
+        "age": {}
       }
     },
     {
@@ -15,7 +67,7 @@
         "field:#1": {}
       },
       "query": {
-        "status": {}
+        "age": {}
       }
     },
     {
@@ -24,7 +76,7 @@
         "field:#1": {}
       },
       "query": {
-        "status": {}
+        "age": {}
       }
     },
     {
@@ -36,9 +88,9 @@
         }
       },
       "query": {
-        "status": {
-          "$regex": "Huge",
-          "$gte": "Couple"
+        "age": {
+          "$regex": "Neither",
+          "$gte": "Either"
         }
       }
     },
@@ -51,10 +103,32 @@
         }
       },
       "query": {
-        "status": {
-          "$gt": "Hundred",
-          "$regex": "Hundreds"
+        "age": {
+          "$gt": "Huge",
+          "$regex": "No"
         }
+      }
+    },
+    {
+      "checksum": "10f03f0292d2bc311003aa61c9e6e4715ed330c35d3798ef655fc1b5a211bb3d",
+      "fingerprint": {},
+      "query": {}
+    },
+    {
+      "checksum": "9af438d80c81d0f1d6b536e5c93044fe30760153bc707c555fd0b81cdc5dc87e",
+      "fingerprint": {
+        "field:#1": {},
+        "field:#2": {},
+        "field:#3": {},
+        "field:#4": {},
+        "field:#5": {}
+      },
+      "query": {
+        "status": {},
+        "rank": {},
+        "level": {},
+        "count": {},
+        "grade": {}
       }
     },
     {
@@ -72,10 +146,10 @@
       "query": {
         "$and": [
           {
-            "age": {}
+            "status": {}
           },
           {
-            "age": {}
+            "status": {}
           }
         ]
       }
@@ -87,8 +161,8 @@
         "field:#2": {}
       },
       "query": {
-        "age": {},
-        "score": {}
+        "status": {},
+        "rank": {}
       }
     },
     {
@@ -106,12 +180,129 @@
       "query": {
         "$or": [
           {
-            "age": {}
+            "status": {}
           },
           {
-            "age": {}
+            "status": {}
           }
         ]
+      }
+    },
+    {
+      "checksum": "80e5e008c0f102ea9f713447920503d33e8cb35a5772d3dd1b93c5bf3d2be4da",
+      "fingerprint": {
+        "field:#1.field:#2": {}
+      },
+      "query": {
+        "step.priority": {}
+      }
+    },
+    {
+      "checksum": "d6221cd4fccd686fd2a391b4241267f60c7a7b03cb152c00eb5c794878fcae24",
+      "fingerprint": {
+        "field:#1": {
+          "$elemMatch": {
+            "$regex": "string:#1",
+            "$options": "string:#2"
+          }
+        }
+      },
+      "query": {
+        "tags": {
+          "$elemMatch": {
+            "$regex": "Empty",
+            "$options": "Enough"
+          }
+        }
+      }
+    },
+    {
+      "checksum": "3dd9ceb44aefdddd5ef79fbd8c7f90b6255a09202f43956578a171e18645f6fb",
+      "fingerprint": {
+        "field:#1": {
+          "$regex": {}
+        }
+      },
+      "query": {
+        "attempts": {
+          "$regex": {}
+        }
+      }
+    },
+    {
+      "checksum": "eb730307a6d729f7de5cd7cf104ac76049eafb56f631ec13965377f81699de24",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            {},
+            "string:#1"
+          ]
+        }
+      },
+      "query": {
+        "roles": {
+          "$in": [
+            {},
+            "Double"
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "99efb08972916a68641317cf285e0a2670dc455925c9969577dd2d4490b82abd",
+      "fingerprint": {
+        "field:#1": {
+          "$all": [
+            {},
+            {}
+          ]
+        }
+      },
+      "query": {
+        "roles": {
+          "$all": [
+            {},
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "9919d334412b3ea3bc166d366606d210febfb67ac360d731fe8e8b7ba605cc27",
+      "fingerprint": {
+        "field:#1": {
+          "$all": [
+            {},
+            "string:#1"
+          ]
+        }
+      },
+      "query": {
+        "roles": {
+          "$all": [
+            {},
+            "Couple"
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "b3726cf4c54cc0813ad16ff6f3635d1b62316e6c21eeb10588efd8c02fe53d90",
+      "fingerprint": {
+        "field:#1": {
+          "$nin": [
+            {},
+            "string:#1"
+          ]
+        }
+      },
+      "query": {
+        "roles": {
+          "$nin": [
+            {},
+            "Double"
+          ]
+        }
       }
     },
     {
@@ -124,7 +315,7 @@
         }
       },
       "query": {
-        "tags": {
+        "roles": {
           "$in": [
             {}
           ]
@@ -142,7 +333,7 @@
         }
       },
       "query": {
-        "tags": {
+        "roles": {
           "$in": [
             {},
             "Double"
@@ -161,7 +352,7 @@
         }
       },
       "query": {
-        "tags": {
+        "roles": {
           "$all": [
             {},
             {}
@@ -180,7 +371,7 @@
         }
       },
       "query": {
-        "tags": {
+        "roles": {
           "$all": [
             {},
             "Couple"
@@ -198,7 +389,7 @@
         }
       },
       "query": {
-        "tags": {
+        "roles": {
           "$nin": [
             {}
           ]
@@ -216,7 +407,7 @@
         }
       },
       "query": {
-        "tags": {
+        "roles": {
           "$nin": [
             {},
             "Double"
@@ -236,7 +427,7 @@
         }
       },
       "query": {
-        "tags": {
+        "roles": {
           "$not": {
             "$nin": [
               {}
@@ -256,7 +447,7 @@
         }
       },
       "query": {
-        "tags": {
+        "roles": {
           "$all": [
             "Empty",
             {}
@@ -274,11 +465,38 @@
         }
       },
       "query": {
-        "tags": {
+        "roles": {
           "$all": [
             {}
           ]
         }
+      }
+    },
+    {
+      "checksum": "3001f37220e069e4b7fab0743ab83b0aed99ef98bcf6afa81b90950df13054a3",
+      "fingerprint": {
+        "field:#1.field:#2": "string:#1"
+      },
+      "query": {
+        "scores.size": "Abundant"
+      }
+    },
+    {
+      "checksum": "238ba2ce42da304b07b420c1df0bdc0a0fe08bb809af45cba5d30417def35ce1",
+      "fingerprint": {
+        "field:#1.index.field:#2": "string:#1"
+      },
+      "query": {
+        "scores.0.size": "Abundant"
+      }
+    },
+    {
+      "checksum": "1a58fbf8348748e6878cc508c3bbdca22d0eba5264f56a2004eccfe3ee9e6222",
+      "fingerprint": {
+        "field:#1.index.field:#2": {}
+      },
+      "query": {
+        "scores.0.size": {}
       }
     },
     {
@@ -287,7 +505,7 @@
         "field:#1.field:#2": "string:#1"
       },
       "query": {
-        "scores.level": "Abundant"
+        "scores.size": "Abundant"
       }
     },
     {
@@ -296,7 +514,7 @@
         "field:#1.field:#2": {}
       },
       "query": {
-        "scores.level": {}
+        "scores.size": {}
       }
     },
     {
@@ -305,7 +523,7 @@
         "field:#1.index.field:#2": "string:#1"
       },
       "query": {
-        "scores.0.level": "Abundant"
+        "scores.0.size": "Abundant"
       }
     },
     {
@@ -314,54 +532,134 @@
         "field:#1.index.field:#2": {}
       },
       "query": {
-        "scores.0.level": {}
+        "scores.0.size": {}
       }
     }
   ],
   "variants": [
     {
       "status": {
-        "$regex": null,
-        "$gte": null
-      }
-    },
-    {
-      "status": {
-        "$regex": 42,
-        "$gte": 42
-      }
-    },
-    {
-      "status": {
-        "$regex": true,
-        "$gte": true
-      }
-    },
-    {
-      "status": {
-        "$gt": null,
         "$regex": null
       }
     },
     {
       "status": {
-        "$gt": 42,
         "$regex": 42
       }
     },
     {
       "status": {
+        "$regex": true
+      }
+    },
+    {
+      "status": {
+        "$regex": null,
+        "$options": null
+      }
+    },
+    {
+      "status": {
+        "$regex": 42,
+        "$options": 42
+      }
+    },
+    {
+      "status": {
+        "$regex": true,
+        "$options": true
+      }
+    },
+    {
+      "status": {
+        "$options": null,
+        "$regex": null
+      }
+    },
+    {
+      "status": {
+        "$options": 42,
+        "$regex": 42
+      }
+    },
+    {
+      "status": {
+        "$options": true,
+        "$regex": true
+      }
+    },
+    {
+      "age": {
+        "$regex": null,
+        "$gte": null
+      }
+    },
+    {
+      "age": {
+        "$regex": 42,
+        "$gte": 42
+      }
+    },
+    {
+      "age": {
+        "$regex": true,
+        "$gte": true
+      }
+    },
+    {
+      "age": {
+        "$gt": null,
+        "$regex": null
+      }
+    },
+    {
+      "age": {
+        "$gt": 42,
+        "$regex": 42
+      }
+    },
+    {
+      "age": {
         "$gt": true,
         "$regex": true
       }
     },
     {
       "tags": {
+        "$elemMatch": 42
+      }
+    },
+    {
+      "tags": {
+        "$elemMatch": {
+          "$regex": null,
+          "$options": null
+        }
+      }
+    },
+    {
+      "tags": {
+        "$elemMatch": {
+          "$regex": 42,
+          "$options": 42
+        }
+      }
+    },
+    {
+      "tags": {
+        "$elemMatch": {
+          "$regex": true,
+          "$options": true
+        }
+      }
+    },
+    {
+      "roles": {
         "$in": "active"
       }
     },
     {
-      "tags": {
+      "roles": {
         "$in": [
           {},
           null
@@ -369,7 +667,7 @@
       }
     },
     {
-      "tags": {
+      "roles": {
         "$in": [
           {},
           42
@@ -377,7 +675,7 @@
       }
     },
     {
-      "tags": {
+      "roles": {
         "$in": [
           {},
           true
@@ -385,17 +683,17 @@
       }
     },
     {
-      "tags": {
+      "roles": {
         "$all": "value"
       }
     },
     {
-      "tags": {
+      "roles": {
         "$all": 42
       }
     },
     {
-      "tags": {
+      "roles": {
         "$all": [
           {},
           null
@@ -403,7 +701,7 @@
       }
     },
     {
-      "tags": {
+      "roles": {
         "$all": [
           {},
           42
@@ -411,7 +709,7 @@
       }
     },
     {
-      "tags": {
+      "roles": {
         "$all": [
           {},
           true
@@ -419,12 +717,12 @@
       }
     },
     {
-      "tags": {
+      "roles": {
         "$nin": "deleted"
       }
     },
     {
-      "tags": {
+      "roles": {
         "$nin": [
           {},
           null
@@ -432,7 +730,7 @@
       }
     },
     {
-      "tags": {
+      "roles": {
         "$nin": [
           {},
           42
@@ -440,7 +738,7 @@
       }
     },
     {
-      "tags": {
+      "roles": {
         "$nin": [
           {},
           true
@@ -448,14 +746,14 @@
       }
     },
     {
-      "tags": {
+      "roles": {
         "$not": {
           "$nin": "deleted"
         }
       }
     },
     {
-      "tags": {
+      "roles": {
         "$all": [
           null,
           {}
@@ -463,7 +761,7 @@
       }
     },
     {
-      "tags": {
+      "roles": {
         "$all": [
           42,
           {}
@@ -471,7 +769,7 @@
       }
     },
     {
-      "tags": {
+      "roles": {
         "$all": [
           true,
           {}
@@ -479,22 +777,22 @@
       }
     },
     {
-      "scores.level": null
+      "scores.size": null
     },
     {
-      "scores.level": 42
+      "scores.size": 42
     },
     {
-      "scores.level": true
+      "scores.size": true
     },
     {
-      "scores.0.level": null
+      "scores.0.size": null
     },
     {
-      "scores.0.level": 42
+      "scores.0.size": 42
     },
     {
-      "scores.0.level": true
+      "scores.0.size": true
     }
   ],
   "documents": [
@@ -504,35 +802,47 @@
     },
     {
       "_id": 1,
-      "category": "Abundant"
+      "step": {
+        "priority": "Abundant"
+      }
     },
     {
       "_id": 2,
       "tags": [
+        "Abundant"
+      ]
+    },
+    {
+      "_id": 3,
+      "category": "Abundant"
+    },
+    {
+      "_id": 4,
+      "roles": [
         "Couple",
         "Double"
       ]
     },
     {
-      "_id": 3,
-      "rank": 26,
+      "_id": 5,
+      "quantity": 7,
       "scores": [
         {
-          "level": "Abundant"
+          "size": "Abundant"
         },
         {
-          "level": "Couple"
+          "size": "Couple"
         }
       ]
     }
   ],
   "indices": [
     {
-      "status": 1
+      "age": 1
     },
     {
-      "age": 1,
-      "score": 1
+      "status": 1,
+      "rank": 1
     },
     {
       "a.x": 1
