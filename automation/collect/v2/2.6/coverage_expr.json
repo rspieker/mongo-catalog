@@ -89,6 +89,87 @@
 		}
 	},
 	{
+		"id": "rSHLuz1tPZXq",
+		"operation": {
+			"$expr": {
+				"$eq": [
+					"$rank",
+					"$level"
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "cyJIWnwkhMbX",
+		"operation": {
+			"$or": [
+				{
+					"$expr": {
+						"$eq": [
+							"$rank",
+							"$level"
+						]
+					}
+				},
+				{
+					"count": {
+						"$gt": 30
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "t4ZEZTvP6eVZ",
+		"operation": {
+			"grade": {
+				"$elemMatch": {
+					"$expr": {
+						"$eq": [
+							"$rank",
+							"$level"
+						]
+					}
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown operator: $expr",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "k0PYXD4rVqrn",
+		"operation": {
+			"grade": {
+				"$_internalSchemaObjectMatch": {
+					"$expr": {
+						"$eq": [
+							"$rank",
+							"$level"
+						]
+					}
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown operator: $_internalSchemaObjectMatch",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
 		"id": "wmknGGHvRUfw",
 		"operation": {
 			"$expr": {
@@ -472,6 +553,337 @@
 		},
 		"error": {
 			"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "rx0Lvr2gNLne",
+		"operation": {
+			"$expr": {
+				"$eq": [
+					null,
+					null
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "nJm31O1ArvZe",
+		"operation": {
+			"$expr": {
+				"$eq": [
+					42,
+					42
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "tVM1ZlMNA5DJ",
+		"operation": {
+			"$expr": {
+				"$eq": [
+					true,
+					true
+				]
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "azRIswYSx809",
+		"operation": {
+			"$or": [
+				{
+					"$expr": {
+						"$eq": [
+							"$rank",
+							"$level"
+						]
+					}
+				},
+				{
+					"count": {
+						"$gt": null
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "j6QK40zSZAiL",
+		"operation": {
+			"$or": [
+				{
+					"$expr": {
+						"$eq": [
+							"$rank",
+							"$level"
+						]
+					}
+				},
+				{
+					"count": {
+						"$gt": "value"
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "juFTBcXBqASW",
+		"operation": {
+			"$or": [
+				{
+					"$expr": {
+						"$eq": [
+							"$rank",
+							"$level"
+						]
+					}
+				},
+				{
+					"count": {
+						"$gt": true
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "dDNeXU5WZWnp",
+		"operation": {
+			"$or": [
+				{
+					"$expr": {
+						"$eq": [
+							null,
+							null
+						]
+					}
+				},
+				{
+					"count": {
+						"$gt": 30
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "d0LtNObCPEfU",
+		"operation": {
+			"$or": [
+				{
+					"$expr": {
+						"$eq": [
+							42,
+							42
+						]
+					}
+				},
+				{
+					"count": {
+						"$gt": 30
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "tQ6ooZxvqeKZ",
+		"operation": {
+			"$or": [
+				{
+					"$expr": {
+						"$eq": [
+							true,
+							true
+						]
+					}
+				},
+				{
+					"count": {
+						"$gt": 30
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "vxL4dHeV8YAX",
+		"operation": {
+			"grade": {
+				"$elemMatch": 42
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $elemMatch needs an Object",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "jsnjqHLh4MQD",
+		"operation": {
+			"grade": {
+				"$elemMatch": {
+					"$expr": {
+						"$eq": [
+							null,
+							null
+						]
+					}
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown operator: $expr",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "fDtgviOXhOdP",
+		"operation": {
+			"grade": {
+				"$elemMatch": {
+					"$expr": {
+						"$eq": [
+							42,
+							42
+						]
+					}
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown operator: $expr",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "fZ3HgbtDUHoS",
+		"operation": {
+			"grade": {
+				"$elemMatch": {
+					"$expr": {
+						"$eq": [
+							true,
+							true
+						]
+					}
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown operator: $expr",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "k0jr6mcGUA1i",
+		"operation": {
+			"grade": {
+				"$_internalSchemaObjectMatch": {
+					"$expr": {
+						"$eq": [
+							null,
+							null
+						]
+					}
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown operator: $_internalSchemaObjectMatch",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "wOT6zFOxF342",
+		"operation": {
+			"grade": {
+				"$_internalSchemaObjectMatch": {
+					"$expr": {
+						"$eq": [
+							42,
+							42
+						]
+					}
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown operator: $_internalSchemaObjectMatch",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "n4rsTQ2DU8T1",
+		"operation": {
+			"grade": {
+				"$_internalSchemaObjectMatch": {
+					"$expr": {
+						"$eq": [
+							true,
+							true
+						]
+					}
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown operator: $_internalSchemaObjectMatch",
 			"code": 17287,
 			"type": "MongoError"
 		}
