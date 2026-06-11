@@ -1,1224 +1,1357 @@
 {
-  "name": "8.0.23",
-  "version": "8.0.23",
-  "releases": [
-    {
-      "name": "8.0",
-      "version": "8.0",
-      "digest": "sha256:73ee3180f0a3d8a8a20b8c01a9e62cb99de3b9ba11d108a88165e4762d48ce83",
-      "released": "2026-06-10T00:08:14.940Z"
-    },
-    {
-      "name": "8.0.23",
-      "version": "8.0.23",
-      "digest": "sha256:73ee3180f0a3d8a8a20b8c01a9e62cb99de3b9ba11d108a88165e4762d48ce83",
-      "released": "2026-06-10T00:08:26.731Z"
-    }
-  ],
-  "history": [
-    {
-      "type": "version-discovered",
-      "date": "2026-05-14T16:32:59.424Z",
-      "name": "8.0.23",
-      "digest": "sha256:44aa79ae28ff80b56fe58681b66cda9336706df408a5175a6c04988aa54610d3"
-    },
-    {
-      "type": "version-discovered",
-      "date": "2026-05-14T16:32:59.424Z",
-      "name": "8.0",
-      "digest": "sha256:44aa79ae28ff80b56fe58681b66cda9336706df408a5175a6c04988aa54610d3"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:40.333Z",
-      "catalog": "where",
-      "hash": "61f984be64502d526270f8d018b0e12470749c4ee6ca3a55c076929ab9c4d80d",
-      "resultChecksum": "6b83f48150b01849c40a8fe2efcf60e67fc0647871fcd9466b8ac52d5b9908bd"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:40.391Z",
-      "catalog": "type",
-      "hash": "73d27a4a45fd8116aff6c19e5c0cd7533d0535e86d06eda9dd3dd1917153d20b",
-      "resultChecksum": "38d181b4a950ebccb3b20ed449180f94b8ef664c3d435c8f52957fda504749bd"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:40.478Z",
-      "catalog": "sort",
-      "hash": "ede6de22b88b2be056f556d02c766fcb17db20f2428b2292cbbc71340ef7936a",
-      "resultChecksum": "5e45fc816c827b1c1f728257e961cb2551114eca2c0b7d63f0e379313d8ce665"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:40.569Z",
-      "catalog": "regex",
-      "hash": "161db15defb779a9d1b8da8ebdd9932503849d22679b819fab81f195ece08047",
-      "resultChecksum": "a980fcda8c56127077d2bf31ecf1f3214710e8b039463c22fc0a16a21f6f8f82"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:40.602Z",
-      "catalog": "project",
-      "hash": "9edcd98ef9a997b5f566031e13eadcdc52c5a903fe84ee2671d6d497ce4d8651",
-      "resultChecksum": "fcd1d2b19a0a81994254b1245c43feda7a75ebe37ea30fbfea4f9b4d3959bc8a"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:41.108Z",
-      "catalog": "or",
-      "hash": "7e0cae368ee6ec407d250a2d66c217a9b5e22057aba9a02507fd19c9106908a4",
-      "resultChecksum": "a7e0973cdbc468076a4609d1166d18cdb8e68fe8379a017184497e5f8205c79b"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:41.137Z",
-      "catalog": "number",
-      "hash": "18b80691c5aed72dda10768e681410f34b1dabca12c11a59e9aecad54418110d",
-      "resultChecksum": "5a1a95257cfb077a6849495ad05956a4a1c473be5f22d5a173837095c6d22a32"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:41.274Z",
-      "catalog": "not",
-      "hash": "7937df7cdc88eb02f4bbc053128095b09fc51c91ac7f5823686cf4e26532c7ed",
-      "resultChecksum": "760edb7887101002791c4dc67e5b9c5edb05b9536932d6f852b367ee399ecff0"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:41.402Z",
-      "catalog": "nin",
-      "hash": "f1907dda9afac82e09a1f39c5367196fc8c5c23e7bd501742fb923e6ef30f36f",
-      "resultChecksum": "7af4926e165e368b2f4819e8751dba02477032d301101fdad695d1a553524cc4"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:41.516Z",
-      "catalog": "ne",
-      "hash": "1fa55b790208fdfe254e44d89656378e524499f4500a57f23dc99ed22a30844a",
-      "resultChecksum": "c9808f54366206e4dc2a932d39df299e9ef1e2aa3624b8292b2c1875403ef38f"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:41.555Z",
-      "catalog": "mod",
-      "hash": "309eaa80487202dd23ea960ebc2fed14ff73d6f49ab5879ed4b214c7473e4eee",
-      "resultChecksum": "f656461ab47213466749274dfcf9c5f3d5c2007ab817ea2cec62a25d99e816a4"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:41.581Z",
-      "catalog": "json_schema",
-      "hash": "b0aa55d98410cf4a65f71054aee41b560281774438dc274a738324a9e40840b2",
-      "resultChecksum": "022be48818f9654ad1eaece679af16a1bde46a59f5898b4b1d4c8263eeee8302"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:41.812Z",
-      "catalog": "in_",
-      "hash": "8520d2fa50de2c4db7d8e46fde9fc63048d848ff11f2cff00c8ec1eefaafabc6",
-      "resultChecksum": "b895b782d4776a6c1405af328ef538e4beef03d277456df7d0cde5bd2eb6489f"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:41.844Z",
-      "catalog": "geo",
-      "hash": "c1e6f3f2e548f4859ad0dc0634c6395f250b99ac9385df245b73314e892451c6",
-      "resultChecksum": "29144fa2d4aa8f97916719b04ae0a7e2be381dedef1b8fabc6f55a465ac8ed88"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:41.938Z",
-      "catalog": "find",
-      "hash": "3da64a6d313dda54b452b79bcf9828a9a69ac79e6a15d16df3314548f8e7d08f",
-      "resultChecksum": "c8e5a5b42aa2d6eb950c75a6bd14a0acdc0208f5b3e4301bdb8e3a00ee763bef"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:42.016Z",
-      "catalog": "expr",
-      "hash": "f4406e4685212a81be46b1563f2138f4f10c65d1a0e90d5a65cbe6dd18832833",
-      "resultChecksum": "a6701402b2d8996a83b8f9bc6ebee482a5ca96a33169d9739331093f4cc80b45"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:42.233Z",
-      "catalog": "exists",
-      "hash": "12191b3bc1444ee269a0175fd263e295a63f3ed55568058e09592c6b3424e1f8",
-      "resultChecksum": "f3a88d1115dcb65afc9098ad4e95024be68c638819de9ce0bb5e9c73fc5e419c"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:42.270Z",
-      "catalog": "elemmatch",
-      "hash": "ab68560bffa7876a869dacd88436f341b05b7fa259f3f31202ede011938ed8e0",
-      "resultChecksum": "236b83c3453a8550093402acb5f76542e24330cf43d4725abef8e08b07983104"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:42.302Z",
-      "catalog": "dbref",
-      "hash": "e51aac090de72c8932be5f12641e341813078d1a29748551505a82bb2f1c4a40",
-      "resultChecksum": "952214cdc085bf5de0d4c91bf2e50143f8119266e7fb237be87dc1fd42841e51"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:42.330Z",
-      "catalog": "date",
-      "hash": "6e7506227825b96e098661fa39d7dac4002d4325bccd38cb956e627dac727c8a",
-      "resultChecksum": "bf7ee4146aef7a2b417abbef320ab4c3018cdebdbd5a9f86a9835f5e2ad096f8"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:42.415Z",
-      "catalog": "count",
-      "hash": "86f4e26ed780d5e8b4ffa65d1b201761af43ef12d0b3751716cc48894f338217",
-      "resultChecksum": "96c99da339b816debe161780a5d970f9271dcde60ccfa80a39cf724db215776b"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:42.441Z",
-      "catalog": "collation",
-      "hash": "8a5ef1cfb5ac5720fe41bcc3e273252e4a86773e575fd2e19fe05bc05801aa96",
-      "resultChecksum": "0ef01a0405d0cc2f7d0b9e59db5f8d4aa2034079c1439ced45e70c252d60689c"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:42.663Z",
-      "catalog": "array",
-      "hash": "0a147d95942da52f050c8d2df8e0e17c6c10a7e6d9912147796a83aa5ab16ae6",
-      "resultChecksum": "83cd6c6dbcf9366831094d8f6bccb6f214e902dff94fbc479d5a2cb1bb8026b4"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:42.989Z",
-      "catalog": "and",
-      "hash": "241796ace1c89015c8d81cd375e297115a1394f3931010a829fd1e95c8776dcd",
-      "resultChecksum": "b46af11e976c9b80bca732af79fb2ba66f03623384b8e8a3a95846a04d706294"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:43.108Z",
-      "catalog": "all",
-      "hash": "672762cab877f753e4f06c82530e83082c7e2092a51fe3faa6e6adc723549e97",
-      "resultChecksum": "24284e9213a8c87b8acec506e7160eecc95f310830970bb8a1c2a6cfb8bd1f54"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:43.281Z",
-      "catalog": "textRegex",
-      "hash": "e73292ee0e3d031be051eee0e8527546985f5d932ca379fd277ab64abe27e035",
-      "resultChecksum": "eaff83cfd8e3af838409aa58e3c9862acd68e58d4b1a16cffbac4ea8e987b6e5"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:43.351Z",
-      "catalog": "modulo",
-      "hash": "a69a9800019c589f3cc9c34ace44715c4526225fdf0ad6adb32c438bf730956f",
-      "resultChecksum": "b97c7d2bc4955c49aa3a2daf3d774fe36f0990b570bad2463e8d3d79f0222d2f"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:43.440Z",
-      "catalog": "misc",
-      "hash": "829978b59c15e7fc6ab19dca729b74e9f2a3338f8994e54ed30d76841779123f",
-      "resultChecksum": "9e64347c74727ab3c2ff415225e51dcaec586e63d6d39cb896df0ed3e05c6adf"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:43.526Z",
-      "catalog": "logical",
-      "hash": "124e2ae3eb5570c1fc1864ae9c0253f061691604180557ab0b4351f5002d8bca",
-      "resultChecksum": "4901e5af6958f58c7f6bde45ddb8bfc85828f68376e09a42d097258b5c0a3523"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:43.648Z",
-      "catalog": "geo",
-      "hash": "ba0ca31688758838cc70cee42a85c63e1b11f181fa212724e39b033bb088c66c",
-      "resultChecksum": "085d710aac2ae58e9b11a8929fb7b548e30faf3693356e279cb2ad414c1b4203"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:43.787Z",
-      "catalog": "expr",
-      "hash": "74919c2bc49bf7bf6977ac8563457b804619068a6e5e1fe00aea50468d06b569",
-      "resultChecksum": "e4bebccb0e1a3ba4c2e320b9e0641e7c2f773ad65f424e65a766d997a70e0a22"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:43.813Z",
-      "catalog": "evaluation",
-      "hash": "67b6bb601e84b95b9701692fbd39a5fb7e75a8c5a6e5f62090a39288b1285d0f",
-      "resultChecksum": "07aa16a814a134fa0baf7b0a277bf45741e4b3b7c23f148d52b5a5d6333b6f5d"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:43.887Z",
-      "catalog": "element",
-      "hash": "4818a5ac4caad9cca3c40d06c8093bc2305b1adcbbfe5ed94101d159731039a2",
-      "resultChecksum": "fc3baf8cddce359cf3335119eccd790d39279f398a4614ab17ec2efcc2b0995f"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:43.954Z",
-      "catalog": "comparison",
-      "hash": "e5aeef8db811ce1736c8a23d47311d12a783ff6828080b02b5263b51c641d961",
-      "resultChecksum": "9d6efcc78581e38c9dcb70ef0ace949af79dbe8eb1e56c08e3433dd8864ec86c"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:44.042Z",
-      "catalog": "bitwise",
-      "hash": "0e1ef3f328f26b6e48d5269c5d8130ccbaf02709e158cf7023eac4ca9a919664",
-      "resultChecksum": "468fcdb5e4f28bad0d3c575660e48f0f3d9a6e01c0b7631a624d064c1b80b96c"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:38:44.130Z",
-      "catalog": "array",
-      "hash": "958e272e8eeeb0d3297b86765908759ea222ff15b9b3395d932ca752c03b3a40",
-      "resultChecksum": "51f949cbd419a188b29edb88020d5f9905a0531b2140f6fe35c06c5bff7f9cdc"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:44:21.830Z",
-      "catalog": "geo",
-      "hash": "c1e6f3f2e548f4859ad0dc0634c6395f250b99ac9385df245b73314e892451c6",
-      "resultChecksum": "29144fa2d4aa8f97916719b04ae0a7e2be381dedef1b8fabc6f55a465ac8ed88"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:44:21.927Z",
-      "catalog": "expr",
-      "hash": "f4406e4685212a81be46b1563f2138f4f10c65d1a0e90d5a65cbe6dd18832833",
-      "resultChecksum": "3c81e20d387b32e4204dd8b054e7eb368f29a7bf64d742ea292efddeeaffafde"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T16:44:22.130Z",
-      "catalog": "array",
-      "hash": "0a147d95942da52f050c8d2df8e0e17c6c10a7e6d9912147796a83aa5ab16ae6",
-      "resultChecksum": "06de36b8160114739b2366647e7b6b60c0f4f8e54c244a563c5c8fd75758188a"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T17:40:49.672Z",
-      "catalog": "geo",
-      "hash": "ba0ca31688758838cc70cee42a85c63e1b11f181fa212724e39b033bb088c66c",
-      "resultChecksum": "085d710aac2ae58e9b11a8929fb7b548e30faf3693356e279cb2ad414c1b4203"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T17:40:49.829Z",
-      "catalog": "expr",
-      "hash": "74919c2bc49bf7bf6977ac8563457b804619068a6e5e1fe00aea50468d06b569",
-      "resultChecksum": "e4bebccb0e1a3ba4c2e320b9e0641e7c2f773ad65f424e65a766d997a70e0a22"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T17:40:49.928Z",
-      "catalog": "array",
-      "hash": "958e272e8eeeb0d3297b86765908759ea222ff15b9b3395d932ca752c03b3a40",
-      "resultChecksum": "51f949cbd419a188b29edb88020d5f9905a0531b2140f6fe35c06c5bff7f9cdc"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:00.240Z",
-      "catalog": "where",
-      "hash": "1f99c16a9a9033efa694c6f3dbc1935b63d9dd523e0e970fb3524787e9ccabe1",
-      "resultChecksum": "bae1308a744f93c03d8ecf15dd565b801f44fab6e809e28b83d22688940c5958"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:00.290Z",
-      "catalog": "type",
-      "hash": "13a561dcba1d989c936b5a6668671038a1f730d1557631d3b1f1b320d4c22ef1",
-      "resultChecksum": "a53cfb3663b1ab243d7d23dd6713645acd6ee708d94c12c371a75098b29b8aab"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:00.367Z",
-      "catalog": "sort",
-      "hash": "c3105050d1e5d0285c476e3e5fb49bef860f53bab7323dfceb63e9471f4f4db3",
-      "resultChecksum": "9a59053fc4dd59f2cac19da2ff4edcf548655e8b6cae33f080216a69ed5de390"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:00.440Z",
-      "catalog": "regex",
-      "hash": "998a8648d921e50db4edc7494567efc08ba2e704fa8649f873bed1140a4df431",
-      "resultChecksum": "11be86bed711815c81973775a08b8069a7784a291c7ed0daebaefba0d92d9b2e"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:00.479Z",
-      "catalog": "project",
-      "hash": "8e83d4072bd7e5b4a0b0314b2c4079d893c5cd850bcf1b30c756c1e376fafd91",
-      "resultChecksum": "2c8038056afc469c59ef1900d347553fecaf0ff6b87e0895270945a6fc6d8638"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:00.849Z",
-      "catalog": "or",
-      "hash": "c3ba006a9e54bc9389d807f0ee941e27da10da66a7d31f86d88989eb7686b7b5",
-      "resultChecksum": "fb694b4f29da94a0eb046d21b54bfa9fdf8f4ca19c9138eccc314bfb4f139bc0"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:00.879Z",
-      "catalog": "number",
-      "hash": "848c5818c9fccd150599c177fdad91bb4e4ecb722636cdaeaba8b52fe5cbab88",
-      "resultChecksum": "ccc083c87d171079524863092d8a9b2e4326493c951d21c875329da4487876d5"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:00.973Z",
-      "catalog": "not",
-      "hash": "2bcf27c7f6a8dd1982652848ef38278a772d561c30c1ed8429ea20576515969a",
-      "resultChecksum": "b95af0adc3aac1dbe9ac3e605346fe36ad57cff0ccdaf2e4ef623cfe77bc1e68"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:01.050Z",
-      "catalog": "nin",
-      "hash": "c06556a38c3c924ed5dd4353276143cdcb5cbb24f5af2184c28106c0796d7cf0",
-      "resultChecksum": "153f5f2f3bcbffbc67ca464ee16479f4bed038dba832cccdff35c7a08e4e052b"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:01.125Z",
-      "catalog": "ne",
-      "hash": "b4fa8f77e51538cd4a6b18d4dcf72dad5b3ba32e5f72c319aac623c826b11f4b",
-      "resultChecksum": "93e9dbbbb2f6612b249b825819bc70e155ad081c14a66925255088b283f9f11c"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:01.168Z",
-      "catalog": "mod",
-      "hash": "1b4646692fe0a489a99517901280eb75d1c25fbac3b8e9a3d02f36228b38ca52",
-      "resultChecksum": "f656461ab47213466749274dfcf9c5f3d5c2007ab817ea2cec62a25d99e816a4"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:01.324Z",
-      "catalog": "in_",
-      "hash": "ba0b4aba364f135d67a19f548ac96217665e340a02b7c80ac1974c060ea5d739",
-      "resultChecksum": "ef3495a825e6ddf8137e3a3849ad1be5b14e3030e955274f29b97515fb3122fe"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:01.355Z",
-      "catalog": "geo",
-      "hash": "de8b00166774a884a2ede43b1f3ada4b9a954cbbb5073370a16b948975dcd99e",
-      "resultChecksum": "29144fa2d4aa8f97916719b04ae0a7e2be381dedef1b8fabc6f55a465ac8ed88"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:01.420Z",
-      "catalog": "find",
-      "hash": "c064fccc5e7c08ec72c8a560c3c969de44be647592e3154400112d96d0039f14",
-      "resultChecksum": "a7892de52f82a5a4635c3522e6b49fe022e1ddc68e4861b31a8d774ef273f20f"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:01.477Z",
-      "catalog": "expr",
-      "hash": "53221d232d965dacf5dba6478916ae397c185bf58ddbd9051411021ca51efd9e",
-      "resultChecksum": "275b10d15585852be3b1fd868fbd25a227623638cfccf4789044572698105895"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:01.570Z",
-      "catalog": "exists",
-      "hash": "6d6295f0268c607c46539d7301b53d00ed14acf61b7be1b632b40ef2dfb6a822",
-      "resultChecksum": "0e1f02ca12e90e2bc461c836470cecd1fd2e4744935b1b66488886e4a60edc80"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:01.604Z",
-      "catalog": "elemmatch",
-      "hash": "a0382d6764933da836864e8b5ec81b09fc7e55c62e83c80274cc5d8243051284",
-      "resultChecksum": "6d9703949e39903592a9b9468cd7fb8e5417ec3ec033515f385a47508dc7bc5b"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:01.633Z",
-      "catalog": "dbref",
-      "hash": "280f7968c3417d0b683658c307dad7cc8f029b3180bef6ec4e7fe4524b32559f",
-      "resultChecksum": "a358b89d601bb1aa1c2aefbca394dc5b0f3c814e5432f4f7a25f8133b9c50e50"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:01.660Z",
-      "catalog": "date",
-      "hash": "012cce3f1c9caa9d29a17fa394cb619f782409a45438f9c645229d29c1f978b5",
-      "resultChecksum": "aa4455047795936865bc2b0d58f8698f729e66f6780ff38d47952a9d5d434e68"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:01.736Z",
-      "catalog": "count",
-      "hash": "9f8e9b214e5a17153886e773d9a3963b3b4403160f941dd496590c039afb8d62",
-      "resultChecksum": "6c9bc7042d9675ab0cbc4084a2c1357682cb1807c6ab8cd7b9d3538d067bbc47"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:01.762Z",
-      "catalog": "collation",
-      "hash": "9447a41fccdc3257d10b562afaac470fc6563e9a3359200dcc8930e4d7093473",
-      "resultChecksum": "307fed3e9de40d3c79e556ce9c007d83585a9dd4af5fcc19acabc72a2d3f1656"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:01.872Z",
-      "catalog": "array",
-      "hash": "843b49a2540087191f19d32e3367116c2567affbf167c4a93553db21e70c5325",
-      "resultChecksum": "8049b7751a95b824424dabf5a29be26c76fbf3dd42c570aeeac985c66f4e8177"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:02.058Z",
-      "catalog": "and",
-      "hash": "1d669d9515be63778d8e84f8cc218042cf87d86c84ed5c21d1e9bf09acfae4d5",
-      "resultChecksum": "7b0bc64fa872803652c901b4bfa7a24885fa885237c409b78c07e619853646cb"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:12:02.133Z",
-      "catalog": "all",
-      "hash": "a4468f536de3bfdae3141d18e78cccdfef969b17bd2c5787156a867d47ff2a8e",
-      "resultChecksum": "a93d848432d36822ea6c5e4864edd5db471065f930c164acc08043ef57da2d28"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:15:42.367Z",
-      "catalog": "geo",
-      "hash": "ba0ca31688758838cc70cee42a85c63e1b11f181fa212724e39b033bb088c66c",
-      "resultChecksum": "085d710aac2ae58e9b11a8929fb7b548e30faf3693356e279cb2ad414c1b4203"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:15:42.526Z",
-      "catalog": "expr",
-      "hash": "74919c2bc49bf7bf6977ac8563457b804619068a6e5e1fe00aea50468d06b569",
-      "resultChecksum": "e4bebccb0e1a3ba4c2e320b9e0641e7c2f773ad65f424e65a766d997a70e0a22"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:15:42.628Z",
-      "catalog": "array",
-      "hash": "958e272e8eeeb0d3297b86765908759ea222ff15b9b3395d932ca752c03b3a40",
-      "resultChecksum": "51f949cbd419a188b29edb88020d5f9905a0531b2140f6fe35c06c5bff7f9cdc"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:36:30.903Z",
-      "catalog": "geo",
-      "hash": "de8b00166774a884a2ede43b1f3ada4b9a954cbbb5073370a16b948975dcd99e",
-      "resultChecksum": "29144fa2d4aa8f97916719b04ae0a7e2be381dedef1b8fabc6f55a465ac8ed88"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:36:30.973Z",
-      "catalog": "expr",
-      "hash": "53221d232d965dacf5dba6478916ae397c185bf58ddbd9051411021ca51efd9e",
-      "resultChecksum": "275b10d15585852be3b1fd868fbd25a227623638cfccf4789044572698105895"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:36:31.123Z",
-      "catalog": "array",
-      "hash": "843b49a2540087191f19d32e3367116c2567affbf167c4a93553db21e70c5325",
-      "resultChecksum": "8049b7751a95b824424dabf5a29be26c76fbf3dd42c570aeeac985c66f4e8177"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:23.853Z",
-      "catalog": "coverage_where",
-      "hash": "1f99c16a9a9033efa694c6f3dbc1935b63d9dd523e0e970fb3524787e9ccabe1",
-      "resultChecksum": "bae1308a744f93c03d8ecf15dd565b801f44fab6e809e28b83d22688940c5958"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:23.903Z",
-      "catalog": "coverage_type",
-      "hash": "13a561dcba1d989c936b5a6668671038a1f730d1557631d3b1f1b320d4c22ef1",
-      "resultChecksum": "a53cfb3663b1ab243d7d23dd6713645acd6ee708d94c12c371a75098b29b8aab"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:23.979Z",
-      "catalog": "coverage_sort",
-      "hash": "c3105050d1e5d0285c476e3e5fb49bef860f53bab7323dfceb63e9471f4f4db3",
-      "resultChecksum": "9a59053fc4dd59f2cac19da2ff4edcf548655e8b6cae33f080216a69ed5de390"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:24.052Z",
-      "catalog": "coverage_regex",
-      "hash": "998a8648d921e50db4edc7494567efc08ba2e704fa8649f873bed1140a4df431",
-      "resultChecksum": "11be86bed711815c81973775a08b8069a7784a291c7ed0daebaefba0d92d9b2e"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:24.092Z",
-      "catalog": "coverage_project",
-      "hash": "8e83d4072bd7e5b4a0b0314b2c4079d893c5cd850bcf1b30c756c1e376fafd91",
-      "resultChecksum": "2c8038056afc469c59ef1900d347553fecaf0ff6b87e0895270945a6fc6d8638"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:24.472Z",
-      "catalog": "coverage_or",
-      "hash": "c3ba006a9e54bc9389d807f0ee941e27da10da66a7d31f86d88989eb7686b7b5",
-      "resultChecksum": "fb694b4f29da94a0eb046d21b54bfa9fdf8f4ca19c9138eccc314bfb4f139bc0"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:24.505Z",
-      "catalog": "coverage_number",
-      "hash": "848c5818c9fccd150599c177fdad91bb4e4ecb722636cdaeaba8b52fe5cbab88",
-      "resultChecksum": "ccc083c87d171079524863092d8a9b2e4326493c951d21c875329da4487876d5"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:24.602Z",
-      "catalog": "coverage_not",
-      "hash": "2bcf27c7f6a8dd1982652848ef38278a772d561c30c1ed8429ea20576515969a",
-      "resultChecksum": "b95af0adc3aac1dbe9ac3e605346fe36ad57cff0ccdaf2e4ef623cfe77bc1e68"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:24.679Z",
-      "catalog": "coverage_nin",
-      "hash": "c06556a38c3c924ed5dd4353276143cdcb5cbb24f5af2184c28106c0796d7cf0",
-      "resultChecksum": "153f5f2f3bcbffbc67ca464ee16479f4bed038dba832cccdff35c7a08e4e052b"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:24.747Z",
-      "catalog": "coverage_ne",
-      "hash": "b4fa8f77e51538cd4a6b18d4dcf72dad5b3ba32e5f72c319aac623c826b11f4b",
-      "resultChecksum": "93e9dbbbb2f6612b249b825819bc70e155ad081c14a66925255088b283f9f11c"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:24.798Z",
-      "catalog": "coverage_mod",
-      "hash": "1b4646692fe0a489a99517901280eb75d1c25fbac3b8e9a3d02f36228b38ca52",
-      "resultChecksum": "f656461ab47213466749274dfcf9c5f3d5c2007ab817ea2cec62a25d99e816a4"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:24.831Z",
-      "catalog": "coverage_json_schema",
-      "hash": "b0aa55d98410cf4a65f71054aee41b560281774438dc274a738324a9e40840b2",
-      "resultChecksum": "022be48818f9654ad1eaece679af16a1bde46a59f5898b4b1d4c8263eeee8302"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:25.004Z",
-      "catalog": "coverage_in_",
-      "hash": "ba0b4aba364f135d67a19f548ac96217665e340a02b7c80ac1974c060ea5d739",
-      "resultChecksum": "ef3495a825e6ddf8137e3a3849ad1be5b14e3030e955274f29b97515fb3122fe"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:25.041Z",
-      "catalog": "coverage_geo",
-      "hash": "de8b00166774a884a2ede43b1f3ada4b9a954cbbb5073370a16b948975dcd99e",
-      "resultChecksum": "29144fa2d4aa8f97916719b04ae0a7e2be381dedef1b8fabc6f55a465ac8ed88"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:25.120Z",
-      "catalog": "coverage_find",
-      "hash": "c064fccc5e7c08ec72c8a560c3c969de44be647592e3154400112d96d0039f14",
-      "resultChecksum": "a7892de52f82a5a4635c3522e6b49fe022e1ddc68e4861b31a8d774ef273f20f"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:25.174Z",
-      "catalog": "coverage_expr",
-      "hash": "53221d232d965dacf5dba6478916ae397c185bf58ddbd9051411021ca51efd9e",
-      "resultChecksum": "275b10d15585852be3b1fd868fbd25a227623638cfccf4789044572698105895"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:25.275Z",
-      "catalog": "coverage_exists",
-      "hash": "6d6295f0268c607c46539d7301b53d00ed14acf61b7be1b632b40ef2dfb6a822",
-      "resultChecksum": "0e1f02ca12e90e2bc461c836470cecd1fd2e4744935b1b66488886e4a60edc80"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:25.316Z",
-      "catalog": "coverage_elemmatch",
-      "hash": "a0382d6764933da836864e8b5ec81b09fc7e55c62e83c80274cc5d8243051284",
-      "resultChecksum": "6d9703949e39903592a9b9468cd7fb8e5417ec3ec033515f385a47508dc7bc5b"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:25.350Z",
-      "catalog": "coverage_dbref",
-      "hash": "280f7968c3417d0b683658c307dad7cc8f029b3180bef6ec4e7fe4524b32559f",
-      "resultChecksum": "a358b89d601bb1aa1c2aefbca394dc5b0f3c814e5432f4f7a25f8133b9c50e50"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:25.388Z",
-      "catalog": "coverage_date",
-      "hash": "012cce3f1c9caa9d29a17fa394cb619f782409a45438f9c645229d29c1f978b5",
-      "resultChecksum": "aa4455047795936865bc2b0d58f8698f729e66f6780ff38d47952a9d5d434e68"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:25.465Z",
-      "catalog": "coverage_count",
-      "hash": "9f8e9b214e5a17153886e773d9a3963b3b4403160f941dd496590c039afb8d62",
-      "resultChecksum": "6c9bc7042d9675ab0cbc4084a2c1357682cb1807c6ab8cd7b9d3538d067bbc47"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:25.492Z",
-      "catalog": "coverage_collation",
-      "hash": "9447a41fccdc3257d10b562afaac470fc6563e9a3359200dcc8930e4d7093473",
-      "resultChecksum": "307fed3e9de40d3c79e556ce9c007d83585a9dd4af5fcc19acabc72a2d3f1656"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:25.610Z",
-      "catalog": "coverage_array",
-      "hash": "843b49a2540087191f19d32e3367116c2567affbf167c4a93553db21e70c5325",
-      "resultChecksum": "8049b7751a95b824424dabf5a29be26c76fbf3dd42c570aeeac985c66f4e8177"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:25.823Z",
-      "catalog": "coverage_and",
-      "hash": "1d669d9515be63778d8e84f8cc218042cf87d86c84ed5c21d1e9bf09acfae4d5",
-      "resultChecksum": "7b0bc64fa872803652c901b4bfa7a24885fa885237c409b78c07e619853646cb"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:25.893Z",
-      "catalog": "coverage_all",
-      "hash": "a4468f536de3bfdae3141d18e78cccdfef969b17bd2c5787156a867d47ff2a8e",
-      "resultChecksum": "a93d848432d36822ea6c5e4864edd5db471065f930c164acc08043ef57da2d28"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:26.138Z",
-      "catalog": "geo",
-      "hash": "ba0ca31688758838cc70cee42a85c63e1b11f181fa212724e39b033bb088c66c",
-      "resultChecksum": "085d710aac2ae58e9b11a8929fb7b548e30faf3693356e279cb2ad414c1b4203"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:26.263Z",
-      "catalog": "expr",
-      "hash": "74919c2bc49bf7bf6977ac8563457b804619068a6e5e1fe00aea50468d06b569",
-      "resultChecksum": "e4bebccb0e1a3ba4c2e320b9e0641e7c2f773ad65f424e65a766d997a70e0a22"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-05-14T18:53:26.368Z",
-      "catalog": "array",
-      "hash": "958e272e8eeeb0d3297b86765908759ea222ff15b9b3395d932ca752c03b3a40",
-      "resultChecksum": "51f949cbd419a188b29edb88020d5f9905a0531b2140f6fe35c06c5bff7f9cdc"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:42.465Z",
-      "catalog": "coverage_where",
-      "hash": "fedd81c6fe9751238b7b018ea31db9d2313251d159b26a10f71eed175bdc2327",
-      "resultChecksum": "07e2d0fc253f962d6ee415dc0982ff5a6fa466a8c66fa86e717e058bf400f173"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:42.517Z",
-      "catalog": "coverage_type",
-      "hash": "7a10f3047a514c30e269149eeab05d6754b6b85a6bcf20b6d416b1c970096ea8",
-      "resultChecksum": "f3e7bebbae5e55cae002674fed69626bbe77acbfb5bfa27d2ff5f83a66dac088"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:42.613Z",
-      "catalog": "coverage_sort",
-      "hash": "b6792d19b8bbe1f56b06cfa5aa04c35ff2e795998dcf40bd8c9adbc48a8d928d",
-      "resultChecksum": "c06b09034fd0341b54a1964bd0012985240cf1d86ec89602b11d5ebbef11707d"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:42.691Z",
-      "catalog": "coverage_regex",
-      "hash": "90eaa007e2cb598716dd3a23cd3a44e7ee4112826bbe90dc820128ad57eb179b",
-      "resultChecksum": "134d023938f4f97de0fb77424b295a995ad88177a3d792a911b84b4f02193670"
-    },
-    {
-      "type": "collection-halted",
-      "date": "2026-06-03T11:39:42.897Z",
-      "catalog": "coverage_project",
-      "reason": "add index fails, too many indexes for MongoCatalog.CatalogCollection key:{ a.c: 1 }"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:43.409Z",
-      "catalog": "coverage_or",
-      "hash": "dba00bede648490a6f086e0b830acc57d1aca910596749fee9c38b0e15369d7f",
-      "resultChecksum": "060f3ece1e9f01998fadee52602d3c93a0436a993d00918a097760b9867a4ca0",
-      "bootstrap": {
-        "problems": [
-          {
-            "error": {
-              "message": "cannot index parallel arrays [ratings] [scores]",
-              "code": 171,
-              "type": "MongoServerError"
-            },
-            "documents": [
-              2
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:43.447Z",
-      "catalog": "coverage_number",
-      "hash": "855eacc3ca3ba7c6b2d1a347b682b36209e36ffbc7bb571d78826d0e58b8dfab",
-      "resultChecksum": "ccc083c87d171079524863092d8a9b2e4326493c951d21c875329da4487876d5"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:43.558Z",
-      "catalog": "coverage_not",
-      "hash": "c6b6b3e72be602bda9ee48141f7a92fe6dcaae152953fe6294349193d4d9738b",
-      "resultChecksum": "4c71c84da144ac9662e76f2bfa9b97a25cb817c52ef26807a862363be86f8ea3"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:43.649Z",
-      "catalog": "coverage_ne",
-      "hash": "7ca7fb6c2f4fb52603f73656088719c2a3253e31b6d3de3a92dffe5a8d47a26d",
-      "resultChecksum": "0faa8491f778a1cac1a1b6c6220d89f6ae84f3936dead317f316951b1faeaf86"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:43.687Z",
-      "catalog": "coverage_mod",
-      "hash": "1f9c88112996a1f779a51d59d8a488be9e98e7aa7822a20c2491008357383d57",
-      "resultChecksum": "b65ab6e52b1ff32ad371b157f9109c822fd909eb3aa55ba137c701926351a26e"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:43.800Z",
-      "catalog": "coverage_in_",
-      "hash": "94ef8c5843fed99b4fb4c27c65b368a177c64c2539db2c454e3acc226733774a",
-      "resultChecksum": "6dbc96bc5043076a349c4818faa7378b8db451307e0581a34d05267780b4c249"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:43.858Z",
-      "catalog": "coverage_find",
-      "hash": "c67e691a4a3f530f271692404dbf03655ba006fc0edd595e8834d531c6cdadae",
-      "resultChecksum": "1b83dd4789c0c2a1dab19706f5412da729beae1d494d8781639ac71bd0fa576d",
-      "bootstrap": {
-        "problems": [
-          {
-            "error": {
-              "message": "cannot index parallel arrays [counts] [ratings]",
-              "code": 171,
-              "type": "MongoServerError"
-            },
-            "documents": [
-              3
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:43.948Z",
-      "catalog": "coverage_expr",
-      "hash": "b3d97fa32f1d7d8f3c8ccb6b2a4f0af6e665aa99fd93aee33952b0a9e95e909a",
-      "resultChecksum": "749cb9ed624db0080cf975d84618cc67ab462e5fedb273b6d44936b37041b0b2"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:44.106Z",
-      "catalog": "coverage_exists",
-      "hash": "28f94cc3d48b19343d1fabab6ecd23ca0d9cb1f0fbb0f73fece4d3a06ac72e2d",
-      "resultChecksum": "4cf502a6767388c12d21f909465673e80f53d466c19bf1f39d3d7bad41347d17"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:44.161Z",
-      "catalog": "coverage_elemmatch",
-      "hash": "a26239be07584b22d6ccfaf3b7c6d543129cc69ae4afea066f32967321c55a84",
-      "resultChecksum": "59e0d7adace5863b8adf887b772071e64966d7800ff790b3f22e47cf6f56eb50"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:44.200Z",
-      "catalog": "coverage_date",
-      "hash": "58889272c307fad9fd6567e033e5ea82be7c434b104b82eb085ca0027eb1448c",
-      "resultChecksum": "09d70cedf506711c9b5f4a7afb7e22d699b6e805bcefcd2416c916ab99b29076"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:44.423Z",
-      "catalog": "coverage_count",
-      "hash": "8c6ce827ade49c8ec9fb023665c60b65b8a925f174374f7fa38f6cae26eeb0bd",
-      "resultChecksum": "6830d9b33793be4d3aedeb59b2753f44b2e607542bd317262b9dfd9d10cc424d"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:44.452Z",
-      "catalog": "coverage_collation",
-      "hash": "044de27d42fbed6deb9887d775355b42204012f350a5e719b213e1e33c127e45",
-      "resultChecksum": "4af7589cefd2a82c57cb45224d095978c7a105641577415f61b94a4cd071c047"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:44.621Z",
-      "catalog": "coverage_array",
-      "hash": "6bedc3c050e532b052e2fac3ea2412b9d314af2d58bbc71df65d04421e7eb155",
-      "resultChecksum": "69dad47f392f0c1d36d20a27e84116adfd15f7ef504b71f89d363553031c7cdf"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:44.858Z",
-      "catalog": "coverage_and",
-      "hash": "638bdf64567d12b1fc4402ba4936410d8fd484a9ec2c7a4f88f2fa773028bebb",
-      "resultChecksum": "1d927dc71c8e3f99f3d077610b37d42893a65ddf59d2a3f50a8057b88ab2bb76"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-03T11:39:44.943Z",
-      "catalog": "coverage_all",
-      "hash": "dba850838fb0424b4da4a4b0d04ca1bb38508a44b4dcf365afd0f9fd3d629d08",
-      "resultChecksum": "537536e7adcda382fc533e9c9433b827824f9afd385e5222033c84c91c98e954"
-    },
-    {
-      "type": "collection-halted",
-      "date": "2026-06-03T11:39:45.042Z",
-      "catalog": "",
-      "reason": "catalog-execution-failed"
-    },
-    {
-      "type": "collection-halted",
-      "date": "2026-06-04T13:52:59.751Z",
-      "catalog": "coverage_project",
-      "reason": "add index fails, too many indexes for MongoCatalog.CatalogCollection key:{ a.c: 1 }"
-    },
-    {
-      "type": "collection-halted",
-      "date": "2026-06-04T13:52:59.820Z",
-      "catalog": "",
-      "reason": "catalog-execution-failed"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:15.999Z",
-      "catalog": "coverage_where",
-      "hash": "767a265aa79d576ca334fbf9ad272765f67359b27b4ce8ffef831e4693f26c44",
-      "resultChecksum": "07e2d0fc253f962d6ee415dc0982ff5a6fa466a8c66fa86e717e058bf400f173"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:16.052Z",
-      "catalog": "coverage_type",
-      "hash": "1a60dfba5f72392464bd912d548e14e7fc290a1012d26178be67b0164108a61b",
-      "resultChecksum": "f3e7bebbae5e55cae002674fed69626bbe77acbfb5bfa27d2ff5f83a66dac088"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:16.139Z",
-      "catalog": "coverage_sort",
-      "hash": "b14a8ab2cd75b5aec211aad60e0ffb482270a306df392017f03efff63fe6fb72",
-      "resultChecksum": "934d5e7c10ab4b72b6853f853a9d59a41eb43dc7a15f1a0d9b701f963c10484f"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:16.213Z",
-      "catalog": "coverage_regex",
-      "hash": "779174f43ef1b30411b96866d9d2c580daed8c00826ee23e3f596d1fb4147e58",
-      "resultChecksum": "60cf7550e78c9d763334a9d6d32dd5a1eed8438bf1176cac1d36dfed297315d0"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:16.518Z",
-      "catalog": "coverage_project",
-      "hash": "b95722947ff88a9db6b8f7c2ef21773fa48af5f5cf4fd67879edd34f25b6a140",
-      "resultChecksum": "f39c7830c446c0509bb6253ed83009a22d4cb4d0669c6d9440a79e1afc36ee8d"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:16.899Z",
-      "catalog": "coverage_or",
-      "hash": "88b413b8132435fc131325922f03351f4b3255fda5b48e045ed0de3ffaf03f73",
-      "resultChecksum": "ed10d9fd37651d02a000f6c9044c61c85e07d71814f9ac0880587fb0624e4079"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:16.996Z",
-      "catalog": "coverage_not",
-      "hash": "0e679a2ee1c9d2f9aa52108512acfd9dacce30971d0bf539c876191944e58e68",
-      "resultChecksum": "49a3e6308f27c4fd6d51d26843ba0ca3637ba181e98a55fdbd0e992f9f64c1f6"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:17.077Z",
-      "catalog": "coverage_ne",
-      "hash": "df404504814ab342d4b3dd47495cff03a4c554321cbfaacf26622d9a293aea6b",
-      "resultChecksum": "0faa8491f778a1cac1a1b6c6220d89f6ae84f3936dead317f316951b1faeaf86"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:17.113Z",
-      "catalog": "coverage_mod",
-      "hash": "8d1bd59e4d8618efd9804acf8393153385284f4c1d82ad4a10297a4b7675c8b2",
-      "resultChecksum": "b65ab6e52b1ff32ad371b157f9109c822fd909eb3aa55ba137c701926351a26e"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:17.197Z",
-      "catalog": "coverage_in_",
-      "hash": "b82c88ecca9eed0c9713e77fdb9a76e2f59d61f95bdd50b3f585e7fa4955afef",
-      "resultChecksum": "6dbc96bc5043076a349c4818faa7378b8db451307e0581a34d05267780b4c249"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:17.240Z",
-      "catalog": "coverage_find",
-      "hash": "e076903018531b2c13cc9b948be0fae68e6b048693d00fde88ac7cbb5de688ad",
-      "resultChecksum": "743c96308a0cfa890beaf571f9f2576530b912b04e214c105c19472b3acdbbd7"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:17.299Z",
-      "catalog": "coverage_expr",
-      "hash": "9abb2ac21244260612630575c54937daaec45d63dfa97c0cc0d3e7b89244b03a",
-      "resultChecksum": "749cb9ed624db0080cf975d84618cc67ab462e5fedb273b6d44936b37041b0b2"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:17.436Z",
-      "catalog": "coverage_exists",
-      "hash": "d40e74adf2fde2c64ca3926ce03d8d8bb8798ae0efc7bcdf108a30206859a006",
-      "resultChecksum": "bde07851f87791332794b5c9337689518b872071eb295ae84e0fce948f20e128"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:17.480Z",
-      "catalog": "coverage_elemmatch",
-      "hash": "35e04cfde2679268fc051cc7e14793828ed2d846f744fdcaa00b278b11c37806",
-      "resultChecksum": "59e0d7adace5863b8adf887b772071e64966d7800ff790b3f22e47cf6f56eb50"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:17.512Z",
-      "catalog": "coverage_date",
-      "hash": "38508c927c29568044ae48a5a890339d3c0736cd862a8c4227d11a7d61e4de41",
-      "resultChecksum": "09d70cedf506711c9b5f4a7afb7e22d699b6e805bcefcd2416c916ab99b29076"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:17.640Z",
-      "catalog": "coverage_count",
-      "hash": "ed17a7a07c74b47719d1c693e96703e3453a9cf0d8ee400d08ed508e18eafb55",
-      "resultChecksum": "0dc3f9fc4957ad9802a71edfeac3317ef6e407626f83d0ddbc00975052d8c75e"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:17.787Z",
-      "catalog": "coverage_array",
-      "hash": "b33533c451a82a32675491554699f1d164ba952ac16194b90c386a2f7c7c58a9",
-      "resultChecksum": "69dad47f392f0c1d36d20a27e84116adfd15f7ef504b71f89d363553031c7cdf"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:17.990Z",
-      "catalog": "coverage_and",
-      "hash": "a616f1c38410230545092af1c8c1ab4fda4845c71422d0f172bf01d3dfe4c758",
-      "resultChecksum": "38b29f84ef0086b2aae769e996a078b5738ae2ac51af47bb743a950277297660"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T08:34:18.067Z",
-      "catalog": "coverage_all",
-      "hash": "0350085a51016a05a06f175cb6e112c539edc5b900dfbe8e856051628e551634",
-      "resultChecksum": "537536e7adcda382fc533e9c9433b827824f9afd385e5222033c84c91c98e954"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:29.618Z",
-      "catalog": "coverage_where",
-      "hash": "44ea3764d1eccc0b91813e762308b87fd1f07d90329ac97116f4163cc0f16ec9",
-      "resultChecksum": "07e2d0fc253f962d6ee415dc0982ff5a6fa466a8c66fa86e717e058bf400f173"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:29.676Z",
-      "catalog": "coverage_type",
-      "hash": "587e0fdfe160651c08d822a0e31005e639c330a6a6dad577a1646f9499e233d1",
-      "resultChecksum": "f3e7bebbae5e55cae002674fed69626bbe77acbfb5bfa27d2ff5f83a66dac088"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:29.777Z",
-      "catalog": "coverage_sort",
-      "hash": "287f8a41b8ff031b7a3b5eeb6ef2a651e5d72bc79c70c420094705ef58755110",
-      "resultChecksum": "934d5e7c10ab4b72b6853f853a9d59a41eb43dc7a15f1a0d9b701f963c10484f"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:29.854Z",
-      "catalog": "coverage_regex",
-      "hash": "b8c548d5d5d8f090c50bd440e90aa15eb341b2b17553a6117b64c52303fa0ed1",
-      "resultChecksum": "60cf7550e78c9d763334a9d6d32dd5a1eed8438bf1176cac1d36dfed297315d0"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:30.168Z",
-      "catalog": "coverage_project",
-      "hash": "c6394a5114c5f1aaddc5305c79a14fff548621363eacd44e6156f03c13da2c64",
-      "resultChecksum": "f39c7830c446c0509bb6253ed83009a22d4cb4d0669c6d9440a79e1afc36ee8d"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:30.551Z",
-      "catalog": "coverage_or",
-      "hash": "2acb73ce6a9768e347d1a52d94fe5916265d0c8e81feaa4774234690da73ed77",
-      "resultChecksum": "ed10d9fd37651d02a000f6c9044c61c85e07d71814f9ac0880587fb0624e4079"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:30.655Z",
-      "catalog": "coverage_not",
-      "hash": "a97ab2250d988905b72776bce99b40633ae59d1732417243029f50cd79ad3325",
-      "resultChecksum": "49a3e6308f27c4fd6d51d26843ba0ca3637ba181e98a55fdbd0e992f9f64c1f6"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:30.741Z",
-      "catalog": "coverage_nin",
-      "hash": "85fe34d4aca242ef29fd1624ec14cfce49b6a0811c2b8c3abe0f3b2b987df4d0",
-      "resultChecksum": "153f5f2f3bcbffbc67ca464ee16479f4bed038dba832cccdff35c7a08e4e052b"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:30.815Z",
-      "catalog": "coverage_ne",
-      "hash": "05edc61d8f14bd07141df941fe4b2a6b2e97450295d8016e88ad8cf34a064752",
-      "resultChecksum": "0faa8491f778a1cac1a1b6c6220d89f6ae84f3936dead317f316951b1faeaf86"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:30.850Z",
-      "catalog": "coverage_mod",
-      "hash": "1f9c88112996a1f779a51d59d8a488be9e98e7aa7822a20c2491008357383d57",
-      "resultChecksum": "b65ab6e52b1ff32ad371b157f9109c822fd909eb3aa55ba137c701926351a26e"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:30.885Z",
-      "catalog": "coverage_json_schema",
-      "hash": "8a0f86d12c3e72cfe1ca90ae3e062acb714a264c7ec295d9e534b1b85b9429fc",
-      "resultChecksum": "022be48818f9654ad1eaece679af16a1bde46a59f5898b4b1d4c8263eeee8302"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:30.966Z",
-      "catalog": "coverage_in_",
-      "hash": "d59556d7198e8f9232da47de07f09cf6d9682db2e435b2a1c8ba32cfa7dd17f0",
-      "resultChecksum": "6dbc96bc5043076a349c4818faa7378b8db451307e0581a34d05267780b4c249"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:30.997Z",
-      "catalog": "coverage_geo",
-      "hash": "3149d15200f35c13ee95cac0d0377bbceec546fd502cee7cc95422386afcd394",
-      "resultChecksum": "29144fa2d4aa8f97916719b04ae0a7e2be381dedef1b8fabc6f55a465ac8ed88"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:31.044Z",
-      "catalog": "coverage_find",
-      "hash": "b6148e321b1a07fcb5fc07bf6f15657b8628be5bb38343e83c556f439a7c4291",
-      "resultChecksum": "743c96308a0cfa890beaf571f9f2576530b912b04e214c105c19472b3acdbbd7"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:31.106Z",
-      "catalog": "coverage_expr",
-      "hash": "54dccc1621bc522d7e1ef022a9934f697e6aa53af313ea7e1d2b3f0b37929df6",
-      "resultChecksum": "749cb9ed624db0080cf975d84618cc67ab462e5fedb273b6d44936b37041b0b2"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:31.240Z",
-      "catalog": "coverage_exists",
-      "hash": "765ace52e8ba48a3da21a816b6a551130fc9cc62d8bde595c216ddcd7a59e73c",
-      "resultChecksum": "bde07851f87791332794b5c9337689518b872071eb295ae84e0fce948f20e128"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:31.287Z",
-      "catalog": "coverage_elemmatch",
-      "hash": "4f089ad05e91a94258bec27d06c21b522b1ece3748224fd5bfd94106f781da75",
-      "resultChecksum": "59e0d7adace5863b8adf887b772071e64966d7800ff790b3f22e47cf6f56eb50"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:31.319Z",
-      "catalog": "coverage_dbref",
-      "hash": "f2af20b8b7af6907cf82574ab927f3ce64bb30340fed47e7f3b56310f44d4fe1",
-      "resultChecksum": "a358b89d601bb1aa1c2aefbca394dc5b0f3c814e5432f4f7a25f8133b9c50e50"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:31.352Z",
-      "catalog": "coverage_date",
-      "hash": "e1cdd307afd68fc11193a64aadf0b73918b17b0d45fda0e2e2e9aeeaffdbdbd5",
-      "resultChecksum": "09d70cedf506711c9b5f4a7afb7e22d699b6e805bcefcd2416c916ab99b29076"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:31.483Z",
-      "catalog": "coverage_count",
-      "hash": "f3c8dde0b32f9dcfeb5a98474959bf81005a171d069166ca8e37f723d774cd28",
-      "resultChecksum": "0dc3f9fc4957ad9802a71edfeac3317ef6e407626f83d0ddbc00975052d8c75e"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:31.620Z",
-      "catalog": "coverage_array",
-      "hash": "f181851484d4ce407a75270858173a2d4dc94263e8d5ea460e08c35929592e05",
-      "resultChecksum": "69dad47f392f0c1d36d20a27e84116adfd15f7ef504b71f89d363553031c7cdf"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:31.821Z",
-      "catalog": "coverage_and",
-      "hash": "fb0a3ce757498834ad77f4a5954680f8cfb36cf099339b1d1c8a42dd32c06f79",
-      "resultChecksum": "38b29f84ef0086b2aae769e996a078b5738ae2ac51af47bb743a950277297660"
-    },
-    {
-      "type": "collection-completed",
-      "date": "2026-06-07T10:26:31.895Z",
-      "catalog": "coverage_all",
-      "hash": "0307cd00174023ba2b6c056702917d2db443277c93e9fb301d49820094b3afcb",
-      "resultChecksum": "537536e7adcda382fc533e9c9433b827824f9afd385e5222033c84c91c98e954"
-    },
-    {
-      "type": "collection-halted",
-      "date": "2026-06-10T14:18:03.984Z",
-      "catalog": "",
-      "reason": "mongodb-start-failed"
-    }
-  ]
+	"name": "8.0.23",
+	"version": "8.0.23",
+	"releases": [
+		{
+			"name": "8.0",
+			"version": "8.0",
+			"digest": "sha256:73ee3180f0a3d8a8a20b8c01a9e62cb99de3b9ba11d108a88165e4762d48ce83",
+			"released": "2026-06-10T00:08:14.940Z"
+		},
+		{
+			"name": "8.0.23",
+			"version": "8.0.23",
+			"digest": "sha256:73ee3180f0a3d8a8a20b8c01a9e62cb99de3b9ba11d108a88165e4762d48ce83",
+			"released": "2026-06-10T00:08:26.731Z"
+		}
+	],
+	"history": [
+		{
+			"type": "version-discovered",
+			"date": "2026-05-14T16:32:59.424Z",
+			"name": "8.0.23",
+			"digest": "sha256:44aa79ae28ff80b56fe58681b66cda9336706df408a5175a6c04988aa54610d3"
+		},
+		{
+			"type": "version-discovered",
+			"date": "2026-05-14T16:32:59.424Z",
+			"name": "8.0",
+			"digest": "sha256:44aa79ae28ff80b56fe58681b66cda9336706df408a5175a6c04988aa54610d3"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:40.333Z",
+			"catalog": "where",
+			"hash": "61f984be64502d526270f8d018b0e12470749c4ee6ca3a55c076929ab9c4d80d",
+			"resultChecksum": "6b83f48150b01849c40a8fe2efcf60e67fc0647871fcd9466b8ac52d5b9908bd"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:40.391Z",
+			"catalog": "type",
+			"hash": "73d27a4a45fd8116aff6c19e5c0cd7533d0535e86d06eda9dd3dd1917153d20b",
+			"resultChecksum": "38d181b4a950ebccb3b20ed449180f94b8ef664c3d435c8f52957fda504749bd"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:40.478Z",
+			"catalog": "sort",
+			"hash": "ede6de22b88b2be056f556d02c766fcb17db20f2428b2292cbbc71340ef7936a",
+			"resultChecksum": "5e45fc816c827b1c1f728257e961cb2551114eca2c0b7d63f0e379313d8ce665"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:40.569Z",
+			"catalog": "regex",
+			"hash": "161db15defb779a9d1b8da8ebdd9932503849d22679b819fab81f195ece08047",
+			"resultChecksum": "a980fcda8c56127077d2bf31ecf1f3214710e8b039463c22fc0a16a21f6f8f82"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:40.602Z",
+			"catalog": "project",
+			"hash": "9edcd98ef9a997b5f566031e13eadcdc52c5a903fe84ee2671d6d497ce4d8651",
+			"resultChecksum": "fcd1d2b19a0a81994254b1245c43feda7a75ebe37ea30fbfea4f9b4d3959bc8a"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:41.108Z",
+			"catalog": "or",
+			"hash": "7e0cae368ee6ec407d250a2d66c217a9b5e22057aba9a02507fd19c9106908a4",
+			"resultChecksum": "a7e0973cdbc468076a4609d1166d18cdb8e68fe8379a017184497e5f8205c79b"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:41.137Z",
+			"catalog": "number",
+			"hash": "18b80691c5aed72dda10768e681410f34b1dabca12c11a59e9aecad54418110d",
+			"resultChecksum": "5a1a95257cfb077a6849495ad05956a4a1c473be5f22d5a173837095c6d22a32"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:41.274Z",
+			"catalog": "not",
+			"hash": "7937df7cdc88eb02f4bbc053128095b09fc51c91ac7f5823686cf4e26532c7ed",
+			"resultChecksum": "760edb7887101002791c4dc67e5b9c5edb05b9536932d6f852b367ee399ecff0"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:41.402Z",
+			"catalog": "nin",
+			"hash": "f1907dda9afac82e09a1f39c5367196fc8c5c23e7bd501742fb923e6ef30f36f",
+			"resultChecksum": "7af4926e165e368b2f4819e8751dba02477032d301101fdad695d1a553524cc4"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:41.516Z",
+			"catalog": "ne",
+			"hash": "1fa55b790208fdfe254e44d89656378e524499f4500a57f23dc99ed22a30844a",
+			"resultChecksum": "c9808f54366206e4dc2a932d39df299e9ef1e2aa3624b8292b2c1875403ef38f"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:41.555Z",
+			"catalog": "mod",
+			"hash": "309eaa80487202dd23ea960ebc2fed14ff73d6f49ab5879ed4b214c7473e4eee",
+			"resultChecksum": "f656461ab47213466749274dfcf9c5f3d5c2007ab817ea2cec62a25d99e816a4"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:41.581Z",
+			"catalog": "json_schema",
+			"hash": "b0aa55d98410cf4a65f71054aee41b560281774438dc274a738324a9e40840b2",
+			"resultChecksum": "022be48818f9654ad1eaece679af16a1bde46a59f5898b4b1d4c8263eeee8302"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:41.812Z",
+			"catalog": "in_",
+			"hash": "8520d2fa50de2c4db7d8e46fde9fc63048d848ff11f2cff00c8ec1eefaafabc6",
+			"resultChecksum": "b895b782d4776a6c1405af328ef538e4beef03d277456df7d0cde5bd2eb6489f"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:41.844Z",
+			"catalog": "geo",
+			"hash": "c1e6f3f2e548f4859ad0dc0634c6395f250b99ac9385df245b73314e892451c6",
+			"resultChecksum": "29144fa2d4aa8f97916719b04ae0a7e2be381dedef1b8fabc6f55a465ac8ed88"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:41.938Z",
+			"catalog": "find",
+			"hash": "3da64a6d313dda54b452b79bcf9828a9a69ac79e6a15d16df3314548f8e7d08f",
+			"resultChecksum": "c8e5a5b42aa2d6eb950c75a6bd14a0acdc0208f5b3e4301bdb8e3a00ee763bef"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:42.016Z",
+			"catalog": "expr",
+			"hash": "f4406e4685212a81be46b1563f2138f4f10c65d1a0e90d5a65cbe6dd18832833",
+			"resultChecksum": "a6701402b2d8996a83b8f9bc6ebee482a5ca96a33169d9739331093f4cc80b45"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:42.233Z",
+			"catalog": "exists",
+			"hash": "12191b3bc1444ee269a0175fd263e295a63f3ed55568058e09592c6b3424e1f8",
+			"resultChecksum": "f3a88d1115dcb65afc9098ad4e95024be68c638819de9ce0bb5e9c73fc5e419c"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:42.270Z",
+			"catalog": "elemmatch",
+			"hash": "ab68560bffa7876a869dacd88436f341b05b7fa259f3f31202ede011938ed8e0",
+			"resultChecksum": "236b83c3453a8550093402acb5f76542e24330cf43d4725abef8e08b07983104"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:42.302Z",
+			"catalog": "dbref",
+			"hash": "e51aac090de72c8932be5f12641e341813078d1a29748551505a82bb2f1c4a40",
+			"resultChecksum": "952214cdc085bf5de0d4c91bf2e50143f8119266e7fb237be87dc1fd42841e51"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:42.330Z",
+			"catalog": "date",
+			"hash": "6e7506227825b96e098661fa39d7dac4002d4325bccd38cb956e627dac727c8a",
+			"resultChecksum": "bf7ee4146aef7a2b417abbef320ab4c3018cdebdbd5a9f86a9835f5e2ad096f8"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:42.415Z",
+			"catalog": "count",
+			"hash": "86f4e26ed780d5e8b4ffa65d1b201761af43ef12d0b3751716cc48894f338217",
+			"resultChecksum": "96c99da339b816debe161780a5d970f9271dcde60ccfa80a39cf724db215776b"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:42.441Z",
+			"catalog": "collation",
+			"hash": "8a5ef1cfb5ac5720fe41bcc3e273252e4a86773e575fd2e19fe05bc05801aa96",
+			"resultChecksum": "0ef01a0405d0cc2f7d0b9e59db5f8d4aa2034079c1439ced45e70c252d60689c"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:42.663Z",
+			"catalog": "array",
+			"hash": "0a147d95942da52f050c8d2df8e0e17c6c10a7e6d9912147796a83aa5ab16ae6",
+			"resultChecksum": "83cd6c6dbcf9366831094d8f6bccb6f214e902dff94fbc479d5a2cb1bb8026b4"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:42.989Z",
+			"catalog": "and",
+			"hash": "241796ace1c89015c8d81cd375e297115a1394f3931010a829fd1e95c8776dcd",
+			"resultChecksum": "b46af11e976c9b80bca732af79fb2ba66f03623384b8e8a3a95846a04d706294"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:43.108Z",
+			"catalog": "all",
+			"hash": "672762cab877f753e4f06c82530e83082c7e2092a51fe3faa6e6adc723549e97",
+			"resultChecksum": "24284e9213a8c87b8acec506e7160eecc95f310830970bb8a1c2a6cfb8bd1f54"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:43.281Z",
+			"catalog": "textRegex",
+			"hash": "e73292ee0e3d031be051eee0e8527546985f5d932ca379fd277ab64abe27e035",
+			"resultChecksum": "eaff83cfd8e3af838409aa58e3c9862acd68e58d4b1a16cffbac4ea8e987b6e5"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:43.351Z",
+			"catalog": "modulo",
+			"hash": "a69a9800019c589f3cc9c34ace44715c4526225fdf0ad6adb32c438bf730956f",
+			"resultChecksum": "b97c7d2bc4955c49aa3a2daf3d774fe36f0990b570bad2463e8d3d79f0222d2f"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:43.440Z",
+			"catalog": "misc",
+			"hash": "829978b59c15e7fc6ab19dca729b74e9f2a3338f8994e54ed30d76841779123f",
+			"resultChecksum": "9e64347c74727ab3c2ff415225e51dcaec586e63d6d39cb896df0ed3e05c6adf"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:43.526Z",
+			"catalog": "logical",
+			"hash": "124e2ae3eb5570c1fc1864ae9c0253f061691604180557ab0b4351f5002d8bca",
+			"resultChecksum": "4901e5af6958f58c7f6bde45ddb8bfc85828f68376e09a42d097258b5c0a3523"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:43.648Z",
+			"catalog": "geo",
+			"hash": "ba0ca31688758838cc70cee42a85c63e1b11f181fa212724e39b033bb088c66c",
+			"resultChecksum": "085d710aac2ae58e9b11a8929fb7b548e30faf3693356e279cb2ad414c1b4203"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:43.787Z",
+			"catalog": "expr",
+			"hash": "74919c2bc49bf7bf6977ac8563457b804619068a6e5e1fe00aea50468d06b569",
+			"resultChecksum": "e4bebccb0e1a3ba4c2e320b9e0641e7c2f773ad65f424e65a766d997a70e0a22"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:43.813Z",
+			"catalog": "evaluation",
+			"hash": "67b6bb601e84b95b9701692fbd39a5fb7e75a8c5a6e5f62090a39288b1285d0f",
+			"resultChecksum": "07aa16a814a134fa0baf7b0a277bf45741e4b3b7c23f148d52b5a5d6333b6f5d"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:43.887Z",
+			"catalog": "element",
+			"hash": "4818a5ac4caad9cca3c40d06c8093bc2305b1adcbbfe5ed94101d159731039a2",
+			"resultChecksum": "fc3baf8cddce359cf3335119eccd790d39279f398a4614ab17ec2efcc2b0995f"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:43.954Z",
+			"catalog": "comparison",
+			"hash": "e5aeef8db811ce1736c8a23d47311d12a783ff6828080b02b5263b51c641d961",
+			"resultChecksum": "9d6efcc78581e38c9dcb70ef0ace949af79dbe8eb1e56c08e3433dd8864ec86c"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:44.042Z",
+			"catalog": "bitwise",
+			"hash": "0e1ef3f328f26b6e48d5269c5d8130ccbaf02709e158cf7023eac4ca9a919664",
+			"resultChecksum": "468fcdb5e4f28bad0d3c575660e48f0f3d9a6e01c0b7631a624d064c1b80b96c"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:38:44.130Z",
+			"catalog": "array",
+			"hash": "958e272e8eeeb0d3297b86765908759ea222ff15b9b3395d932ca752c03b3a40",
+			"resultChecksum": "51f949cbd419a188b29edb88020d5f9905a0531b2140f6fe35c06c5bff7f9cdc"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:44:21.830Z",
+			"catalog": "geo",
+			"hash": "c1e6f3f2e548f4859ad0dc0634c6395f250b99ac9385df245b73314e892451c6",
+			"resultChecksum": "29144fa2d4aa8f97916719b04ae0a7e2be381dedef1b8fabc6f55a465ac8ed88"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:44:21.927Z",
+			"catalog": "expr",
+			"hash": "f4406e4685212a81be46b1563f2138f4f10c65d1a0e90d5a65cbe6dd18832833",
+			"resultChecksum": "3c81e20d387b32e4204dd8b054e7eb368f29a7bf64d742ea292efddeeaffafde"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T16:44:22.130Z",
+			"catalog": "array",
+			"hash": "0a147d95942da52f050c8d2df8e0e17c6c10a7e6d9912147796a83aa5ab16ae6",
+			"resultChecksum": "06de36b8160114739b2366647e7b6b60c0f4f8e54c244a563c5c8fd75758188a"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T17:40:49.672Z",
+			"catalog": "geo",
+			"hash": "ba0ca31688758838cc70cee42a85c63e1b11f181fa212724e39b033bb088c66c",
+			"resultChecksum": "085d710aac2ae58e9b11a8929fb7b548e30faf3693356e279cb2ad414c1b4203"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T17:40:49.829Z",
+			"catalog": "expr",
+			"hash": "74919c2bc49bf7bf6977ac8563457b804619068a6e5e1fe00aea50468d06b569",
+			"resultChecksum": "e4bebccb0e1a3ba4c2e320b9e0641e7c2f773ad65f424e65a766d997a70e0a22"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T17:40:49.928Z",
+			"catalog": "array",
+			"hash": "958e272e8eeeb0d3297b86765908759ea222ff15b9b3395d932ca752c03b3a40",
+			"resultChecksum": "51f949cbd419a188b29edb88020d5f9905a0531b2140f6fe35c06c5bff7f9cdc"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:00.240Z",
+			"catalog": "where",
+			"hash": "1f99c16a9a9033efa694c6f3dbc1935b63d9dd523e0e970fb3524787e9ccabe1",
+			"resultChecksum": "bae1308a744f93c03d8ecf15dd565b801f44fab6e809e28b83d22688940c5958"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:00.290Z",
+			"catalog": "type",
+			"hash": "13a561dcba1d989c936b5a6668671038a1f730d1557631d3b1f1b320d4c22ef1",
+			"resultChecksum": "a53cfb3663b1ab243d7d23dd6713645acd6ee708d94c12c371a75098b29b8aab"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:00.367Z",
+			"catalog": "sort",
+			"hash": "c3105050d1e5d0285c476e3e5fb49bef860f53bab7323dfceb63e9471f4f4db3",
+			"resultChecksum": "9a59053fc4dd59f2cac19da2ff4edcf548655e8b6cae33f080216a69ed5de390"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:00.440Z",
+			"catalog": "regex",
+			"hash": "998a8648d921e50db4edc7494567efc08ba2e704fa8649f873bed1140a4df431",
+			"resultChecksum": "11be86bed711815c81973775a08b8069a7784a291c7ed0daebaefba0d92d9b2e"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:00.479Z",
+			"catalog": "project",
+			"hash": "8e83d4072bd7e5b4a0b0314b2c4079d893c5cd850bcf1b30c756c1e376fafd91",
+			"resultChecksum": "2c8038056afc469c59ef1900d347553fecaf0ff6b87e0895270945a6fc6d8638"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:00.849Z",
+			"catalog": "or",
+			"hash": "c3ba006a9e54bc9389d807f0ee941e27da10da66a7d31f86d88989eb7686b7b5",
+			"resultChecksum": "fb694b4f29da94a0eb046d21b54bfa9fdf8f4ca19c9138eccc314bfb4f139bc0"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:00.879Z",
+			"catalog": "number",
+			"hash": "848c5818c9fccd150599c177fdad91bb4e4ecb722636cdaeaba8b52fe5cbab88",
+			"resultChecksum": "ccc083c87d171079524863092d8a9b2e4326493c951d21c875329da4487876d5"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:00.973Z",
+			"catalog": "not",
+			"hash": "2bcf27c7f6a8dd1982652848ef38278a772d561c30c1ed8429ea20576515969a",
+			"resultChecksum": "b95af0adc3aac1dbe9ac3e605346fe36ad57cff0ccdaf2e4ef623cfe77bc1e68"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:01.050Z",
+			"catalog": "nin",
+			"hash": "c06556a38c3c924ed5dd4353276143cdcb5cbb24f5af2184c28106c0796d7cf0",
+			"resultChecksum": "153f5f2f3bcbffbc67ca464ee16479f4bed038dba832cccdff35c7a08e4e052b"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:01.125Z",
+			"catalog": "ne",
+			"hash": "b4fa8f77e51538cd4a6b18d4dcf72dad5b3ba32e5f72c319aac623c826b11f4b",
+			"resultChecksum": "93e9dbbbb2f6612b249b825819bc70e155ad081c14a66925255088b283f9f11c"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:01.168Z",
+			"catalog": "mod",
+			"hash": "1b4646692fe0a489a99517901280eb75d1c25fbac3b8e9a3d02f36228b38ca52",
+			"resultChecksum": "f656461ab47213466749274dfcf9c5f3d5c2007ab817ea2cec62a25d99e816a4"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:01.324Z",
+			"catalog": "in_",
+			"hash": "ba0b4aba364f135d67a19f548ac96217665e340a02b7c80ac1974c060ea5d739",
+			"resultChecksum": "ef3495a825e6ddf8137e3a3849ad1be5b14e3030e955274f29b97515fb3122fe"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:01.355Z",
+			"catalog": "geo",
+			"hash": "de8b00166774a884a2ede43b1f3ada4b9a954cbbb5073370a16b948975dcd99e",
+			"resultChecksum": "29144fa2d4aa8f97916719b04ae0a7e2be381dedef1b8fabc6f55a465ac8ed88"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:01.420Z",
+			"catalog": "find",
+			"hash": "c064fccc5e7c08ec72c8a560c3c969de44be647592e3154400112d96d0039f14",
+			"resultChecksum": "a7892de52f82a5a4635c3522e6b49fe022e1ddc68e4861b31a8d774ef273f20f"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:01.477Z",
+			"catalog": "expr",
+			"hash": "53221d232d965dacf5dba6478916ae397c185bf58ddbd9051411021ca51efd9e",
+			"resultChecksum": "275b10d15585852be3b1fd868fbd25a227623638cfccf4789044572698105895"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:01.570Z",
+			"catalog": "exists",
+			"hash": "6d6295f0268c607c46539d7301b53d00ed14acf61b7be1b632b40ef2dfb6a822",
+			"resultChecksum": "0e1f02ca12e90e2bc461c836470cecd1fd2e4744935b1b66488886e4a60edc80"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:01.604Z",
+			"catalog": "elemmatch",
+			"hash": "a0382d6764933da836864e8b5ec81b09fc7e55c62e83c80274cc5d8243051284",
+			"resultChecksum": "6d9703949e39903592a9b9468cd7fb8e5417ec3ec033515f385a47508dc7bc5b"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:01.633Z",
+			"catalog": "dbref",
+			"hash": "280f7968c3417d0b683658c307dad7cc8f029b3180bef6ec4e7fe4524b32559f",
+			"resultChecksum": "a358b89d601bb1aa1c2aefbca394dc5b0f3c814e5432f4f7a25f8133b9c50e50"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:01.660Z",
+			"catalog": "date",
+			"hash": "012cce3f1c9caa9d29a17fa394cb619f782409a45438f9c645229d29c1f978b5",
+			"resultChecksum": "aa4455047795936865bc2b0d58f8698f729e66f6780ff38d47952a9d5d434e68"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:01.736Z",
+			"catalog": "count",
+			"hash": "9f8e9b214e5a17153886e773d9a3963b3b4403160f941dd496590c039afb8d62",
+			"resultChecksum": "6c9bc7042d9675ab0cbc4084a2c1357682cb1807c6ab8cd7b9d3538d067bbc47"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:01.762Z",
+			"catalog": "collation",
+			"hash": "9447a41fccdc3257d10b562afaac470fc6563e9a3359200dcc8930e4d7093473",
+			"resultChecksum": "307fed3e9de40d3c79e556ce9c007d83585a9dd4af5fcc19acabc72a2d3f1656"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:01.872Z",
+			"catalog": "array",
+			"hash": "843b49a2540087191f19d32e3367116c2567affbf167c4a93553db21e70c5325",
+			"resultChecksum": "8049b7751a95b824424dabf5a29be26c76fbf3dd42c570aeeac985c66f4e8177"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:02.058Z",
+			"catalog": "and",
+			"hash": "1d669d9515be63778d8e84f8cc218042cf87d86c84ed5c21d1e9bf09acfae4d5",
+			"resultChecksum": "7b0bc64fa872803652c901b4bfa7a24885fa885237c409b78c07e619853646cb"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:12:02.133Z",
+			"catalog": "all",
+			"hash": "a4468f536de3bfdae3141d18e78cccdfef969b17bd2c5787156a867d47ff2a8e",
+			"resultChecksum": "a93d848432d36822ea6c5e4864edd5db471065f930c164acc08043ef57da2d28"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:15:42.367Z",
+			"catalog": "geo",
+			"hash": "ba0ca31688758838cc70cee42a85c63e1b11f181fa212724e39b033bb088c66c",
+			"resultChecksum": "085d710aac2ae58e9b11a8929fb7b548e30faf3693356e279cb2ad414c1b4203"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:15:42.526Z",
+			"catalog": "expr",
+			"hash": "74919c2bc49bf7bf6977ac8563457b804619068a6e5e1fe00aea50468d06b569",
+			"resultChecksum": "e4bebccb0e1a3ba4c2e320b9e0641e7c2f773ad65f424e65a766d997a70e0a22"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:15:42.628Z",
+			"catalog": "array",
+			"hash": "958e272e8eeeb0d3297b86765908759ea222ff15b9b3395d932ca752c03b3a40",
+			"resultChecksum": "51f949cbd419a188b29edb88020d5f9905a0531b2140f6fe35c06c5bff7f9cdc"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:36:30.903Z",
+			"catalog": "geo",
+			"hash": "de8b00166774a884a2ede43b1f3ada4b9a954cbbb5073370a16b948975dcd99e",
+			"resultChecksum": "29144fa2d4aa8f97916719b04ae0a7e2be381dedef1b8fabc6f55a465ac8ed88"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:36:30.973Z",
+			"catalog": "expr",
+			"hash": "53221d232d965dacf5dba6478916ae397c185bf58ddbd9051411021ca51efd9e",
+			"resultChecksum": "275b10d15585852be3b1fd868fbd25a227623638cfccf4789044572698105895"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:36:31.123Z",
+			"catalog": "array",
+			"hash": "843b49a2540087191f19d32e3367116c2567affbf167c4a93553db21e70c5325",
+			"resultChecksum": "8049b7751a95b824424dabf5a29be26c76fbf3dd42c570aeeac985c66f4e8177"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:23.853Z",
+			"catalog": "coverage_where",
+			"hash": "1f99c16a9a9033efa694c6f3dbc1935b63d9dd523e0e970fb3524787e9ccabe1",
+			"resultChecksum": "bae1308a744f93c03d8ecf15dd565b801f44fab6e809e28b83d22688940c5958"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:23.903Z",
+			"catalog": "coverage_type",
+			"hash": "13a561dcba1d989c936b5a6668671038a1f730d1557631d3b1f1b320d4c22ef1",
+			"resultChecksum": "a53cfb3663b1ab243d7d23dd6713645acd6ee708d94c12c371a75098b29b8aab"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:23.979Z",
+			"catalog": "coverage_sort",
+			"hash": "c3105050d1e5d0285c476e3e5fb49bef860f53bab7323dfceb63e9471f4f4db3",
+			"resultChecksum": "9a59053fc4dd59f2cac19da2ff4edcf548655e8b6cae33f080216a69ed5de390"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:24.052Z",
+			"catalog": "coverage_regex",
+			"hash": "998a8648d921e50db4edc7494567efc08ba2e704fa8649f873bed1140a4df431",
+			"resultChecksum": "11be86bed711815c81973775a08b8069a7784a291c7ed0daebaefba0d92d9b2e"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:24.092Z",
+			"catalog": "coverage_project",
+			"hash": "8e83d4072bd7e5b4a0b0314b2c4079d893c5cd850bcf1b30c756c1e376fafd91",
+			"resultChecksum": "2c8038056afc469c59ef1900d347553fecaf0ff6b87e0895270945a6fc6d8638"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:24.472Z",
+			"catalog": "coverage_or",
+			"hash": "c3ba006a9e54bc9389d807f0ee941e27da10da66a7d31f86d88989eb7686b7b5",
+			"resultChecksum": "fb694b4f29da94a0eb046d21b54bfa9fdf8f4ca19c9138eccc314bfb4f139bc0"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:24.505Z",
+			"catalog": "coverage_number",
+			"hash": "848c5818c9fccd150599c177fdad91bb4e4ecb722636cdaeaba8b52fe5cbab88",
+			"resultChecksum": "ccc083c87d171079524863092d8a9b2e4326493c951d21c875329da4487876d5"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:24.602Z",
+			"catalog": "coverage_not",
+			"hash": "2bcf27c7f6a8dd1982652848ef38278a772d561c30c1ed8429ea20576515969a",
+			"resultChecksum": "b95af0adc3aac1dbe9ac3e605346fe36ad57cff0ccdaf2e4ef623cfe77bc1e68"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:24.679Z",
+			"catalog": "coverage_nin",
+			"hash": "c06556a38c3c924ed5dd4353276143cdcb5cbb24f5af2184c28106c0796d7cf0",
+			"resultChecksum": "153f5f2f3bcbffbc67ca464ee16479f4bed038dba832cccdff35c7a08e4e052b"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:24.747Z",
+			"catalog": "coverage_ne",
+			"hash": "b4fa8f77e51538cd4a6b18d4dcf72dad5b3ba32e5f72c319aac623c826b11f4b",
+			"resultChecksum": "93e9dbbbb2f6612b249b825819bc70e155ad081c14a66925255088b283f9f11c"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:24.798Z",
+			"catalog": "coverage_mod",
+			"hash": "1b4646692fe0a489a99517901280eb75d1c25fbac3b8e9a3d02f36228b38ca52",
+			"resultChecksum": "f656461ab47213466749274dfcf9c5f3d5c2007ab817ea2cec62a25d99e816a4"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:24.831Z",
+			"catalog": "coverage_json_schema",
+			"hash": "b0aa55d98410cf4a65f71054aee41b560281774438dc274a738324a9e40840b2",
+			"resultChecksum": "022be48818f9654ad1eaece679af16a1bde46a59f5898b4b1d4c8263eeee8302"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:25.004Z",
+			"catalog": "coverage_in_",
+			"hash": "ba0b4aba364f135d67a19f548ac96217665e340a02b7c80ac1974c060ea5d739",
+			"resultChecksum": "ef3495a825e6ddf8137e3a3849ad1be5b14e3030e955274f29b97515fb3122fe"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:25.041Z",
+			"catalog": "coverage_geo",
+			"hash": "de8b00166774a884a2ede43b1f3ada4b9a954cbbb5073370a16b948975dcd99e",
+			"resultChecksum": "29144fa2d4aa8f97916719b04ae0a7e2be381dedef1b8fabc6f55a465ac8ed88"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:25.120Z",
+			"catalog": "coverage_find",
+			"hash": "c064fccc5e7c08ec72c8a560c3c969de44be647592e3154400112d96d0039f14",
+			"resultChecksum": "a7892de52f82a5a4635c3522e6b49fe022e1ddc68e4861b31a8d774ef273f20f"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:25.174Z",
+			"catalog": "coverage_expr",
+			"hash": "53221d232d965dacf5dba6478916ae397c185bf58ddbd9051411021ca51efd9e",
+			"resultChecksum": "275b10d15585852be3b1fd868fbd25a227623638cfccf4789044572698105895"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:25.275Z",
+			"catalog": "coverage_exists",
+			"hash": "6d6295f0268c607c46539d7301b53d00ed14acf61b7be1b632b40ef2dfb6a822",
+			"resultChecksum": "0e1f02ca12e90e2bc461c836470cecd1fd2e4744935b1b66488886e4a60edc80"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:25.316Z",
+			"catalog": "coverage_elemmatch",
+			"hash": "a0382d6764933da836864e8b5ec81b09fc7e55c62e83c80274cc5d8243051284",
+			"resultChecksum": "6d9703949e39903592a9b9468cd7fb8e5417ec3ec033515f385a47508dc7bc5b"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:25.350Z",
+			"catalog": "coverage_dbref",
+			"hash": "280f7968c3417d0b683658c307dad7cc8f029b3180bef6ec4e7fe4524b32559f",
+			"resultChecksum": "a358b89d601bb1aa1c2aefbca394dc5b0f3c814e5432f4f7a25f8133b9c50e50"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:25.388Z",
+			"catalog": "coverage_date",
+			"hash": "012cce3f1c9caa9d29a17fa394cb619f782409a45438f9c645229d29c1f978b5",
+			"resultChecksum": "aa4455047795936865bc2b0d58f8698f729e66f6780ff38d47952a9d5d434e68"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:25.465Z",
+			"catalog": "coverage_count",
+			"hash": "9f8e9b214e5a17153886e773d9a3963b3b4403160f941dd496590c039afb8d62",
+			"resultChecksum": "6c9bc7042d9675ab0cbc4084a2c1357682cb1807c6ab8cd7b9d3538d067bbc47"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:25.492Z",
+			"catalog": "coverage_collation",
+			"hash": "9447a41fccdc3257d10b562afaac470fc6563e9a3359200dcc8930e4d7093473",
+			"resultChecksum": "307fed3e9de40d3c79e556ce9c007d83585a9dd4af5fcc19acabc72a2d3f1656"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:25.610Z",
+			"catalog": "coverage_array",
+			"hash": "843b49a2540087191f19d32e3367116c2567affbf167c4a93553db21e70c5325",
+			"resultChecksum": "8049b7751a95b824424dabf5a29be26c76fbf3dd42c570aeeac985c66f4e8177"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:25.823Z",
+			"catalog": "coverage_and",
+			"hash": "1d669d9515be63778d8e84f8cc218042cf87d86c84ed5c21d1e9bf09acfae4d5",
+			"resultChecksum": "7b0bc64fa872803652c901b4bfa7a24885fa885237c409b78c07e619853646cb"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:25.893Z",
+			"catalog": "coverage_all",
+			"hash": "a4468f536de3bfdae3141d18e78cccdfef969b17bd2c5787156a867d47ff2a8e",
+			"resultChecksum": "a93d848432d36822ea6c5e4864edd5db471065f930c164acc08043ef57da2d28"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:26.138Z",
+			"catalog": "geo",
+			"hash": "ba0ca31688758838cc70cee42a85c63e1b11f181fa212724e39b033bb088c66c",
+			"resultChecksum": "085d710aac2ae58e9b11a8929fb7b548e30faf3693356e279cb2ad414c1b4203"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:26.263Z",
+			"catalog": "expr",
+			"hash": "74919c2bc49bf7bf6977ac8563457b804619068a6e5e1fe00aea50468d06b569",
+			"resultChecksum": "e4bebccb0e1a3ba4c2e320b9e0641e7c2f773ad65f424e65a766d997a70e0a22"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-05-14T18:53:26.368Z",
+			"catalog": "array",
+			"hash": "958e272e8eeeb0d3297b86765908759ea222ff15b9b3395d932ca752c03b3a40",
+			"resultChecksum": "51f949cbd419a188b29edb88020d5f9905a0531b2140f6fe35c06c5bff7f9cdc"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:42.465Z",
+			"catalog": "coverage_where",
+			"hash": "fedd81c6fe9751238b7b018ea31db9d2313251d159b26a10f71eed175bdc2327",
+			"resultChecksum": "07e2d0fc253f962d6ee415dc0982ff5a6fa466a8c66fa86e717e058bf400f173"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:42.517Z",
+			"catalog": "coverage_type",
+			"hash": "7a10f3047a514c30e269149eeab05d6754b6b85a6bcf20b6d416b1c970096ea8",
+			"resultChecksum": "f3e7bebbae5e55cae002674fed69626bbe77acbfb5bfa27d2ff5f83a66dac088"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:42.613Z",
+			"catalog": "coverage_sort",
+			"hash": "b6792d19b8bbe1f56b06cfa5aa04c35ff2e795998dcf40bd8c9adbc48a8d928d",
+			"resultChecksum": "c06b09034fd0341b54a1964bd0012985240cf1d86ec89602b11d5ebbef11707d"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:42.691Z",
+			"catalog": "coverage_regex",
+			"hash": "90eaa007e2cb598716dd3a23cd3a44e7ee4112826bbe90dc820128ad57eb179b",
+			"resultChecksum": "134d023938f4f97de0fb77424b295a995ad88177a3d792a911b84b4f02193670"
+		},
+		{
+			"type": "collection-halted",
+			"date": "2026-06-03T11:39:42.897Z",
+			"catalog": "coverage_project",
+			"reason": "add index fails, too many indexes for MongoCatalog.CatalogCollection key:{ a.c: 1 }"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:43.409Z",
+			"catalog": "coverage_or",
+			"hash": "dba00bede648490a6f086e0b830acc57d1aca910596749fee9c38b0e15369d7f",
+			"resultChecksum": "060f3ece1e9f01998fadee52602d3c93a0436a993d00918a097760b9867a4ca0",
+			"bootstrap": {
+				"problems": [
+					{
+						"error": {
+							"message": "cannot index parallel arrays [ratings] [scores]",
+							"code": 171,
+							"type": "MongoServerError"
+						},
+						"documents": [
+							2
+						]
+					}
+				]
+			}
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:43.447Z",
+			"catalog": "coverage_number",
+			"hash": "855eacc3ca3ba7c6b2d1a347b682b36209e36ffbc7bb571d78826d0e58b8dfab",
+			"resultChecksum": "ccc083c87d171079524863092d8a9b2e4326493c951d21c875329da4487876d5"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:43.558Z",
+			"catalog": "coverage_not",
+			"hash": "c6b6b3e72be602bda9ee48141f7a92fe6dcaae152953fe6294349193d4d9738b",
+			"resultChecksum": "4c71c84da144ac9662e76f2bfa9b97a25cb817c52ef26807a862363be86f8ea3"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:43.649Z",
+			"catalog": "coverage_ne",
+			"hash": "7ca7fb6c2f4fb52603f73656088719c2a3253e31b6d3de3a92dffe5a8d47a26d",
+			"resultChecksum": "0faa8491f778a1cac1a1b6c6220d89f6ae84f3936dead317f316951b1faeaf86"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:43.687Z",
+			"catalog": "coverage_mod",
+			"hash": "1f9c88112996a1f779a51d59d8a488be9e98e7aa7822a20c2491008357383d57",
+			"resultChecksum": "b65ab6e52b1ff32ad371b157f9109c822fd909eb3aa55ba137c701926351a26e"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:43.800Z",
+			"catalog": "coverage_in_",
+			"hash": "94ef8c5843fed99b4fb4c27c65b368a177c64c2539db2c454e3acc226733774a",
+			"resultChecksum": "6dbc96bc5043076a349c4818faa7378b8db451307e0581a34d05267780b4c249"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:43.858Z",
+			"catalog": "coverage_find",
+			"hash": "c67e691a4a3f530f271692404dbf03655ba006fc0edd595e8834d531c6cdadae",
+			"resultChecksum": "1b83dd4789c0c2a1dab19706f5412da729beae1d494d8781639ac71bd0fa576d",
+			"bootstrap": {
+				"problems": [
+					{
+						"error": {
+							"message": "cannot index parallel arrays [counts] [ratings]",
+							"code": 171,
+							"type": "MongoServerError"
+						},
+						"documents": [
+							3
+						]
+					}
+				]
+			}
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:43.948Z",
+			"catalog": "coverage_expr",
+			"hash": "b3d97fa32f1d7d8f3c8ccb6b2a4f0af6e665aa99fd93aee33952b0a9e95e909a",
+			"resultChecksum": "749cb9ed624db0080cf975d84618cc67ab462e5fedb273b6d44936b37041b0b2"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:44.106Z",
+			"catalog": "coverage_exists",
+			"hash": "28f94cc3d48b19343d1fabab6ecd23ca0d9cb1f0fbb0f73fece4d3a06ac72e2d",
+			"resultChecksum": "4cf502a6767388c12d21f909465673e80f53d466c19bf1f39d3d7bad41347d17"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:44.161Z",
+			"catalog": "coverage_elemmatch",
+			"hash": "a26239be07584b22d6ccfaf3b7c6d543129cc69ae4afea066f32967321c55a84",
+			"resultChecksum": "59e0d7adace5863b8adf887b772071e64966d7800ff790b3f22e47cf6f56eb50"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:44.200Z",
+			"catalog": "coverage_date",
+			"hash": "58889272c307fad9fd6567e033e5ea82be7c434b104b82eb085ca0027eb1448c",
+			"resultChecksum": "09d70cedf506711c9b5f4a7afb7e22d699b6e805bcefcd2416c916ab99b29076"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:44.423Z",
+			"catalog": "coverage_count",
+			"hash": "8c6ce827ade49c8ec9fb023665c60b65b8a925f174374f7fa38f6cae26eeb0bd",
+			"resultChecksum": "6830d9b33793be4d3aedeb59b2753f44b2e607542bd317262b9dfd9d10cc424d"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:44.452Z",
+			"catalog": "coverage_collation",
+			"hash": "044de27d42fbed6deb9887d775355b42204012f350a5e719b213e1e33c127e45",
+			"resultChecksum": "4af7589cefd2a82c57cb45224d095978c7a105641577415f61b94a4cd071c047"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:44.621Z",
+			"catalog": "coverage_array",
+			"hash": "6bedc3c050e532b052e2fac3ea2412b9d314af2d58bbc71df65d04421e7eb155",
+			"resultChecksum": "69dad47f392f0c1d36d20a27e84116adfd15f7ef504b71f89d363553031c7cdf"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:44.858Z",
+			"catalog": "coverage_and",
+			"hash": "638bdf64567d12b1fc4402ba4936410d8fd484a9ec2c7a4f88f2fa773028bebb",
+			"resultChecksum": "1d927dc71c8e3f99f3d077610b37d42893a65ddf59d2a3f50a8057b88ab2bb76"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-03T11:39:44.943Z",
+			"catalog": "coverage_all",
+			"hash": "dba850838fb0424b4da4a4b0d04ca1bb38508a44b4dcf365afd0f9fd3d629d08",
+			"resultChecksum": "537536e7adcda382fc533e9c9433b827824f9afd385e5222033c84c91c98e954"
+		},
+		{
+			"type": "collection-halted",
+			"date": "2026-06-03T11:39:45.042Z",
+			"catalog": "",
+			"reason": "catalog-execution-failed"
+		},
+		{
+			"type": "collection-halted",
+			"date": "2026-06-04T13:52:59.751Z",
+			"catalog": "coverage_project",
+			"reason": "add index fails, too many indexes for MongoCatalog.CatalogCollection key:{ a.c: 1 }"
+		},
+		{
+			"type": "collection-halted",
+			"date": "2026-06-04T13:52:59.820Z",
+			"catalog": "",
+			"reason": "catalog-execution-failed"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:15.999Z",
+			"catalog": "coverage_where",
+			"hash": "767a265aa79d576ca334fbf9ad272765f67359b27b4ce8ffef831e4693f26c44",
+			"resultChecksum": "07e2d0fc253f962d6ee415dc0982ff5a6fa466a8c66fa86e717e058bf400f173"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:16.052Z",
+			"catalog": "coverage_type",
+			"hash": "1a60dfba5f72392464bd912d548e14e7fc290a1012d26178be67b0164108a61b",
+			"resultChecksum": "f3e7bebbae5e55cae002674fed69626bbe77acbfb5bfa27d2ff5f83a66dac088"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:16.139Z",
+			"catalog": "coverage_sort",
+			"hash": "b14a8ab2cd75b5aec211aad60e0ffb482270a306df392017f03efff63fe6fb72",
+			"resultChecksum": "934d5e7c10ab4b72b6853f853a9d59a41eb43dc7a15f1a0d9b701f963c10484f"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:16.213Z",
+			"catalog": "coverage_regex",
+			"hash": "779174f43ef1b30411b96866d9d2c580daed8c00826ee23e3f596d1fb4147e58",
+			"resultChecksum": "60cf7550e78c9d763334a9d6d32dd5a1eed8438bf1176cac1d36dfed297315d0"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:16.518Z",
+			"catalog": "coverage_project",
+			"hash": "b95722947ff88a9db6b8f7c2ef21773fa48af5f5cf4fd67879edd34f25b6a140",
+			"resultChecksum": "f39c7830c446c0509bb6253ed83009a22d4cb4d0669c6d9440a79e1afc36ee8d"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:16.899Z",
+			"catalog": "coverage_or",
+			"hash": "88b413b8132435fc131325922f03351f4b3255fda5b48e045ed0de3ffaf03f73",
+			"resultChecksum": "ed10d9fd37651d02a000f6c9044c61c85e07d71814f9ac0880587fb0624e4079"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:16.996Z",
+			"catalog": "coverage_not",
+			"hash": "0e679a2ee1c9d2f9aa52108512acfd9dacce30971d0bf539c876191944e58e68",
+			"resultChecksum": "49a3e6308f27c4fd6d51d26843ba0ca3637ba181e98a55fdbd0e992f9f64c1f6"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:17.077Z",
+			"catalog": "coverage_ne",
+			"hash": "df404504814ab342d4b3dd47495cff03a4c554321cbfaacf26622d9a293aea6b",
+			"resultChecksum": "0faa8491f778a1cac1a1b6c6220d89f6ae84f3936dead317f316951b1faeaf86"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:17.113Z",
+			"catalog": "coverage_mod",
+			"hash": "8d1bd59e4d8618efd9804acf8393153385284f4c1d82ad4a10297a4b7675c8b2",
+			"resultChecksum": "b65ab6e52b1ff32ad371b157f9109c822fd909eb3aa55ba137c701926351a26e"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:17.197Z",
+			"catalog": "coverage_in_",
+			"hash": "b82c88ecca9eed0c9713e77fdb9a76e2f59d61f95bdd50b3f585e7fa4955afef",
+			"resultChecksum": "6dbc96bc5043076a349c4818faa7378b8db451307e0581a34d05267780b4c249"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:17.240Z",
+			"catalog": "coverage_find",
+			"hash": "e076903018531b2c13cc9b948be0fae68e6b048693d00fde88ac7cbb5de688ad",
+			"resultChecksum": "743c96308a0cfa890beaf571f9f2576530b912b04e214c105c19472b3acdbbd7"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:17.299Z",
+			"catalog": "coverage_expr",
+			"hash": "9abb2ac21244260612630575c54937daaec45d63dfa97c0cc0d3e7b89244b03a",
+			"resultChecksum": "749cb9ed624db0080cf975d84618cc67ab462e5fedb273b6d44936b37041b0b2"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:17.436Z",
+			"catalog": "coverage_exists",
+			"hash": "d40e74adf2fde2c64ca3926ce03d8d8bb8798ae0efc7bcdf108a30206859a006",
+			"resultChecksum": "bde07851f87791332794b5c9337689518b872071eb295ae84e0fce948f20e128"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:17.480Z",
+			"catalog": "coverage_elemmatch",
+			"hash": "35e04cfde2679268fc051cc7e14793828ed2d846f744fdcaa00b278b11c37806",
+			"resultChecksum": "59e0d7adace5863b8adf887b772071e64966d7800ff790b3f22e47cf6f56eb50"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:17.512Z",
+			"catalog": "coverage_date",
+			"hash": "38508c927c29568044ae48a5a890339d3c0736cd862a8c4227d11a7d61e4de41",
+			"resultChecksum": "09d70cedf506711c9b5f4a7afb7e22d699b6e805bcefcd2416c916ab99b29076"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:17.640Z",
+			"catalog": "coverage_count",
+			"hash": "ed17a7a07c74b47719d1c693e96703e3453a9cf0d8ee400d08ed508e18eafb55",
+			"resultChecksum": "0dc3f9fc4957ad9802a71edfeac3317ef6e407626f83d0ddbc00975052d8c75e"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:17.787Z",
+			"catalog": "coverage_array",
+			"hash": "b33533c451a82a32675491554699f1d164ba952ac16194b90c386a2f7c7c58a9",
+			"resultChecksum": "69dad47f392f0c1d36d20a27e84116adfd15f7ef504b71f89d363553031c7cdf"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:17.990Z",
+			"catalog": "coverage_and",
+			"hash": "a616f1c38410230545092af1c8c1ab4fda4845c71422d0f172bf01d3dfe4c758",
+			"resultChecksum": "38b29f84ef0086b2aae769e996a078b5738ae2ac51af47bb743a950277297660"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T08:34:18.067Z",
+			"catalog": "coverage_all",
+			"hash": "0350085a51016a05a06f175cb6e112c539edc5b900dfbe8e856051628e551634",
+			"resultChecksum": "537536e7adcda382fc533e9c9433b827824f9afd385e5222033c84c91c98e954"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:29.618Z",
+			"catalog": "coverage_where",
+			"hash": "44ea3764d1eccc0b91813e762308b87fd1f07d90329ac97116f4163cc0f16ec9",
+			"resultChecksum": "07e2d0fc253f962d6ee415dc0982ff5a6fa466a8c66fa86e717e058bf400f173"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:29.676Z",
+			"catalog": "coverage_type",
+			"hash": "587e0fdfe160651c08d822a0e31005e639c330a6a6dad577a1646f9499e233d1",
+			"resultChecksum": "f3e7bebbae5e55cae002674fed69626bbe77acbfb5bfa27d2ff5f83a66dac088"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:29.777Z",
+			"catalog": "coverage_sort",
+			"hash": "287f8a41b8ff031b7a3b5eeb6ef2a651e5d72bc79c70c420094705ef58755110",
+			"resultChecksum": "934d5e7c10ab4b72b6853f853a9d59a41eb43dc7a15f1a0d9b701f963c10484f"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:29.854Z",
+			"catalog": "coverage_regex",
+			"hash": "b8c548d5d5d8f090c50bd440e90aa15eb341b2b17553a6117b64c52303fa0ed1",
+			"resultChecksum": "60cf7550e78c9d763334a9d6d32dd5a1eed8438bf1176cac1d36dfed297315d0"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:30.168Z",
+			"catalog": "coverage_project",
+			"hash": "c6394a5114c5f1aaddc5305c79a14fff548621363eacd44e6156f03c13da2c64",
+			"resultChecksum": "f39c7830c446c0509bb6253ed83009a22d4cb4d0669c6d9440a79e1afc36ee8d"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:30.551Z",
+			"catalog": "coverage_or",
+			"hash": "2acb73ce6a9768e347d1a52d94fe5916265d0c8e81feaa4774234690da73ed77",
+			"resultChecksum": "ed10d9fd37651d02a000f6c9044c61c85e07d71814f9ac0880587fb0624e4079"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:30.655Z",
+			"catalog": "coverage_not",
+			"hash": "a97ab2250d988905b72776bce99b40633ae59d1732417243029f50cd79ad3325",
+			"resultChecksum": "49a3e6308f27c4fd6d51d26843ba0ca3637ba181e98a55fdbd0e992f9f64c1f6"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:30.741Z",
+			"catalog": "coverage_nin",
+			"hash": "85fe34d4aca242ef29fd1624ec14cfce49b6a0811c2b8c3abe0f3b2b987df4d0",
+			"resultChecksum": "153f5f2f3bcbffbc67ca464ee16479f4bed038dba832cccdff35c7a08e4e052b"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:30.815Z",
+			"catalog": "coverage_ne",
+			"hash": "05edc61d8f14bd07141df941fe4b2a6b2e97450295d8016e88ad8cf34a064752",
+			"resultChecksum": "0faa8491f778a1cac1a1b6c6220d89f6ae84f3936dead317f316951b1faeaf86"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:30.850Z",
+			"catalog": "coverage_mod",
+			"hash": "1f9c88112996a1f779a51d59d8a488be9e98e7aa7822a20c2491008357383d57",
+			"resultChecksum": "b65ab6e52b1ff32ad371b157f9109c822fd909eb3aa55ba137c701926351a26e"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:30.885Z",
+			"catalog": "coverage_json_schema",
+			"hash": "8a0f86d12c3e72cfe1ca90ae3e062acb714a264c7ec295d9e534b1b85b9429fc",
+			"resultChecksum": "022be48818f9654ad1eaece679af16a1bde46a59f5898b4b1d4c8263eeee8302"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:30.966Z",
+			"catalog": "coverage_in_",
+			"hash": "d59556d7198e8f9232da47de07f09cf6d9682db2e435b2a1c8ba32cfa7dd17f0",
+			"resultChecksum": "6dbc96bc5043076a349c4818faa7378b8db451307e0581a34d05267780b4c249"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:30.997Z",
+			"catalog": "coverage_geo",
+			"hash": "3149d15200f35c13ee95cac0d0377bbceec546fd502cee7cc95422386afcd394",
+			"resultChecksum": "29144fa2d4aa8f97916719b04ae0a7e2be381dedef1b8fabc6f55a465ac8ed88"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:31.044Z",
+			"catalog": "coverage_find",
+			"hash": "b6148e321b1a07fcb5fc07bf6f15657b8628be5bb38343e83c556f439a7c4291",
+			"resultChecksum": "743c96308a0cfa890beaf571f9f2576530b912b04e214c105c19472b3acdbbd7"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:31.106Z",
+			"catalog": "coverage_expr",
+			"hash": "54dccc1621bc522d7e1ef022a9934f697e6aa53af313ea7e1d2b3f0b37929df6",
+			"resultChecksum": "749cb9ed624db0080cf975d84618cc67ab462e5fedb273b6d44936b37041b0b2"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:31.240Z",
+			"catalog": "coverage_exists",
+			"hash": "765ace52e8ba48a3da21a816b6a551130fc9cc62d8bde595c216ddcd7a59e73c",
+			"resultChecksum": "bde07851f87791332794b5c9337689518b872071eb295ae84e0fce948f20e128"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:31.287Z",
+			"catalog": "coverage_elemmatch",
+			"hash": "4f089ad05e91a94258bec27d06c21b522b1ece3748224fd5bfd94106f781da75",
+			"resultChecksum": "59e0d7adace5863b8adf887b772071e64966d7800ff790b3f22e47cf6f56eb50"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:31.319Z",
+			"catalog": "coverage_dbref",
+			"hash": "f2af20b8b7af6907cf82574ab927f3ce64bb30340fed47e7f3b56310f44d4fe1",
+			"resultChecksum": "a358b89d601bb1aa1c2aefbca394dc5b0f3c814e5432f4f7a25f8133b9c50e50"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:31.352Z",
+			"catalog": "coverage_date",
+			"hash": "e1cdd307afd68fc11193a64aadf0b73918b17b0d45fda0e2e2e9aeeaffdbdbd5",
+			"resultChecksum": "09d70cedf506711c9b5f4a7afb7e22d699b6e805bcefcd2416c916ab99b29076"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:31.483Z",
+			"catalog": "coverage_count",
+			"hash": "f3c8dde0b32f9dcfeb5a98474959bf81005a171d069166ca8e37f723d774cd28",
+			"resultChecksum": "0dc3f9fc4957ad9802a71edfeac3317ef6e407626f83d0ddbc00975052d8c75e"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:31.620Z",
+			"catalog": "coverage_array",
+			"hash": "f181851484d4ce407a75270858173a2d4dc94263e8d5ea460e08c35929592e05",
+			"resultChecksum": "69dad47f392f0c1d36d20a27e84116adfd15f7ef504b71f89d363553031c7cdf"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:31.821Z",
+			"catalog": "coverage_and",
+			"hash": "fb0a3ce757498834ad77f4a5954680f8cfb36cf099339b1d1c8a42dd32c06f79",
+			"resultChecksum": "38b29f84ef0086b2aae769e996a078b5738ae2ac51af47bb743a950277297660"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-07T10:26:31.895Z",
+			"catalog": "coverage_all",
+			"hash": "0307cd00174023ba2b6c056702917d2db443277c93e9fb301d49820094b3afcb",
+			"resultChecksum": "537536e7adcda382fc533e9c9433b827824f9afd385e5222033c84c91c98e954"
+		},
+		{
+			"type": "collection-halted",
+			"date": "2026-06-10T14:18:03.984Z",
+			"catalog": "",
+			"reason": "mongodb-start-failed"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:15.103Z",
+			"catalog": "coverage_where",
+			"hash": "eb2c9b9fe8e22ef04ff33c65b9e464e8fb2208bc30ed44d48217ad885fb38681",
+			"resultChecksum": "016a5b94e55ecd49427588945f99b667d1a94b240d4d47999fbb0369f04d86b9"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:15.152Z",
+			"catalog": "coverage_type",
+			"hash": "18795e5b06ab502d507deaf2cb455bac5c1d6c2756c0a71cfa9cd0e0613b36f5",
+			"resultChecksum": "db5c567e4a8336095a955c0e1d4d5ac4bb6c4a00198d30103aeee06a0578d341"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:15.253Z",
+			"catalog": "coverage_sort",
+			"hash": "0a50d44e427557f297132115aaa80f7d3e732ca6c70bd061a6c6d090304dc49c",
+			"resultChecksum": "513ea17ee705b7db5b065b059590f46182e43575af768cbd043f3f5121ec9383"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:15.343Z",
+			"catalog": "coverage_regex",
+			"hash": "9f366512899bbd8cb87b4b8b27d22791cda7446177d00f8cd2caff37820840ee",
+			"resultChecksum": "3fe71c17136f0a734ea5a205c607162594d82382fb216535a4aeb30f72df0268"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:15.628Z",
+			"catalog": "coverage_project",
+			"hash": "81def04714e09e8e84766585ec506192857738682952109fac58caaf75460fc1",
+			"resultChecksum": "8123ddbdd574c47ecaafedc2fc7287a8e99ddfbcd3c64105c37711e22cc55fe4"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:16.100Z",
+			"catalog": "coverage_or",
+			"hash": "a495d8c23ceea26c78ddda9fb4153af83d3c88eb11366d460f180fe768b8d0dc",
+			"resultChecksum": "3374f7a3a2da4cf58e9b1edbf76c2750ecdca31bd70cd7fc29ff7d9d25a45a74"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:16.187Z",
+			"catalog": "coverage_not",
+			"hash": "678a50a6c3bbea29a6ad5c61425679c5faa0a03052b5855205f42e0ed653add9",
+			"resultChecksum": "4c109e2a5a9cc389ca17a7465843af81270981a3605cdd3d68ec913b776653c8"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:16.246Z",
+			"catalog": "coverage_ne",
+			"hash": "1b10a6f0eafdab9def98e74da9d4c55091cbfcb5b6330604190f1f6a53f61315",
+			"resultChecksum": "407dda56a945d287007023804cfdda83c9d2ab8d745da0edc65cbdb87f5ba1ad"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:16.286Z",
+			"catalog": "coverage_mod",
+			"hash": "8d1bd59e4d8618efd9804acf8393153385284f4c1d82ad4a10297a4b7675c8b2",
+			"resultChecksum": "239f339e1aa6566ffb75ff46fe25ba00662861ebeb4550c042118afd1ade1511"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:16.480Z",
+			"catalog": "coverage_in_",
+			"hash": "e7e26a2bde6d563b308026d5f2aeac199557bb544d8ff8ce20d71e7cf6337578",
+			"resultChecksum": "bfb98756895bbdbd441bf9e68902e313819c9299f2e98419ed515968c156fc39"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:16.564Z",
+			"catalog": "coverage_find",
+			"hash": "bfee7af619cd1d099474e3cc56ebbf78c8018f801a6186be4d6d4c6d8f603337",
+			"resultChecksum": "9a71123bb59e29ed8431ebfca211cda8a69e53187d6c8be0109e54322ec67309"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:16.633Z",
+			"catalog": "coverage_expr",
+			"hash": "da8a176ee381295a3dd899552c46183e77e74425ce16c0ca9112c86e34eb1052",
+			"resultChecksum": "f2727b18dd8dbf7fe8857c8f64cb1591e2facf42530954151bd1589a4ef20b72"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:16.795Z",
+			"catalog": "coverage_exists",
+			"hash": "405472afb3faed0c2acb616c086bca7769ce8167891f00a42c706e7c1b599cc1",
+			"resultChecksum": "ec4cb4e373ceb8189855b85690c973ecef5ce55e26dfeba6782d776196309507"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:16.850Z",
+			"catalog": "coverage_elemmatch",
+			"hash": "bbc76cf32a80eda7b101f8ceafe4fbb7ce32eb60af0526352f78aa323ddf39c5",
+			"resultChecksum": "f61e1d14582aeabf449a57aefba80bdaa652d7d43018a1bf271df066032c2f35"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:16.875Z",
+			"catalog": "coverage_date",
+			"hash": "c638e6fe10aeafcf00b13647b2a40bc0c1a186e7dcccf3352c1a1ca69d7622c6",
+			"resultChecksum": "7a42832fa6506f3839d6c186957736217f6d95875acb0822aba5befb30a517fd"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:16.971Z",
+			"catalog": "coverage_count",
+			"hash": "a5f0b10a870195431e04375b8780f639331a2401f41de28327930d4df543f83f",
+			"resultChecksum": "bad2d2a0427349f2c878517117330bdcfd90566b2a82ed546f09ac0e15a86186"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:17.146Z",
+			"catalog": "coverage_array",
+			"hash": "dee55e3ebf063584c563ea594d72c4afd447b60dc0da433890e29619c6988e02",
+			"resultChecksum": "7f8cc1e6b6bc90ffc7f0ad37208eac8b5b76361d6323259b8414fda5db52c9ff"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:17.379Z",
+			"catalog": "coverage_and",
+			"hash": "45c77b61b7fa54c7fedf4d952715d2080f171a40e84ccc16cd1ab0dae055f4e9",
+			"resultChecksum": "2e175c2d9d734e779f448d836decdd0b9cf6df422c7d1f6b7f6c352f0081ca57"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-06-11T14:30:17.471Z",
+			"catalog": "coverage_all",
+			"hash": "59ad887ca89249c997b6d36a9ac14307e9f42675aa5ad7109d2acf957e47f411",
+			"resultChecksum": "14d2df3e74f637bd71f2e672fe6077b88261d2bf597ab6dc1d491a8bf82cd27d"
+		}
+	]
 }
