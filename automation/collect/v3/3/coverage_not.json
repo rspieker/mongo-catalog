@@ -1,61 +1,5 @@
 [
 	{
-		"id": "wOLvXe2TOZj9",
-		"operation": {
-			"age": 23
-		},
-		"documents": [
-			0
-		]
-	},
-	{
-		"id": "qZzABCAVY6XF",
-		"operation": {
-			"age": {
-				"$ne": 23
-			}
-		},
-		"documents": [
-			1,
-			2,
-			3,
-			4,
-			5,
-			6
-		]
-	},
-	{
-		"id": "jENfzDFUAhQP",
-		"operation": {
-			"age": {
-				"$in": [
-					23
-				]
-			}
-		},
-		"documents": [
-			0
-		]
-	},
-	{
-		"id": "rPtvFqu8tSFj",
-		"operation": {
-			"age": {
-				"$nin": [
-					23
-				]
-			}
-		},
-		"documents": [
-			1,
-			2,
-			3,
-			4,
-			5,
-			6
-		]
-	},
-	{
 		"id": "ixxoRPKTAKzm",
 		"operation": {
 			"name": {
@@ -66,9 +10,7 @@
 				}
 			}
 		},
-		"documents": [
-			4
-		]
+		"documents": []
 	},
 	{
 		"id": "gTbQDJTVQuWY",
@@ -77,9 +19,7 @@
 				"$gt": "Abundant"
 			}
 		},
-		"documents": [
-			4
-		]
+		"documents": []
 	},
 	{
 		"id": "vgUlSqLo1kR0",
@@ -95,8 +35,11 @@
 			1,
 			2,
 			3,
+			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -109,8 +52,7 @@
 			}
 		},
 		"documents": [
-			2,
-			4
+			0
 		]
 	},
 	{
@@ -127,8 +69,11 @@
 			1,
 			2,
 			3,
+			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -139,10 +84,8 @@
 			}
 		},
 		"documents": [
-			2,
-			3,
-			4,
-			5
+			0,
+			1
 		]
 	},
 	{
@@ -155,9 +98,13 @@
 			}
 		},
 		"documents": [
-			0,
-			1,
-			6
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -172,11 +119,14 @@
 			}
 		},
 		"documents": [
-			0,
 			1,
+			2,
 			3,
+			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -192,11 +142,14 @@
 			}
 		},
 		"documents": [
-			0,
 			1,
+			2,
 			3,
+			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -211,8 +164,7 @@
 			}
 		},
 		"documents": [
-			2,
-			4
+			0
 		]
 	},
 	{
@@ -302,120 +254,6 @@
 		}
 	},
 	{
-		"id": "sKt7GcnVmXs6",
-		"operation": {
-			"name": {
-				"$not": {
-					"$mod": [
-						33,
-						29
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			4,
-			5,
-			6
-		]
-	},
-	{
-		"id": "aIJ0eNCkWjLW",
-		"operation": {
-			"name": {
-				"$mod": [
-					33,
-					30
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "kxq1pMFo7ber",
-		"operation": {
-			"name": {
-				"$not": {
-					"$size": 30
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6
-		]
-	},
-	{
-		"id": "twyupqcCsQey",
-		"operation": {
-			"name": {
-				"$not": {
-					"$all": [
-						"Abundant",
-						"Couple"
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			5,
-			6
-		]
-	},
-	{
-		"id": "crrMx9qUmeGu",
-		"operation": {
-			"name": {
-				"$not": {
-					"$all": [
-						"Either"
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6
-		]
-	},
-	{
-		"id": "bec8u6mP4K7O",
-		"operation": {
-			"name": {
-				"$not": {
-					"$elemMatch": {
-						"score": "Abundant"
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			6
-		]
-	},
-	{
 		"id": "uQUItNu70yh0",
 		"operation": {
 			"name": {
@@ -444,11 +282,11 @@
 		}
 	},
 	{
-		"id": "oPhMQMO3PSk9",
+		"id": "jDPwDvtr9cgi",
 		"operation": {
 			"name": {
 				"$not": {
-					"$ref": "Empty"
+					"$ref": "Either"
 				}
 			}
 		},
@@ -474,11 +312,46 @@
 		}
 	},
 	{
-		"id": "tHxQsXC8vnAw",
+		"id": "sKt7GcnVmXs6",
 		"operation": {
-			"scores": {
+			"name": {
 				"$not": {
-					"$gt": 19
+					"$mod": [
+						33,
+						29
+					]
+				}
+			}
+		},
+		"documents": [
+			0,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8
+		]
+	},
+	{
+		"id": "aIJ0eNCkWjLW",
+		"operation": {
+			"name": {
+				"$mod": [
+					33,
+					30
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "lvB5fohfh3bx",
+		"operation": {
+			"title": {
+				"$not": {
+					"$size": 20
 				}
 			}
 		},
@@ -489,197 +362,77 @@
 			3,
 			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
-		"id": "n7Yjt9EJsZjS",
+		"id": "fhLBwSdR3cSO",
 		"operation": {
-			"age": null
+			"title": {
+				"$not": {
+					"$all": [
+						"Abundant",
+						"Couple"
+					]
+				}
+			}
 		},
 		"documents": [
+			0,
 			1,
 			2,
 			3,
-			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
-		"id": "kHbAwuVM7WGB",
+		"id": "cWycUPEPEaDT",
 		"operation": {
-			"age": "value"
-		},
-		"documents": []
-	},
-	{
-		"id": "aofomZDzIZ6T",
-		"operation": {
-			"age": true
-		},
-		"documents": []
-	},
-	{
-		"id": "kfGZKcGZ72Sg",
-		"operation": {
-			"age": {
-				"$ne": null
+			"title": {
+				"$not": {
+					"$all": [
+						"Double"
+					]
+				}
 			}
 		},
 		"documents": [
-			0
-		]
-	},
-	{
-		"id": "qYlS2PNwrT6y",
-		"operation": {
-			"age": {
-				"$ne": "value"
-			}
-		},
-		"documents": [
+			0,
 			1,
 			2,
 			3,
 			4,
 			5,
 			6,
-			0
+			7,
+			8
 		]
 	},
 	{
-		"id": "gWFjzWbGg8tK",
+		"id": "rnhsMu9hMaaH",
 		"operation": {
-			"age": {
-				"$ne": true
+			"username": {
+				"$not": {
+					"$elemMatch": {
+						"age": "Abundant"
+					}
+				}
 			}
 		},
 		"documents": [
+			0,
 			1,
 			2,
 			3,
 			4,
 			5,
 			6,
-			0
-		]
-	},
-	{
-		"id": "nvwzwktRyIh3",
-		"operation": {
-			"age": {
-				"$in": "active"
-			}
-		},
-		"error": {
-			"message": "$in needs an array",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "arscExu4r66Z",
-		"operation": {
-			"age": {
-				"$in": [
-					null
-				]
-			}
-		},
-		"documents": [
-			1,
-			2,
-			3,
-			4,
-			5,
-			6
-		]
-	},
-	{
-		"id": "twBeDuDWESF3",
-		"operation": {
-			"age": {
-				"$in": [
-					"value"
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "c3Y7n03i5ZZt",
-		"operation": {
-			"age": {
-				"$in": [
-					true
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "fD1BgHKXIhRn",
-		"operation": {
-			"age": {
-				"$nin": "deleted"
-			}
-		},
-		"error": {
-			"message": "$nin needs an array",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "n5a6orxPSXPV",
-		"operation": {
-			"age": {
-				"$nin": [
-					null
-				]
-			}
-		},
-		"documents": [
-			0
-		]
-	},
-	{
-		"id": "awlADvXeWC8X",
-		"operation": {
-			"age": {
-				"$nin": [
-					"value"
-				]
-			}
-		},
-		"documents": [
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			0
-		]
-	},
-	{
-		"id": "wxntdksGpKek",
-		"operation": {
-			"age": {
-				"$nin": [
-					true
-				]
-			}
-		},
-		"documents": [
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			0
+			7
 		]
 	},
 	{
@@ -764,7 +517,9 @@
 			3,
 			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -783,7 +538,9 @@
 			3,
 			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -802,7 +559,9 @@
 			3,
 			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -815,9 +574,13 @@
 			}
 		},
 		"documents": [
-			0,
-			1,
-			6
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -852,10 +615,8 @@
 			}
 		},
 		"documents": [
-			2,
-			3,
-			4,
-			5
+			0,
+			1
 		]
 	},
 	{
@@ -874,7 +635,9 @@
 			3,
 			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -893,7 +656,9 @@
 			3,
 			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -904,9 +669,13 @@
 			}
 		},
 		"documents": [
-			0,
-			1,
-			6
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -917,9 +686,13 @@
 			}
 		},
 		"documents": [
-			0,
-			1,
-			6
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -930,10 +703,8 @@
 			}
 		},
 		"documents": [
-			2,
-			3,
-			4,
-			5
+			0,
+			1
 		]
 	},
 	{
@@ -946,10 +717,8 @@
 			}
 		},
 		"documents": [
-			2,
-			3,
-			4,
-			5
+			0,
+			1
 		]
 	},
 	{
@@ -962,10 +731,8 @@
 			}
 		},
 		"documents": [
-			2,
-			3,
-			4,
-			5
+			0,
+			1
 		]
 	},
 	{
@@ -978,9 +745,13 @@
 			}
 		},
 		"documents": [
-			0,
-			1,
-			6
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -1010,10 +781,8 @@
 			}
 		},
 		"documents": [
-			2,
-			3,
-			4,
-			5
+			0,
+			1
 		]
 	},
 	{
@@ -1034,7 +803,9 @@
 			3,
 			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -1055,7 +826,9 @@
 			3,
 			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -1071,10 +844,8 @@
 			}
 		},
 		"documents": [
-			2,
-			3,
-			4,
-			5
+			0,
+			1
 		]
 	},
 	{
@@ -1096,7 +867,9 @@
 			3,
 			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -1118,7 +891,9 @@
 			3,
 			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -1148,9 +923,13 @@
 			}
 		},
 		"documents": [
-			0,
-			1,
-			6
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8
 		]
 	},
 	{
@@ -1399,6 +1178,180 @@
 		}
 	},
 	{
+		"id": "pJy4SCCFBmul",
+		"operation": {
+			"name": {
+				"$not": {
+					"$not": null
+				}
+			}
+		},
+		"error": {
+			"message": "$not needs a regex or a document",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "qf5ZdZGMUEoH",
+		"operation": {
+			"name": {
+				"$not": {
+					"$not": 42
+				}
+			}
+		},
+		"error": {
+			"message": "$not needs a regex or a document",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "r2FV1QcmKX6E",
+		"operation": {
+			"name": {
+				"$not": {
+					"$not": true
+				}
+			}
+		},
+		"error": {
+			"message": "$not needs a regex or a document",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "qLUQgQyYh1Q2",
+		"operation": {
+			"name": {
+				"$not": null
+			}
+		},
+		"error": {
+			"message": "$not needs a regex or a document",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "fuCEX4ki1l0m",
+		"operation": {
+			"name": {
+				"$not": 42
+			}
+		},
+		"error": {
+			"message": "$not needs a regex or a document",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "vrhnWLtXl4Nf",
+		"operation": {
+			"name": {
+				"$not": true
+			}
+		},
+		"error": {
+			"message": "$not needs a regex or a document",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "rVGMfDduCiLp",
+		"operation": {
+			"name": {
+				"$not": {
+					"$ref": null
+				}
+			}
+		},
+		"error": {
+			"message": "unknown operator: $ref",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "pOwizImgQSll",
+		"operation": {
+			"name": {
+				"$not": {
+					"$ref": 42
+				}
+			}
+		},
+		"error": {
+			"message": "unknown operator: $ref",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "taIoD3vpIc9L",
+		"operation": {
+			"name": {
+				"$not": {
+					"$ref": true
+				}
+			}
+		},
+		"error": {
+			"message": "unknown operator: $ref",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "h4zMuzURRUgT",
+		"operation": {
+			"name": {
+				"$not": {
+					"$options": null
+				}
+			}
+		},
+		"error": {
+			"message": "$options needs a $regex",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "dr6eT0AGLUfo",
+		"operation": {
+			"name": {
+				"$not": {
+					"$options": 42
+				}
+			}
+		},
+		"error": {
+			"message": "$options needs a $regex",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "oKsIMdWHvTVC",
+		"operation": {
+			"name": {
+				"$not": {
+					"$options": true
+				}
+			}
+		},
+		"error": {
+			"message": "$options needs a $regex",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
 		"id": "gRI2mX1QSdE8",
 		"operation": {
 			"name": {
@@ -1589,9 +1542,9 @@
 		}
 	},
 	{
-		"id": "udTnHEL23B9f",
+		"id": "fGgJQU3aVL1V",
 		"operation": {
-			"name": {
+			"title": {
 				"$not": {
 					"$size": "large"
 				}
@@ -1604,9 +1557,9 @@
 		}
 	},
 	{
-		"id": "wFacG70XFVbq",
+		"id": "dh0WcT5wNhTr",
 		"operation": {
-			"name": {
+			"title": {
 				"$not": {
 					"$size": 2.5
 				}
@@ -1619,9 +1572,9 @@
 		}
 	},
 	{
-		"id": "p1ECCDlLNcZk",
+		"id": "gSyInXU9hV4p",
 		"operation": {
-			"name": {
+			"title": {
 				"$not": {
 					"$size": null
 				}
@@ -1634,9 +1587,9 @@
 		}
 	},
 	{
-		"id": "kB4PAOvA2uYa",
+		"id": "tF5nYPFO2Dsk",
 		"operation": {
-			"name": {
+			"title": {
 				"$not": {
 					"$size": "value"
 				}
@@ -1649,9 +1602,9 @@
 		}
 	},
 	{
-		"id": "nuXGCfKH8Ugt",
+		"id": "w1rQsMOKIS3C",
 		"operation": {
-			"name": {
+			"title": {
 				"$not": {
 					"$size": true
 				}
@@ -1664,9 +1617,9 @@
 		}
 	},
 	{
-		"id": "qnGhFYCfSqSM",
+		"id": "k5EEuyEDmUOt",
 		"operation": {
-			"name": {
+			"title": {
 				"$not": {
 					"$all": "value"
 				}
@@ -1679,9 +1632,9 @@
 		}
 	},
 	{
-		"id": "dLaEBPtK6ZHz",
+		"id": "fJJY32ACGvRm",
 		"operation": {
-			"name": {
+			"title": {
 				"$not": {
 					"$all": 42
 				}
@@ -1694,9 +1647,9 @@
 		}
 	},
 	{
-		"id": "hPVRhVeBcgPy",
+		"id": "abUgA3BhwcX3",
 		"operation": {
-			"name": {
+			"title": {
 				"$not": {
 					"$all": [
 						null,
@@ -1708,14 +1661,13 @@
 		"documents": [
 			2,
 			3,
-			4,
-			5
+			4
 		]
 	},
 	{
-		"id": "w0uuzS7ZCczM",
+		"id": "pvqljlKuZUYK",
 		"operation": {
-			"name": {
+			"title": {
 				"$not": {
 					"$all": [
 						42,
@@ -1731,13 +1683,15 @@
 			3,
 			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
-		"id": "oTYA1sZzaVP8",
+		"id": "wGMzQAkqV2be",
 		"operation": {
-			"name": {
+			"title": {
 				"$not": {
 					"$all": [
 						true,
@@ -1753,13 +1707,15 @@
 			3,
 			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
-		"id": "rwA6cIE2qtKf",
+		"id": "igAyGpVM0slC",
 		"operation": {
-			"name": {
+			"title": {
 				"$not": {
 					"$all": [
 						null
@@ -1770,14 +1726,13 @@
 		"documents": [
 			2,
 			3,
-			4,
-			5
+			4
 		]
 	},
 	{
-		"id": "oGDA4k1cfwUW",
+		"id": "bNc5c9WF56Eo",
 		"operation": {
-			"name": {
+			"title": {
 				"$not": {
 					"$all": [
 						42
@@ -1792,13 +1747,15 @@
 			3,
 			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
-		"id": "hIHXZ5Lc4H6S",
+		"id": "iQoP9RbKuajC",
 		"operation": {
-			"name": {
+			"title": {
 				"$not": {
 					"$all": [
 						true
@@ -1813,13 +1770,15 @@
 			3,
 			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
-		"id": "mxXMDNZRjU0t",
+		"id": "pAAdkzuD4sXE",
 		"operation": {
-			"name": {
+			"username": {
 				"$not": {
 					"$elemMatch": 42
 				}
@@ -1832,12 +1791,12 @@
 		}
 	},
 	{
-		"id": "r6wXIhqbBaSB",
+		"id": "nNcXcCRifWLz",
 		"operation": {
-			"name": {
+			"username": {
 				"$not": {
 					"$elemMatch": {
-						"score": null
+						"age": null
 					}
 				}
 			}
@@ -1849,16 +1808,18 @@
 			3,
 			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
-		"id": "pfqCpaVzqA8f",
+		"id": "wVx9OQrudg5C",
 		"operation": {
-			"name": {
+			"username": {
 				"$not": {
 					"$elemMatch": {
-						"score": 42
+						"age": 42
 					}
 				}
 			}
@@ -1870,16 +1831,18 @@
 			3,
 			4,
 			5,
-			6
+			6,
+			7,
+			8
 		]
 	},
 	{
-		"id": "bhklZfQuLC4t",
+		"id": "fC8J1w2LIsZy",
 		"operation": {
-			"name": {
+			"username": {
 				"$not": {
 					"$elemMatch": {
-						"score": true
+						"age": true
 					}
 				}
 			}
@@ -1891,238 +1854,9 @@
 			3,
 			4,
 			5,
-			6
-		]
-	},
-	{
-		"id": "pJy4SCCFBmul",
-		"operation": {
-			"name": {
-				"$not": {
-					"$not": null
-				}
-			}
-		},
-		"error": {
-			"message": "$not needs a regex or a document",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "qf5ZdZGMUEoH",
-		"operation": {
-			"name": {
-				"$not": {
-					"$not": 42
-				}
-			}
-		},
-		"error": {
-			"message": "$not needs a regex or a document",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "r2FV1QcmKX6E",
-		"operation": {
-			"name": {
-				"$not": {
-					"$not": true
-				}
-			}
-		},
-		"error": {
-			"message": "$not needs a regex or a document",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "qLUQgQyYh1Q2",
-		"operation": {
-			"name": {
-				"$not": null
-			}
-		},
-		"error": {
-			"message": "$not needs a regex or a document",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "fuCEX4ki1l0m",
-		"operation": {
-			"name": {
-				"$not": 42
-			}
-		},
-		"error": {
-			"message": "$not needs a regex or a document",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "vrhnWLtXl4Nf",
-		"operation": {
-			"name": {
-				"$not": true
-			}
-		},
-		"error": {
-			"message": "$not needs a regex or a document",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "rVGMfDduCiLp",
-		"operation": {
-			"name": {
-				"$not": {
-					"$ref": null
-				}
-			}
-		},
-		"error": {
-			"message": "unknown operator: $ref",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "pOwizImgQSll",
-		"operation": {
-			"name": {
-				"$not": {
-					"$ref": 42
-				}
-			}
-		},
-		"error": {
-			"message": "unknown operator: $ref",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "taIoD3vpIc9L",
-		"operation": {
-			"name": {
-				"$not": {
-					"$ref": true
-				}
-			}
-		},
-		"error": {
-			"message": "unknown operator: $ref",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "h4zMuzURRUgT",
-		"operation": {
-			"name": {
-				"$not": {
-					"$options": null
-				}
-			}
-		},
-		"error": {
-			"message": "$options needs a $regex",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "dr6eT0AGLUfo",
-		"operation": {
-			"name": {
-				"$not": {
-					"$options": 42
-				}
-			}
-		},
-		"error": {
-			"message": "$options needs a $regex",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "oKsIMdWHvTVC",
-		"operation": {
-			"name": {
-				"$not": {
-					"$options": true
-				}
-			}
-		},
-		"error": {
-			"message": "$options needs a $regex",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "mxAvbLGCch02",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$gt": null
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6
-		]
-	},
-	{
-		"id": "goguJpkXubi9",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$gt": "value"
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6
-		]
-	},
-	{
-		"id": "vRBFQBRqJI5e",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$gt": true
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6
+			6,
+			7,
+			8
 		]
 	}
 ]
