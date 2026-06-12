@@ -1,32 +1,64 @@
 [
 	{
-		"id": "ngArJLuNi5Z8",
+		"id": "ofcPKzMPtkg1",
 		"operation": {
 			"age": {
-				"$ne": 8
+				"$gt": 20,
+				"$lt": 22,
+				"$ne": 21
 			}
 		},
 		"documents": [
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
 			0
 		]
 	},
 	{
-		"id": "o50ORg5ZO4Mu",
+		"id": "qjwvIOpBsPsn",
 		"operation": {
 			"score": {
-				"$gt": 5,
-				"$lt": 7,
-				"$ne": 6
+				"$ne": {}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	{
+		"id": "qZuU6xXrUV23",
+		"operation": {
+			"score": {
+				"$gt": {}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "oxJM5UUwX9Ud",
+		"operation": {
+			"score": {
+				"$gte": {}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "bEqHV36MJDfK",
+		"operation": {
+			"score": {
+				"$lt": {}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "kRUyXto9NPmX",
+		"operation": {
+			"score": {
+				"$lte": {}
 			}
 		},
 		"documents": []
@@ -46,13 +78,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -68,13 +94,7 @@
 			0,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -94,13 +114,7 @@
 			0,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -122,13 +136,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -152,13 +160,7 @@
 			0,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -181,13 +183,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -244,13 +240,7 @@
 		"documents": [
 			0,
 			1,
-			2,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			2
 		]
 	},
 	{
@@ -271,168 +261,13 @@
 		"documents": [
 			0,
 			1,
-			2,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			2
 		]
 	},
 	{
-		"id": "qvPHRkEBFZBv",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"grade": {
-						"$ne": [
-							153
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			6,
-			7,
-			8
-		]
-	},
-	{
-		"id": "bAGBCD9Qs9cr",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"grade": {
-						"$not": {
-							"$in": [
-								[
-									153
-								]
-							]
-						}
-					}
-				}
-			}
-		},
-		"documents": [
-			6,
-			7,
-			8
-		]
-	},
-	{
-		"id": "rRvRxPxaZZdg",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": {
-						"grade": [
-							153
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8
-		]
-	},
-	{
-		"id": "nekBeWpVwCXu",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": {
-						"grade": {
-							"$in": [
-								[
-									153
-								]
-							]
-						}
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8
-		]
-	},
-	{
-		"id": "kfGZKcGZ72Sg",
+		"id": "muWZ1I7iXj5C",
 		"operation": {
 			"age": {
-				"$ne": null
-			}
-		},
-		"documents": [
-			0
-		]
-	},
-	{
-		"id": "qYlS2PNwrT6y",
-		"operation": {
-			"age": {
-				"$ne": "value"
-			}
-		},
-		"documents": [
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			0
-		]
-	},
-	{
-		"id": "gWFjzWbGg8tK",
-		"operation": {
-			"age": {
-				"$ne": true
-			}
-		},
-		"documents": [
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			0
-		]
-	},
-	{
-		"id": "rECoJrPL076p",
-		"operation": {
-			"score": {
 				"$gt": null,
 				"$lt": null,
 				"$ne": null
@@ -441,9 +276,9 @@
 		"documents": []
 	},
 	{
-		"id": "pSEYYy7GPWqK",
+		"id": "cwVwQS0NhXJZ",
 		"operation": {
-			"score": {
+			"age": {
 				"$gt": "value",
 				"$lt": "value",
 				"$ne": "value"
@@ -452,9 +287,9 @@
 		"documents": []
 	},
 	{
-		"id": "gbWI7FJka6dM",
+		"id": "wcxPnSNEaSal",
 		"operation": {
-			"score": {
+			"age": {
 				"$gt": true,
 				"$lt": true,
 				"$ne": true
@@ -477,13 +312,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -501,13 +330,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -525,13 +348,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -548,13 +365,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -571,13 +382,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -594,13 +399,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -636,13 +435,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -663,13 +456,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -690,13 +477,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -718,13 +499,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -746,13 +521,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -774,13 +543,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -805,13 +568,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -836,13 +593,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -867,13 +618,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -896,13 +641,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -925,13 +664,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -954,13 +687,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -1002,13 +729,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -1031,13 +752,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -1223,13 +938,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -1250,13 +959,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -1277,13 +980,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -1323,13 +1020,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -1352,13 +1043,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	},
 	{
@@ -1381,391 +1066,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "iW3zbaqHGn1L",
-		"operation": {
-			"counts": {
-				"$elemMatch": 42
-			}
-		},
-		"error": {
-			"message": "$elemMatch needs an Object",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "vkFJwbGiRAPx",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"grade": {
-						"$ne": [
-							null
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "czKT6QC8TXQ9",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"grade": {
-						"$ne": [
-							"value"
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "pnTYTNGNxviu",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"grade": {
-						"$ne": [
-							true
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "t410lG160GHq",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"grade": {
-						"$not": {
-							"$in": "active"
-						}
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$in needs an array",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "hAwMOFOxjK6v",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"grade": {
-						"$not": {
-							"$in": [
-								[
-									null
-								]
-							]
-						}
-					}
-				}
-			}
-		},
-		"documents": [
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "cwZYMqs0H6D7",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"grade": {
-						"$not": {
-							"$in": [
-								[
-									"value"
-								]
-							]
-						}
-					}
-				}
-			}
-		},
-		"documents": [
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "q6CPscOLMfqY",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"grade": {
-						"$not": {
-							"$in": [
-								[
-									true
-								]
-							]
-						}
-					}
-				}
-			}
-		},
-		"documents": [
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "hZnM3mQNy39z",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": 42
-				}
-			}
-		},
-		"error": {
-			"message": "$elemMatch needs an Object",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "pAyCSOkrI83S",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": {
-						"grade": [
-							null
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "fW8uXqmrKX8b",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": {
-						"grade": [
-							"value"
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "b3cWNFyphFFL",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": {
-						"grade": [
-							true
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "iFjB7xI1tLl9",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": {
-						"grade": {
-							"$in": "active"
-						}
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$in needs an array",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "eU22yT0NTuQ1",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": {
-						"grade": {
-							"$in": [
-								[
-									null
-								]
-							]
-						}
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "pw80NPtVvPaV",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": {
-						"grade": {
-							"$in": [
-								[
-									"value"
-								]
-							]
-						}
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "kdI9tJZijiOF",
-		"operation": {
-			"counts": {
-				"$not": {
-					"$elemMatch": {
-						"grade": {
-							"$in": [
-								[
-									true
-								]
-							]
-						}
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			4
 		]
 	}
 ]
