@@ -1,0 +1,759 @@
+[
+	{
+		"id": "pGPwVZ5czHK0",
+		"operation": {
+			"tags": {
+				"$all": [
+					"javascript",
+					"nodejs"
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "gryHtYljpHHb",
+		"operation": {
+			"permissions": {
+				"$all": [
+					"read",
+					"write"
+				]
+			}
+		},
+		"documents": [
+			2,
+			14
+		]
+	},
+	{
+		"id": "lZIIFIOKlq0N",
+		"operation": {
+			"scores": {
+				"$all": [
+					80,
+					90
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "pxvwFTgkxOVL",
+		"operation": {
+			"nested.tags": {
+				"$all": [
+					"frontend",
+					"backend"
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "ntWA9QAxQbi9",
+		"operation": {
+			"products": {
+				"$elemMatch": {
+					"category": "electronics",
+					"price": {
+						"$gt": 500
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			3,
+			4,
+			5,
+			6,
+			8,
+			10,
+			11,
+			14,
+			16,
+			18,
+			20
+		]
+	},
+	{
+		"id": "mGIMqlRCw7dX",
+		"operation": {
+			"scores": {
+				"$elemMatch": {
+					"subject": "math",
+					"score": {
+						"$gte": 85
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			2,
+			7,
+			12,
+			13,
+			15,
+			20
+		]
+	},
+	{
+		"id": "vZBPlCLttkU9",
+		"operation": {
+			"transactions": {
+				"$elemMatch": {
+					"type": "purchase",
+					"amount": {
+						"$lt": 100
+					},
+					"date": {
+						"$gte": "2023-01-01T00:00:00.000Z"
+					}
+				}
+			}
+		},
+		"documents": [
+			7,
+			15
+		]
+	},
+	{
+		"id": "slCh6wYLnWDj",
+		"operation": {
+			"tags": {
+				"$size": 3
+			}
+		},
+		"documents": [
+			4
+		]
+	},
+	{
+		"id": "wHHTIuVhr0FF",
+		"operation": {
+			"permissions": {
+				"$size": 2
+			}
+		},
+		"documents": [
+			2,
+			6,
+			13,
+			14,
+			16,
+			20
+		]
+	},
+	{
+		"id": "mJGflcWK08Qz",
+		"operation": {
+			"scores": {
+				"$size": 4
+			}
+		},
+		"documents": [
+			1,
+			2,
+			12
+		]
+	},
+	{
+		"id": "oHPKY2gPQYc8",
+		"operation": {
+			"emptyArray": {
+				"$size": 0
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "lJXid7s26NOb",
+		"operation": {
+			"$and": [
+				{
+					"tags": {
+						"$all": [
+							"javascript"
+						]
+					}
+				},
+				{
+					"tags": {
+						"$size": {
+							"$gte": 2
+						}
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: { $gte: 2 }",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qMSEfIpw6Unk",
+		"operation": {
+			"$or": [
+				{
+					"scores": {
+						"$elemMatch": {
+							"score": {
+								"$gte": 90
+							}
+						}
+					}
+				},
+				{
+					"permissions": {
+						"$all": [
+							"admin"
+						]
+					}
+				}
+			]
+		},
+		"documents": [
+			1,
+			2,
+			5,
+			6,
+			7,
+			9,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			20
+		]
+	},
+	{
+		"id": "gksPqJOJr2cB",
+		"operation": {
+			"tags": {
+				"$all": "javascript"
+			}
+		},
+		"error": {
+			"message": "$all needs an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "mMGN5eqFe06H",
+		"operation": {
+			"permissions": {
+				"$elemMatch": "invalid"
+			}
+		},
+		"error": {
+			"message": "$elemMatch needs an Object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "a2vaKtW56SYq",
+		"operation": {
+			"scores": {
+				"$size": -1
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected a non-negative number in: $size: -1",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wvrdG1vzDdWA",
+		"operation": {
+			"scores": {
+				"$size": 3.5
+			}
+		},
+		"error": {
+			"message": "Failed to parse $size. Expected an integer: $size: 3.5",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wdJM9P2XNvAr",
+		"operation": {
+			"nonExistent": {
+				"$size": 0
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "udFRPNA5ZQXE",
+		"operation": {
+			"mixedArray": {
+				"$elemMatch": {
+					"score": {
+						"$gt": "high"
+					}
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "wNF1QWtY5o36",
+		"operation": {
+			"tags": {
+				"$all": []
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "qLTBHHllwuY2",
+		"operation": {
+			"tags": {
+				"$all": [
+					"nonexistent"
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "iwSJoX7f2ZJe",
+		"operation": {
+			"scores": {
+				"$elemMatch": {}
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "sK2nLJ1LSbAR",
+		"operation": {
+			"scores": {
+				"$size": 100
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "ogVtVttDiD4T",
+		"operation": {
+			"scores": {
+				"$all": [
+					{
+						"$elemMatch": {
+							"score": {
+								"$gte": 90
+							}
+						}
+					}
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			5,
+			6,
+			7,
+			9,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18
+		]
+	},
+	{
+		"id": "r2x2VVgYHIng",
+		"operation": {
+			"name": {
+				"$all": [
+					"Alice"
+				]
+			}
+		},
+		"documents": [
+			4,
+			14,
+			15,
+			18
+		]
+	},
+	{
+		"id": "ihHnmjD0q6VL",
+		"operation": {
+			"tags": {
+				"$all": [
+					null
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "pMvVHI46wTQN",
+		"operation": {
+			"tags": {
+				"$all": [
+					"javascript",
+					"javascript"
+				]
+			}
+		},
+		"documents": [
+			2,
+			5,
+			11,
+			12,
+			14
+		]
+	},
+	{
+		"id": "qPQPMwLHotwo",
+		"operation": {
+			"scores": {
+				"$elemMatch": {
+					"$or": [
+						{
+							"score": {
+								"$lt": 65
+							}
+						},
+						{
+							"score": {
+								"$gt": 95
+							}
+						}
+					]
+				}
+			}
+		},
+		"documents": [
+			2,
+			5,
+			6,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18
+		]
+	},
+	{
+		"id": "n6rn3drYtWYH",
+		"operation": {
+			"scores": {
+				"$elemMatch": {
+					"subject": {
+						"$exists": false
+					}
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "qsiEDXET3Dyx",
+		"operation": {
+			"scores": {
+				"$elemMatch": {
+					"subject": {
+						"$regex": "^m"
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			2,
+			6,
+			7,
+			9,
+			10,
+			12,
+			13,
+			15,
+			17,
+			20
+		]
+	},
+	{
+		"id": "p6fqWwgOaXY9",
+		"operation": {
+			"scores": {
+				"$elemMatch": {
+					"score": {
+						"$not": {
+							"$gte": 80
+						}
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			2,
+			4,
+			5,
+			6,
+			8,
+			9,
+			10,
+			11,
+			12,
+			14,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "brEHxAO5qArM",
+		"operation": {
+			"name": {
+				"$elemMatch": {
+					"$gt": "A"
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "oHPKY2gPQYc8",
+		"operation": {
+			"emptyArray": {
+				"$size": 0
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		]
+	},
+	{
+		"id": "wdJM9P2XNvAr",
+		"operation": {
+			"nonExistent": {
+				"$size": 0
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "e40PXGZQy01w",
+		"operation": {
+			"permissions": {
+				"$size": 1
+			}
+		},
+		"documents": [
+			3,
+			5,
+			7,
+			9,
+			12,
+			15,
+			19
+		]
+	},
+	{
+		"id": "cBO8L7njB71n",
+		"operation": {
+			"scores": {
+				"$size": 2
+			}
+		},
+		"documents": [
+			3,
+			8,
+			13,
+			20
+		]
+	},
+	{
+		"id": "suJZfJv62bth",
+		"operation": {
+			"tags.0": "javascript"
+		},
+		"documents": [
+			5,
+			11,
+			14
+		]
+	},
+	{
+		"id": "kJkV8IdKpy0t",
+		"operation": {
+			"scores.0.subject": "math"
+		},
+		"documents": [
+			1,
+			7,
+			9,
+			10,
+			20
+		]
+	},
+	{
+		"id": "j2LcEFzbd083",
+		"operation": {
+			"scores.score": {
+				"$gte": 95
+			}
+		},
+		"documents": [
+			2,
+			5,
+			6,
+			7,
+			9,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			18
+		]
+	},
+	{
+		"id": "uyXmwLGoFqU2",
+		"operation": {
+			"scores.subject": "math"
+		},
+		"documents": [
+			1,
+			2,
+			6,
+			7,
+			9,
+			10,
+			12,
+			13,
+			15,
+			17,
+			20
+		]
+	},
+	{
+		"id": "bW9B6QwnF5d1",
+		"operation": {
+			"scores": {
+				"$elemMatch": {
+					"subject": "math",
+					"score": {
+						"$gte": 90
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			2,
+			7,
+			13
+		]
+	},
+	{
+		"id": "vW955KXRzaI8",
+		"operation": {
+			"scores.subject": "math",
+			"scores.score": {
+				"$gte": 90
+			}
+		},
+		"documents": [
+			1,
+			2,
+			6,
+			7,
+			9,
+			12,
+			13,
+			15,
+			17
+		]
+	}
+]
