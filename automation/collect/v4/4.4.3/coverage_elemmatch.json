@@ -73,31 +73,39 @@
 		"documents": []
 	},
 	{
-		"id": "gKJSV0YBNzKB",
+		"id": "oOz0ewr8TCOK",
+		"operation": {},
+		"documents": [
+			0,
+			1
+		]
+	},
+	{
+		"id": "uaAL2TUKKVKn",
 		"operation": {
 			"ratings": {
 				"$elemMatch": {
-					"priority": {
+					"capacity": {
 						"$ne": 34
 					},
 					"$or": [
 						{
-							"capacity": 35
+							"attempts": 35
 						},
 						{
-							"capacity": 36
+							"attempts": 36
 						}
 					]
 				}
 			},
 			"$or": [
 				{
-					"attempts": 37,
-					"quantity": 38
+					"quantity": 37,
+					"size": 38
 				},
 				{
-					"attempts": 39,
-					"quantity": 40
+					"quantity": 39,
+					"size": 40
 				}
 			]
 		},
@@ -364,19 +372,19 @@
 		"documents": []
 	},
 	{
-		"id": "be05LKtu3HHK",
+		"id": "wtBKNA9mAGzq",
 		"operation": {
 			"ratings": {
 				"$elemMatch": 42
 			},
 			"$or": [
 				{
-					"attempts": 37,
-					"quantity": 38
+					"quantity": 37,
+					"size": 38
 				},
 				{
-					"attempts": 39,
-					"quantity": 40
+					"quantity": 39,
+					"size": 40
 				}
 			]
 		},
@@ -387,93 +395,93 @@
 		}
 	},
 	{
-		"id": "cFPzY5dOOzcg",
+		"id": "oJUfdU2mABwQ",
 		"operation": {
 			"ratings": {
 				"$elemMatch": {
-					"priority": {
+					"capacity": {
 						"$ne": null
 					},
 					"$or": [
 						{
-							"capacity": null
+							"attempts": null
 						},
 						{
-							"capacity": null
+							"attempts": null
 						}
 					]
 				}
 			},
 			"$or": [
 				{
-					"attempts": null,
-					"quantity": null
+					"quantity": null,
+					"size": null
 				},
 				{
-					"attempts": null,
-					"quantity": null
+					"quantity": null,
+					"size": null
 				}
 			]
 		},
 		"documents": []
 	},
 	{
-		"id": "bAq0BLoQA9Gx",
+		"id": "pdJeMQQPQfzS",
 		"operation": {
 			"ratings": {
 				"$elemMatch": {
-					"priority": {
+					"capacity": {
 						"$ne": "value"
 					},
 					"$or": [
 						{
-							"capacity": "value"
+							"attempts": "value"
 						},
 						{
-							"capacity": "value"
+							"attempts": "value"
 						}
 					]
 				}
 			},
 			"$or": [
 				{
-					"attempts": "value",
-					"quantity": "value"
+					"quantity": "value",
+					"size": "value"
 				},
 				{
-					"attempts": "value",
-					"quantity": "value"
+					"quantity": "value",
+					"size": "value"
 				}
 			]
 		},
 		"documents": []
 	},
 	{
-		"id": "fdYk70zhqu33",
+		"id": "tCU0gIRMvuVS",
 		"operation": {
 			"ratings": {
 				"$elemMatch": {
-					"priority": {
+					"capacity": {
 						"$ne": true
 					},
 					"$or": [
 						{
-							"capacity": true
+							"attempts": true
 						},
 						{
-							"capacity": true
+							"attempts": true
 						}
 					]
 				}
 			},
 			"$or": [
 				{
-					"attempts": true,
-					"quantity": true
+					"quantity": true,
+					"size": true
 				},
 				{
-					"attempts": true,
-					"quantity": true
+					"quantity": true,
+					"size": true
 				}
 			]
 		},
