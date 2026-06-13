@@ -738,6 +738,19 @@
 		"documents": []
 	},
 	{
+		"id": "nSKd1V6kDcf2",
+		"operation": {
+			"title": {
+				"$not": {}
+			}
+		},
+		"error": {
+			"message": "$not argument must be a non-empty object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
 		"id": "ryAC2INRlV8l",
 		"operation": {
 			"$and": [
@@ -911,17 +924,6 @@
 			3,
 			4
 		]
-	},
-	{
-		"id": "eCQJHDZJbMm8",
-		"operation": {
-			"$where": "Couple"
-		},
-		"error": {
-			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
-			"code": 139,
-			"type": "MongoServerError"
-		}
 	},
 	{
 		"id": "h4E9izIe79v4",
@@ -1103,15 +1105,6 @@
 		"documents": []
 	},
 	{
-		"id": "vIBFliiuMduI",
-		"operation": {
-			"title": {
-				"$gt": 31
-			}
-		},
-		"documents": []
-	},
-	{
 		"id": "urFhqRhzTST0",
 		"operation": {
 			"title": {
@@ -1661,6 +1654,15 @@
 		]
 	},
 	{
+		"id": "h1IGM7GQSUGV",
+		"operation": {
+			"title": 26
+		},
+		"documents": [
+			3
+		]
+	},
+	{
 		"id": "uNgYWywXG7Hl",
 		"operation": {
 			"$or": [
@@ -1995,6 +1997,21 @@
 		},
 		"documents": [
 			3
+		]
+	},
+	{
+		"id": "pkhzWC81QXy0",
+		"operation": {
+			"title": {
+				"$ne": 27
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
 		]
 	},
 	{
@@ -3525,39 +3542,6 @@
 		},
 		"error": {
 			"message": "$and argument's entries must be objects",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "gEWAJcSV6jSN",
-		"operation": {
-			"$where": null
-		},
-		"error": {
-			"message": "$where got bad type",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "vVxL2hsXrepR",
-		"operation": {
-			"$where": 42
-		},
-		"error": {
-			"message": "$where got bad type",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "nFvLMDTVMpsv",
-		"operation": {
-			"$where": true
-		},
-		"error": {
-			"message": "$where got bad type",
 			"code": 2,
 			"type": "MongoServerError"
 		}
@@ -5300,6 +5284,73 @@
 		"documents": []
 	},
 	{
+		"id": "qHPCvKg41n4Y",
+		"operation": {
+			"title": null
+		},
+		"documents": [
+			0,
+			1,
+			2
+		]
+	},
+	{
+		"id": "vZibMJVClQeK",
+		"operation": {
+			"title": "value"
+		},
+		"documents": []
+	},
+	{
+		"id": "c6THdYUrGeAg",
+		"operation": {
+			"title": true
+		},
+		"documents": []
+	},
+	{
+		"id": "nEpz5AEWV6hU",
+		"operation": {
+			"title": {
+				"$ne": null
+			}
+		},
+		"documents": [
+			3,
+			4
+		]
+	},
+	{
+		"id": "q0Zy3DmnL3v2",
+		"operation": {
+			"title": {
+				"$ne": "value"
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	{
+		"id": "hOetPOPKDcX9",
+		"operation": {
+			"title": {
+				"$ne": true
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	{
 		"id": "fOoTK54SUCHH",
 		"operation": {
 			"$and": [
@@ -6472,48 +6523,6 @@
 					]
 				}
 			]
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4
-		]
-	},
-	{
-		"id": "nEpz5AEWV6hU",
-		"operation": {
-			"title": {
-				"$ne": null
-			}
-		},
-		"documents": [
-			3,
-			4
-		]
-	},
-	{
-		"id": "q0Zy3DmnL3v2",
-		"operation": {
-			"title": {
-				"$ne": "value"
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4
-		]
-	},
-	{
-		"id": "hOetPOPKDcX9",
-		"operation": {
-			"title": {
-				"$ne": true
-			}
 		},
 		"documents": [
 			0,
