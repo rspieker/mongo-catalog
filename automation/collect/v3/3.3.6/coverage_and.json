@@ -254,7 +254,7 @@
 			"$where": "Double"
 		},
 		"error": {
-			"message": "ReferenceError: Double is not defined :\n_funcs4@:1:24\n",
+			"message": "ReferenceError: Double is not defined :\n_funcs3@:1:24\n",
 			"code": 139,
 			"type": "MongoError"
 		}
@@ -579,7 +579,7 @@
 			"$where": "Double"
 		},
 		"error": {
-			"message": "ReferenceError: Double is not defined :\n_funcs3@:1:24\n",
+			"message": "ReferenceError: Double is not defined :\n_funcs2@:1:24\n",
 			"code": 139,
 			"type": "MongoError"
 		}
@@ -736,6 +736,19 @@
 			"title": {}
 		},
 		"documents": []
+	},
+	{
+		"id": "nSKd1V6kDcf2",
+		"operation": {
+			"title": {
+				"$not": {}
+			}
+		},
+		"error": {
+			"message": "$not cannot be empty",
+			"code": 2,
+			"type": "MongoError"
+		}
 	},
 	{
 		"id": "ryAC2INRlV8l",
@@ -911,17 +924,6 @@
 			3,
 			4
 		]
-	},
-	{
-		"id": "eCQJHDZJbMm8",
-		"operation": {
-			"$where": "Couple"
-		},
-		"error": {
-			"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
-			"code": 139,
-			"type": "MongoError"
-		}
 	},
 	{
 		"id": "h4E9izIe79v4",
@@ -1103,15 +1105,6 @@
 		"documents": []
 	},
 	{
-		"id": "vIBFliiuMduI",
-		"operation": {
-			"title": {
-				"$gt": 31
-			}
-		},
-		"documents": []
-	},
-	{
 		"id": "urFhqRhzTST0",
 		"operation": {
 			"title": {
@@ -1661,6 +1654,15 @@
 		]
 	},
 	{
+		"id": "h1IGM7GQSUGV",
+		"operation": {
+			"title": 26
+		},
+		"documents": [
+			3
+		]
+	},
+	{
 		"id": "uNgYWywXG7Hl",
 		"operation": {
 			"$or": [
@@ -1995,6 +1997,21 @@
 		},
 		"documents": [
 			3
+		]
+	},
+	{
+		"id": "pkhzWC81QXy0",
+		"operation": {
+			"title": {
+				"$ne": 27
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
 		]
 	},
 	{
@@ -3530,39 +3547,6 @@
 		}
 	},
 	{
-		"id": "gEWAJcSV6jSN",
-		"operation": {
-			"$where": null
-		},
-		"error": {
-			"message": "$where got bad type",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "vVxL2hsXrepR",
-		"operation": {
-			"$where": 42
-		},
-		"error": {
-			"message": "$where got bad type",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "nFvLMDTVMpsv",
-		"operation": {
-			"$where": true
-		},
-		"error": {
-			"message": "$where got bad type",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
 		"id": "qy17KbDLTN2v",
 		"operation": {
 			"title": null,
@@ -3637,7 +3621,7 @@
 			]
 		},
 		"error": {
-			"message": "ReferenceError: Couple is not defined :\n_funcs2@:1:24\n",
+			"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
 			"code": 139,
 			"type": "MongoError"
 		}
@@ -3727,7 +3711,7 @@
 			]
 		},
 		"error": {
-			"message": "ReferenceError: Couple is not defined :\n_funcs1@:1:24\n",
+			"message": "ReferenceError: Couple is not defined :\n_funcs2@:1:24\n",
 			"code": 139,
 			"type": "MongoError"
 		}
@@ -5300,6 +5284,73 @@
 		"documents": []
 	},
 	{
+		"id": "qHPCvKg41n4Y",
+		"operation": {
+			"title": null
+		},
+		"documents": [
+			0,
+			1,
+			2
+		]
+	},
+	{
+		"id": "vZibMJVClQeK",
+		"operation": {
+			"title": "value"
+		},
+		"documents": []
+	},
+	{
+		"id": "c6THdYUrGeAg",
+		"operation": {
+			"title": true
+		},
+		"documents": []
+	},
+	{
+		"id": "nEpz5AEWV6hU",
+		"operation": {
+			"title": {
+				"$ne": null
+			}
+		},
+		"documents": [
+			3,
+			4
+		]
+	},
+	{
+		"id": "q0Zy3DmnL3v2",
+		"operation": {
+			"title": {
+				"$ne": "value"
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	{
+		"id": "hOetPOPKDcX9",
+		"operation": {
+			"title": {
+				"$ne": true
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	{
 		"id": "fOoTK54SUCHH",
 		"operation": {
 			"$and": [
@@ -6472,48 +6523,6 @@
 					]
 				}
 			]
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4
-		]
-	},
-	{
-		"id": "nEpz5AEWV6hU",
-		"operation": {
-			"title": {
-				"$ne": null
-			}
-		},
-		"documents": [
-			3,
-			4
-		]
-	},
-	{
-		"id": "q0Zy3DmnL3v2",
-		"operation": {
-			"title": {
-				"$ne": "value"
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4
-		]
-	},
-	{
-		"id": "hOetPOPKDcX9",
-		"operation": {
-			"title": {
-				"$ne": true
-			}
 		},
 		"documents": [
 			0,
