@@ -926,24 +926,13 @@
 		]
 	},
 	{
-		"id": "eCQJHDZJbMm8",
-		"operation": {
-			"$where": "Couple"
-		},
-		"error": {
-			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
-			"code": 139,
-			"type": "MongoServerError"
-		}
-	},
-	{
 		"id": "h4E9izIe79v4",
 		"operation": {
 			"title": 26,
 			"$where": "Couple"
 		},
 		"error": {
-			"message": "error while multiplanner was selecting best plan :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -959,7 +948,7 @@
 			]
 		},
 		"error": {
-			"message": "error while multiplanner was selecting best plan :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -977,7 +966,7 @@
 			]
 		},
 		"error": {
-			"message": "error while multiplanner was selecting best plan :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -993,7 +982,7 @@
 			]
 		},
 		"error": {
-			"message": "error while multiplanner was selecting best plan :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -1013,7 +1002,7 @@
 			]
 		},
 		"error": {
-			"message": "error while multiplanner was selecting best plan :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -1112,121 +1101,6 @@
 					]
 				}
 			]
-		},
-		"documents": []
-	},
-	{
-		"id": "vIBFliiuMduI",
-		"operation": {
-			"title": {
-				"$gt": 31
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "urFhqRhzTST0",
-		"operation": {
-			"title": {
-				"$lt": 28
-			}
-		},
-		"documents": [
-			3
-		]
-	},
-	{
-		"id": "wqPXhC6KC13w",
-		"operation": {
-			"$or": [
-				{
-					"title": {
-						"$gt": 33
-					}
-				},
-				{
-					"score": {
-						"$lt": 27
-					}
-				}
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "sKegwAmCLkmA",
-		"operation": {
-			"$or": [
-				{
-					"title": {
-						"$gt": 33
-					}
-				},
-				{
-					"$and": [
-						{
-							"score": {
-								"$lt": 30
-							}
-						},
-						{
-							"$or": [
-								{
-									"rank": {
-										"$lt": 30
-									}
-								},
-								{
-									"level": 26
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "uEK0q5YA5iWD",
-		"operation": {
-			"$or": [
-				{
-					"$and": [
-						{
-							"title": {
-								"$gt": 30
-							}
-						},
-						{
-							"rank": {
-								"$gt": 27
-							}
-						}
-					]
-				},
-				{
-					"$and": [
-						{
-							"score": {
-								"$lt": 30
-							}
-						},
-						{
-							"level": 26
-						}
-					]
-				}
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "vIBFliiuMduI",
-		"operation": {
-			"title": {
-				"$gt": 31
-			}
 		},
 		"documents": []
 	},
@@ -3673,46 +3547,13 @@
 		}
 	},
 	{
-		"id": "gEWAJcSV6jSN",
-		"operation": {
-			"$where": null
-		},
-		"error": {
-			"message": "$where got bad type",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "vVxL2hsXrepR",
-		"operation": {
-			"$where": 42
-		},
-		"error": {
-			"message": "$where got bad type",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "nFvLMDTVMpsv",
-		"operation": {
-			"$where": true
-		},
-		"error": {
-			"message": "$where got bad type",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
 		"id": "qy17KbDLTN2v",
 		"operation": {
 			"title": null,
 			"$where": "Couple"
 		},
 		"error": {
-			"message": "error while multiplanner was selecting best plan :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -3780,7 +3621,7 @@
 			]
 		},
 		"error": {
-			"message": "ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -3870,7 +3711,7 @@
 			]
 		},
 		"error": {
-			"message": "ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -3968,7 +3809,7 @@
 			]
 		},
 		"error": {
-			"message": "ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
@@ -4060,7 +3901,7 @@
 			]
 		},
 		"error": {
-			"message": "ReferenceError: Couple is not defined :\n@:1:15\n",
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
 			"code": 139,
 			"type": "MongoServerError"
 		}
