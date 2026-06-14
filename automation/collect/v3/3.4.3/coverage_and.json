@@ -1,10 +1,10 @@
 [
 	{
-		"id": "uULMAMI2TN15",
+		"id": "uV2vJ8nNnXYD",
 		"operation": {
 			"$and": [
 				{
-					"name": 3
+					"name": 7
 				}
 			]
 		},
@@ -13,14 +13,14 @@
 		]
 	},
 	{
-		"id": "dEDtkCzvlRXu",
+		"id": "lZxISWNc4ASf",
 		"operation": {
 			"$and": [
 				{
-					"name": 3
+					"name": 7
 				},
 				{
-					"name": 4
+					"name": 8
 				}
 			]
 		},
@@ -29,17 +29,17 @@
 		]
 	},
 	{
-		"id": "hPJXCTPjjXDG",
+		"id": "b7flDhAJofMR",
 		"operation": {
 			"$and": [
 				{
-					"name": 3
+					"name": 7
 				},
 				{
-					"name": 4
+					"name": 8
 				},
 				{
-					"name": 5
+					"name": 9
 				}
 			]
 		},
@@ -73,12 +73,12 @@
 		"documents": []
 	},
 	{
-		"id": "pDNhRtTt0yeW",
+		"id": "vwi4fsf1lK8V",
 		"operation": {
-			"name": 4,
+			"name": 8,
 			"$and": [
 				{
-					"name": 3
+					"name": 7
 				}
 			]
 		},
@@ -87,12 +87,12 @@
 		]
 	},
 	{
-		"id": "bp3gOObhxTRC",
+		"id": "pvkAj3yL7d2d",
 		"operation": {
-			"name": 3,
+			"name": 7,
 			"$and": [
 				{
-					"name": 3
+					"name": 7
 				}
 			]
 		},
@@ -101,14 +101,14 @@
 		]
 	},
 	{
-		"id": "uq6uYXql5OXn",
+		"id": "dBDnTuUWEOvm",
 		"operation": {
-			"name": 4,
+			"name": 8,
 			"$and": [
 				{
 					"$and": [
 						{
-							"name": 3
+							"name": 7
 						}
 					]
 				}
@@ -119,14 +119,14 @@
 		]
 	},
 	{
-		"id": "pYzsTRL6bhj7",
+		"id": "oIylHRNswic9",
 		"operation": {
-			"name": 3,
+			"name": 7,
 			"$and": [
 				{
 					"$and": [
 						{
-							"name": 3
+							"name": 7
 						}
 					]
 				}
@@ -137,16 +137,16 @@
 		]
 	},
 	{
-		"id": "okiUCUmgubvB",
+		"id": "otYwY4nIN5Dk",
 		"operation": {
 			"$and": [
 				{
-					"name": 4
+					"name": 8
 				},
 				{
 					"$and": [
 						{
-							"name": 3
+							"name": 7
 						}
 					]
 				}
@@ -157,16 +157,16 @@
 		]
 	},
 	{
-		"id": "c0FiXFYNVMQr",
+		"id": "oRKs848BglH2",
 		"operation": {
 			"$and": [
 				{
-					"name": 3
+					"name": 7
 				},
 				{
 					"$and": [
 						{
-							"name": 3
+							"name": 7
 						}
 					]
 				}
@@ -233,12 +233,12 @@
 		"documents": []
 	},
 	{
-		"id": "i8r3CfOZqSO2",
+		"id": "aoZMNcZrgyNH",
 		"operation": {
 			"$and": [
 				{
 					"name": {
-						"$gt": 2
+						"$gt": 6
 					}
 				}
 			]
@@ -254,7 +254,332 @@
 			"$where": "Double"
 		},
 		"error": {
+			"message": "ReferenceError: Double is not defined :\n_funcs4@:1:24\n",
+			"code": 139,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "rvZhE0tqh7aF",
+		"operation": {
+			"$and": [
+				{
+					"name": "Abundant"
+				}
+			],
+			"$where": "Double"
+		},
+		"error": {
+			"message": "ReferenceError: Double is not defined :\n_funcs4@:1:24\n",
+			"code": 139,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "t33vTPruinYI",
+		"operation": {
+			"$and": [
+				{
+					"$where": "Double"
+				}
+			]
+		},
+		"error": {
+			"message": "ReferenceError: Double is not defined :\n_funcs4@:1:24\n",
+			"code": 139,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "dM3qe27T5qmX",
+		"operation": {
+			"$and": [
+				{
+					"name": "Abundant"
+				},
+				{
+					"$where": "Double"
+				}
+			]
+		},
+		"error": {
 			"message": "ReferenceError: Double is not defined :\n_funcs2@:1:24\n",
+			"code": 139,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "lizXhSV8B80r",
+		"operation": {
+			"$and": [
+				{
+					"$where": "Double"
+				}
+			],
+			"$where": "Double"
+		},
+		"error": {
+			"message": "ReferenceError: Double is not defined :\n_funcs2@:1:24\n",
+			"code": 139,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "uV2vJ8nNnXYD",
+		"operation": {
+			"$and": [
+				{
+					"name": 7
+				}
+			]
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "lZxISWNc4ASf",
+		"operation": {
+			"$and": [
+				{
+					"name": 7
+				},
+				{
+					"name": 8
+				}
+			]
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "b7flDhAJofMR",
+		"operation": {
+			"$and": [
+				{
+					"name": 7
+				},
+				{
+					"name": 8
+				},
+				{
+					"name": 9
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "vqRoEKnjixB3",
+		"operation": {
+			"$and": [
+				{
+					"name": "Abundant"
+				}
+			]
+		},
+		"documents": [
+			1
+		]
+	},
+	{
+		"id": "kMMQJ3oOg9Hb",
+		"operation": {
+			"$and": [
+				{
+					"name": "Abundant"
+				},
+				{
+					"name": "Couple"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "vwi4fsf1lK8V",
+		"operation": {
+			"name": 8,
+			"$and": [
+				{
+					"name": 7
+				}
+			]
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "pvkAj3yL7d2d",
+		"operation": {
+			"name": 7,
+			"$and": [
+				{
+					"name": 7
+				}
+			]
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "dBDnTuUWEOvm",
+		"operation": {
+			"name": 8,
+			"$and": [
+				{
+					"$and": [
+						{
+							"name": 7
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "oIylHRNswic9",
+		"operation": {
+			"name": 7,
+			"$and": [
+				{
+					"$and": [
+						{
+							"name": 7
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "otYwY4nIN5Dk",
+		"operation": {
+			"$and": [
+				{
+					"name": 8
+				},
+				{
+					"$and": [
+						{
+							"name": 7
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "oRKs848BglH2",
+		"operation": {
+			"$and": [
+				{
+					"name": 7
+				},
+				{
+					"$and": [
+						{
+							"name": 7
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "cbpcQTTGxOts",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "aFfrtP5iRz97",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				},
+				{
+					"name": {}
+				},
+				{
+					"name": {}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "lOJvXLEy3AZf",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				},
+				{
+					"name": {}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "b9CQULXWWQF8",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				},
+				{
+					"name": "Abundant"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "aoZMNcZrgyNH",
+		"operation": {
+			"$and": [
+				{
+					"name": {
+						"$gt": 6
+					}
+				}
+			]
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "pO9CLUjLkcLl",
+		"operation": {
+			"name": "Abundant",
+			"$where": "Double"
+		},
+		"error": {
+			"message": "ReferenceError: Double is not defined :\n_funcs3@:1:24\n",
 			"code": 139,
 			"type": "MongoError"
 		}
@@ -325,9 +650,9 @@
 		}
 	},
 	{
-		"id": "qmDBtoM6PO6Q",
+		"id": "lVLUMdKq4Q0k",
 		"operation": {
-			"$and": 6
+			"$and": 10
 		},
 		"error": {
 			"message": "$and must be an array",
@@ -347,10 +672,10 @@
 		}
 	},
 	{
-		"id": "cd3qghEFyYo0",
+		"id": "qD8jLAYDLFco",
 		"operation": {
 			"$and": [
-				6
+				10
 			]
 		},
 		"error": {
@@ -358,6 +683,52 @@
 			"code": 2,
 			"type": "MongoError"
 		}
+	},
+	{
+		"id": "lVLUMdKq4Q0k",
+		"operation": {
+			"$and": 10
+		},
+		"error": {
+			"message": "$and must be an array",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "eHaoCnERN88o",
+		"operation": {
+			"$and": []
+		},
+		"error": {
+			"message": "$and/$or/$nor must be a nonempty array",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "qD8jLAYDLFco",
+		"operation": {
+			"$and": [
+				10
+			]
+		},
+		"error": {
+			"message": "$or/$and/$nor entries need to be full objects",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "oOz0ewr8TCOK",
+		"operation": {},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
 	},
 	{
 		"id": "wDbGh2L8Mcv2",
@@ -440,7 +811,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -549,19 +921,9 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
-	},
-	{
-		"id": "eCQJHDZJbMm8",
-		"operation": {
-			"$where": "Couple"
-		},
-		"error": {
-			"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
-			"code": 139,
-			"type": "MongoError"
-		}
 	},
 	{
 		"id": "h4E9izIe79v4",
@@ -653,7 +1015,104 @@
 			}
 		},
 		"documents": [
-			2
+			3
+		]
+	},
+	{
+		"id": "wqPXhC6KC13w",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": 33
+					}
+				},
+				{
+					"score": {
+						"$lt": 27
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "sKegwAmCLkmA",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": 33
+					}
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": 30
+							}
+						},
+						{
+							"$or": [
+								{
+									"rank": {
+										"$lt": 30
+									}
+								},
+								{
+									"level": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "uEK0q5YA5iWD",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$gt": 30
+							}
+						},
+						{
+							"rank": {
+								"$gt": 27
+							}
+						}
+					]
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": 30
+							}
+						},
+						{
+							"level": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "urFhqRhzTST0",
+		"operation": {
+			"title": {
+				"$lt": 28
+			}
+		},
+		"documents": [
+			3
 		]
 	},
 	{
@@ -759,7 +1218,7 @@
 			}
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -856,121 +1315,6 @@
 			}
 		},
 		"documents": []
-	},
-	{
-		"id": "urFhqRhzTST0",
-		"operation": {
-			"title": {
-				"$lt": 28
-			}
-		},
-		"documents": [
-			2
-		]
-	},
-	{
-		"id": "wqPXhC6KC13w",
-		"operation": {
-			"$or": [
-				{
-					"title": {
-						"$gt": 33
-					}
-				},
-				{
-					"score": {
-						"$lt": 27
-					}
-				}
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "sKegwAmCLkmA",
-		"operation": {
-			"$or": [
-				{
-					"title": {
-						"$gt": 33
-					}
-				},
-				{
-					"$and": [
-						{
-							"score": {
-								"$lt": 30
-							}
-						},
-						{
-							"$or": [
-								{
-									"rank": {
-										"$lt": 30
-									}
-								},
-								{
-									"level": 26
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "uEK0q5YA5iWD",
-		"operation": {
-			"$or": [
-				{
-					"$and": [
-						{
-							"title": {
-								"$gt": 30
-							}
-						},
-						{
-							"rank": {
-								"$gt": 27
-							}
-						}
-					]
-				},
-				{
-					"$and": [
-						{
-							"score": {
-								"$lt": 30
-							}
-						},
-						{
-							"level": 26
-						}
-					]
-				}
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "vIBFliiuMduI",
-		"operation": {
-			"title": {
-				"$gt": 31
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "h1IGM7GQSUGV",
-		"operation": {
-			"title": 26
-		},
-		"documents": [
-			2
-		]
 	},
 	{
 		"id": "uNgYWywXG7Hl",
@@ -982,7 +1326,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -999,7 +1343,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -1016,7 +1360,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -1033,7 +1377,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -1050,7 +1394,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -1071,7 +1415,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -1092,7 +1436,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -1113,7 +1457,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -1134,7 +1478,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -1150,7 +1494,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1167,7 +1512,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -1187,7 +1532,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1207,7 +1553,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1231,7 +1578,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1255,7 +1603,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1279,7 +1628,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1300,7 +1650,353 @@
 			]
 		},
 		"documents": [
-			2
+			3
+		]
+	},
+	{
+		"id": "h1IGM7GQSUGV",
+		"operation": {
+			"title": 26
+		},
+		"documents": [
+			3
+		]
+	},
+	{
+		"id": "uNgYWywXG7Hl",
+		"operation": {
+			"$or": [
+				{
+					"title": 26
+				}
+			]
+		},
+		"documents": [
+			3
+		]
+	},
+	{
+		"id": "mL5RSXsDObpI",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		]
+	},
+	{
+		"id": "vuGLJITyQT1p",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		]
+	},
+	{
+		"id": "rOXf0N5G0b5D",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		]
+	},
+	{
+		"id": "kZBG0Vq00EGE",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		]
+	},
+	{
+		"id": "nThJFHphKS9s",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		]
+	},
+	{
+		"id": "ivFSBjPxKJ6y",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		]
+	},
+	{
+		"id": "uRP5Cyt345Qi",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		]
+	},
+	{
+		"id": "uB0q4IgRbQd0",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		]
+	},
+	{
+		"id": "sD2GXYJSMPXf",
+		"operation": {
+			"$nor": [
+				{
+					"title": 27
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	{
+		"id": "lgIIsOzBCZPe",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		]
+	},
+	{
+		"id": "peTyzTtVutcr",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": 27
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	{
+		"id": "pya2HdQb5KzR",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": 27
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	{
+		"id": "cQ6W01d2fatA",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": 27
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	{
+		"id": "dxDXEznt9UPD",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": 27
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	{
+		"id": "tIKHgt4qJf6i",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": 27
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	{
+		"id": "d6ArPx6STwQh",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
 		]
 	},
 	{
@@ -1314,7 +2010,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1332,7 +2029,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1350,7 +2048,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1372,7 +2071,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1394,7 +2094,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1416,7 +2117,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1438,7 +2140,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1464,7 +2167,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1490,7 +2194,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1516,7 +2221,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1542,7 +2248,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1557,7 +2264,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -1579,7 +2286,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1598,7 +2306,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -1617,7 +2325,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -1640,7 +2348,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -1663,7 +2371,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -1686,7 +2394,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -1712,7 +2420,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1726,7 +2435,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1744,7 +2454,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1762,7 +2473,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1784,7 +2496,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1806,7 +2519,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1828,7 +2542,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1850,7 +2565,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1876,7 +2592,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1902,7 +2619,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1928,7 +2646,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1954,7 +2673,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -1969,7 +2689,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -1991,7 +2711,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -2010,7 +2731,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -2029,7 +2750,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -2052,7 +2773,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -2075,7 +2796,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -2098,7 +2819,7 @@
 			]
 		},
 		"documents": [
-			2
+			3
 		]
 	},
 	{
@@ -2124,7 +2845,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -2138,7 +2860,8 @@
 		},
 		"documents": [
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -2177,7 +2900,8 @@
 		},
 		"documents": [
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -2225,7 +2949,8 @@
 		},
 		"documents": [
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -2299,7 +3024,8 @@
 		},
 		"documents": [
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -2342,7 +3068,8 @@
 		},
 		"documents": [
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -2395,7 +3122,8 @@
 		},
 		"documents": [
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -2819,46 +3547,13 @@
 		}
 	},
 	{
-		"id": "gEWAJcSV6jSN",
-		"operation": {
-			"$where": null
-		},
-		"error": {
-			"message": "$where got bad type",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "vVxL2hsXrepR",
-		"operation": {
-			"$where": 42
-		},
-		"error": {
-			"message": "$where got bad type",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "nFvLMDTVMpsv",
-		"operation": {
-			"$where": true
-		},
-		"error": {
-			"message": "$where got bad type",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
 		"id": "qy17KbDLTN2v",
 		"operation": {
 			"title": null,
 			"$where": "Couple"
 		},
 		"error": {
-			"message": "ReferenceError: Couple is not defined :\n_funcs1@:1:24\n",
+			"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
 			"code": 139,
 			"type": "MongoError"
 		}
@@ -2926,7 +3621,7 @@
 			]
 		},
 		"error": {
-			"message": "ReferenceError: Couple is not defined :\n_funcs1@:1:24\n",
+			"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
 			"code": 139,
 			"type": "MongoError"
 		}
@@ -3320,7 +4015,7 @@
 			}
 		},
 		"documents": [
-			3
+			4
 		]
 	},
 	{
@@ -3618,30 +4313,6 @@
 		"documents": []
 	},
 	{
-		"id": "qHPCvKg41n4Y",
-		"operation": {
-			"title": null
-		},
-		"documents": [
-			0,
-			1
-		]
-	},
-	{
-		"id": "vZibMJVClQeK",
-		"operation": {
-			"title": "value"
-		},
-		"documents": []
-	},
-	{
-		"id": "c6THdYUrGeAg",
-		"operation": {
-			"title": true
-		},
-		"documents": []
-	},
-	{
 		"id": "r3z1X3OT4TOU",
 		"operation": {
 			"$or": [
@@ -3652,7 +4323,8 @@
 		},
 		"documents": [
 			0,
-			1
+			1,
+			2
 		]
 	},
 	{
@@ -3692,7 +4364,8 @@
 		},
 		"documents": [
 			0,
-			1
+			1,
+			2
 		]
 	},
 	{
@@ -3740,7 +4413,8 @@
 		},
 		"documents": [
 			0,
-			1
+			1,
+			2
 		]
 	},
 	{
@@ -3788,7 +4462,8 @@
 		},
 		"documents": [
 			0,
-			1
+			1,
+			2
 		]
 	},
 	{
@@ -3836,7 +4511,8 @@
 		},
 		"documents": [
 			0,
-			1
+			1,
+			2
 		]
 	},
 	{
@@ -3888,7 +4564,8 @@
 		},
 		"documents": [
 			0,
-			1
+			1,
+			2
 		]
 	},
 	{
@@ -3948,7 +4625,8 @@
 		},
 		"documents": [
 			0,
-			1
+			1,
+			2
 		]
 	},
 	{
@@ -4008,7 +4686,8 @@
 		},
 		"documents": [
 			0,
-			1
+			1,
+			2
 		]
 	},
 	{
@@ -4068,7 +4747,8 @@
 		},
 		"documents": [
 			0,
-			1
+			1,
+			2
 		]
 	},
 	{
@@ -4119,8 +4799,8 @@
 			]
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4136,7 +4816,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4152,7 +4833,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4170,7 +4852,8 @@
 		},
 		"documents": [
 			0,
-			1
+			1,
+			2
 		]
 	},
 	{
@@ -4217,8 +4900,8 @@
 			]
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4238,7 +4921,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4258,7 +4942,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4275,8 +4960,8 @@
 			]
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4296,7 +4981,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4316,7 +5002,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4337,8 +5024,8 @@
 			]
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4362,7 +5049,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4386,7 +5074,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4407,8 +5096,8 @@
 			]
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4432,7 +5121,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4456,7 +5146,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4477,8 +5168,8 @@
 			]
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4502,7 +5193,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4526,7 +5218,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4548,7 +5241,8 @@
 		},
 		"documents": [
 			0,
-			1
+			1,
+			2
 		]
 	},
 	{
@@ -4590,6 +5284,31 @@
 		"documents": []
 	},
 	{
+		"id": "qHPCvKg41n4Y",
+		"operation": {
+			"title": null
+		},
+		"documents": [
+			0,
+			1,
+			2
+		]
+	},
+	{
+		"id": "vZibMJVClQeK",
+		"operation": {
+			"title": "value"
+		},
+		"documents": []
+	},
+	{
+		"id": "c6THdYUrGeAg",
+		"operation": {
+			"title": true
+		},
+		"documents": []
+	},
+	{
 		"id": "nEpz5AEWV6hU",
 		"operation": {
 			"title": {
@@ -4597,8 +5316,8 @@
 			}
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4612,7 +5331,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4626,7 +5346,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4641,8 +5362,8 @@
 			]
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4660,7 +5381,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4678,7 +5400,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4693,8 +5416,8 @@
 			]
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4712,7 +5435,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4730,7 +5454,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4749,8 +5474,8 @@
 			]
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4772,7 +5497,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4794,7 +5520,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4813,8 +5540,8 @@
 			]
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4836,7 +5563,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4858,7 +5586,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4877,8 +5606,8 @@
 			]
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4900,7 +5629,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4922,7 +5652,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4941,8 +5672,8 @@
 			]
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4964,7 +5695,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -4986,7 +5718,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -5009,8 +5742,8 @@
 			]
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -5036,7 +5769,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -5062,7 +5796,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -5085,8 +5820,8 @@
 			]
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -5112,7 +5847,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -5138,7 +5874,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -5161,8 +5898,8 @@
 			]
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -5188,7 +5925,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -5214,7 +5952,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -5237,8 +5976,8 @@
 			]
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -5264,7 +6003,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -5290,7 +6030,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -5306,7 +6047,8 @@
 		},
 		"documents": [
 			0,
-			1
+			1,
+			2
 		]
 	},
 	{
@@ -5351,8 +6093,8 @@
 			]
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -5374,7 +6116,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -5396,7 +6139,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -5416,7 +6160,8 @@
 		},
 		"documents": [
 			0,
-			1
+			1,
+			2
 		]
 	},
 	{
@@ -5470,7 +6215,8 @@
 		},
 		"documents": [
 			0,
-			1
+			1,
+			2
 		]
 	},
 	{
@@ -5528,7 +6274,8 @@
 		},
 		"documents": [
 			0,
-			1
+			1,
+			2
 		]
 	},
 	{
@@ -5594,7 +6341,8 @@
 		},
 		"documents": [
 			0,
-			1
+			1,
+			2
 		]
 	},
 	{
@@ -5660,7 +6408,8 @@
 		},
 		"documents": [
 			0,
-			1
+			1,
+			2
 		]
 	},
 	{
@@ -5725,8 +6474,8 @@
 			]
 		},
 		"documents": [
-			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -5752,7 +6501,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	},
 	{
@@ -5778,7 +6528,8 @@
 			0,
 			1,
 			2,
-			3
+			3,
+			4
 		]
 	}
 ]

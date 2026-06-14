@@ -49,6 +49,16 @@
 		"documents": []
 	},
 	{
+		"id": "cixPyMluXV2g",
+		"operation": {
+			"score": {
+				"$gt": 36,
+				"$lte": 86
+			}
+		},
+		"documents": []
+	},
+	{
 		"id": "pOM72ZHSKkyI",
 		"operation": {
 			"rank": 12
@@ -61,6 +71,17 @@
 			"rank": 12
 		},
 		"documents": []
+	},
+	{
+		"id": "bIXooHnYqZF6",
+		"operation": {
+			"$where": {}
+		},
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoError"
+		}
 	},
 	{
 		"id": "e2nmghpSGBaC",
@@ -432,7 +453,7 @@
 			]
 		},
 		"error": {
-			"message": "ReferenceError: Double is not defined :\n_funcs2@:1:24\n",
+			"message": "ReferenceError: Double is not defined :\n_funcs5@:1:24\n",
 			"code": 139,
 			"type": "MongoError"
 		}
@@ -1148,7 +1169,7 @@
 			"$where": "Heavily"
 		},
 		"error": {
-			"message": "ReferenceError: Heavily is not defined :\n_funcs1@:1:24\n",
+			"message": "ReferenceError: Heavily is not defined :\n_funcs4@:1:24\n",
 			"code": 139,
 			"type": "MongoError"
 		}
@@ -1168,7 +1189,7 @@
 			"$where": "Heavily"
 		},
 		"error": {
-			"message": "ReferenceError: Heavily is not defined :\n_funcs1@:1:24\n",
+			"message": "ReferenceError: Heavily is not defined :\n_funcs3@:1:24\n",
 			"code": 139,
 			"type": "MongoError"
 		}
