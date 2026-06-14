@@ -13,279 +13,50 @@
 			4,
 			5,
 			6,
-			7,
-			8,
-			9,
-			10,
 			0
 		]
 	},
 	{
-		"id": "o50ORg5ZO4Mu",
+		"id": "qjwvIOpBsPsn",
 		"operation": {
 			"score": {
-				"$gt": 5,
-				"$lt": 7,
-				"$ne": 6
+				"$ne": {}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6
+		]
+	},
+	{
+		"id": "oxJM5UUwX9Ud",
+		"operation": {
+			"score": {
+				"$gte": {}
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "opiaADuF9Sjj",
+		"id": "kRUyXto9NPmX",
 		"operation": {
-			"scores": {
-				"$ne": [
-					17,
-					19
-				]
+			"score": {
+				"$lte": {}
 			}
 		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
+		"documents": []
 	},
 	{
-		"id": "ulOaKGEo3F1m",
+		"id": "t8CKARWlKaml",
 		"operation": {
 			"scores": {
-				"$ne": [
-					17
-				]
-			}
-		},
-		"documents": [
-			0,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "wS7PwYxHsTi3",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						[
-							17
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "ozBfCOLiFS4e",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						[
-							17,
-							19
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "wCwmzKFTzBkK",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						[
-							17
-						],
-						[
-							17,
-							19
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "wZmqWCVAvblI",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						"Abundant",
-						[
-							17,
-							19
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "v060ykYzeZ1D",
-		"operation": {
-			"ratings": {
 				"$elemMatch": {
-					"$not": {
-						"$eq": [
-							140
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			2,
-			4
-		]
-	},
-	{
-		"id": "oGUOomG3HEOM",
-		"operation": {
-			"ratings": {
-				"$elemMatch": {
-					"$not": {
-						"$in": [
-							[
-								140
-							]
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			2,
-			4
-		]
-	},
-	{
-		"id": "vabcAkxWFbjX",
-		"operation": {
-			"ratings": {
-				"$not": {
-					"$elemMatch": {
-						"$eq": [
-							140
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "wXJqZ17Pmzyp",
-		"operation": {
-			"ratings": {
-				"$not": {
-					"$elemMatch": {
-						"$in": [
-							[
-								140
-							]
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "qvPHRkEBFZBv",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"grade": {
+					"level": {
 						"$ne": [
 							153
 						]
@@ -294,17 +65,17 @@
 			}
 		},
 		"documents": [
-			6,
-			7,
-			8
+			2,
+			3,
+			4
 		]
 	},
 	{
-		"id": "bAGBCD9Qs9cr",
+		"id": "fJSMuRrAc6Bf",
 		"operation": {
-			"counts": {
+			"scores": {
 				"$elemMatch": {
-					"grade": {
+					"level": {
 						"$not": {
 							"$in": [
 								[
@@ -317,18 +88,18 @@
 			}
 		},
 		"documents": [
-			6,
-			7,
-			8
+			2,
+			3,
+			4
 		]
 	},
 	{
-		"id": "rRvRxPxaZZdg",
+		"id": "poEUXHVJMbqo",
 		"operation": {
-			"counts": {
+			"scores": {
 				"$not": {
 					"$elemMatch": {
-						"grade": [
+						"level": [
 							153
 						]
 					}
@@ -340,20 +111,16 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8
+			4
 		]
 	},
 	{
-		"id": "nekBeWpVwCXu",
+		"id": "bhmPYPwBykma",
 		"operation": {
-			"counts": {
+			"scores": {
 				"$not": {
 					"$elemMatch": {
-						"grade": {
+						"level": {
 							"$in": [
 								[
 									153
@@ -369,11 +136,7 @@
 			1,
 			2,
 			3,
-			4,
-			5,
-			6,
-			7,
-			8
+			4
 		]
 	},
 	{
@@ -401,10 +164,6 @@
 			4,
 			5,
 			6,
-			7,
-			8,
-			9,
-			10,
 			0
 		]
 	},
@@ -422,628 +181,13 @@
 			4,
 			5,
 			6,
-			7,
-			8,
-			9,
-			10,
 			0
 		]
 	},
 	{
-		"id": "rECoJrPL076p",
-		"operation": {
-			"score": {
-				"$gt": null,
-				"$lt": null,
-				"$ne": null
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "pSEYYy7GPWqK",
-		"operation": {
-			"score": {
-				"$gt": "value",
-				"$lt": "value",
-				"$ne": "value"
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "gbWI7FJka6dM",
-		"operation": {
-			"score": {
-				"$gt": true,
-				"$lt": true,
-				"$ne": true
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "aGBeWWcuuRkh",
+		"id": "mAcxmXOff8WI",
 		"operation": {
 			"scores": {
-				"$ne": [
-					null,
-					null
-				]
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "gIm9ZsnHySGs",
-		"operation": {
-			"scores": {
-				"$ne": [
-					"value",
-					"value"
-				]
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "pVbBzd7Nn7wa",
-		"operation": {
-			"scores": {
-				"$ne": [
-					true,
-					true
-				]
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "cQp4ZBOwyGkm",
-		"operation": {
-			"scores": {
-				"$ne": [
-					null
-				]
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "fvU6BXjXe7K2",
-		"operation": {
-			"scores": {
-				"$ne": [
-					"value"
-				]
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "uwneNoq4pwpY",
-		"operation": {
-			"scores": {
-				"$ne": [
-					true
-				]
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "puAxhyIRRHnH",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": "active"
-				}
-			}
-		},
-		"error": {
-			"message": "$in needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "kqyztvcJWHRD",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						[
-							null
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "lWzYJmuaiVT0",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						[
-							"value"
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "mFZsD9jSJXF8",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						[
-							true
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "vUvJV5JtLqeB",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						[
-							null,
-							null
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "uRoco0l3NcDG",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						[
-							"value",
-							"value"
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "uEMzMUmm1OHK",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						[
-							true,
-							true
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "umDDzN4R1bHE",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						[
-							null
-						],
-						[
-							null,
-							null
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "chqfe0xgKRLT",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						[
-							"value"
-						],
-						[
-							"value",
-							"value"
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "qx1VW6viftui",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						[
-							true
-						],
-						[
-							true,
-							true
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "dI1N5bV2sKRo",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						"Abundant",
-						[
-							null,
-							null
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "nnmZrOMMCHQp",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						"Abundant",
-						[
-							"value",
-							"value"
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "o3cMxae2jjXj",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						"Abundant",
-						[
-							true,
-							true
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "caw2zVrtjBIi",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						null,
-						[
-							17,
-							19
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			1
-		]
-	},
-	{
-		"id": "pvl1qHLWoXBm",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						42,
-						[
-							17,
-							19
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "woJKDqcZEhSN",
-		"operation": {
-			"scores": {
-				"$not": {
-					"$in": [
-						true,
-						[
-							17,
-							19
-						]
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "uNL3VVRMBOQa",
-		"operation": {
-			"ratings": {
 				"$elemMatch": 42
 			}
 		},
@@ -1054,361 +198,11 @@
 		}
 	},
 	{
-		"id": "reRRi76rx2Vb",
+		"id": "w31kuQK5Kjw3",
 		"operation": {
-			"ratings": {
+			"scores": {
 				"$elemMatch": {
-					"$not": {
-						"$eq": [
-							null
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			2,
-			3,
-			4
-		]
-	},
-	{
-		"id": "dzI3gu3mPc8d",
-		"operation": {
-			"ratings": {
-				"$elemMatch": {
-					"$not": {
-						"$eq": [
-							"value"
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			2,
-			3,
-			4
-		]
-	},
-	{
-		"id": "dS0FGnaIQ485",
-		"operation": {
-			"ratings": {
-				"$elemMatch": {
-					"$not": {
-						"$eq": [
-							true
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			2,
-			3,
-			4
-		]
-	},
-	{
-		"id": "sjBRLTPxsNTI",
-		"operation": {
-			"ratings": {
-				"$elemMatch": {
-					"$not": {
-						"$in": "active"
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$in needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "wJ5HvEDx6570",
-		"operation": {
-			"ratings": {
-				"$elemMatch": {
-					"$not": {
-						"$in": [
-							[
-								null
-							]
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			2,
-			3,
-			4
-		]
-	},
-	{
-		"id": "pkdKlnPyiZI9",
-		"operation": {
-			"ratings": {
-				"$elemMatch": {
-					"$not": {
-						"$in": [
-							[
-								"value"
-							]
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			2,
-			3,
-			4
-		]
-	},
-	{
-		"id": "f9qfWKKOzTS1",
-		"operation": {
-			"ratings": {
-				"$elemMatch": {
-					"$not": {
-						"$in": [
-							[
-								true
-							]
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			2,
-			3,
-			4
-		]
-	},
-	{
-		"id": "nOqbTEd6Xf6i",
-		"operation": {
-			"ratings": {
-				"$not": {
-					"$elemMatch": 42
-				}
-			}
-		},
-		"error": {
-			"message": "$elemMatch needs an Object",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "sHxMOuIYwgv5",
-		"operation": {
-			"ratings": {
-				"$not": {
-					"$elemMatch": {
-						"$eq": [
-							null
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "pxDztWURIOpB",
-		"operation": {
-			"ratings": {
-				"$not": {
-					"$elemMatch": {
-						"$eq": [
-							"value"
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "ty2G2hSxlm2x",
-		"operation": {
-			"ratings": {
-				"$not": {
-					"$elemMatch": {
-						"$eq": [
-							true
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "vmY8Gk9Huh2Z",
-		"operation": {
-			"ratings": {
-				"$not": {
-					"$elemMatch": {
-						"$in": "active"
-					}
-				}
-			}
-		},
-		"error": {
-			"message": "$in needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "qvt1XhNLjyJ8",
-		"operation": {
-			"ratings": {
-				"$not": {
-					"$elemMatch": {
-						"$in": [
-							[
-								null
-							]
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "f0Ok3jHWDC00",
-		"operation": {
-			"ratings": {
-				"$not": {
-					"$elemMatch": {
-						"$in": [
-							[
-								"value"
-							]
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "mLwQ7HBzKTWo",
-		"operation": {
-			"ratings": {
-				"$not": {
-					"$elemMatch": {
-						"$in": [
-							[
-								true
-							]
-						]
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10
-		]
-	},
-	{
-		"id": "iW3zbaqHGn1L",
-		"operation": {
-			"counts": {
-				"$elemMatch": 42
-			}
-		},
-		"error": {
-			"message": "$elemMatch needs an Object",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "vkFJwbGiRAPx",
-		"operation": {
-			"counts": {
-				"$elemMatch": {
-					"grade": {
+					"level": {
 						"$ne": [
 							null
 						]
@@ -1417,19 +211,19 @@
 			}
 		},
 		"documents": [
-			6,
-			7,
-			8,
-			9,
-			10
+			2,
+			3,
+			4,
+			5,
+			6
 		]
 	},
 	{
-		"id": "czKT6QC8TXQ9",
+		"id": "avPuLCSsUddm",
 		"operation": {
-			"counts": {
+			"scores": {
 				"$elemMatch": {
-					"grade": {
+					"level": {
 						"$ne": [
 							"value"
 						]
@@ -1438,19 +232,19 @@
 			}
 		},
 		"documents": [
-			6,
-			7,
-			8,
-			9,
-			10
+			2,
+			3,
+			4,
+			5,
+			6
 		]
 	},
 	{
-		"id": "pnTYTNGNxviu",
+		"id": "mPrO9id0gCyS",
 		"operation": {
-			"counts": {
+			"scores": {
 				"$elemMatch": {
-					"grade": {
+					"level": {
 						"$ne": [
 							true
 						]
@@ -1459,19 +253,19 @@
 			}
 		},
 		"documents": [
-			6,
-			7,
-			8,
-			9,
-			10
+			2,
+			3,
+			4,
+			5,
+			6
 		]
 	},
 	{
-		"id": "t410lG160GHq",
+		"id": "sUFAn4cTwMMz",
 		"operation": {
-			"counts": {
+			"scores": {
 				"$elemMatch": {
-					"grade": {
+					"level": {
 						"$not": {
 							"$in": "active"
 						}
@@ -1486,11 +280,11 @@
 		}
 	},
 	{
-		"id": "hAwMOFOxjK6v",
+		"id": "aeCpdAnARdoZ",
 		"operation": {
-			"counts": {
+			"scores": {
 				"$elemMatch": {
-					"grade": {
+					"level": {
 						"$not": {
 							"$in": [
 								[
@@ -1503,19 +297,19 @@
 			}
 		},
 		"documents": [
-			6,
-			7,
-			8,
-			9,
-			10
+			2,
+			3,
+			4,
+			5,
+			6
 		]
 	},
 	{
-		"id": "cwZYMqs0H6D7",
+		"id": "lnDP2dh9P315",
 		"operation": {
-			"counts": {
+			"scores": {
 				"$elemMatch": {
-					"grade": {
+					"level": {
 						"$not": {
 							"$in": [
 								[
@@ -1528,19 +322,19 @@
 			}
 		},
 		"documents": [
-			6,
-			7,
-			8,
-			9,
-			10
+			2,
+			3,
+			4,
+			5,
+			6
 		]
 	},
 	{
-		"id": "q6CPscOLMfqY",
+		"id": "o6MzHzIIhLys",
 		"operation": {
-			"counts": {
+			"scores": {
 				"$elemMatch": {
-					"grade": {
+					"level": {
 						"$not": {
 							"$in": [
 								[
@@ -1553,17 +347,17 @@
 			}
 		},
 		"documents": [
-			6,
-			7,
-			8,
-			9,
-			10
+			2,
+			3,
+			4,
+			5,
+			6
 		]
 	},
 	{
-		"id": "hZnM3mQNy39z",
+		"id": "vjd5kvDZjH62",
 		"operation": {
-			"counts": {
+			"scores": {
 				"$not": {
 					"$elemMatch": 42
 				}
@@ -1576,12 +370,12 @@
 		}
 	},
 	{
-		"id": "pAyCSOkrI83S",
+		"id": "s3AmyU9KrQLc",
 		"operation": {
-			"counts": {
+			"scores": {
 				"$not": {
 					"$elemMatch": {
-						"grade": [
+						"level": [
 							null
 						]
 					}
@@ -1595,20 +389,16 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			6
 		]
 	},
 	{
-		"id": "fW8uXqmrKX8b",
+		"id": "nxDpYUAL3hOE",
 		"operation": {
-			"counts": {
+			"scores": {
 				"$not": {
 					"$elemMatch": {
-						"grade": [
+						"level": [
 							"value"
 						]
 					}
@@ -1622,20 +412,16 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			6
 		]
 	},
 	{
-		"id": "b3cWNFyphFFL",
+		"id": "v3QU6jRWZPeU",
 		"operation": {
-			"counts": {
+			"scores": {
 				"$not": {
 					"$elemMatch": {
-						"grade": [
+						"level": [
 							true
 						]
 					}
@@ -1649,20 +435,16 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			6
 		]
 	},
 	{
-		"id": "iFjB7xI1tLl9",
+		"id": "sbS90LttbT1N",
 		"operation": {
-			"counts": {
+			"scores": {
 				"$not": {
 					"$elemMatch": {
-						"grade": {
+						"level": {
 							"$in": "active"
 						}
 					}
@@ -1676,12 +458,12 @@
 		}
 	},
 	{
-		"id": "eU22yT0NTuQ1",
+		"id": "fsLtWlIMsSmI",
 		"operation": {
-			"counts": {
+			"scores": {
 				"$not": {
 					"$elemMatch": {
-						"grade": {
+						"level": {
 							"$in": [
 								[
 									null
@@ -1699,20 +481,16 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			6
 		]
 	},
 	{
-		"id": "pw80NPtVvPaV",
+		"id": "b2GaxE4JomIR",
 		"operation": {
-			"counts": {
+			"scores": {
 				"$not": {
 					"$elemMatch": {
-						"grade": {
+						"level": {
 							"$in": [
 								[
 									"value"
@@ -1730,20 +508,16 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			6
 		]
 	},
 	{
-		"id": "kdI9tJZijiOF",
+		"id": "oKswYqxQJKh1",
 		"operation": {
-			"counts": {
+			"scores": {
 				"$not": {
 					"$elemMatch": {
-						"grade": {
+						"level": {
 							"$in": [
 								[
 									true
@@ -1761,11 +535,7 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8,
-			9,
-			10
+			6
 		]
 	}
 ]
