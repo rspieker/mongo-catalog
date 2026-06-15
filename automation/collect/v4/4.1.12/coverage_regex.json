@@ -1,77 +1,106 @@
 [
 	{
-		"id": "uIIu4pIKRFN1",
+		"id": "oOEBBOlQaW1v",
 		"operation": {
-			"status": {}
+			"age.score": {}
 		},
 		"documents": []
 	},
 	{
-		"id": "sMDOXNgBYVUr",
+		"id": "iZ0d5hSzSmd6",
 		"operation": {
-			"status": {
-				"$regex": "Double"
+			"tags": {
+				"$elemMatch": {
+					"$regex": "Empty",
+					"$options": "Enough"
+				}
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "pg15H7mJzYy7",
+		"id": "lqBycloGyGQV",
 		"operation": {
-			"status": {
-				"$regex": "Couple",
-				"$options": "Much"
+			"level": {
+				"$regex": {}
 			}
 		},
-		"documents": []
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
 	},
 	{
-		"id": "umIMkuL5dVmQ",
+		"id": "tYaAoM9MU3Rs",
 		"operation": {
 			"status": {
-				"$options": "Much",
 				"$regex": "Couple"
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "kzyJM1DM0KiO",
+		"id": "byuKDlZLS9ko",
 		"operation": {
-			"age": {}
+			"status": {
+				"$regex": "Abundant",
+				"$options": "Most"
+			}
+		},
+		"documents": [
+			2
+		]
+	},
+	{
+		"id": "lR7LDSOz6IZ5",
+		"operation": {
+			"status": {
+				"$options": "Most",
+				"$regex": "Abundant"
+			}
+		},
+		"documents": [
+			2
+		]
+	},
+	{
+		"id": "rj2FUF0xEoAx",
+		"operation": {
+			"count": {}
 		},
 		"documents": []
 	},
 	{
-		"id": "kzyJM1DM0KiO",
+		"id": "rj2FUF0xEoAx",
 		"operation": {
-			"age": {}
+			"count": {}
 		},
 		"documents": []
 	},
 	{
-		"id": "kzyJM1DM0KiO",
+		"id": "rj2FUF0xEoAx",
 		"operation": {
-			"age": {}
+			"count": {}
 		},
 		"documents": []
 	},
 	{
-		"id": "tJdQpNC1X2mN",
+		"id": "kWAwLFCzWCPI",
 		"operation": {
-			"age": {
-				"$regex": "Neither",
-				"$gte": "Either"
+			"count": {
+				"$regex": "Much",
+				"$gte": "Each"
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "tvWCk1zesUyX",
+		"id": "tFdHqtZ0vWeX",
 		"operation": {
-			"age": {
-				"$gt": "Huge",
-				"$regex": "No"
+			"count": {
+				"$gt": "Heavy",
+				"$regex": "Neither"
 			}
 		},
 		"documents": []
@@ -89,13 +118,13 @@
 		]
 	},
 	{
-		"id": "tMST7LOx2kUR",
+		"id": "vULJwEkWyR5b",
 		"operation": {
 			"status": {},
-			"rank": {},
-			"level": {},
-			"count": {},
-			"grade": {}
+			"step": {},
+			"priority": {},
+			"capacity": {},
+			"attempts": {}
 		},
 		"documents": []
 	},
@@ -114,10 +143,10 @@
 		"documents": []
 	},
 	{
-		"id": "kH94yYv72tpF",
+		"id": "bMVt2lH2nTzD",
 		"operation": {
 			"status": {},
-			"rank": {}
+			"step": {}
 		},
 		"documents": []
 	},
@@ -134,38 +163,6 @@
 			]
 		},
 		"documents": []
-	},
-	{
-		"id": "d7vQhLLn3LFD",
-		"operation": {
-			"step.priority": {}
-		},
-		"documents": []
-	},
-	{
-		"id": "iZ0d5hSzSmd6",
-		"operation": {
-			"tags": {
-				"$elemMatch": {
-					"$regex": "Empty",
-					"$options": "Enough"
-				}
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "tspJ88fHWQB0",
-		"operation": {
-			"attempts": {
-				"$regex": {}
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
 	},
 	{
 		"id": "oTuzaywEScQu",
@@ -286,8 +283,8 @@
 			1,
 			2,
 			3,
-			5,
-			4
+			4,
+			5
 		]
 	},
 	{
@@ -400,6 +397,67 @@
 			"scores.0.size": {}
 		},
 		"documents": []
+	},
+	{
+		"id": "oOVYLLAYr95a",
+		"operation": {
+			"tags": {
+				"$elemMatch": 42
+			}
+		},
+		"error": {
+			"message": "$elemMatch needs an Object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "diWODgpmNaES",
+		"operation": {
+			"tags": {
+				"$elemMatch": {
+					"$regex": null,
+					"$options": null
+				}
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qBu9BWRX5Rat",
+		"operation": {
+			"tags": {
+				"$elemMatch": {
+					"$regex": 42,
+					"$options": 42
+				}
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qZFtq3tiO4RS",
+		"operation": {
+			"tags": {
+				"$elemMatch": {
+					"$regex": true,
+					"$options": true
+				}
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
 	},
 	{
 		"id": "stJYv9X4N77G",
@@ -525,9 +583,9 @@
 		}
 	},
 	{
-		"id": "vzTeVSqmtWt0",
+		"id": "wztOCnOXdTYy",
 		"operation": {
-			"age": {
+			"count": {
 				"$regex": null,
 				"$gte": null
 			}
@@ -539,9 +597,9 @@
 		}
 	},
 	{
-		"id": "prqMUOw75RgX",
+		"id": "wLROtdkXcK1f",
 		"operation": {
-			"age": {
+			"count": {
 				"$regex": 42,
 				"$gte": 42
 			}
@@ -553,9 +611,9 @@
 		}
 	},
 	{
-		"id": "rKOaFKUPJmEq",
+		"id": "t0NWSwzMUrTx",
 		"operation": {
-			"age": {
+			"count": {
 				"$regex": true,
 				"$gte": true
 			}
@@ -567,9 +625,9 @@
 		}
 	},
 	{
-		"id": "eTU9IpYN9hXN",
+		"id": "w1JdsZ3R8edK",
 		"operation": {
-			"age": {
+			"count": {
 				"$gt": null,
 				"$regex": null
 			}
@@ -581,9 +639,9 @@
 		}
 	},
 	{
-		"id": "fnLvftiMo9bJ",
+		"id": "pYBcpCQgxYlu",
 		"operation": {
-			"age": {
+			"count": {
 				"$gt": 42,
 				"$regex": 42
 			}
@@ -595,72 +653,11 @@
 		}
 	},
 	{
-		"id": "luOOHjByx6Ee",
+		"id": "dNxfZ2QpQPHM",
 		"operation": {
-			"age": {
+			"count": {
 				"$gt": true,
 				"$regex": true
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "oOVYLLAYr95a",
-		"operation": {
-			"tags": {
-				"$elemMatch": 42
-			}
-		},
-		"error": {
-			"message": "$elemMatch needs an Object",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "diWODgpmNaES",
-		"operation": {
-			"tags": {
-				"$elemMatch": {
-					"$regex": null,
-					"$options": null
-				}
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "qBu9BWRX5Rat",
-		"operation": {
-			"tags": {
-				"$elemMatch": {
-					"$regex": 42,
-					"$options": 42
-				}
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "qZFtq3tiO4RS",
-		"operation": {
-			"tags": {
-				"$elemMatch": {
-					"$regex": true,
-					"$options": true
-				}
 			}
 		},
 		"error": {
@@ -809,10 +806,9 @@
 				]
 			}
 		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
+		"documents": [
+			4
+		]
 	},
 	{
 		"id": "mtWt3FFNF6B8",
@@ -824,10 +820,14 @@
 				]
 			}
 		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5
+		]
 	},
 	{
 		"id": "pYez02KeC8EX",
@@ -839,10 +839,14 @@
 				]
 			}
 		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5
+		]
 	},
 	{
 		"id": "uEpmaD7pyPlh",
@@ -854,8 +858,9 @@
 			}
 		},
 		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
+			"message": "$nin needs an array",
+			"code": 2,
+			"type": "MongoServerError"
 		}
 	},
 	{
@@ -868,10 +873,7 @@
 				]
 			}
 		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
+		"documents": []
 	},
 	{
 		"id": "tMYxGs84Xl7Q",
@@ -883,10 +885,7 @@
 				]
 			}
 		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
+		"documents": []
 	},
 	{
 		"id": "mRDbHpg8B8fR",
@@ -898,69 +897,61 @@
 				]
 			}
 		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
+		"documents": []
 	},
 	{
 		"id": "tZGyeTLKzPFJ",
 		"operation": {
 			"scores.size": null
 		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
 	},
 	{
 		"id": "c4zjJryYMWIC",
 		"operation": {
 			"scores.size": 42
 		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
+		"documents": []
 	},
 	{
 		"id": "vMYmHpR1ya0F",
 		"operation": {
 			"scores.size": true
 		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
+		"documents": []
 	},
 	{
 		"id": "mYBMFXAHuNfu",
 		"operation": {
 			"scores.0.size": null
 		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5
+		]
 	},
 	{
 		"id": "nplSKKyLRQg7",
 		"operation": {
 			"scores.0.size": 42
 		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
+		"documents": []
 	},
 	{
 		"id": "pqhmxxY2xGmt",
 		"operation": {
 			"scores.0.size": true
 		},
-		"error": {
-			"message": "connect ECONNREFUSED 127.0.0.1:27017",
-			"type": "MongoServerSelectionError"
-		}
+		"documents": []
 	}
 ]

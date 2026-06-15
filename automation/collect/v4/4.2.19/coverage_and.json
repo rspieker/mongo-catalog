@@ -926,17 +926,6 @@
 		]
 	},
 	{
-		"id": "eCQJHDZJbMm8",
-		"operation": {
-			"$where": "Couple"
-		},
-		"error": {
-			"message": "ReferenceError: Couple is not defined :\n@:1:15\n",
-			"code": 139,
-			"type": "MongoServerError"
-		}
-	},
-	{
 		"id": "h4E9izIe79v4",
 		"operation": {
 			"title": 26,
@@ -1112,121 +1101,6 @@
 					]
 				}
 			]
-		},
-		"documents": []
-	},
-	{
-		"id": "vIBFliiuMduI",
-		"operation": {
-			"title": {
-				"$gt": 31
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "urFhqRhzTST0",
-		"operation": {
-			"title": {
-				"$lt": 28
-			}
-		},
-		"documents": [
-			3
-		]
-	},
-	{
-		"id": "wqPXhC6KC13w",
-		"operation": {
-			"$or": [
-				{
-					"title": {
-						"$gt": 33
-					}
-				},
-				{
-					"score": {
-						"$lt": 27
-					}
-				}
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "sKegwAmCLkmA",
-		"operation": {
-			"$or": [
-				{
-					"title": {
-						"$gt": 33
-					}
-				},
-				{
-					"$and": [
-						{
-							"score": {
-								"$lt": 30
-							}
-						},
-						{
-							"$or": [
-								{
-									"rank": {
-										"$lt": 30
-									}
-								},
-								{
-									"level": 26
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "uEK0q5YA5iWD",
-		"operation": {
-			"$or": [
-				{
-					"$and": [
-						{
-							"title": {
-								"$gt": 30
-							}
-						},
-						{
-							"rank": {
-								"$gt": 27
-							}
-						}
-					]
-				},
-				{
-					"$and": [
-						{
-							"score": {
-								"$lt": 30
-							}
-						},
-						{
-							"level": 26
-						}
-					]
-				}
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "vIBFliiuMduI",
-		"operation": {
-			"title": {
-				"$gt": 31
-			}
 		},
 		"documents": []
 	},
@@ -3668,39 +3542,6 @@
 		},
 		"error": {
 			"message": "$or/$and/$nor entries need to be full objects",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "gEWAJcSV6jSN",
-		"operation": {
-			"$where": null
-		},
-		"error": {
-			"message": "$where got bad type",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "vVxL2hsXrepR",
-		"operation": {
-			"$where": 42
-		},
-		"error": {
-			"message": "$where got bad type",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "nFvLMDTVMpsv",
-		"operation": {
-			"$where": true
-		},
-		"error": {
-			"message": "$where got bad type",
 			"code": 2,
 			"type": "MongoServerError"
 		}
