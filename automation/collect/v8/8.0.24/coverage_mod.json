@@ -1,0 +1,213 @@
+[
+	{
+		"id": "okNvBB60PHan",
+		"operation": {
+			"name": {
+				"$mod": [
+					35,
+					26
+				]
+			}
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "nQPvQHOf7bWJ",
+		"operation": {
+			"name": {
+				"$gt": 30,
+				"$mod": [
+					35,
+					26
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "eBQQOJltKSUL",
+		"operation": {
+			"name": {
+				"$mod": "invalid"
+			}
+		},
+		"error": {
+			"message": "malformed mod, needs to be an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nl2QmvVPtVqm",
+		"operation": {
+			"name": {
+				"$mod": [
+					2
+				]
+			}
+		},
+		"error": {
+			"message": "malformed mod, not enough elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vVdsM1i9XX0B",
+		"operation": {
+			"name": {
+				"$mod": []
+			}
+		},
+		"error": {
+			"message": "malformed mod, not enough elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uqZCLQuJHeza",
+		"operation": {
+			"name": {
+				"$mod": [
+					null,
+					null
+				]
+			}
+		},
+		"error": {
+			"message": "malformed mod, divisor not a number",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "lKxYduzz8D5D",
+		"operation": {
+			"name": {
+				"$mod": [
+					"value",
+					"value"
+				]
+			}
+		},
+		"error": {
+			"message": "malformed mod, divisor not a number",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uVUrcO3ErwWI",
+		"operation": {
+			"name": {
+				"$mod": [
+					true,
+					true
+				]
+			}
+		},
+		"error": {
+			"message": "malformed mod, divisor not a number",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pOtUPTI2DV31",
+		"operation": {
+			"name": {
+				"$gt": 30,
+				"$mod": "invalid"
+			}
+		},
+		"error": {
+			"message": "malformed mod, needs to be an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "dLztxTHXNGNH",
+		"operation": {
+			"name": {
+				"$gt": 30,
+				"$mod": [
+					2
+				]
+			}
+		},
+		"error": {
+			"message": "malformed mod, not enough elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "fK9PxmH76Uhl",
+		"operation": {
+			"name": {
+				"$gt": 30,
+				"$mod": []
+			}
+		},
+		"error": {
+			"message": "malformed mod, not enough elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uVqOVhPWU4b7",
+		"operation": {
+			"name": {
+				"$gt": null,
+				"$mod": [
+					null,
+					null
+				]
+			}
+		},
+		"error": {
+			"message": "malformed mod, divisor not a number",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "iJumawSF8f0P",
+		"operation": {
+			"name": {
+				"$gt": "value",
+				"$mod": [
+					"value",
+					"value"
+				]
+			}
+		},
+		"error": {
+			"message": "malformed mod, divisor not a number",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oQAY8bdXe7jh",
+		"operation": {
+			"name": {
+				"$gt": true,
+				"$mod": [
+					true,
+					true
+				]
+			}
+		},
+		"error": {
+			"message": "malformed mod, divisor not a number",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	}
+]
