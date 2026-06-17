@@ -1,44 +1,12 @@
 {
   "queries": [
     {
-      "checksum": "80e5e008c0f102ea9f713447920503d33e8cb35a5772d3dd1b93c5bf3d2be4da",
+      "checksum": "a8433dba6b0355663f24952ad44e6d3416d906e023a918b428cf34ff3600e050",
       "fingerprint": {
-        "field:#1.field:#2": {}
+        "field:#1": {}
       },
       "query": {
-        "age.score": {}
-      }
-    },
-    {
-      "checksum": "d6221cd4fccd686fd2a391b4241267f60c7a7b03cb152c00eb5c794878fcae24",
-      "fingerprint": {
-        "field:#1": {
-          "$elemMatch": {
-            "$regex": "string:#1",
-            "$options": "string:#2"
-          }
-        }
-      },
-      "query": {
-        "tags": {
-          "$elemMatch": {
-            "$regex": "Empty",
-            "$options": "Enough"
-          }
-        }
-      }
-    },
-    {
-      "checksum": "3dd9ceb44aefdddd5ef79fbd8c7f90b6255a09202f43956578a171e18645f6fb",
-      "fingerprint": {
-        "field:#1": {
-          "$regex": {}
-        }
-      },
-      "query": {
-        "level": {
-          "$regex": {}
-        }
+        "status": {}
       }
     },
     {
@@ -50,7 +18,7 @@
       },
       "query": {
         "status": {
-          "$regex": "Couple"
+          "$regex": "Double"
         }
       }
     },
@@ -64,8 +32,8 @@
       },
       "query": {
         "status": {
-          "$regex": "Abundant",
-          "$options": "Most"
+          "$regex": "Couple",
+          "$options": "Much"
         }
       }
     },
@@ -79,8 +47,8 @@
       },
       "query": {
         "status": {
-          "$options": "Most",
-          "$regex": "Abundant"
+          "$options": "Much",
+          "$regex": "Couple"
         }
       }
     },
@@ -90,7 +58,7 @@
         "field:#1": {}
       },
       "query": {
-        "count": {}
+        "age": {}
       }
     },
     {
@@ -99,7 +67,7 @@
         "field:#1": {}
       },
       "query": {
-        "count": {}
+        "age": {}
       }
     },
     {
@@ -108,7 +76,7 @@
         "field:#1": {}
       },
       "query": {
-        "count": {}
+        "age": {}
       }
     },
     {
@@ -120,9 +88,9 @@
         }
       },
       "query": {
-        "count": {
-          "$regex": "Much",
-          "$gte": "Each"
+        "age": {
+          "$regex": "Neither",
+          "$gte": "Either"
         }
       }
     },
@@ -135,9 +103,9 @@
         }
       },
       "query": {
-        "count": {
-          "$gt": "Heavy",
-          "$regex": "Neither"
+        "age": {
+          "$gt": "Huge",
+          "$regex": "No"
         }
       }
     },
@@ -157,10 +125,10 @@
       },
       "query": {
         "status": {},
-        "step": {},
-        "priority": {},
-        "capacity": {},
-        "attempts": {}
+        "rank": {},
+        "level": {},
+        "count": {},
+        "grade": {}
       }
     },
     {
@@ -194,7 +162,7 @@
       },
       "query": {
         "status": {},
-        "step": {}
+        "rank": {}
       }
     },
     {
@@ -218,6 +186,47 @@
             "status": {}
           }
         ]
+      }
+    },
+    {
+      "checksum": "80e5e008c0f102ea9f713447920503d33e8cb35a5772d3dd1b93c5bf3d2be4da",
+      "fingerprint": {
+        "field:#1.field:#2": {}
+      },
+      "query": {
+        "step.priority": {}
+      }
+    },
+    {
+      "checksum": "d6221cd4fccd686fd2a391b4241267f60c7a7b03cb152c00eb5c794878fcae24",
+      "fingerprint": {
+        "field:#1": {
+          "$elemMatch": {
+            "$regex": "string:#1",
+            "$options": "string:#2"
+          }
+        }
+      },
+      "query": {
+        "tags": {
+          "$elemMatch": {
+            "$regex": "Empty",
+            "$options": "Enough"
+          }
+        }
+      }
+    },
+    {
+      "checksum": "3dd9ceb44aefdddd5ef79fbd8c7f90b6255a09202f43956578a171e18645f6fb",
+      "fingerprint": {
+        "field:#1": {
+          "$regex": {}
+        }
+      },
+      "query": {
+        "attempts": {
+          "$regex": {}
+        }
       }
     },
     {
@@ -529,35 +538,6 @@
   ],
   "variants": [
     {
-      "tags": {
-        "$elemMatch": 42
-      }
-    },
-    {
-      "tags": {
-        "$elemMatch": {
-          "$regex": null,
-          "$options": null
-        }
-      }
-    },
-    {
-      "tags": {
-        "$elemMatch": {
-          "$regex": 42,
-          "$options": 42
-        }
-      }
-    },
-    {
-      "tags": {
-        "$elemMatch": {
-          "$regex": true,
-          "$options": true
-        }
-      }
-    },
-    {
       "status": {
         "$regex": null
       }
@@ -609,39 +589,68 @@
       }
     },
     {
-      "count": {
+      "age": {
         "$regex": null,
         "$gte": null
       }
     },
     {
-      "count": {
+      "age": {
         "$regex": 42,
         "$gte": 42
       }
     },
     {
-      "count": {
+      "age": {
         "$regex": true,
         "$gte": true
       }
     },
     {
-      "count": {
+      "age": {
         "$gt": null,
         "$regex": null
       }
     },
     {
-      "count": {
+      "age": {
         "$gt": 42,
         "$regex": 42
       }
     },
     {
-      "count": {
+      "age": {
         "$gt": true,
         "$regex": true
+      }
+    },
+    {
+      "tags": {
+        "$elemMatch": 42
+      }
+    },
+    {
+      "tags": {
+        "$elemMatch": {
+          "$regex": null,
+          "$options": null
+        }
+      }
+    },
+    {
+      "tags": {
+        "$elemMatch": {
+          "$regex": 42,
+          "$options": 42
+        }
+      }
+    },
+    {
+      "tags": {
+        "$elemMatch": {
+          "$regex": true,
+          "$options": true
+        }
       }
     },
     {
@@ -789,19 +798,19 @@
   "documents": [
     {
       "_id": 0,
-      "age": {
-        "score": "Abundant"
-      }
+      "status": "Abundant"
     },
     {
       "_id": 1,
-      "tags": [
-        "Abundant"
-      ]
+      "step": {
+        "priority": "Abundant"
+      }
     },
     {
       "_id": 2,
-      "status": "Abundant"
+      "tags": [
+        "Abundant"
+      ]
     },
     {
       "_id": 3,
@@ -829,11 +838,11 @@
   ],
   "indices": [
     {
-      "count": 1
+      "age": 1
     },
     {
       "status": 1,
-      "step": 1
+      "rank": 1
     },
     {
       "a.x": 1
