@@ -49,6 +49,16 @@
 		"documents": []
 	},
 	{
+		"id": "cixPyMluXV2g",
+		"operation": {
+			"score": {
+				"$gt": 36,
+				"$lte": 86
+			}
+		},
+		"documents": []
+	},
+	{
 		"id": "pOM72ZHSKkyI",
 		"operation": {
 			"rank": 12
@@ -61,6 +71,17 @@
 			"rank": 12
 		},
 		"documents": []
+	},
+	{
+		"id": "bIXooHnYqZF6",
+		"operation": {
+			"$where": {}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $where got bad type",
+			"code": 17287,
+			"type": "MongoError"
+		}
 	},
 	{
 		"id": "e2nmghpSGBaC",
@@ -432,7 +453,7 @@
 			]
 		},
 		"error": {
-			"message": "ReferenceError: Double is not defined\n    at _funcs2 (_funcs2:1:30)",
+			"message": "ReferenceError: Double is not defined\n    at _funcs4 (_funcs4:1:30)",
 			"code": 16722,
 			"type": "MongoError"
 		}
@@ -1148,7 +1169,7 @@
 			"$where": "Heavily"
 		},
 		"error": {
-			"message": "ReferenceError: Heavily is not defined\n    at _funcs1 (_funcs1:1:30)",
+			"message": "ReferenceError: Heavily is not defined\n    at _funcs3 (_funcs3:1:30)",
 			"code": 16722,
 			"type": "MongoError"
 		}
@@ -1168,7 +1189,7 @@
 			"$where": "Heavily"
 		},
 		"error": {
-			"message": "ReferenceError: Heavily is not defined\n    at _funcs1 (_funcs1:1:30)",
+			"message": "ReferenceError: Heavily is not defined\n    at _funcs2 (_funcs2:1:30)",
 			"code": 16722,
 			"type": "MongoError"
 		}
