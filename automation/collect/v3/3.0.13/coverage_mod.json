@@ -1,44 +1,35 @@
 [
 	{
-		"id": "mg6SXeGtII5N",
+		"id": "okNvBB60PHan",
 		"operation": {
-			"score": {
+			"name": {
 				"$mod": [
-					4000000036,
-					36
+					35,
+					26
+				]
+			}
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "nQPvQHOf7bWJ",
+		"operation": {
+			"name": {
+				"$gt": 30,
+				"$mod": [
+					35,
+					26
 				]
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "ghkcGExMhTds",
+		"id": "eBQQOJltKSUL",
 		"operation": {
-			"title.level": {
-				"$mod": [
-					14,
-					11
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "e8UDniQvKo6w",
-		"operation": {
-			"title.level.count": {
-				"$mod": [
-					16,
-					11
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "rcMEA87yHGV6",
-		"operation": {
-			"score": {
+			"name": {
 				"$mod": "invalid"
 			}
 		},
@@ -49,9 +40,9 @@
 		}
 	},
 	{
-		"id": "fLhe60H5y32n",
+		"id": "nl2QmvVPtVqm",
 		"operation": {
-			"score": {
+			"name": {
 				"$mod": [
 					2
 				]
@@ -64,9 +55,9 @@
 		}
 	},
 	{
-		"id": "mLwpSWM5XGbS",
+		"id": "vVdsM1i9XX0B",
 		"operation": {
-			"score": {
+			"name": {
 				"$mod": []
 			}
 		},
@@ -77,9 +68,9 @@
 		}
 	},
 	{
-		"id": "eQBWbvGM928q",
+		"id": "uqZCLQuJHeza",
 		"operation": {
-			"score": {
+			"name": {
 				"$mod": [
 					null,
 					null
@@ -93,9 +84,9 @@
 		}
 	},
 	{
-		"id": "czhzsP4JPftA",
+		"id": "lKxYduzz8D5D",
 		"operation": {
-			"score": {
+			"name": {
 				"$mod": [
 					"value",
 					"value"
@@ -109,9 +100,9 @@
 		}
 	},
 	{
-		"id": "mqKxyLGU8GZ7",
+		"id": "uVUrcO3ErwWI",
 		"operation": {
-			"score": {
+			"name": {
 				"$mod": [
 					true,
 					true
@@ -125,9 +116,10 @@
 		}
 	},
 	{
-		"id": "lKJfEENHCFA4",
+		"id": "pOtUPTI2DV31",
 		"operation": {
-			"title.level": {
+			"name": {
+				"$gt": 30,
 				"$mod": "invalid"
 			}
 		},
@@ -138,9 +130,10 @@
 		}
 	},
 	{
-		"id": "kJLxARivEaHs",
+		"id": "dLztxTHXNGNH",
 		"operation": {
-			"title.level": {
+			"name": {
+				"$gt": 30,
 				"$mod": [
 					2
 				]
@@ -153,9 +146,10 @@
 		}
 	},
 	{
-		"id": "qf6EQNHODfKy",
+		"id": "fK9PxmH76Uhl",
 		"operation": {
-			"title.level": {
+			"name": {
+				"$gt": 30,
 				"$mod": []
 			}
 		},
@@ -166,9 +160,10 @@
 		}
 	},
 	{
-		"id": "wGBbFqw3WzB6",
+		"id": "uVqOVhPWU4b7",
 		"operation": {
-			"title.level": {
+			"name": {
+				"$gt": null,
 				"$mod": [
 					null,
 					null
@@ -182,9 +177,10 @@
 		}
 	},
 	{
-		"id": "bTytOkjUMIL3",
+		"id": "iJumawSF8f0P",
 		"operation": {
-			"title.level": {
+			"name": {
+				"$gt": "value",
 				"$mod": [
 					"value",
 					"value"
@@ -198,98 +194,10 @@
 		}
 	},
 	{
-		"id": "kZFvF7hZH3Ae",
+		"id": "oQAY8bdXe7jh",
 		"operation": {
-			"title.level": {
-				"$mod": [
-					true,
-					true
-				]
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue malformed mod, divisor not a number",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "nMNpueO40iZA",
-		"operation": {
-			"title.level.count": {
-				"$mod": "invalid"
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue malformed mod, needs to be an array",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "u6zwYDIVDfMV",
-		"operation": {
-			"title.level.count": {
-				"$mod": [
-					2
-				]
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue malformed mod, not enough elements",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "o4UswsTTRKcL",
-		"operation": {
-			"title.level.count": {
-				"$mod": []
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue malformed mod, not enough elements",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "rPDtEv1PZfjg",
-		"operation": {
-			"title.level.count": {
-				"$mod": [
-					null,
-					null
-				]
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue malformed mod, divisor not a number",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "sqUFYLtoxvWm",
-		"operation": {
-			"title.level.count": {
-				"$mod": [
-					"value",
-					"value"
-				]
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue malformed mod, divisor not a number",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "qntWG75Zd01F",
-		"operation": {
-			"title.level.count": {
+			"name": {
+				"$gt": true,
 				"$mod": [
 					true,
 					true
