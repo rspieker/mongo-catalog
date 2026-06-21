@@ -24838,6 +24838,430 @@
 				]
 			},
 			{
+				"id": "tSwweorDI5N1",
+				"operation": {"age":{"$in":[17]}},
+				"results": [
+					{
+						"documents": [0],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "iBzyFGlBzGFy",
+				"operation": {"age":{"$in":[17,18]}},
+				"results": [
+					{
+						"documents": [0],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "cBwT2ORAJxRY",
+				"operation": {"age":{"$gt":17,"$in":[18]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "drOxpkMw2XQe",
+				"operation": {"age":{"$in":[17,18]},"score":{"$in":[17,18]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "sPtpoOoDmTKL",
+				"operation": {"name":[17]},
+				"results": [
+					{
+						"documents": [2],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "uOQdtz0CDrgH",
+				"operation": {"name":{"$in":[[17]]}},
+				"results": [
+					{
+						"documents": [2],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "liazN5bI0XOf",
+				"operation": {"name":{"$in":[[17]],"$ne":[18]}},
+				"results": [
+					{
+						"documents": [2],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "tVDVs2MFWxAi",
+				"operation": {"name":{"$in":[["Abundant"]],"$type":18}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "vRjcuJ4WXATS",
+				"operation": {"rank":{"level":10,"count":11}},
+				"results": [
+					{
+						"documents": [10],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "tItInGKoA2Rp",
+				"operation": {"rank":{"$in":[{"level":10,"count":11}]}},
+				"results": [
+					{
+						"documents": [10],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "cUH5oz3tdxiK",
+				"operation": {"rank.level":10,"rank.count":{"$in":[11]}},
+				"results": [
+					{
+						"documents": [10],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "kC6tuSQP1RJw",
+				"operation": {"grade":{"level":10,"count":11}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "hlwKRLOIDlRb",
+				"operation": {"grade":{"$in":[{"level":10,"count":11}]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "tHI45Ixcv2Zm",
+				"operation": {"grade.level":10,"grade.count":{"$in":[11]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "wvswzAo9KzOb",
+				"operation": {"age":{"$gt":17,"$in":"active"}},
+				"results": [
+					{
+						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "va8EsBYOHBOL",
+				"operation": {"name":{"$in":"active","$ne":[18]}},
+				"results": [
+					{
+						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "azSyMvyBtddQ",
+				"operation": {"name":{"$in":"active","$type":18}},
+				"results": [
+					{
+						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "cIMPRPyA0ab2",
+				"operation": {"name":{"$in":[[null]],"$type":18}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "mkHCxZQeH1ua",
+				"operation": {"name":{"$in":[[42]],"$type":18}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "jUWSKyNqzGhr",
+				"operation": {"name":{"$in":[[true]],"$type":18}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "tMwuHxUDuZ90",
+				"operation": {"rank":{"level":null,"count":null}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "hApzmI2miQ2P",
+				"operation": {"rank":{"level":"value","count":"value"}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "cwRHU2k7AGWe",
+				"operation": {"rank":{"level":true,"count":true}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "ixEAMoJwW47X",
+				"operation": {"rank":{"$in":"active"}},
+				"results": [
+					{
+						"error": {"message":"$in needs an array","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.5.12"
+					},
+					{
+						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
+						"versions": "3.6.4..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "hmalJSyLo7IB",
+				"operation": {"rank":{"$in":[{"level":null,"count":null}]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "r2LCInHKXS3C",
+				"operation": {"rank":{"$in":[{"level":"value","count":"value"}]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "bh9JAWK8bTU5",
+				"operation": {"rank":{"$in":[{"level":true,"count":true}]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "bhHN7UcHLHPu",
+				"operation": {"rank.level":10,"rank.count":{"$in":"active"}},
+				"results": [
+					{
+						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "sVufbeP94REq",
+				"operation": {"rank.level":null,"rank.count":{"$in":[null]}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,11],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "s6sXWvUp10yE",
+				"operation": {"rank.level":"value","rank.count":{"$in":["value"]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "auCzQfUl68ZJ",
+				"operation": {"rank.level":true,"rank.count":{"$in":[true]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "dz4qHg0XKWWb",
+				"operation": {"grade":{"level":null,"count":null}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "uQpMRWBKYQXN",
+				"operation": {"grade":{"level":"value","count":"value"}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "rZ7HrRZAhWGm",
+				"operation": {"grade":{"level":true,"count":true}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "l7xk5w2YJRe6",
+				"operation": {"grade":{"$in":"active"}},
+				"results": [
+					{
+						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "eE0VANm03WUN",
+				"operation": {"grade":{"$in":[{"level":null,"count":null}]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "pcNzaWTFhnw9",
+				"operation": {"grade":{"$in":[{"level":"value","count":"value"}]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "kLIi4wW5AY4G",
+				"operation": {"grade":{"$in":[{"level":true,"count":true}]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "cSIzRmpSKHva",
+				"operation": {"grade.level":10,"grade.count":{"$in":"active"}},
+				"results": [
+					{
+						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "aPGBk8aFp8Un",
+				"operation": {"grade.level":null,"grade.count":{"$in":[null]}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "srqbZJNIcnJn",
+				"operation": {"grade.level":"value","grade.count":{"$in":["value"]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "svGyhIPGqa8K",
+				"operation": {"grade.level":true,"grade.count":{"$in":[true]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
 				"id": "tSem7aDHY2VP",
 				"operation": {"priority":{"$in":[{"$elemMatch":{"capacity":11}}]}},
 				"results": [
@@ -25714,430 +26138,6 @@
 					{
 						"documents": [],
 						"versions": "3.7.7..7.0.16"
-					}
-				]
-			},
-			{
-				"id": "tSwweorDI5N1",
-				"operation": {"age":{"$in":[17]}},
-				"results": [
-					{
-						"documents": [0],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "iBzyFGlBzGFy",
-				"operation": {"age":{"$in":[17,18]}},
-				"results": [
-					{
-						"documents": [0],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "cBwT2ORAJxRY",
-				"operation": {"age":{"$gt":17,"$in":[18]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "drOxpkMw2XQe",
-				"operation": {"age":{"$in":[17,18]},"score":{"$in":[17,18]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "sPtpoOoDmTKL",
-				"operation": {"name":[17]},
-				"results": [
-					{
-						"documents": [2],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "uOQdtz0CDrgH",
-				"operation": {"name":{"$in":[[17]]}},
-				"results": [
-					{
-						"documents": [2],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "liazN5bI0XOf",
-				"operation": {"name":{"$in":[[17]],"$ne":[18]}},
-				"results": [
-					{
-						"documents": [2],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "tVDVs2MFWxAi",
-				"operation": {"name":{"$in":[["Abundant"]],"$type":18}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "vRjcuJ4WXATS",
-				"operation": {"rank":{"level":10,"count":11}},
-				"results": [
-					{
-						"documents": [10],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "tItInGKoA2Rp",
-				"operation": {"rank":{"$in":[{"level":10,"count":11}]}},
-				"results": [
-					{
-						"documents": [10],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "cUH5oz3tdxiK",
-				"operation": {"rank.level":10,"rank.count":{"$in":[11]}},
-				"results": [
-					{
-						"documents": [10],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "kC6tuSQP1RJw",
-				"operation": {"grade":{"level":10,"count":11}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "hlwKRLOIDlRb",
-				"operation": {"grade":{"$in":[{"level":10,"count":11}]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "tHI45Ixcv2Zm",
-				"operation": {"grade.level":10,"grade.count":{"$in":[11]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "wvswzAo9KzOb",
-				"operation": {"age":{"$gt":17,"$in":"active"}},
-				"results": [
-					{
-						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "va8EsBYOHBOL",
-				"operation": {"name":{"$in":"active","$ne":[18]}},
-				"results": [
-					{
-						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "azSyMvyBtddQ",
-				"operation": {"name":{"$in":"active","$type":18}},
-				"results": [
-					{
-						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "cIMPRPyA0ab2",
-				"operation": {"name":{"$in":[[null]],"$type":18}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "mkHCxZQeH1ua",
-				"operation": {"name":{"$in":[[42]],"$type":18}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "jUWSKyNqzGhr",
-				"operation": {"name":{"$in":[[true]],"$type":18}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "tMwuHxUDuZ90",
-				"operation": {"rank":{"level":null,"count":null}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "hApzmI2miQ2P",
-				"operation": {"rank":{"level":"value","count":"value"}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "cwRHU2k7AGWe",
-				"operation": {"rank":{"level":true,"count":true}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "ixEAMoJwW47X",
-				"operation": {"rank":{"$in":"active"}},
-				"results": [
-					{
-						"error": {"message":"$in needs an array","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.5.12"
-					},
-					{
-						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "3.6.4..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "hmalJSyLo7IB",
-				"operation": {"rank":{"$in":[{"level":null,"count":null}]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "r2LCInHKXS3C",
-				"operation": {"rank":{"$in":[{"level":"value","count":"value"}]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "bh9JAWK8bTU5",
-				"operation": {"rank":{"$in":[{"level":true,"count":true}]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "bhHN7UcHLHPu",
-				"operation": {"rank.level":10,"rank.count":{"$in":"active"}},
-				"results": [
-					{
-						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "sVufbeP94REq",
-				"operation": {"rank.level":null,"rank.count":{"$in":[null]}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,11],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "s6sXWvUp10yE",
-				"operation": {"rank.level":"value","rank.count":{"$in":["value"]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "auCzQfUl68ZJ",
-				"operation": {"rank.level":true,"rank.count":{"$in":[true]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "dz4qHg0XKWWb",
-				"operation": {"grade":{"level":null,"count":null}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "uQpMRWBKYQXN",
-				"operation": {"grade":{"level":"value","count":"value"}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "rZ7HrRZAhWGm",
-				"operation": {"grade":{"level":true,"count":true}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "l7xk5w2YJRe6",
-				"operation": {"grade":{"$in":"active"}},
-				"results": [
-					{
-						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "eE0VANm03WUN",
-				"operation": {"grade":{"$in":[{"level":null,"count":null}]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "pcNzaWTFhnw9",
-				"operation": {"grade":{"$in":[{"level":"value","count":"value"}]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "kLIi4wW5AY4G",
-				"operation": {"grade":{"$in":[{"level":true,"count":true}]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "cSIzRmpSKHva",
-				"operation": {"grade.level":10,"grade.count":{"$in":"active"}},
-				"results": [
-					{
-						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "aPGBk8aFp8Un",
-				"operation": {"grade.level":null,"grade.count":{"$in":[null]}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "srqbZJNIcnJn",
-				"operation": {"grade.level":"value","grade.count":{"$in":["value"]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "svGyhIPGqa8K",
-				"operation": {"grade.level":true,"grade.count":{"$in":[true]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
 					}
 				]
 			}
@@ -27475,12 +27475,62 @@
 				]
 			},
 			{
-				"id": "ofcPKzMPtkg1",
-				"operation": {"age":{"$gt":20,"$lt":22,"$ne":21}},
+				"id": "o50ORg5ZO4Mu",
+				"operation": {"score":{"$gt":5,"$lt":7,"$ne":6}},
 				"results": [
 					{
-						"documents": [0],
-						"versions": "3.7.7..7.0.16"
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "aM5Hz3SjnjEd",
+				"operation": {"rank":{"$ne":{}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10],
+						"versions": "3.2.6..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "uU3CE4YsaSQr",
+				"operation": {"rank":{"$gt":{}}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "3.2.6..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "nw8RYyZVT9ZH",
+				"operation": {"rank":{"$gte":{}}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "3.2.6..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "fjNLIjp99dRf",
+				"operation": {"rank":{"$lt":{}}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "3.2.6..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "oRSPUOceJADo",
+				"operation": {"rank":{"$lte":{}}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "3.2.6..6.0.6"
 					}
 				]
 			},
@@ -27617,32 +27667,72 @@
 				]
 			},
 			{
-				"id": "muWZ1I7iXj5C",
-				"operation": {"age":{"$gt":null,"$lt":null,"$ne":null}},
+				"id": "pusqGLJCLenf",
+				"operation": {"counts":{"$elemMatch":{"step":{"$ne":[153]}}}},
 				"results": [
 					{
-						"documents": [],
-						"versions": "3.7.7..7.0.16"
+						"documents": [6,7,8],
+						"versions": "4.2.16..6.0.6"
 					}
 				]
 			},
 			{
-				"id": "cwVwQS0NhXJZ",
-				"operation": {"age":{"$gt":"value","$lt":"value","$ne":"value"}},
+				"id": "g1MRe5rJIX9z",
+				"operation": {"counts":{"$elemMatch":{"step":{"$not":{"$in":[[153]]}}}}},
 				"results": [
 					{
-						"documents": [],
-						"versions": "3.7.7..7.0.16"
+						"documents": [6,7,8],
+						"versions": "4.2.16..6.0.6"
 					}
 				]
 			},
 			{
-				"id": "wcxPnSNEaSal",
-				"operation": {"age":{"$gt":true,"$lt":true,"$ne":true}},
+				"id": "jGzjakjakppm",
+				"operation": {"counts":{"$not":{"$elemMatch":{"step":[153]}}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8],
+						"versions": "4.2.16..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "qY5e2dzFUGdk",
+				"operation": {"counts":{"$not":{"$elemMatch":{"step":{"$in":[[153]]}}}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8],
+						"versions": "4.2.16..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "rECoJrPL076p",
+				"operation": {"score":{"$gt":null,"$lt":null,"$ne":null}},
 				"results": [
 					{
 						"documents": [],
-						"versions": "3.7.7..7.0.16"
+						"versions": "3.2.6..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "pSEYYy7GPWqK",
+				"operation": {"score":{"$gt":"value","$lt":"value","$ne":"value"}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "3.2.6..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "gbWI7FJka6dM",
+				"operation": {"score":{"$gt":true,"$lt":true,"$ne":true}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "3.2.6..7.0.25"
 					}
 				]
 			},
@@ -28137,330 +28227,6 @@
 				]
 			},
 			{
-				"id": "o50ORg5ZO4Mu",
-				"operation": {"score":{"$gt":5,"$lt":7,"$ne":6}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "qvPHRkEBFZBv",
-				"operation": {"counts":{"$elemMatch":{"grade":{"$ne":[153]}}}},
-				"results": [
-					{
-						"documents": [6,7,8],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "bAGBCD9Qs9cr",
-				"operation": {"counts":{"$elemMatch":{"grade":{"$not":{"$in":[[153]]}}}}},
-				"results": [
-					{
-						"documents": [6,7,8],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "rRvRxPxaZZdg",
-				"operation": {"counts":{"$not":{"$elemMatch":{"grade":[153]}}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "nekBeWpVwCXu",
-				"operation": {"counts":{"$not":{"$elemMatch":{"grade":{"$in":[[153]]}}}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "rECoJrPL076p",
-				"operation": {"score":{"$gt":null,"$lt":null,"$ne":null}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "3.2.6..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "pSEYYy7GPWqK",
-				"operation": {"score":{"$gt":"value","$lt":"value","$ne":"value"}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "3.2.6..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "gbWI7FJka6dM",
-				"operation": {"score":{"$gt":true,"$lt":true,"$ne":true}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "3.2.6..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "vkFJwbGiRAPx",
-				"operation": {"counts":{"$elemMatch":{"grade":{"$ne":[null]}}}},
-				"results": [
-					{
-						"documents": [6,7,8,9,10],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "czKT6QC8TXQ9",
-				"operation": {"counts":{"$elemMatch":{"grade":{"$ne":["value"]}}}},
-				"results": [
-					{
-						"documents": [6,7,8,9,10],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "pnTYTNGNxviu",
-				"operation": {"counts":{"$elemMatch":{"grade":{"$ne":[true]}}}},
-				"results": [
-					{
-						"documents": [6,7,8,9,10],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "t410lG160GHq",
-				"operation": {"counts":{"$elemMatch":{"grade":{"$not":{"$in":"active"}}}}},
-				"results": [
-					{
-						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "hAwMOFOxjK6v",
-				"operation": {"counts":{"$elemMatch":{"grade":{"$not":{"$in":[[null]]}}}}},
-				"results": [
-					{
-						"documents": [6,7,8,9,10],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "cwZYMqs0H6D7",
-				"operation": {"counts":{"$elemMatch":{"grade":{"$not":{"$in":[["value"]]}}}}},
-				"results": [
-					{
-						"documents": [6,7,8,9,10],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "q6CPscOLMfqY",
-				"operation": {"counts":{"$elemMatch":{"grade":{"$not":{"$in":[[true]]}}}}},
-				"results": [
-					{
-						"documents": [6,7,8,9,10],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "hZnM3mQNy39z",
-				"operation": {"counts":{"$not":{"$elemMatch":42}}},
-				"results": [
-					{
-						"error": {"message":"$elemMatch needs an Object","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.5.12"
-					},
-					{
-						"error": {"message":"$elemMatch needs an Object","code":2,"type":"MongoServerError"},
-						"versions": "3.6.4..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "pAyCSOkrI83S",
-				"operation": {"counts":{"$not":{"$elemMatch":{"grade":[null]}}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "fW8uXqmrKX8b",
-				"operation": {"counts":{"$not":{"$elemMatch":{"grade":["value"]}}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "b3cWNFyphFFL",
-				"operation": {"counts":{"$not":{"$elemMatch":{"grade":[true]}}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "iFjB7xI1tLl9",
-				"operation": {"counts":{"$not":{"$elemMatch":{"grade":{"$in":"active"}}}}},
-				"results": [
-					{
-						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "eU22yT0NTuQ1",
-				"operation": {"counts":{"$not":{"$elemMatch":{"grade":{"$in":[[null]]}}}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "pw80NPtVvPaV",
-				"operation": {"counts":{"$not":{"$elemMatch":{"grade":{"$in":[["value"]]}}}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "kdI9tJZijiOF",
-				"operation": {"counts":{"$not":{"$elemMatch":{"grade":{"$in":[[true]]}}}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "aM5Hz3SjnjEd",
-				"operation": {"rank":{"$ne":{}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10],
-						"versions": "3.2.6..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "uU3CE4YsaSQr",
-				"operation": {"rank":{"$gt":{}}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "3.2.6..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "nw8RYyZVT9ZH",
-				"operation": {"rank":{"$gte":{}}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "3.2.6..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "fjNLIjp99dRf",
-				"operation": {"rank":{"$lt":{}}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "3.2.6..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "oRSPUOceJADo",
-				"operation": {"rank":{"$lte":{}}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "3.2.6..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "pusqGLJCLenf",
-				"operation": {"counts":{"$elemMatch":{"step":{"$ne":[153]}}}},
-				"results": [
-					{
-						"documents": [6,7,8],
-						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "g1MRe5rJIX9z",
-				"operation": {"counts":{"$elemMatch":{"step":{"$not":{"$in":[[153]]}}}}},
-				"results": [
-					{
-						"documents": [6,7,8],
-						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "jGzjakjakppm",
-				"operation": {"counts":{"$not":{"$elemMatch":{"step":[153]}}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "qY5e2dzFUGdk",
-				"operation": {"counts":{"$not":{"$elemMatch":{"step":{"$in":[[153]]}}}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
 				"id": "vn2wWqbENSr5",
 				"operation": {"counts":{"$elemMatch":{"step":{"$ne":[null]}}}},
 				"results": [
@@ -28535,6 +28301,20 @@
 				]
 			},
 			{
+				"id": "hZnM3mQNy39z",
+				"operation": {"counts":{"$not":{"$elemMatch":42}}},
+				"results": [
+					{
+						"error": {"message":"$elemMatch needs an Object","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.5.12"
+					},
+					{
+						"error": {"message":"$elemMatch needs an Object","code":2,"type":"MongoServerError"},
+						"versions": "3.6.4..7.0.25"
+					}
+				]
+			},
+			{
 				"id": "sVQAVI7aKrjA",
 				"operation": {"counts":{"$not":{"$elemMatch":{"step":[null]}}}},
 				"results": [
@@ -28605,6 +28385,226 @@
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10],
 						"versions": "3.2.6..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "qvPHRkEBFZBv",
+				"operation": {"counts":{"$elemMatch":{"grade":{"$ne":[153]}}}},
+				"results": [
+					{
+						"documents": [6,7,8],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "bAGBCD9Qs9cr",
+				"operation": {"counts":{"$elemMatch":{"grade":{"$not":{"$in":[[153]]}}}}},
+				"results": [
+					{
+						"documents": [6,7,8],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "rRvRxPxaZZdg",
+				"operation": {"counts":{"$not":{"$elemMatch":{"grade":[153]}}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "nekBeWpVwCXu",
+				"operation": {"counts":{"$not":{"$elemMatch":{"grade":{"$in":[[153]]}}}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "vkFJwbGiRAPx",
+				"operation": {"counts":{"$elemMatch":{"grade":{"$ne":[null]}}}},
+				"results": [
+					{
+						"documents": [6,7,8,9,10],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "czKT6QC8TXQ9",
+				"operation": {"counts":{"$elemMatch":{"grade":{"$ne":["value"]}}}},
+				"results": [
+					{
+						"documents": [6,7,8,9,10],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "pnTYTNGNxviu",
+				"operation": {"counts":{"$elemMatch":{"grade":{"$ne":[true]}}}},
+				"results": [
+					{
+						"documents": [6,7,8,9,10],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "t410lG160GHq",
+				"operation": {"counts":{"$elemMatch":{"grade":{"$not":{"$in":"active"}}}}},
+				"results": [
+					{
+						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "hAwMOFOxjK6v",
+				"operation": {"counts":{"$elemMatch":{"grade":{"$not":{"$in":[[null]]}}}}},
+				"results": [
+					{
+						"documents": [6,7,8,9,10],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "cwZYMqs0H6D7",
+				"operation": {"counts":{"$elemMatch":{"grade":{"$not":{"$in":[["value"]]}}}}},
+				"results": [
+					{
+						"documents": [6,7,8,9,10],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "q6CPscOLMfqY",
+				"operation": {"counts":{"$elemMatch":{"grade":{"$not":{"$in":[[true]]}}}}},
+				"results": [
+					{
+						"documents": [6,7,8,9,10],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "pAyCSOkrI83S",
+				"operation": {"counts":{"$not":{"$elemMatch":{"grade":[null]}}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "fW8uXqmrKX8b",
+				"operation": {"counts":{"$not":{"$elemMatch":{"grade":["value"]}}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "b3cWNFyphFFL",
+				"operation": {"counts":{"$not":{"$elemMatch":{"grade":[true]}}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "iFjB7xI1tLl9",
+				"operation": {"counts":{"$not":{"$elemMatch":{"grade":{"$in":"active"}}}}},
+				"results": [
+					{
+						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "eU22yT0NTuQ1",
+				"operation": {"counts":{"$not":{"$elemMatch":{"grade":{"$in":[[null]]}}}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "pw80NPtVvPaV",
+				"operation": {"counts":{"$not":{"$elemMatch":{"grade":{"$in":[["value"]]}}}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "kdI9tJZijiOF",
+				"operation": {"counts":{"$not":{"$elemMatch":{"grade":{"$in":[[true]]}}}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "ofcPKzMPtkg1",
+				"operation": {"age":{"$gt":20,"$lt":22,"$ne":21}},
+				"results": [
+					{
+						"documents": [0],
+						"versions": "3.7.7..7.0.16"
+					}
+				]
+			},
+			{
+				"id": "muWZ1I7iXj5C",
+				"operation": {"age":{"$gt":null,"$lt":null,"$ne":null}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "3.7.7..7.0.16"
+					}
+				]
+			},
+			{
+				"id": "cwVwQS0NhXJZ",
+				"operation": {"age":{"$gt":"value","$lt":"value","$ne":"value"}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "3.7.7..7.0.16"
+					}
+				]
+			},
+			{
+				"id": "wcxPnSNEaSal",
+				"operation": {"age":{"$gt":true,"$lt":true,"$ne":true}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "3.7.7..7.0.16"
 					}
 				]
 			},
@@ -47113,6 +47113,36 @@
 				]
 			},
 			{
+				"id": "ru26Aq9NhPRl",
+				"operation": {"score":{"$gte":1}},
+				"results": [
+					{
+						"documents": [1],
+						"versions": "3.2.6..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "qC0LmuUpJyZz",
+				"operation": {"score":2},
+				"results": [
+					{
+						"documents": [],
+						"versions": "3.2.6..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "ivAWD1WJn8Sn",
+				"operation": {"score":{"$gt":21}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "3.2.6..6.0.6"
+					}
+				]
+			},
+			{
 				"id": "iAU6TbUcxWEx",
 				"operation": {"age":{"$gte":6}},
 				"results": [
@@ -47737,36 +47767,6 @@
 					{
 						"documents": [],
 						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "ru26Aq9NhPRl",
-				"operation": {"score":{"$gte":1}},
-				"results": [
-					{
-						"documents": [1],
-						"versions": "3.2.6..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "qC0LmuUpJyZz",
-				"operation": {"score":2},
-				"results": [
-					{
-						"documents": [],
-						"versions": "3.2.6..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "ivAWD1WJn8Sn",
-				"operation": {"score":{"$gt":21}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "3.2.6..6.0.6"
 					}
 				]
 			}
@@ -50271,6 +50271,186 @@
 				]
 			},
 			{
+				"id": "nBvFR3rjRS5Y",
+				"operation": {"size":{"$exists":35}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.16..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "kEG6ELXRUGTO",
+				"operation": {"index.depth":{"$exists":28}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.16..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "nOGbJBPtDAQ5",
+				"operation": {"$or":[{"age":{"$gte":17},"score":{"$mod":[19,17]}},{"age":{"$lte":100017},"score":{"$mod":[19,18]}}]},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.16..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "cWRDvjtPocYE",
+				"operation": {"index.depth":{"$exists":"value"}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.16..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "gSvHyJJDZtg3",
+				"operation": {"index.depth":{"$exists":true}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.16..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "pWTC8nLJPFcS",
+				"operation": {"$or":[{"age":{"$gte":17},"score":{"$mod":"invalid"}},{"age":{"$lte":100017},"score":{"$mod":"invalid"}}]},
+				"results": [
+					{
+						"error": {"message":"malformed mod, needs to be an array","code":2,"type":"MongoServerError"},
+						"versions": "4.2.16..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "hmK0XtMrCPe4",
+				"operation": {"$or":[{"age":{"$gte":17},"score":{"$mod":[2]}},{"age":{"$lte":100017},"score":{"$mod":[2]}}]},
+				"results": [
+					{
+						"error": {"message":"malformed mod, not enough elements","code":2,"type":"MongoServerError"},
+						"versions": "4.2.16..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "dLQ51C2LSqXU",
+				"operation": {"$or":[{"age":{"$gte":17},"score":{"$mod":[]}},{"age":{"$lte":100017},"score":{"$mod":[]}}]},
+				"results": [
+					{
+						"error": {"message":"malformed mod, not enough elements","code":2,"type":"MongoServerError"},
+						"versions": "4.2.16..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "l1eoWXXWpiMA",
+				"operation": {"$or":[{"age":{"$gte":null},"score":{"$mod":[null,null]}},{"age":{"$lte":null},"score":{"$mod":[null,null]}}]},
+				"results": [
+					{
+						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
+						"versions": "4.2.16..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "aNzxyJsAbTTH",
+				"operation": {"$or":[{"age":{"$gte":"value"},"score":{"$mod":["value","value"]}},{"age":{"$lte":"value"},"score":{"$mod":["value","value"]}}]},
+				"results": [
+					{
+						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
+						"versions": "4.2.16..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "v6NsQq5MND4P",
+				"operation": {"$or":[{"age":{"$gte":true},"score":{"$mod":[true,true]}},{"age":{"$lte":true},"score":{"$mod":[true,true]}}]},
+				"results": [
+					{
+						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
+						"versions": "4.2.16..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "qjpHFKcYzP8j",
+				"operation": {"$or":[{"quantity":{"$gte":17},"size":{"$mod":[19,17]}},{"quantity":{"$lte":100017},"size":{"$mod":[19,18]}}]},
+				"results": [
+					{
+						"documents": [],
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "ouAhzarWJSh5",
+				"operation": {"$or":[{"quantity":{"$gte":17},"size":{"$mod":"invalid"}},{"quantity":{"$lte":100017},"size":{"$mod":"invalid"}}]},
+				"results": [
+					{
+						"error": {"message":"malformed mod, needs to be an array","code":2,"type":"MongoServerError"},
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "pqNXqyLtw8RD",
+				"operation": {"$or":[{"quantity":{"$gte":17},"size":{"$mod":[2]}},{"quantity":{"$lte":100017},"size":{"$mod":[2]}}]},
+				"results": [
+					{
+						"error": {"message":"malformed mod, not enough elements","code":2,"type":"MongoServerError"},
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "bHvX1xNyifX5",
+				"operation": {"$or":[{"quantity":{"$gte":17},"size":{"$mod":[]}},{"quantity":{"$lte":100017},"size":{"$mod":[]}}]},
+				"results": [
+					{
+						"error": {"message":"malformed mod, not enough elements","code":2,"type":"MongoServerError"},
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "rWI1tfu8eyVv",
+				"operation": {"$or":[{"quantity":{"$gte":null},"size":{"$mod":[null,null]}},{"quantity":{"$lte":null},"size":{"$mod":[null,null]}}]},
+				"results": [
+					{
+						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "uIzfyEEJhTKS",
+				"operation": {"$or":[{"quantity":{"$gte":"value"},"size":{"$mod":["value","value"]}},{"quantity":{"$lte":"value"},"size":{"$mod":["value","value"]}}]},
+				"results": [
+					{
+						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "fVX2mT3iuMfC",
+				"operation": {"$or":[{"quantity":{"$gte":true},"size":{"$mod":[true,true]}},{"quantity":{"$lte":true},"size":{"$mod":[true,true]}}]},
+				"results": [
+					{
+						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
 				"id": "mLkwmKzEAJyw",
 				"operation": {"scores.grade":{"$ne":16}},
 				"results": [
@@ -50517,186 +50697,6 @@
 					{
 						"documents": [],
 						"versions": "3.7.7..7.0.16"
-					}
-				]
-			},
-			{
-				"id": "qjpHFKcYzP8j",
-				"operation": {"$or":[{"quantity":{"$gte":17},"size":{"$mod":[19,17]}},{"quantity":{"$lte":100017},"size":{"$mod":[19,18]}}]},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "ouAhzarWJSh5",
-				"operation": {"$or":[{"quantity":{"$gte":17},"size":{"$mod":"invalid"}},{"quantity":{"$lte":100017},"size":{"$mod":"invalid"}}]},
-				"results": [
-					{
-						"error": {"message":"malformed mod, needs to be an array","code":2,"type":"MongoServerError"},
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "pqNXqyLtw8RD",
-				"operation": {"$or":[{"quantity":{"$gte":17},"size":{"$mod":[2]}},{"quantity":{"$lte":100017},"size":{"$mod":[2]}}]},
-				"results": [
-					{
-						"error": {"message":"malformed mod, not enough elements","code":2,"type":"MongoServerError"},
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "bHvX1xNyifX5",
-				"operation": {"$or":[{"quantity":{"$gte":17},"size":{"$mod":[]}},{"quantity":{"$lte":100017},"size":{"$mod":[]}}]},
-				"results": [
-					{
-						"error": {"message":"malformed mod, not enough elements","code":2,"type":"MongoServerError"},
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "rWI1tfu8eyVv",
-				"operation": {"$or":[{"quantity":{"$gte":null},"size":{"$mod":[null,null]}},{"quantity":{"$lte":null},"size":{"$mod":[null,null]}}]},
-				"results": [
-					{
-						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "uIzfyEEJhTKS",
-				"operation": {"$or":[{"quantity":{"$gte":"value"},"size":{"$mod":["value","value"]}},{"quantity":{"$lte":"value"},"size":{"$mod":["value","value"]}}]},
-				"results": [
-					{
-						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "fVX2mT3iuMfC",
-				"operation": {"$or":[{"quantity":{"$gte":true},"size":{"$mod":[true,true]}},{"quantity":{"$lte":true},"size":{"$mod":[true,true]}}]},
-				"results": [
-					{
-						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "nBvFR3rjRS5Y",
-				"operation": {"size":{"$exists":35}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "kEG6ELXRUGTO",
-				"operation": {"index.depth":{"$exists":28}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "nOGbJBPtDAQ5",
-				"operation": {"$or":[{"age":{"$gte":17},"score":{"$mod":[19,17]}},{"age":{"$lte":100017},"score":{"$mod":[19,18]}}]},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "cWRDvjtPocYE",
-				"operation": {"index.depth":{"$exists":"value"}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "gSvHyJJDZtg3",
-				"operation": {"index.depth":{"$exists":true}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "pWTC8nLJPFcS",
-				"operation": {"$or":[{"age":{"$gte":17},"score":{"$mod":"invalid"}},{"age":{"$lte":100017},"score":{"$mod":"invalid"}}]},
-				"results": [
-					{
-						"error": {"message":"malformed mod, needs to be an array","code":2,"type":"MongoServerError"},
-						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "hmK0XtMrCPe4",
-				"operation": {"$or":[{"age":{"$gte":17},"score":{"$mod":[2]}},{"age":{"$lte":100017},"score":{"$mod":[2]}}]},
-				"results": [
-					{
-						"error": {"message":"malformed mod, not enough elements","code":2,"type":"MongoServerError"},
-						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "dLQ51C2LSqXU",
-				"operation": {"$or":[{"age":{"$gte":17},"score":{"$mod":[]}},{"age":{"$lte":100017},"score":{"$mod":[]}}]},
-				"results": [
-					{
-						"error": {"message":"malformed mod, not enough elements","code":2,"type":"MongoServerError"},
-						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "l1eoWXXWpiMA",
-				"operation": {"$or":[{"age":{"$gte":null},"score":{"$mod":[null,null]}},{"age":{"$lte":null},"score":{"$mod":[null,null]}}]},
-				"results": [
-					{
-						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
-						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "aNzxyJsAbTTH",
-				"operation": {"$or":[{"age":{"$gte":"value"},"score":{"$mod":["value","value"]}},{"age":{"$lte":"value"},"score":{"$mod":["value","value"]}}]},
-				"results": [
-					{
-						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
-						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "v6NsQq5MND4P",
-				"operation": {"$or":[{"age":{"$gte":true},"score":{"$mod":[true,true]}},{"age":{"$lte":true},"score":{"$mod":[true,true]}}]},
-				"results": [
-					{
-						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
-						"versions": "4.2.16..6.0.6"
 					}
 				]
 			},
@@ -52843,46 +52843,6 @@
 				]
 			},
 			{
-				"id": "uUAsXeIft47A",
-				"operation": {"score":{"$eq":7},"rank":{"$eq":8},"$where":{}},
-				"results": [
-					{
-						"error": {"message":"$where got bad type","code":2,"type":"MongoServerError"},
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "wwXUULuDbmMk",
-				"operation": {"score":{"$eq":null},"rank":{"$eq":null},"$where":{}},
-				"results": [
-					{
-						"error": {"message":"$where got bad type","code":2,"type":"MongoServerError"},
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "vwRuPMogMCvS",
-				"operation": {"score":{"$eq":"value"},"rank":{"$eq":"value"},"$where":{}},
-				"results": [
-					{
-						"error": {"message":"$where got bad type","code":2,"type":"MongoServerError"},
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
-				"id": "iCbawgLNKImK",
-				"operation": {"score":{"$eq":true},"rank":{"$eq":true},"$where":{}},
-				"results": [
-					{
-						"error": {"message":"$where got bad type","code":2,"type":"MongoServerError"},
-						"versions": "4.2.10..7.0.25"
-					}
-				]
-			},
-			{
 				"id": "lMnFyxMV3LV0",
 				"operation": {"age":9,"score":{"$where":"Couple"}},
 				"results": [
@@ -53313,6 +53273,46 @@
 					{
 						"error": {"message":"$where can only be applied to the top-level document","code":2,"type":"MongoServerError"},
 						"versions": "4.4.8..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "uUAsXeIft47A",
+				"operation": {"score":{"$eq":7},"rank":{"$eq":8},"$where":{}},
+				"results": [
+					{
+						"error": {"message":"$where got bad type","code":2,"type":"MongoServerError"},
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "wwXUULuDbmMk",
+				"operation": {"score":{"$eq":null},"rank":{"$eq":null},"$where":{}},
+				"results": [
+					{
+						"error": {"message":"$where got bad type","code":2,"type":"MongoServerError"},
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "vwRuPMogMCvS",
+				"operation": {"score":{"$eq":"value"},"rank":{"$eq":"value"},"$where":{}},
+				"results": [
+					{
+						"error": {"message":"$where got bad type","code":2,"type":"MongoServerError"},
+						"versions": "4.2.10..7.0.25"
+					}
+				]
+			},
+			{
+				"id": "iCbawgLNKImK",
+				"operation": {"score":{"$eq":true},"rank":{"$eq":true},"$where":{}},
+				"results": [
+					{
+						"error": {"message":"$where got bad type","code":2,"type":"MongoServerError"},
+						"versions": "4.2.10..7.0.25"
 					}
 				]
 			},
