@@ -1,10 +1,10 @@
 [
 	{
-		"id": "nCW5abMzwh6X",
+		"id": "dScKkGZ5R5aB",
 		"operation": {
 			"scores": {
 				"$all": [
-					12
+					27
 				]
 			}
 		},
@@ -13,12 +13,12 @@
 		]
 	},
 	{
-		"id": "ogiPecDP7VHL",
+		"id": "wkZoCH8uBInd",
 		"operation": {
 			"scores": {
 				"$all": [
-					12,
-					13
+					27,
+					28
 				]
 			}
 		},
@@ -27,12 +27,12 @@
 		]
 	},
 	{
-		"id": "p1AggWGbN4v3",
+		"id": "sOHvIlN1THbr",
 		"operation": {
 			"scores": {
 				"$all": [
-					13,
-					13
+					28,
+					28
 				]
 			}
 		},
@@ -41,11 +41,52 @@
 		]
 	},
 	{
-		"id": "cTFZkwmz91qt",
+		"id": "dScKkGZ5R5aB",
+		"operation": {
+			"scores": {
+				"$all": [
+					27
+				]
+			}
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "wkZoCH8uBInd",
+		"operation": {
+			"scores": {
+				"$all": [
+					27,
+					28
+				]
+			}
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "sOHvIlN1THbr",
+		"operation": {
+			"scores": {
+				"$all": [
+					28,
+					28
+				]
+			}
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "gnuGRrQgnlS8",
 		"operation": {
 			"ratings.age": {
 				"$all": [
-					12
+					29
 				]
 			}
 		},
@@ -54,12 +95,25 @@
 		]
 	},
 	{
-		"id": "avHmzES04Rel",
+		"id": "gnuGRrQgnlS8",
+		"operation": {
+			"ratings.age": {
+				"$all": [
+					29
+				]
+			}
+		},
+		"documents": [
+			7
+		]
+	},
+	{
+		"id": "nt5PuN0iCjTv",
 		"operation": {
 			"counts.score": {
 				"$all": [
-					52,
-					62
+					37,
+					47
 				]
 			}
 		},
@@ -77,11 +131,34 @@
 		"documents": []
 	},
 	{
-		"id": "vFuGupAVMnds",
+		"id": "nt5PuN0iCjTv",
+		"operation": {
+			"counts.score": {
+				"$all": [
+					37,
+					47
+				]
+			}
+		},
+		"documents": [
+			13
+		]
+	},
+	{
+		"id": "v8lVUgCRPV1E",
+		"operation": {
+			"counts": {
+				"$all": []
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "uctCQArWHvPX",
 		"operation": {
 			"values.rank": {
 				"$in": [
-					23
+					38
 				]
 			}
 		},
@@ -90,12 +167,12 @@
 		]
 	},
 	{
-		"id": "iCO8zqG6WjP3",
+		"id": "j8IG6BDE1c3r",
 		"operation": {
 			"values.rank": {
 				"$in": [
-					23,
-					24
+					38,
+					39
 				]
 			}
 		},
@@ -104,11 +181,52 @@
 		]
 	},
 	{
-		"id": "mS019Ocfzdl7",
+		"id": "uctCQArWHvPX",
+		"operation": {
+			"values.rank": {
+				"$in": [
+					38
+				]
+			}
+		},
+		"documents": [
+			14
+		]
+	},
+	{
+		"id": "j8IG6BDE1c3r",
+		"operation": {
+			"values.rank": {
+				"$in": [
+					38,
+					39
+				]
+			}
+		},
+		"documents": [
+			14
+		]
+	},
+	{
+		"id": "qxnZ0nlPDUsc",
+		"operation": {
+			"values.rank": {
+				"$all": [
+					38,
+					39
+				]
+			}
+		},
+		"documents": [
+			14
+		]
+	},
+	{
+		"id": "mEeo8asKAwIj",
 		"operation": {
 			"points": {
 				"$in": [
-					2
+					18
 				]
 			}
 		},
@@ -117,12 +235,26 @@
 		]
 	},
 	{
-		"id": "hJBQxODWH46A",
+		"id": "uShtrywtOCOG",
 		"operation": {
 			"points": {
 				"$in": [
-					2,
-					3
+					18,
+					19
+				]
+			}
+		},
+		"documents": [
+			15
+		]
+	},
+	{
+		"id": "r4RpE5OtAbc6",
+		"operation": {
+			"points": {
+				"$all": [
+					18,
+					19
 				]
 			}
 		},
@@ -141,44 +273,6 @@
 			}
 		},
 		"documents": []
-	},
-	{
-		"id": "s2LgpXRLv48w",
-		"operation": {
-			"level": {
-				"$in": [
-					null
-				]
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12,
-			13,
-			14,
-			15,
-			16,
-			17,
-			18,
-			19,
-			20,
-			21,
-			22,
-			23,
-			24,
-			25
-		]
 	},
 	{
 		"id": "seXNWGuvXDKL",
@@ -219,32 +313,6 @@
 		]
 	},
 	{
-		"id": "dfqKFvOJNKfv",
-		"operation": {
-			"level": {
-				"$not": {
-					"$all": [
-						null
-					]
-				}
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "cbDHtvsA6wYF",
-		"operation": {
-			"level": {
-				"$not": {
-					"$in": [
-						null
-					]
-				}
-			}
-		},
-		"documents": []
-	},
-	{
 		"id": "ulesAgqFEIbl",
 		"operation": {
 			"count": {
@@ -260,48 +328,19 @@
 		"documents": []
 	},
 	{
-		"id": "mcXJmykB5jXN",
-		"operation": {
-			"name": {
-				"$in": [
-					[
-						2,
-						3
-					]
-				]
-			}
-		},
-		"documents": [
-			20
-		]
-	},
-	{
-		"id": "r1GPWrINpqQS",
+		"id": "uSWX6Res68Ic",
 		"operation": {
 			"name": {
 				"$all": [
 					[
-						2,
-						3
+						17,
+						18
 					]
 				]
 			}
 		},
 		"documents": [
 			20
-		]
-	},
-	{
-		"id": "qcTjL7AFpWLn",
-		"operation": {
-			"title": {
-				"$in": [
-					[]
-				]
-			}
-		},
-		"documents": [
-			24
 		]
 	},
 	{
@@ -318,13 +357,13 @@
 		]
 	},
 	{
-		"id": "rxlUyCRLON1X",
+		"id": "ptOhuzQPLkEM",
 		"operation": {
 			"step": {
 				"$all": [
 					{
 						"$elemMatch": {
-							"priority": 15
+							"priority": 13
 						}
 					}
 				]
@@ -817,6 +856,94 @@
 		"documents": []
 	},
 	{
+		"id": "oJH5W4uoUR60",
+		"operation": {
+			"values.rank": {
+				"$all": "value"
+			}
+		},
+		"error": {
+			"message": "$all needs an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sVjAFXcMC71Y",
+		"operation": {
+			"values.rank": {
+				"$all": 42
+			}
+		},
+		"error": {
+			"message": "$all needs an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "k2y0X4YMsSwU",
+		"operation": {
+			"values.rank": {
+				"$all": [
+					null,
+					null
+				]
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "qsaftDwcFUDF",
+		"operation": {
+			"values.rank": {
+				"$all": [
+					"value",
+					"value"
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "jLSY75eEKZyD",
+		"operation": {
+			"values.rank": {
+				"$all": [
+					true,
+					true
+				]
+			}
+		},
+		"documents": []
+	},
+	{
 		"id": "v1T6SQsXE3VC",
 		"operation": {
 			"points": {
@@ -951,6 +1078,94 @@
 		"documents": []
 	},
 	{
+		"id": "dTpK26YbOVTx",
+		"operation": {
+			"points": {
+				"$all": "value"
+			}
+		},
+		"error": {
+			"message": "$all needs an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "iCADPvMR7OYk",
+		"operation": {
+			"points": {
+				"$all": 42
+			}
+		},
+		"error": {
+			"message": "$all needs an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "u5RywwPhGiVn",
+		"operation": {
+			"points": {
+				"$all": [
+					null,
+					null
+				]
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		]
+	},
+	{
+		"id": "oKVO5vIdeIUB",
+		"operation": {
+			"points": {
+				"$all": [
+					"value",
+					"value"
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "gXbvZAKpcSQU",
+		"operation": {
+			"points": {
+				"$all": [
+					true,
+					true
+				]
+			}
+		},
+		"documents": []
+	},
+	{
 		"id": "urDS7BBIUN4A",
 		"operation": {
 			"tags": {
@@ -1039,19 +1254,6 @@
 		"documents": []
 	},
 	{
-		"id": "hqD1T5bw0rEt",
-		"operation": {
-			"level": {
-				"$in": "active"
-			}
-		},
-		"error": {
-			"message": "$in needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
 		"id": "f7vuiXqBuvWU",
 		"operation": {
 			"level": {
@@ -1073,51 +1275,6 @@
 		},
 		"error": {
 			"message": "$all needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "qrs7qdCvqHPu",
-		"operation": {
-			"level": {
-				"$not": {
-					"$all": "value"
-				}
-			}
-		},
-		"error": {
-			"message": "$all needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "uGnexDL4IrUa",
-		"operation": {
-			"level": {
-				"$not": {
-					"$all": 42
-				}
-			}
-		},
-		"error": {
-			"message": "$all needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "uE4cZ8A3Uumg",
-		"operation": {
-			"level": {
-				"$not": {
-					"$in": "active"
-				}
-			}
-		},
-		"error": {
-			"message": "$in needs an array",
 			"code": 2,
 			"type": "MongoServerError"
 		}
@@ -1164,61 +1321,6 @@
 			"code": 2,
 			"type": "MongoServerError"
 		}
-	},
-	{
-		"id": "aUQEL5LMTOtr",
-		"operation": {
-			"name": {
-				"$in": "active"
-			}
-		},
-		"error": {
-			"message": "$in needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "gtQSSFuLPpWL",
-		"operation": {
-			"name": {
-				"$in": [
-					[
-						null,
-						null
-					]
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "p7ZJf6oA5ILs",
-		"operation": {
-			"name": {
-				"$in": [
-					[
-						"value",
-						"value"
-					]
-				]
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "wFlZvZcWqWCs",
-		"operation": {
-			"name": {
-				"$in": [
-					[
-						true,
-						true
-					]
-				]
-			}
-		},
-		"documents": []
 	},
 	{
 		"id": "vpS8GXYu9RWj",
@@ -1287,19 +1389,6 @@
 			}
 		},
 		"documents": []
-	},
-	{
-		"id": "a0HxStlJB49Y",
-		"operation": {
-			"title": {
-				"$in": "active"
-			}
-		},
-		"error": {
-			"message": "$in needs an array",
-			"code": 2,
-			"type": "MongoServerError"
-		}
 	},
 	{
 		"id": "rB9sl8upQ9F0",
