@@ -20,6 +20,23 @@
       }
     },
     {
+      "checksum": "b9596d68b0246309f5934a165ad338b5adcb1353d7ac099290ea44930456da9c",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "number:#1"
+          ]
+        }
+      },
+      "query": {
+        "age": {
+          "$in": [
+            5
+          ]
+        }
+      }
+    },
+    {
       "checksum": "23f5f2f0c6f384787bf403851200edc04eb27b3f616da4f6ea464931b8daa242",
       "fingerprint": {
         "field:#1": {
@@ -663,6 +680,21 @@
       }
     },
     {
+      "checksum": "e6fe267d3eef20fe7248c69353d9f0be00a323457bb2e9ea720634cb1fee92c1",
+      "fingerprint": {
+        "field:#1": {
+          "field:#2": "number:#1",
+          "field:#3": "number:#2"
+        }
+      },
+      "query": {
+        "level": {
+          "count": 32,
+          "grade": 33
+        }
+      }
+    },
+    {
       "checksum": "db2707fdea2b34a750afe45589945031e94b5de3e1ae2a1cdbd8bb277c602081",
       "fingerprint": {
         "field:#1": {
@@ -876,6 +908,32 @@
       }
     },
     {
+      "checksum": "c8ab1c060e74806175b5b94617be7ae8c444a1a375754f18aa57dce0209b95e4",
+      "fingerprint": {
+        "field:#1": "null:#1"
+      },
+      "query": {
+        "priority": null
+      }
+    },
+    {
+      "checksum": "94a8b740aab3f9ba250ff5c46a077a5dd4d409960e801367e3bf0d74e0885c9a",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "null:#1"
+          ]
+        }
+      },
+      "query": {
+        "priority": {
+          "$in": [
+            null
+          ]
+        }
+      }
+    },
+    {
       "checksum": "37d3da4453c7d23a653031b82c82866bab0e00c9a22e70ab38f2733a5df9fc54",
       "fingerprint": {
         "field:#1": {
@@ -889,11 +947,11 @@
         }
       },
       "query": {
-        "priority": {
+        "capacity": {
           "$in": [
             {
               "$elemMatch": {
-                "capacity": 11
+                "attempts": 17
               }
             }
           ]
@@ -916,12 +974,12 @@
         }
       },
       "query": {
-        "priority": {
+        "capacity": {
           "$not": {
             "$in": [
               {
                 "$elemMatch": {
-                  "capacity": 11
+                  "attempts": 17
                 }
               }
             ]
@@ -943,11 +1001,11 @@
         }
       },
       "query": {
-        "priority": {
+        "capacity": {
           "$nin": [
             {
               "$elemMatch": {
-                "capacity": 11
+                "attempts": 17
               }
             }
           ]
@@ -970,12 +1028,12 @@
         }
       },
       "query": {
-        "priority": {
+        "capacity": {
           "$not": {
             "$nin": [
               {
                 "$elemMatch": {
-                  "capacity": 11
+                  "attempts": 17
                 }
               }
             ]
@@ -1197,7 +1255,7 @@
         }
       },
       "query": {
-        "email.attempts": {
+        "email.quantity": {
           "$in": [
             7,
             8
@@ -1216,7 +1274,7 @@
         }
       },
       "query": {
-        "email.attempts": {
+        "email.quantity": {
           "$in": [
             7,
             {}
@@ -1240,7 +1298,7 @@
         "email": {
           "$in": [
             {
-              "attempts": 7
+              "quantity": 7
             },
             {}
           ]
@@ -1263,13 +1321,13 @@
         }
       },
       "query": {
-        "email.attempts": {
+        "email.quantity": {
           "$in": [
             {
-              "quantity": 16
+              "size": 16
             },
             {
-              "quantity": 7
+              "size": 7
             },
             {}
           ]
@@ -1287,7 +1345,7 @@
         }
       },
       "query": {
-        "attempts.quantity": {
+        "quantity.size": {
           "$in": [
             {},
             7
@@ -1307,7 +1365,7 @@
         }
       },
       "query": {
-        "attempts.quantity": {
+        "quantity.size": {
           "$in": [
             7,
             8,
@@ -1329,7 +1387,7 @@
         }
       },
       "query": {
-        "attempts.quantity": {
+        "quantity.size": {
           "$in": [
             7,
             8,
@@ -1353,7 +1411,7 @@
         }
       },
       "query": {
-        "attempts.quantity": {
+        "quantity.size": {
           "$in": [
             7,
             8,
@@ -1377,7 +1435,7 @@
         }
       },
       "query": {
-        "attempts.quantity": {
+        "quantity.size": {
           "$in": [
             {},
             7,
@@ -1402,7 +1460,7 @@
         }
       },
       "query": {
-        "attempts.quantity": {
+        "quantity.size": {
           "$in": [
             "Abundant",
             "Couple",
@@ -1428,7 +1486,7 @@
         }
       },
       "query": {
-        "attempts.quantity": {
+        "quantity.size": {
           "$in": [
             "Couple",
             "Double",
@@ -1452,7 +1510,7 @@
         }
       },
       "query": {
-        "attempts.quantity": {
+        "quantity.size": {
           "$in": [
             "Double",
             7,
@@ -1473,7 +1531,7 @@
         }
       },
       "query": {
-        "attempts.quantity": {
+        "quantity.size": {
           "$in": [
             "Double",
             {}
@@ -1492,7 +1550,7 @@
         }
       },
       "query": {
-        "attempts.quantity": {
+        "quantity.size": {
           "$in": [
             "Each",
             1005
@@ -1518,8 +1576,8 @@
           "$in": [
             26,
             {
-              "size": 25,
-              "index": "Couple"
+              "index": 25,
+              "depth": "Couple"
             }
           ]
         }
@@ -1549,8 +1607,8 @@
               27
             ],
             {
-              "size": 25,
-              "index": "Couple"
+              "index": 25,
+              "depth": "Couple"
             }
           ]
         }
@@ -1574,8 +1632,8 @@
           "$in": [
             {},
             {
-              "size": 26,
-              "index": "Couple"
+              "index": 26,
+              "depth": "Couple"
             }
           ]
         }
@@ -1599,8 +1657,8 @@
           "$in": [
             "Empty",
             {
-              "size": 26,
-              "index": "Couple"
+              "index": 26,
+              "depth": "Couple"
             }
           ]
         }
@@ -1626,12 +1684,12 @@
         "address": {
           "$in": [
             {
-              "size": 25,
-              "index": "Each"
+              "index": 25,
+              "depth": "Each"
             },
             {
-              "size": 25,
-              "index": "Couple"
+              "index": 25,
+              "depth": "Couple"
             }
           ]
         }
@@ -1657,12 +1715,12 @@
         "address": {
           "$in": [
             {
-              "size": 26,
-              "index": "Each"
+              "index": 26,
+              "depth": "Each"
             },
             {
-              "size": 25,
-              "index": "Couple"
+              "index": 25,
+              "depth": "Couple"
             }
           ]
         }
@@ -1684,8 +1742,8 @@
         "address": {
           "$in": [
             {
-              "size": 25,
-              "index": "Enough"
+              "index": 25,
+              "depth": "Enough"
             }
           ]
         }
@@ -1718,6 +1776,27 @@
       "age": {
         "$in": [
           true,
+          true
+        ]
+      }
+    },
+    {
+      "age": {
+        "$in": [
+          null
+        ]
+      }
+    },
+    {
+      "age": {
+        "$in": [
+          "value"
+        ]
+      }
+    },
+    {
+      "age": {
+        "$in": [
           true
         ]
       }
@@ -2341,7 +2420,12 @@
       }
     },
     {
-      "priority": {
+      "capacity": {
+        "$in": "active"
+      }
+    },
+    {
+      "capacity": {
         "$in": [
           {
             "$elemMatch": 42
@@ -2350,47 +2434,47 @@
       }
     },
     {
-      "priority": {
+      "capacity": {
         "$in": [
           {
             "$elemMatch": {
-              "capacity": null
+              "attempts": null
             }
           }
         ]
       }
     },
     {
-      "priority": {
+      "capacity": {
         "$in": [
           {
             "$elemMatch": {
-              "capacity": "value"
+              "attempts": "value"
             }
           }
         ]
       }
     },
     {
-      "priority": {
+      "capacity": {
         "$in": [
           {
             "$elemMatch": {
-              "capacity": true
+              "attempts": true
             }
           }
         ]
       }
     },
     {
-      "priority": {
+      "capacity": {
         "$not": {
           "$in": "active"
         }
       }
     },
     {
-      "priority": {
+      "capacity": {
         "$not": {
           "$in": [
             {
@@ -2401,12 +2485,12 @@
       }
     },
     {
-      "priority": {
+      "capacity": {
         "$not": {
           "$in": [
             {
               "$elemMatch": {
-                "capacity": null
+                "attempts": null
               }
             }
           ]
@@ -2414,12 +2498,12 @@
       }
     },
     {
-      "priority": {
+      "capacity": {
         "$not": {
           "$in": [
             {
               "$elemMatch": {
-                "capacity": "value"
+                "attempts": "value"
               }
             }
           ]
@@ -2427,12 +2511,12 @@
       }
     },
     {
-      "priority": {
+      "capacity": {
         "$not": {
           "$in": [
             {
               "$elemMatch": {
-                "capacity": true
+                "attempts": true
               }
             }
           ]
@@ -2440,12 +2524,12 @@
       }
     },
     {
-      "priority": {
+      "capacity": {
         "$nin": "deleted"
       }
     },
     {
-      "priority": {
+      "capacity": {
         "$nin": [
           {
             "$elemMatch": 42
@@ -2454,47 +2538,47 @@
       }
     },
     {
-      "priority": {
+      "capacity": {
         "$nin": [
           {
             "$elemMatch": {
-              "capacity": null
+              "attempts": null
             }
           }
         ]
       }
     },
     {
-      "priority": {
+      "capacity": {
         "$nin": [
           {
             "$elemMatch": {
-              "capacity": "value"
+              "attempts": "value"
             }
           }
         ]
       }
     },
     {
-      "priority": {
+      "capacity": {
         "$nin": [
           {
             "$elemMatch": {
-              "capacity": true
+              "attempts": true
             }
           }
         ]
       }
     },
     {
-      "priority": {
+      "capacity": {
         "$not": {
           "$nin": "deleted"
         }
       }
     },
     {
-      "priority": {
+      "capacity": {
         "$not": {
           "$nin": [
             {
@@ -2505,12 +2589,12 @@
       }
     },
     {
-      "priority": {
+      "capacity": {
         "$not": {
           "$nin": [
             {
               "$elemMatch": {
-                "capacity": null
+                "attempts": null
               }
             }
           ]
@@ -2518,12 +2602,12 @@
       }
     },
     {
-      "priority": {
+      "capacity": {
         "$not": {
           "$nin": [
             {
               "$elemMatch": {
-                "capacity": "value"
+                "attempts": "value"
               }
             }
           ]
@@ -2531,12 +2615,12 @@
       }
     },
     {
-      "priority": {
+      "capacity": {
         "$not": {
           "$nin": [
             {
               "$elemMatch": {
-                "capacity": true
+                "attempts": true
               }
             }
           ]
@@ -2818,12 +2902,12 @@
       }
     },
     {
-      "email.attempts": {
+      "email.quantity": {
         "$in": "active"
       }
     },
     {
-      "email.attempts": {
+      "email.quantity": {
         "$in": [
           null,
           null
@@ -2831,7 +2915,7 @@
       }
     },
     {
-      "email.attempts": {
+      "email.quantity": {
         "$in": [
           "value",
           "value"
@@ -2839,7 +2923,7 @@
       }
     },
     {
-      "email.attempts": {
+      "email.quantity": {
         "$in": [
           true,
           true
@@ -2847,7 +2931,7 @@
       }
     },
     {
-      "email.attempts": {
+      "email.quantity": {
         "$in": [
           null,
           {}
@@ -2855,7 +2939,7 @@
       }
     },
     {
-      "email.attempts": {
+      "email.quantity": {
         "$in": [
           "value",
           {}
@@ -2863,7 +2947,7 @@
       }
     },
     {
-      "email.attempts": {
+      "email.quantity": {
         "$in": [
           true,
           {}
@@ -2873,39 +2957,6 @@
     {
       "email": {
         "$in": [
-          {
-            "attempts": null
-          },
-          {}
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {
-            "attempts": "value"
-          },
-          {}
-        ]
-      }
-    },
-    {
-      "email": {
-        "$in": [
-          {
-            "attempts": true
-          },
-          {}
-        ]
-      }
-    },
-    {
-      "email.attempts": {
-        "$in": [
-          {
-            "quantity": null
-          },
           {
             "quantity": null
           },
@@ -2914,11 +2965,8 @@
       }
     },
     {
-      "email.attempts": {
+      "email": {
         "$in": [
-          {
-            "quantity": "value"
-          },
           {
             "quantity": "value"
           },
@@ -2927,11 +2975,8 @@
       }
     },
     {
-      "email.attempts": {
+      "email": {
         "$in": [
-          {
-            "quantity": true
-          },
           {
             "quantity": true
           },
@@ -2940,12 +2985,51 @@
       }
     },
     {
-      "attempts.quantity": {
+      "email.quantity": {
+        "$in": [
+          {
+            "size": null
+          },
+          {
+            "size": null
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "email.quantity": {
+        "$in": [
+          {
+            "size": "value"
+          },
+          {
+            "size": "value"
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "email.quantity": {
+        "$in": [
+          {
+            "size": true
+          },
+          {
+            "size": true
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "quantity.size": {
         "$in": "active"
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           {},
           null
@@ -2953,7 +3037,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           {},
           "value"
@@ -2961,7 +3045,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           {},
           true
@@ -2969,7 +3053,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           null,
           null,
@@ -2978,7 +3062,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           "value",
           "value",
@@ -2987,7 +3071,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           true,
           true,
@@ -2996,7 +3080,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           null,
           null,
@@ -3006,7 +3090,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           "value",
           "value",
@@ -3016,7 +3100,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           true,
           true,
@@ -3026,7 +3110,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           null,
           null,
@@ -3037,7 +3121,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           "value",
           "value",
@@ -3048,7 +3132,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           true,
           true,
@@ -3059,7 +3143,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           {},
           null,
@@ -3069,7 +3153,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           {},
           "value",
@@ -3079,7 +3163,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           {},
           true,
@@ -3089,7 +3173,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           "Abundant",
           "Couple",
@@ -3101,7 +3185,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           "Abundant",
           "Couple",
@@ -3113,7 +3197,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           "Abundant",
           "Couple",
@@ -3125,7 +3209,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           null,
           null,
@@ -3137,7 +3221,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           42,
           42,
@@ -3149,7 +3233,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           true,
           true,
@@ -3161,7 +3245,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           "Couple",
           "Double",
@@ -3172,7 +3256,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           "Couple",
           "Double",
@@ -3183,7 +3267,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           "Couple",
           "Double",
@@ -3194,7 +3278,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           null,
           null,
@@ -3205,7 +3289,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           42,
           42,
@@ -3216,7 +3300,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           true,
           true,
@@ -3227,7 +3311,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           "Double",
           null,
@@ -3237,7 +3321,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           "Double",
           "value",
@@ -3247,7 +3331,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           "Double",
           true,
@@ -3257,7 +3341,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           null,
           7,
@@ -3267,7 +3351,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           42,
           7,
@@ -3277,7 +3361,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           true,
           7,
@@ -3287,7 +3371,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           null,
           {}
@@ -3295,7 +3379,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           42,
           {}
@@ -3303,7 +3387,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           true,
           {}
@@ -3311,7 +3395,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           "Each",
           null
@@ -3319,7 +3403,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           "Each",
           "value"
@@ -3327,7 +3411,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           "Each",
           true
@@ -3335,7 +3419,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           null,
           1005
@@ -3343,7 +3427,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           42,
           1005
@@ -3351,7 +3435,7 @@
       }
     },
     {
-      "attempts.quantity": {
+      "quantity.size": {
         "$in": [
           true,
           1005
@@ -3368,8 +3452,8 @@
         "$in": [
           null,
           {
-            "size": null,
-            "index": "Couple"
+            "index": null,
+            "depth": "Couple"
           }
         ]
       }
@@ -3379,8 +3463,8 @@
         "$in": [
           "value",
           {
-            "size": "value",
-            "index": "Couple"
+            "index": "value",
+            "depth": "Couple"
           }
         ]
       }
@@ -3390,8 +3474,8 @@
         "$in": [
           true,
           {
-            "size": true,
-            "index": "Couple"
+            "index": true,
+            "depth": "Couple"
           }
         ]
       }
@@ -3401,8 +3485,8 @@
         "$in": [
           26,
           {
-            "size": 25,
-            "index": null
+            "index": 25,
+            "depth": null
           }
         ]
       }
@@ -3412,8 +3496,8 @@
         "$in": [
           26,
           {
-            "size": 25,
-            "index": 42
+            "index": 25,
+            "depth": 42
           }
         ]
       }
@@ -3423,8 +3507,8 @@
         "$in": [
           26,
           {
-            "size": 25,
-            "index": true
+            "index": 25,
+            "depth": true
           }
         ]
       }
@@ -3437,8 +3521,8 @@
             null
           ],
           {
-            "size": null,
-            "index": "Couple"
+            "index": null,
+            "depth": "Couple"
           }
         ]
       }
@@ -3451,8 +3535,8 @@
             "value"
           ],
           {
-            "size": "value",
-            "index": "Couple"
+            "index": "value",
+            "depth": "Couple"
           }
         ]
       }
@@ -3465,8 +3549,8 @@
             true
           ],
           {
-            "size": true,
-            "index": "Couple"
+            "index": true,
+            "depth": "Couple"
           }
         ]
       }
@@ -3479,8 +3563,8 @@
             27
           ],
           {
-            "size": 25,
-            "index": null
+            "index": 25,
+            "depth": null
           }
         ]
       }
@@ -3493,8 +3577,8 @@
             27
           ],
           {
-            "size": 25,
-            "index": 42
+            "index": 25,
+            "depth": 42
           }
         ]
       }
@@ -3507,8 +3591,8 @@
             27
           ],
           {
-            "size": 25,
-            "index": true
+            "index": 25,
+            "depth": true
           }
         ]
       }
@@ -3518,8 +3602,8 @@
         "$in": [
           {},
           {
-            "size": null,
-            "index": "Couple"
+            "index": null,
+            "depth": "Couple"
           }
         ]
       }
@@ -3529,8 +3613,8 @@
         "$in": [
           {},
           {
-            "size": "value",
-            "index": "Couple"
+            "index": "value",
+            "depth": "Couple"
           }
         ]
       }
@@ -3540,8 +3624,8 @@
         "$in": [
           {},
           {
-            "size": true,
-            "index": "Couple"
+            "index": true,
+            "depth": "Couple"
           }
         ]
       }
@@ -3551,8 +3635,8 @@
         "$in": [
           {},
           {
-            "size": 26,
-            "index": null
+            "index": 26,
+            "depth": null
           }
         ]
       }
@@ -3562,8 +3646,8 @@
         "$in": [
           {},
           {
-            "size": 26,
-            "index": 42
+            "index": 26,
+            "depth": 42
           }
         ]
       }
@@ -3573,8 +3657,8 @@
         "$in": [
           {},
           {
-            "size": 26,
-            "index": true
+            "index": 26,
+            "depth": true
           }
         ]
       }
@@ -3584,8 +3668,8 @@
         "$in": [
           "Empty",
           {
-            "size": null,
-            "index": "Couple"
+            "index": null,
+            "depth": "Couple"
           }
         ]
       }
@@ -3595,8 +3679,8 @@
         "$in": [
           "Empty",
           {
-            "size": "value",
-            "index": "Couple"
+            "index": "value",
+            "depth": "Couple"
           }
         ]
       }
@@ -3606,8 +3690,8 @@
         "$in": [
           "Empty",
           {
-            "size": true,
-            "index": "Couple"
+            "index": true,
+            "depth": "Couple"
           }
         ]
       }
@@ -3617,8 +3701,8 @@
         "$in": [
           null,
           {
-            "size": 26,
-            "index": null
+            "index": 26,
+            "depth": null
           }
         ]
       }
@@ -3628,8 +3712,8 @@
         "$in": [
           42,
           {
-            "size": 26,
-            "index": 42
+            "index": 26,
+            "depth": 42
           }
         ]
       }
@@ -3639,8 +3723,8 @@
         "$in": [
           true,
           {
-            "size": 26,
-            "index": true
+            "index": 26,
+            "depth": true
           }
         ]
       }
@@ -3649,12 +3733,12 @@
       "address": {
         "$in": [
           {
-            "size": null,
-            "index": "Each"
+            "index": null,
+            "depth": "Each"
           },
           {
-            "size": null,
-            "index": "Couple"
+            "index": null,
+            "depth": "Couple"
           }
         ]
       }
@@ -3663,12 +3747,12 @@
       "address": {
         "$in": [
           {
-            "size": "value",
-            "index": "Each"
+            "index": "value",
+            "depth": "Each"
           },
           {
-            "size": "value",
-            "index": "Couple"
+            "index": "value",
+            "depth": "Couple"
           }
         ]
       }
@@ -3677,12 +3761,12 @@
       "address": {
         "$in": [
           {
-            "size": true,
-            "index": "Each"
+            "index": true,
+            "depth": "Each"
           },
           {
-            "size": true,
-            "index": "Couple"
+            "index": true,
+            "depth": "Couple"
           }
         ]
       }
@@ -3691,12 +3775,12 @@
       "address": {
         "$in": [
           {
-            "size": 25,
-            "index": null
+            "index": 25,
+            "depth": null
           },
           {
-            "size": 25,
-            "index": null
+            "index": 25,
+            "depth": null
           }
         ]
       }
@@ -3705,12 +3789,12 @@
       "address": {
         "$in": [
           {
-            "size": 25,
-            "index": 42
+            "index": 25,
+            "depth": 42
           },
           {
-            "size": 25,
-            "index": 42
+            "index": 25,
+            "depth": 42
           }
         ]
       }
@@ -3719,12 +3803,12 @@
       "address": {
         "$in": [
           {
-            "size": 25,
-            "index": true
+            "index": 25,
+            "depth": true
           },
           {
-            "size": 25,
-            "index": true
+            "index": 25,
+            "depth": true
           }
         ]
       }
@@ -3733,12 +3817,12 @@
       "address": {
         "$in": [
           {
-            "size": 26,
-            "index": null
+            "index": 26,
+            "depth": null
           },
           {
-            "size": 25,
-            "index": null
+            "index": 25,
+            "depth": null
           }
         ]
       }
@@ -3747,12 +3831,12 @@
       "address": {
         "$in": [
           {
-            "size": 26,
-            "index": 42
+            "index": 26,
+            "depth": 42
           },
           {
-            "size": 25,
-            "index": 42
+            "index": 25,
+            "depth": 42
           }
         ]
       }
@@ -3761,12 +3845,12 @@
       "address": {
         "$in": [
           {
-            "size": 26,
-            "index": true
+            "index": 26,
+            "depth": true
           },
           {
-            "size": 25,
-            "index": true
+            "index": 25,
+            "depth": true
           }
         ]
       }
@@ -3775,8 +3859,8 @@
       "address": {
         "$in": [
           {
-            "size": null,
-            "index": "Enough"
+            "index": null,
+            "depth": "Enough"
           }
         ]
       }
@@ -3785,8 +3869,8 @@
       "address": {
         "$in": [
           {
-            "size": "value",
-            "index": "Enough"
+            "index": "value",
+            "depth": "Enough"
           }
         ]
       }
@@ -3795,8 +3879,8 @@
       "address": {
         "$in": [
           {
-            "size": true,
-            "index": "Enough"
+            "index": true,
+            "depth": "Enough"
           }
         ]
       }
@@ -3805,8 +3889,8 @@
       "address": {
         "$in": [
           {
-            "size": 25,
-            "index": null
+            "index": 25,
+            "depth": null
           }
         ]
       }
@@ -3815,8 +3899,8 @@
       "address": {
         "$in": [
           {
-            "size": 25,
-            "index": 42
+            "index": 25,
+            "depth": 42
           }
         ]
       }
@@ -3825,8 +3909,8 @@
       "address": {
         "$in": [
           {
-            "size": 25,
-            "index": true
+            "index": 25,
+            "depth": true
           }
         ]
       }
@@ -3941,22 +4025,22 @@
     {
       "_id": 21,
       "email": {
-        "attempts": 7
+        "quantity": 7
       }
     },
     {
       "_id": 22,
       "email": {
-        "attempts": "Abundant"
+        "quantity": "Abundant"
       }
     },
     {
       "_id": 23,
       "email": {
-        "attempts": [
+        "quantity": [
           105,
           {
-            "quantity": 7
+            "size": 7
           }
         ]
       }
@@ -3983,8 +4067,8 @@
     {
       "_id": 28,
       "address": {
-        "size": 25,
-        "index": "Couple"
+        "index": 25,
+        "depth": "Couple"
       }
     }
   ],

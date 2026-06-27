@@ -1,6 +1,135 @@
 {
   "queries": [
     {
+      "checksum": "f0ba3fbbe2026ecbb0f0c757bc485d5ea655810d245d4eecabb563a6bcbbfe5c",
+      "fingerprint": {
+        "field:#1": "number:#1"
+      },
+      "query": {
+        "score": 24
+      }
+    },
+    {
+      "checksum": "e10798479a1f7c0118eceecd4b756aea274d3ec7d177e3ca40d5f30be8819d63",
+      "fingerprint": {
+        "field:#1": {
+          "$gt": "number:#1"
+        },
+        "field:#2": "null:#1"
+      },
+      "query": {
+        "score": {
+          "$gt": 22
+        },
+        "rank": null
+      }
+    },
+    {
+      "checksum": "18475817770fe3113cf056bee6dca764d8148d83bf33c055202d9e7f60a58e0f",
+      "fingerprint": {
+        "field:#1": {
+          "$gt": "number:#1"
+        },
+        "field:#2": "null:#1"
+      },
+      "query": {
+        "score": {
+          "$gt": 22
+        },
+        "rank": null
+      }
+    },
+    {
+      "checksum": "5e4618a66f339c3801ee2d7f1f743021c67b6fae25a29643d8d52cee3600579d",
+      "fingerprint": {
+        "field:#1": {
+          "$gte": "number:#1",
+          "$lte": "number:#2"
+        }
+      },
+      "query": {
+        "score": {
+          "$gte": 22,
+          "$lte": 32
+        }
+      }
+    },
+    {
+      "checksum": "a12cf45e3464eb02a9433508529b492ccfe2e2c10e6c0d4cad17784e2bd90499",
+      "fingerprint": {
+        "field:#1": {
+          "$in": [
+            "number:#1",
+            "number:#2"
+          ]
+        },
+        "field:#2": {
+          "$gte": "number:#3"
+        }
+      },
+      "query": {
+        "score": {
+          "$in": [
+            23,
+            24
+          ]
+        },
+        "rank": {
+          "$gte": 22
+        }
+      }
+    },
+    {
+      "checksum": "87f0a9bc28c807de6d99de3f5a63a6681294091193c56e2b5a46efde484b9403",
+      "fingerprint": {
+        "$or": [
+          {
+            "field:#1": "string:#1",
+            "field:#2": "string:#1"
+          },
+          {
+            "field:#1": "string:#2",
+            "field:#2": "string:#2"
+          }
+        ]
+      },
+      "query": {
+        "$or": [
+          {
+            "status": "Every",
+            "category": "Every"
+          },
+          {
+            "status": "Empty",
+            "category": "Empty"
+          }
+        ]
+      }
+    },
+    {
+      "checksum": "5080167c22dd28941e0766ba4d1b40a91a09f02b7c2c6ef0f2e873a1095ede68",
+      "fingerprint": {
+        "field:#1": "number:#1"
+      },
+      "query": {
+        "score": 23
+      }
+    },
+    {
+      "checksum": "c8a49b96bd093d4fe153eb99b1477f77f4aa4cdc72868f02f002ed9547481d22",
+      "fingerprint": {},
+      "query": {}
+    },
+    {
+      "checksum": "6a775b9c975046bbd77b7600055299bc3fbaeb7cf14ebe7d55db7dc13ce04f36",
+      "fingerprint": {
+        "field:#1": "null:#1"
+      },
+      "query": {
+        "rank": null
+      }
+    },
+    {
       "checksum": "e1b86e6c9a05255d8ce75c4c818729beff46f7b4be0f285fa505c9a0827861ae",
       "fingerprint": {},
       "query": {}
@@ -58,6 +187,19 @@
       }
     },
     {
+      "checksum": "40ae2ff48aba997134d28531b6640294e1f9d62ff4ca3d18bfa381619568aef1",
+      "fingerprint": {
+        "field:#1": {
+          "$gt": "number:#1"
+        }
+      },
+      "query": {
+        "name": {
+          "$gt": 6
+        }
+      }
+    },
+    {
       "checksum": "75fbfff90bb082fa3d726e0364a4eb13e03130099c02fcf6fd2143e94d29cc20",
       "fingerprint": {
         "field:#1.field:#2": {
@@ -65,21 +207,8 @@
         }
       },
       "query": {
-        "scores.grade": {
+        "scores.quantity": {
           "$ne": 16
-        }
-      }
-    },
-    {
-      "checksum": "8720cd62b8b8e22e3fc45637f883737ef90006366ffb4ed4527798638a2ae16d",
-      "fingerprint": {
-        "field:#1": {
-          "$exists": "number:#1"
-        }
-      },
-      "query": {
-        "step": {
-          "$exists": 35
         }
       }
     },
@@ -91,7 +220,7 @@
         }
       },
       "query": {
-        "priority.capacity": {
+        "size.index": {
           "$exists": 28
         }
       }
@@ -138,126 +267,6 @@
             }
           }
         ]
-      }
-    },
-    {
-      "checksum": "87f0a9bc28c807de6d99de3f5a63a6681294091193c56e2b5a46efde484b9403",
-      "fingerprint": {
-        "$or": [
-          {
-            "field:#1": "string:#1",
-            "field:#2": "string:#1"
-          },
-          {
-            "field:#1": "string:#2",
-            "field:#2": "string:#2"
-          }
-        ]
-      },
-      "query": {
-        "$or": [
-          {
-            "status": "Every",
-            "category": "Every"
-          },
-          {
-            "status": "Empty",
-            "category": "Empty"
-          }
-        ]
-      }
-    },
-    {
-      "checksum": "e10798479a1f7c0118eceecd4b756aea274d3ec7d177e3ca40d5f30be8819d63",
-      "fingerprint": {
-        "field:#1": {
-          "$gt": "number:#1"
-        },
-        "field:#2": "null:#1"
-      },
-      "query": {
-        "size": {
-          "$gt": 21
-        },
-        "index": null
-      }
-    },
-    {
-      "checksum": "18475817770fe3113cf056bee6dca764d8148d83bf33c055202d9e7f60a58e0f",
-      "fingerprint": {
-        "field:#1": {
-          "$gt": "number:#1"
-        },
-        "field:#2": "null:#1"
-      },
-      "query": {
-        "size": {
-          "$gt": 21
-        },
-        "index": null
-      }
-    },
-    {
-      "checksum": "5e4618a66f339c3801ee2d7f1f743021c67b6fae25a29643d8d52cee3600579d",
-      "fingerprint": {
-        "field:#1": {
-          "$gte": "number:#1",
-          "$lte": "number:#2"
-        }
-      },
-      "query": {
-        "size": {
-          "$gte": 21,
-          "$lte": 31
-        }
-      }
-    },
-    {
-      "checksum": "a12cf45e3464eb02a9433508529b492ccfe2e2c10e6c0d4cad17784e2bd90499",
-      "fingerprint": {
-        "field:#1": {
-          "$in": [
-            "number:#1",
-            "number:#2"
-          ]
-        },
-        "field:#2": {
-          "$gte": "number:#3"
-        }
-      },
-      "query": {
-        "size": {
-          "$in": [
-            22,
-            23
-          ]
-        },
-        "index": {
-          "$gte": 21
-        }
-      }
-    },
-    {
-      "checksum": "5080167c22dd28941e0766ba4d1b40a91a09f02b7c2c6ef0f2e873a1095ede68",
-      "fingerprint": {
-        "field:#1": "number:#1"
-      },
-      "query": {
-        "size": 22
-      }
-    },
-    {
-      "checksum": "c8a49b96bd093d4fe153eb99b1477f77f4aa4cdc72868f02f002ed9547481d22",
-      "fingerprint": {},
-      "query": {}
-    },
-    {
-      "checksum": "6a775b9c975046bbd77b7600055299bc3fbaeb7cf14ebe7d55db7dc13ce04f36",
-      "fingerprint": {
-        "field:#1": "null:#1"
-      },
-      "query": {
-        "index": null
       }
     },
     {
@@ -318,255 +327,255 @@
   ],
   "variants": [
     {
-      "name": {
-        "$gte": null
-      }
+      "score": null
     },
     {
-      "name": {
-        "$gte": "value"
-      }
+      "score": "value"
     },
     {
-      "name": {
-        "$gte": true
-      }
+      "score": true
     },
     {
-      "name": {
-        "$lte": null
-      }
-    },
-    {
-      "name": {
-        "$lte": "value"
-      }
-    },
-    {
-      "name": {
-        "$lte": true
-      }
-    },
-    {
-      "scores.grade": {
-        "$ne": null
-      }
-    },
-    {
-      "scores.grade": {
-        "$ne": "value"
-      }
-    },
-    {
-      "scores.grade": {
-        "$ne": true
-      }
-    },
-    {
-      "step": {
-        "$exists": null
-      }
-    },
-    {
-      "step": {
-        "$exists": "value"
-      }
-    },
-    {
-      "step": {
-        "$exists": true
-      }
-    },
-    {
-      "priority.capacity": {
-        "$exists": null
-      }
-    },
-    {
-      "priority.capacity": {
-        "$exists": "value"
-      }
-    },
-    {
-      "priority.capacity": {
-        "$exists": true
-      }
-    },
-    {
-      "$or": [
-        {
-          "username": {
-            "$not": {
-              "$type": null
-            }
-          }
-        },
-        {
-          "email": {
-            "$not": {
-              "$type": null
-            }
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "username": {
-            "$not": {
-              "$type": 42
-            }
-          }
-        },
-        {
-          "email": {
-            "$not": {
-              "$type": 42
-            }
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "username": {
-            "$not": {
-              "$type": true
-            }
-          }
-        },
-        {
-          "email": {
-            "$not": {
-              "$type": true
-            }
-          }
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "status": null,
-          "category": null
-        },
-        {
-          "status": null,
-          "category": null
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "status": 42,
-          "category": 42
-        },
-        {
-          "status": 42,
-          "category": 42
-        }
-      ]
-    },
-    {
-      "$or": [
-        {
-          "status": true,
-          "category": true
-        },
-        {
-          "status": true,
-          "category": true
-        }
-      ]
-    },
-    {
-      "size": {
+      "score": {
         "$gt": null
       },
-      "index": null
+      "rank": null
     },
     {
-      "size": {
+      "score": {
         "$gt": "value"
       },
-      "index": null
+      "rank": null
     },
     {
-      "size": {
+      "score": {
         "$gt": true
       },
-      "index": null
+      "rank": null
     },
     {
-      "size": {
+      "score": {
         "$gte": null,
         "$lte": null
       }
     },
     {
-      "size": {
+      "score": {
         "$gte": "value",
         "$lte": "value"
       }
     },
     {
-      "size": {
+      "score": {
         "$gte": true,
         "$lte": true
       }
     },
     {
-      "size": {
+      "score": {
         "$in": "active"
       },
-      "index": {
-        "$gte": 21
+      "rank": {
+        "$gte": 22
       }
     },
     {
-      "size": {
+      "score": {
         "$in": [
           null,
           null
         ]
       },
-      "index": {
+      "rank": {
         "$gte": null
       }
     },
     {
-      "size": {
+      "score": {
         "$in": [
           "value",
           "value"
         ]
       },
-      "index": {
+      "rank": {
         "$gte": "value"
       }
     },
     {
-      "size": {
+      "score": {
         "$in": [
           true,
           true
         ]
       },
-      "index": {
+      "rank": {
         "$gte": true
       }
     },
     {
-      "size": null
+      "$or": [
+        {
+          "status": null,
+          "category": null
+        },
+        {
+          "status": null,
+          "category": null
+        }
+      ]
     },
     {
-      "size": "value"
+      "$or": [
+        {
+          "status": 42,
+          "category": 42
+        },
+        {
+          "status": 42,
+          "category": 42
+        }
+      ]
     },
     {
-      "size": true
+      "$or": [
+        {
+          "status": true,
+          "category": true
+        },
+        {
+          "status": true,
+          "category": true
+        }
+      ]
+    },
+    {
+      "name": {
+        "$gte": null
+      }
+    },
+    {
+      "name": {
+        "$gte": "value"
+      }
+    },
+    {
+      "name": {
+        "$gte": true
+      }
+    },
+    {
+      "name": {
+        "$lte": null
+      }
+    },
+    {
+      "name": {
+        "$lte": "value"
+      }
+    },
+    {
+      "name": {
+        "$lte": true
+      }
+    },
+    {
+      "name": {
+        "$gt": null
+      }
+    },
+    {
+      "name": {
+        "$gt": "value"
+      }
+    },
+    {
+      "name": {
+        "$gt": true
+      }
+    },
+    {
+      "scores.quantity": {
+        "$ne": null
+      }
+    },
+    {
+      "scores.quantity": {
+        "$ne": "value"
+      }
+    },
+    {
+      "scores.quantity": {
+        "$ne": true
+      }
+    },
+    {
+      "size.index": {
+        "$exists": null
+      }
+    },
+    {
+      "size.index": {
+        "$exists": "value"
+      }
+    },
+    {
+      "size.index": {
+        "$exists": true
+      }
+    },
+    {
+      "$or": [
+        {
+          "username": {
+            "$not": {
+              "$type": null
+            }
+          }
+        },
+        {
+          "email": {
+            "$not": {
+              "$type": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "username": {
+            "$not": {
+              "$type": 42
+            }
+          }
+        },
+        {
+          "email": {
+            "$not": {
+              "$type": 42
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$or": [
+        {
+          "username": {
+            "$not": {
+              "$type": true
+            }
+          }
+        },
+        {
+          "email": {
+            "$not": {
+              "$type": true
+            }
+          }
+        }
+      ]
     },
     {
       "$or": [
@@ -714,64 +723,73 @@
   "documents": [
     {
       "_id": 0,
-      "age": 33,
-      "score": 29,
-      "rank": {
-        "level": 33,
-        "count": 32
-      }
+      "age": 23,
+      "score": 25
     },
     {
       "_id": 1,
+      "status": "Abundant",
+      "category": "Abundant",
+      "type": "Couple",
+      "region": "Double"
+    },
+    {
+      "_id": 2,
+      "grade": 33,
+      "step": 29,
+      "priority": {
+        "capacity": 33,
+        "attempts": 32
+      }
+    },
+    {
+      "_id": 3,
       "name": [
         7,
         16
       ]
     },
     {
-      "_id": 2,
+      "_id": 4,
       "name": 11
     },
     {
-      "_id": 3,
+      "_id": 5,
       "scores": []
     },
     {
-      "_id": 4,
+      "_id": 6,
       "scores": [
         []
       ]
     },
     {
-      "_id": 5
-    },
-    {
-      "_id": 6,
-      "priority": {}
-    },
-    {
       "_id": 7,
-      "attempts": 9,
-      "title": 9
+      "size": {}
     },
     {
       "_id": 8,
-      "attempts": 11,
-      "title": null
+      "depth": 9,
+      "title": 9
     },
     {
       "_id": 9,
-      "attempts": 12,
-      "title": {}
+      "depth": 11,
+      "title": null
     },
     {
       "_id": 10,
-      "attempts": 13,
-      "title": []
+      "depth": 12,
+      "title": {}
     },
     {
       "_id": 11,
-      "attempts": 14,
+      "depth": 13,
+      "title": []
+    },
+    {
+      "_id": 12,
+      "depth": 14,
       "title": [
         8,
         9,
@@ -779,8 +797,8 @@
       ]
     },
     {
-      "_id": 12,
-      "attempts": 15,
+      "_id": 13,
+      "depth": 15,
       "title": [
         [
           9,
@@ -793,47 +811,32 @@
       ]
     },
     {
-      "_id": 13,
-      "attempts": 17,
+      "_id": 14,
+      "depth": 17,
       "title": [
         null
       ]
     },
     {
-      "_id": 14,
-      "quantity": 7,
+      "_id": 15,
+      "weight": 7,
       "username": [],
       "email": 7
     },
     {
-      "_id": 15,
-      "quantity": 8,
+      "_id": 16,
+      "weight": 8,
       "username": 7,
       "email": []
-    },
-    {
-      "_id": 16,
-      "status": "Abundant",
-      "category": "Abundant",
-      "type": "Couple",
-      "region": "Double"
-    },
-    {
-      "_id": 17,
-      "size": 22
     }
   ],
   "indices": [
     {
-      "y.b": 1,
-      "y.a": -1
+      "score": 1
     },
     {
-      "y.b": 1,
-      "age": -1
-    },
-    {
-      "name": 1
+      "score": 1,
+      "rank": 1
     },
     {
       "status": 1,
@@ -846,8 +849,12 @@
       "region": -1
     },
     {
-      "type": 1,
-      "region": 1
+      "y.b": 1,
+      "y.a": -1
+    },
+    {
+      "y.b": 1,
+      "grade": -1
     }
   ]
 }
