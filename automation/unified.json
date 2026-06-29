@@ -15251,26 +15251,6 @@
 				]
 			},
 			{
-				"id": "pMhiwvPZOAEZ",
-				"operation": {"count":{"$lt":{}}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "3.2.6..7.0.35"
-					}
-				]
-			},
-			{
-				"id": "gGHN3yy680Y9",
-				"operation": {"count":{"$gt":{}}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "3.4.2..7.0.35"
-					}
-				]
-			},
-			{
 				"id": "n2hDyxW6Btc4",
 				"operation": {"age":{"$gt":{}}},
 				"results": [
@@ -15287,6 +15267,26 @@
 					{
 						"documents": [0],
 						"versions": "4.2.10..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "pMhiwvPZOAEZ",
+				"operation": {"count":{"$lt":{}}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "3.2.6..7.0.35"
+					}
+				]
+			},
+			{
+				"id": "gGHN3yy680Y9",
+				"operation": {"count":{"$gt":{}}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "3.4.2..7.0.35"
 					}
 				]
 			}
@@ -27347,34 +27347,6 @@
 				]
 			},
 			{
-				"id": "qZuU6xXrUV23",
-				"operation": {"score":{"$gt":{}}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "3.4.2..7.0.35"
-					},
-					{
-						"error": {"message":"connect ECONNREFUSED 127.0.0.1:27017","type":"MongoServerSelectionError"},
-						"versions": "3.7.7"
-					}
-				]
-			},
-			{
-				"id": "bEqHV36MJDfK",
-				"operation": {"score":{"$lt":{}}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "3.4.2..7.0.35"
-					},
-					{
-						"error": {"message":"connect ECONNREFUSED 127.0.0.1:27017","type":"MongoServerSelectionError"},
-						"versions": "3.7.7"
-					}
-				]
-			},
-			{
 				"id": "o50ORg5ZO4Mu",
 				"operation": {"score":{"$gt":5,"$lt":7,"$ne":6}},
 				"results": [
@@ -28465,6 +28437,34 @@
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10],
 						"versions": "4.2.10..6.0.5"
+					}
+				]
+			},
+			{
+				"id": "qZuU6xXrUV23",
+				"operation": {"score":{"$gt":{}}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "3.4.2..7.0.35"
+					},
+					{
+						"error": {"message":"connect ECONNREFUSED 127.0.0.1:27017","type":"MongoServerSelectionError"},
+						"versions": "3.7.7"
+					}
+				]
+			},
+			{
+				"id": "bEqHV36MJDfK",
+				"operation": {"score":{"$lt":{}}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "3.4.2..7.0.35"
+					},
+					{
+						"error": {"message":"connect ECONNREFUSED 127.0.0.1:27017","type":"MongoServerSelectionError"},
+						"versions": "3.7.7"
 					}
 				]
 			},
