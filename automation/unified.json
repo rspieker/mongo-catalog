@@ -32091,6 +32091,274 @@
 				]
 			},
 			{
+				"id": "rnhsMu9hMaaH",
+				"operation": {"username":{"$not":{"$elemMatch":{"age":"Abundant"}}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7],
+						"versions": "3.7.7..6.0.8"
+					}
+				]
+			},
+			{
+				"id": "fGgJQU3aVL1V",
+				"operation": {"title":{"$not":{"$size":"large"}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
+						"versions": "3.2.6..3.2.20"
+					},
+					{
+						"error": {"message":"$size needs a number","code":2,"type":"MongoError"},
+						"versions": "3.3.11..3.5.12"
+					},
+					{
+						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
+						"versions": "3.7.1..5.0.30"
+					},
+					{
+						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"large\"","code":2,"type":"MongoServerError"},
+						"versions": "6.0.3..6.0.8"
+					}
+				]
+			},
+			{
+				"id": "dh0WcT5wNhTr",
+				"operation": {"title":{"$not":{"$size":2.5}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
+						"versions": "3.2.6..3.2.20"
+					},
+					{
+						"error": {"message":"$size must be a whole number","code":2,"type":"MongoError"},
+						"versions": "3.3.11..3.5.12"
+					},
+					{
+						"error": {"message":"$size must be a whole number","code":2,"type":"MongoServerError"},
+						"versions": "3.7.1..5.0.30"
+					},
+					{
+						"error": {"message":"Failed to parse $size. Expected an integer: $size: 2.5","code":2,"type":"MongoServerError"},
+						"versions": "6.0.3..6.0.8"
+					}
+				]
+			},
+			{
+				"id": "gSyInXU9hV4p",
+				"operation": {"title":{"$not":{"$size":null}}},
+				"results": [
+					{
+						"error": {"message":"$size needs a number","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.5.12"
+					},
+					{
+						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
+						"versions": "3.7.1..5.0.30"
+					},
+					{
+						"error": {"message":"Failed to parse $size. Expected a number in: $size: null","code":2,"type":"MongoServerError"},
+						"versions": "6.0.3..6.0.8"
+					}
+				]
+			},
+			{
+				"id": "tF5nYPFO2Dsk",
+				"operation": {"title":{"$not":{"$size":"value"}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
+						"versions": "3.2.6..3.2.20"
+					},
+					{
+						"error": {"message":"$size needs a number","code":2,"type":"MongoError"},
+						"versions": "3.3.11..3.5.12"
+					},
+					{
+						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
+						"versions": "3.7.1..5.0.30"
+					},
+					{
+						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"value\"","code":2,"type":"MongoServerError"},
+						"versions": "6.0.3..6.0.8"
+					}
+				]
+			},
+			{
+				"id": "w1rQsMOKIS3C",
+				"operation": {"title":{"$not":{"$size":true}}},
+				"results": [
+					{
+						"error": {"message":"$size needs a number","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.5.12"
+					},
+					{
+						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
+						"versions": "3.7.1..5.0.30"
+					},
+					{
+						"error": {"message":"Failed to parse $size. Expected a number in: $size: true","code":2,"type":"MongoServerError"},
+						"versions": "6.0.3..6.0.8"
+					}
+				]
+			},
+			{
+				"id": "k5EEuyEDmUOt",
+				"operation": {"title":{"$not":{"$all":"value"}}},
+				"results": [
+					{
+						"error": {"message":"$all needs an array","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.5.12"
+					},
+					{
+						"error": {"message":"$all needs an array","code":2,"type":"MongoServerError"},
+						"versions": "3.7.1..6.0.8"
+					}
+				]
+			},
+			{
+				"id": "fJJY32ACGvRm",
+				"operation": {"title":{"$not":{"$all":42}}},
+				"results": [
+					{
+						"error": {"message":"$all needs an array","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.5.12"
+					},
+					{
+						"error": {"message":"$all needs an array","code":2,"type":"MongoServerError"},
+						"versions": "3.7.1..6.0.8"
+					}
+				]
+			},
+			{
+				"id": "abUgA3BhwcX3",
+				"operation": {"title":{"$not":{"$all":[null,null]}}},
+				"results": [
+					{
+						"documents": [4,5,6],
+						"versions": "3.2.6..3.7.5,4.2.16,4.2.17,5.0.10..5.0.14,6.0.3,6.0.6"
+					},
+					{
+						"documents": [2,3,4],
+						"versions": "3.7.7,5.0.6,5.0.18..5.0.30,6.0.8"
+					}
+				]
+			},
+			{
+				"id": "pvqljlKuZUYK",
+				"operation": {"title":{"$not":{"$all":[42,42]}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
+						"versions": "3.2.6..3.7.5,4.2.16,4.2.17,5.0.10..5.0.14,6.0.3,6.0.6"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8],
+						"versions": "3.7.7,5.0.6,5.0.18..5.0.30,6.0.8"
+					}
+				]
+			},
+			{
+				"id": "wGMzQAkqV2be",
+				"operation": {"title":{"$not":{"$all":[true,true]}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
+						"versions": "3.2.6..3.7.5,4.2.16,4.2.17,5.0.10..5.0.14,6.0.3,6.0.6"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8],
+						"versions": "3.7.7,5.0.6,5.0.18..5.0.30,6.0.8"
+					}
+				]
+			},
+			{
+				"id": "igAyGpVM0slC",
+				"operation": {"title":{"$not":{"$all":[null]}}},
+				"results": [
+					{
+						"documents": [4,5,6],
+						"versions": "3.2.6..3.7.5,4.2.16,4.2.17,5.0.10..5.0.14,6.0.3,6.0.6"
+					},
+					{
+						"documents": [2,3,4],
+						"versions": "3.7.7,5.0.6,5.0.18..5.0.30,6.0.8"
+					}
+				]
+			},
+			{
+				"id": "bNc5c9WF56Eo",
+				"operation": {"title":{"$not":{"$all":[42]}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
+						"versions": "3.2.6..3.7.5,4.2.16,4.2.17,5.0.10..5.0.14,6.0.3,6.0.6"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8],
+						"versions": "3.7.7,5.0.6,5.0.18..5.0.30,6.0.8"
+					}
+				]
+			},
+			{
+				"id": "iQoP9RbKuajC",
+				"operation": {"title":{"$not":{"$all":[true]}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
+						"versions": "3.2.6..3.7.5,4.2.16,4.2.17,5.0.10..5.0.14,6.0.3,6.0.6"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8],
+						"versions": "3.7.7,5.0.6,5.0.18..5.0.30,6.0.8"
+					}
+				]
+			},
+			{
+				"id": "pAAdkzuD4sXE",
+				"operation": {"username":{"$not":{"$elemMatch":42}}},
+				"results": [
+					{
+						"error": {"message":"$elemMatch needs an Object","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.5.12"
+					},
+					{
+						"error": {"message":"$elemMatch needs an Object","code":2,"type":"MongoServerError"},
+						"versions": "3.7.1..6.0.8"
+					}
+				]
+			},
+			{
+				"id": "nNcXcCRifWLz",
+				"operation": {"username":{"$not":{"$elemMatch":{"age":null}}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8],
+						"versions": "3.7.7..6.0.8"
+					}
+				]
+			},
+			{
+				"id": "wVx9OQrudg5C",
+				"operation": {"username":{"$not":{"$elemMatch":{"age":42}}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8],
+						"versions": "3.7.7..6.0.8"
+					}
+				]
+			},
+			{
+				"id": "fC8J1w2LIsZy",
+				"operation": {"username":{"$not":{"$elemMatch":{"age":true}}}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8],
+						"versions": "3.7.7..6.0.8"
+					}
+				]
+			},
+			{
 				"id": "dpmZJj7o8tcF",
 				"operation": {"username":{"$not":{"$elemMatch":{"score":"Abundant"}}}},
 				"results": [
@@ -32341,234 +32609,6 @@
 					{
 						"error": {"message":"$options needs a $regex","code":2,"type":"MongoServerError"},
 						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "fGgJQU3aVL1V",
-				"operation": {"title":{"$not":{"$size":"large"}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
-						"versions": "3.2.6..3.2.20"
-					},
-					{
-						"error": {"message":"$size needs a number","code":2,"type":"MongoError"},
-						"versions": "3.3.11..3.5.12"
-					},
-					{
-						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.7.1..5.0.30"
-					},
-					{
-						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"large\"","code":2,"type":"MongoServerError"},
-						"versions": "6.0.3..6.0.8"
-					}
-				]
-			},
-			{
-				"id": "dh0WcT5wNhTr",
-				"operation": {"title":{"$not":{"$size":2.5}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
-						"versions": "3.2.6..3.2.20"
-					},
-					{
-						"error": {"message":"$size must be a whole number","code":2,"type":"MongoError"},
-						"versions": "3.3.11..3.5.12"
-					},
-					{
-						"error": {"message":"$size must be a whole number","code":2,"type":"MongoServerError"},
-						"versions": "3.7.1..5.0.30"
-					},
-					{
-						"error": {"message":"Failed to parse $size. Expected an integer: $size: 2.5","code":2,"type":"MongoServerError"},
-						"versions": "6.0.3..6.0.8"
-					}
-				]
-			},
-			{
-				"id": "gSyInXU9hV4p",
-				"operation": {"title":{"$not":{"$size":null}}},
-				"results": [
-					{
-						"error": {"message":"$size needs a number","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.5.12"
-					},
-					{
-						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.7.1..5.0.30"
-					},
-					{
-						"error": {"message":"Failed to parse $size. Expected a number in: $size: null","code":2,"type":"MongoServerError"},
-						"versions": "6.0.3..6.0.8"
-					}
-				]
-			},
-			{
-				"id": "tF5nYPFO2Dsk",
-				"operation": {"title":{"$not":{"$size":"value"}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
-						"versions": "3.2.6..3.2.20"
-					},
-					{
-						"error": {"message":"$size needs a number","code":2,"type":"MongoError"},
-						"versions": "3.3.11..3.5.12"
-					},
-					{
-						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.7.1..5.0.30"
-					},
-					{
-						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"value\"","code":2,"type":"MongoServerError"},
-						"versions": "6.0.3..6.0.8"
-					}
-				]
-			},
-			{
-				"id": "w1rQsMOKIS3C",
-				"operation": {"title":{"$not":{"$size":true}}},
-				"results": [
-					{
-						"error": {"message":"$size needs a number","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.5.12"
-					},
-					{
-						"error": {"message":"$size needs a number","code":2,"type":"MongoServerError"},
-						"versions": "3.7.1..5.0.30"
-					},
-					{
-						"error": {"message":"Failed to parse $size. Expected a number in: $size: true","code":2,"type":"MongoServerError"},
-						"versions": "6.0.3..6.0.8"
-					}
-				]
-			},
-			{
-				"id": "k5EEuyEDmUOt",
-				"operation": {"title":{"$not":{"$all":"value"}}},
-				"results": [
-					{
-						"error": {"message":"$all needs an array","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.5.12"
-					},
-					{
-						"error": {"message":"$all needs an array","code":2,"type":"MongoServerError"},
-						"versions": "3.7.1..6.0.8"
-					}
-				]
-			},
-			{
-				"id": "fJJY32ACGvRm",
-				"operation": {"title":{"$not":{"$all":42}}},
-				"results": [
-					{
-						"error": {"message":"$all needs an array","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.5.12"
-					},
-					{
-						"error": {"message":"$all needs an array","code":2,"type":"MongoServerError"},
-						"versions": "3.7.1..6.0.8"
-					}
-				]
-			},
-			{
-				"id": "abUgA3BhwcX3",
-				"operation": {"title":{"$not":{"$all":[null,null]}}},
-				"results": [
-					{
-						"documents": [4,5,6],
-						"versions": "3.2.6..3.7.5,4.2.16,4.2.17,5.0.10..5.0.14,6.0.3,6.0.6"
-					},
-					{
-						"documents": [2,3,4],
-						"versions": "3.7.7,5.0.6,5.0.18..5.0.30,6.0.8"
-					}
-				]
-			},
-			{
-				"id": "pvqljlKuZUYK",
-				"operation": {"title":{"$not":{"$all":[42,42]}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
-						"versions": "3.2.6..3.7.5,4.2.16,4.2.17,5.0.10..5.0.14,6.0.3,6.0.6"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "3.7.7,5.0.6,5.0.18..5.0.30,6.0.8"
-					}
-				]
-			},
-			{
-				"id": "wGMzQAkqV2be",
-				"operation": {"title":{"$not":{"$all":[true,true]}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
-						"versions": "3.2.6..3.7.5,4.2.16,4.2.17,5.0.10..5.0.14,6.0.3,6.0.6"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "3.7.7,5.0.6,5.0.18..5.0.30,6.0.8"
-					}
-				]
-			},
-			{
-				"id": "igAyGpVM0slC",
-				"operation": {"title":{"$not":{"$all":[null]}}},
-				"results": [
-					{
-						"documents": [4,5,6],
-						"versions": "3.2.6..3.7.5,4.2.16,4.2.17,5.0.10..5.0.14,6.0.3,6.0.6"
-					},
-					{
-						"documents": [2,3,4],
-						"versions": "3.7.7,5.0.6,5.0.18..5.0.30,6.0.8"
-					}
-				]
-			},
-			{
-				"id": "bNc5c9WF56Eo",
-				"operation": {"title":{"$not":{"$all":[42]}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
-						"versions": "3.2.6..3.7.5,4.2.16,4.2.17,5.0.10..5.0.14,6.0.3,6.0.6"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "3.7.7,5.0.6,5.0.18..5.0.30,6.0.8"
-					}
-				]
-			},
-			{
-				"id": "iQoP9RbKuajC",
-				"operation": {"title":{"$not":{"$all":[true]}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
-						"versions": "3.2.6..3.7.5,4.2.16,4.2.17,5.0.10..5.0.14,6.0.3,6.0.6"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "3.7.7,5.0.6,5.0.18..5.0.30,6.0.8"
-					}
-				]
-			},
-			{
-				"id": "pAAdkzuD4sXE",
-				"operation": {"username":{"$not":{"$elemMatch":42}}},
-				"results": [
-					{
-						"error": {"message":"$elemMatch needs an Object","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.5.12"
-					},
-					{
-						"error": {"message":"$elemMatch needs an Object","code":2,"type":"MongoServerError"},
-						"versions": "3.7.1..6.0.8"
 					}
 				]
 			},
@@ -33399,46 +33439,6 @@
 					{
 						"error": {"message":"$options needs a $regex","code":2,"type":"MongoServerError"},
 						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "rnhsMu9hMaaH",
-				"operation": {"username":{"$not":{"$elemMatch":{"age":"Abundant"}}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7],
-						"versions": "3.7.7..6.0.8"
-					}
-				]
-			},
-			{
-				"id": "nNcXcCRifWLz",
-				"operation": {"username":{"$not":{"$elemMatch":{"age":null}}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "3.7.7..6.0.8"
-					}
-				]
-			},
-			{
-				"id": "wVx9OQrudg5C",
-				"operation": {"username":{"$not":{"$elemMatch":{"age":42}}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "3.7.7..6.0.8"
-					}
-				]
-			},
-			{
-				"id": "fC8J1w2LIsZy",
-				"operation": {"username":{"$not":{"$elemMatch":{"age":true}}}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "3.7.7..6.0.8"
 					}
 				]
 			},
@@ -50822,34 +50822,12 @@
 				]
 			},
 			{
-				"id": "gANZpeJQfWeB",
-				"operation": {"name":{"$regex":"Each","$type":21}},
+				"id": "sJeJKBTFDMTI",
+				"operation": {"rank":{"$not":{"$type":"Each"}}},
 				"results": [
 					{
-						"error": {"message":"Invalid numerical type code: 21","code":2,"type":"MongoServerError"},
-						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "pKorIO2AgD0o",
-				"operation": {"rank":{"$not":{"$type":"Either"}}},
-				"results": [
-					{
-						"error": {"message":"unknown string alias for $type: Either","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.5.10"
-					},
-					{
-						"error": {"message":"Unknown string alias for $type: Either","code":2,"type":"MongoError"},
-						"versions": "3.5.11"
-					},
-					{
-						"error": {"message":"Unknown type name alias: Either","code":2,"type":"MongoError"},
-						"versions": "3.5.12"
-					},
-					{
-						"error": {"message":"Unknown type name alias: Either","code":2,"type":"MongoServerError"},
-						"versions": "3.7.1..6.0.6"
+						"error": {"message":"Unknown type name alias: Each","code":2,"type":"MongoServerError"},
+						"versions": "3.7.7..6.0.8"
 					}
 				]
 			},
@@ -50882,36 +50860,6 @@
 					{
 						"error": {"message":"Unknown type name alias: Couple","code":2,"type":"MongoServerError"},
 						"versions": "3.7.1..6.0.8"
-					}
-				]
-			},
-			{
-				"id": "qDAYL490dGYN",
-				"operation": {"name":{"$regex":null,"$type":21}},
-				"results": [
-					{
-						"error": {"message":"$regex has to be a string","code":2,"type":"MongoServerError"},
-						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "ayTq9Al22IV9",
-				"operation": {"name":{"$regex":42,"$type":21}},
-				"results": [
-					{
-						"error": {"message":"$regex has to be a string","code":2,"type":"MongoServerError"},
-						"versions": "4.2.16..6.0.6"
-					}
-				]
-			},
-			{
-				"id": "dNFgM2PXZqcu",
-				"operation": {"name":{"$regex":true,"$type":21}},
-				"results": [
-					{
-						"error": {"message":"$regex has to be a string","code":2,"type":"MongoServerError"},
-						"versions": "4.2.16..6.0.6"
 					}
 				]
 			},
@@ -51024,12 +50972,64 @@
 				]
 			},
 			{
-				"id": "sJeJKBTFDMTI",
-				"operation": {"rank":{"$not":{"$type":"Each"}}},
+				"id": "gANZpeJQfWeB",
+				"operation": {"name":{"$regex":"Each","$type":21}},
 				"results": [
 					{
-						"error": {"message":"Unknown type name alias: Each","code":2,"type":"MongoServerError"},
-						"versions": "3.7.7..6.0.8"
+						"error": {"message":"Invalid numerical type code: 21","code":2,"type":"MongoServerError"},
+						"versions": "4.2.16..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "pKorIO2AgD0o",
+				"operation": {"rank":{"$not":{"$type":"Either"}}},
+				"results": [
+					{
+						"error": {"message":"unknown string alias for $type: Either","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.5.10"
+					},
+					{
+						"error": {"message":"Unknown string alias for $type: Either","code":2,"type":"MongoError"},
+						"versions": "3.5.11"
+					},
+					{
+						"error": {"message":"Unknown type name alias: Either","code":2,"type":"MongoError"},
+						"versions": "3.5.12"
+					},
+					{
+						"error": {"message":"Unknown type name alias: Either","code":2,"type":"MongoServerError"},
+						"versions": "3.7.1..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "qDAYL490dGYN",
+				"operation": {"name":{"$regex":null,"$type":21}},
+				"results": [
+					{
+						"error": {"message":"$regex has to be a string","code":2,"type":"MongoServerError"},
+						"versions": "4.2.16..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "ayTq9Al22IV9",
+				"operation": {"name":{"$regex":42,"$type":21}},
+				"results": [
+					{
+						"error": {"message":"$regex has to be a string","code":2,"type":"MongoServerError"},
+						"versions": "4.2.16..6.0.6"
+					}
+				]
+			},
+			{
+				"id": "dNFgM2PXZqcu",
+				"operation": {"name":{"$regex":true,"$type":21}},
+				"results": [
+					{
+						"error": {"message":"$regex has to be a string","code":2,"type":"MongoServerError"},
+						"versions": "4.2.16..6.0.6"
 					}
 				]
 			},
