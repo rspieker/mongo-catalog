@@ -1,39 +1,53 @@
 {
   "queries": [
     {
-      "checksum": "214e29da82cd364194475a0a42a7f66903c50008728d4d63a424fa3dfa90e3c0",
+      "checksum": "e6fe267d3eef20fe7248c69353d9f0be00a323457bb2e9ea720634cb1fee92c1",
       "fingerprint": {
         "field:#1": {
-          "$lt": {}
+          "field:#2": "number:#1",
+          "field:#3": "number:#2"
         }
       },
       "query": {
-        "score": {
-          "$lt": {}
+        "age": {
+          "score": 9,
+          "rank": 10
         }
+      }
+    }
+  ],
+  "variants": [
+    {
+      "age": {
+        "score": null,
+        "rank": null
       }
     },
     {
-      "checksum": "9f185ceb7c8b7e90895f1a318f90b9379f7e0f8466776e5d906a489e000e55e8",
-      "fingerprint": {
-        "field:#1": {
-          "$gt": {}
-        }
-      },
-      "query": {
-        "score": {
-          "$gt": {}
-        }
+      "age": {
+        "score": "value",
+        "rank": "value"
+      }
+    },
+    {
+      "age": {
+        "score": true,
+        "rank": true
       }
     }
   ],
-  "variants": [],
   "documents": [
     {
       "_id": 0,
-      "age": 20,
-      "score": {}
+      "age": {
+        "score": 9,
+        "rank": 10
+      }
     }
   ],
-  "indices": []
+  "indices": [
+    {
+      "age": 1
+    }
+  ]
 }
