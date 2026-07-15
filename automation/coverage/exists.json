@@ -67,6 +67,19 @@
       }
     },
     {
+      "checksum": "7c713d3353b550b6251dbc19168e3087cf574e7d57cdb220ce5cf6fd88b1e8ab",
+      "fingerprint": {
+        "field:#1": {
+          "$exists": "boolean:#1"
+        }
+      },
+      "query": {
+        "age": {
+          "$exists": true
+        }
+      }
+    },
+    {
       "checksum": "457a1a9bf4a438aa9bc189e2a4caad629b242e67655b4c6d2421a1fa12252603",
       "fingerprint": {
         "field:#1.field:#2": {
@@ -296,36 +309,6 @@
       "query": {}
     },
     {
-      "checksum": "66ce552e93ee8ff1d853d638ce5cfd9a26b13ba91fc1902e82cb1fd31cc7549f",
-      "fingerprint": {
-        "field:#1": {
-          "$exists": "boolean:#1"
-        }
-      },
-      "query": {
-        "step": {
-          "$exists": false
-        }
-      }
-    },
-    {
-      "checksum": "92fa29ea51aeac744eaa5e6b24d9e77c7fb6be7367ba7df4a60d73520f7936d7",
-      "fingerprint": {
-        "field:#1": {
-          "$not": {
-            "$exists": "boolean:#1"
-          }
-        }
-      },
-      "query": {
-        "step": {
-          "$not": {
-            "$exists": true
-          }
-        }
-      }
-    },
-    {
       "checksum": "69f1ecd8c99c1e39373edc8c9da790e2734c2df527d8fd54674eba69b44e48bd",
       "fingerprint": {
         "field:#1": {}
@@ -464,6 +447,23 @@
       "query": {
         "index": 16,
         "size": {
+          "$not": {
+            "$exists": false
+          }
+        }
+      }
+    },
+    {
+      "checksum": "eedf7b6c4d7792ef11e17a0736fa776b1187e65e658ba581d620ed5ca61bb542",
+      "fingerprint": {
+        "field:#1": {
+          "$not": {
+            "$exists": "boolean:#1"
+          }
+        }
+      },
+      "query": {
+        "index": {
           "$not": {
             "$exists": false
           }
@@ -901,7 +901,7 @@
       }
     },
     {
-      "checksum": "b7f75f95aa2eeb850bdfd500249420232052a34b14ef90b2164ff4685834cd7c",
+      "checksum": "8720cd62b8b8e22e3fc45637f883737ef90006366ffb4ed4527798638a2ae16d",
       "fingerprint": {
         "field:#1": {
           "$exists": "number:#1"
@@ -1167,6 +1167,21 @@
   ],
   "variants": [
     {
+      "age": {
+        "$exists": null
+      }
+    },
+    {
+      "age": {
+        "$exists": 0
+      }
+    },
+    {
+      "age": {
+        "$exists": "yes"
+      }
+    },
+    {
       "age.score": {
         "$exists": null
       }
@@ -1208,21 +1223,6 @@
     },
     {
       "age.score.rank.level": {
-        "$exists": "yes"
-      }
-    },
-    {
-      "age": {
-        "$exists": null
-      }
-    },
-    {
-      "age": {
-        "$exists": 0
-      }
-    },
-    {
-      "age": {
         "$exists": "yes"
       }
     },
@@ -1281,42 +1281,6 @@
       }
     },
     {
-      "step": {
-        "$exists": null
-      }
-    },
-    {
-      "step": {
-        "$exists": 0
-      }
-    },
-    {
-      "step": {
-        "$exists": "yes"
-      }
-    },
-    {
-      "step": {
-        "$not": {
-          "$exists": null
-        }
-      }
-    },
-    {
-      "step": {
-        "$not": {
-          "$exists": 0
-        }
-      }
-    },
-    {
-      "step": {
-        "$not": {
-          "$exists": "yes"
-        }
-      }
-    },
-    {
       "priority": {},
       "attempts": {
         "$exists": null
@@ -1482,6 +1446,27 @@
     {
       "index": 16,
       "size": {
+        "$not": {
+          "$exists": "yes"
+        }
+      }
+    },
+    {
+      "index": {
+        "$not": {
+          "$exists": null
+        }
+      }
+    },
+    {
+      "index": {
+        "$not": {
+          "$exists": 0
+        }
+      }
+    },
+    {
+      "index": {
         "$not": {
           "$exists": "yes"
         }
@@ -1560,27 +1545,6 @@
     {
       "index": {
         "$exists": "yes"
-      }
-    },
-    {
-      "index": {
-        "$not": {
-          "$exists": null
-        }
-      }
-    },
-    {
-      "index": {
-        "$not": {
-          "$exists": 0
-        }
-      }
-    },
-    {
-      "index": {
-        "$not": {
-          "$exists": "yes"
-        }
       }
     },
     {
