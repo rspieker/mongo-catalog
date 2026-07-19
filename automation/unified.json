@@ -1751,24 +1751,6 @@
 				]
 			},
 			{
-				"id": "sM1wGhIY8Nr8",
-				"operation": {"status":{"$in":"active"}},
-				"results": [
-					{
-						"error": {"message":"Can't canonicalize query: BadValue $in needs an array","code":17287,"type":"MongoError"},
-						"versions": "2.6.12..3.0.15"
-					},
-					{
-						"error": {"message":"$in needs an array","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.5.13"
-					},
-					{
-						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..8.3.4"
-					}
-				]
-			},
-			{
 				"id": "o008YWqSLmT5",
 				"operation": {"age":{"$lt":null}},
 				"results": [
@@ -2883,7 +2865,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -2893,7 +2875,7 @@
 				"results": [
 					{
 						"error": {"message":"$all needs an array","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -2903,7 +2885,7 @@
 				"results": [
 					{
 						"error": {"message":"$all needs an array","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			}
@@ -3288,6 +3270,28 @@
 					},
 					{
 						"error": {"message":"$and argument must be an array","code":2,"type":"MongoServerError"},
+						"versions": "8.0.0..8.3.4"
+					}
+				]
+			},
+			{
+				"id": "eHaoCnERN88o",
+				"operation": {"$and":[]},
+				"results": [
+					{
+						"error": {"message":"Can't canonicalize query: BadValue $and/$or/$nor must be a nonempty array","code":17287,"type":"MongoError"},
+						"versions": "2.6.12..3.0.15"
+					},
+					{
+						"error": {"message":"$and/$or/$nor must be a nonempty array","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.5.13"
+					},
+					{
+						"error": {"message":"$and/$or/$nor must be a nonempty array","code":2,"type":"MongoServerError"},
+						"versions": "3.6.0..7.0.37"
+					},
+					{
+						"error": {"message":"$and argument must be a non-empty array","code":2,"type":"MongoServerError"},
 						"versions": "8.0.0..8.3.4"
 					}
 				]
@@ -4623,6 +4627,32 @@
 					{
 						"error": {"message":"$where got bad type","code":2,"type":"MongoServerError"},
 						"versions": "3.6.0..8.3.4"
+					}
+				]
+			},
+			{
+				"id": "vNKuJUMn27Fv",
+				"operation": {"$and":null},
+				"results": [
+					{
+						"error": {"message":"Can't canonicalize query: BadValue and needs an array","code":17287,"type":"MongoError"},
+						"versions": "2.6.12..3.0.15"
+					},
+					{
+						"error": {"message":"and needs an array","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.2.21"
+					},
+					{
+						"error": {"message":"$and must be an array","code":2,"type":"MongoError"},
+						"versions": "3.3.6..3.5.13"
+					},
+					{
+						"error": {"message":"$and must be an array","code":2,"type":"MongoServerError"},
+						"versions": "3.6.0..7.0.37"
+					},
+					{
+						"error": {"message":"$and argument must be an array","code":2,"type":"MongoServerError"},
+						"versions": "8.0.0..8.3.4"
 					}
 				]
 			},
@@ -9039,11 +9069,11 @@
 				"results": [
 					{
 						"documents": [11],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [10],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -9053,11 +9083,11 @@
 				"results": [
 					{
 						"documents": [1,3,4,5,6,7,8,9,10,11,12],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [1,3,4,5,6,7,8,9,10,11],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -9117,11 +9147,11 @@
 				"results": [
 					{
 						"documents": [1,3,4,5,6,7,8,9,10,11,12],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [1,3,4,5,6,7,8,9,10,11],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -9435,11 +9465,11 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -9751,11 +9781,11 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -9785,11 +9815,11 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -9809,11 +9839,11 @@
 				"results": [
 					{
 						"documents": [12],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [11],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -9823,7 +9853,7 @@
 				"results": [
 					{
 						"documents": [3],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -9833,7 +9863,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -9843,7 +9873,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -9853,7 +9883,7 @@
 				"results": [
 					{
 						"error": {"message":"Executor error during find command :: caused by :: ReferenceError: Double is not defined :\n@:1:15\n","code":139,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -9863,7 +9893,7 @@
 				"results": [
 					{
 						"documents": [5],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -9873,7 +9903,7 @@
 				"results": [
 					{
 						"documents": [6],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -9883,7 +9913,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,4,5,6,7,8,9,10,11],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -9893,7 +9923,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -9903,7 +9933,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -9913,7 +9943,7 @@
 				"results": [
 					{
 						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -9923,7 +9953,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -9933,7 +9963,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -9943,7 +9973,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -9953,7 +9983,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -9963,7 +9993,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -9973,7 +10003,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -9983,7 +10013,7 @@
 				"results": [
 					{
 						"error": {"message":"$where got bad type","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -9993,7 +10023,7 @@
 				"results": [
 					{
 						"error": {"message":"$where got bad type","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -10003,7 +10033,7 @@
 				"results": [
 					{
 						"error": {"message":"$where got bad type","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -10013,7 +10043,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -10023,7 +10053,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -10033,7 +10063,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -10043,7 +10073,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -10053,7 +10083,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -10063,7 +10093,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			}
@@ -10138,7 +10168,7 @@
 				"results": [
 					{
 						"documents": [0],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			}
@@ -10629,6 +10659,20 @@
 				"results": [
 					{
 						"documents": [4],
+						"versions": "2.6.12..8.3.4"
+					}
+				]
+			},
+			{
+				"id": "wQqFTpVhAG5E",
+				"operation": {"age":{"$exists":true}},
+				"results": [
+					{
+						"documents": [1,2,3,4],
+						"versions": "2.6.12..8.3.4"
+					},
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
 						"versions": "2.6.12..8.3.4"
 					}
 				]
@@ -11193,11 +11237,11 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -12851,6 +12895,36 @@
 					{
 						"documents": [],
 						"versions": "3.6.0..3.6.2,3.6.9..3.6.23,4.0.3..4.0.28,4.1.4..8.3.4"
+					},
+					{
+						"error": {"message":"connect ECONNREFUSED 127.0.0.1:27017","type":"MongoServerSelectionError"},
+						"versions": "3.6.3..3.6.8,3.7.1..4.0.2,4.1.1..4.1.3"
+					}
+				]
+			},
+			{
+				"id": "rx0Lvr2gNLne",
+				"operation": {"$expr":{"$eq":[null,null]}},
+				"results": [
+					{
+						"error": {"message":"Can't canonicalize query: BadValue unknown top level operator: $expr","code":17287,"type":"MongoError"},
+						"versions": "2.6.12..3.0.15"
+					},
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.5.12"
+					},
+					{
+						"error": {"message":"$expr is not allowed in this context","code":2,"type":"MongoError"},
+						"versions": "3.5.13"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27],
+						"versions": "3.6.0..3.6.2,3.6.9..3.6.23,4.0.3..4.0.28,4.1.4..8.3.4"
+					},
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+						"versions": "3.6.0..8.3.4"
 					},
 					{
 						"error": {"message":"connect ECONNREFUSED 127.0.0.1:27017","type":"MongoServerSelectionError"},
@@ -15506,6 +15580,24 @@
 				]
 			},
 			{
+				"id": "sM1wGhIY8Nr8",
+				"operation": {"status":{"$in":"active"}},
+				"results": [
+					{
+						"error": {"message":"Can't canonicalize query: BadValue $in needs an array","code":17287,"type":"MongoError"},
+						"versions": "2.6.12..3.0.15"
+					},
+					{
+						"error": {"message":"$in needs an array","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.5.13"
+					},
+					{
+						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
+						"versions": "3.6.0..8.3.4"
+					}
+				]
+			},
+			{
 				"id": "j1wVN8WnYSvI",
 				"operation": {"status":{"$in":["No",null,"Numerous",null,"Several",null,"Significant",null,null,"Huge","Single",null,"Some",null,"Sparse","Enough",null,"Either",null]}},
 				"results": [
@@ -17745,7 +17837,7 @@
 				"results": [
 					{
 						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17755,7 +17847,7 @@
 				"results": [
 					{
 						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17765,7 +17857,7 @@
 				"results": [
 					{
 						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17775,7 +17867,7 @@
 				"results": [
 					{
 						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17785,7 +17877,7 @@
 				"results": [
 					{
 						"documents": [21],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17795,7 +17887,7 @@
 				"results": [
 					{
 						"documents": [21],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17805,7 +17897,7 @@
 				"results": [
 					{
 						"documents": [21],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17815,7 +17907,7 @@
 				"results": [
 					{
 						"documents": [23],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17825,7 +17917,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17835,7 +17927,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17845,7 +17937,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17855,7 +17947,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17865,7 +17957,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17875,7 +17967,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17885,7 +17977,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17895,17 +17987,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
-					}
-				]
-			},
-			{
-				"id": "aVomys554LQ1",
-				"operation": {"attempts.quantity":{"$in":["Double",{}]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17915,7 +17997,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17925,7 +18007,7 @@
 				"results": [
 					{
 						"documents": [24,26,28],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17935,7 +18017,7 @@
 				"results": [
 					{
 						"documents": [26,28],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17945,7 +18027,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17955,7 +18037,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17965,7 +18047,7 @@
 				"results": [
 					{
 						"documents": [28],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17975,7 +18057,7 @@
 				"results": [
 					{
 						"documents": [28],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -17985,197 +18067,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
-					}
-				]
-			},
-			{
-				"id": "uLZETquuesW8",
-				"operation": {"priority":{"$in":[{"$elemMatch":42}]}},
-				"results": [
-					{
-						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "uAvVODwy2S3l",
-				"operation": {"priority":{"$in":[{"$elemMatch":{"capacity":null}}]}},
-				"results": [
-					{
-						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "vRx0SRbeQ3Uc",
-				"operation": {"priority":{"$in":[{"$elemMatch":{"capacity":"value"}}]}},
-				"results": [
-					{
-						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "v8HDDdOGkGDj",
-				"operation": {"priority":{"$in":[{"$elemMatch":{"capacity":true}}]}},
-				"results": [
-					{
-						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "bwgVWZlgq5Ua",
-				"operation": {"priority":{"$not":{"$in":"active"}}},
-				"results": [
-					{
-						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "kSTiVq3pDW2a",
-				"operation": {"priority":{"$not":{"$in":[{"$elemMatch":42}]}}},
-				"results": [
-					{
-						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "cXewfrLw4TyI",
-				"operation": {"priority":{"$not":{"$in":[{"$elemMatch":{"capacity":null}}]}}},
-				"results": [
-					{
-						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "mqKQM6geyz7k",
-				"operation": {"priority":{"$not":{"$in":[{"$elemMatch":{"capacity":"value"}}]}}},
-				"results": [
-					{
-						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "rzuDd6Yg08R1",
-				"operation": {"priority":{"$not":{"$in":[{"$elemMatch":{"capacity":true}}]}}},
-				"results": [
-					{
-						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "vGTmfyxVmHCI",
-				"operation": {"priority":{"$nin":"deleted"}},
-				"results": [
-					{
-						"error": {"message":"$nin needs an array","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "wG2yXUvJygGJ",
-				"operation": {"priority":{"$nin":[{"$elemMatch":42}]}},
-				"results": [
-					{
-						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "pVX3ieRFDmeX",
-				"operation": {"priority":{"$nin":[{"$elemMatch":{"capacity":null}}]}},
-				"results": [
-					{
-						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "uR1fLNxx1WNl",
-				"operation": {"priority":{"$nin":[{"$elemMatch":{"capacity":"value"}}]}},
-				"results": [
-					{
-						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "tGD7BjvvKjnC",
-				"operation": {"priority":{"$nin":[{"$elemMatch":{"capacity":true}}]}},
-				"results": [
-					{
-						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "vIhEFIZpHDNo",
-				"operation": {"priority":{"$not":{"$nin":"deleted"}}},
-				"results": [
-					{
-						"error": {"message":"$nin needs an array","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "uwlJFCjqQWP2",
-				"operation": {"priority":{"$not":{"$nin":[{"$elemMatch":42}]}}},
-				"results": [
-					{
-						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "qHdiLdSwbT2r",
-				"operation": {"priority":{"$not":{"$nin":[{"$elemMatch":{"capacity":null}}]}}},
-				"results": [
-					{
-						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "dr0xALIOr05V",
-				"operation": {"priority":{"$not":{"$nin":[{"$elemMatch":{"capacity":"value"}}]}}},
-				"results": [
-					{
-						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "hMX09rt25GU8",
-				"operation": {"priority":{"$not":{"$nin":[{"$elemMatch":{"capacity":true}}]}}},
-				"results": [
-					{
-						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18185,7 +18077,7 @@
 				"results": [
 					{
 						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18195,7 +18087,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,24,25,26,27,28],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18205,7 +18097,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18215,7 +18107,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18225,7 +18117,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,24,25,26,27,28],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18235,7 +18127,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18245,7 +18137,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18255,7 +18147,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18265,7 +18157,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18275,7 +18167,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18285,7 +18177,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18295,7 +18187,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18305,221 +18197,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
-					}
-				]
-			},
-			{
-				"id": "qf6eCIOVZ71x",
-				"operation": {"attempts.quantity":{"$in":"active"}},
-				"results": [
-					{
-						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "pRWSvK4zWXkz",
-				"operation": {"attempts.quantity":{"$in":[{},null]}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
-						"versions": "5.0.1..7.0.4"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
-						"versions": "6.0.27,7.0.34..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "oEDdaKKty76a",
-				"operation": {"attempts.quantity":{"$in":[{},"value"]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "fRTGhgC2Nzx7",
-				"operation": {"attempts.quantity":{"$in":[{},true]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "o7AsLBGFPgPv",
-				"operation": {"attempts.quantity":{"$in":[null,null,{}]}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
-						"versions": "5.0.1..7.0.4"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
-						"versions": "6.0.27,7.0.34..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "gT5OR2z9BK5s",
-				"operation": {"attempts.quantity":{"$in":["value","value",{}]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "hCNEmPabmtIK",
-				"operation": {"attempts.quantity":{"$in":[true,true,{}]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "qZt3Q5CKVfAk",
-				"operation": {"attempts.quantity":{"$in":[null,null,null,{}]}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
-						"versions": "5.0.1..7.0.4"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
-						"versions": "6.0.27,7.0.34..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "uvsAarGigYT5",
-				"operation": {"attempts.quantity":{"$in":["value","value","value",{}]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "kXRpUVPrC67Q",
-				"operation": {"attempts.quantity":{"$in":[true,true,true,{}]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "vfYGqRrUscfh",
-				"operation": {"attempts.quantity":{"$in":[null,null,null,{},{}]}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
-						"versions": "5.0.1..7.0.4"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
-						"versions": "6.0.27,7.0.34..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "tnUzyzkFLX4z",
-				"operation": {"attempts.quantity":{"$in":["value","value","value",{},{}]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "jWiIDcqrezLQ",
-				"operation": {"attempts.quantity":{"$in":[true,true,true,{},{}]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "c03upg2JEXHP",
-				"operation": {"attempts.quantity":{"$in":[{},null,null,null]}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
-						"versions": "5.0.1..7.0.4"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
-						"versions": "6.0.27,7.0.34..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "w1CTVt02Zhdj",
-				"operation": {"attempts.quantity":{"$in":[{},"value","value","value"]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "a4rG33s6gPrT",
-				"operation": {"attempts.quantity":{"$in":[{},true,true,true]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "cVErY2I258y5",
-				"operation": {"attempts.quantity":{"$in":["Abundant","Couple","Double",null,null,null]}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
-						"versions": "5.0.1..7.0.4"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
-						"versions": "6.0.27,7.0.34..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "uR7Ms18mQ5bF",
-				"operation": {"attempts.quantity":{"$in":["Abundant","Couple","Double","value","value","value"]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "wzcSTVrkqj9Z",
-				"operation": {"attempts.quantity":{"$in":["Abundant","Couple","Double",true,true,true]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18529,7 +18207,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18539,7 +18217,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18549,41 +18227,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
-					}
-				]
-			},
-			{
-				"id": "a9BAM3Cw6Y2V",
-				"operation": {"attempts.quantity":{"$in":["Couple","Double",null,null,null]}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
-						"versions": "5.0.1..7.0.4"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
-						"versions": "6.0.27,7.0.34..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "uy8xe5CWJXv7",
-				"operation": {"attempts.quantity":{"$in":["Couple","Double","value","value","value"]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "tOwZJWKKfw8e",
-				"operation": {"attempts.quantity":{"$in":["Couple","Double",true,true,true]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18593,7 +18237,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18603,7 +18247,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18613,41 +18257,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
-					}
-				]
-			},
-			{
-				"id": "ntyBAi6Uo1ZD",
-				"operation": {"attempts.quantity":{"$in":["Double",null,null,null]}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
-						"versions": "5.0.1..7.0.4"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
-						"versions": "6.0.27,7.0.34..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "aZMIxh9Yi4M4",
-				"operation": {"attempts.quantity":{"$in":["Double","value","value","value"]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "tkAQOAH9sCnh",
-				"operation": {"attempts.quantity":{"$in":["Double",true,true,true]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18657,7 +18267,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18667,7 +18277,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18677,75 +18287,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
-					}
-				]
-			},
-			{
-				"id": "cPIZXwCrnzIg",
-				"operation": {"attempts.quantity":{"$in":[null,{}]}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
-						"versions": "5.0.1..7.0.4"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
-						"versions": "6.0.27,7.0.34..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "szRRgKBiaUQV",
-				"operation": {"attempts.quantity":{"$in":[42,{}]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "l4ULYh7OQ4Tn",
-				"operation": {"attempts.quantity":{"$in":[true,{}]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "m6OOryT5VW5k",
-				"operation": {"attempts.quantity":{"$in":["Each",null]}},
-				"results": [
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
-						"versions": "5.0.1..7.0.4"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
-						"versions": "6.0.27,7.0.34..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "uNQtQegz5elu",
-				"operation": {"attempts.quantity":{"$in":["Each","value"]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
-					}
-				]
-			},
-			{
-				"id": "pwoE2KRdOfgv",
-				"operation": {"attempts.quantity":{"$in":["Each",true]}},
-				"results": [
-					{
-						"documents": [],
-						"versions": "5.0.1..8.3.2"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18755,7 +18297,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18765,7 +18307,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18775,7 +18317,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18785,7 +18327,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,27],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18795,7 +18337,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18805,7 +18347,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18815,7 +18357,7 @@
 				"results": [
 					{
 						"documents": [24,26],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18825,7 +18367,7 @@
 				"results": [
 					{
 						"documents": [24,26],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18835,7 +18377,7 @@
 				"results": [
 					{
 						"documents": [24,26],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18845,7 +18387,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18855,7 +18397,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18865,7 +18407,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18875,7 +18417,7 @@
 				"results": [
 					{
 						"documents": [26],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18885,7 +18427,7 @@
 				"results": [
 					{
 						"documents": [26],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18895,7 +18437,7 @@
 				"results": [
 					{
 						"documents": [26],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18905,7 +18447,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18915,7 +18457,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18925,7 +18467,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18935,7 +18477,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18945,7 +18487,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18955,7 +18497,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18965,7 +18507,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18975,7 +18517,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18985,7 +18527,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -18995,7 +18537,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,27],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19005,7 +18547,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19015,7 +18557,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19025,7 +18567,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19035,7 +18577,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19045,7 +18587,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19055,7 +18597,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19065,7 +18607,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19075,7 +18617,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19085,7 +18627,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19095,7 +18637,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19105,7 +18647,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19115,7 +18657,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19125,7 +18667,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19135,7 +18677,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19145,7 +18687,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19155,7 +18697,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19165,7 +18707,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			}
@@ -19731,7 +19273,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19741,7 +19283,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19751,7 +19293,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19761,7 +19303,7 @@
 				"results": [
 					{
 						"error": {"message":"malformed mod, needs to be an array","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19771,7 +19313,7 @@
 				"results": [
 					{
 						"error": {"message":"malformed mod, not enough elements","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19781,7 +19323,7 @@
 				"results": [
 					{
 						"error": {"message":"malformed mod, not enough elements","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19791,7 +19333,7 @@
 				"results": [
 					{
 						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19801,7 +19343,7 @@
 				"results": [
 					{
 						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19811,7 +19353,7 @@
 				"results": [
 					{
 						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19821,7 +19363,7 @@
 				"results": [
 					{
 						"error": {"message":"malformed mod, needs to be an array","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19831,7 +19373,7 @@
 				"results": [
 					{
 						"error": {"message":"malformed mod, not enough elements","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19841,7 +19383,7 @@
 				"results": [
 					{
 						"error": {"message":"malformed mod, not enough elements","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19851,7 +19393,7 @@
 				"results": [
 					{
 						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19861,7 +19403,7 @@
 				"results": [
 					{
 						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19871,7 +19413,7 @@
 				"results": [
 					{
 						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19881,7 +19423,7 @@
 				"results": [
 					{
 						"error": {"message":"malformed mod, needs to be an array","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19891,7 +19433,7 @@
 				"results": [
 					{
 						"error": {"message":"malformed mod, not enough elements","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19901,7 +19443,7 @@
 				"results": [
 					{
 						"error": {"message":"malformed mod, not enough elements","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19911,7 +19453,7 @@
 				"results": [
 					{
 						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19921,7 +19463,7 @@
 				"results": [
 					{
 						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -19931,7 +19473,7 @@
 				"results": [
 					{
 						"error": {"message":"malformed mod, divisor not a number","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			}
@@ -19956,11 +19498,11 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -20246,7 +19788,7 @@
 				"results": [
 					{
 						"documents": [0],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20256,7 +19798,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20266,7 +19808,7 @@
 				"results": [
 					{
 						"documents": [0,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20276,7 +19818,7 @@
 				"results": [
 					{
 						"documents": [0,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20286,7 +19828,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20296,7 +19838,7 @@
 				"results": [
 					{
 						"documents": [0,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20306,7 +19848,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20316,7 +19858,7 @@
 				"results": [
 					{
 						"documents": [2,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20326,7 +19868,7 @@
 				"results": [
 					{
 						"documents": [2,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20336,7 +19878,7 @@
 				"results": [
 					{
 						"documents": [0,1,2],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20346,7 +19888,7 @@
 				"results": [
 					{
 						"documents": [0,1,2],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20356,7 +19898,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20366,7 +19908,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20376,7 +19918,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20386,7 +19928,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20396,7 +19938,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20406,7 +19948,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20416,7 +19958,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20426,7 +19968,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20436,7 +19978,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20446,7 +19988,7 @@
 				"results": [
 					{
 						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20456,7 +19998,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20466,7 +20008,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20476,7 +20018,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20486,7 +20028,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20496,7 +20038,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20506,7 +20048,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20516,7 +20058,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20526,7 +20068,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20536,7 +20078,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20546,7 +20088,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20556,7 +20098,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20566,7 +20108,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20576,7 +20118,7 @@
 				"results": [
 					{
 						"documents": [1],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20586,7 +20128,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20596,7 +20138,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20606,7 +20148,7 @@
 				"results": [
 					{
 						"documents": [2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20616,7 +20158,7 @@
 				"results": [
 					{
 						"documents": [2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20626,7 +20168,7 @@
 				"results": [
 					{
 						"documents": [2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20636,7 +20178,7 @@
 				"results": [
 					{
 						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20646,7 +20188,7 @@
 				"results": [
 					{
 						"documents": [2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20656,7 +20198,7 @@
 				"results": [
 					{
 						"documents": [2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20666,7 +20208,7 @@
 				"results": [
 					{
 						"documents": [2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20676,7 +20218,7 @@
 				"results": [
 					{
 						"error": {"message":"$elemMatch needs an Object","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20686,7 +20228,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20696,7 +20238,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20706,7 +20248,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20716,7 +20258,7 @@
 				"results": [
 					{
 						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20726,7 +20268,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20736,7 +20278,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -20746,7 +20288,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			}
@@ -21878,11 +21420,11 @@
 				"results": [
 					{
 						"documents": [4],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -21892,11 +21434,11 @@
 				"results": [
 					{
 						"documents": [4],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -21906,11 +21448,11 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,5,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -21920,11 +21462,11 @@
 				"results": [
 					{
 						"documents": [2,4],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -21934,11 +21476,29 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,5,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
+					}
+				]
+			},
+			{
+				"id": "qXStH4yTKL7U",
+				"operation": {"name":{"$exists":true}},
+				"results": [
+					{
+						"documents": [2,3,4,5],
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
+					},
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+						"versions": "2.6.12..8.3.4"
+					},
+					{
+						"documents": [0,1],
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -21948,11 +21508,11 @@
 				"results": [
 					{
 						"documents": [0,1,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -21962,11 +21522,11 @@
 				"results": [
 					{
 						"documents": [0,1,3,5,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [1,2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -21976,11 +21536,11 @@
 				"results": [
 					{
 						"documents": [0,1,3,5,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [1,2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -21990,11 +21550,11 @@
 				"results": [
 					{
 						"documents": [2,4],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22060,11 +21620,11 @@
 					},
 					{
 						"documents": [0,1,3,5,6],
-						"versions": "4.0.7..4.0.28,4.1.9..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "4.0.7..4.0.28,4.1.9..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [1,2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22148,11 +21708,11 @@
 				"results": [
 					{
 						"documents": [0,1,2,4,5,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22302,7 +21862,7 @@
 				"results": [
 					{
 						"documents": [0],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [],
@@ -22358,11 +21918,11 @@
 				"results": [
 					{
 						"documents": [1,2,3,4,5,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
@@ -22418,7 +21978,7 @@
 				"results": [
 					{
 						"documents": [0],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [],
@@ -22492,11 +22052,11 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22506,11 +22066,11 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22520,11 +22080,11 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22534,11 +22094,11 @@
 				"results": [
 					{
 						"documents": [0,1,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22568,11 +22128,11 @@
 				"results": [
 					{
 						"documents": [2,3,4,5],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22582,11 +22142,11 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22596,11 +22156,11 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22610,11 +22170,11 @@
 				"results": [
 					{
 						"documents": [0,1,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22624,11 +22184,11 @@
 				"results": [
 					{
 						"documents": [0,1,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22638,11 +22198,11 @@
 				"results": [
 					{
 						"documents": [2,3,4,5],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22652,11 +22212,11 @@
 				"results": [
 					{
 						"documents": [2,3,4,5],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22666,11 +22226,11 @@
 				"results": [
 					{
 						"documents": [2,3,4,5],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22680,11 +22240,11 @@
 				"results": [
 					{
 						"documents": [0,1,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22712,11 +22272,11 @@
 				"results": [
 					{
 						"documents": [2,3,4,5],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22726,11 +22286,11 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22740,11 +22300,11 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22754,11 +22314,11 @@
 				"results": [
 					{
 						"documents": [2,3,4,5],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22768,11 +22328,11 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22782,11 +22342,11 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -22814,11 +22374,11 @@
 				"results": [
 					{
 						"documents": [0,1,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [2,3,4,5,6,7,8],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -23832,7 +23392,7 @@
 				"results": [
 					{
 						"error": {"message":"unknown operator: $ref","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -23842,7 +23402,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -23852,7 +23412,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,5,6,7,8],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -23862,7 +23422,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -23872,7 +23432,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -23886,7 +23446,7 @@
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"large\"","code":2,"type":"MongoServerError"},
-						"versions": "6.0.9..7.0.4"
+						"versions": "6.0.9..6.0.20"
 					}
 				]
 			},
@@ -23900,7 +23460,7 @@
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected an integer: $size: 2.5","code":2,"type":"MongoServerError"},
-						"versions": "6.0.9..7.0.4"
+						"versions": "6.0.9..6.0.20"
 					}
 				]
 			},
@@ -23914,7 +23474,7 @@
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: null","code":2,"type":"MongoServerError"},
-						"versions": "6.0.9..7.0.4"
+						"versions": "6.0.9..6.0.20"
 					}
 				]
 			},
@@ -23928,7 +23488,7 @@
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"value\"","code":2,"type":"MongoServerError"},
-						"versions": "6.0.9..7.0.4"
+						"versions": "6.0.9..6.0.20"
 					}
 				]
 			},
@@ -23942,7 +23502,7 @@
 					},
 					{
 						"error": {"message":"Failed to parse $size. Expected a number in: $size: true","code":2,"type":"MongoServerError"},
-						"versions": "6.0.9..7.0.4"
+						"versions": "6.0.9..6.0.20"
 					}
 				]
 			},
@@ -23952,7 +23512,7 @@
 				"results": [
 					{
 						"error": {"message":"$all needs an array","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -23962,7 +23522,7 @@
 				"results": [
 					{
 						"error": {"message":"$all needs an array","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -23972,7 +23532,7 @@
 				"results": [
 					{
 						"documents": [2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -23982,7 +23542,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -23992,7 +23552,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -24002,7 +23562,7 @@
 				"results": [
 					{
 						"documents": [2,3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -24012,7 +23572,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -24022,7 +23582,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -24032,7 +23592,7 @@
 				"results": [
 					{
 						"error": {"message":"$elemMatch needs an Object","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -24042,7 +23602,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -24052,7 +23612,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -24062,7 +23622,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			}
@@ -24113,6 +23673,28 @@
 					},
 					{
 						"error": {"message":"$or argument must be an array","code":2,"type":"MongoServerError"},
+						"versions": "8.0.0..8.3.4"
+					}
+				]
+			},
+			{
+				"id": "gFBqvdyXBYvB",
+				"operation": {"$or":[]},
+				"results": [
+					{
+						"error": {"message":"Can't canonicalize query: BadValue $and/$or/$nor must be a nonempty array","code":17287,"type":"MongoError"},
+						"versions": "2.6.12..3.0.15"
+					},
+					{
+						"error": {"message":"$and/$or/$nor must be a nonempty array","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.5.13"
+					},
+					{
+						"error": {"message":"$and/$or/$nor must be a nonempty array","code":2,"type":"MongoServerError"},
+						"versions": "3.6.0..7.0.37"
+					},
+					{
+						"error": {"message":"$or argument must be a non-empty array","code":2,"type":"MongoServerError"},
 						"versions": "8.0.0..8.3.4"
 					}
 				]
@@ -24829,11 +24411,11 @@
 				"results": [
 					{
 						"documents": [2,3,4,5,6,7,8,9,10,11,12],
-						"versions": "2.6.12..3.4.24,4.0.21..4.0.28,4.1.12,4.2.0,4.2.2..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..3.4.24,4.0.21..4.0.28,4.1.12,4.2.0,4.2.2..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [1,3,4,5,6,7,8,9,10,11,12],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [2,4,5,6,7,8,12,3,10,11,9],
@@ -24849,7 +24431,7 @@
 					},
 					{
 						"documents": [1,3,4,5,6,7,8,9,10,11],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -31386,7 +30968,7 @@
 					},
 					{
 						"documents": [1,2,3,4,5,6],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
@@ -31440,7 +31022,7 @@
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,6,8,9,10,11,13,14,15,16,17,19,20,21,22,23,24,26,27,28,29,30,31,32,34,35,36,37,38,39,40,41,42,44,45,46,47,48,49,50,51,52,53,55,56,57,58,59,60,61,62,63,64,65,67,68,69,70,71,72,73,74,75,76,77,78,80,81,82,83,84,85,86,87,88,89,90,91,92,94,95,96,97,98,100,99,101,102,103,104,105,106,107,109,110,111,112,113,114,115,116,117,118,119,120,121,123,125,126,127,128,129,130,131,132,133,134,135,136,137,139,140,142,143,144,145,146,147,148,149,150,151,152,153,154,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,174,175,176,177,179,180,181,182,183,184,185,186,187,188,189,190,191,193,194,195,196,197,198,200,201,202,203,204,205,206,207,208,209,210,211,212,214,215,216,217,218,219],
@@ -31604,7 +31186,7 @@
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -31646,7 +31228,7 @@
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -32767,7 +32349,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -32777,7 +32359,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -32791,7 +32373,7 @@
 					},
 					{
 						"error": {"message":" invalid flag in regex options: M","code":51108,"type":"MongoServerError"},
-						"versions": "6.0.9..7.0.4"
+						"versions": "6.0.9..6.0.20"
 					}
 				]
 			},
@@ -32805,7 +32387,7 @@
 					},
 					{
 						"error": {"message":" invalid flag in regex options: M","code":51108,"type":"MongoServerError"},
-						"versions": "6.0.9..7.0.4"
+						"versions": "6.0.9..6.0.20"
 					}
 				]
 			},
@@ -32815,7 +32397,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -32825,7 +32407,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -32835,7 +32417,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -32845,7 +32427,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -32855,7 +32437,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -32865,7 +32447,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -32875,7 +32457,7 @@
 				"results": [
 					{
 						"error": {"message":"$regex has to be a string","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -32885,7 +32467,7 @@
 				"results": [
 					{
 						"error": {"message":"$regex has to be a string","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -32895,7 +32477,7 @@
 				"results": [
 					{
 						"error": {"message":"$regex has to be a string","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -32905,7 +32487,7 @@
 				"results": [
 					{
 						"error": {"message":"$regex has to be a string","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -32915,7 +32497,7 @@
 				"results": [
 					{
 						"error": {"message":"$regex has to be a string","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -32925,7 +32507,7 @@
 				"results": [
 					{
 						"error": {"message":"$regex has to be a string","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -32935,7 +32517,7 @@
 				"results": [
 					{
 						"error": {"message":"$regex has to be a string","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			}
@@ -33000,7 +32582,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [106],
@@ -33014,7 +32596,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12],
@@ -33022,7 +32604,7 @@
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -33032,11 +32614,11 @@
 				"results": [
 					{
 						"documents": [3,4],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [2,1],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -33046,11 +32628,11 @@
 				"results": [
 					{
 						"documents": [3,4],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [1,2],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -33130,7 +32712,7 @@
 					},
 					{
 						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219],
@@ -33280,11 +32862,11 @@
 				"results": [
 					{
 						"documents": [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,17],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -33314,11 +32896,11 @@
 				"results": [
 					{
 						"documents": [0,1,2,5,6,7,8,9,10,11,12,13,14,15,16],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -33348,19 +32930,19 @@
 				"results": [
 					{
 						"documents": [0,1,2,5,6,7,8,9,10,11,12,13,14,15,16],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [1,3,4,5,6,7,8,9,10,11,12],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					},
 					{
 						"documents": [1,3,4,5,6,7,8,9,10,11],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -33662,7 +33244,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33672,7 +33254,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33682,7 +33264,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33692,7 +33274,7 @@
 				"results": [
 					{
 						"documents": [17],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33702,7 +33284,7 @@
 				"results": [
 					{
 						"documents": [17],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33712,7 +33294,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33722,7 +33304,7 @@
 				"results": [
 					{
 						"documents": [17],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33732,7 +33314,7 @@
 				"results": [
 					{
 						"documents": [3,4],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33742,7 +33324,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33752,7 +33334,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33762,7 +33344,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33772,7 +33354,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33782,7 +33364,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33792,7 +33374,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33802,7 +33384,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33812,7 +33394,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33822,7 +33404,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33832,7 +33414,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33842,7 +33424,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33852,7 +33434,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33862,7 +33444,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33872,7 +33454,7 @@
 				"results": [
 					{
 						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33882,7 +33464,7 @@
 				"results": [
 					{
 						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33892,7 +33474,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -33902,7 +33484,7 @@
 				"results": [
 					{
 						"documents": [],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			}
@@ -34175,11 +33757,11 @@
 				"results": [
 					{
 						"documents": [0,1,3],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,3,5,6,7,8,9,10,11,12],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -34189,11 +33771,11 @@
 				"results": [
 					{
 						"documents": [0,1,3],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
 					},
 					{
 						"documents": [0,1,3,5,6,7,8,9,10,11,12],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
 					}
 				]
 			},
@@ -34213,7 +33795,7 @@
 				"results": [
 					{
 						"error": {"message":"Invalid numerical type code: 20","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -34223,7 +33805,7 @@
 				"results": [
 					{
 						"error": {"message":"Unknown type name alias: Each","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -34233,7 +33815,7 @@
 				"results": [
 					{
 						"documents": [5],
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -34243,7 +33825,7 @@
 				"results": [
 					{
 						"error": {"message":"Unknown type name alias: Couple","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -34253,7 +33835,7 @@
 				"results": [
 					{
 						"error": {"message":"type must be represented as a number or a string","code":14,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -34263,7 +33845,7 @@
 				"results": [
 					{
 						"error": {"message":"Invalid numerical type code: 42","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -34273,7 +33855,7 @@
 				"results": [
 					{
 						"error": {"message":"type must be represented as a number or a string","code":14,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -34283,7 +33865,7 @@
 				"results": [
 					{
 						"error": {"message":"type must be represented as a number or a string","code":14,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -34293,7 +33875,7 @@
 				"results": [
 					{
 						"error": {"message":"Invalid numerical type code: 42","code":2,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			},
@@ -34303,7 +33885,7 @@
 				"results": [
 					{
 						"error": {"message":"type must be represented as a number or a string","code":14,"type":"MongoServerError"},
-						"versions": "5.0.1..7.0.4"
+						"versions": "5.0.1..6.0.20"
 					}
 				]
 			}
@@ -34313,8 +33895,80 @@
 		"catalog": "coverage_where",
 		"operations": [
 			{
+				"id": "oOz0ewr8TCOK",
+				"operation": {},
+				"results": [
+					{
+						"documents": [0,1,2,4,5,6,8,9,10,11,13,14,15,16,17,19,20,21,22,23,24,26,27,28,29,30,31,32,34,35,36,37,38,39,40,41,42,44,45,46,47,48,49,50,51,52,53,55,56,57,58,59,60,61,62,63,64,65,67,68,69,70,71,72,73,74,75,76,77,78,80,81,82,83,84,85,86,87,88,89,90,91,92,94,95,96,97,98,99,100,101,102,103,104,105,106,107,109,110,111,112,113,114,115,116,117,118,119,120,121,123,125,126,127,128,129,130,131,132,133,134,135,136,137,139,140,142,143,144,145,146,147,148,149,150,151,152,153,154,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,174,175,176,177,179,180,181,182,183,184,185,186,187,188,189,190,191,193,194,195,196,197,198,200,201,202,203,204,205,206,207,208,209,210,211,212,214,215,216,217,218,219],
+						"versions": "2.6.12,3.2.6..3.5.13"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21..8.3.4"
+					},
+					{
+						"documents": [0],
+						"versions": "2.6.12..8.3.4"
+					},
+					{
+						"documents": [0,1,2,3,4,5],
+						"versions": "2.6.12..8.3.4"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+						"versions": "2.6.12..8.3.4"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
+						"versions": "2.6.12..8.3.4"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34],
+						"versions": "2.6.12..8.3.4"
+					},
+					{
+						"documents": [0,1],
+						"versions": "2.6.12..8.3.4"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38],
+						"versions": "2.6.12..8.3.4"
+					},
+					{
+						"documents": [0,1,2,3,4],
+						"versions": "2.6.12..8.3.4"
+					},
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+						"versions": "2.6.12..8.3.4"
+					},
+					{
+						"documents": [],
+						"versions": "2.6.12..8.3.4"
+					},
+					{
+						"documents": [0,1,2,4,5,6,8,9,10,11,13,14,15,16,17,19,20,21,22,23,24,26,27,28,29,30,31,32,34,35,36,37,38,39,40,41,42,44,45,46,47,48,49,50,51,52,53,55,56,57,58,59,60,61,62,63,64,65,67,68,69,70,71,72,73,74,75,76,77,78,80,81,82,83,84,85,86,87,88,89,90,91,92,94,95,96,97,98,100,99,101,102,103,104,105,106,107,109,110,111,112,113,114,115,116,117,118,119,120,121,123,125,126,127,128,129,130,131,132,133,134,135,136,137,139,140,142,143,144,145,146,147,148,149,150,151,152,153,154,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,174,175,176,177,179,180,181,182,183,184,185,186,187,188,189,190,191,193,194,195,196,197,198,200,201,202,203,204,205,206,207,208,209,210,211,212,214,215,216,217,218,219],
+						"versions": "3.0.12..3.0.15"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219],
+						"versions": "3.6.0..8.3.4"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
+						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20"
+					}
+				]
+			},
+			{
 				"id": "oF3RqOOyWrsL",
-				"operation": {"$where":"Abundant"},
+				"operation": {
+					"$where": "Abundant"
+				},
 				"results": [
 					{
 						"error": {"message":"ReferenceError: Abundant is not defined","code":16722,"type":"MongoError"},
@@ -35388,38 +35042,6 @@
 		"catalog": "element",
 		"operations": [
 			{
-				"id": "qXStH4yTKL7U",
-				"operation": {"name":{"$exists":true}},
-				"results": [
-					{
-						"documents": [2,3,4,5],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
-					},
-					{
-						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
-						"versions": "2.6.12..8.3.4"
-					},
-					{
-						"documents": [0,1],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
-					}
-				]
-			},
-			{
-				"id": "wQqFTpVhAG5E",
-				"operation": {"age":{"$exists":true}},
-				"results": [
-					{
-						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
-						"versions": "2.6.12..8.3.4"
-					},
-					{
-						"documents": [1,2,3,4],
-						"versions": "2.6.12..8.3.4"
-					}
-				]
-			},
-			{
 				"id": "vdtyLNJOL1hd",
 				"operation": {"middleName":{"$exists":false}},
 				"results": [
@@ -36403,32 +36025,6 @@
 				]
 			},
 			{
-				"id": "bCjdQgVLMp3G",
-				"operation": {"$expr":{"$multiply":[]}},
-				"results": [
-					{
-						"error": {"message":"Can't canonicalize query: BadValue unknown top level operator: $expr","code":17287,"type":"MongoError"},
-						"versions": "2.6.12..3.0.15"
-					},
-					{
-						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.5.12"
-					},
-					{
-						"error": {"message":"$expr is not allowed in this context","code":2,"type":"MongoError"},
-						"versions": "3.5.13"
-					},
-					{
-						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
-						"versions": "3.6.0..8.3.4"
-					},
-					{
-						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
-						"versions": "3.6.0..8.3.4"
-					}
-				]
-			},
-			{
 				"id": "mmVPLqDUCqDc",
 				"operation": {"$expr":{"$size":"$name"}},
 				"results": [
@@ -36489,36 +36085,6 @@
 				]
 			},
 			{
-				"id": "rx0Lvr2gNLne",
-				"operation": {"$expr":{"$eq":[null,null]}},
-				"results": [
-					{
-						"error": {"message":"Can't canonicalize query: BadValue unknown top level operator: $expr","code":17287,"type":"MongoError"},
-						"versions": "2.6.12..3.0.15"
-					},
-					{
-						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.5.12"
-					},
-					{
-						"error": {"message":"$expr is not allowed in this context","code":2,"type":"MongoError"},
-						"versions": "3.5.13"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27],
-						"versions": "3.6.0..3.6.2,3.6.9..3.6.23,4.0.3..4.0.28,4.1.4..8.3.4"
-					},
-					{
-						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
-						"versions": "3.6.0..8.3.4"
-					},
-					{
-						"error": {"message":"connect ECONNREFUSED 127.0.0.1:27017","type":"MongoServerSelectionError"},
-						"versions": "3.6.3..3.6.8,3.7.1..4.0.2,4.1.1..4.1.3"
-					}
-				]
-			},
-			{
 				"id": "sJm5nEcDVPIi",
 				"operation": {"$expr":{"$gt":[null,0]}},
 				"results": [
@@ -36558,28 +36124,6 @@
 					},
 					{
 						"error": {"message":"Expression $size takes exactly 1 arguments. 0 were passed in.","code":16020,"type":"MongoServerError"},
-						"versions": "3.6.0..8.3.4"
-					}
-				]
-			},
-			{
-				"id": "vin79y3UQZHP",
-				"operation": {"$expr":{"$add":[]}},
-				"results": [
-					{
-						"error": {"message":"Can't canonicalize query: BadValue unknown top level operator: $expr","code":17287,"type":"MongoError"},
-						"versions": "2.6.12..3.0.15"
-					},
-					{
-						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.5.12"
-					},
-					{
-						"error": {"message":"$expr is not allowed in this context","code":2,"type":"MongoError"},
-						"versions": "3.5.13"
-					},
-					{
-						"documents": [],
 						"versions": "3.6.0..8.3.4"
 					}
 				]
@@ -38038,6 +37582,54 @@
 				]
 			},
 			{
+				"id": "vin79y3UQZHP",
+				"operation": {"$expr":{"$add":[]}},
+				"results": [
+					{
+						"error": {"message":"Can't canonicalize query: BadValue unknown top level operator: $expr","code":17287,"type":"MongoError"},
+						"versions": "2.6.12..3.0.15"
+					},
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.5.12"
+					},
+					{
+						"error": {"message":"$expr is not allowed in this context","code":2,"type":"MongoError"},
+						"versions": "3.5.13"
+					},
+					{
+						"documents": [],
+						"versions": "3.6.0..8.3.4"
+					}
+				]
+			},
+			{
+				"id": "bCjdQgVLMp3G",
+				"operation": {"$expr":{"$multiply":[]}},
+				"results": [
+					{
+						"error": {"message":"Can't canonicalize query: BadValue unknown top level operator: $expr","code":17287,"type":"MongoError"},
+						"versions": "2.6.12..3.0.15"
+					},
+					{
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"versions": "3.2.6..3.5.12"
+					},
+					{
+						"error": {"message":"$expr is not allowed in this context","code":2,"type":"MongoError"},
+						"versions": "3.5.13"
+					},
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
+						"versions": "3.6.0..8.3.4"
+					},
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+						"versions": "3.6.0..8.3.4"
+					}
+				]
+			},
+			{
 				"id": "uDOw4JurBURT",
 				"operation": {"$expr":{"$divide":["$a"]}},
 				"results": [
@@ -39302,6 +38894,16 @@
 				]
 			},
 			{
+				"id": "aVomys554LQ1",
+				"operation": {"attempts.quantity":{"$in":["Double",{}]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
 				"id": "rV5QK3pmDAQh",
 				"operation": {"attempts.quantity":{"$in":["Each",1011]}},
 				"results": [
@@ -39478,6 +39080,196 @@
 					{
 						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
 						"versions": "6.0.27..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "uLZETquuesW8",
+				"operation": {"priority":{"$in":[{"$elemMatch":42}]}},
+				"results": [
+					{
+						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "uAvVODwy2S3l",
+				"operation": {"priority":{"$in":[{"$elemMatch":{"capacity":null}}]}},
+				"results": [
+					{
+						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "vRx0SRbeQ3Uc",
+				"operation": {"priority":{"$in":[{"$elemMatch":{"capacity":"value"}}]}},
+				"results": [
+					{
+						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "v8HDDdOGkGDj",
+				"operation": {"priority":{"$in":[{"$elemMatch":{"capacity":true}}]}},
+				"results": [
+					{
+						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "bwgVWZlgq5Ua",
+				"operation": {"priority":{"$not":{"$in":"active"}}},
+				"results": [
+					{
+						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "kSTiVq3pDW2a",
+				"operation": {"priority":{"$not":{"$in":[{"$elemMatch":42}]}}},
+				"results": [
+					{
+						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "cXewfrLw4TyI",
+				"operation": {"priority":{"$not":{"$in":[{"$elemMatch":{"capacity":null}}]}}},
+				"results": [
+					{
+						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "mqKQM6geyz7k",
+				"operation": {"priority":{"$not":{"$in":[{"$elemMatch":{"capacity":"value"}}]}}},
+				"results": [
+					{
+						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "rzuDd6Yg08R1",
+				"operation": {"priority":{"$not":{"$in":[{"$elemMatch":{"capacity":true}}]}}},
+				"results": [
+					{
+						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "vGTmfyxVmHCI",
+				"operation": {"priority":{"$nin":"deleted"}},
+				"results": [
+					{
+						"error": {"message":"$nin needs an array","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "wG2yXUvJygGJ",
+				"operation": {"priority":{"$nin":[{"$elemMatch":42}]}},
+				"results": [
+					{
+						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "pVX3ieRFDmeX",
+				"operation": {"priority":{"$nin":[{"$elemMatch":{"capacity":null}}]}},
+				"results": [
+					{
+						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "uR1fLNxx1WNl",
+				"operation": {"priority":{"$nin":[{"$elemMatch":{"capacity":"value"}}]}},
+				"results": [
+					{
+						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "tGD7BjvvKjnC",
+				"operation": {"priority":{"$nin":[{"$elemMatch":{"capacity":true}}]}},
+				"results": [
+					{
+						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "vIhEFIZpHDNo",
+				"operation": {"priority":{"$not":{"$nin":"deleted"}}},
+				"results": [
+					{
+						"error": {"message":"$nin needs an array","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "uwlJFCjqQWP2",
+				"operation": {"priority":{"$not":{"$nin":[{"$elemMatch":42}]}}},
+				"results": [
+					{
+						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "qHdiLdSwbT2r",
+				"operation": {"priority":{"$not":{"$nin":[{"$elemMatch":{"capacity":null}}]}}},
+				"results": [
+					{
+						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "dr0xALIOr05V",
+				"operation": {"priority":{"$not":{"$nin":[{"$elemMatch":{"capacity":"value"}}]}}},
+				"results": [
+					{
+						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "hMX09rt25GU8",
+				"operation": {"priority":{"$not":{"$nin":[{"$elemMatch":{"capacity":true}}]}}},
+				"results": [
+					{
+						"error": {"message":"cannot nest $ under $in","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
 					}
 				]
 			},
@@ -39882,6 +39674,220 @@
 				]
 			},
 			{
+				"id": "qf6eCIOVZ71x",
+				"operation": {"attempts.quantity":{"$in":"active"}},
+				"results": [
+					{
+						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "pRWSvK4zWXkz",
+				"operation": {"attempts.quantity":{"$in":[{},null]}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
+						"versions": "5.0.1..6.0.20"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
+						"versions": "6.0.27..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "oEDdaKKty76a",
+				"operation": {"attempts.quantity":{"$in":[{},"value"]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "fRTGhgC2Nzx7",
+				"operation": {"attempts.quantity":{"$in":[{},true]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "o7AsLBGFPgPv",
+				"operation": {"attempts.quantity":{"$in":[null,null,{}]}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
+						"versions": "5.0.1..6.0.20"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
+						"versions": "6.0.27..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "gT5OR2z9BK5s",
+				"operation": {"attempts.quantity":{"$in":["value","value",{}]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "hCNEmPabmtIK",
+				"operation": {"attempts.quantity":{"$in":[true,true,{}]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "qZt3Q5CKVfAk",
+				"operation": {"attempts.quantity":{"$in":[null,null,null,{}]}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
+						"versions": "5.0.1..6.0.20"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
+						"versions": "6.0.27..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "uvsAarGigYT5",
+				"operation": {"attempts.quantity":{"$in":["value","value","value",{}]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "kXRpUVPrC67Q",
+				"operation": {"attempts.quantity":{"$in":[true,true,true,{}]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "vfYGqRrUscfh",
+				"operation": {"attempts.quantity":{"$in":[null,null,null,{},{}]}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
+						"versions": "5.0.1..6.0.20"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
+						"versions": "6.0.27..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "tnUzyzkFLX4z",
+				"operation": {"attempts.quantity":{"$in":["value","value","value",{},{}]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "jWiIDcqrezLQ",
+				"operation": {"attempts.quantity":{"$in":[true,true,true,{},{}]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "c03upg2JEXHP",
+				"operation": {"attempts.quantity":{"$in":[{},null,null,null]}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
+						"versions": "5.0.1..6.0.20"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
+						"versions": "6.0.27..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "w1CTVt02Zhdj",
+				"operation": {"attempts.quantity":{"$in":[{},"value","value","value"]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "a4rG33s6gPrT",
+				"operation": {"attempts.quantity":{"$in":[{},true,true,true]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "cVErY2I258y5",
+				"operation": {"attempts.quantity":{"$in":["Abundant","Couple","Double",null,null,null]}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
+						"versions": "5.0.1..6.0.20"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
+						"versions": "6.0.27..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "uR7Ms18mQ5bF",
+				"operation": {"attempts.quantity":{"$in":["Abundant","Couple","Double","value","value","value"]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "wzcSTVrkqj9Z",
+				"operation": {"attempts.quantity":{"$in":["Abundant","Couple","Double",true,true,true]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
 				"id": "atZ7mLUCIJV5",
 				"operation": {"attempts.quantity":{"$in":[null,null,null,13,14,15]}},
 				"results": [
@@ -39908,6 +39914,40 @@
 					{
 						"documents": [],
 						"versions": "6.0.27..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "a9BAM3Cw6Y2V",
+				"operation": {"attempts.quantity":{"$in":["Couple","Double",null,null,null]}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
+						"versions": "5.0.1..6.0.20"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
+						"versions": "6.0.27..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "uy8xe5CWJXv7",
+				"operation": {"attempts.quantity":{"$in":["Couple","Double","value","value","value"]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "tOwZJWKKfw8e",
+				"operation": {"attempts.quantity":{"$in":["Couple","Double",true,true,true]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
 					}
 				]
 			},
@@ -39942,6 +39982,40 @@
 				]
 			},
 			{
+				"id": "ntyBAi6Uo1ZD",
+				"operation": {"attempts.quantity":{"$in":["Double",null,null,null]}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
+						"versions": "5.0.1..6.0.20"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
+						"versions": "6.0.27..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "aZMIxh9Yi4M4",
+				"operation": {"attempts.quantity":{"$in":["Double","value","value","value"]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "tkAQOAH9sCnh",
+				"operation": {"attempts.quantity":{"$in":["Double",true,true,true]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
 				"id": "eugIsT2tNeb6",
 				"operation": {"attempts.quantity":{"$in":[null,13,14,15]}},
 				"results": [
@@ -39968,6 +40042,74 @@
 					{
 						"documents": [],
 						"versions": "6.0.27..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "cPIZXwCrnzIg",
+				"operation": {"attempts.quantity":{"$in":[null,{}]}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
+						"versions": "5.0.1..6.0.20"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
+						"versions": "6.0.27..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "szRRgKBiaUQV",
+				"operation": {"attempts.quantity":{"$in":[42,{}]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "l4ULYh7OQ4Tn",
+				"operation": {"attempts.quantity":{"$in":[true,{}]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "m6OOryT5VW5k",
+				"operation": {"attempts.quantity":{"$in":["Each",null]}},
+				"results": [
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
+						"versions": "5.0.1..6.0.20"
+					},
+					{
+						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
+						"versions": "6.0.27..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "uNQtQegz5elu",
+				"operation": {"attempts.quantity":{"$in":["Each","value"]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
+					}
+				]
+			},
+			{
+				"id": "pwoE2KRdOfgv",
+				"operation": {"attempts.quantity":{"$in":["Each",true]}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "5.0.1..8.3.2"
 					}
 				]
 			},
@@ -40591,50 +40733,6 @@
 				]
 			},
 			{
-				"id": "eHaoCnERN88o",
-				"operation": {"$and":[]},
-				"results": [
-					{
-						"error": {"message":"Can't canonicalize query: BadValue $and/$or/$nor must be a nonempty array","code":17287,"type":"MongoError"},
-						"versions": "2.6.12..3.0.15"
-					},
-					{
-						"error": {"message":"$and/$or/$nor must be a nonempty array","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.5.13"
-					},
-					{
-						"error": {"message":"$and/$or/$nor must be a nonempty array","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..7.0.37"
-					},
-					{
-						"error": {"message":"$and argument must be a non-empty array","code":2,"type":"MongoServerError"},
-						"versions": "8.0.0..8.3.4"
-					}
-				]
-			},
-			{
-				"id": "gFBqvdyXBYvB",
-				"operation": {"$or":[]},
-				"results": [
-					{
-						"error": {"message":"Can't canonicalize query: BadValue $and/$or/$nor must be a nonempty array","code":17287,"type":"MongoError"},
-						"versions": "2.6.12..3.0.15"
-					},
-					{
-						"error": {"message":"$and/$or/$nor must be a nonempty array","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.5.13"
-					},
-					{
-						"error": {"message":"$and/$or/$nor must be a nonempty array","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..7.0.37"
-					},
-					{
-						"error": {"message":"$or argument must be a non-empty array","code":2,"type":"MongoServerError"},
-						"versions": "8.0.0..8.3.4"
-					}
-				]
-			},
-			{
 				"id": "i5yCEL2PW4gq",
 				"operation": {"$and":[{}]},
 				"results": [
@@ -40701,32 +40799,6 @@
 				]
 			},
 			{
-				"id": "vNKuJUMn27Fv",
-				"operation": {"$and":null},
-				"results": [
-					{
-						"error": {"message":"Can't canonicalize query: BadValue and needs an array","code":17287,"type":"MongoError"},
-						"versions": "2.6.12..3.0.15"
-					},
-					{
-						"error": {"message":"and needs an array","code":2,"type":"MongoError"},
-						"versions": "3.2.6..3.2.21"
-					},
-					{
-						"error": {"message":"$and must be an array","code":2,"type":"MongoError"},
-						"versions": "3.3.6..3.5.13"
-					},
-					{
-						"error": {"message":"$and must be an array","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..7.0.37"
-					},
-					{
-						"error": {"message":"$and argument must be an array","code":2,"type":"MongoServerError"},
-						"versions": "8.0.0..8.3.4"
-					}
-				]
-			},
-			{
 				"id": "uapfF4BugUUy",
 				"operation": {"$or":"invalid"},
 				"results": [
@@ -40758,80 +40830,8 @@
 		"catalog": "misc",
 		"operations": [
 			{
-				"id": "oOz0ewr8TCOK",
-				"operation": {},
-				"results": [
-					{
-						"documents": [0,1,2,4,5,6,8,9,10,11,13,14,15,16,17,19,20,21,22,23,24,26,27,28,29,30,31,32,34,35,36,37,38,39,40,41,42,44,45,46,47,48,49,50,51,52,53,55,56,57,58,59,60,61,62,63,64,65,67,68,69,70,71,72,73,74,75,76,77,78,80,81,82,83,84,85,86,87,88,89,90,91,92,94,95,96,97,98,99,100,101,102,103,104,105,106,107,109,110,111,112,113,114,115,116,117,118,119,120,121,123,125,126,127,128,129,130,131,132,133,134,135,136,137,139,140,142,143,144,145,146,147,148,149,150,151,152,153,154,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,174,175,176,177,179,180,181,182,183,184,185,186,187,188,189,190,191,193,194,195,196,197,198,200,201,202,203,204,205,206,207,208,209,210,211,212,214,215,216,217,218,219],
-						"versions": "2.6.12,3.2.6..3.5.13"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
-						"versions": "2.6.12..5.0.0,5.0.2,5.0.4,5.0.6,5.0.8..5.0.16,5.0.18,5.0.20,5.0.22,5.0.24,5.0.26,5.0.28,5.0.30,5.0.32..6.0.8,6.0.10,6.0.12,6.0.14,6.0.15,6.0.17,6.0.19,6.0.21,6.0.22,6.0.24,6.0.26,6.0.28..7.0.1,7.0.3,7.0.5..8.3.4"
-					},
-					{
-						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
-						"versions": "2.6.12..8.3.4"
-					},
-					{
-						"documents": [],
-						"versions": "2.6.12..8.3.4"
-					},
-					{
-						"documents": [0],
-						"versions": "2.6.12..8.3.4"
-					},
-					{
-						"documents": [0,1,2,3,4,5],
-						"versions": "2.6.12..8.3.4"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12],
-						"versions": "2.6.12..8.3.4"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
-						"versions": "2.6.12..8.3.4"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34],
-						"versions": "2.6.12..8.3.4"
-					},
-					{
-						"documents": [0,1],
-						"versions": "2.6.12..8.3.4"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38],
-						"versions": "2.6.12..8.3.4"
-					},
-					{
-						"documents": [0,1,2,3,4],
-						"versions": "2.6.12..8.3.4"
-					},
-					{
-						"documents": [0,1,2,4,5,6,8,9,10,11,13,14,15,16,17,19,20,21,22,23,24,26,27,28,29,30,31,32,34,35,36,37,38,39,40,41,42,44,45,46,47,48,49,50,51,52,53,55,56,57,58,59,60,61,62,63,64,65,67,68,69,70,71,72,73,74,75,76,77,78,80,81,82,83,84,85,86,87,88,89,90,91,92,94,95,96,97,98,100,99,101,102,103,104,105,106,107,109,110,111,112,113,114,115,116,117,118,119,120,121,123,125,126,127,128,129,130,131,132,133,134,135,136,137,139,140,142,143,144,145,146,147,148,149,150,151,152,153,154,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,174,175,176,177,179,180,181,182,183,184,185,186,187,188,189,190,191,193,194,195,196,197,198,200,201,202,203,204,205,206,207,208,209,210,211,212,214,215,216,217,218,219],
-						"versions": "3.0.12..3.0.15"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219],
-						"versions": "3.6.0..8.3.4"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
-					},
-					{
-						"documents": [0,1,2,3,4,5,6,7,8,9,10,11],
-						"versions": "5.0.1,5.0.3,5.0.5,5.0.7,5.0.17,5.0.19,5.0.21,5.0.23,5.0.25,5.0.27,5.0.29,5.0.31,6.0.9,6.0.11,6.0.13,6.0.16,6.0.18,6.0.20,6.0.23,6.0.25,6.0.27,7.0.2,7.0.4"
-					}
-				]
-			},
-			{
 				"id": "gbwHWj0FwGKT",
-				"operation": {
-					"$nop": false
-				},
+				"operation": {"$nop":false},
 				"results": [
 					{
 						"error": {"message":"Can't canonicalize query: BadValue unknown top level operator: $nop","code":17287,"type":"MongoError"},
