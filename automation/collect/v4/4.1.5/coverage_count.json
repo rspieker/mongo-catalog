@@ -34,7 +34,8 @@
 			8,
 			9,
 			10,
-			11
+			11,
+			12
 		]
 	},
 	{
@@ -54,6 +55,13 @@
 				"$gt": 36,
 				"$lte": 86
 			}
+		},
+		"documents": []
+	},
+	{
+		"id": "pOM72ZHSKkyI",
+		"operation": {
+			"rank": 12
 		},
 		"documents": []
 	},
@@ -318,7 +326,8 @@
 			8,
 			9,
 			10,
-			11
+			11,
+			12
 		]
 	},
 	{
@@ -336,7 +345,8 @@
 			8,
 			9,
 			10,
-			11
+			11,
+			12
 		]
 	},
 	{
@@ -355,6 +365,13 @@
 		"documents": []
 	},
 	{
+		"id": "cxRN4OV0s4VZ",
+		"operation": {
+			"name": "Full"
+		},
+		"documents": []
+	},
+	{
 		"id": "vR3qz6wDAECR",
 		"operation": {
 			"level": 32,
@@ -363,19 +380,42 @@
 		"documents": []
 	},
 	{
-		"id": "pYl671nhe79r",
+		"id": "ePt7rFydxCXY",
 		"operation": {
-			"scores.grade": "Abundant",
-			"scores.step": "Couple"
+			"title": {
+				"$gt": 21
+			}
 		},
 		"documents": [
-			3
+			4,
+			5
 		]
 	},
 	{
-		"id": "wswr598pMfLP",
+		"id": "wNXKIyHxMB7n",
 		"operation": {
 			"title": {
+				"$gt": 20,
+				"$lt": 25
+			}
+		},
+		"documents": [
+			4
+		]
+	},
+	{
+		"id": "t81QrsFjUlhc",
+		"operation": {
+			"username": "Abundant"
+		},
+		"documents": [
+			6
+		]
+	},
+	{
+		"id": "hWqnwICjEMzw",
+		"operation": {
+			"username": {
 				"$in": [
 					"Abundant"
 				],
@@ -385,14 +425,14 @@
 		"documents": []
 	},
 	{
-		"id": "cRkjOHxITXFl",
+		"id": "uZ4MHsXYgTsm",
 		"operation": {
 			"$and": [
 				{
-					"title": "Abundant"
+					"username": "Abundant"
 				},
 				{
-					"title": {
+					"username": {
 						"$gt": "Couple"
 					}
 				}
@@ -401,11 +441,11 @@
 		"documents": []
 	},
 	{
-		"id": "lYr3PvpFC7kC",
+		"id": "nak12ZosmOhz",
 		"operation": {
 			"$and": [
 				{
-					"title": "Abundant"
+					"username": "Abundant"
 				},
 				{
 					"$where": "Double"
@@ -419,27 +459,25 @@
 		}
 	},
 	{
-		"id": "pvBUB01lnd9s",
+		"id": "q087zxzOZU6v",
 		"operation": {
-			"title": {
-				"$gt": 7,
-				"$lte": 9
+			"username": {
+				"$gt": 3,
+				"$lte": 5
 			}
 		},
 		"documents": [
-			5
+			7
 		]
 	},
 	{
-		"id": "kGGNJMQ6dIjx",
+		"id": "ixQ1xoDvowef",
 		"operation": {
-			"username": {
-				"$gt": 24,
-				"$lt": 29
-			}
+			"scores.priority": "Abundant",
+			"scores.capacity": "Couple"
 		},
 		"documents": [
-			6
+			8
 		]
 	},
 	{
@@ -467,7 +505,7 @@
 			}
 		},
 		"documents": [
-			10
+			11
 		]
 	},
 	{
@@ -486,7 +524,8 @@
 			8,
 			9,
 			10,
-			11
+			11,
+			12
 		]
 	},
 	{
@@ -552,7 +591,8 @@
 			8,
 			9,
 			10,
-			11
+			11,
+			12
 		]
 	},
 	{
@@ -700,7 +740,8 @@
 			8,
 			9,
 			10,
-			11
+			11,
+			12
 		]
 	},
 	{
@@ -998,7 +1039,8 @@
 			8,
 			9,
 			10,
-			11
+			11,
+			12
 		]
 	},
 	{
@@ -1038,7 +1080,8 @@
 			8,
 			9,
 			10,
-			11
+			11,
+			12
 		]
 	},
 	{
@@ -1204,6 +1247,13 @@
 		"documents": []
 	},
 	{
+		"id": "tZMYeXDEwbNw",
+		"operation": {
+			"name": 42
+		},
+		"documents": []
+	},
+	{
 		"id": "pFddMvibBtZF",
 		"operation": {
 			"level": null,
@@ -1221,7 +1271,8 @@
 			8,
 			9,
 			10,
-			11
+			11,
+			12
 		]
 	},
 	{
@@ -1241,45 +1292,99 @@
 		"documents": []
 	},
 	{
-		"id": "ip0osdBLFEDp",
+		"id": "s6DvitMDNf3j",
 		"operation": {
-			"scores.grade": null,
-			"scores.step": null
+			"title": {
+				"$gt": null
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "qUlCQN4ec0WH",
+		"operation": {
+			"title": {
+				"$gt": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "ptQ4OaJ4RUeU",
+		"operation": {
+			"title": {
+				"$gt": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "lm8rHvnsA1Xc",
+		"operation": {
+			"title": {
+				"$gt": null,
+				"$lt": null
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "uOEayGIAITHi",
+		"operation": {
+			"title": {
+				"$gt": "value",
+				"$lt": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "ogMOfQMaoTTN",
+		"operation": {
+			"title": {
+				"$gt": true,
+				"$lt": true
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "gL0omEmJLYiR",
+		"operation": {
+			"username": null
 		},
 		"documents": [
 			0,
 			1,
 			2,
+			3,
 			4,
 			5,
-			6,
-			7,
 			8,
 			9,
 			10,
-			11
+			11,
+			12
 		]
 	},
 	{
-		"id": "kUiocHbwpd8D",
+		"id": "sliRoHKTCvJS",
 		"operation": {
-			"scores.grade": 42,
-			"scores.step": 42
+			"username": 42
 		},
 		"documents": []
 	},
 	{
-		"id": "dRZRVhLFXMSu",
+		"id": "gniJwGrB2qMu",
 		"operation": {
-			"scores.grade": true,
-			"scores.step": true
+			"username": true
 		},
 		"documents": []
 	},
 	{
-		"id": "wRQSKFPdAVTj",
+		"id": "bD0qb7Iy9gFe",
 		"operation": {
-			"title": {
+			"username": {
 				"$in": "active",
 				"$gt": "Couple"
 			}
@@ -1291,9 +1396,9 @@
 		}
 	},
 	{
-		"id": "cCi2bOP1wSbU",
+		"id": "szvtq6SSODX1",
 		"operation": {
-			"title": {
+			"username": {
 				"$in": [
 					null
 				],
@@ -1303,9 +1408,9 @@
 		"documents": []
 	},
 	{
-		"id": "lkQqwFEkv4WY",
+		"id": "uRvRJetKxTSy",
 		"operation": {
-			"title": {
+			"username": {
 				"$in": [
 					42
 				],
@@ -1315,9 +1420,9 @@
 		"documents": []
 	},
 	{
-		"id": "qjtbAS9uG8Im",
+		"id": "toqTKHnIVzv4",
 		"operation": {
-			"title": {
+			"username": {
 				"$in": [
 					true
 				],
@@ -1327,14 +1432,14 @@
 		"documents": []
 	},
 	{
-		"id": "clHxIERKSCr1",
+		"id": "r3PIYNCAKPSO",
 		"operation": {
 			"$and": [
 				{
-					"title": null
+					"username": null
 				},
 				{
-					"title": {
+					"username": {
 						"$gt": null
 					}
 				}
@@ -1343,14 +1448,14 @@
 		"documents": []
 	},
 	{
-		"id": "q16leuqgVYWs",
+		"id": "eUJc8vME1G4f",
 		"operation": {
 			"$and": [
 				{
-					"title": 42
+					"username": 42
 				},
 				{
-					"title": {
+					"username": {
 						"$gt": 42
 					}
 				}
@@ -1359,14 +1464,14 @@
 		"documents": []
 	},
 	{
-		"id": "rAVWS3IUNmKH",
+		"id": "wdxhMSAqwYdg",
 		"operation": {
 			"$and": [
 				{
-					"title": true
+					"username": true
 				},
 				{
-					"title": {
+					"username": {
 						"$gt": true
 					}
 				}
@@ -1375,11 +1480,11 @@
 		"documents": []
 	},
 	{
-		"id": "vXPwlFGub5jT",
+		"id": "uWNCBo2lNwmd",
 		"operation": {
 			"$and": [
 				{
-					"title": null
+					"username": null
 				},
 				{
 					"$where": null
@@ -1393,11 +1498,11 @@
 		}
 	},
 	{
-		"id": "dDHNdKbDS8Ga",
+		"id": "rrKvucyWKH9h",
 		"operation": {
 			"$and": [
 				{
-					"title": 42
+					"username": 42
 				},
 				{
 					"$where": 42
@@ -1411,11 +1516,11 @@
 		}
 	},
 	{
-		"id": "r3s4UyyCMD0p",
+		"id": "rJBUdKiKzA5i",
 		"operation": {
 			"$and": [
 				{
-					"title": true
+					"username": true
 				},
 				{
 					"$where": true
@@ -1429,9 +1534,9 @@
 		}
 	},
 	{
-		"id": "p8BFTCcie7hM",
+		"id": "qHOehwLLex5E",
 		"operation": {
-			"title": {
+			"username": {
 				"$gt": null,
 				"$lte": null
 			}
@@ -1439,9 +1544,9 @@
 		"documents": []
 	},
 	{
-		"id": "fFPOR0KWRmgW",
+		"id": "rCzGcdOWzpBo",
 		"operation": {
-			"title": {
+			"username": {
 				"$gt": "value",
 				"$lte": "value"
 			}
@@ -1449,9 +1554,9 @@
 		"documents": []
 	},
 	{
-		"id": "lzzvMySlmo8J",
+		"id": "vzzdNCzSLWWG",
 		"operation": {
-			"title": {
+			"username": {
 				"$gt": true,
 				"$lte": true
 			}
@@ -1459,32 +1564,39 @@
 		"documents": []
 	},
 	{
-		"id": "viwIoK7JISPN",
+		"id": "sPX2qU2BwZBH",
 		"operation": {
-			"username": {
-				"$gt": null,
-				"$lt": null
-			}
+			"scores.priority": null,
+			"scores.capacity": null
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			9,
+			10,
+			11,
+			12
+		]
+	},
+	{
+		"id": "ttNqhpP0mOW8",
+		"operation": {
+			"scores.priority": 42,
+			"scores.capacity": 42
 		},
 		"documents": []
 	},
 	{
-		"id": "npD5GFoMci0R",
+		"id": "qIJGhMnpxLKM",
 		"operation": {
-			"username": {
-				"$gt": "value",
-				"$lt": "value"
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "pZXHLJbZ1lmL",
-		"operation": {
-			"username": {
-				"$gt": true,
-				"$lt": true
-			}
+			"scores.priority": true,
+			"scores.capacity": true
 		},
 		"documents": []
 	},
@@ -1506,7 +1618,8 @@
 			8,
 			9,
 			10,
-			11
+			11,
+			12
 		]
 	},
 	{
@@ -1541,7 +1654,8 @@
 			5,
 			6,
 			7,
-			8
+			8,
+			9
 		]
 	},
 	{
@@ -1561,7 +1675,7 @@
 			}
 		},
 		"documents": [
-			11
+			12
 		]
 	}
 ]
