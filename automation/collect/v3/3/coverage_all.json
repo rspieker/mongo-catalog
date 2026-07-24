@@ -313,6 +313,19 @@
 		]
 	},
 	{
+		"id": "dfqKFvOJNKfv",
+		"operation": {
+			"level": {
+				"$not": {
+					"$all": [
+						null
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
 		"id": "ulesAgqFEIbl",
 		"operation": {
 			"count": {
@@ -1271,6 +1284,36 @@
 		"operation": {
 			"level": {
 				"$all": 42
+			}
+		},
+		"error": {
+			"message": "$all needs an array",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "qrs7qdCvqHPu",
+		"operation": {
+			"level": {
+				"$not": {
+					"$all": "value"
+				}
+			}
+		},
+		"error": {
+			"message": "$all needs an array",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "uGnexDL4IrUa",
+		"operation": {
+			"level": {
+				"$not": {
+					"$all": 42
+				}
 			}
 		},
 		"error": {
