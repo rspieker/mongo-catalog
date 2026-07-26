@@ -19753,16 +19753,6 @@
 				]
 			},
 			{
-				"id": "ofcPKzMPtkg1",
-				"operation": {"age":{"$gt":20,"$lt":22,"$ne":21}},
-				"results": [
-					{
-						"documents": [0],
-						"versions": "7.0.30,7.0.37"
-					}
-				]
-			},
-			{
 				"id": "qZuU6xXrUV23",
 				"operation": {"score":{"$gt":{}}},
 				"results": [
@@ -19779,6 +19769,16 @@
 					{
 						"documents": [],
 						"versions": "3.2.6..7.0.37"
+					}
+				]
+			},
+			{
+				"id": "ofcPKzMPtkg1",
+				"operation": {"age":{"$gt":20,"$lt":22,"$ne":21}},
+				"results": [
+					{
+						"documents": [0],
+						"versions": "7.0.30,7.0.37"
 					}
 				]
 			},
