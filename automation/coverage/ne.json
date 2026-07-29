@@ -1,15 +1,19 @@
 {
   "queries": [
     {
-      "checksum": "f8e7bdb2daa64b841c517f57ba0996d7628338551ef7f6572a437cbd216b86c7",
+      "checksum": "e607d9510a85cf282bc9ce732d4116cdf540502257e5ca37366782f589990eb7",
       "fingerprint": {
         "field:#1": {
-          "$ne": "number:#1"
+          "$gt": "number:#1",
+          "$lt": "number:#2",
+          "$ne": "number:#3"
         }
       },
       "query": {
         "age": {
-          "$ne": 8
+          "$gt": 20,
+          "$lt": 22,
+          "$ne": 21
         }
       }
     },
@@ -27,6 +31,19 @@
       }
     },
     {
+      "checksum": "9f185ceb7c8b7e90895f1a318f90b9379f7e0f8466776e5d906a489e000e55e8",
+      "fingerprint": {
+        "field:#1": {
+          "$gt": {}
+        }
+      },
+      "query": {
+        "score": {
+          "$gt": {}
+        }
+      }
+    },
+    {
       "checksum": "8c5a4959f4a6890f5156f711eada276faa1ad6261d2a1e790d0d024fbf6fda97",
       "fingerprint": {
         "field:#1": {
@@ -36,6 +53,19 @@
       "query": {
         "score": {
           "$gte": {}
+        }
+      }
+    },
+    {
+      "checksum": "214e29da82cd364194475a0a42a7f66903c50008728d4d63a424fa3dfa90e3c0",
+      "fingerprint": {
+        "field:#1": {
+          "$lt": {}
+        }
+      },
+      "query": {
+        "score": {
+          "$lt": {}
         }
       }
     },
@@ -53,12 +83,162 @@
       }
     },
     {
-      "checksum": "b9d6c3e12402722af37bbccbcdcc9c8ef27046daca3f435659b77553a60b6bcb",
+      "checksum": "3a29a18823335d9d5507d9209aa8651fb492fbed51146ccf90f50c8f52d338dc",
+      "fingerprint": {
+        "field:#1": {
+          "$ne": [
+            "number:#1",
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "scores": {
+          "$ne": [
+            17,
+            19
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "b9fa74438d746ef6418a3a97dfa623c00773cd73d4962548551902655510ec27",
+      "fingerprint": {
+        "field:#1": {
+          "$ne": [
+            "number:#1"
+          ]
+        }
+      },
+      "query": {
+        "scores": {
+          "$ne": [
+            17
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "e4eab00e87d3364fffe97cc93f9552bb588b0256a8ad37e3cc701fce9f75b5e6",
+      "fingerprint": {
+        "field:#1": {
+          "$not": {
+            "$in": [
+              [
+                "number:#1"
+              ]
+            ]
+          }
+        }
+      },
+      "query": {
+        "scores": {
+          "$not": {
+            "$in": [
+              [
+                17
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "checksum": "1ba8f043643ea0a967ad0094e50ec810213551afcd97cc92403c10484936c744",
+      "fingerprint": {
+        "field:#1": {
+          "$not": {
+            "$in": [
+              [
+                "number:#1",
+                "number:#2"
+              ]
+            ]
+          }
+        }
+      },
+      "query": {
+        "scores": {
+          "$not": {
+            "$in": [
+              [
+                17,
+                19
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "checksum": "af12b4ca24bf1520fc8cee4ba2a99b58c43fddab62b280ef1bbd6ee634badecd",
+      "fingerprint": {
+        "field:#1": {
+          "$not": {
+            "$in": [
+              [
+                "number:#1"
+              ],
+              [
+                "number:#1",
+                "number:#2"
+              ]
+            ]
+          }
+        }
+      },
+      "query": {
+        "scores": {
+          "$not": {
+            "$in": [
+              [
+                17
+              ],
+              [
+                17,
+                19
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "checksum": "33193382f764234a979e3b1b21715d8fed5c4189842821794081c35fb432d43b",
+      "fingerprint": {
+        "field:#1": {
+          "$not": {
+            "$in": [
+              "string:#1",
+              [
+                "number:#1",
+                "number:#2"
+              ]
+            ]
+          }
+        }
+      },
+      "query": {
+        "scores": {
+          "$not": {
+            "$in": [
+              "Abundant",
+              [
+                17,
+                19
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "checksum": "912c5d1e8382bb498e275ff80aaf4d5ce2ce4e30d4bae58f23be309146f24dc0",
       "fingerprint": {
         "field:#1": {
           "$elemMatch": {
-            "field:#2": {
-              "$ne": [
+            "$not": {
+              "$eq": [
                 "number:#1"
               ]
             }
@@ -66,11 +246,11 @@
         }
       },
       "query": {
-        "scores": {
+        "ratings": {
           "$elemMatch": {
-            "level": {
-              "$ne": [
-                153
+            "$not": {
+              "$eq": [
+                140
               ]
             }
           }
@@ -78,45 +258,41 @@
       }
     },
     {
-      "checksum": "04947826eb195e48232a5abaccfe3b1f34d978174915682b94a5cfbb8c6ff041",
+      "checksum": "8fda73dffd66c2bde0e59e7c2e0087565066b46492e7b6c7d7baf83160c988bb",
       "fingerprint": {
         "field:#1": {
           "$elemMatch": {
-            "field:#2": {
-              "$not": {
-                "$in": [
-                  [
-                    "number:#1"
-                  ]
+            "$not": {
+              "$in": [
+                [
+                  "number:#1"
                 ]
-              }
+              ]
             }
           }
         }
       },
       "query": {
-        "scores": {
+        "ratings": {
           "$elemMatch": {
-            "level": {
-              "$not": {
-                "$in": [
-                  [
-                    153
-                  ]
+            "$not": {
+              "$in": [
+                [
+                  140
                 ]
-              }
+              ]
             }
           }
         }
       }
     },
     {
-      "checksum": "685d0492044795ce6b83d87432fe7eb2900d03570c0ace5665ad6097dca374c3",
+      "checksum": "0cb552e1f321609e2b06c5b9d92d5239cdd58149835dddfe1f41a1e4d2638ca9",
       "fingerprint": {
         "field:#1": {
           "$not": {
             "$elemMatch": {
-              "field:#2": [
+              "$eq": [
                 "number:#1"
               ]
             }
@@ -124,11 +300,11 @@
         }
       },
       "query": {
-        "scores": {
+        "ratings": {
           "$not": {
             "$elemMatch": {
-              "level": [
-                153
+              "$eq": [
+                140
               ]
             }
           }
@@ -136,33 +312,29 @@
       }
     },
     {
-      "checksum": "0327b88871f4e901f1ab73e6802261c5ae6ffffa23e25b1dded990ef589e4032",
+      "checksum": "4268c89551ec1f48d207c923cb5ed6e587f503fc1c7fc7278f6821e65f8f4793",
       "fingerprint": {
         "field:#1": {
           "$not": {
             "$elemMatch": {
-              "field:#2": {
-                "$in": [
-                  [
-                    "number:#1"
-                  ]
+              "$in": [
+                [
+                  "number:#1"
                 ]
-              }
+              ]
             }
           }
         }
       },
       "query": {
-        "scores": {
+        "ratings": {
           "$not": {
             "$elemMatch": {
-              "level": {
-                "$in": [
-                  [
-                    153
-                  ]
+              "$in": [
+                [
+                  140
                 ]
-              }
+              ]
             }
           }
         }
@@ -172,29 +344,279 @@
   "variants": [
     {
       "age": {
+        "$gt": null,
+        "$lt": null,
         "$ne": null
       }
     },
     {
       "age": {
+        "$gt": "value",
+        "$lt": "value",
         "$ne": "value"
       }
     },
     {
       "age": {
+        "$gt": true,
+        "$lt": true,
         "$ne": true
       }
     },
     {
       "scores": {
-        "$elemMatch": 42
+        "$ne": [
+          null,
+          null
+        ]
       }
     },
     {
       "scores": {
+        "$ne": [
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "scores": {
+        "$ne": [
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "scores": {
+        "$ne": [
+          null
+        ]
+      }
+    },
+    {
+      "scores": {
+        "$ne": [
+          "value"
+        ]
+      }
+    },
+    {
+      "scores": {
+        "$ne": [
+          true
+        ]
+      }
+    },
+    {
+      "scores": {
+        "$not": {
+          "$in": "active"
+        }
+      }
+    },
+    {
+      "scores": {
+        "$not": {
+          "$in": [
+            [
+              null
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scores": {
+        "$not": {
+          "$in": [
+            [
+              "value"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scores": {
+        "$not": {
+          "$in": [
+            [
+              true
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scores": {
+        "$not": {
+          "$in": [
+            [
+              null,
+              null
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scores": {
+        "$not": {
+          "$in": [
+            [
+              "value",
+              "value"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scores": {
+        "$not": {
+          "$in": [
+            [
+              true,
+              true
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scores": {
+        "$not": {
+          "$in": [
+            [
+              null
+            ],
+            [
+              null,
+              null
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scores": {
+        "$not": {
+          "$in": [
+            [
+              "value"
+            ],
+            [
+              "value",
+              "value"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scores": {
+        "$not": {
+          "$in": [
+            [
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scores": {
+        "$not": {
+          "$in": [
+            "Abundant",
+            [
+              null,
+              null
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scores": {
+        "$not": {
+          "$in": [
+            "Abundant",
+            [
+              "value",
+              "value"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scores": {
+        "$not": {
+          "$in": [
+            "Abundant",
+            [
+              true,
+              true
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scores": {
+        "$not": {
+          "$in": [
+            null,
+            [
+              17,
+              19
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scores": {
+        "$not": {
+          "$in": [
+            42,
+            [
+              17,
+              19
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scores": {
+        "$not": {
+          "$in": [
+            true,
+            [
+              17,
+              19
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "ratings": {
+        "$elemMatch": 42
+      }
+    },
+    {
+      "ratings": {
         "$elemMatch": {
-          "level": {
-            "$ne": [
+          "$not": {
+            "$eq": [
               null
             ]
           }
@@ -202,10 +624,10 @@
       }
     },
     {
-      "scores": {
+      "ratings": {
         "$elemMatch": {
-          "level": {
-            "$ne": [
+          "$not": {
+            "$eq": [
               "value"
             ]
           }
@@ -213,10 +635,10 @@
       }
     },
     {
-      "scores": {
+      "ratings": {
         "$elemMatch": {
-          "level": {
-            "$ne": [
+          "$not": {
+            "$eq": [
               true
             ]
           }
@@ -224,73 +646,65 @@
       }
     },
     {
-      "scores": {
+      "ratings": {
         "$elemMatch": {
-          "level": {
-            "$not": {
-              "$in": "active"
-            }
+          "$not": {
+            "$in": "active"
           }
         }
       }
     },
     {
-      "scores": {
+      "ratings": {
         "$elemMatch": {
-          "level": {
-            "$not": {
-              "$in": [
-                [
-                  null
-                ]
+          "$not": {
+            "$in": [
+              [
+                null
               ]
-            }
+            ]
           }
         }
       }
     },
     {
-      "scores": {
+      "ratings": {
         "$elemMatch": {
-          "level": {
-            "$not": {
-              "$in": [
-                [
-                  "value"
-                ]
+          "$not": {
+            "$in": [
+              [
+                "value"
               ]
-            }
+            ]
           }
         }
       }
     },
     {
-      "scores": {
+      "ratings": {
         "$elemMatch": {
-          "level": {
-            "$not": {
-              "$in": [
-                [
-                  true
-                ]
+          "$not": {
+            "$in": [
+              [
+                true
               ]
-            }
+            ]
           }
         }
       }
     },
     {
-      "scores": {
+      "ratings": {
         "$not": {
           "$elemMatch": 42
         }
       }
     },
     {
-      "scores": {
+      "ratings": {
         "$not": {
           "$elemMatch": {
-            "level": [
+            "$eq": [
               null
             ]
           }
@@ -298,10 +712,10 @@
       }
     },
     {
-      "scores": {
+      "ratings": {
         "$not": {
           "$elemMatch": {
-            "level": [
+            "$eq": [
               "value"
             ]
           }
@@ -309,10 +723,10 @@
       }
     },
     {
-      "scores": {
+      "ratings": {
         "$not": {
           "$elemMatch": {
-            "level": [
+            "$eq": [
               true
             ]
           }
@@ -320,57 +734,49 @@
       }
     },
     {
-      "scores": {
+      "ratings": {
         "$not": {
           "$elemMatch": {
-            "level": {
-              "$in": "active"
-            }
+            "$in": "active"
           }
         }
       }
     },
     {
-      "scores": {
+      "ratings": {
         "$not": {
           "$elemMatch": {
-            "level": {
-              "$in": [
-                [
-                  null
-                ]
+            "$in": [
+              [
+                null
               ]
-            }
+            ]
           }
         }
       }
     },
     {
-      "scores": {
+      "ratings": {
         "$not": {
           "$elemMatch": {
-            "level": {
-              "$in": [
-                [
-                  "value"
-                ]
+            "$in": [
+              [
+                "value"
               ]
-            }
+            ]
           }
         }
       }
     },
     {
-      "scores": {
+      "ratings": {
         "$not": {
           "$elemMatch": {
-            "level": {
-              "$in": [
-                [
-                  true
-                ]
+            "$in": [
+              [
+                true
               ]
-            }
+            ]
           }
         }
       }
@@ -379,78 +785,46 @@
   "documents": [
     {
       "_id": 0,
-      "age": 7
+      "age": 20.5
     },
     {
       "_id": 1,
-      "rank": 30,
+      "rank": 16,
       "scores": [
-        31
+        17
       ]
     },
     {
       "_id": 2,
-      "rank": 30,
-      "scores": [
-        [
-          153
-        ]
+      "level": 17,
+      "ratings": [
+        18
       ]
     },
     {
       "_id": 3,
-      "rank": 31,
-      "scores": [
-        34,
-        35,
+      "level": 17,
+      "ratings": [
         [
-          153
+          140
         ]
       ]
     },
     {
       "_id": 4,
-      "rank": 31,
-      "scores": [
-        {
-          "level": 153
-        }
-      ]
-    },
-    {
-      "_id": 5,
-      "rank": 32,
-      "scores": [
-        {
-          "level": [
-            34,
-            [
-              153
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "_id": 6,
-      "rank": 33,
-      "scores": [
-        {
-          "level": [
-            [
-              153
-            ]
-          ]
-        }
+      "level": 18,
+      "ratings": [
+        21,
+        22,
+        [
+          140
+        ]
       ]
     }
   ],
   "indices": [
     {
       "age": 1
-    },
-    {
-      "a.b": 1
     }
   ]
 }

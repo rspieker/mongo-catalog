@@ -1,7 +1,7 @@
 {
   "queries": [
     {
-      "checksum": "961ecfde3c0b481c5578ae1b3c3d6875a8fa48cd31c288dbb51f342ac5cd1ec2",
+      "checksum": "393a1b61c222961119805aa35c7d3e4bd9ff3ef07fe7e6d63e7d815dea0266da",
       "fingerprint": {
         "field:#1": {
           "$mod": [
@@ -11,31 +11,48 @@
         }
       },
       "query": {
-        "name": {
+        "score": {
           "$mod": [
-            35,
-            26
+            4000000036,
+            36
           ]
         }
       }
     },
     {
-      "checksum": "b4fd5977660174a310f9cdac49f00c9d42c1aeb4b4e4f336a73dec909992897f",
+      "checksum": "8eb1785d9c1638c3d1509b29e27bda30527d39be7a47312a0ef5cb2873d15853",
       "fingerprint": {
-        "field:#1": {
-          "$gt": "number:#1",
+        "field:#1.field:#2": {
           "$mod": [
-            "number:#2",
-            "number:#3"
+            "number:#1",
+            "number:#2"
           ]
         }
       },
       "query": {
-        "name": {
-          "$gt": 30,
+        "title.level": {
           "$mod": [
-            35,
-            26
+            14,
+            11
+          ]
+        }
+      }
+    },
+    {
+      "checksum": "dd14a6cf3bd6b29342048430c5c67f3d148d1ad753813d228d56ce9c0d8f19f6",
+      "fingerprint": {
+        "field:#1.field:#2.field:#3": {
+          "$mod": [
+            "number:#1",
+            "number:#2"
+          ]
+        }
+      },
+      "query": {
+        "title.level.count": {
+          "$mod": [
+            16,
+            11
           ]
         }
       }
@@ -43,24 +60,24 @@
   ],
   "variants": [
     {
-      "name": {
+      "score": {
         "$mod": "invalid"
       }
     },
     {
-      "name": {
+      "score": {
         "$mod": [
           2
         ]
       }
     },
     {
-      "name": {
+      "score": {
         "$mod": []
       }
     },
     {
-      "name": {
+      "score": {
         "$mod": [
           null,
           null
@@ -68,7 +85,7 @@
       }
     },
     {
-      "name": {
+      "score": {
         "$mod": [
           "value",
           "value"
@@ -76,7 +93,7 @@
       }
     },
     {
-      "name": {
+      "score": {
         "$mod": [
           true,
           true
@@ -84,28 +101,24 @@
       }
     },
     {
-      "name": {
-        "$gt": 30,
+      "title.level": {
         "$mod": "invalid"
       }
     },
     {
-      "name": {
-        "$gt": 30,
+      "title.level": {
         "$mod": [
           2
         ]
       }
     },
     {
-      "name": {
-        "$gt": 30,
+      "title.level": {
         "$mod": []
       }
     },
     {
-      "name": {
-        "$gt": null,
+      "title.level": {
         "$mod": [
           null,
           null
@@ -113,8 +126,7 @@
       }
     },
     {
-      "name": {
-        "$gt": "value",
+      "title.level": {
         "$mod": [
           "value",
           "value"
@@ -122,8 +134,48 @@
       }
     },
     {
-      "name": {
-        "$gt": true,
+      "title.level": {
+        "$mod": [
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "title.level.count": {
+        "$mod": "invalid"
+      }
+    },
+    {
+      "title.level.count": {
+        "$mod": [
+          2
+        ]
+      }
+    },
+    {
+      "title.level.count": {
+        "$mod": []
+      }
+    },
+    {
+      "title.level.count": {
+        "$mod": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "title.level.count": {
+        "$mod": [
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "title.level.count": {
         "$mod": [
           true,
           true
@@ -134,16 +186,63 @@
   "documents": [
     {
       "_id": 0,
-      "name": 26
+      "age": 37,
+      "score": 4000000036
     },
     {
       "_id": 1,
-      "name": "Abundant"
+      "rank": 12,
+      "status": "Abundant",
+      "name": 11
+    },
+    {
+      "_id": 2,
+      "rank": 15,
+      "category": "Each",
+      "name": [
+        11,
+        18
+      ]
+    },
+    {
+      "_id": 3,
+      "rank": 18,
+      "title": [
+        12,
+        [
+          13,
+          14
+        ],
+        [
+          [
+            15
+          ]
+        ]
+      ]
+    },
+    {
+      "_id": 4,
+      "rank": 19,
+      "title": [
+        {
+          "level": [
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "level": [
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "_id": 5,
+      "rank": 21,
+      "title": "Either"
     }
   ],
-  "indices": [
-    {
-      "name": 1
-    }
-  ]
+  "indices": []
 }
