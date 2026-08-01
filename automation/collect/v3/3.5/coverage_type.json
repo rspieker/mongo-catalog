@@ -1,31 +1,42 @@
 [
 	{
-		"id": "ovj1QWgDEpWf",
+		"id": "le7hgDNDD53o",
 		"operation": {
 			"name": {
-				"$type": 20
+				"$type": 21
 			}
 		},
 		"error": {
-			"message": "Invalid numerical type code: 20",
+			"message": "Invalid numerical type code: 21",
 			"code": 2,
 			"type": "MongoError"
 		}
 	},
 	{
-		"id": "sJeJKBTFDMTI",
+		"id": "dHuluMtQpX56",
 		"operation": {
-			"rank": {
-				"$not": {
-					"$type": "Each"
-				}
+			"name": {
+				"$regex": "Each",
+				"$type": 22
 			}
 		},
 		"error": {
-			"message": "Unknown type name alias: Each",
+			"message": "Invalid numerical type code: 22",
 			"code": 2,
 			"type": "MongoError"
 		}
+	},
+	{
+		"id": "dQxmUe8ArA7i",
+		"operation": {
+			"status": null
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		]
 	},
 	{
 		"id": "qYgx2n9Dw1P6",
@@ -38,28 +49,6 @@
 			2,
 			4
 		]
-	},
-	{
-		"id": "k0SAQtx2tJnC",
-		"operation": {
-			"level": {}
-		},
-		"documents": [
-			5
-		]
-	},
-	{
-		"id": "dQNUfVGuGr1A",
-		"operation": {
-			"title": {
-				"$type": "Couple"
-			}
-		},
-		"error": {
-			"message": "Unknown type name alias: Couple",
-			"code": 2,
-			"type": "MongoError"
-		}
 	},
 	{
 		"id": "rWAKnJKlO65g",
@@ -101,12 +90,11 @@
 		}
 	},
 	{
-		"id": "rBQLSjMeCZaW",
+		"id": "mX46AOOMLPjH",
 		"operation": {
-			"rank": {
-				"$not": {
-					"$type": null
-				}
+			"name": {
+				"$regex": "Each",
+				"$type": null
 			}
 		},
 		"error": {
@@ -116,32 +104,72 @@
 		}
 	},
 	{
-		"id": "b2wx3i9NRXq9",
+		"id": "bo9bFRZWFuzq",
 		"operation": {
-			"rank": {
-				"$not": {
-					"$type": 42
-				}
+			"name": {
+				"$regex": "Each",
+				"$type": "value"
 			}
 		},
 		"error": {
-			"message": "Invalid numerical type code: 42",
+			"message": "Unknown type name alias: value",
 			"code": 2,
 			"type": "MongoError"
 		}
 	},
 	{
-		"id": "ipvTJUXepz7m",
+		"id": "cMBFErMCehcM",
 		"operation": {
-			"rank": {
-				"$not": {
-					"$type": true
-				}
+			"name": {
+				"$regex": "Each",
+				"$type": true
 			}
 		},
 		"error": {
 			"message": "type must be represented as a number or a string",
 			"code": 14,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "tkPAqpHGSDfx",
+		"operation": {
+			"name": {
+				"$regex": null,
+				"$type": 22
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "pFDed9QxHz7p",
+		"operation": {
+			"name": {
+				"$regex": 42,
+				"$type": 22
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "o2iQPOWrwNT8",
+		"operation": {
+			"name": {
+				"$regex": true,
+				"$type": 22
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
 			"type": "MongoError"
 		}
 	},
@@ -155,15 +183,7 @@
 		"documents": [
 			0,
 			1,
-			3,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12
+			3
 		]
 	},
 	{
@@ -176,15 +196,7 @@
 		"documents": [
 			0,
 			1,
-			3,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12
+			3
 		]
 	},
 	{
@@ -198,44 +210,5 @@
 			2,
 			4
 		]
-	},
-	{
-		"id": "qTnECEaJAQWd",
-		"operation": {
-			"title": {
-				"$type": null
-			}
-		},
-		"error": {
-			"message": "type must be represented as a number or a string",
-			"code": 14,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "esLUw1JGN9Rr",
-		"operation": {
-			"title": {
-				"$type": 42
-			}
-		},
-		"error": {
-			"message": "Invalid numerical type code: 42",
-			"code": 2,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "q94Fo0qOiBS3",
-		"operation": {
-			"title": {
-				"$type": true
-			}
-		},
-		"error": {
-			"message": "type must be represented as a number or a string",
-			"code": 14,
-			"type": "MongoError"
-		}
 	}
 ]
