@@ -1,35 +1,44 @@
 [
 	{
-		"id": "okNvBB60PHan",
+		"id": "mg6SXeGtII5N",
 		"operation": {
-			"name": {
+			"score": {
 				"$mod": [
-					35,
-					26
-				]
-			}
-		},
-		"documents": [
-			0
-		]
-	},
-	{
-		"id": "nQPvQHOf7bWJ",
-		"operation": {
-			"name": {
-				"$gt": 30,
-				"$mod": [
-					35,
-					26
+					4000000036,
+					36
 				]
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "eBQQOJltKSUL",
+		"id": "ghkcGExMhTds",
 		"operation": {
-			"name": {
+			"title.level": {
+				"$mod": [
+					14,
+					11
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "e8UDniQvKo6w",
+		"operation": {
+			"title.level.count": {
+				"$mod": [
+					16,
+					11
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "rcMEA87yHGV6",
+		"operation": {
+			"score": {
 				"$mod": "invalid"
 			}
 		},
@@ -40,9 +49,9 @@
 		}
 	},
 	{
-		"id": "nl2QmvVPtVqm",
+		"id": "fLhe60H5y32n",
 		"operation": {
-			"name": {
+			"score": {
 				"$mod": [
 					2
 				]
@@ -55,9 +64,9 @@
 		}
 	},
 	{
-		"id": "vVdsM1i9XX0B",
+		"id": "mLwpSWM5XGbS",
 		"operation": {
-			"name": {
+			"score": {
 				"$mod": []
 			}
 		},
@@ -68,9 +77,9 @@
 		}
 	},
 	{
-		"id": "uqZCLQuJHeza",
+		"id": "eQBWbvGM928q",
 		"operation": {
-			"name": {
+			"score": {
 				"$mod": [
 					null,
 					null
@@ -84,9 +93,9 @@
 		}
 	},
 	{
-		"id": "lKxYduzz8D5D",
+		"id": "czhzsP4JPftA",
 		"operation": {
-			"name": {
+			"score": {
 				"$mod": [
 					"value",
 					"value"
@@ -100,9 +109,9 @@
 		}
 	},
 	{
-		"id": "uVUrcO3ErwWI",
+		"id": "mqKxyLGU8GZ7",
 		"operation": {
-			"name": {
+			"score": {
 				"$mod": [
 					true,
 					true
@@ -116,10 +125,9 @@
 		}
 	},
 	{
-		"id": "pOtUPTI2DV31",
+		"id": "lKJfEENHCFA4",
 		"operation": {
-			"name": {
-				"$gt": 30,
+			"title.level": {
 				"$mod": "invalid"
 			}
 		},
@@ -130,10 +138,9 @@
 		}
 	},
 	{
-		"id": "dLztxTHXNGNH",
+		"id": "kJLxARivEaHs",
 		"operation": {
-			"name": {
-				"$gt": 30,
+			"title.level": {
 				"$mod": [
 					2
 				]
@@ -146,10 +153,9 @@
 		}
 	},
 	{
-		"id": "fK9PxmH76Uhl",
+		"id": "qf6EQNHODfKy",
 		"operation": {
-			"name": {
-				"$gt": 30,
+			"title.level": {
 				"$mod": []
 			}
 		},
@@ -160,10 +166,9 @@
 		}
 	},
 	{
-		"id": "uVqOVhPWU4b7",
+		"id": "wGBbFqw3WzB6",
 		"operation": {
-			"name": {
-				"$gt": null,
+			"title.level": {
 				"$mod": [
 					null,
 					null
@@ -177,10 +182,9 @@
 		}
 	},
 	{
-		"id": "iJumawSF8f0P",
+		"id": "bTytOkjUMIL3",
 		"operation": {
-			"name": {
-				"$gt": "value",
+			"title.level": {
 				"$mod": [
 					"value",
 					"value"
@@ -194,10 +198,98 @@
 		}
 	},
 	{
-		"id": "oQAY8bdXe7jh",
+		"id": "kZFvF7hZH3Ae",
 		"operation": {
-			"name": {
-				"$gt": true,
+			"title.level": {
+				"$mod": [
+					true,
+					true
+				]
+			}
+		},
+		"error": {
+			"message": "malformed mod, divisor not a number",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "nMNpueO40iZA",
+		"operation": {
+			"title.level.count": {
+				"$mod": "invalid"
+			}
+		},
+		"error": {
+			"message": "malformed mod, needs to be an array",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "u6zwYDIVDfMV",
+		"operation": {
+			"title.level.count": {
+				"$mod": [
+					2
+				]
+			}
+		},
+		"error": {
+			"message": "malformed mod, not enough elements",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "o4UswsTTRKcL",
+		"operation": {
+			"title.level.count": {
+				"$mod": []
+			}
+		},
+		"error": {
+			"message": "malformed mod, not enough elements",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "rPDtEv1PZfjg",
+		"operation": {
+			"title.level.count": {
+				"$mod": [
+					null,
+					null
+				]
+			}
+		},
+		"error": {
+			"message": "malformed mod, divisor not a number",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "sqUFYLtoxvWm",
+		"operation": {
+			"title.level.count": {
+				"$mod": [
+					"value",
+					"value"
+				]
+			}
+		},
+		"error": {
+			"message": "malformed mod, divisor not a number",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "qntWG75Zd01F",
+		"operation": {
+			"title.level.count": {
 				"$mod": [
 					true,
 					true
