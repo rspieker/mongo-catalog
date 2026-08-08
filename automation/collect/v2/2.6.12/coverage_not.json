@@ -1,5 +1,61 @@
 [
 	{
+		"id": "wOLvXe2TOZj9",
+		"operation": {
+			"age": 23
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "qZzABCAVY6XF",
+		"operation": {
+			"age": {
+				"$ne": 23
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6
+		]
+	},
+	{
+		"id": "jENfzDFUAhQP",
+		"operation": {
+			"age": {
+				"$in": [
+					23
+				]
+			}
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "rPtvFqu8tSFj",
+		"operation": {
+			"age": {
+				"$nin": [
+					23
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6
+		]
+	},
+	{
 		"id": "ixxoRPKTAKzm",
 		"operation": {
 			"name": {
@@ -10,7 +66,9 @@
 				}
 			}
 		},
-		"documents": []
+		"documents": [
+			4
+		]
 	},
 	{
 		"id": "gTbQDJTVQuWY",
@@ -19,7 +77,9 @@
 				"$gt": "Abundant"
 			}
 		},
-		"documents": []
+		"documents": [
+			4
+		]
 	},
 	{
 		"id": "vgUlSqLo1kR0",
@@ -35,11 +95,8 @@
 			1,
 			2,
 			3,
-			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
@@ -52,7 +109,8 @@
 			}
 		},
 		"documents": [
-			0
+			2,
+			4
 		]
 	},
 	{
@@ -69,11 +127,8 @@
 			1,
 			2,
 			3,
-			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
@@ -84,8 +139,10 @@
 			}
 		},
 		"documents": [
-			0,
-			1
+			2,
+			3,
+			4,
+			5
 		]
 	},
 	{
@@ -98,13 +155,9 @@
 			}
 		},
 		"documents": [
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8
+			0,
+			1,
+			6
 		]
 	},
 	{
@@ -119,14 +172,11 @@
 			}
 		},
 		"documents": [
+			0,
 			1,
-			2,
 			3,
-			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
@@ -142,14 +192,11 @@
 			}
 		},
 		"documents": [
+			0,
 			1,
-			2,
 			3,
-			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
@@ -164,7 +211,8 @@
 			}
 		},
 		"documents": [
-			0
+			2,
+			4
 		]
 	},
 	{
@@ -250,9 +298,121 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
+		]
+	},
+	{
+		"id": "sKt7GcnVmXs6",
+		"operation": {
+			"name": {
+				"$not": {
+					"$mod": [
+						33,
+						29
+					]
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			4,
+			5,
+			6
+		]
+	},
+	{
+		"id": "aIJ0eNCkWjLW",
+		"operation": {
+			"name": {
+				"$mod": [
+					33,
+					30
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "kxq1pMFo7ber",
+		"operation": {
+			"name": {
+				"$not": {
+					"$size": 30
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6
+		]
+	},
+	{
+		"id": "twyupqcCsQey",
+		"operation": {
+			"name": {
+				"$not": {
+					"$all": [
+						"Abundant",
+						"Couple"
+					]
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			5,
+			6
+		]
+	},
+	{
+		"id": "crrMx9qUmeGu",
+		"operation": {
+			"name": {
+				"$not": {
+					"$all": [
+						"Either"
+					]
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6
+		]
+	},
+	{
+		"id": "bec8u6mP4K7O",
+		"operation": {
+			"name": {
+				"$not": {
+					"$elemMatch": {
+						"score": "Abundant"
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			6
 		]
 	},
 	{
@@ -284,11 +444,11 @@
 		}
 	},
 	{
-		"id": "jDPwDvtr9cgi",
+		"id": "oPhMQMO3PSk9",
 		"operation": {
 			"name": {
 				"$not": {
-					"$ref": "Either"
+					"$ref": "Empty"
 				}
 			}
 		},
@@ -314,127 +474,212 @@
 		}
 	},
 	{
-		"id": "sKt7GcnVmXs6",
+		"id": "tHxQsXC8vnAw",
 		"operation": {
-			"name": {
+			"scores": {
 				"$not": {
-					"$mod": [
-						33,
-						29
-					]
+					"$gt": 19
 				}
 			}
 		},
 		"documents": [
 			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6
+		]
+	},
+	{
+		"id": "n7Yjt9EJsZjS",
+		"operation": {
+			"age": null
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6
+		]
+	},
+	{
+		"id": "kHbAwuVM7WGB",
+		"operation": {
+			"age": "value"
+		},
+		"documents": []
+	},
+	{
+		"id": "aofomZDzIZ6T",
+		"operation": {
+			"age": true
+		},
+		"documents": []
+	},
+	{
+		"id": "kfGZKcGZ72Sg",
+		"operation": {
+			"age": {
+				"$ne": null
+			}
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "qYlS2PNwrT6y",
+		"operation": {
+			"age": {
+				"$ne": "value"
+			}
+		},
+		"documents": [
+			1,
 			2,
 			3,
 			4,
 			5,
 			6,
-			7,
-			8
+			0
 		]
 	},
 	{
-		"id": "aIJ0eNCkWjLW",
+		"id": "gWFjzWbGg8tK",
 		"operation": {
-			"name": {
-				"$mod": [
-					33,
-					30
+			"age": {
+				"$ne": true
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			0
+		]
+	},
+	{
+		"id": "nvwzwktRyIh3",
+		"operation": {
+			"age": {
+				"$in": "active"
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $in needs an array",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "arscExu4r66Z",
+		"operation": {
+			"age": {
+				"$in": [
+					null
+				]
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6
+		]
+	},
+	{
+		"id": "twBeDuDWESF3",
+		"operation": {
+			"age": {
+				"$in": [
+					"value"
 				]
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "lvB5fohfh3bx",
+		"id": "c3Y7n03i5ZZt",
 		"operation": {
-			"title": {
-				"$not": {
-					"$size": 20
-				}
+			"age": {
+				"$in": [
+					true
+				]
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "fD1BgHKXIhRn",
+		"operation": {
+			"age": {
+				"$nin": "deleted"
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $nin needs an array",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "n5a6orxPSXPV",
+		"operation": {
+			"age": {
+				"$nin": [
+					null
+				]
 			}
 		},
 		"documents": [
-			0,
+			0
+		]
+	},
+	{
+		"id": "awlADvXeWC8X",
+		"operation": {
+			"age": {
+				"$nin": [
+					"value"
+				]
+			}
+		},
+		"documents": [
 			1,
 			2,
 			3,
 			4,
 			5,
 			6,
-			7,
-			8
+			0
 		]
 	},
 	{
-		"id": "fhLBwSdR3cSO",
+		"id": "wxntdksGpKek",
 		"operation": {
-			"title": {
-				"$not": {
-					"$all": [
-						"Abundant",
-						"Couple"
-					]
-				}
+			"age": {
+				"$nin": [
+					true
+				]
 			}
 		},
 		"documents": [
-			0,
-			1,
-			2,
-			3,
-			5,
-			6,
-			7,
-			8
-		]
-	},
-	{
-		"id": "cWycUPEPEaDT",
-		"operation": {
-			"title": {
-				"$not": {
-					"$all": [
-						"Double"
-					]
-				}
-			}
-		},
-		"documents": [
-			0,
 			1,
 			2,
 			3,
 			4,
 			5,
 			6,
-			7,
-			8
-		]
-	},
-	{
-		"id": "rnhsMu9hMaaH",
-		"operation": {
-			"username": {
-				"$not": {
-					"$elemMatch": {
-						"age": "Abundant"
-					}
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7
+			0
 		]
 	},
 	{
@@ -519,9 +764,7 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
@@ -540,9 +783,7 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
@@ -561,9 +802,7 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
@@ -576,13 +815,9 @@
 			}
 		},
 		"documents": [
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8
+			0,
+			1,
+			6
 		]
 	},
 	{
@@ -617,8 +852,10 @@
 			}
 		},
 		"documents": [
-			0,
-			1
+			2,
+			3,
+			4,
+			5
 		]
 	},
 	{
@@ -637,9 +874,7 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
@@ -658,9 +893,7 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
@@ -671,13 +904,9 @@
 			}
 		},
 		"documents": [
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8
+			0,
+			1,
+			6
 		]
 	},
 	{
@@ -688,13 +917,9 @@
 			}
 		},
 		"documents": [
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8
+			0,
+			1,
+			6
 		]
 	},
 	{
@@ -705,8 +930,10 @@
 			}
 		},
 		"documents": [
-			0,
-			1
+			2,
+			3,
+			4,
+			5
 		]
 	},
 	{
@@ -719,8 +946,10 @@
 			}
 		},
 		"documents": [
-			0,
-			1
+			2,
+			3,
+			4,
+			5
 		]
 	},
 	{
@@ -733,8 +962,10 @@
 			}
 		},
 		"documents": [
-			0,
-			1
+			2,
+			3,
+			4,
+			5
 		]
 	},
 	{
@@ -747,13 +978,9 @@
 			}
 		},
 		"documents": [
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8
+			0,
+			1,
+			6
 		]
 	},
 	{
@@ -783,8 +1010,10 @@
 			}
 		},
 		"documents": [
-			0,
-			1
+			2,
+			3,
+			4,
+			5
 		]
 	},
 	{
@@ -805,9 +1034,7 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
@@ -828,9 +1055,7 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
@@ -846,8 +1071,10 @@
 			}
 		},
 		"documents": [
-			0,
-			1
+			2,
+			3,
+			4,
+			5
 		]
 	},
 	{
@@ -869,9 +1096,7 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
@@ -893,9 +1118,7 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
@@ -925,13 +1148,9 @@
 			}
 		},
 		"documents": [
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8
+			0,
+			1,
+			6
 		]
 	},
 	{
@@ -1180,180 +1399,6 @@
 		}
 	},
 	{
-		"id": "pJy4SCCFBmul",
-		"operation": {
-			"name": {
-				"$not": {
-					"$not": null
-				}
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue $not needs a regex or a document",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "qf5ZdZGMUEoH",
-		"operation": {
-			"name": {
-				"$not": {
-					"$not": 42
-				}
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue $not needs a regex or a document",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "r2FV1QcmKX6E",
-		"operation": {
-			"name": {
-				"$not": {
-					"$not": true
-				}
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue $not needs a regex or a document",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "qLUQgQyYh1Q2",
-		"operation": {
-			"name": {
-				"$not": null
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue $not needs a regex or a document",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "fuCEX4ki1l0m",
-		"operation": {
-			"name": {
-				"$not": 42
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue $not needs a regex or a document",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "vrhnWLtXl4Nf",
-		"operation": {
-			"name": {
-				"$not": true
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue $not needs a regex or a document",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "rVGMfDduCiLp",
-		"operation": {
-			"name": {
-				"$not": {
-					"$ref": null
-				}
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue unknown operator: $ref",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "pOwizImgQSll",
-		"operation": {
-			"name": {
-				"$not": {
-					"$ref": 42
-				}
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue unknown operator: $ref",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "taIoD3vpIc9L",
-		"operation": {
-			"name": {
-				"$not": {
-					"$ref": true
-				}
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue unknown operator: $ref",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "h4zMuzURRUgT",
-		"operation": {
-			"name": {
-				"$not": {
-					"$options": null
-				}
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue $options needs a $regex",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "dr6eT0AGLUfo",
-		"operation": {
-			"name": {
-				"$not": {
-					"$options": 42
-				}
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue $options needs a $regex",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "oKsIMdWHvTVC",
-		"operation": {
-			"name": {
-				"$not": {
-					"$options": true
-				}
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue $options needs a $regex",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
 		"id": "gRI2mX1QSdE8",
 		"operation": {
 			"name": {
@@ -1544,9 +1589,9 @@
 		}
 	},
 	{
-		"id": "fGgJQU3aVL1V",
+		"id": "udTnHEL23B9f",
 		"operation": {
-			"title": {
+			"name": {
 				"$not": {
 					"$size": "large"
 				}
@@ -1559,15 +1604,13 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
-		"id": "dh0WcT5wNhTr",
+		"id": "wFacG70XFVbq",
 		"operation": {
-			"title": {
+			"name": {
 				"$not": {
 					"$size": 2.5
 				}
@@ -1580,15 +1623,13 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
-		"id": "gSyInXU9hV4p",
+		"id": "p1ECCDlLNcZk",
 		"operation": {
-			"title": {
+			"name": {
 				"$not": {
 					"$size": null
 				}
@@ -1601,9 +1642,9 @@
 		}
 	},
 	{
-		"id": "tF5nYPFO2Dsk",
+		"id": "kB4PAOvA2uYa",
 		"operation": {
-			"title": {
+			"name": {
 				"$not": {
 					"$size": "value"
 				}
@@ -1616,15 +1657,13 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
-		"id": "w1rQsMOKIS3C",
+		"id": "nuXGCfKH8Ugt",
 		"operation": {
-			"title": {
+			"name": {
 				"$not": {
 					"$size": true
 				}
@@ -1637,9 +1676,9 @@
 		}
 	},
 	{
-		"id": "k5EEuyEDmUOt",
+		"id": "qnGhFYCfSqSM",
 		"operation": {
-			"title": {
+			"name": {
 				"$not": {
 					"$all": "value"
 				}
@@ -1652,9 +1691,9 @@
 		}
 	},
 	{
-		"id": "fJJY32ACGvRm",
+		"id": "dLaEBPtK6ZHz",
 		"operation": {
-			"title": {
+			"name": {
 				"$not": {
 					"$all": 42
 				}
@@ -1667,9 +1706,9 @@
 		}
 	},
 	{
-		"id": "abUgA3BhwcX3",
+		"id": "hPVRhVeBcgPy",
 		"operation": {
-			"title": {
+			"name": {
 				"$not": {
 					"$all": [
 						null,
@@ -1681,13 +1720,14 @@
 		"documents": [
 			2,
 			3,
-			4
+			4,
+			5
 		]
 	},
 	{
-		"id": "pvqljlKuZUYK",
+		"id": "w0uuzS7ZCczM",
 		"operation": {
-			"title": {
+			"name": {
 				"$not": {
 					"$all": [
 						42,
@@ -1703,15 +1743,13 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
-		"id": "wGMzQAkqV2be",
+		"id": "oTYA1sZzaVP8",
 		"operation": {
-			"title": {
+			"name": {
 				"$not": {
 					"$all": [
 						true,
@@ -1727,15 +1765,13 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
-		"id": "igAyGpVM0slC",
+		"id": "rwA6cIE2qtKf",
 		"operation": {
-			"title": {
+			"name": {
 				"$not": {
 					"$all": [
 						null
@@ -1746,13 +1782,14 @@
 		"documents": [
 			2,
 			3,
-			4
+			4,
+			5
 		]
 	},
 	{
-		"id": "bNc5c9WF56Eo",
+		"id": "oGDA4k1cfwUW",
 		"operation": {
-			"title": {
+			"name": {
 				"$not": {
 					"$all": [
 						42
@@ -1767,15 +1804,13 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
-		"id": "iQoP9RbKuajC",
+		"id": "hIHXZ5Lc4H6S",
 		"operation": {
-			"title": {
+			"name": {
 				"$not": {
 					"$all": [
 						true
@@ -1790,15 +1825,13 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
-		"id": "pAAdkzuD4sXE",
+		"id": "mxXMDNZRjU0t",
 		"operation": {
-			"username": {
+			"name": {
 				"$not": {
 					"$elemMatch": 42
 				}
@@ -1811,12 +1844,12 @@
 		}
 	},
 	{
-		"id": "nNcXcCRifWLz",
+		"id": "r6wXIhqbBaSB",
 		"operation": {
-			"username": {
+			"name": {
 				"$not": {
 					"$elemMatch": {
-						"age": null
+						"score": null
 					}
 				}
 			}
@@ -1828,18 +1861,16 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
-		"id": "wVx9OQrudg5C",
+		"id": "pfqCpaVzqA8f",
 		"operation": {
-			"username": {
+			"name": {
 				"$not": {
 					"$elemMatch": {
-						"age": 42
+						"score": 42
 					}
 				}
 			}
@@ -1851,18 +1882,16 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
 		]
 	},
 	{
-		"id": "fC8J1w2LIsZy",
+		"id": "bhklZfQuLC4t",
 		"operation": {
-			"username": {
+			"name": {
 				"$not": {
 					"$elemMatch": {
-						"age": true
+						"score": true
 					}
 				}
 			}
@@ -1874,9 +1903,238 @@
 			3,
 			4,
 			5,
-			6,
-			7,
-			8
+			6
+		]
+	},
+	{
+		"id": "pJy4SCCFBmul",
+		"operation": {
+			"name": {
+				"$not": {
+					"$not": null
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $not needs a regex or a document",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "qf5ZdZGMUEoH",
+		"operation": {
+			"name": {
+				"$not": {
+					"$not": 42
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $not needs a regex or a document",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "r2FV1QcmKX6E",
+		"operation": {
+			"name": {
+				"$not": {
+					"$not": true
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $not needs a regex or a document",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "qLUQgQyYh1Q2",
+		"operation": {
+			"name": {
+				"$not": null
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $not needs a regex or a document",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "fuCEX4ki1l0m",
+		"operation": {
+			"name": {
+				"$not": 42
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $not needs a regex or a document",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "vrhnWLtXl4Nf",
+		"operation": {
+			"name": {
+				"$not": true
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $not needs a regex or a document",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "rVGMfDduCiLp",
+		"operation": {
+			"name": {
+				"$not": {
+					"$ref": null
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown operator: $ref",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "pOwizImgQSll",
+		"operation": {
+			"name": {
+				"$not": {
+					"$ref": 42
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown operator: $ref",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "taIoD3vpIc9L",
+		"operation": {
+			"name": {
+				"$not": {
+					"$ref": true
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue unknown operator: $ref",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "h4zMuzURRUgT",
+		"operation": {
+			"name": {
+				"$not": {
+					"$options": null
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $options needs a $regex",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "dr6eT0AGLUfo",
+		"operation": {
+			"name": {
+				"$not": {
+					"$options": 42
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $options needs a $regex",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "oKsIMdWHvTVC",
+		"operation": {
+			"name": {
+				"$not": {
+					"$options": true
+				}
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $options needs a $regex",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "mxAvbLGCch02",
+		"operation": {
+			"scores": {
+				"$not": {
+					"$gt": null
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6
+		]
+	},
+	{
+		"id": "goguJpkXubi9",
+		"operation": {
+			"scores": {
+				"$not": {
+					"$gt": "value"
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6
+		]
+	},
+	{
+		"id": "vRBFQBRqJI5e",
+		"operation": {
+			"scores": {
+				"$not": {
+					"$gt": true
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6
 		]
 	}
 ]
