@@ -1,152 +1,8 @@
 [
 	{
-		"id": "uIIu4pIKRFN1",
+		"id": "oOEBBOlQaW1v",
 		"operation": {
-			"status": {}
-		},
-		"documents": []
-	},
-	{
-		"id": "sMDOXNgBYVUr",
-		"operation": {
-			"status": {
-				"$regex": "Double"
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "pg15H7mJzYy7",
-		"operation": {
-			"status": {
-				"$regex": "Couple",
-				"$options": "Much"
-			}
-		},
-		"error": {
-			"message": " invalid flag in regex options: M",
-			"code": 51108,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "umIMkuL5dVmQ",
-		"operation": {
-			"status": {
-				"$options": "Much",
-				"$regex": "Couple"
-			}
-		},
-		"error": {
-			"message": " invalid flag in regex options: M",
-			"code": 51108,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "kzyJM1DM0KiO",
-		"operation": {
-			"age": {}
-		},
-		"documents": []
-	},
-	{
-		"id": "kzyJM1DM0KiO",
-		"operation": {
-			"age": {}
-		},
-		"documents": []
-	},
-	{
-		"id": "kzyJM1DM0KiO",
-		"operation": {
-			"age": {}
-		},
-		"documents": []
-	},
-	{
-		"id": "tJdQpNC1X2mN",
-		"operation": {
-			"age": {
-				"$regex": "Neither",
-				"$gte": "Either"
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "tvWCk1zesUyX",
-		"operation": {
-			"age": {
-				"$gt": "Huge",
-				"$regex": "No"
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "oOz0ewr8TCOK",
-		"operation": {},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5
-		]
-	},
-	{
-		"id": "tMST7LOx2kUR",
-		"operation": {
-			"status": {},
-			"rank": {},
-			"level": {},
-			"count": {},
-			"grade": {}
-		},
-		"documents": []
-	},
-	{
-		"id": "fy6rJTsLX6z8",
-		"operation": {
-			"$and": [
-				{
-					"status": {}
-				},
-				{
-					"status": {}
-				}
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "kH94yYv72tpF",
-		"operation": {
-			"status": {},
-			"rank": {}
-		},
-		"documents": []
-	},
-	{
-		"id": "sl28OdHj1QHT",
-		"operation": {
-			"$or": [
-				{
-					"status": {}
-				},
-				{
-					"status": {}
-				}
-			]
-		},
-		"documents": []
-	},
-	{
-		"id": "d7vQhLLn3LFD",
-		"operation": {
-			"step.priority": {}
+			"age.score": {}
 		},
 		"documents": []
 	},
@@ -167,9 +23,9 @@
 		}
 	},
 	{
-		"id": "tspJ88fHWQB0",
+		"id": "lqBycloGyGQV",
 		"operation": {
-			"attempts": {
+			"level": {
 				"$regex": {}
 			}
 		},
@@ -178,6 +34,143 @@
 			"code": 2,
 			"type": "MongoServerError"
 		}
+	},
+	{
+		"id": "tYaAoM9MU3Rs",
+		"operation": {
+			"status": {
+				"$regex": "Couple"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "byuKDlZLS9ko",
+		"operation": {
+			"status": {
+				"$regex": "Abundant",
+				"$options": "Most"
+			}
+		},
+		"error": {
+			"message": " invalid flag in regex options: M",
+			"code": 51108,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "lR7LDSOz6IZ5",
+		"operation": {
+			"status": {
+				"$options": "Most",
+				"$regex": "Abundant"
+			}
+		},
+		"error": {
+			"message": " invalid flag in regex options: M",
+			"code": 51108,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rj2FUF0xEoAx",
+		"operation": {
+			"count": {}
+		},
+		"documents": []
+	},
+	{
+		"id": "rj2FUF0xEoAx",
+		"operation": {
+			"count": {}
+		},
+		"documents": []
+	},
+	{
+		"id": "rj2FUF0xEoAx",
+		"operation": {
+			"count": {}
+		},
+		"documents": []
+	},
+	{
+		"id": "kWAwLFCzWCPI",
+		"operation": {
+			"count": {
+				"$regex": "Much",
+				"$gte": "Each"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "tFdHqtZ0vWeX",
+		"operation": {
+			"count": {
+				"$gt": "Heavy",
+				"$regex": "Neither"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "oOz0ewr8TCOK",
+		"operation": {},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5
+		]
+	},
+	{
+		"id": "vULJwEkWyR5b",
+		"operation": {
+			"status": {},
+			"step": {},
+			"priority": {},
+			"capacity": {},
+			"attempts": {}
+		},
+		"documents": []
+	},
+	{
+		"id": "fy6rJTsLX6z8",
+		"operation": {
+			"$and": [
+				{
+					"status": {}
+				},
+				{
+					"status": {}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "bMVt2lH2nTzD",
+		"operation": {
+			"status": {},
+			"step": {}
+		},
+		"documents": []
+	},
+	{
+		"id": "sl28OdHj1QHT",
+		"operation": {
+			"$or": [
+				{
+					"status": {}
+				},
+				{
+					"status": {}
+				}
+			]
+		},
+		"documents": []
 	},
 	{
 		"id": "oTuzaywEScQu",
@@ -414,6 +407,67 @@
 		"documents": []
 	},
 	{
+		"id": "oOVYLLAYr95a",
+		"operation": {
+			"tags": {
+				"$elemMatch": 42
+			}
+		},
+		"error": {
+			"message": "$elemMatch needs an Object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "diWODgpmNaES",
+		"operation": {
+			"tags": {
+				"$elemMatch": {
+					"$regex": null,
+					"$options": null
+				}
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qBu9BWRX5Rat",
+		"operation": {
+			"tags": {
+				"$elemMatch": {
+					"$regex": 42,
+					"$options": 42
+				}
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qZFtq3tiO4RS",
+		"operation": {
+			"tags": {
+				"$elemMatch": {
+					"$regex": true,
+					"$options": true
+				}
+			}
+		},
+		"error": {
+			"message": "$regex has to be a string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
 		"id": "stJYv9X4N77G",
 		"operation": {
 			"status": {
@@ -537,9 +591,9 @@
 		}
 	},
 	{
-		"id": "vzTeVSqmtWt0",
+		"id": "wztOCnOXdTYy",
 		"operation": {
-			"age": {
+			"count": {
 				"$regex": null,
 				"$gte": null
 			}
@@ -551,9 +605,9 @@
 		}
 	},
 	{
-		"id": "prqMUOw75RgX",
+		"id": "wLROtdkXcK1f",
 		"operation": {
-			"age": {
+			"count": {
 				"$regex": 42,
 				"$gte": 42
 			}
@@ -565,9 +619,9 @@
 		}
 	},
 	{
-		"id": "rKOaFKUPJmEq",
+		"id": "t0NWSwzMUrTx",
 		"operation": {
-			"age": {
+			"count": {
 				"$regex": true,
 				"$gte": true
 			}
@@ -579,9 +633,9 @@
 		}
 	},
 	{
-		"id": "eTU9IpYN9hXN",
+		"id": "w1JdsZ3R8edK",
 		"operation": {
-			"age": {
+			"count": {
 				"$gt": null,
 				"$regex": null
 			}
@@ -593,9 +647,9 @@
 		}
 	},
 	{
-		"id": "fnLvftiMo9bJ",
+		"id": "pYBcpCQgxYlu",
 		"operation": {
-			"age": {
+			"count": {
 				"$gt": 42,
 				"$regex": 42
 			}
@@ -607,72 +661,11 @@
 		}
 	},
 	{
-		"id": "luOOHjByx6Ee",
+		"id": "dNxfZ2QpQPHM",
 		"operation": {
-			"age": {
+			"count": {
 				"$gt": true,
 				"$regex": true
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "oOVYLLAYr95a",
-		"operation": {
-			"tags": {
-				"$elemMatch": 42
-			}
-		},
-		"error": {
-			"message": "$elemMatch needs an Object",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "diWODgpmNaES",
-		"operation": {
-			"tags": {
-				"$elemMatch": {
-					"$regex": null,
-					"$options": null
-				}
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "qBu9BWRX5Rat",
-		"operation": {
-			"tags": {
-				"$elemMatch": {
-					"$regex": 42,
-					"$options": 42
-				}
-			}
-		},
-		"error": {
-			"message": "$regex has to be a string",
-			"code": 2,
-			"type": "MongoServerError"
-		}
-	},
-	{
-		"id": "qZFtq3tiO4RS",
-		"operation": {
-			"tags": {
-				"$elemMatch": {
-					"$regex": true,
-					"$options": true
-				}
 			}
 		},
 		"error": {
