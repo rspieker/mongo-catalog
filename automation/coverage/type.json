@@ -1,7 +1,7 @@
 {
   "queries": [
     {
-      "checksum": "e3912cfb56ce7c952057ed8ef498cd9a6d1cfb36c9c7ae866b608d43e2398206",
+      "checksum": "2f55bac157644bd9b19fbd8c25575327eec79800e82650824d545fb26c5d3628",
       "fingerprint": {
         "field:#1": {
           "$type": "number:#1"
@@ -9,36 +9,29 @@
       },
       "query": {
         "name": {
-          "$type": 21
+          "$type": 20
         }
       }
     },
     {
-      "checksum": "097e637ba78e35ad22094a087a73103fb970081b5acda82ac196f2f24bc49402",
+      "checksum": "592bae1c54d8aa0634df699e646e7d07c58104582c6f7da3342c2e3b49f9571e",
       "fingerprint": {
         "field:#1": {
-          "$regex": "string:#1",
-          "$type": "number:#1"
+          "$not": {
+            "$type": "string:#1"
+          }
         }
       },
       "query": {
-        "name": {
-          "$regex": "Each",
-          "$type": 22
+        "rank": {
+          "$not": {
+            "$type": "Each"
+          }
         }
       }
     },
     {
-      "checksum": "c8ab1c060e74806175b5b94617be7ae8c444a1a375754f18aa57dce0209b95e4",
-      "fingerprint": {
-        "field:#1": "null:#1"
-      },
-      "query": {
-        "status": null
-      }
-    },
-    {
-      "checksum": "66ce552e93ee8ff1d853d638ce5cfd9a26b13ba91fc1902e82cb1fd31cc7549f",
+      "checksum": "7c713d3353b550b6251dbc19168e3087cf574e7d57cdb220ce5cf6fd88b1e8ab",
       "fingerprint": {
         "field:#1": {
           "$exists": "boolean:#1"
@@ -47,6 +40,28 @@
       "query": {
         "status": {
           "$exists": true
+        }
+      }
+    },
+    {
+      "checksum": "a8433dba6b0355663f24952ad44e6d3416d906e023a918b428cf34ff3600e050",
+      "fingerprint": {
+        "field:#1": {}
+      },
+      "query": {
+        "level": {}
+      }
+    },
+    {
+      "checksum": "37fc592053a80b38fbeb75c3353dfa92200bd8f732bb43424cbb47169c32c826",
+      "fingerprint": {
+        "field:#1": {
+          "$type": "string:#1"
+        }
+      },
+      "query": {
+        "title": {
+          "$type": "Couple"
         }
       }
     }
@@ -68,39 +83,24 @@
       }
     },
     {
-      "name": {
-        "$regex": "Each",
-        "$type": null
+      "rank": {
+        "$not": {
+          "$type": null
+        }
       }
     },
     {
-      "name": {
-        "$regex": "Each",
-        "$type": "value"
+      "rank": {
+        "$not": {
+          "$type": 42
+        }
       }
     },
     {
-      "name": {
-        "$regex": "Each",
-        "$type": true
-      }
-    },
-    {
-      "name": {
-        "$regex": null,
-        "$type": 22
-      }
-    },
-    {
-      "name": {
-        "$regex": 42,
-        "$type": 22
-      }
-    },
-    {
-      "name": {
-        "$regex": true,
-        "$type": 22
+      "rank": {
+        "$not": {
+          "$type": true
+        }
       }
     },
     {
@@ -117,12 +117,27 @@
       "status": {
         "$exists": "yes"
       }
+    },
+    {
+      "title": {
+        "$type": null
+      }
+    },
+    {
+      "title": {
+        "$type": 42
+      }
+    },
+    {
+      "title": {
+        "$type": true
+      }
     }
   ],
   "documents": [
     {
       "_id": 0,
-      "name": 21.1
+      "name": 20.1
     },
     {
       "_id": 1,
@@ -138,11 +153,60 @@
     {
       "_id": 4,
       "status": "Abundant"
+    },
+    {
+      "_id": 5,
+      "level": {}
+    },
+    {
+      "_id": 6,
+      "count": 15,
+      "title": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "_id": 7,
+      "count": 16,
+      "title": [
+        15,
+        "Abundant",
+        17
+      ]
+    },
+    {
+      "_id": 8,
+      "count": 17,
+      "title": []
+    },
+    {
+      "_id": 9,
+      "count": 18,
+      "title": [
+        []
+      ]
+    },
+    {
+      "_id": 10,
+      "count": 19,
+      "title": [
+        [
+          []
+        ]
+      ]
+    },
+    {
+      "_id": 11,
+      "count": 20,
+      "title": 15
+    },
+    {
+      "_id": 12,
+      "count": 21,
+      "title": "Abundant"
     }
   ],
-  "indices": [
-    {
-      "name": 1
-    }
-  ]
+  "indices": []
 }
