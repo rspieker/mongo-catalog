@@ -391,27 +391,6 @@
       }
     },
     {
-      "checksum": "cd4442e3d1066acf7e48cf0da5cf6486ab99356c6a2140f31cf3edeca92eaa5a",
-      "fingerprint": {
-        "field:#1": {
-          "$not": {
-            "$all": [
-              "null:#1"
-            ]
-          }
-        }
-      },
-      "query": {
-        "level": {
-          "$not": {
-            "$all": [
-              null
-            ]
-          }
-        }
-      }
-    },
-    {
       "checksum": "3a730cd5f2f03fe8fe5c84362d7b9b9dac286dbf6b146b245656dc0473a64db5",
       "fingerprint": {
         "field:#1": {
@@ -860,20 +839,6 @@
     {
       "level": {
         "$all": 42
-      }
-    },
-    {
-      "level": {
-        "$not": {
-          "$all": "value"
-        }
-      }
-    },
-    {
-      "level": {
-        "$not": {
-          "$all": 42
-        }
       }
     },
     {
