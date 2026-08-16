@@ -2,6 +2,16 @@
 
 A comprehensive MongoDB compatibility testing framework that collects query results across multiple MongoDB versions to identify behavioral differences and version-specific quirks.
 
+## Purpose
+
+Mongo Catalog exists to generate the test suite for [monger](https://github.com/konfirm/monger) — a TypeScript implementation of MongoDB's find-query semantics.
+
+The core problem: you cannot write unit tests for a query emulator by hand. The expected output for any non-trivial MongoDB query depends on operator semantics, type coercion rules, and edge-case behaviors that are difficult to reason about in the abstract — and that MongoDB itself has changed subtly across releases. You need to observe what real MongoDB actually does.
+
+Mongo Catalog solves this by mining MongoDB's own jstests for query shapes that would otherwise go untested, remapping those shapes into controlled deterministic test scenarios (so results are comparable across versions), executing them against real MongoDB instances, and recording the exact results as ground truth. Those results become monger's test expectations.
+
+The version tracking is there for the future: once monger reaches find-query completeness, the version ranges in `unified.json` map directly to which MongoDB versions agree on a given behavior — making explicit cross-version handling tractable rather than a guessing game.
+
 ## Overview
 
 Mongo Catalog tests MongoDB query operators across different server versions by:
