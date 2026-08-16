@@ -160,9 +160,10 @@ Creates/updates `automation/catalog-queries.json`:
 
 - Outputs to stdout (captured by GitHub Actions):
   ```json
-  ["8.0.3", "7.0.15", "6.0.19", "5.0.29", "4.4.29"]
+  ["8.0.3", "7.0.15", "6.0.19", "5.0.29", "4.4.29", ...]
   ```
-  (Top 5 versions with pending work, sorted by priority)
+  (Top `BATCH_SIZE` versions with pending work, sorted by priority — see
+  [FREQUENCY.md](./FREQUENCY.md) for how `BATCH_SIZE` is derived)
 
 ---
 
