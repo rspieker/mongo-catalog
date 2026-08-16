@@ -16,7 +16,12 @@ export async function writeJSONFile(path: string, data: JSONValue): Promise<type
         .then(() => data);
 }
 
-export async function fetchJSON<T = JSONValue>(url: string): Promise<T> {
-    return fetch(url)
-        .then((response) => response.json() as Promise<T>);
+export async function fetchJSON<T = JSONValue>(url: string, headers?: Record<string, string>): Promise<T> {
+    return fetch(url, headers ? { headers } : undefined)
+        .then(async (response) => {
+            if (!response.ok) {
+                throw new Error(`fetchJSON: ${response.status} ${response.statusText} for ${url}`);
+            }
+            return response.json() as Promise<T>;
+        });
 }

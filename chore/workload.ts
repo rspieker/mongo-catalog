@@ -66,6 +66,11 @@ type VersionWithMeta = {
 const automation = resolve(__dirname, '..', 'automation');
 const catalogFile = resolve(automation, 'catalog-queries.json');
 
+// Sized against Docker Hub's authenticated pull limit (200/hour) and GitHub's
+// account-wide concurrent job limit (20, shared across all repos) — see
+// catalog.yml's collect-versions matrix, which mirrors this as max-parallel.
+const BATCH_SIZE = 15;
+
 async function loadExistingPlan(
     versionDir: string
 ): Promise<VersionWorkPlan | null> {
@@ -570,16 +575,16 @@ readJSONFile<
             return (bv.patch || 0) - (av.patch || 0);
         });
 
-        // Take top 5
-        const top5 = withPending.slice(0, 5);
-        const finalPriorities = top5.map((item) => item.version.plan.version);
-        
-        // Check if all selected versions are in failure sequences (retry mode)
-        const allSkipped = top5.every((item) => getSkipInfo(item.version.meta).isInFailureSequence);
+        // Take top BATCH_SIZE
+        const batch = withPending.slice(0, BATCH_SIZE);
+        const finalPriorities = batch.map((item) => item.version.plan.version);
 
-        debug && console.log('\n=== Final Priority List (Top 5) ===');
+        // Check if all selected versions are in failure sequences (retry mode)
+        const allSkipped = batch.every((item) => getSkipInfo(item.version.meta).isInFailureSequence);
+
+        debug && console.log(`\n=== Final Priority List (Top ${BATCH_SIZE}) ===`);
         debug &&
-            top5.forEach((item, idx) => {
+            batch.forEach((item, idx) => {
                 console.log(
                     `${idx + 1}. ${item.version.plan.version} (priority ${item.priority})`
                 );
