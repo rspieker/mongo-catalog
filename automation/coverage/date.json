@@ -1,21 +1,6 @@
 {
   "queries": [
     {
-      "checksum": "e6fe267d3eef20fe7248c69353d9f0be00a323457bb2e9ea720634cb1fee92c1",
-      "fingerprint": {
-        "field:#1": {
-          "field:#2": "number:#1",
-          "field:#3": "number:#2"
-        }
-      },
-      "query": {
-        "age": {
-          "score": 9,
-          "rank": 10
-        }
-      }
-    },
-    {
       "checksum": "214e29da82cd364194475a0a42a7f66903c50008728d4d63a424fa3dfa90e3c0",
       "fingerprint": {
         "field:#1": {
@@ -23,7 +8,7 @@
         }
       },
       "query": {
-        "count": {
+        "score": {
           "$lt": {}
         }
       }
@@ -36,49 +21,19 @@
         }
       },
       "query": {
-        "count": {
+        "score": {
           "$gt": {}
         }
       }
     }
   ],
-  "variants": [
-    {
-      "age": {
-        "score": null,
-        "rank": null
-      }
-    },
-    {
-      "age": {
-        "score": "value",
-        "rank": "value"
-      }
-    },
-    {
-      "age": {
-        "score": true,
-        "rank": true
-      }
-    }
-  ],
+  "variants": [],
   "documents": [
     {
       "_id": 0,
-      "age": {
-        "score": 9,
-        "rank": 10
-      }
-    },
-    {
-      "_id": 1,
-      "level": 20,
-      "count": {}
+      "age": 20,
+      "score": {}
     }
   ],
-  "indices": [
-    {
-      "age": 1
-    }
-  ]
+  "indices": []
 }
