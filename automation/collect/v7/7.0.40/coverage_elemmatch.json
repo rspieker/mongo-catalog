@@ -1,0 +1,703 @@
+[
+	{
+		"id": "byjZSRsC5Q4b",
+		"operation": {
+			"score": 9,
+			"scores": {
+				"$elemMatch": {
+					"$or": [
+						{
+							"rank": 12
+						},
+						{
+							"rank": 13
+						}
+					]
+				}
+			}
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "uIAts3YHK8Qw",
+		"operation": {
+			"score": 9,
+			"$or": [
+				{
+					"score": 10
+				},
+				{
+					"scores": {
+						"$elemMatch": {
+							"$or": [
+								{
+									"rank": 12
+								},
+								{
+									"rank": 13
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "uKtejj8ja5aM",
+		"operation": {
+			"score": 13,
+			"scores": {
+				"$elemMatch": {
+					"rank": {
+						"$elemMatch": {
+							"level": 16
+						}
+					},
+					"$or": [
+						{
+							"count": 14
+						},
+						{
+							"grade": 15
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "mtOGFKFMtI0J",
+		"operation": {
+			"step": {
+				"$elemMatch": {
+					"score": {
+						"$ne": 9
+					},
+					"$or": [
+						{
+							"scores": {
+								"$lt": 10
+							}
+						},
+						{
+							"scores": {
+								"$gt": 11
+							}
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "gNKecbWM6P2s",
+		"operation": {
+			"step": {
+				"$elemMatch": {
+					"score.rank": {
+						"$ne": 9
+					},
+					"$or": [
+						{
+							"scores": {
+								"$lt": 10
+							}
+						},
+						{
+							"scores": {
+								"$gt": 11
+							}
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "oOz0ewr8TCOK",
+		"operation": {},
+		"documents": [
+			0,
+			1
+		]
+	},
+	{
+		"id": "pWBMyTrFq4MT",
+		"operation": {
+			"ratings": {
+				"$elemMatch": {
+					"attempts": {
+						"$ne": 34
+					},
+					"$or": [
+						{
+							"quantity": 35
+						},
+						{
+							"quantity": 36
+						}
+					]
+				}
+			},
+			"$or": [
+				{
+					"size": 37,
+					"index": 38
+				},
+				{
+					"size": 39,
+					"index": 40
+				}
+			]
+		},
+		"documents": [
+			1
+		]
+	},
+	{
+		"id": "rlfIgqVyHOSC",
+		"operation": {
+			"score": 9,
+			"scores": {
+				"$elemMatch": 42
+			}
+		},
+		"error": {
+			"message": "$elemMatch needs an Object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bzcJvFzdagrQ",
+		"operation": {
+			"score": null,
+			"scores": {
+				"$elemMatch": {
+					"$or": [
+						{
+							"rank": null
+						},
+						{
+							"rank": null
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "cZjHECEWkMWs",
+		"operation": {
+			"score": "value",
+			"scores": {
+				"$elemMatch": {
+					"$or": [
+						{
+							"rank": "value"
+						},
+						{
+							"rank": "value"
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "sSNoPz0MJ1Lx",
+		"operation": {
+			"score": true,
+			"scores": {
+				"$elemMatch": {
+					"$or": [
+						{
+							"rank": true
+						},
+						{
+							"rank": true
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "wq1t7hrHujvC",
+		"operation": {
+			"score": 9,
+			"$or": [
+				{
+					"score": 10
+				},
+				{
+					"scores": {
+						"$elemMatch": 42
+					}
+				}
+			]
+		},
+		"error": {
+			"message": "$elemMatch needs an Object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ktI7tkyMGG0v",
+		"operation": {
+			"score": null,
+			"$or": [
+				{
+					"score": null
+				},
+				{
+					"scores": {
+						"$elemMatch": {
+							"$or": [
+								{
+									"rank": null
+								},
+								{
+									"rank": null
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		"documents": [
+			1
+		]
+	},
+	{
+		"id": "a17CcmGQOVNS",
+		"operation": {
+			"score": "value",
+			"$or": [
+				{
+					"score": "value"
+				},
+				{
+					"scores": {
+						"$elemMatch": {
+							"$or": [
+								{
+									"rank": "value"
+								},
+								{
+									"rank": "value"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "bW5yj7JRvJwS",
+		"operation": {
+			"score": true,
+			"$or": [
+				{
+					"score": true
+				},
+				{
+					"scores": {
+						"$elemMatch": {
+							"$or": [
+								{
+									"rank": true
+								},
+								{
+									"rank": true
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "wjThOOjKJ7oh",
+		"operation": {
+			"score": 13,
+			"scores": {
+				"$elemMatch": 42
+			}
+		},
+		"error": {
+			"message": "$elemMatch needs an Object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pSdVlBX1BhOm",
+		"operation": {
+			"score": null,
+			"scores": {
+				"$elemMatch": {
+					"rank": {
+						"$elemMatch": {
+							"level": null
+						}
+					},
+					"$or": [
+						{
+							"count": null
+						},
+						{
+							"grade": null
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "sEdcljXZPbLc",
+		"operation": {
+			"score": "value",
+			"scores": {
+				"$elemMatch": {
+					"rank": {
+						"$elemMatch": {
+							"level": "value"
+						}
+					},
+					"$or": [
+						{
+							"count": "value"
+						},
+						{
+							"grade": "value"
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "d2F58h3JEFPG",
+		"operation": {
+			"score": true,
+			"scores": {
+				"$elemMatch": {
+					"rank": {
+						"$elemMatch": {
+							"level": true
+						}
+					},
+					"$or": [
+						{
+							"count": true
+						},
+						{
+							"grade": true
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "tRyu3NUoSQ7H",
+		"operation": {
+			"step": {
+				"$elemMatch": 42
+			}
+		},
+		"error": {
+			"message": "$elemMatch needs an Object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "w94GPfkttnNi",
+		"operation": {
+			"step": {
+				"$elemMatch": {
+					"score": {
+						"$ne": null
+					},
+					"$or": [
+						{
+							"scores": {
+								"$lt": null
+							}
+						},
+						{
+							"scores": {
+								"$gt": null
+							}
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "pCGjD6opXIYx",
+		"operation": {
+			"step": {
+				"$elemMatch": {
+					"score": {
+						"$ne": "value"
+					},
+					"$or": [
+						{
+							"scores": {
+								"$lt": "value"
+							}
+						},
+						{
+							"scores": {
+								"$gt": "value"
+							}
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "vdWvKRV6Edwx",
+		"operation": {
+			"step": {
+				"$elemMatch": {
+					"score": {
+						"$ne": true
+					},
+					"$or": [
+						{
+							"scores": {
+								"$lt": true
+							}
+						},
+						{
+							"scores": {
+								"$gt": true
+							}
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "o6ZvGersloTL",
+		"operation": {
+			"step": {
+				"$elemMatch": {
+					"score.rank": {
+						"$ne": null
+					},
+					"$or": [
+						{
+							"scores": {
+								"$lt": null
+							}
+						},
+						{
+							"scores": {
+								"$gt": null
+							}
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "maRTVODZ2DfT",
+		"operation": {
+			"step": {
+				"$elemMatch": {
+					"score.rank": {
+						"$ne": "value"
+					},
+					"$or": [
+						{
+							"scores": {
+								"$lt": "value"
+							}
+						},
+						{
+							"scores": {
+								"$gt": "value"
+							}
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "jNwLw3ebzhHf",
+		"operation": {
+			"step": {
+				"$elemMatch": {
+					"score.rank": {
+						"$ne": true
+					},
+					"$or": [
+						{
+							"scores": {
+								"$lt": true
+							}
+						},
+						{
+							"scores": {
+								"$gt": true
+							}
+						}
+					]
+				}
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "eT7P6PKm8DvJ",
+		"operation": {
+			"ratings": {
+				"$elemMatch": 42
+			},
+			"$or": [
+				{
+					"size": 37,
+					"index": 38
+				},
+				{
+					"size": 39,
+					"index": 40
+				}
+			]
+		},
+		"error": {
+			"message": "$elemMatch needs an Object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "gg0SRzyWhTa0",
+		"operation": {
+			"ratings": {
+				"$elemMatch": {
+					"attempts": {
+						"$ne": null
+					},
+					"$or": [
+						{
+							"quantity": null
+						},
+						{
+							"quantity": null
+						}
+					]
+				}
+			},
+			"$or": [
+				{
+					"size": null,
+					"index": null
+				},
+				{
+					"size": null,
+					"index": null
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "gjQL2V5LpCsM",
+		"operation": {
+			"ratings": {
+				"$elemMatch": {
+					"attempts": {
+						"$ne": "value"
+					},
+					"$or": [
+						{
+							"quantity": "value"
+						},
+						{
+							"quantity": "value"
+						}
+					]
+				}
+			},
+			"$or": [
+				{
+					"size": "value",
+					"index": "value"
+				},
+				{
+					"size": "value",
+					"index": "value"
+				}
+			]
+		},
+		"documents": []
+	},
+	{
+		"id": "tiWxIKHYS3o3",
+		"operation": {
+			"ratings": {
+				"$elemMatch": {
+					"attempts": {
+						"$ne": true
+					},
+					"$or": [
+						{
+							"quantity": true
+						},
+						{
+							"quantity": true
+						}
+					]
+				}
+			},
+			"$or": [
+				{
+					"size": true,
+					"index": true
+				},
+				{
+					"size": true,
+					"index": true
+				}
+			]
+		},
+		"documents": []
+	}
+]
