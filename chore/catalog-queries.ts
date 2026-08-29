@@ -2,6 +2,7 @@ import { join, resolve, relative, basename } from 'node:path'
 import { readFile, writeFile } from 'node:fs/promises'
 import { glob } from 'glob'
 import { hash } from '@konfirm/checksum'
+import { serialize } from '../source/domain/serialization'
 
 type ExportRecord = {
     name: string // export name (e.g., "comparison")
@@ -41,7 +42,13 @@ async function importAndInspect(filePath: string): Promise<ExportRecord[]> {
                     exports.push({
                         name: exportName,
                         type: hasOperations ? 'Catalog' : 'Unknown',
-                        hash: hash(exportValue, 'sha256', 'hex'),
+                        // Hash serialize()'s output rather than the raw
+                        // value, so the hash reflects how this catalog is
+                        // actually recorded — a serializer change only
+                        // re-triggers catalogs whose content is actually
+                        // affected by it (e.g. one using Date/RegExp/NaN),
+                        // not every catalog in the project.
+                        hash: hash(serialize(exportValue), 'sha256', 'hex'),
                     })
                 }
             }
