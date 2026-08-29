@@ -31,207 +31,53 @@ This helps identify:
 ```
 mongo-catalog/
 ├── catalog/              # Query catalogs (test definitions)
-│   └── query/           # Query operator tests
-│       ├── common/      # Common operator catalogs
-│       └── comparison/  # Specific operator tests
-├── chore/               # Automation scripts
-├── source/              # Shared code
-│   └── domain/         # Domain logic (versions, drivers, generators)
-└── automation/         # Generated data (gitignored)
+│   └── query/
+│       ├── common/       # Hand-written operator catalogs (array, bitwise, comparison, ...)
+│       ├── coverage/     # Auto-generated from jstest gaps — see Coverage Update Pipeline
+│       └── comparison/   # NOT registered — orphaned, see Catalogs section below
+├── chore/                # Automation scripts, run in sequence — see docs/CHORES.md
+├── scripts/              # Coverage pipeline scripts (fingerprint, detect-gaps, generate-coverage)
+├── docs/
+│   ├── CHORES.md         # Chore-by-chore mechanics and data flow
+│   └── FREQUENCY.md      # Workflow cadence, rate limits, BATCH_SIZE derivation
+├── source/               # Shared code
+│   └── domain/           # Domain logic (versions, drivers, generators, coverage)
+└── automation/           # Generated data — fully git-tracked, not gitignored
     ├── catalog-queries.json   # Registered catalogs
-    └── collect/              # Collection results per version
+    ├── unified.json           # Cross-version unified results
+    ├── coverage/              # Auto-generated coverage catalogs (JSON)
+    └── collect/               # Collection results per version
         └── v8/
-            └── 8.2.5/        # Results for version 8.2.5
+            └── 8.2.5/         # Results for version 8.2.5
+                ├── meta.json
                 ├── array.json
-                ├── bitwise.json
                 └── ...
 ```
 
 ## Chores (Automation Scripts)
 
-The project uses a chore-based workflow where each script has a specific responsibility:
+The project uses a chore-based workflow where each script has a specific responsibility. They run in sequence:
 
-### 1. `update:mongo-versions`
-**File:** `chore/mongo-docker-images.ts`
-
-Queries Docker Hub for all available MongoDB image tags, filters for AMD64 Linux images with valid semantic versions, and maintains a version registry.
-
-**Output:** `automation/mongo-docker-images.json`
-```json
-{
-  "versions": [
-    {"name": "8.2.5", "major": 8, "minor": 2, "patch": 5, "releases": [...]},
-    {"name": "7.0.16", "major": 7, "minor": 0, "patch": 16, "releases": [...]}
-  ]
-}
+```
+mongo-docker-images → catalog-queries → workload → mongo-collect → unify
 ```
 
-**When to run:** Periodically to discover new MongoDB releases.
+| Chore | Command | Responsibility |
+|---|---|---|
+| `mongo-docker-images.ts` | `npm run update:mongo-versions` | Queries Docker Hub for MongoDB image tags, groups by version/digest, updates each version's `meta.json` |
+| `catalog-queries.ts` | `npm run update:catalog-queries` | Discovers catalog files in `catalog/query/**/*.ts`, hashes each export, tracks changes in `automation/catalog-queries.json` |
+| `workload.ts` | `npm run update:workload` | Decides which versions need (re-)collection and in what order, via checksum comparison and binary-search bisection per minor series; writes `plan.json` per version and prints the prioritized batch for CI |
+| `mongo-collect.ts` | `MONGO_VERSION=x.y.z npm run update:mongo-collect` | Runs a version's pending catalogs against a Dockerized `mongod`, records matches/errors per catalog, updates `meta.json` |
+| `unify.ts` | `npm run update:unify` | Aggregates every collected version's results into `automation/unified.json`, compressing consecutive versions with identical results into ranges |
+| `backfill-checksums.ts` | `ts-node chore/backfill-checksums.ts` | One-time utility to (re)populate `resultChecksum` fields on existing `meta.json` files; not part of the regular pipeline |
 
-### 2. `update:catalog-queries`
-**File:** `chore/catalog-queries.ts`
+Failed collections back off exponentially (1, 2, 4, 8, 16... days) before being retried, unless the catalog that failed has since changed, which makes the failure immediately eligible again.
 
-Discovers and registers all catalog files in `catalog/query/**/*.ts`. Calculates content hashes to detect changes and tracks catalog evolution history.
-
-**Output:** `automation/catalog-queries.json`
-```json
-[
-  {
-    "name": "array",
-    "path": "catalog/query/common/array.ts",
-    "exports": [{"name": "array", "type": "Catalog", "hash": "sha256:..."}],
-    "update": [{"type": "INITIAL", "date": "2024-01-15T10:30:00Z"}]
-  }
-]
-```
-
-**When to run:** After adding or modifying catalog files.
-
-### 3. `update:workload`
-**File:** `chore/workload.ts`
-
-Analyzes which MongoDB versions need testing based on:
-- Catalog changes (new or modified catalogs)
-- Collection history (what's already been collected)
-- Version prioritization (smart bisection algorithm)
-
-**Prioritization Algorithm:**
-- Priority 1: Latest version in each minor series
-- Priority 2: Earliest version in each minor series
-- Priority 3-99: Middle versions via binary search bisection
-- Priority 1000: Versions with no pending work
-
-**Exponential Backoff for Failing Builds:**
-Versions that fail collection enter a retry queue with exponential backoff:
-- 1st failure: Retry after 1 day
-- 2nd failure: Retry after 2 days
-- 3rd failure: Retry after 4 days
-- And so on (1, 2, 4, 8, 16... days)
-
-This prevents wasting resources on persistently failing versions while eventually retrying in case the issue was transient.
-
-A failure is automatically considered **stale** when the failing catalog's hash has changed since the failure — meaning a fix has already been committed and the catalog is already queued for a new run. In that case the backoff is bypassed immediately, without needing to alter the history.
-
-Uses checksum comparison to skip redundant testing when adjacent versions produce identical results.
-
-**Scheduling decision:**
-
-```mermaid
-flowchart TD
-    A([Each known version]) --> B{Trailing\ncollection-halted\nentries?}
-
-    B -- No --> C{Any catalog\nhash changed\nsince last run?}
-    C -- No --> S1([Skip — nothing pending])
-    C -- Yes --> PRIO[Assign priority]
-
-    B -- Yes --> D{Failing catalog\nnow pending\nwith new hash?}
-    D -- Yes --> F1([Include\nstale failure — fix detected])
-    D -- No --> E{"Days since first failure\n≥ 2^(n−1)?"}
-    E -- Yes --> F2([Include — backoff elapsed])
-    E -- No --> S2([Skip — in backoff])
-
-    F1 & F2 --> PF([Priority 1000 − n])
-
-    PRIO --> L{Latest patch\nin minor series?}
-    L -- Yes --> P1([Priority 1])
-    L -- No --> G{Earliest patch\nin minor series?}
-    G -- Yes --> P2([Priority 2])
-    G -- No --> H{Same results as\nadjacent versions?}
-    H -- Yes --> S3([Skip — results inferred])
-    H -- No --> P3([Priority 3+\nbinary bisection])
-```
-
-**Output:** Creates `plan.json` files per version:
-```json
-{
-  "version": "8.2.5",
-  "catalogs": [{"name": "array", "path": "...", "hash": "..."}],
-  "created": "2024-01-15T10:30:00Z",
-  "updated": "2024-01-15T10:30:00Z"
-}
-```
-
-**When to run:** After updating catalogs or before collection.
-
-### 4. `update:mongo-collect`
-**File:** `chore/mongo-collect.ts`
-
-Executes catalog queries against a specific MongoDB version.
-
-**Usage:**
-```bash
-MONGO_VERSION=8.2.5 npm run update:mongo-collect
-```
-
-**Process:**
-1. Loads the version's workload plan
-2. Starts MongoDB container (via Docker)
-3. For each catalog:
-   - Creates collection with generated data and indices
-   - Executes each query operation
-   - Records results (matching document IDs or errors)
-   - Updates metadata with completion status
-
-**Output:** Per-catalog JSON files in `automation/collect/v{major}/{version}/`
-```json
-[
-  {
-    "operation": {"value": {"$bitsAllClear": 1}},
-    "documents": [1, 2, 5, 6, 9, 10, ...]
-  },
-  {
-    "operation": {"value": {"$bitsAllClear": -1}},
-    "error": {"message": "...", "code": 2}
-  }
-]
-```
-
-**Metadata:** `meta.json` tracks collection history:
-```json
-{
-  "name": "8.2.5",
-  "version": "8.2.5",
-  "releases": [...],
-  "history": [
-    {"type": "collection-completed", "date": "...", "catalog": "array", "hash": "..."}
-  ]
-}
-```
-
-### 5. `update:unify`
-**File:** `chore/unify.ts`
-
-Aggregates results across all collected versions to identify behavioral patterns.
-
-**Process:**
-1. Loads all meta.json files from `automation/collect/` directory
-2. Filters to only fully qualified versions (major.minor.patch) - excludes aliases like "3" or "3.0"
-3. Deduplicates versions that appear in multiple directories (e.g., "3.5.13" in both v3 and v4)
-4. For each version, loads completed catalogs and groups results by catalog + operation + result hash
-5. Sorts versions using directory order (the order they appear in the filesystem)
-6. Maps each version to an index in the sorted list
-7. Groups consecutive indices into ranges (e.g., indices [0,1,2,3] → "2.6.12..3.0.15")
-8. Versions with the same result that are consecutive in the index list form a range
-
-**Output:** `automation/unified.json`
-```json
-[
-  {
-    "catalog": "bitwise",
-    "operation": {"value": {"$bitsAllClear": 1}},
-    "results": [
-      {"documents": [1, 2, 5, 6, ...], "versions": "3.6.0..7.0.16"},
-      {"error": {"message": "..."}, "versions": "2.6.0..2.6.12"}
-    ]
-  }
-]
-```
-
-**When to run:** After collecting data from multiple versions.
+For the full mechanics of each chore (exact data shapes, the bisection decision tree, checksum strategy) see **[docs/CHORES.md](./docs/CHORES.md)**. For workflow cadence, external rate limits, and how the batch size was derived, see **[docs/FREQUENCY.md](./docs/FREQUENCY.md)**.
 
 ## Coverage Update Pipeline
 
-Coverage catalogs are generated automatically from MongoDB's own jstests on a bi-weekly schedule (`scripts/update-coverage.yml`). They live in `automation/coverage/` and feed directly into the catalog registry.
+Coverage catalogs are generated automatically from MongoDB's own jstests twice a week (`.github/workflows/update-coverage.yml`, Wed/Sat 07:00 UTC). They live in `automation/coverage/` and feed directly into the catalog registry.
 
 ```mermaid
 flowchart LR
@@ -261,19 +107,15 @@ Catalogs define test data and queries for specific MongoDB operators. Each catal
 
 ### Available Catalogs
 
-| Catalog | Operations | Records | Operators Tested |
-|---------|-----------|---------|------------------|
-| **array** | 23 | 20 | `$all`, `$elemMatch`, `$size` |
-| **bitwise** | 69 | 30 | `$bitsAllClear`, `$bitsAllSet`, `$bitsAnyClear`, `$bitsAnySet` |
-| **comparison** | 27 | 20 | `$eq`, `$ne`, `$gt`, `$gte`, `$lt`, `$lte`, `$in`, `$nin` |
-| **element** | 43 | 20 | `$exists`, `$type` |
-| **evaluation** | 26 | 20 | `$expr` comparisons |
-| **expr** | 73 | 25 | `$abs`, `$add`, `$ceil`, `$divide`, `$exp`, `$floor`, `$ln`, `$log`, `$log10`, etc. |
-| **geo** | 22 | 15 | `$geoIntersects`, `$geoWithin`, `$near`, `$nearSphere` |
-| **logical** | 22 | 20 | `$and`, `$or`, `$nor`, `$not` |
-| **misc** | 53 | 20 | Error cases, invalid operators, edge cases |
-| **modulo** | 45 | 30 | `$mod` |
-| **textRegex** | 44 | 25 | `$regex`, `$text` |
+Catalog files live under `catalog/query/`, but only files exporting a **named** export shaped like `{ operations, collection }` are picked up by `catalog-queries.ts` (default exports are explicitly skipped) — check `automation/catalog-queries.json` for what's actually registered:
+
+| Directory | Origin | Status |
+|---|---|---|
+| `common/` | Hand-written | Registered — broad, multi-operator catalogs: `array`, `bitwise`, `comparison`, `element`, `evaluation`, `expr`, `geo`, `logical`, `misc`, `modulo`, `text-regex` |
+| `coverage/` | Auto-generated | Registered — one catalog per operator family found missing from `common/` by the coverage pipeline (below) — e.g. `and`, `array`, `date`, `elemmatch`, `exists`, `geo`, `in`, `mod`, `nin`, `not`, `or`, `regex`, `sort`, `type`, `where`, and others |
+| `comparison/` | Hand-written | **Not registered.** `$eq.ts`, `$eq-implicit.ts`, `$gt.ts`, `$ne.ts` only export a bare `operations` array (no `collection`), so `catalog-queries.ts` doesn't recognize them as catalogs. They currently don't run — this looks like leftover/orphaned code rather than an active third source. |
+
+Exact operation/record counts per catalog change as coverage gaps are found and filled — see `automation/catalog-queries.json` for the current registry, or run `npm run update:catalog-queries` to refresh it.
 
 ## Data Generation
 
@@ -342,15 +184,17 @@ npm run update:unify
 
 ## GitHub Actions Integration
 
-The project includes a GitHub Actions workflow (`recipe.yml`) that automates the entire pipeline:
+The pipeline is split across several workflows rather than one monolithic job:
 
-1. **Discovers** MongoDB versions from Docker Hub
-2. **Registers** all catalog queries
-3. **Calculates** workload prioritization
-4. **Collects** data for top 5 priority versions
-5. **Unifies** results across all collected versions
+| Workflow | Trigger | Responsibility |
+|---|---|---|
+| `versions.yml` | Push to `catalog/**`, `source/**`, `.github/workflows/**`; also Sun/Wed/Sat 07:00 UTC | Runs `update:mongo-versions` + `update:catalog-queries`, commits changes via `commit.yml` |
+| `scheduler.yml` | Hourly (plus an extra `:30` run on weekends) | Runs `update:workload`; only invokes `catalog.yml` if there's pending work |
+| `catalog.yml` | Called by `scheduler.yml`, or manually | Computes the prioritized batch, runs `update:mongo-collect` for each version in a matrix (`max-parallel: 15`), commits results via `commit.yml` |
+| `update-coverage.yml` | Wed/Sat 07:00 UTC | Pulls the latest `mongo-test-extractor` release, runs the coverage pipeline, commits any new `automation/coverage/*.json` |
+| `commit.yml` | Called by the above | Runs `update:unify`, then commits and pushes `automation/` |
 
-The workflow runs on a schedule and can be triggered manually for specific versions using the `MONGO_VERSION` input.
+Each collection job can be triggered manually with `workflow_dispatch`. For exact cadence, the batch-size derivation, and known external rate limits, see **[docs/FREQUENCY.md](./docs/FREQUENCY.md)**.
 
 ## Version Support
 
