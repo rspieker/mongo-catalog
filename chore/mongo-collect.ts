@@ -4,6 +4,7 @@ import { Version } from '../source/domain/version';
 import { readJSONFile, writeJSONFile } from '../source/domain/json';
 import { driver } from '../source/domain/mongo/driver';
 import { DSN } from '../source/domain/mongo/dsn';
+import { findKnownIssue } from '../source/domain/mongo/known-issues';
 import { cp, mkdir, writeFile } from 'node:fs/promises';
 import { id, serialize } from '../source/domain/serialization';
 
@@ -201,6 +202,21 @@ Promise.resolve()
                 const result: Array<any> = [];
 
                 for (const operation of operations) {
+                    const knownIssue = findKnownIssue(version, operation);
+
+                    if (knownIssue) {
+                        result.push({
+                            id: id(operation),
+                            operation,
+                            documents: undefined,
+                            error: {
+                                message: `[${knownIssue.reference}] ${knownIssue.message}`,
+                                type: 'MongoCatalogKnownIssue',
+                            },
+                        });
+                        continue;
+                    }
+
                     const queryResult = await raceAgainstBudget(
                         () => db.execute(operation),
                         deadline
