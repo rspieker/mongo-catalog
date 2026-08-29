@@ -54,6 +54,29 @@ type Catalog = {
     };
 };
 
+// Bounds total wall-clock time for one version's entire collection run. A
+// per-query cap alone doesn't prevent a run from overrunning (many catalogs
+// each individually under the cap can still sum to far more than this) —
+// raceAgainstBudget, checked before every driver call below, is what
+// actually enforces this bound.
+const RUN_BUDGET_MS = 2 * 60_000;
+
+// Takes a thunk rather than an already-started promise specifically so it
+// can refuse to even invoke it once the deadline has passed, rather than
+// kicking off a real (doomed) MongoDB call only to abandon it immediately.
+function raceAgainstBudget<T>(call: () => Promise<T>, deadline: number): Promise<T> {
+    const remaining = deadline - Date.now();
+    if (remaining <= 0) {
+        return Promise.reject(new Error('run-time-budget-exceeded'));
+    }
+    return Promise.race([
+        call(),
+        new Promise<T>((_, reject) =>
+            setTimeout(() => reject(new Error('run-time-budget-exceeded')), remaining)
+        ),
+    ]);
+}
+
 const { MONGO_VERSION = '8' } = process.env;
 const automation = resolve(__dirname, '..', 'automation');
 const version = new Version(MONGO_VERSION);
@@ -133,9 +156,14 @@ Promise.resolve()
 
         const meta = (await loadMeta(versionDir)) || { history: [] };
         const db = await driver(dsn, version);
-        let hasErrors = false;
+        const deadline = Date.now() + RUN_BUDGET_MS;
+        let completedThisRun = 0;
 
         for (const item of plan.catalogs) {
+            // Budget's already gone — don't spend time even loading the
+            // next catalog, let alone starting a doomed driver call for it.
+            if (Date.now() >= deadline) break;
+
             let catalog: Catalog;
 
             try {
@@ -151,8 +179,7 @@ Promise.resolve()
                     catalog: item.name,
                     reason: `catalog-loading-failed: ${error.message || String(error)}`,
                 });
-                hasErrors = true;
-                continue;
+                break;
             }
 
             try {
@@ -161,16 +188,23 @@ Promise.resolve()
                 const indices = catalog.collection?.indices;
 
                 // Initialize collection with documents and indices
-                const bootstrap = await db.initCollection({
-                    name: dsn.collection,
-                    indices,
-                    documents,
-                });
+                const bootstrap = await raceAgainstBudget(
+                    () =>
+                        db.initCollection({
+                            name: dsn.collection,
+                            indices,
+                            documents,
+                        }),
+                    deadline
+                );
 
                 const result: Array<any> = [];
 
                 for (const operation of operations) {
-                    const queryResult = await db.execute(operation);
+                    const queryResult = await raceAgainstBudget(
+                        () => db.execute(operation),
+                        deadline
+                    );
 
                     const record: any = {
                         id: id(operation),
@@ -187,7 +221,10 @@ Promise.resolve()
                 }
 
                 // Drop collection after processing
-                await db.dropCollection(dsn.collection);
+                await raceAgainstBudget(
+                    () => db.dropCollection(dsn.collection),
+                    deadline
+                );
 
                 // Save results
                 await writeFile(
@@ -207,6 +244,7 @@ Promise.resolve()
                     resultChecksum,
                     ...(bootstrap.problems.length > 0 && { bootstrap }),
                 });
+                completedThisRun++;
 
                 console.log(
                     `✓ ${item.name}: ${documents.length} docs, ${operations.length} queries`
@@ -219,10 +257,10 @@ Promise.resolve()
                     catalog: item.name,
                     reason: error.message || String(error),
                 });
-                hasErrors = true;
                 console.error(
                     `✗ ${item.name}: ${error.message || String(error)}`
                 );
+                break;
             }
         }
 
@@ -252,12 +290,18 @@ Promise.resolve()
             recursive: true,
         });
 
-        if (hasErrors) {
+        if (completedThisRun === 0) {
             console.error(
                 'Completed with errors - check meta.json for failed catalogs'
             );
             process.exit(1);
         }
+
+        // A raced-away call (run-time-budget-exceeded) keeps running in the
+        // background even though we've stopped waiting on it — an explicit
+        // exit here guarantees we don't hang waiting for that zombie call to
+        // settle on its own once everything that did succeed is saved.
+        process.exit(0);
     })
     .catch((error) => {
         console.error('Fatal error:', error);

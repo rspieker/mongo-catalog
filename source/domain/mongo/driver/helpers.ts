@@ -9,7 +9,7 @@ import type { GenericDocument, QueryError, Bootstrap, InsertionProblem } from '.
 // identical, healthy infrastructure). MongoDB's own default is no limit at
 // all. Real queries in this project's catalogs run in single-digit
 // milliseconds, so this is generous, not tight.
-export const MAX_QUERY_TIME_MS = 15_000;
+export const MAX_QUERY_TIME_MS = 30_000;
 
 // MaxTimeMSExpired is MongoDB's own server-side error code (50) for a query
 // that hit maxTimeMS — stable across the whole MongoDB version range this

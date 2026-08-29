@@ -148,6 +148,21 @@ function versionsMatch(meta1: MetaData, meta2: MetaData): boolean {
 }
 
 /**
+ * Whether the most recent history record for a given catalog (regardless of
+ * how long ago) was a halt rather than a completion. Used to sort a
+ * previously-troublesome catalog to the end of the plan, so a run that stops
+ * at its first failure still gets through everything else first.
+ */
+function wasRecentlyHalted(meta: MetaData, catalogName: string): boolean {
+    for (let i = meta.history.length - 1; i >= 0; i--) {
+        const record = meta.history[i];
+        if (record.type === 'collection-completed' && record.catalog === catalogName) return false;
+        if (record.type === 'collection-halted' && record.catalog === catalogName) return true;
+    }
+    return false;
+}
+
+/**
  * Gets skip information from meta history
  * If the last record is collection-halted, walks back to find the first consecutive
  * collection-halted (any other state cancels the walk back). Uses the first
@@ -461,6 +476,15 @@ readJSONFile<
                     pendingCatalogs.push(current);
                 }
             }
+
+            // Previously-halted catalogs run last, not in their normal
+            // export order — maximizes how much a run that stops at its
+            // first failure still gets done before it gets there.
+            pendingCatalogs.sort(
+                (a, b) =>
+                    Number(wasRecentlyHalted(meta, a.name)) -
+                    Number(wasRecentlyHalted(meta, b.name))
+            );
 
             // Handle versions in failure sequences - check if they should be retried.
             // A failure is considered stale if the failing catalog has since been updated
