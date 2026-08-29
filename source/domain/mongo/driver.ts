@@ -29,6 +29,45 @@ const drivers: DriverOption[] = [
     { create: createDriverV7, before: new Version('9.0') },    // MongoDB 7.0 - 8.x
 ];
 
+// If the mongod process dies mid-operation (e.g. a server-side crash), the
+// client is left waiting for a response that will never arrive — none of
+// the driver implementations set connectTimeoutMS/socketTimeoutMS, so
+// nothing bounds that wait. Wrapping every method here (once, generically,
+// rather than in each of the 6 driver files) turns a stall into a real,
+// thrown error from the outside, regardless of what's happening inside a
+// given method's own internal try/catch. A thrown error (as opposed to
+// execute() returning {success:false}) is deliberate: a timeout means we
+// don't actually know what happened, which is different from a real
+// MongoDB error worth recording as data — it should abort the in-progress
+// catalog, not be recorded as a query result.
+const OPERATION_TIMEOUT_MS = 60_000;
+
+function withTimeout(instance: CatalogDriver, timeoutMs: number): CatalogDriver {
+    function wrap<Args extends unknown[], R>(
+        fn: (...args: Args) => Promise<R>,
+        label: string
+    ): (...args: Args) => Promise<R> {
+        return (...args: Args) =>
+            Promise.race([
+                fn(...args),
+                new Promise<R>((_, reject) =>
+                    setTimeout(
+                        () => reject(new Error(`${label} timed out after ${timeoutMs}ms`)),
+                        timeoutMs
+                    )
+                ),
+            ]);
+    }
+
+    return {
+        connect: wrap(instance.connect.bind(instance), 'connect'),
+        disconnect: wrap(instance.disconnect.bind(instance), 'disconnect'),
+        initCollection: wrap(instance.initCollection.bind(instance), 'initCollection'),
+        dropCollection: wrap(instance.dropCollection.bind(instance), 'dropCollection'),
+        execute: wrap(instance.execute.bind(instance), 'execute'),
+    };
+}
+
 export async function driver(dsn: DSN, version: Version): Promise<CatalogDriver> {
     // Find appropriate driver
     // We want the FIRST driver where version < driver.before
@@ -43,7 +82,7 @@ export async function driver(dsn: DSN, version: Version): Promise<CatalogDriver>
     console.log(`[Driver Factory] Selected driver for MongoDB ${version}: v${drivers.indexOf(selected) + 2}`);
     
     // Create driver instance
-    const instance = await selected.create(dsn);
+    const instance = withTimeout(await selected.create(dsn), OPERATION_TIMEOUT_MS);
     
     // Connect with retry logic
     const maxRetries = 10;

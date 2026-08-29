@@ -3,11 +3,20 @@
 import { MongoClient, Db, Collection } from 'mongodb4';
 import { DSN } from '../dsn';
 import type { CatalogDriver, GenericDocument, QueryResult } from './interface'
-import { normalizeDocuments, normalizeError, insertDocumentsSafely } from './helpers'
+import { normalizeDocuments, normalizeError, insertDocumentsSafely, isQueryTimeoutError, MAX_QUERY_TIME_MS } from './helpers'
 import type { Bootstrap } from './interface'
 
 export async function createDriverV4(dsn: DSN): Promise<CatalogDriver> {
-    const client = new MongoClient(dsn.url);
+    // Explicit, shorter-than-default timeouts: the driver's own default
+    // serverSelectionTimeoutMS (30s) resolves *normally* inside execute()'s
+    // try/catch when the server is unreachable (e.g. crashed mid-operation)
+    // — it doesn't throw, so nothing external can race against it. Every
+    // subsequent call independently re-discovers the outage at the same
+    // cost, since the driver doesn't cache "server is down" between calls.
+    const client = new MongoClient(dsn.url, {
+        serverSelectionTimeoutMS: 10000,
+        connectTimeoutMS: 10000,
+    });
     let db: Db;
     let collection: Collection<GenericDocument> | null = null;
     
@@ -67,12 +76,17 @@ export async function createDriverV4(dsn: DSN): Promise<CatalogDriver> {
             }
             
             try {
-                const docs = await collection.find(query).toArray();
+                const docs = await collection.find(query).maxTimeMS(MAX_QUERY_TIME_MS).toArray();
                 return {
                     success: true,
                     documents: normalizeDocuments(docs),
                 };
             } catch (error: any) {
+                // A real MongoDB error (bad operand type, etc) is legitimate
+                // data worth recording; a maxTimeMS timeout means we don't
+                // know the real answer, and should abort the catalog rather
+                // than be recorded as if it were one.
+                if (isQueryTimeoutError(error)) throw error;
                 return {
                     success: false,
                     error: normalizeError(error),

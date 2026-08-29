@@ -2,7 +2,7 @@
 // v3 is promise-based like v4+ but with slightly different API
 import { DSN } from '../dsn'
 import type { CatalogDriver, GenericDocument, QueryResult } from './interface'
-import { normalizeDocuments, normalizeError, insertDocumentsSafely } from './helpers'
+import { normalizeDocuments, normalizeError, insertDocumentsSafely, isQueryTimeoutError, MAX_QUERY_TIME_MS } from './helpers'
 import type { Bootstrap } from './interface'
 
 // Import mongodb3 without types
@@ -81,12 +81,13 @@ export async function createDriverV3(dsn: DSN): Promise<CatalogDriver> {
             }
 
             try {
-                const docs = await collection.find(query).toArray()
+                const docs = await collection.find(query).maxTimeMS(MAX_QUERY_TIME_MS).toArray()
                 return {
                     success: true,
                     documents: normalizeDocuments(docs),
                 }
             } catch (error: any) {
+                if (isQueryTimeoutError(error)) throw error
                 return {
                     success: false,
                     error: normalizeError(error),

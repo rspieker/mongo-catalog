@@ -2,7 +2,7 @@
 // v2 uses callbacks, not promises
 import { DSN } from '../dsn';
 import type { CatalogDriver, GenericDocument, QueryResult } from './interface'
-import { normalizeDocuments, normalizeError, insertDocumentsSafely } from './helpers'
+import { normalizeDocuments, normalizeError, insertDocumentsSafely, isQueryTimeoutError, MAX_QUERY_TIME_MS } from './helpers'
 import type { Bootstrap } from './interface'
 
 // Import mongodb2 without types
@@ -29,8 +29,11 @@ export async function createDriverV2(dsn: DSN): Promise<CatalogDriver> {
     return {
         async connect(): Promise<void> {
             // v2 uses callback-based connect
+            // connectTimeoutMS/socketTimeoutMS, not serverSelectionTimeoutMS
+            // — that option is part of the Unified Topology, introduced
+            // well after this driver's era.
             client = await promisify<Db>((cb) => {
-                MongoClient.connect(dsn.url, cb);
+                MongoClient.connect(dsn.url, { connectTimeoutMS: 10000, socketTimeoutMS: 10000 }, cb);
             });
             db = client;
         },
@@ -96,13 +99,14 @@ export async function createDriverV2(dsn: DSN): Promise<CatalogDriver> {
             
             try {
                 const docs = await promisify<GenericDocument[]>((cb) => {
-                    collection!.find(query).toArray(cb);
+                    collection!.find(query).maxTimeMS(MAX_QUERY_TIME_MS).toArray(cb);
                 });
                 return {
                     success: true,
                     documents: normalizeDocuments(docs),
                 };
             } catch (error: any) {
+                if (isQueryTimeoutError(error)) throw error;
                 return {
                     success: false,
                     error: normalizeError(error),

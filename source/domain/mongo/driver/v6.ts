@@ -2,11 +2,14 @@
 import { MongoClient, Collection, Db } from 'mongodb6';
 import { DSN } from '../dsn';
 import type { CatalogDriver, GenericDocument, QueryResult } from './interface'
-import { normalizeDocuments, normalizeError, insertDocumentsSafely } from './helpers'
+import { normalizeDocuments, normalizeError, insertDocumentsSafely, isQueryTimeoutError, MAX_QUERY_TIME_MS } from './helpers'
 import type { Bootstrap } from './interface'
 
 export async function createDriverV6(dsn: DSN): Promise<CatalogDriver> {
-    const client = new MongoClient(dsn.url);
+    const client = new MongoClient(dsn.url, {
+        serverSelectionTimeoutMS: 10000,
+        connectTimeoutMS: 10000,
+    });
     let db: Db;
     let collection: Collection<GenericDocument> | null = null;
     
@@ -70,12 +73,13 @@ export async function createDriverV6(dsn: DSN): Promise<CatalogDriver> {
             }
             
             try {
-                const docs = await collection.find(query).toArray();
+                const docs = await collection.find(query).maxTimeMS(MAX_QUERY_TIME_MS).toArray();
                 return {
                     success: true,
                     documents: normalizeDocuments(docs),
                 };
             } catch (error: any) {
+                if (isQueryTimeoutError(error)) throw error;
                 return {
                     success: false,
                     error: normalizeError(error),
