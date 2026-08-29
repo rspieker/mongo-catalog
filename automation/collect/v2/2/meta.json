@@ -2772,6 +2772,463 @@
 			"catalog": "coverage_all",
 			"hash": "59ad887ca89249c997b6d36a9ac14307e9f42675aa5ad7109d2acf957e47f411",
 			"resultChecksum": "fe054d0df083b03ff21198efd8c1b121aa6d39ff065fe2d51b03c055c5818afd"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:53.461Z",
+			"catalog": "typeMatrix",
+			"hash": "c58ccc90f02cd2c2df0d9553adbfe2f38ffd19a450e25a6d21970b2cfc1bc839",
+			"resultChecksum": "ba276380d474d24c3905dd864fa5d0e3be5d43623737d766ecba6e9d3f4c6315"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:53.541Z",
+			"catalog": "coverage_where",
+			"hash": "81ecd1890243b67ef68d4b5c6f14b4946ad655674f73aeeace6ceed59c894536",
+			"resultChecksum": "d87da5cc1ec1530697638e6dda7e920a7745b84cfca17bc7a7a8ff545e937dde"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:53.585Z",
+			"catalog": "coverage_type",
+			"hash": "9fc70895532aa26c659a27987f70566d37ca47c5ea6bdb3f5c0b5faabab9b9a7",
+			"resultChecksum": "d3649368331616ca3a53a5c0b9f986c8f68f5186939cf32f52c3a71410a80eb8"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:53.634Z",
+			"catalog": "coverage_sort",
+			"hash": "18b67f83787f7b88c0955c49778584653c760ca3430ec2b063caef7d12ddc9ac",
+			"resultChecksum": "4a5eb0eab6ce01d62dc24ee64637a505b26531c7c60174290ae1371194c85101"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:53.679Z",
+			"catalog": "coverage_regex",
+			"hash": "eb0e5fd03a44dabe52e81cae025ca13ca5ccf132a1d91f4c308511ce32d592b6",
+			"resultChecksum": "8a70e761a282713a5a6a4e83cd8779bbf2275b0dd78d0ea23133f1d6f82a7f1c"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:53.807Z",
+			"catalog": "coverage_project",
+			"hash": "97522b7fc7a8e5f30ae6115ccb71c767167825ffb817a09c543b8174373bbbaa",
+			"resultChecksum": "eb2d4a72b597ebd1b4c2f9b4bd833883dfc418b1e765ec21b4ca9ae02b363bca",
+			"bootstrap": {
+				"problems": [
+					{
+						"error": {
+							"message": "key category.type must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							3
+						]
+					},
+					{
+						"error": {
+							"message": "key currency.format must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							7
+						]
+					},
+					{
+						"error": {
+							"message": "key name.phase must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							12
+						]
+					},
+					{
+						"error": {
+							"message": "key title.category must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							18
+						]
+					},
+					{
+						"error": {
+							"message": "key username.language must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							25
+						]
+					},
+					{
+						"error": {
+							"message": "key email.mode must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							33
+						]
+					},
+					{
+						"error": {
+							"message": "key address.tier must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							43
+						]
+					},
+					{
+						"error": {
+							"message": "key description.type must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							54
+						]
+					},
+					{
+						"error": {
+							"message": "key note.currency must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							66
+						]
+					},
+					{
+						"error": {
+							"message": "key comment.state must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							79
+						]
+					},
+					{
+						"error": {
+							"message": "key reference.status must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							93
+						]
+					},
+					{
+						"error": {
+							"message": "key code.region must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							108,
+							122
+						]
+					},
+					{
+						"error": {
+							"message": "key name.format must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							124,
+							138
+						]
+					},
+					{
+						"error": {
+							"message": "key title.phase must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							141,
+							155
+						]
+					},
+					{
+						"error": {
+							"message": "key username.category must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							159,
+							173
+						]
+					},
+					{
+						"error": {
+							"message": "key email.language must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							178,
+							192
+						]
+					},
+					{
+						"error": {
+							"message": "key address.mode must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							199,
+							213
+						]
+					}
+				]
+			}
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:54.169Z",
+			"catalog": "coverage_or",
+			"hash": "6c8de56922e98568983ad24e42e9f51eb696728918765dd0f5d23f1d926102d8",
+			"resultChecksum": "60cbede687b4be6eb4924f9be2ce1c4668889d3a51c7e4abd2ffb5299274923a"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:54.191Z",
+			"catalog": "coverage_number",
+			"hash": "0708dc73540e6adcf2a3a9e228bdc47514915520007e6b0d9d721bd3052d9688",
+			"resultChecksum": "ccc083c87d171079524863092d8a9b2e4326493c951d21c875329da4487876d5"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:54.251Z",
+			"catalog": "coverage_not",
+			"hash": "130483998846279aff2acc97c34f5fc7f0ba06d192f28930cdd90b712d3c05ab",
+			"resultChecksum": "d64eac2e03dccd6ce23081152416cfdd7156f90c735eb1cee93d7a1422821393"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:54.303Z",
+			"catalog": "coverage_nin",
+			"hash": "7fd7f9e39e67185969c5ef732f6ba20cc901d0d6ad6fb65a6de3720a3aa8fec2",
+			"resultChecksum": "c6058acabb7c021248e1b30063174b091be2a89683efb78421f5a24fb2599ad4"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:54.346Z",
+			"catalog": "coverage_ne",
+			"hash": "31aa72b2b26ca40d80486cbfd9f8c2a6e97cf826496e4757c872db9ce381440d",
+			"resultChecksum": "8deffeaea00a4830b8166ac6bd1c86a9f9c1d1bba6c15733b9a0f7bb3a2b2b87"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:54.376Z",
+			"catalog": "coverage_mod",
+			"hash": "892d208c963f28db555fe8427a70ca1229830cc9e11c1da930bddde2a3008f68",
+			"resultChecksum": "e2617740c5291d8412b263404f01ccfea6ef3bc8ee904b88c221ca8865c1d5bc"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:54.403Z",
+			"catalog": "coverage_json_schema",
+			"hash": "4524f932ff4ad6530dae01a269ae4e1859d005dbe4bd0022d256f2f6ba9ce0dd",
+			"resultChecksum": "cb6bc149ca926593d9152f55f828db7bacf211a8d1b4526e9086dcf7357e6e05"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:54.513Z",
+			"catalog": "coverage_in_",
+			"hash": "fe0f87dea84e7f5477edc8370f7a0a36c230e5039245221332a4d722fd54ca87",
+			"resultChecksum": "dceb68041fe900c2922c78356d1ef8b351e363e5051a6ad827b0d563639ff430"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:54.541Z",
+			"catalog": "coverage_geo",
+			"hash": "799b15c46c3063832d45ff1b47cd4ed516a844f5c6d9fe22c4a88f9edf96c005",
+			"resultChecksum": "5fcb9f76cf715e3472e400b67cde3d92f12830622fc459d2c56ffab37537f92f"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:54.585Z",
+			"catalog": "coverage_find",
+			"hash": "247e113322958624ad9562f2684ffd05a3840afa80990f8f488b8945afb55ba3",
+			"resultChecksum": "b8bc6faf59a6bdd8386cf88eff007fb74498d9909653d5e3c0e346b043985e8b"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:54.639Z",
+			"catalog": "coverage_expr",
+			"hash": "17e4800e74ec20966dc4eaa273e2c9130a0c968907fb1aa0e759ac858084eece",
+			"resultChecksum": "9e033218dbc8e2f6c15e7b133c41a86790d8a43a142d1cb777beefdd9629034d",
+			"bootstrap": {
+				"problems": [
+					{
+						"error": {
+							"message": "key $toDouble must not start with '$'",
+							"type": "Error"
+						},
+						"documents": [
+							15
+						]
+					},
+					{
+						"error": {
+							"message": "key email.level must not contain '.'",
+							"type": "Error"
+						},
+						"documents": [
+							16
+						]
+					}
+				]
+			}
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:54.719Z",
+			"catalog": "coverage_exists",
+			"hash": "cb639994d55012eb065f34f57a6f2c8b6794f43524a58eb96e27a4ed9c6cd3ff",
+			"resultChecksum": "5f7a016e8fbc4055e050106ebda6d566daeedcd184ba10c3235041c8c781f422"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:54.757Z",
+			"catalog": "coverage_elemmatch",
+			"hash": "117b7961e02e50b4c0d2ae22319094725867cb88afd6d49d9329ef15e3db4c9b",
+			"resultChecksum": "6cd82d1566a00396377e12093050530355e1443be90ca9e10534fe3e5daca866"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:54.780Z",
+			"catalog": "coverage_dbref",
+			"hash": "8599f1b9f0f48459cbe7042c0f5fa20c3183caa7afcab288bf27c119ad852964",
+			"resultChecksum": "3f93d851da082c9d93e53f95f19642ab102cbcfd0944cfccace801905291dacb",
+			"bootstrap": {
+				"problems": [
+					{
+						"error": {
+							"message": "key $proxy must not start with '$'",
+							"type": "Error"
+						},
+						"documents": [
+							0
+						]
+					}
+				]
+			}
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:54.801Z",
+			"catalog": "coverage_date",
+			"hash": "3c6777790b5752d0e811d5b3fcea39e7e2dfb4581db76556fce440aca233a090",
+			"resultChecksum": "7a42832fa6506f3839d6c186957736217f6d95875acb0822aba5befb30a517fd"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:54.861Z",
+			"catalog": "coverage_count",
+			"hash": "c89558f25638fe62dc813207a9e6f404c65af19688e54f62fef6d7d478a64f2d",
+			"resultChecksum": "47e907910979331927e96f2ded575558a3d68a887e255b1e11f0a79590067354"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:54.891Z",
+			"catalog": "coverage_collation",
+			"hash": "e1f057a6c23f19377e2cb1098f97918b0fbb7c64989b7753b0375c29819db8f8",
+			"resultChecksum": "4af7589cefd2a82c57cb45224d095978c7a105641577415f61b94a4cd071c047"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:54.986Z",
+			"catalog": "coverage_array",
+			"hash": "e84bbba44e21e01665463e74aece5d3c1c3c97b299f83d1c26390425566b2e7f",
+			"resultChecksum": "15171d60887edb9bffc30859b0cd45b4267800c4d74fc43ced6ae4159eb8c7bc"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:55.302Z",
+			"catalog": "coverage_and",
+			"hash": "a2eee8a4d3b3d6b64bea5b6748a7302d283e03e5845bde202c0a85e3c85ea4e3",
+			"resultChecksum": "a8dc01da19f3907ecf0c2ab345c4f57b889bfeab2c658a7f5d251b4bc031a37a"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:55.353Z",
+			"catalog": "coverage_all",
+			"hash": "ce1659aaa42b52ff0a3fa470f001b7b9cf11c28883f6c5f1b7a8e86c4255f9cf",
+			"resultChecksum": "fe054d0df083b03ff21198efd8c1b121aa6d39ff065fe2d51b03c055c5818afd"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:55.496Z",
+			"catalog": "textRegex",
+			"hash": "a8ca317678991f355505e1acceae0646574ba2f348288c1742961a71dc73ce3b",
+			"resultChecksum": "bcab189d224d3d8f3a139d6d268a03260e8520c3cc6c751864f61625b3ae02a0"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:55.543Z",
+			"catalog": "modulo",
+			"hash": "8ae40d9637d7b014884f0cf160571fb22f0a492f9c351823833ea727f1b38cbb",
+			"resultChecksum": "aa45746c3c26a5d3113d18a31e4ab9d376105069dea1b14b2ca58ec5fa12ac61"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:55.608Z",
+			"catalog": "misc",
+			"hash": "16a6f7c5a4588401b1220303e2e07cc04cb34cfd344293052a53b0c092fd1d14",
+			"resultChecksum": "005ff733a3d2949b29a119292ee3a94cf23d1f9783d2b553859df5d4ef81ac6c"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:55.672Z",
+			"catalog": "logical",
+			"hash": "1b58b2cdcc56495787449003cbdc885c130269cb42f11c0d34ab0af0efc1f13d",
+			"resultChecksum": "95551a7d4d14caea2f317f08c2449ee5cfee999ef7333972838b318d96c50a4b"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:55.749Z",
+			"catalog": "geo",
+			"hash": "b27b34928282d32b653956295e089bf3a3a5bbca81c2c5bac2cf1f3443a64eda",
+			"resultChecksum": "070eeb0fd639f5702753b563da9c6a3393bca288110f7fa4b988a7bf7d511e9a"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:55.837Z",
+			"catalog": "expr",
+			"hash": "d933a2a9913694154a262d7343bf901d4a0a231716b8afb24c2e3ce3d176a039",
+			"resultChecksum": "c5e1d86601405438e7c3b93d85791b771601b2eb006f5e28ce0841bb23012fef"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:55.851Z",
+			"catalog": "evaluation",
+			"hash": "4284403ec5b206b8aab3ab3246755dda6e702bcff15ba8b055aed7d1d29c4073",
+			"resultChecksum": "3015ee2aa3de7df822ad73dcc535e63b5fe5e0b7986a76307dcb5c8b6f975989"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:55.904Z",
+			"catalog": "element",
+			"hash": "bd5572f21baeeb650a9979de051955e981537b12e23e42130a05e6c0b9f5421c",
+			"resultChecksum": "561fb135440f6085975c058ae8b5a82ee075510a491739b2de9698c28455e706"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:55.942Z",
+			"catalog": "comparison",
+			"hash": "6fc5eb75722112f8bcef6200879e0aeef1407839efee21ce5b0833ef7c44d1f8",
+			"resultChecksum": "50c4f297482d414ed3d0fdbc47cc46a3cd1cbcecdfdd76a0a17de0984f2c4f91"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:56.017Z",
+			"catalog": "bitwise",
+			"hash": "73e487e09e8b8e633545d2d54877846003281fa4ef855927926c4ab281b81114",
+			"resultChecksum": "48dae44696ca5899392689223817b3340dd7c1878b06c42284a953d4515020fe"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-08-29T17:16:56.076Z",
+			"catalog": "array",
+			"hash": "00c3b0583584014eae059e4f646606e4a0c8ea29b2bffdf089c07582d37f8a1e",
+			"resultChecksum": "a81e3a466c134df45810172a3d56a9b8fde25e9bff37d54c0df72eb1f4d0e9c6"
 		}
 	]
 }
