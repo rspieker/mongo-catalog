@@ -44,7 +44,7 @@
 			]
 		},
 		"error": {
-			"message": "[CVE-2018-20802] MongoDB's query planner crashes the whole server (Invariant failure indexedOr, src/mongo/db/query/index_tag.cpp) on a query combining a top-level $or with a sibling $expr. Confirmed via direct local reproduction (mongod aborts, SIGABRT) on 3.7.9 and 4.1.3; fixed upstream in 3.6.9/4.0.3/4.1.4. The 3.7.x pre-4.0 branch isn't named in the official advisory (dev/RC branches predate the released-version tracking CVEs use) but shares the same pre-fix code and crashes identically. $expr didn't exist before 3.6.0, so the lower bound is bounded there rather than left open-ended.",
+			"message": "CVE-2018-20802",
 			"type": "MongoCatalogKnownIssue"
 		}
 	},
@@ -301,7 +301,7 @@
 			]
 		},
 		"error": {
-			"message": "[CVE-2018-20802] MongoDB's query planner crashes the whole server (Invariant failure indexedOr, src/mongo/db/query/index_tag.cpp) on a query combining a top-level $or with a sibling $expr. Confirmed via direct local reproduction (mongod aborts, SIGABRT) on 3.7.9 and 4.1.3; fixed upstream in 3.6.9/4.0.3/4.1.4. The 3.7.x pre-4.0 branch isn't named in the official advisory (dev/RC branches predate the released-version tracking CVEs use) but shares the same pre-fix code and crashes identically. $expr didn't exist before 3.6.0, so the lower bound is bounded there rather than left open-ended.",
+			"message": "CVE-2018-20802",
 			"type": "MongoCatalogKnownIssue"
 		}
 	},
@@ -334,7 +334,7 @@
 			]
 		},
 		"error": {
-			"message": "[CVE-2018-20802] MongoDB's query planner crashes the whole server (Invariant failure indexedOr, src/mongo/db/query/index_tag.cpp) on a query combining a top-level $or with a sibling $expr. Confirmed via direct local reproduction (mongod aborts, SIGABRT) on 3.7.9 and 4.1.3; fixed upstream in 3.6.9/4.0.3/4.1.4. The 3.7.x pre-4.0 branch isn't named in the official advisory (dev/RC branches predate the released-version tracking CVEs use) but shares the same pre-fix code and crashes identically. $expr didn't exist before 3.6.0, so the lower bound is bounded there rather than left open-ended.",
+			"message": "CVE-2018-20802",
 			"type": "MongoCatalogKnownIssue"
 		}
 	},
@@ -367,7 +367,7 @@
 			]
 		},
 		"error": {
-			"message": "[CVE-2018-20802] MongoDB's query planner crashes the whole server (Invariant failure indexedOr, src/mongo/db/query/index_tag.cpp) on a query combining a top-level $or with a sibling $expr. Confirmed via direct local reproduction (mongod aborts, SIGABRT) on 3.7.9 and 4.1.3; fixed upstream in 3.6.9/4.0.3/4.1.4. The 3.7.x pre-4.0 branch isn't named in the official advisory (dev/RC branches predate the released-version tracking CVEs use) but shares the same pre-fix code and crashes identically. $expr didn't exist before 3.6.0, so the lower bound is bounded there rather than left open-ended.",
+			"message": "CVE-2018-20802",
 			"type": "MongoCatalogKnownIssue"
 		}
 	},

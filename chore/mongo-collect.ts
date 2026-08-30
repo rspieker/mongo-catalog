@@ -210,7 +210,7 @@ Promise.resolve()
                             operation,
                             documents: undefined,
                             error: {
-                                message: `[${knownIssue.reference}] ${knownIssue.message}`,
+                                message: knownIssue.reference,
                                 type: 'MongoCatalogKnownIssue',
                             },
                         });
