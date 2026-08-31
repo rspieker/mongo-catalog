@@ -3,15 +3,29 @@ import { Version } from '../version';
 // A growing registry of confirmed real-MongoDB-server bugs that this
 // project deliberately avoids triggering, rather than letting them crash
 // collection or produce misleading results.
+//
+// Checked in three stages, narrowing the candidate list at each step
+// instead of re-testing every issue against every single query:
+//   1. issuesForVersion    — once per run (version is fixed for the whole
+//                             mongo-collect.ts execution)
+//   2. issuesForCollection — once per catalog (indices are fixed per
+//                             catalog, not per query)
+//   3. findKnownIssue      — once per operation, but only against whatever
+//                             survived the first two stages
 export type VersionRange = {
     from: string;
     to: string;
+};
+
+export type CollectionInfo = {
+    indices?: Array<Record<string, unknown>>;
 };
 
 export type KnownIssue = {
     reference: string;
     message: string;
     versions: VersionRange[];
+    collection?: (collection: CollectionInfo) => boolean;
     operation: (operation: unknown) => boolean;
 };
 
@@ -66,13 +80,24 @@ open-ended.`,
     },
 ];
 
+export function issuesForVersion(version: Version): Array<KnownIssue> {
+    return KNOWN_ISSUES.filter((issue) =>
+        issue.versions.some((range) => inRange(version, range))
+    );
+}
+
+export function issuesForCollection(
+    issues: Array<KnownIssue>,
+    collection: CollectionInfo
+): Array<KnownIssue> {
+    return issues.filter(
+        (issue) => !issue.collection || issue.collection(collection)
+    );
+}
+
 export function findKnownIssue(
-    version: Version,
+    issues: Array<KnownIssue>,
     operation: unknown
 ): KnownIssue | undefined {
-    return KNOWN_ISSUES.find(
-        (issue) =>
-            issue.versions.some((range) => inRange(version, range)) &&
-            issue.operation(operation)
-    );
+    return issues.find((issue) => issue.operation(operation));
 }
