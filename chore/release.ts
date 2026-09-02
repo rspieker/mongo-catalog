@@ -5,12 +5,23 @@
 // only publishes what was objectively observed.
 
 import { execSync } from 'node:child_process';
-import { readdir, rm } from 'node:fs/promises';
+import { readdir, rm, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import type { Catalog, MongoDocument } from '../catalog/catalog';
+import { ensure } from '../source/domain/filesystem';
 import { readJSONFile, writeJSONFile } from '../source/domain/json';
 import { classifyOperators, type OperatorTag } from '../source/domain/mongo/operator-classification';
+import { serialize } from '../source/domain/serialization';
 import { Version } from '../source/domain/version';
+
+// Record values (read live via loadCollectionRecords, below) and query
+// results can carry NaN/Infinity/-Infinity/Date/RegExp which don't translate
+// to JSON as we need them to (NaN/Infinity turn into null, Date becomes it's
+// ISO string and RegExp becomes an empty object)
+async function writeSerializedFile(path: string, data: unknown): Promise<void> {
+    await ensure(resolve(path, '..'));
+    await writeFile(path, serialize(data, '\t'));
+}
 
 const automation = resolve(__dirname, '..', 'automation');
 const releaseDir = resolve(automation, 'release');
@@ -133,7 +144,7 @@ async function main(): Promise<void> {
         };
 
         const file = fileNameFor(catalogEntry.catalog);
-        await writeJSONFile(resolve(releaseDir, file), releaseCatalog as any);
+        await writeSerializedFile(resolve(releaseDir, file), releaseCatalog);
         written.push({
             catalog: catalogEntry.catalog,
             file,
