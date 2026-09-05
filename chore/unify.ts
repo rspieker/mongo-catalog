@@ -15,10 +15,9 @@ type CatalogQueryRecord = {
 // The only sound way to know whether a version's collected result for a
 // catalog still means anything: was it collected against the exact catalog
 // (query + documents together) that's live right now? A query's id is stable
-// forever, but that's exactly the trap — the same id can be collected at two
-// different points in time against two different document generations
-// (coverage topics regenerate wholesale, and _id is positional, not
-// content-derived), so "the id still exists" isn't enough to trust a result.
+// forever, however, the same id can be collected at two different points in
+// time against two different document generations, so "the id still exists"
+// isn't enough to trust a result.
 // Comparing against the catalog's *current* hash, not just deduping by name,
 // is what actually excludes a stale generation's contribution.
 async function currentCatalogHashes(): Promise<Map<string, string>> {
@@ -109,7 +108,18 @@ async function main(): Promise<void> {
                     error,
                 } of catalog) {
                     const result = hash(documents || error);
-                    const foundQuery = collected.find((r) => r.id === id);
+                    // An id only identifies the query, not which catalog
+                    // it was evaluated against — the same query text can
+                    // legitimately exist in two different catalogs (e.g. a
+                    // hand-written case in one, part of a generated cross
+                    // in another), each with its own, unrelated document
+                    // set. Matching on id alone here would merge two
+                    // individually-correct results collected against
+                    // completely different collections into one bogus
+                    // operation entry; the final output is already grouped
+                    // by catalog below, this just keeps that same boundary
+                    // during accumulation instead of merging across it first.
+                    const foundQuery = collected.find((r) => r.id === id && r.catalog === catalogName);
                     const recordQuery: Collect = foundQuery || {
                         catalog: String(catalogName),
                         id,
