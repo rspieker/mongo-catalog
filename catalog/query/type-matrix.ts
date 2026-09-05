@@ -131,6 +131,10 @@ const BIT_OPERANDS: ReadonlyArray<unknown> = [
     // position array
     ...SCALAR_VALUES,
     ...SCALAR_VALUES.map((value) => [value]),
+    // Position-array boundary: INT32_MAX is valid and INT32_MAX + 1 throws.
+    [100],
+    [2147483647],
+    [2147483648],
 ];
 const bitwiseOperations = BIT_OPERANDS.flatMap((operand) => [
     { value: { $bitsAllClear: operand } },
