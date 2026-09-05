@@ -193,7 +193,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -201,7 +201,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -295,7 +295,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -391,7 +391,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -399,7 +399,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -446,7 +446,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -495,7 +495,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -607,7 +607,7 @@
 						12,
 						1
 					],
-					"versions": "2.6.12..3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "2.6.12..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -680,7 +680,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -688,7 +688,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -735,7 +735,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -784,7 +784,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -827,7 +827,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12..3.2.21"
+					"versions": "2.6.12..3.3.6"
 				},
 				{
 					"documents": [
@@ -844,7 +844,7 @@
 						12,
 						1
 					],
-					"versions": "3.3.15,3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "3.3.15..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -1029,7 +1029,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..5.0.33"
+					"versions": "3.6.0..5.0.33"
 				},
 				{
 					"error": {
@@ -1785,6 +1785,14 @@
 				},
 				{
 					"error": {
+						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count == 18\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step == 17\nSort: {}\nProj: {}\n No query solutions",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0"
+				},
+				{
+					"error": {
 						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq 18\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step $eq 17\nSort: {}\nProj: {}\n No query solutions",
 						"code": 2,
 						"type": "MongoServerError"
@@ -1797,7 +1805,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "4.2.24"
+					"versions": "4.2.12,4.2.24"
 				},
 				{
 					"error": {
@@ -1821,7 +1829,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "7.0.40..8.3.8"
+					"versions": "7.0.18..8.3.8"
 				}
 			]
 		},
@@ -1875,7 +1883,7 @@
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15"
+					"versions": "3.3.6..3.4.0"
 				},
 				{
 					"error": {
@@ -1883,7 +1891,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..4.4.30"
+					"versions": "3.6.0..4.4.30"
 				},
 				{
 					"error": {
@@ -1956,7 +1964,7 @@
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15"
+					"versions": "3.3.6..3.4.0"
 				},
 				{
 					"error": {
@@ -1964,7 +1972,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..4.4.30"
+					"versions": "3.6.0..4.4.30"
 				},
 				{
 					"error": {
@@ -2894,7 +2902,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12..3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "2.6.12..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -2994,7 +3002,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12..3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "2.6.12..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -3064,7 +3072,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12..3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "2.6.12..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -3904,7 +3912,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -3912,7 +3920,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -3963,7 +3971,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -4016,7 +4024,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -4067,7 +4075,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -4075,7 +4083,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -4126,7 +4134,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -4179,7 +4187,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -4604,6 +4612,14 @@
 				},
 				{
 					"error": {
+						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count == 18\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step == {}\nSort: {}\nProj: {}\n No query solutions",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0"
+				},
+				{
+					"error": {
 						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq 18\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step $eq {}\nSort: {}\nProj: {}\n No query solutions",
 						"code": 2,
 						"type": "MongoServerError"
@@ -4616,7 +4632,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "4.2.24"
+					"versions": "4.2.12,4.2.24"
 				},
 				{
 					"error": {
@@ -4640,7 +4656,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "7.0.40..8.3.8"
+					"versions": "7.0.18..8.3.8"
 				}
 			]
 		},
@@ -4697,6 +4713,14 @@
 				},
 				{
 					"error": {
+						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count == 18\n        step == \"Great\"\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step == {}\nSort: {}\nProj: {}\n No query solutions",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0"
+				},
+				{
+					"error": {
 						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq 18\n        step $eq \"Great\"\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step $eq {}\nSort: {}\nProj: {}\n No query solutions",
 						"code": 2,
 						"type": "MongoServerError"
@@ -4709,7 +4733,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "4.2.24"
+					"versions": "4.2.12,4.2.24"
 				},
 				{
 					"error": {
@@ -4733,7 +4757,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "7.0.40..8.3.8"
+					"versions": "7.0.18..8.3.8"
 				}
 			]
 		},
@@ -5254,7 +5278,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12..3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "2.6.12..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -5457,7 +5481,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -5465,7 +5489,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -5511,7 +5535,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -5519,7 +5543,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -5565,7 +5589,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -5573,7 +5597,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -5621,7 +5645,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -5669,7 +5693,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -5717,7 +5741,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -5760,7 +5784,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12,4.0.28,4.2.24..8.3.8"
+					"versions": "2.6.12,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -5985,7 +6009,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -5993,7 +6017,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -6040,7 +6064,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -6048,7 +6072,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -6095,7 +6119,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -6103,7 +6127,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -6150,7 +6174,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -6158,7 +6182,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -6205,7 +6229,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -6213,7 +6237,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -6260,7 +6284,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -6268,7 +6292,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -6315,7 +6339,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -6362,7 +6386,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -6409,7 +6433,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -6458,7 +6482,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -6507,7 +6531,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -6556,7 +6580,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -6605,7 +6629,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -6654,7 +6678,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -6703,7 +6727,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -7016,7 +7040,7 @@
 						0,
 						1
 					],
-					"versions": "3.2.21..3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "3.2.21..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -7086,7 +7110,7 @@
 						0,
 						1
 					],
-					"versions": "3.2.21..3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "3.2.21..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -7143,7 +7167,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -7151,7 +7175,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -7198,7 +7222,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -7206,7 +7230,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -7253,7 +7277,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -7261,7 +7285,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -7308,7 +7332,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -7316,7 +7340,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -7363,7 +7387,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -7371,7 +7395,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -7418,7 +7442,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -7426,7 +7450,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -7473,7 +7497,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -7520,7 +7544,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -7567,7 +7591,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -7616,7 +7640,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -7665,7 +7689,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -7714,7 +7738,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -7763,7 +7787,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -7812,7 +7836,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -7861,7 +7885,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -7937,7 +7961,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12..3.2.21"
+					"versions": "2.6.12..3.3.6"
 				},
 				{
 					"documents": [
@@ -7955,7 +7979,7 @@
 						0,
 						1
 					],
-					"versions": "3.3.15,3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "3.3.15..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -8027,7 +8051,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12..3.2.21"
+					"versions": "2.6.12..3.3.6"
 				},
 				{
 					"documents": [
@@ -8045,7 +8069,7 @@
 						0,
 						1
 					],
-					"versions": "3.3.15,3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "3.3.15..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -8115,7 +8139,7 @@
 						0,
 						1
 					],
-					"versions": "2.6.12..3.2.21,4.0.28,4.2.0..8.3.8"
+					"versions": "2.6.12..3.3.6,4.0.28,4.2.0..8.3.8"
 				},
 				{
 					"documents": [
@@ -8221,7 +8245,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12..3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "2.6.12..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -8481,7 +8505,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -8489,7 +8513,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.2.12"
+					"versions": "3.6.0..8.2.12"
 				},
 				{
 					"error": {
@@ -8497,7 +8521,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "8.3.0,8.3.8"
+					"versions": "8.3.0..8.3.8"
 				}
 			]
 		},
@@ -8551,7 +8575,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -8559,7 +8583,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.2.12"
+					"versions": "3.6.0..8.2.12"
 				},
 				{
 					"error": {
@@ -8567,7 +8591,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "8.3.0,8.3.8"
+					"versions": "8.3.0..8.3.8"
 				}
 			]
 		},
@@ -8621,7 +8645,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -8629,7 +8653,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.2.12"
+					"versions": "3.6.0..8.2.12"
 				},
 				{
 					"error": {
@@ -8637,7 +8661,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "8.3.0,8.3.8"
+					"versions": "8.3.0..8.3.8"
 				}
 			]
 		},
@@ -8688,7 +8712,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -8734,7 +8758,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12..3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "2.6.12..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -8888,7 +8912,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -8934,7 +8958,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12..3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "2.6.12..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -9088,7 +9112,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -9134,7 +9158,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12..3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "2.6.12..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -9288,7 +9312,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -9334,7 +9358,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12..3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "2.6.12..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -9482,7 +9506,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -9526,7 +9550,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12,4.0.28,4.2.24..8.3.8"
+					"versions": "2.6.12,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -9682,7 +9706,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12..3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "2.6.12..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -9962,7 +9986,7 @@
 						11,
 						12
 					],
-					"versions": "4.0.28,4.2.24..8.3.8"
+					"versions": "4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -10494,7 +10518,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -11066,6 +11090,14 @@
 				},
 				{
 					"error": {
+						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count == null\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step == null\nSort: {}\nProj: {}\n No query solutions",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0"
+				},
+				{
+					"error": {
 						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq null\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step $eq null\nSort: {}\nProj: {}\n No query solutions",
 						"code": 2,
 						"type": "MongoServerError"
@@ -11078,7 +11110,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "4.2.24"
+					"versions": "4.2.12,4.2.24"
 				},
 				{
 					"error": {
@@ -11102,7 +11134,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "7.0.40..8.3.8"
+					"versions": "7.0.18..8.3.8"
 				}
 			]
 		},
@@ -11158,6 +11190,14 @@
 				},
 				{
 					"error": {
+						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count == \"value\"\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step == \"value\"\nSort: {}\nProj: {}\n No query solutions",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0"
+				},
+				{
+					"error": {
 						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq \"value\"\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step $eq \"value\"\nSort: {}\nProj: {}\n No query solutions",
 						"code": 2,
 						"type": "MongoServerError"
@@ -11170,7 +11210,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "4.2.24"
+					"versions": "4.2.12,4.2.24"
 				},
 				{
 					"error": {
@@ -11194,7 +11234,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "7.0.40..8.3.8"
+					"versions": "7.0.18..8.3.8"
 				}
 			]
 		},
@@ -11250,6 +11290,14 @@
 				},
 				{
 					"error": {
+						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count == true\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step == true\nSort: {}\nProj: {}\n No query solutions",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0"
+				},
+				{
+					"error": {
 						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq true\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step $eq true\nSort: {}\nProj: {}\n No query solutions",
 						"code": 2,
 						"type": "MongoServerError"
@@ -11262,7 +11310,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "4.2.24"
+					"versions": "4.2.12,4.2.24"
 				},
 				{
 					"error": {
@@ -11286,7 +11334,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "7.0.40..8.3.8"
+					"versions": "7.0.18..8.3.8"
 				}
 			]
 		},
@@ -11338,7 +11386,7 @@
 						"code": 14,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -11346,7 +11394,7 @@
 						"code": 14,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -11398,7 +11446,7 @@
 						"code": 14,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -11406,7 +11454,7 @@
 						"code": 14,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -11458,7 +11506,7 @@
 						"code": 14,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -11466,7 +11514,7 @@
 						"code": 14,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -11512,7 +11560,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -11558,7 +11606,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -11604,7 +11652,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -11653,7 +11701,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -11702,7 +11750,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -11751,7 +11799,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -11814,7 +11862,7 @@
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15"
+					"versions": "3.3.6..3.4.0"
 				},
 				{
 					"error": {
@@ -11822,7 +11870,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..4.4.30"
+					"versions": "3.6.0..4.4.30"
 				},
 				{
 					"error": {
@@ -11991,7 +12039,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -12046,7 +12094,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -12101,7 +12149,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -12511,7 +12559,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -14755,7 +14803,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12..3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "2.6.12..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -14825,7 +14873,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12..3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "2.6.12..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -14981,7 +15029,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12..3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "2.6.12..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -15051,7 +15099,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12..3.4.24,4.0.28,4.2.24..8.3.8"
+					"versions": "2.6.12..3.4.24,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -16341,7 +16389,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -16349,7 +16397,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -16400,7 +16448,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -16408,7 +16456,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -16459,7 +16507,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -16467,7 +16515,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -16518,7 +16566,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -16526,7 +16574,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -16577,7 +16625,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -16585,7 +16633,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -16636,7 +16684,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -16644,7 +16692,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -16695,7 +16743,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -16746,7 +16794,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -16797,7 +16845,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -16850,7 +16898,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -16903,7 +16951,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -16956,7 +17004,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -17009,7 +17057,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -17062,7 +17110,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -17115,7 +17163,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -17166,7 +17214,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -17174,7 +17222,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -17225,7 +17273,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -17233,7 +17281,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -17284,7 +17332,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -17292,7 +17340,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -17343,7 +17391,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -17351,7 +17399,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -17402,7 +17450,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -17410,7 +17458,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -17461,7 +17509,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -17469,7 +17517,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -17520,7 +17568,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -17571,7 +17619,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -17622,7 +17670,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -17675,7 +17723,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -17728,7 +17776,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -17781,7 +17829,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -17834,7 +17882,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -17887,7 +17935,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -17940,7 +17988,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..7.0.40"
+					"versions": "3.6.0..7.0.40"
 				},
 				{
 					"error": {
@@ -18016,7 +18064,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12..3.4.24,4.0.28,4.1.13,4.2.24..8.3.8"
+					"versions": "2.6.12..3.4.24,4.0.28,4.1.13,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -18745,7 +18793,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -18898,7 +18946,7 @@
 						11,
 						12
 					],
-					"versions": "2.6.12,4.0.28,4.2.24..8.3.8"
+					"versions": "2.6.12,4.0.28,4.2.12..8.3.8"
 				},
 				{
 					"documents": [
@@ -19150,6 +19198,14 @@
 				},
 				{
 					"error": {
+						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count == null\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step == {}\nSort: {}\nProj: {}\n No query solutions",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0"
+				},
+				{
+					"error": {
 						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq null\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step $eq {}\nSort: {}\nProj: {}\n No query solutions",
 						"code": 2,
 						"type": "MongoServerError"
@@ -19162,7 +19218,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "4.2.24"
+					"versions": "4.2.12,4.2.24"
 				},
 				{
 					"error": {
@@ -19186,7 +19242,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "7.0.40..8.3.8"
+					"versions": "7.0.18..8.3.8"
 				}
 			]
 		},
@@ -19242,6 +19298,14 @@
 				},
 				{
 					"error": {
+						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count == \"value\"\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step == {}\nSort: {}\nProj: {}\n No query solutions",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0"
+				},
+				{
+					"error": {
 						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq \"value\"\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step $eq {}\nSort: {}\nProj: {}\n No query solutions",
 						"code": 2,
 						"type": "MongoServerError"
@@ -19254,7 +19318,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "4.2.24"
+					"versions": "4.2.12,4.2.24"
 				},
 				{
 					"error": {
@@ -19278,7 +19342,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "7.0.40..8.3.8"
+					"versions": "7.0.18..8.3.8"
 				}
 			]
 		},
@@ -19334,6 +19398,14 @@
 				},
 				{
 					"error": {
+						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count == true\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step == {}\nSort: {}\nProj: {}\n No query solutions",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0"
+				},
+				{
+					"error": {
 						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq true\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step $eq {}\nSort: {}\nProj: {}\n No query solutions",
 						"code": 2,
 						"type": "MongoServerError"
@@ -19346,7 +19418,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "4.2.24"
+					"versions": "4.2.12,4.2.24"
 				},
 				{
 					"error": {
@@ -19370,7 +19442,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "7.0.40..8.3.8"
+					"versions": "7.0.18..8.3.8"
 				}
 			]
 		},
@@ -19422,7 +19494,7 @@
 						"code": 14,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -19430,7 +19502,7 @@
 						"code": 14,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -19482,7 +19554,7 @@
 						"code": 14,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -19490,7 +19562,7 @@
 						"code": 14,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -19542,7 +19614,7 @@
 						"code": 14,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -19550,7 +19622,7 @@
 						"code": 14,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -19607,6 +19679,14 @@
 				},
 				{
 					"error": {
+						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count == null\n        step == \"Great\"\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step == {}\nSort: {}\nProj: {}\n No query solutions",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0"
+				},
+				{
+					"error": {
 						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq null\n        step $eq \"Great\"\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step $eq {}\nSort: {}\nProj: {}\n No query solutions",
 						"code": 2,
 						"type": "MongoServerError"
@@ -19619,7 +19699,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "4.2.24"
+					"versions": "4.2.12,4.2.24"
 				},
 				{
 					"error": {
@@ -19643,7 +19723,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "7.0.40..8.3.8"
+					"versions": "7.0.18..8.3.8"
 				}
 			]
 		},
@@ -19700,6 +19780,14 @@
 				},
 				{
 					"error": {
+						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count == \"value\"\n        step == \"Great\"\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step == {}\nSort: {}\nProj: {}\n No query solutions",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0"
+				},
+				{
+					"error": {
 						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq \"value\"\n        step $eq \"Great\"\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step $eq {}\nSort: {}\nProj: {}\n No query solutions",
 						"code": 2,
 						"type": "MongoServerError"
@@ -19712,7 +19800,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "4.2.24"
+					"versions": "4.2.12,4.2.24"
 				},
 				{
 					"error": {
@@ -19736,7 +19824,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "7.0.40..8.3.8"
+					"versions": "7.0.18..8.3.8"
 				}
 			]
 		},
@@ -19793,6 +19881,14 @@
 				},
 				{
 					"error": {
+						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count == true\n        step == \"Great\"\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step == {}\nSort: {}\nProj: {}\n No query solutions",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0"
+				},
+				{
+					"error": {
 						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: $or\n    $and\n        count $eq true\n        step $eq \"Great\"\n        TEXT : query=Heavily, language=english, caseSensitive=0, diacriticSensitive=0, tag=NULL\n    step $eq {}\nSort: {}\nProj: {}\n No query solutions",
 						"code": 2,
 						"type": "MongoServerError"
@@ -19805,7 +19901,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "4.2.24"
+					"versions": "4.2.12,4.2.24"
 				},
 				{
 					"error": {
@@ -19829,7 +19925,7 @@
 						"code": 291,
 						"type": "MongoServerError"
 					},
-					"versions": "7.0.40..8.3.8"
+					"versions": "7.0.18..8.3.8"
 				}
 			]
 		},
@@ -19882,7 +19978,7 @@
 						"code": 14,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -19890,7 +19986,7 @@
 						"code": 14,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -19943,7 +20039,7 @@
 						"code": 14,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -19951,7 +20047,7 @@
 						"code": 14,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -20004,7 +20100,7 @@
 						"code": 14,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -20012,7 +20108,7 @@
 						"code": 14,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -20060,7 +20156,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -20219,7 +20315,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -20472,7 +20568,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -20520,7 +20616,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -21243,7 +21339,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -21251,7 +21347,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.2.12"
+					"versions": "3.6.0..8.2.12"
 				},
 				{
 					"error": {
@@ -21259,7 +21355,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "8.3.0,8.3.8"
+					"versions": "8.3.0..8.3.8"
 				}
 			]
 		},
@@ -21310,7 +21406,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -21318,7 +21414,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.2.12"
+					"versions": "3.6.0..8.2.12"
 				},
 				{
 					"error": {
@@ -21326,7 +21422,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "8.3.0,8.3.8"
+					"versions": "8.3.0..8.3.8"
 				}
 			]
 		},
@@ -21377,7 +21473,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.3.6..3.5.13"
 				},
 				{
 					"error": {
@@ -21385,7 +21481,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.2.12"
+					"versions": "3.6.0..8.2.12"
 				},
 				{
 					"error": {
@@ -21393,7 +21489,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "8.3.0,8.3.8"
+					"versions": "8.3.0..8.3.8"
 				}
 			]
 		},
@@ -21447,7 +21543,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -21620,7 +21716,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
@@ -21788,7 +21884,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.23..8.3.8"
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},
