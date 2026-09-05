@@ -53,7 +53,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "2.6.12..8.3.7"
 				}
 			]
 		},
@@ -73,7 +73,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "2.6.12..8.3.7"
 				}
 			]
 		},
@@ -94,7 +94,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..5.0.33"
+					"versions": "2.6.12..5.0.32"
 				},
 				{
 					"error": {
@@ -102,7 +102,7 @@
 						"code": 51108,
 						"type": "MongoServerError"
 					},
-					"versions": "6.0.1..8.3.8"
+					"versions": "6.0.1..8.3.7"
 				}
 			]
 		},
@@ -123,7 +123,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..5.0.33"
+					"versions": "2.6.12..5.0.32"
 				},
 				{
 					"error": {
@@ -131,7 +131,7 @@
 						"code": 51108,
 						"type": "MongoServerError"
 					},
-					"versions": "6.0.1..8.3.8"
+					"versions": "6.0.1..8.3.7"
 				}
 			]
 		},
@@ -144,7 +144,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "2.6.12..8.3.7"
 				}
 			]
 		},
@@ -165,7 +165,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "2.6.12..8.3.7"
 				}
 			]
 		},
@@ -186,7 +186,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "2.6.12..8.3.7"
 				}
 			]
 		},
@@ -203,7 +203,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "2.6.12..8.3.7"
 				}
 			]
 		},
@@ -242,7 +242,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "2.6.12..8.3.7"
 				}
 			]
 		},
@@ -280,7 +280,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "2.6.12..8.3.7"
 				}
 			]
 		},
@@ -351,7 +351,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.0..8.3.7"
 				}
 			]
 		},
@@ -1038,7 +1038,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.0..8.3.7"
 				}
 			]
 		},
@@ -1079,7 +1079,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.0..8.3.7"
 				}
 			]
 		},
@@ -1120,7 +1120,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.0..8.3.7"
 				}
 			]
 		},
@@ -1161,7 +1161,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.0..8.3.7"
 				}
 			]
 		},
@@ -1202,7 +1202,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.0..8.3.7"
 				}
 			]
 		},
@@ -1243,7 +1243,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.0..8.3.7"
 				}
 			]
 		},
@@ -2008,6 +2008,417 @@
 				{
 					"documents": [],
 					"versions": "2.6.12..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "oOEBBOlQaW1v",
+			"query": {
+				"age.score": {}
+			},
+			"operators": [],
+			"results": [
+				{
+					"documents": [],
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "lqBycloGyGQV",
+			"query": {
+				"level": {
+					"$regex": {}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$regex",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "$regex has to be a string",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"error": {
+						"message": "$regex has to be a string",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.23..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "tYaAoM9MU3Rs",
+			"query": {
+				"status": {
+					"$regex": "Couple"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$regex",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "byuKDlZLS9ko",
+			"query": {
+				"status": {
+					"$regex": "Abundant",
+					"$options": "Most"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$regex",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						2
+					],
+					"versions": "3.3.15..5.0.33"
+				},
+				{
+					"error": {
+						"message": " invalid flag in regex options: M",
+						"code": 51108,
+						"type": "MongoServerError"
+					},
+					"versions": "6.0.28..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "lR7LDSOz6IZ5",
+			"query": {
+				"status": {
+					"$options": "Most",
+					"$regex": "Abundant"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$regex",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						2
+					],
+					"versions": "3.3.15..5.0.33"
+				},
+				{
+					"error": {
+						"message": " invalid flag in regex options: M",
+						"code": 51108,
+						"type": "MongoServerError"
+					},
+					"versions": "6.0.28..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "rj2FUF0xEoAx",
+			"query": {
+				"count": {}
+			},
+			"operators": [],
+			"results": [
+				{
+					"documents": [],
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "kWAwLFCzWCPI",
+			"query": {
+				"count": {
+					"$regex": "Much",
+					"$gte": "Each"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$regex",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "tFdHqtZ0vWeX",
+			"query": {
+				"count": {
+					"$gt": "Heavy",
+					"$regex": "Neither"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$gt",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "vULJwEkWyR5b",
+			"query": {
+				"status": {},
+				"step": {},
+				"priority": {},
+				"capacity": {},
+				"attempts": {}
+			},
+			"operators": [],
+			"results": [
+				{
+					"documents": [],
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "bMVt2lH2nTzD",
+			"query": {
+				"status": {},
+				"step": {}
+			},
+			"operators": [],
+			"results": [
+				{
+					"documents": [],
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "wztOCnOXdTYy",
+			"query": {
+				"count": {
+					"$regex": null,
+					"$gte": null
+				}
+			},
+			"operators": [
+				{
+					"operator": "$regex",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "$regex has to be a string",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"error": {
+						"message": "$regex has to be a string",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.23..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "wLROtdkXcK1f",
+			"query": {
+				"count": {
+					"$regex": 42,
+					"$gte": 42
+				}
+			},
+			"operators": [
+				{
+					"operator": "$regex",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "$regex has to be a string",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"error": {
+						"message": "$regex has to be a string",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.23..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "t0NWSwzMUrTx",
+			"query": {
+				"count": {
+					"$regex": true,
+					"$gte": true
+				}
+			},
+			"operators": [
+				{
+					"operator": "$regex",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "$regex has to be a string",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"error": {
+						"message": "$regex has to be a string",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.23..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "w1JdsZ3R8edK",
+			"query": {
+				"count": {
+					"$gt": null,
+					"$regex": null
+				}
+			},
+			"operators": [
+				{
+					"operator": "$gt",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "$regex has to be a string",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"error": {
+						"message": "$regex has to be a string",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.23..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "pYBcpCQgxYlu",
+			"query": {
+				"count": {
+					"$gt": 42,
+					"$regex": 42
+				}
+			},
+			"operators": [
+				{
+					"operator": "$gt",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "$regex has to be a string",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"error": {
+						"message": "$regex has to be a string",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.23..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "dNxfZ2QpQPHM",
+			"query": {
+				"count": {
+					"$gt": true,
+					"$regex": true
+				}
+			},
+			"operators": [
+				{
+					"operator": "$gt",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "$regex has to be a string",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"error": {
+						"message": "$regex has to be a string",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		}

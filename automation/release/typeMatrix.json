@@ -14589,6 +14589,178 @@
 			]
 		},
 		{
+			"id": "bt7uD0XnuXHI",
+			"query": {
+				"value": {
+					"$mod": [
+						"a",
+						0
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$mod",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue malformed mod, divisor not a number",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12..3.0.15"
+				},
+				{
+					"error": {
+						"message": "malformed mod, divisor not a number",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.2.6..3.5.13"
+				},
+				{
+					"error": {
+						"message": "malformed mod, divisor not a number",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "nXFUP5QxuUc8",
+			"query": {
+				"value": {
+					"$mod": [
+						2,
+						"a"
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$mod",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						2,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						15,
+						25,
+						33,
+						35,
+						37,
+						39,
+						41
+					],
+					"versions": "2.6.12..4.2.18"
+				},
+				{
+					"error": {
+						"message": "malformed mod, remainder not a number",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "4.2.19..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "oIoGDBP9yTJU",
+			"query": {
+				"value": {
+					"$mod": [
+						2
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$mod",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue malformed mod, not enough elements",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12..3.0.15"
+				},
+				{
+					"error": {
+						"message": "malformed mod, not enough elements",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.2.6..3.5.13"
+				},
+				{
+					"error": {
+						"message": "malformed mod, not enough elements",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "ts8kCCnDGrbi",
+			"query": {
+				"value": {
+					"$mod": 2
+				}
+			},
+			"operators": [
+				{
+					"operator": "$mod",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue malformed mod, needs to be an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12..3.0.15"
+				},
+				{
+					"error": {
+						"message": "malformed mod, needs to be an array",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.2.6..3.5.13"
+				},
+				{
+					"error": {
+						"message": "malformed mod, needs to be an array",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0..8.3.8"
+				}
+			]
+		},
+		{
 			"id": "p3PivGFDluQ4",
 			"query": {
 				"value": {
@@ -22038,178 +22210,6 @@
 						"type": "MongoServerError"
 					},
 					"versions": "6.0.28..8.3.8"
-				}
-			]
-		},
-		{
-			"id": "bt7uD0XnuXHI",
-			"query": {
-				"value": {
-					"$mod": [
-						"a",
-						0
-					]
-				}
-			},
-			"operators": [
-				{
-					"operator": "$mod",
-					"score": 1
-				}
-			],
-			"results": [
-				{
-					"error": {
-						"message": "Can't canonicalize query: BadValue malformed mod, divisor not a number",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
-						"message": "malformed mod, divisor not a number",
-						"code": 2,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.5.13"
-				},
-				{
-					"error": {
-						"message": "malformed mod, divisor not a number",
-						"code": 2,
-						"type": "MongoServerError"
-					},
-					"versions": "3.6.0..8.3.8"
-				}
-			]
-		},
-		{
-			"id": "nXFUP5QxuUc8",
-			"query": {
-				"value": {
-					"$mod": [
-						2,
-						"a"
-					]
-				}
-			},
-			"operators": [
-				{
-					"operator": "$mod",
-					"score": 1
-				}
-			],
-			"results": [
-				{
-					"documents": [
-						2,
-						5,
-						6,
-						7,
-						8,
-						9,
-						10,
-						11,
-						15,
-						25,
-						33,
-						35,
-						37,
-						39,
-						41
-					],
-					"versions": "2.6.12..4.2.18"
-				},
-				{
-					"error": {
-						"message": "malformed mod, remainder not a number",
-						"code": 2,
-						"type": "MongoServerError"
-					},
-					"versions": "4.2.19..8.3.8"
-				}
-			]
-		},
-		{
-			"id": "oIoGDBP9yTJU",
-			"query": {
-				"value": {
-					"$mod": [
-						2
-					]
-				}
-			},
-			"operators": [
-				{
-					"operator": "$mod",
-					"score": 1
-				}
-			],
-			"results": [
-				{
-					"error": {
-						"message": "Can't canonicalize query: BadValue malformed mod, not enough elements",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
-						"message": "malformed mod, not enough elements",
-						"code": 2,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.5.13"
-				},
-				{
-					"error": {
-						"message": "malformed mod, not enough elements",
-						"code": 2,
-						"type": "MongoServerError"
-					},
-					"versions": "3.6.0..8.3.8"
-				}
-			]
-		},
-		{
-			"id": "ts8kCCnDGrbi",
-			"query": {
-				"value": {
-					"$mod": 2
-				}
-			},
-			"operators": [
-				{
-					"operator": "$mod",
-					"score": 1
-				}
-			],
-			"results": [
-				{
-					"error": {
-						"message": "Can't canonicalize query: BadValue malformed mod, needs to be an array",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
-						"message": "malformed mod, needs to be an array",
-						"code": 2,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.5.13"
-				},
-				{
-					"error": {
-						"message": "malformed mod, needs to be an array",
-						"code": 2,
-						"type": "MongoServerError"
-					},
-					"versions": "3.6.0..8.3.8"
 				}
 			]
 		}

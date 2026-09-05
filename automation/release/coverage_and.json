@@ -514,7 +514,7 @@
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+					"versions": "3.2.6..3.2.13,3.3.6..3.3.14,3.4.0..3.4.5,3.5.5"
 				},
 				{
 					"error": {
@@ -523,6 +523,14 @@
 						"type": "MongoError"
 					},
 					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+				},
+				{
+					"error": {
+						"message": "ReferenceError: Double is not defined :\n_funcs2@:1:24\n",
+						"code": 139,
+						"type": "MongoError"
+					},
+					"versions": "3.3.15"
 				},
 				{
 					"error": {
@@ -5636,7 +5644,15 @@
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+					"versions": "3.2.6..3.2.13,3.3.6..3.3.14,3.4.0..3.4.5,3.5.5"
+				},
+				{
+					"error": {
+						"message": "ReferenceError: Couple is not defined :\n_funcs2@:1:24\n",
+						"code": 139,
+						"type": "MongoError"
+					},
+					"versions": "3.3.15"
 				},
 				{
 					"error": {
@@ -10838,6 +10854,104 @@
 						4
 					],
 					"versions": "2.6.12..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "nSKd1V6kDcf2",
+			"query": {
+				"title": {
+					"$not": {}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$not",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "$not cannot be empty",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"error": {
+						"message": "$not cannot be empty",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.23..7.0.40"
+				},
+				{
+					"error": {
+						"message": "$not argument must be a non-empty object",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "8.0.29..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "h1IGM7GQSUGV",
+			"query": {
+				"title": 26
+			},
+			"operators": [],
+			"results": [
+				{
+					"documents": [
+						3
+					],
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "qHPCvKg41n4Y",
+			"query": {
+				"title": null
+			},
+			"operators": [],
+			"results": [
+				{
+					"documents": [
+						0,
+						1,
+						2
+					],
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "vZibMJVClQeK",
+			"query": {
+				"title": "value"
+			},
+			"operators": [],
+			"results": [
+				{
+					"documents": [],
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "c6THdYUrGeAg",
+			"query": {
+				"title": true
+			},
+			"operators": [],
+			"results": [
+				{
+					"documents": [],
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		}
