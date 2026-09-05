@@ -14288,6 +14288,707 @@
 			]
 		},
 		{
+			"id": "rv65PBEeaXLE",
+			"query": {
+				"value": {
+					"$bitsAllClear": 0
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						3,
+						4,
+						10,
+						11,
+						15,
+						16,
+						25,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "p8XUlILefJyi",
+			"query": {
+				"value": {
+					"$bitsAllSet": 0
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllSet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllSet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						3,
+						4,
+						10,
+						11,
+						15,
+						16,
+						25,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "mAHI6kGKrMrf",
+			"query": {
+				"value": {
+					"$bitsAnyClear": 0
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnyClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnyClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "wrPhIO9ukcW3",
+			"query": {
+				"value": {
+					"$bitsAnySet": 0
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnySet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnySet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "olXJrmchKdll",
+			"query": {
+				"value": {
+					"$bitsAllClear": 1
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						10,
+						11,
+						15,
+						25,
+						33,
+						35,
+						37,
+						39,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "oRSACit7n2VT",
+			"query": {
+				"value": {
+					"$bitsAllSet": 1
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllSet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllSet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						3,
+						4,
+						15,
+						16,
+						25,
+						31,
+						32,
+						34,
+						36,
+						38,
+						40
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "dvMqwK6C0l0B",
+			"query": {
+				"value": {
+					"$bitsAnyClear": 1
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnyClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnyClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						10,
+						11,
+						15,
+						25,
+						33,
+						35,
+						37,
+						39,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "wfvxYxsfQa9w",
+			"query": {
+				"value": {
+					"$bitsAnySet": 1
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnySet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnySet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						3,
+						4,
+						15,
+						16,
+						25,
+						31,
+						32,
+						34,
+						36,
+						38,
+						40
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "d7Nnp8AD07Js",
+			"query": {
+				"value": {
+					"$bitsAllClear": 2
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						3,
+						10,
+						11,
+						15,
+						16,
+						25,
+						31,
+						32,
+						35,
+						36,
+						39,
+						40
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "heMK5WLsvfUh",
+			"query": {
+				"value": {
+					"$bitsAllSet": 2
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllSet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllSet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						4,
+						15,
+						25,
+						33,
+						34,
+						37,
+						38,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "sDQTjE2rX0Ed",
+			"query": {
+				"value": {
+					"$bitsAnyClear": 2
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnyClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnyClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						3,
+						10,
+						11,
+						15,
+						16,
+						25,
+						31,
+						32,
+						35,
+						36,
+						39,
+						40
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "eS0vB5LzPV1J",
+			"query": {
+				"value": {
+					"$bitsAnySet": 2
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnySet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnySet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						4,
+						15,
+						25,
+						33,
+						34,
+						37,
+						38,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "qbHnCD2lOOO4",
+			"query": {
+				"value": {
+					"$bitsAllClear": 3
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						10,
+						11,
+						35,
+						39
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "uriJBzKNbcqP",
+			"query": {
+				"value": {
+					"$bitsAllSet": 3
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllSet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllSet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						4,
+						15,
+						25,
+						34,
+						38
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "sGsIdwRCTAvQ",
+			"query": {
+				"value": {
+					"$bitsAnyClear": 3
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnyClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnyClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						3,
+						10,
+						11,
+						15,
+						16,
+						25,
+						31,
+						32,
+						33,
+						35,
+						36,
+						37,
+						39,
+						40,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "soPxS86B1XT8",
+			"query": {
+				"value": {
+					"$bitsAnySet": 3
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnySet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnySet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						3,
+						4,
+						15,
+						16,
+						25,
+						31,
+						32,
+						33,
+						34,
+						36,
+						37,
+						38,
+						40,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "tClWBir4wHDX",
+			"query": {
+				"value": {
+					"$bitsAllClear": 4
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						3,
+						10,
+						11,
+						15,
+						16,
+						25,
+						31,
+						32,
+						33,
+						34,
+						39,
+						40,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "mHBWMwBrU8vP",
+			"query": {
+				"value": {
+					"$bitsAllSet": 4
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllSet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllSet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						4,
+						35,
+						36,
+						37,
+						38
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
 			"id": "j0rRY1ROtiiG",
 			"query": {
 				"value": {
@@ -14398,6 +15099,37 @@
 			]
 		},
 		{
+			"id": "sXjoFXvsoTZj",
+			"query": {
+				"value": {
+					"$bitsAllSet": 7
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllSet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllSet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						4,
+						38
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
 			"id": "davwmtu2U3SW",
 			"query": {
 				"value": {
@@ -14488,6 +15220,83 @@
 			]
 		},
 		{
+			"id": "tZGULBRyAs3f",
+			"query": {
+				"value": {
+					"$bitsAllClear": 8
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						3,
+						10,
+						11,
+						15,
+						16,
+						25,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "eHLtS7uvV7kR",
+			"query": {
+				"value": {
+					"$bitsAllSet": 8
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllSet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllSet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						4,
+						39,
+						40,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
 			"id": "udPKsMAJQK2P",
 			"query": {
 				"value": {
@@ -14560,6 +15369,1070 @@
 						40,
 						41
 					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "nGVXGKRO0fBf",
+			"query": {
+				"value": {
+					"$bitsAllClear": 15
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						10,
+						11
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "guviSW6ys8QN",
+			"query": {
+				"value": {
+					"$bitsAllSet": 15
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllSet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllSet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						4
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "a1UAoFfFXAoV",
+			"query": {
+				"value": {
+					"$bitsAnyClear": 15
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnyClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnyClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						3,
+						10,
+						11,
+						15,
+						16,
+						25,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "pfSSCxHC3L67",
+			"query": {
+				"value": {
+					"$bitsAnySet": 15
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnySet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnySet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						3,
+						4,
+						15,
+						16,
+						25,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "gMECKtFHQIJx",
+			"query": {
+				"value": {
+					"$bitsAllClear": -1
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
+						"message": "value cannot take a negative number: $bitsAllClear: -1",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.2.21..3.5.8"
+				},
+				{
+					"error": {
+						"message": "Expected a positive number in: $bitsAllClear: -1",
+						"code": 9,
+						"type": "MongoError"
+					},
+					"versions": "3.5.10,3.5.13"
+				},
+				{
+					"error": {
+						"message": "Expected a positive number in: $bitsAllClear: -1",
+						"code": 9,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0..5.0.33"
+				},
+				{
+					"error": {
+						"message": "Expected a non-negative number in: $bitsAllClear: -1",
+						"code": 9,
+						"type": "MongoServerError"
+					},
+					"versions": "6.0.1..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "wQCYNKFVXo9W",
+			"query": {
+				"value": {
+					"$bitsAllSet": -1
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllSet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllSet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
+						"message": "value cannot take a negative number: $bitsAllSet: -1",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.2.21..3.5.8"
+				},
+				{
+					"error": {
+						"message": "Expected a positive number in: $bitsAllSet: -1",
+						"code": 9,
+						"type": "MongoError"
+					},
+					"versions": "3.5.10,3.5.13"
+				},
+				{
+					"error": {
+						"message": "Expected a positive number in: $bitsAllSet: -1",
+						"code": 9,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0..5.0.33"
+				},
+				{
+					"error": {
+						"message": "Expected a non-negative number in: $bitsAllSet: -1",
+						"code": 9,
+						"type": "MongoServerError"
+					},
+					"versions": "6.0.1..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "v77yjfV0Y87k",
+			"query": {
+				"value": {
+					"$bitsAnyClear": -1
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnyClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnyClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
+						"message": "value cannot take a negative number: $bitsAnyClear: -1",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.2.21..3.5.8"
+				},
+				{
+					"error": {
+						"message": "Expected a positive number in: $bitsAnyClear: -1",
+						"code": 9,
+						"type": "MongoError"
+					},
+					"versions": "3.5.10,3.5.13"
+				},
+				{
+					"error": {
+						"message": "Expected a positive number in: $bitsAnyClear: -1",
+						"code": 9,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0..5.0.33"
+				},
+				{
+					"error": {
+						"message": "Expected a non-negative number in: $bitsAnyClear: -1",
+						"code": 9,
+						"type": "MongoServerError"
+					},
+					"versions": "6.0.1..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "ngxy60auVWp6",
+			"query": {
+				"value": {
+					"$bitsAnySet": -1
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnySet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnySet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
+						"message": "value cannot take a negative number: $bitsAnySet: -1",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.2.21..3.5.8"
+				},
+				{
+					"error": {
+						"message": "Expected a positive number in: $bitsAnySet: -1",
+						"code": 9,
+						"type": "MongoError"
+					},
+					"versions": "3.5.10,3.5.13"
+				},
+				{
+					"error": {
+						"message": "Expected a positive number in: $bitsAnySet: -1",
+						"code": 9,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0..5.0.33"
+				},
+				{
+					"error": {
+						"message": "Expected a non-negative number in: $bitsAnySet: -1",
+						"code": 9,
+						"type": "MongoServerError"
+					},
+					"versions": "6.0.1..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "teoIk0AEHfWC",
+			"query": {
+				"value": {
+					"$bitsAllClear": [
+						0
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						10,
+						11,
+						15,
+						25,
+						33,
+						35,
+						37,
+						39,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "mmbQ7C7mQjOg",
+			"query": {
+				"value": {
+					"$bitsAllSet": [
+						0
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllSet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllSet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						3,
+						4,
+						15,
+						16,
+						25,
+						31,
+						32,
+						34,
+						36,
+						38,
+						40
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "inBwAOANRbwt",
+			"query": {
+				"value": {
+					"$bitsAnyClear": [
+						0
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnyClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnyClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						10,
+						11,
+						15,
+						25,
+						33,
+						35,
+						37,
+						39,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "p9T4dPVBVTZe",
+			"query": {
+				"value": {
+					"$bitsAnySet": [
+						0
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnySet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnySet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						3,
+						4,
+						15,
+						16,
+						25,
+						31,
+						32,
+						34,
+						36,
+						38,
+						40
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "wDSvZveyKCXu",
+			"query": {
+				"value": {
+					"$bitsAllClear": [
+						0,
+						1
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						10,
+						11,
+						35,
+						39
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "jECOM8IMVEZH",
+			"query": {
+				"value": {
+					"$bitsAllSet": [
+						0,
+						1
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllSet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllSet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						4,
+						15,
+						25,
+						34,
+						38
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "hSqUzAZBcO6G",
+			"query": {
+				"value": {
+					"$bitsAnyClear": [
+						0,
+						1
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnyClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnyClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						3,
+						10,
+						11,
+						15,
+						16,
+						25,
+						31,
+						32,
+						33,
+						35,
+						36,
+						37,
+						39,
+						40,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "a4dAHnXEtMGZ",
+			"query": {
+				"value": {
+					"$bitsAnySet": [
+						0,
+						1
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnySet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnySet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						3,
+						4,
+						15,
+						16,
+						25,
+						31,
+						32,
+						33,
+						34,
+						36,
+						37,
+						38,
+						40,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "rZVmoJwwQOXP",
+			"query": {
+				"value": {
+					"$bitsAllClear": [
+						-1
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
+						"message": "bit positions must be >= 0 but got: 0: -1",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.2.21..3.5.13"
+				},
+				{
+					"error": {
+						"message": "bit positions must be >= 0 but got: 0: -1",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0..5.0.33"
+				},
+				{
+					"error": {
+						"message": "Failed to parse bit position. Expected a non-negative number in: 0: -1",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "6.0.1..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "hsIyzyKMHJMd",
+			"query": {
+				"value": {
+					"$bitsAllSet": [
+						-1
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllSet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllSet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
+						"message": "bit positions must be >= 0 but got: 0: -1",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.2.21..3.5.13"
+				},
+				{
+					"error": {
+						"message": "bit positions must be >= 0 but got: 0: -1",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0..5.0.33"
+				},
+				{
+					"error": {
+						"message": "Failed to parse bit position. Expected a non-negative number in: 0: -1",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "6.0.1..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "m1Gj0ie0xM2B",
+			"query": {
+				"value": {
+					"$bitsAnyClear": [
+						-1
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnyClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnyClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
+						"message": "bit positions must be >= 0 but got: 0: -1",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.2.21..3.5.13"
+				},
+				{
+					"error": {
+						"message": "bit positions must be >= 0 but got: 0: -1",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0..5.0.33"
+				},
+				{
+					"error": {
+						"message": "Failed to parse bit position. Expected a non-negative number in: 0: -1",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "6.0.1..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "oK6WVXUGpL8i",
+			"query": {
+				"value": {
+					"$bitsAnySet": [
+						-1
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnySet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnySet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
+						"message": "bit positions must be >= 0 but got: 0: -1",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.2.21..3.5.13"
+				},
+				{
+					"error": {
+						"message": "bit positions must be >= 0 but got: 0: -1",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0..5.0.33"
+				},
+				{
+					"error": {
+						"message": "Failed to parse bit position. Expected a non-negative number in: 0: -1",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "6.0.1..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "jEGrcqoxxgSE",
+			"query": {
+				"value": {
+					"$bitsAllClear": []
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						3,
+						4,
+						10,
+						11,
+						15,
+						16,
+						25,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "cF1scfhEW2UW",
+			"query": {
+				"value": {
+					"$bitsAllSet": []
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllSet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllSet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						3,
+						4,
+						10,
+						11,
+						15,
+						16,
+						25,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "rhnWzPaANu8W",
+			"query": {
+				"value": {
+					"$bitsAnyClear": []
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnyClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnyClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "sPlzXusQxndo",
+			"query": {
+				"value": {
+					"$bitsAnySet": []
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAnySet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnySet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [],
 					"versions": "3.2.21..8.3.8"
 				}
 			]
@@ -18731,6 +20604,89 @@
 						"type": "MongoServerError"
 					},
 					"versions": "6.0.1..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "r6XKUqveAZhw",
+			"query": {
+				"value": {
+					"$bitsAllClear": [
+						1
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllClear",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllClear",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						2,
+						3,
+						10,
+						11,
+						15,
+						16,
+						25,
+						31,
+						32,
+						35,
+						36,
+						39,
+						40
+					],
+					"versions": "3.2.21..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "tX4v6w6kVnUC",
+			"query": {
+				"value": {
+					"$bitsAllSet": [
+						1
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$bitsAllSet",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllSet",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"documents": [
+						4,
+						15,
+						25,
+						33,
+						34,
+						37,
+						38,
+						41
+					],
+					"versions": "3.2.21..8.3.8"
 				}
 			]
 		},
@@ -23502,6 +25458,245 @@
 						"type": "MongoServerError"
 					},
 					"versions": "6.0.1..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "mAOxWZUzWSEv",
+			"query": {
+				"value": {
+					"$mod": [
+						2,
+						0
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$mod",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						2,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						15,
+						25,
+						33,
+						35,
+						37,
+						39,
+						41
+					],
+					"versions": "2.6.12..4.4.7,5.0.0"
+				},
+				{
+					"documents": [
+						2,
+						5,
+						6,
+						10,
+						11,
+						15,
+						25,
+						33,
+						35,
+						37,
+						39,
+						41
+					],
+					"versions": "4.4.11..4.4.30,5.0.4..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "vqirkCcAD94B",
+			"query": {
+				"value": {
+					"$mod": [
+						2,
+						1
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$mod",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						3,
+						15,
+						16,
+						25,
+						31,
+						32,
+						34,
+						36,
+						38,
+						40
+					],
+					"versions": "2.6.12..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "mjDLCHwkYiXN",
+			"query": {
+				"value": {
+					"$mod": [
+						3,
+						0
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$mod",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						2,
+						5,
+						6,
+						15,
+						25,
+						34,
+						37,
+						40
+					],
+					"versions": "2.6.12..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "uJH622yTRmHN",
+			"query": {
+				"value": {
+					"$mod": [
+						1,
+						0
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$mod",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						15,
+						16,
+						25,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41
+					],
+					"versions": "2.6.12..4.4.7,5.0.0"
+				},
+				{
+					"documents": [
+						2,
+						3,
+						4,
+						5,
+						6,
+						10,
+						11,
+						15,
+						16,
+						25,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41
+					],
+					"versions": "4.4.11..4.4.30,5.0.4..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "oTx2K6sBhH06",
+			"query": {
+				"value": {
+					"$mod": [
+						0,
+						0
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$mod",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "Can't canonicalize query: BadValue divisor cannot be 0",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
+						"message": "divisor cannot be 0",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.2.21..3.5.13"
+				},
+				{
+					"error": {
+						"message": "divisor cannot be 0",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.0..8.3.8"
 				}
 			]
 		},

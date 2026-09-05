@@ -309,6 +309,84 @@
 			]
 		},
 		{
+			"id": "kfGZKcGZ72Sg",
+			"query": {
+				"age": {
+					"$ne": null
+				}
+			},
+			"operators": [
+				{
+					"operator": "$ne",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"versions": "2.6.12..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "qYlS2PNwrT6y",
+			"query": {
+				"age": {
+					"$ne": "value"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$ne",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						0
+					],
+					"versions": "2.6.12..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "gWFjzWbGg8tK",
+			"query": {
+				"age": {
+					"$ne": true
+				}
+			},
+			"operators": [
+				{
+					"operator": "$ne",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						0
+					],
+					"versions": "2.6.12..8.3.8"
+				}
+			]
+		},
+		{
 			"id": "mAcxmXOff8WI",
 			"query": {
 				"scores": {
@@ -328,7 +406,7 @@
 						"code": 17287,
 						"type": "MongoError"
 					},
-					"versions": "2.6.12..3.0.15"
+					"versions": "2.6.12,3.0.15"
 				},
 				{
 					"error": {
@@ -336,7 +414,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -345,13 +423,6 @@
 						"type": "MongoServerError"
 					},
 					"versions": "3.6.0..8.3.8"
-				},
-				{
-					"error": {
-						"message": "connect ECONNREFUSED 127.0.0.1:27017",
-						"type": "MongoServerSelectionError"
-					},
-					"versions": "3.7.3,3.7.9,4.0.0,4.1.1"
 				}
 			]
 		},

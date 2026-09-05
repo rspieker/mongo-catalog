@@ -963,7 +963,7 @@
 						"code": 17287,
 						"type": "MongoError"
 					},
-					"versions": "2.6.12..3.0.15"
+					"versions": "2.6.12,3.0.15"
 				},
 				{
 					"error": {
@@ -971,7 +971,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -1036,6 +1036,23 @@
 						"type": "MongoServerError"
 					},
 					"versions": "8.0.0..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "oOz0ewr8TCOK",
+			"query": {},
+			"operators": [],
+			"results": [
+				{
+					"documents": [
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -4858,7 +4875,7 @@
 						"code": 17287,
 						"type": "MongoError"
 					},
-					"versions": "2.6.12..3.0.15"
+					"versions": "2.6.12,3.0.15"
 				},
 				{
 					"error": {
@@ -4866,7 +4883,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.2.21"
+					"versions": "3.2.21"
 				},
 				{
 					"error": {
@@ -6505,6 +6522,68 @@
 			]
 		},
 		{
+			"id": "bAAsGLvGUZn2",
+			"query": {
+				"title": {
+					"$lt": null
+				}
+			},
+			"operators": [
+				{
+					"operator": "$lt",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"versions": "2.6.12..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "hM4nSIsytL1G",
+			"query": {
+				"title": {
+					"$lt": "value"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$lt",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						4
+					],
+					"versions": "2.6.12..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "ssNxJPADP80l",
+			"query": {
+				"title": {
+					"$lt": true
+				}
+			},
+			"operators": [
+				{
+					"operator": "$lt",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"versions": "2.6.12..8.3.8"
+				}
+			]
+		},
+		{
 			"id": "oKVnuQkLqtU1",
 			"query": {
 				"$or": [
@@ -6948,6 +7027,66 @@
 				{
 					"operator": "$lt",
 					"score": 0.563
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"versions": "2.6.12..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "s6DvitMDNf3j",
+			"query": {
+				"title": {
+					"$gt": null
+				}
+			},
+			"operators": [
+				{
+					"operator": "$gt",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"versions": "2.6.12..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "qUlCQN4ec0WH",
+			"query": {
+				"title": {
+					"$gt": "value"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$gt",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"versions": "2.6.12..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "ptQ4OaJ4RUeU",
+			"query": {
+				"title": {
+					"$gt": true
+				}
+			},
+			"operators": [
+				{
+					"operator": "$gt",
+					"score": 1
 				}
 			],
 			"results": [
