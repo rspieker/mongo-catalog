@@ -96,7 +96,7 @@
 						6,
 						0
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -124,7 +124,7 @@
 						5,
 						6
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -144,7 +144,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -164,7 +164,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -194,7 +194,7 @@
 						3,
 						4
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -228,7 +228,7 @@
 						3,
 						4
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -264,7 +264,7 @@
 						3,
 						4
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -304,7 +304,7 @@
 						3,
 						4
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -383,7 +383,7 @@
 						5,
 						6
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -415,7 +415,7 @@
 						5,
 						6
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -447,7 +447,7 @@
 						5,
 						6
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -473,11 +473,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -521,7 +529,7 @@
 						5,
 						6
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -557,7 +565,7 @@
 						5,
 						6
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -593,7 +601,7 @@
 						5,
 						6
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -619,11 +627,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $elemMatch needs an Object",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$elemMatch needs an Object",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -669,7 +685,7 @@
 						5,
 						6
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -707,7 +723,7 @@
 						5,
 						6
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -745,7 +761,7 @@
 						5,
 						6
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -775,11 +791,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -829,7 +853,7 @@
 						5,
 						6
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -871,7 +895,7 @@
 						5,
 						6
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -913,7 +937,7 @@
 						5,
 						6
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		}

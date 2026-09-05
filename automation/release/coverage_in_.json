@@ -180,7 +180,7 @@
 					"documents": [
 						0
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -204,7 +204,7 @@
 					"documents": [
 						0
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -224,7 +224,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -247,7 +247,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -269,11 +269,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -301,11 +309,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -342,7 +358,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -365,7 +381,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -405,7 +421,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -422,7 +438,7 @@
 					"documents": [
 						2
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -448,7 +464,7 @@
 					"documents": [
 						2
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -477,7 +493,7 @@
 					"documents": [
 						2
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -502,7 +518,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -519,7 +535,7 @@
 					"documents": [
 						3
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -545,7 +561,7 @@
 					"documents": [
 						3
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -560,7 +576,7 @@
 					"documents": [
 						5
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -575,7 +591,7 @@
 					"documents": [
 						6
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -593,7 +609,7 @@
 					"documents": [
 						11
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -620,7 +636,7 @@
 					"documents": [
 						11
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -645,7 +661,7 @@
 					"documents": [
 						11
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -661,7 +677,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -686,7 +702,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -709,7 +725,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -761,7 +777,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -787,11 +803,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -831,11 +855,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -869,11 +901,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -913,11 +953,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -951,7 +999,7 @@
 						13,
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -977,7 +1025,7 @@
 						13,
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1004,7 +1052,7 @@
 						13,
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1032,7 +1080,7 @@
 						13,
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1060,7 +1108,7 @@
 						13,
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1088,7 +1136,7 @@
 						13,
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1117,7 +1165,7 @@
 						13,
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1146,7 +1194,7 @@
 						13,
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1172,7 +1220,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1197,7 +1245,7 @@
 					"documents": [
 						21
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1222,7 +1270,7 @@
 					"documents": [
 						21
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1249,7 +1297,7 @@
 					"documents": [
 						21
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1279,7 +1327,7 @@
 					"documents": [
 						23
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1302,7 +1350,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1326,7 +1374,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1351,7 +1399,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1377,7 +1425,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1402,7 +1450,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1429,7 +1477,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1455,7 +1503,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1480,7 +1528,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1503,7 +1551,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1526,7 +1574,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1556,7 +1604,7 @@
 						26,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1588,7 +1636,7 @@
 						26,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1614,7 +1662,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1640,7 +1688,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1671,7 +1719,7 @@
 					"documents": [
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1702,7 +1750,7 @@
 					"documents": [
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1727,7 +1775,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1750,7 +1798,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1773,7 +1821,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1794,11 +1842,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -1829,7 +1885,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1852,7 +1908,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1875,7 +1931,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -1897,11 +1953,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -1931,11 +1995,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -1965,11 +2037,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -1997,11 +2077,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -2029,11 +2117,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -2061,11 +2157,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -2096,11 +2200,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -2166,7 +2278,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -2195,7 +2307,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -2224,7 +2336,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -2333,7 +2445,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -2373,7 +2485,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -2413,7 +2525,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -2482,7 +2594,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -2522,7 +2634,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -2562,7 +2674,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -2577,7 +2689,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -2592,7 +2704,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -2607,7 +2719,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -2631,7 +2743,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -2655,7 +2767,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -2679,7 +2791,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -2702,11 +2814,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -2741,7 +2861,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -2768,7 +2888,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -2795,7 +2915,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -2816,11 +2936,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -2853,11 +2981,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $type has to be a number",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "argument to $type is not a number or a string",
 						"code": 14,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15,3.4.24"
+					"versions": "3.2.21..3.4.24"
 				},
 				{
 					"error": {
@@ -2898,11 +3034,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $type has to be a number",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "unknown string alias for $type: value",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15,3.4.24"
+					"versions": "3.2.21..3.4.24"
 				},
 				{
 					"error": {
@@ -2943,11 +3087,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $type has to be a number",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "argument to $type is not a number or a string",
 						"code": 14,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15,3.4.24"
+					"versions": "3.2.21..3.4.24"
 				},
 				{
 					"error": {
@@ -2988,7 +3140,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3013,7 +3165,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3038,7 +3190,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3053,7 +3205,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3077,7 +3229,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3093,7 +3245,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3109,7 +3261,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3125,7 +3277,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3145,11 +3297,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -3182,7 +3342,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3207,7 +3367,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3232,7 +3392,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3253,11 +3413,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -3317,7 +3485,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3340,7 +3508,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3363,7 +3531,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3379,7 +3547,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3395,7 +3563,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3411,7 +3579,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3431,11 +3599,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -3468,7 +3644,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3493,7 +3669,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3518,7 +3694,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3539,11 +3715,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -3604,7 +3788,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3627,7 +3811,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3650,7 +3834,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -3670,11 +3854,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -3702,11 +3894,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -3738,11 +3938,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -3776,11 +3984,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -3814,11 +4030,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -3852,11 +4076,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -3890,11 +4122,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -3932,11 +4172,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -3976,11 +4224,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -4020,11 +4276,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -4064,11 +4328,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -4096,11 +4368,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $nin needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$nin needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -4132,11 +4412,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -4170,11 +4458,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -4208,11 +4504,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -4246,11 +4550,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -4284,11 +4596,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $nin needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$nin needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -4326,11 +4646,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -4370,11 +4698,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -4414,11 +4750,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -4458,11 +4802,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue cannot nest $ under $in",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "cannot nest $ under $in",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -4490,11 +4842,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -4553,7 +4913,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -4578,7 +4938,7 @@
 					"documents": [
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -4603,7 +4963,7 @@
 					"documents": [
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -4654,7 +5014,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -4679,7 +5039,7 @@
 					"documents": [
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -4704,7 +5064,7 @@
 					"documents": [
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -4756,7 +5116,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -4782,7 +5142,7 @@
 					"documents": [
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -4808,7 +5168,7 @@
 					"documents": [
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -4861,7 +5221,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -4888,7 +5248,7 @@
 					"documents": [
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -4915,7 +5275,7 @@
 					"documents": [
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -4968,7 +5328,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -4995,7 +5355,7 @@
 					"documents": [
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5022,7 +5382,7 @@
 					"documents": [
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5075,7 +5435,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5102,7 +5462,7 @@
 					"documents": [
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5129,7 +5489,7 @@
 					"documents": [
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5183,7 +5543,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5211,7 +5571,7 @@
 					"documents": [
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5239,7 +5599,7 @@
 					"documents": [
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5293,7 +5653,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5321,7 +5681,7 @@
 					"documents": [
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5349,7 +5709,7 @@
 					"documents": [
 						15
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5369,11 +5729,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -5407,7 +5775,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5433,7 +5801,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5459,7 +5827,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5479,11 +5847,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -5538,7 +5914,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5561,7 +5937,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5584,7 +5960,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5631,7 +6007,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5654,7 +6030,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5677,7 +6053,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5702,7 +6078,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5727,7 +6103,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5752,7 +6128,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5780,7 +6156,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5808,7 +6184,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5836,7 +6212,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5856,11 +6232,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -5921,7 +6305,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5944,7 +6328,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -5967,7 +6351,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6021,7 +6405,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6045,7 +6429,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6069,7 +6453,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6124,7 +6508,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6149,7 +6533,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6174,7 +6558,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6230,7 +6614,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6256,7 +6640,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6282,7 +6666,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6337,7 +6721,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6362,7 +6746,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6387,7 +6771,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6444,7 +6828,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6471,7 +6855,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6498,7 +6882,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6555,7 +6939,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6582,7 +6966,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6609,7 +6993,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6665,7 +7049,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6691,7 +7075,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6717,7 +7101,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6773,7 +7157,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6799,7 +7183,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6825,7 +7209,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6880,7 +7264,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6905,7 +7289,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6930,7 +7314,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -6985,7 +7369,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7010,7 +7394,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7035,7 +7419,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7088,7 +7472,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7111,7 +7495,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7134,7 +7518,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7187,7 +7571,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7210,7 +7594,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7233,7 +7617,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7286,7 +7670,7 @@
 						27,
 						28
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7309,7 +7693,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7332,7 +7716,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7352,11 +7736,19 @@
 			"results": [
 				{
 					"error": {
+						"message": "Can't canonicalize query: BadValue $in needs an array",
+						"code": 17287,
+						"type": "MongoError"
+					},
+					"versions": "2.6.12,3.0.15"
+				},
+				{
+					"error": {
 						"message": "$in needs an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.15..3.5.13"
+					"versions": "3.2.21..3.5.13"
 				},
 				{
 					"error": {
@@ -7416,7 +7808,7 @@
 						23,
 						27
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7442,7 +7834,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7468,7 +7860,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7497,7 +7889,7 @@
 						24,
 						26
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7526,7 +7918,7 @@
 						24,
 						26
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7555,7 +7947,7 @@
 						24,
 						26
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7584,7 +7976,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7613,7 +8005,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7642,7 +8034,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7673,7 +8065,7 @@
 					"documents": [
 						26
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7704,7 +8096,7 @@
 					"documents": [
 						26
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7735,7 +8127,7 @@
 					"documents": [
 						26
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7761,7 +8153,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7787,7 +8179,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7813,7 +8205,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7839,7 +8231,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7865,7 +8257,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7891,7 +8283,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7917,7 +8309,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7943,7 +8335,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -7969,7 +8361,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -8021,7 +8413,7 @@
 						23,
 						27
 					],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -8047,7 +8439,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -8073,7 +8465,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -8102,7 +8494,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -8131,7 +8523,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -8160,7 +8552,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -8189,7 +8581,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -8218,7 +8610,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -8247,7 +8639,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -8276,7 +8668,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -8305,7 +8697,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -8334,7 +8726,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -8359,7 +8751,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -8384,7 +8776,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -8409,7 +8801,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -8434,7 +8826,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -8459,7 +8851,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		},
@@ -8484,7 +8876,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "3.3.15..8.3.8"
+					"versions": "2.6.12..8.3.8"
 				}
 			]
 		}
