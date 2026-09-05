@@ -1,6 +1,7 @@
 import {
     ALL_VALUES,
     NUMBER_RANGE,
+    SCALAR_VALUES,
     STRING_RANGE,
 } from '../../source/domain/generator/type-matrix';
 import { Catalog, MongoDocument } from '../catalog';
@@ -126,6 +127,10 @@ const BIT_OPERANDS: ReadonlyArray<unknown> = [
     [0, 1],
     [-1],
     [],
+    // Adversarial BSON values as both a bare mask and a single-element
+    // position array
+    ...SCALAR_VALUES,
+    ...SCALAR_VALUES.map((value) => [value]),
 ];
 const bitwiseOperations = BIT_OPERANDS.flatMap((operand) => [
     { value: { $bitsAllClear: operand } },
