@@ -13120,7 +13120,7 @@
 						30,
 						31
 					],
-					"versions": "3.5.8..8.3.8"
+					"versions": "3.5.7..8.3.8"
 				}
 			]
 		},
@@ -13257,6 +13257,14 @@
 						"type": "MongoError"
 					},
 					"versions": "3.2.21..3.5.10"
+				},
+				{
+					"error": {
+						"message": "Unknown string alias for $type: regexp",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.5.11"
 				},
 				{
 					"error": {
@@ -13431,7 +13439,7 @@
 						30,
 						31
 					],
-					"versions": "3.5.8..8.3.8"
+					"versions": "3.5.7..8.3.8"
 				}
 			]
 		},
@@ -13546,7 +13554,7 @@
 						"code": 14,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.10"
+					"versions": "3.2.21..3.5.11"
 				},
 				{
 					"documents": [
@@ -13621,6 +13629,14 @@
 				},
 				{
 					"error": {
+						"message": "Unknown string alias for $type: not-a-real-type",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.5.11"
+				},
+				{
+					"error": {
 						"message": "Unknown type name alias: not-a-real-type",
 						"code": 2,
 						"type": "MongoError"
@@ -13661,7 +13677,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.10"
+					"versions": "3.2.21..3.5.11"
 				},
 				{
 					"error": {
@@ -15555,7 +15571,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -15563,7 +15579,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -15611,7 +15627,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -15619,7 +15635,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -15667,7 +15683,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -15675,7 +15691,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -15723,7 +15739,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -15731,7 +15747,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -16785,7 +16801,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -16793,7 +16809,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -16833,7 +16849,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -16841,7 +16857,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -16881,7 +16897,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -16889,7 +16905,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -16929,7 +16945,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -16937,7 +16953,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -16977,7 +16993,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -16985,7 +17001,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -17025,7 +17041,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -17033,7 +17049,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -17073,7 +17089,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -17081,7 +17097,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -17121,7 +17137,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -17129,7 +17145,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -17169,7 +17185,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -17177,7 +17193,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -17225,7 +17241,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -17233,7 +17249,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -17281,7 +17297,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -17289,7 +17305,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -17337,7 +17353,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -17345,7 +17361,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -17393,7 +17409,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -17401,7 +17417,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -17449,7 +17465,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -17457,7 +17473,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -17505,7 +17521,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -17513,7 +17529,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -17561,7 +17577,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -17569,7 +17585,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -17617,7 +17633,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -17625,7 +17641,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -17673,7 +17689,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -17681,7 +17697,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -17729,7 +17745,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -17737,7 +17753,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -17785,7 +17801,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -17793,7 +17809,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -17995,7 +18011,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -18003,7 +18019,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -18051,7 +18067,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -18059,7 +18075,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -18107,7 +18123,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -18115,7 +18131,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
@@ -18163,7 +18179,7 @@
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.21..3.5.8"
+					"versions": "3.2.21..3.5.9"
 				},
 				{
 					"error": {
@@ -18171,7 +18187,7 @@
 						"code": 9,
 						"type": "MongoError"
 					},
-					"versions": "3.5.10,3.5.13"
+					"versions": "3.5.10..3.5.13"
 				},
 				{
 					"error": {
