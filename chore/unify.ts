@@ -6,6 +6,31 @@ import { Version } from '../source/domain/version';
 
 const automation = resolve(__dirname, '..', 'automation');
 
+type CatalogQueryRecord = {
+    name: string;
+    path: string;
+    exports: Array<{ name: string; type: string; hash: string }>;
+};
+
+// The only sound way to know whether a version's collected result for a
+// catalog still means anything: was it collected against the exact catalog
+// (query + documents together) that's live right now? A query's id is stable
+// forever, but that's exactly the trap — the same id can be collected at two
+// different points in time against two different document generations
+// (coverage topics regenerate wholesale, and _id is positional, not
+// content-derived), so "the id still exists" isn't enough to trust a result.
+// Comparing against the catalog's *current* hash, not just deduping by name,
+// is what actually excludes a stale generation's contribution.
+async function currentCatalogHashes(): Promise<Map<string, string>> {
+    const records: Array<CatalogQueryRecord> = await readFile(
+        resolve(automation, 'catalog-queries.json')
+    ).then((buffer) => JSON.parse(buffer.toString('utf8')));
+
+    return new Map(
+        records.flatMap((record) => record.exports.map((exp) => [exp.name, exp.hash] as const))
+    );
+}
+
 type Collect = {
     catalog: string;
     id: string;
@@ -31,6 +56,7 @@ type Result = {
 };
 
 async function main(): Promise<void> {
+    const currentHashes = await currentCatalogHashes();
     const collected: Array<Collect> = [];
     const versionSet = new Set<string>();
     const files = await glob(resolve(automation, 'collect', '**', 'meta.json'));
@@ -41,13 +67,15 @@ async function main(): Promise<void> {
             JSON.parse(buffer.toString('utf8'))
         );
         const version = Version.from(meta.version);
-        const catalogs = [
-            ...new Set(
-                meta.history
-                    .filter(({ type }: any) => type === 'collection-completed')
-                    .map(({ catalog }: any) => catalog)
-            ),
-        ];
+        // Most recent collection-completed hash per catalog for *this*
+        // version — not just which catalogs it ever touched, but what it
+        // last saw when it touched them.
+        const latestHashPerCatalog = new Map<string, string>();
+        for (const entry of meta.history) {
+            if (entry.type === 'collection-completed') {
+                latestHashPerCatalog.set(entry.catalog, entry.hash);
+            }
+        }
         // Only include fully qualified versions (have major, minor, and patch)
         if (
             version.major !== undefined &&
@@ -59,7 +87,17 @@ async function main(): Promise<void> {
             continue;
         }
 
-        for (const catalogName of catalogs) {
+        for (const [catalogName, collectedHash] of latestHashPerCatalog) {
+            // This version's own last collection of this catalog was against
+            // a generation that's no longer live — its documents (and any
+            // _id references in its results) may no longer mean what they
+            // meant then. Excluding it, not just deduping by name, is what
+            // actually prevents a stale generation's results from being
+            // paired with today's documents downstream in release.ts.
+            if (currentHashes.get(catalogName) !== collectedHash) {
+                continue;
+            }
+
             try {
                 const catalog = await readFile(
                     resolve(path, `${catalogName}.json`)
