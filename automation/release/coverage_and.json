@@ -55,7 +55,7 @@
 					"documents": [
 						0
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -82,7 +82,7 @@
 					"documents": [
 						0
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -110,7 +110,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -134,7 +134,7 @@
 					"documents": [
 						1
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -159,7 +159,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -184,7 +184,7 @@
 					"documents": [
 						0
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -209,7 +209,7 @@
 					"documents": [
 						0
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -238,7 +238,7 @@
 					"documents": [
 						0
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -267,7 +267,7 @@
 					"documents": [
 						0
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -298,7 +298,7 @@
 					"documents": [
 						0
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -329,7 +329,7 @@
 					"documents": [
 						0
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -351,7 +351,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -379,7 +379,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -404,7 +404,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -429,7 +429,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -459,7 +459,7 @@
 					"documents": [
 						0
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -478,51 +478,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "ReferenceError: Double is not defined",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Double is not defined\n    at _funcs4 (_funcs4:1:30)",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "3.0.12..3.0.15"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Double is not defined\n    at _funcs1 (_funcs1:1:30)",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "3.0.12..3.0.15"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Double is not defined :\n@:1:15\n",
-						"code": 139,
-						"type": "MongoError"
-					},
-					"versions": "3.2.14..3.2.21,3.4.6..3.4.24,3.5.6..3.5.13"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Double is not defined :\n_funcs4@:1:24\n",
-						"code": 139,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.3.14,3.4.0..3.4.5,3.5.5"
-				},
-				{
-					"error": {
 						"message": "ReferenceError: Double is not defined :\n_funcs3@:1:24\n",
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+					"versions": "3.3.15"
 				},
 				{
 					"error": {
@@ -536,9 +496,17 @@
 					"error": {
 						"message": "ReferenceError: Double is not defined :\n@:1:15\n",
 						"code": 139,
+						"type": "MongoError"
+					},
+					"versions": "3.4.24,3.5.13"
+				},
+				{
+					"error": {
+						"message": "ReferenceError: Double is not defined :\n@:1:15\n",
+						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..4.4.30"
+					"versions": "3.6.23..4.4.30"
 				},
 				{
 					"error": {
@@ -546,7 +514,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "5.0.0..7.0.40"
+					"versions": "5.0.33..7.0.40"
 				},
 				{
 					"error": {
@@ -554,7 +522,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -581,35 +549,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "ReferenceError: Double is not defined",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Double is not defined\n    at _funcs1 (_funcs1:1:30)",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "3.0.12..3.0.15"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Double is not defined :\n@:1:15\n",
-						"code": 139,
-						"type": "MongoError"
-					},
-					"versions": "3.2.14..3.2.21,3.4.6..3.4.24,3.5.6..3.5.13"
-				},
-				{
-					"error": {
 						"message": "ReferenceError: Double is not defined :\n_funcs4@:1:24\n",
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+					"versions": "3.3.15"
 				},
 				{
 					"error": {
@@ -617,7 +561,15 @@
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+					"versions": "3.3.15"
+				},
+				{
+					"error": {
+						"message": "ReferenceError: Double is not defined :\n@:1:15\n",
+						"code": 139,
+						"type": "MongoError"
+					},
+					"versions": "3.4.24,3.5.13"
 				},
 				{
 					"error": {
@@ -625,7 +577,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..4.4.30"
+					"versions": "3.6.23..4.4.30"
 				},
 				{
 					"error": {
@@ -633,7 +585,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "5.0.0..7.0.40"
+					"versions": "5.0.33..7.0.40"
 				},
 				{
 					"error": {
@@ -641,7 +593,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -667,43 +619,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "ReferenceError: Double is not defined",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Double is not defined\n    at _funcs3 (_funcs3:1:30)",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "3.0.12..3.0.15"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Double is not defined\n    at _funcs1 (_funcs1:1:30)",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "3.0.12..3.0.15"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Double is not defined :\n@:1:15\n",
-						"code": 139,
-						"type": "MongoError"
-					},
-					"versions": "3.2.14..3.2.21,3.4.6..3.4.24,3.5.6..3.5.13"
-				},
-				{
-					"error": {
 						"message": "ReferenceError: Double is not defined :\n_funcs4@:1:24\n",
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+					"versions": "3.3.15"
 				},
 				{
 					"error": {
@@ -711,7 +631,15 @@
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+					"versions": "3.3.15"
+				},
+				{
+					"error": {
+						"message": "ReferenceError: Double is not defined :\n@:1:15\n",
+						"code": 139,
+						"type": "MongoError"
+					},
+					"versions": "3.4.24,3.5.13"
 				},
 				{
 					"error": {
@@ -719,7 +647,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..4.4.30"
+					"versions": "3.6.23..4.4.30"
 				},
 				{
 					"error": {
@@ -727,7 +655,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "5.0.0..7.0.40"
+					"versions": "5.0.33..7.0.40"
 				},
 				{
 					"error": {
@@ -735,7 +663,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -764,19 +692,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "ReferenceError: Double is not defined",
-						"code": 16722,
+						"message": "ReferenceError: Double is not defined :\n_funcs2@:1:24\n",
+						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "2.6.12"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Double is not defined\n    at _funcs1 (_funcs1:1:30)",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "3.0.12..3.0.15"
+					"versions": "3.3.15"
 				},
 				{
 					"error": {
@@ -784,15 +704,7 @@
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.2.14..3.2.21,3.4.6..3.4.24,3.5.6..3.5.13"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Double is not defined :\n_funcs2@:1:24\n",
-						"code": 139,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+					"versions": "3.4.24,3.5.13"
 				},
 				{
 					"error": {
@@ -800,7 +712,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..4.4.30"
+					"versions": "3.6.23..4.4.30"
 				},
 				{
 					"error": {
@@ -808,7 +720,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "5.0.0..7.0.40"
+					"versions": "5.0.33..7.0.40"
 				},
 				{
 					"error": {
@@ -816,7 +728,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -843,19 +755,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "ReferenceError: Double is not defined",
-						"code": 16722,
+						"message": "ReferenceError: Double is not defined :\n_funcs2@:1:24\n",
+						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "2.6.12"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Double is not defined\n    at _funcs1 (_funcs1:1:30)",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "3.0.12..3.0.15"
+					"versions": "3.3.15"
 				},
 				{
 					"error": {
@@ -863,15 +767,7 @@
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.2.14..3.2.21,3.4.6..3.4.24,3.5.6..3.5.13"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Double is not defined :\n_funcs2@:1:24\n",
-						"code": 139,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+					"versions": "3.4.24,3.5.13"
 				},
 				{
 					"error": {
@@ -879,7 +775,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..4.4.30"
+					"versions": "3.6.23..4.4.30"
 				},
 				{
 					"error": {
@@ -887,7 +783,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "5.0.0..7.0.40"
+					"versions": "5.0.33..7.0.40"
 				},
 				{
 					"error": {
@@ -895,7 +791,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -913,27 +809,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue and needs an array",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
-						"message": "and needs an array",
-						"code": 2,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.2.21"
-				},
-				{
-					"error": {
 						"message": "$and must be an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -941,7 +821,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..7.0.40"
+					"versions": "3.6.23..7.0.40"
 				},
 				{
 					"error": {
@@ -949,7 +829,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -1015,19 +895,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $or/$and/$nor entries need to be full objects",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$or/$and/$nor entries need to be full objects",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -1035,7 +907,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..7.0.40"
+					"versions": "3.6.23..7.0.40"
 				},
 				{
 					"error": {
@@ -1043,7 +915,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -1056,7 +928,47 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "nSKd1V6kDcf2",
+			"query": {
+				"title": {
+					"$not": {}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$not",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"error": {
+						"message": "$not cannot be empty",
+						"code": 2,
+						"type": "MongoError"
+					},
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"error": {
+						"message": "$not cannot be empty",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.6.23..7.0.40"
+				},
+				{
+					"error": {
+						"message": "$not argument must be a non-empty object",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -1084,19 +996,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $not cannot be empty",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$not cannot be empty",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -1104,7 +1008,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..7.0.40"
+					"versions": "3.6.23..7.0.40"
 				},
 				{
 					"error": {
@@ -1112,7 +1016,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -1143,19 +1047,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $not cannot be empty",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$not cannot be empty",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -1163,7 +1059,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..7.0.40"
+					"versions": "3.6.23..7.0.40"
 				},
 				{
 					"error": {
@@ -1171,7 +1067,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -1193,7 +1089,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -1221,7 +1117,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -1247,7 +1143,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -1279,19 +1175,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $not cannot be empty",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$not cannot be empty",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -1299,7 +1187,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..7.0.40"
+					"versions": "3.6.23..7.0.40"
 				},
 				{
 					"error": {
@@ -1307,7 +1195,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -1337,7 +1225,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -1365,19 +1253,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $not cannot be empty",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$not cannot be empty",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -1385,7 +1265,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..7.0.40"
+					"versions": "3.6.23..7.0.40"
 				},
 				{
 					"error": {
@@ -1393,7 +1273,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -1429,19 +1309,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $not cannot be empty",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$not cannot be empty",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -1449,7 +1321,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..7.0.40"
+					"versions": "3.6.23..7.0.40"
 				},
 				{
 					"error": {
@@ -1457,7 +1329,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -1493,7 +1365,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -1512,19 +1384,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "ReferenceError: Couple is not defined",
-						"code": 16722,
+						"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
+						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "2.6.12"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined\n    at _funcs2 (_funcs2:1:30)",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "3.0.12..3.0.15"
+					"versions": "3.3.15"
 				},
 				{
 					"error": {
@@ -1532,15 +1396,7 @@
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.2.14..3.2.21,3.4.6..3.4.24,3.5.6..3.5.13"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
-						"code": 139,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+					"versions": "3.4.24,3.5.13"
 				},
 				{
 					"error": {
@@ -1548,7 +1404,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..4.4.30"
+					"versions": "3.6.23..4.4.30"
 				},
 				{
 					"error": {
@@ -1556,7 +1412,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "5.0.0..7.0.40"
+					"versions": "5.0.33..7.0.40"
 				},
 				{
 					"error": {
@@ -1564,7 +1420,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -1591,19 +1447,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "ReferenceError: Couple is not defined",
-						"code": 16722,
+						"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
+						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "2.6.12"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined\n    at _funcs2 (_funcs2:1:30)",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "3.0.12..3.0.15"
+					"versions": "3.3.15"
 				},
 				{
 					"error": {
@@ -1611,15 +1459,7 @@
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.2.14..3.2.21,3.4.6..3.4.24,3.5.6..3.5.13"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
-						"code": 139,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+					"versions": "3.4.24,3.5.13"
 				},
 				{
 					"error": {
@@ -1627,7 +1467,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..4.4.30"
+					"versions": "3.6.23..4.4.30"
 				},
 				{
 					"error": {
@@ -1635,7 +1475,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "5.0.0..7.0.40"
+					"versions": "5.0.33..7.0.40"
 				},
 				{
 					"error": {
@@ -1643,7 +1483,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -1672,19 +1512,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "ReferenceError: Couple is not defined",
-						"code": 16722,
+						"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
+						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "2.6.12"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined\n    at _funcs1 (_funcs1:1:30)",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "3.0.12..3.0.15"
+					"versions": "3.3.15"
 				},
 				{
 					"error": {
@@ -1692,15 +1524,7 @@
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.2.14..3.2.21,3.4.6..3.4.24,3.5.6..3.5.13"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
-						"code": 139,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+					"versions": "3.4.24,3.5.13"
 				},
 				{
 					"error": {
@@ -1708,7 +1532,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..4.4.30"
+					"versions": "3.6.23..4.4.30"
 				},
 				{
 					"error": {
@@ -1716,7 +1540,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "5.0.0..7.0.40"
+					"versions": "5.0.33..7.0.40"
 				},
 				{
 					"error": {
@@ -1724,7 +1548,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -1751,19 +1575,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "ReferenceError: Couple is not defined",
-						"code": 16722,
+						"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
+						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "2.6.12"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined\n    at _funcs1 (_funcs1:1:30)",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "3.0.12..3.0.15"
+					"versions": "3.3.15"
 				},
 				{
 					"error": {
@@ -1771,15 +1587,7 @@
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.2.14..3.2.21,3.4.6..3.4.24,3.5.6..3.5.13"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
-						"code": 139,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+					"versions": "3.4.24,3.5.13"
 				},
 				{
 					"error": {
@@ -1787,7 +1595,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..4.4.30"
+					"versions": "3.6.23..4.4.30"
 				},
 				{
 					"error": {
@@ -1795,7 +1603,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "5.0.0..7.0.40"
+					"versions": "5.0.33..7.0.40"
 				},
 				{
 					"error": {
@@ -1803,7 +1611,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -1834,19 +1642,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "ReferenceError: Couple is not defined",
-						"code": 16722,
+						"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
+						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "2.6.12"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined\n    at _funcs1 (_funcs1:1:30)",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "3.0.12..3.0.15"
+					"versions": "3.3.15"
 				},
 				{
 					"error": {
@@ -1854,15 +1654,7 @@
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.2.14..3.2.21,3.4.6..3.4.24,3.5.6..3.5.13"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
-						"code": 139,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+					"versions": "3.4.24,3.5.13"
 				},
 				{
 					"error": {
@@ -1870,7 +1662,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..4.4.30"
+					"versions": "3.6.23..4.4.30"
 				},
 				{
 					"error": {
@@ -1878,7 +1670,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "5.0.0..7.0.40"
+					"versions": "5.0.33..7.0.40"
 				},
 				{
 					"error": {
@@ -1886,7 +1678,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -1908,7 +1700,7 @@
 					"documents": [
 						3
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -1945,7 +1737,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2002,7 +1794,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2059,7 +1851,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2079,7 +1871,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2103,7 +1895,7 @@
 					"documents": [
 						3
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2131,7 +1923,7 @@
 					"documents": [
 						3
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2159,7 +1951,7 @@
 					"documents": [
 						3
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2191,7 +1983,7 @@
 					"documents": [
 						3
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2223,7 +2015,7 @@
 					"documents": [
 						3
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2259,7 +2051,7 @@
 					"documents": [
 						3
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2295,7 +2087,7 @@
 					"documents": [
 						3
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2331,7 +2123,7 @@
 					"documents": [
 						3
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2367,7 +2159,7 @@
 					"documents": [
 						3
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2395,7 +2187,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2423,7 +2215,7 @@
 					"documents": [
 						3
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2459,7 +2251,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2495,7 +2287,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2535,7 +2327,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2575,7 +2367,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2615,7 +2407,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2651,7 +2443,48 @@
 					"documents": [
 						3
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "h1IGM7GQSUGV",
+			"query": {
+				"title": 26
+			},
+			"operators": [],
+			"results": [
+				{
+					"documents": [
+						3
+					],
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "pkhzWC81QXy0",
+			"query": {
+				"title": {
+					"$ne": 27
+				}
+			},
+			"operators": [
+				{
+					"operator": "$ne",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2685,7 +2518,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2719,7 +2552,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2757,7 +2590,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2795,7 +2628,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2837,7 +2670,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2879,7 +2712,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2925,7 +2758,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -2971,7 +2804,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3017,7 +2850,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3063,7 +2896,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3093,7 +2926,7 @@
 					"documents": [
 						3
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3131,7 +2964,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3169,7 +3002,7 @@
 					"documents": [
 						3
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3207,7 +3040,7 @@
 					"documents": [
 						3
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3249,7 +3082,7 @@
 					"documents": [
 						3
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3291,7 +3124,7 @@
 					"documents": [
 						3
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3333,7 +3166,7 @@
 					"documents": [
 						3
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3379,33 +3212,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
-				}
-			]
-		},
-		{
-			"id": "pkhzWC81QXy0",
-			"query": {
-				"title": {
-					"$ne": 27
-				}
-			},
-			"operators": [
-				{
-					"operator": "$ne",
-					"score": 1
-				}
-			],
-			"results": [
-				{
-					"documents": [
-						0,
-						1,
-						2,
-						3,
-						4
-					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3431,7 +3238,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3453,7 +3260,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3475,7 +3282,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3504,7 +3311,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3529,7 +3336,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3554,7 +3361,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3586,7 +3393,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3614,7 +3421,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3642,7 +3449,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3664,7 +3471,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3689,7 +3496,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3716,7 +3523,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3739,7 +3546,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3762,7 +3569,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3793,7 +3600,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3820,7 +3627,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3847,7 +3654,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3880,7 +3687,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3909,7 +3716,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3938,7 +3745,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3963,7 +3770,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -3988,7 +3795,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -4013,7 +3820,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -4041,7 +3848,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -4069,7 +3876,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -4097,7 +3904,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -4116,19 +3923,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -4136,7 +3935,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -4155,19 +3954,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -4175,7 +3966,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -4194,19 +3985,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -4214,7 +3997,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -4241,19 +4024,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -4261,7 +4036,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -4288,19 +4063,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -4308,7 +4075,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -4335,19 +4102,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -4355,7 +4114,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -4381,19 +4140,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -4401,7 +4152,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -4427,19 +4178,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -4447,7 +4190,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -4473,19 +4216,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -4493,7 +4228,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -4522,19 +4257,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -4542,7 +4269,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -4571,19 +4298,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -4591,7 +4310,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -4620,19 +4339,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -4640,7 +4351,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -4667,19 +4378,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -4687,7 +4390,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -4714,19 +4417,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -4734,7 +4429,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -4761,19 +4456,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -4781,7 +4468,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -4853,27 +4540,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue and needs an array",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
-						"message": "and needs an array",
-						"code": 2,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.2.21"
-				},
-				{
-					"error": {
 						"message": "$and must be an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -4881,7 +4552,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..7.0.40"
+					"versions": "3.6.23..7.0.40"
 				},
 				{
 					"error": {
@@ -4889,7 +4560,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -4907,27 +4578,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue and needs an array",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
-						"message": "and needs an array",
-						"code": 2,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.2.21"
-				},
-				{
-					"error": {
 						"message": "$and must be an array",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.3.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -4935,7 +4590,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..7.0.40"
+					"versions": "3.6.23..7.0.40"
 				},
 				{
 					"error": {
@@ -4943,7 +4598,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -4963,19 +4618,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $or/$and/$nor entries need to be full objects",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$or/$and/$nor entries need to be full objects",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -4983,7 +4630,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..7.0.40"
+					"versions": "3.6.23..7.0.40"
 				},
 				{
 					"error": {
@@ -4991,7 +4638,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -5011,19 +4658,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $or/$and/$nor entries need to be full objects",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$or/$and/$nor entries need to be full objects",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -5031,7 +4670,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..7.0.40"
+					"versions": "3.6.23..7.0.40"
 				},
 				{
 					"error": {
@@ -5039,7 +4678,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -5059,19 +4698,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $or/$and/$nor entries need to be full objects",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$or/$and/$nor entries need to be full objects",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -5079,7 +4710,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..7.0.40"
+					"versions": "3.6.23..7.0.40"
 				},
 				{
 					"error": {
@@ -5087,7 +4718,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -5106,19 +4737,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "ReferenceError: Couple is not defined",
-						"code": 16722,
+						"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
+						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "2.6.12"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined\n    at _funcs1 (_funcs1:1:30)",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "3.0.12..3.0.15"
+					"versions": "3.3.15"
 				},
 				{
 					"error": {
@@ -5126,15 +4749,7 @@
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.2.14..3.2.21,3.4.6..3.4.24,3.5.6..3.5.13"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
-						"code": 139,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+					"versions": "3.4.24,3.5.13"
 				},
 				{
 					"error": {
@@ -5142,7 +4757,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..4.4.30"
+					"versions": "3.6.23..4.4.30"
 				},
 				{
 					"error": {
@@ -5150,7 +4765,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "5.0.0..7.0.40"
+					"versions": "5.0.33..7.0.40"
 				},
 				{
 					"error": {
@@ -5158,7 +4773,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -5177,7 +4792,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -5196,7 +4811,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -5215,19 +4830,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -5235,7 +4842,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -5254,19 +4861,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -5274,7 +4873,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -5293,19 +4892,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -5313,7 +4904,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -5340,19 +4931,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "ReferenceError: Couple is not defined",
-						"code": 16722,
+						"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
+						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "2.6.12"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined\n    at _funcs1 (_funcs1:1:30)",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "3.0.12..3.0.15"
+					"versions": "3.3.15"
 				},
 				{
 					"error": {
@@ -5360,15 +4943,7 @@
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.2.14..3.2.21,3.4.6..3.4.24,3.5.6..3.5.13"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined :\n_funcs3@:1:24\n",
-						"code": 139,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+					"versions": "3.4.24,3.5.13"
 				},
 				{
 					"error": {
@@ -5376,7 +4951,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..4.4.30"
+					"versions": "3.6.23..4.4.30"
 				},
 				{
 					"error": {
@@ -5384,7 +4959,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "5.0.0..7.0.40"
+					"versions": "5.0.33..7.0.40"
 				},
 				{
 					"error": {
@@ -5392,7 +4967,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -5419,7 +4994,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -5446,7 +5021,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -5473,19 +5048,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -5493,7 +5060,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -5520,19 +5087,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -5540,7 +5099,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -5567,19 +5126,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -5587,7 +5138,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -5616,38 +5167,6 @@
 			"results": [
 				{
 					"error": {
-						"message": "ReferenceError: Couple is not defined",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined\n    at _funcs1 (_funcs1:1:30)",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "3.0.12..3.0.15"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined :\n@:1:15\n",
-						"code": 139,
-						"type": "MongoError"
-					},
-					"versions": "3.2.14..3.2.21,3.4.6..3.4.24,3.5.6..3.5.13"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined :\n_funcs1@:1:24\n",
-						"code": 139,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.3.14,3.4.0..3.4.5,3.5.5"
-				},
-				{
-					"error": {
 						"message": "ReferenceError: Couple is not defined :\n_funcs2@:1:24\n",
 						"code": 139,
 						"type": "MongoError"
@@ -5658,9 +5177,17 @@
 					"error": {
 						"message": "ReferenceError: Couple is not defined :\n@:1:15\n",
 						"code": 139,
+						"type": "MongoError"
+					},
+					"versions": "3.4.24,3.5.13"
+				},
+				{
+					"error": {
+						"message": "ReferenceError: Couple is not defined :\n@:1:15\n",
+						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..4.4.30"
+					"versions": "3.6.23..4.4.30"
 				},
 				{
 					"error": {
@@ -5668,7 +5195,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "5.0.0..7.0.40"
+					"versions": "5.0.33..7.0.40"
 				},
 				{
 					"error": {
@@ -5676,7 +5203,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -5705,7 +5232,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -5734,7 +5261,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -5763,19 +5290,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -5783,7 +5302,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -5812,19 +5331,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -5832,7 +5343,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -5861,19 +5372,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -5881,7 +5384,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -5908,19 +5411,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "ReferenceError: Couple is not defined",
-						"code": 16722,
+						"message": "ReferenceError: Couple is not defined :\n_funcs1@:1:24\n",
+						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "2.6.12"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined\n    at _funcs1 (_funcs1:1:30)",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "3.0.12..3.0.15"
+					"versions": "3.3.15"
 				},
 				{
 					"error": {
@@ -5928,15 +5423,7 @@
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.2.14..3.2.21,3.4.6..3.4.24,3.5.6..3.5.13"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined :\n_funcs1@:1:24\n",
-						"code": 139,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+					"versions": "3.4.24,3.5.13"
 				},
 				{
 					"error": {
@@ -5944,7 +5431,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..4.4.30"
+					"versions": "3.6.23..4.4.30"
 				},
 				{
 					"error": {
@@ -5952,7 +5439,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "5.0.0..7.0.40"
+					"versions": "5.0.33..7.0.40"
 				},
 				{
 					"error": {
@@ -5960,7 +5447,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -5987,7 +5474,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -6014,7 +5501,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -6041,19 +5528,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -6061,7 +5540,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -6088,19 +5567,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -6108,7 +5579,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -6135,19 +5606,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -6155,7 +5618,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -6186,19 +5649,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "ReferenceError: Couple is not defined",
-						"code": 16722,
+						"message": "ReferenceError: Couple is not defined :\n_funcs1@:1:24\n",
+						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "2.6.12"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined\n    at _funcs1 (_funcs1:1:30)",
-						"code": 16722,
-						"type": "MongoError"
-					},
-					"versions": "3.0.12..3.0.15"
+					"versions": "3.3.15"
 				},
 				{
 					"error": {
@@ -6206,15 +5661,7 @@
 						"code": 139,
 						"type": "MongoError"
 					},
-					"versions": "3.2.14..3.2.21,3.4.6..3.4.24,3.5.6..3.5.13"
-				},
-				{
-					"error": {
-						"message": "ReferenceError: Couple is not defined :\n_funcs1@:1:24\n",
-						"code": 139,
-						"type": "MongoError"
-					},
-					"versions": "3.2.6..3.2.13,3.3.6..3.4.5,3.5.5"
+					"versions": "3.4.24,3.5.13"
 				},
 				{
 					"error": {
@@ -6222,7 +5669,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..4.4.30"
+					"versions": "3.6.23..4.4.30"
 				},
 				{
 					"error": {
@@ -6230,7 +5677,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "5.0.0..7.0.40"
+					"versions": "5.0.33..7.0.40"
 				},
 				{
 					"error": {
@@ -6238,7 +5685,7 @@
 						"code": 139,
 						"type": "MongoServerError"
 					},
-					"versions": "8.0.0..8.3.8"
+					"versions": "8.0.29..8.3.8"
 				}
 			]
 		},
@@ -6269,7 +5716,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -6300,7 +5747,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -6331,19 +5778,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -6351,7 +5790,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -6382,19 +5821,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -6402,7 +5833,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -6433,19 +5864,11 @@
 			"results": [
 				{
 					"error": {
-						"message": "Can't canonicalize query: BadValue $where got bad type",
-						"code": 17287,
-						"type": "MongoError"
-					},
-					"versions": "2.6.12..3.0.15"
-				},
-				{
-					"error": {
 						"message": "$where got bad type",
 						"code": 2,
 						"type": "MongoError"
 					},
-					"versions": "3.2.6..3.5.13"
+					"versions": "3.3.15..3.5.13"
 				},
 				{
 					"error": {
@@ -6453,7 +5876,7 @@
 						"code": 2,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0..8.3.8"
+					"versions": "3.6.23..8.3.8"
 				}
 			]
 		},
@@ -6490,7 +5913,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -6527,7 +5950,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -6564,7 +5987,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -6621,7 +6044,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -6678,7 +6101,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -6735,7 +6158,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -6792,7 +6215,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -6849,7 +6272,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -6906,67 +6329,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
-				}
-			]
-		},
-		{
-			"id": "s6DvitMDNf3j",
-			"query": {
-				"title": {
-					"$gt": null
-				}
-			},
-			"operators": [
-				{
-					"operator": "$gt",
-					"score": 1
-				}
-			],
-			"results": [
-				{
-					"documents": [],
-					"versions": "2.6.12..8.3.8"
-				}
-			]
-		},
-		{
-			"id": "qUlCQN4ec0WH",
-			"query": {
-				"title": {
-					"$gt": "value"
-				}
-			},
-			"operators": [
-				{
-					"operator": "$gt",
-					"score": 1
-				}
-			],
-			"results": [
-				{
-					"documents": [],
-					"versions": "2.6.12..8.3.8"
-				}
-			]
-		},
-		{
-			"id": "ptQ4OaJ4RUeU",
-			"query": {
-				"title": {
-					"$gt": true
-				}
-			},
-			"operators": [
-				{
-					"operator": "$gt",
-					"score": 1
-				}
-			],
-			"results": [
-				{
-					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -6992,7 +6355,7 @@
 						1,
 						2
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7014,7 +6377,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7036,7 +6399,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7066,7 +6429,7 @@
 						1,
 						2
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7092,7 +6455,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7118,7 +6481,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7148,7 +6511,7 @@
 						1,
 						2
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7174,7 +6537,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7200,7 +6563,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7234,7 +6597,7 @@
 						1,
 						2
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7264,7 +6627,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7294,7 +6657,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7328,7 +6691,7 @@
 						1,
 						2
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7358,7 +6721,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7388,7 +6751,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7426,7 +6789,7 @@
 						1,
 						2
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7460,7 +6823,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7494,7 +6857,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7532,7 +6895,7 @@
 						1,
 						2
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7566,7 +6929,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7600,7 +6963,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7638,7 +7001,7 @@
 						1,
 						2
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7672,7 +7035,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7706,7 +7069,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7744,7 +7107,7 @@
 						1,
 						2
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7778,7 +7141,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7812,7 +7175,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7837,7 +7200,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7865,7 +7228,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7893,7 +7256,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7923,7 +7286,7 @@
 						1,
 						2
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7949,7 +7312,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -7975,7 +7338,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8008,7 +7371,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8044,7 +7407,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8080,7 +7443,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8113,7 +7476,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8149,7 +7512,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8185,7 +7548,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8222,7 +7585,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8262,7 +7625,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8302,7 +7665,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8339,7 +7702,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8379,7 +7742,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8419,7 +7782,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8456,7 +7819,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8496,7 +7859,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8536,7 +7899,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8574,7 +7937,7 @@
 						1,
 						2
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8608,7 +7971,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8642,7 +8005,125 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "qHPCvKg41n4Y",
+			"query": {
+				"title": null
+			},
+			"operators": [],
+			"results": [
+				{
+					"documents": [
+						0,
+						1,
+						2
+					],
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "vZibMJVClQeK",
+			"query": {
+				"title": "value"
+			},
+			"operators": [],
+			"results": [
+				{
+					"documents": [],
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "c6THdYUrGeAg",
+			"query": {
+				"title": true
+			},
+			"operators": [],
+			"results": [
+				{
+					"documents": [],
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "nEpz5AEWV6hU",
+			"query": {
+				"title": {
+					"$ne": null
+				}
+			},
+			"operators": [
+				{
+					"operator": "$ne",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						3,
+						4
+					],
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "q0Zy3DmnL3v2",
+			"query": {
+				"title": {
+					"$ne": "value"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$ne",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"versions": "3.3.15..8.3.8"
+				}
+			]
+		},
+		{
+			"id": "hOetPOPKDcX9",
+			"query": {
+				"title": {
+					"$ne": true
+				}
+			},
+			"operators": [
+				{
+					"operator": "$ne",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8673,7 +8154,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8707,7 +8188,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8741,7 +8222,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8772,7 +8253,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8806,7 +8287,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8840,7 +8321,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8875,7 +8356,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8913,7 +8394,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8951,7 +8432,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -8986,7 +8467,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9024,7 +8505,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9062,7 +8543,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9101,7 +8582,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9143,7 +8624,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9185,7 +8666,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9224,7 +8705,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9266,7 +8747,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9308,7 +8789,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9351,7 +8832,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9397,7 +8878,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9443,7 +8924,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9486,7 +8967,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9532,7 +9013,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9578,7 +9059,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9621,7 +9102,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9667,7 +9148,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9713,7 +9194,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9756,7 +9237,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9802,7 +9283,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9848,7 +9329,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9880,7 +9361,7 @@
 						1,
 						2
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9908,7 +9389,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9936,7 +9417,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -9971,7 +9452,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10009,7 +9490,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10047,7 +9528,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10087,7 +9568,7 @@
 						1,
 						2
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10123,7 +9604,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10159,7 +9640,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10199,7 +9680,7 @@
 						1,
 						2
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10235,7 +9716,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10271,7 +9752,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10315,7 +9796,7 @@
 						1,
 						2
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10355,7 +9836,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10395,7 +9876,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10439,7 +9920,7 @@
 						1,
 						2
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10479,7 +9960,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10519,7 +10000,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10563,7 +10044,7 @@
 						1,
 						2
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10603,7 +10084,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10643,7 +10124,7 @@
 			"results": [
 				{
 					"documents": [],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10686,7 +10167,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10732,7 +10213,7 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
+					"versions": "3.3.15..8.3.8"
 				}
 			]
 		},
@@ -10778,179 +10259,6 @@
 						3,
 						4
 					],
-					"versions": "2.6.12..8.3.8"
-				}
-			]
-		},
-		{
-			"id": "nEpz5AEWV6hU",
-			"query": {
-				"title": {
-					"$ne": null
-				}
-			},
-			"operators": [
-				{
-					"operator": "$ne",
-					"score": 1
-				}
-			],
-			"results": [
-				{
-					"documents": [
-						3,
-						4
-					],
-					"versions": "2.6.12..8.3.8"
-				}
-			]
-		},
-		{
-			"id": "q0Zy3DmnL3v2",
-			"query": {
-				"title": {
-					"$ne": "value"
-				}
-			},
-			"operators": [
-				{
-					"operator": "$ne",
-					"score": 1
-				}
-			],
-			"results": [
-				{
-					"documents": [
-						0,
-						1,
-						2,
-						3,
-						4
-					],
-					"versions": "2.6.12..8.3.8"
-				}
-			]
-		},
-		{
-			"id": "hOetPOPKDcX9",
-			"query": {
-				"title": {
-					"$ne": true
-				}
-			},
-			"operators": [
-				{
-					"operator": "$ne",
-					"score": 1
-				}
-			],
-			"results": [
-				{
-					"documents": [
-						0,
-						1,
-						2,
-						3,
-						4
-					],
-					"versions": "2.6.12..8.3.8"
-				}
-			]
-		},
-		{
-			"id": "nSKd1V6kDcf2",
-			"query": {
-				"title": {
-					"$not": {}
-				}
-			},
-			"operators": [
-				{
-					"operator": "$not",
-					"score": 1
-				}
-			],
-			"results": [
-				{
-					"error": {
-						"message": "$not cannot be empty",
-						"code": 2,
-						"type": "MongoError"
-					},
-					"versions": "3.3.15..3.5.13"
-				},
-				{
-					"error": {
-						"message": "$not cannot be empty",
-						"code": 2,
-						"type": "MongoServerError"
-					},
-					"versions": "3.6.23..7.0.40"
-				},
-				{
-					"error": {
-						"message": "$not argument must be a non-empty object",
-						"code": 2,
-						"type": "MongoServerError"
-					},
-					"versions": "8.0.29..8.3.8"
-				}
-			]
-		},
-		{
-			"id": "h1IGM7GQSUGV",
-			"query": {
-				"title": 26
-			},
-			"operators": [],
-			"results": [
-				{
-					"documents": [
-						3
-					],
-					"versions": "3.3.15..8.3.8"
-				}
-			]
-		},
-		{
-			"id": "qHPCvKg41n4Y",
-			"query": {
-				"title": null
-			},
-			"operators": [],
-			"results": [
-				{
-					"documents": [
-						0,
-						1,
-						2
-					],
-					"versions": "3.3.15..8.3.8"
-				}
-			]
-		},
-		{
-			"id": "vZibMJVClQeK",
-			"query": {
-				"title": "value"
-			},
-			"operators": [],
-			"results": [
-				{
-					"documents": [],
-					"versions": "3.3.15..8.3.8"
-				}
-			]
-		},
-		{
-			"id": "c6THdYUrGeAg",
-			"query": {
-				"title": true
-			},
-			"operators": [],
-			"results": [
-				{
-					"documents": [],
 					"versions": "3.3.15..8.3.8"
 				}
 			]
