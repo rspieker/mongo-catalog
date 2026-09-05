@@ -1,18 +1,42 @@
 [
 	{
-		"id": "bEqHV36MJDfK",
+		"id": "o51MIIEgbbYi",
 		"operation": {
-			"score": {
-				"$lt": {}
+			"age": {
+				"score": 9,
+				"rank": 10
+			}
+		},
+		"documents": [
+			0
+		]
+	},
+	{
+		"id": "qnwHFKj6e8Lj",
+		"operation": {
+			"age": {
+				"score": null,
+				"rank": null
 			}
 		},
 		"documents": []
 	},
 	{
-		"id": "qZuU6xXrUV23",
+		"id": "abSi9qEAIvwp",
 		"operation": {
-			"score": {
-				"$gt": {}
+			"age": {
+				"score": "value",
+				"rank": "value"
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "rKZLBvu25bqB",
+		"operation": {
+			"age": {
+				"score": true,
+				"rank": true
 			}
 		},
 		"documents": []
