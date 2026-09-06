@@ -5,7 +5,7 @@ import {
     picker,
     several,
 } from '../../../source/domain/generator/compiler'
-import { Catalog, MongoDocument } from '../../catalog'
+import type { Catalog, MongoDocument } from '../../catalog'
 
 const document = compile({
     name: picker(

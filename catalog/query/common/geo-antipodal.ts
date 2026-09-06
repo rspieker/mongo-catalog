@@ -1,4 +1,4 @@
-import { Catalog, MongoDocument } from '../../catalog'
+import type { Catalog, MongoDocument } from '../../catalog'
 
 // Geospatial edge cases — antipodal/near-antipodal points, dateline wraparound,
 // and polygon winding order at both small and hemisphere scale.

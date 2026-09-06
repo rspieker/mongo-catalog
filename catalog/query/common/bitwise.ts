@@ -2,9 +2,8 @@ import {
     compile,
     number,
     picker,
-    range,
 } from '../../../source/domain/generator/compiler';
-import { Catalog, MongoDocument } from '../../catalog';
+import type { Catalog, MongoDocument } from '../../catalog';
 
 // Generate documents with various bit patterns
 // Values 0-127 cover all 7-bit combinations

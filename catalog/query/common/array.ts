@@ -1,13 +1,13 @@
 import {
     compile,
-    items,
     date,
+    items,
     number,
     picker,
-    several,
     range,
+    several,
 } from '../../../source/domain/generator/compiler';
-import { Catalog, MongoDocument } from '../../catalog';
+import type { Catalog, MongoDocument } from '../../catalog';
 
 const document = compile({
     name: picker('Alice', 'Bob', 'Charlie', 'Diana', 'Eve'),

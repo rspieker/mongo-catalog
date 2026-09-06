@@ -3,7 +3,7 @@ import {
     number,
     picker,
 } from '../../../source/domain/generator/compiler'
-import { Catalog, MongoDocument } from '../../catalog'
+import type { Catalog, MongoDocument } from '../../catalog'
 
 // Generate documents with numeric values for expression testing
 const document = compile({

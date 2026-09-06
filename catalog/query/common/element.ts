@@ -1,5 +1,5 @@
-import { Catalog } from '../../catalog'
-import { TestDocument, evaluation } from './evaluation'
+import type { Catalog } from '../../catalog'
+import { evaluation, type TestDocument } from './evaluation'
 
 export const element: Catalog<TestDocument> = {
     operations: [

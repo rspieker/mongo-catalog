@@ -4,7 +4,7 @@ import {
     SCALAR_VALUES,
     STRING_RANGE,
 } from '../../source/domain/generator/type-matrix';
-import { Catalog, MongoDocument } from '../catalog';
+import type { Catalog, MongoDocument } from '../catalog';
 
 // Cross every predicate operator against a shared, deliberately adversarial
 // set of BSON values and shapes (source/domain/generator/type-matrix.ts).
