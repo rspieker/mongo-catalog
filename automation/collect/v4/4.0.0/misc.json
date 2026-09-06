@@ -23,13 +23,15 @@
 			18,
 			19,
 			20
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "gbwHWj0FwGKT",
 		"operation": {
 			"$nop": false
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "unknown top level operator: $nop",
 			"code": 2,
@@ -41,6 +43,7 @@
 		"operation": {
 			"$invalid": true
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "unknown top level operator: $invalid",
 			"code": 2,
@@ -52,6 +55,7 @@
 		"operation": {
 			"$unknown": "value"
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "unknown top level operator: $unknown",
 			"code": 2,
@@ -65,6 +69,7 @@
 				"$not": "purple"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$not needs a regex or a document",
 			"code": 2,
@@ -78,6 +83,7 @@
 				"$not": 123
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$not needs a regex or a document",
 			"code": 2,
@@ -91,6 +97,7 @@
 				"$not": true
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$not needs a regex or a document",
 			"code": 2,
@@ -104,6 +111,7 @@
 				"color": "purple"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$nor must be an array",
 			"code": 2,
@@ -117,6 +125,7 @@
 				"purple"
 			]
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$or/$and/$nor entries need to be full objects",
 			"code": 2,
@@ -138,6 +147,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "can't $divide by zero",
 			"code": 16608,
@@ -159,6 +169,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$divide only supports numeric types, not string and int",
 			"code": 16609,
@@ -180,6 +191,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$divide only supports numeric types, not string and double",
 			"code": 16609,
@@ -201,6 +213,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$divide only supports numeric types, not bool and int",
 			"code": 16609,
@@ -222,6 +235,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$divide only supports numeric types, not bool and double",
 			"code": 16609,
@@ -243,35 +257,40 @@
 				]
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "iRxsOFJGIMog",
 		"operation": {
 			"invalid.path.that.does.not.exist": "value"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "ccDSFA6x4SV0",
 		"operation": {
 			"": "empty field name"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "tzKVnnu8wBMk",
 		"operation": {
 			".": "dot field name"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "usqOPMco4uL1",
 		"operation": {
 			"..": "double dot field name"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "sqxymJVXWPsv",
@@ -280,7 +299,8 @@
 				"$gt": "not a number"
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "nWpqUu2T1FA5",
@@ -289,7 +309,8 @@
 				"$gt": 123
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "rsxF3cr9e00w",
@@ -301,7 +322,8 @@
 				]
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "gCGLQEOxz7yJ",
@@ -313,19 +335,24 @@
 				]
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "sJNPcSmmNWOu",
 		"operation": {
 			"number": null
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
-		"id": "oOz0ewr8TCOK",
-		"operation": {},
-		"documents": []
+		"id": "lgtrsn1vji3R",
+		"operation": {
+			"string": "@Undefined/und"
+		},
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "lVegqZHiljGO",
@@ -334,12 +361,15 @@
 				"$eq": null
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
-		"id": "iKeSdyBbDy4j",
+		"id": "pcoyykD75R2w",
 		"operation": {
-			"price": {}
+			"price": {
+				"$ne": "@Undefined/und"
+			}
 		},
 		"documents": [
 			1,
@@ -362,7 +392,8 @@
 			18,
 			19,
 			20
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "gqSHPsbquoL7",
@@ -371,6 +402,7 @@
 				"$regex": "[invalid"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Regular expression is invalid: missing terminating ] for character class",
 			"code": 2,
@@ -384,6 +416,7 @@
 				"$regex": "(invalid"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Regular expression is invalid: missing )",
 			"code": 2,
@@ -398,7 +431,8 @@
 				"$options": "xyz"
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "hXyKSuJOl4jv",
@@ -408,7 +442,8 @@
 				"$options": "imxyz"
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "bNcSQLab2GGJ",
@@ -420,6 +455,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "divisor cannot be 0",
 			"code": 2,
@@ -436,7 +472,8 @@
 				]
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "pJNrEH8JVISr",
@@ -445,6 +482,7 @@
 				"$mod": "invalid"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "malformed mod, needs to be an array",
 			"code": 2,
@@ -460,6 +498,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "malformed mod, not enough elements",
 			"code": 2,
@@ -473,6 +512,7 @@
 				"$mod": []
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "malformed mod, not enough elements",
 			"code": 2,
@@ -486,6 +526,7 @@
 				"$all": "not an array"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$all needs an array",
 			"code": 2,
@@ -499,6 +540,7 @@
 				"$elemMatch": "not an object"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$elemMatch needs an Object",
 			"code": 2,
@@ -512,6 +554,7 @@
 				"$size": "not a number"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$size needs a number",
 			"code": 2,
@@ -525,6 +568,7 @@
 				"$size": -1
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$size may not be negative",
 			"code": 2,
@@ -538,6 +582,7 @@
 				"$size": 1.5
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$size must be a whole number",
 			"code": 2,
@@ -551,6 +596,7 @@
 				"$bitsAllClear": -1
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Expected a positive number in: $bitsAllClear: -1",
 			"code": 9,
@@ -564,6 +610,7 @@
 				"$bitsAllSet": -1
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Expected a positive number in: $bitsAllSet: -1",
 			"code": 9,
@@ -579,6 +626,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "bit positions must be >= 0 but got: 0: -1",
 			"code": 2,
@@ -594,6 +642,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "bit positions must be >= 0 but got: 0: -1",
 			"code": 2,
@@ -611,6 +660,7 @@
 				}
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$not needs a regex or a document",
 			"code": 2,
@@ -626,7 +676,8 @@
 				}
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "dWEPGK9wx0ZC",
@@ -636,6 +687,7 @@
 				"$invalid": true
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "unknown operator: $invalid",
 			"code": 2,
@@ -648,6 +700,7 @@
 			"color": "purple",
 			"$unknown": "value"
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "unknown top level operator: $unknown",
 			"code": 2,
@@ -659,29 +712,34 @@
 		"operation": {
 			"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": "value"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "pnaG8cFjoDgz",
 		"operation": {
 			"field\nwith\nnewlines": "value"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "q6OiTeAnERs1",
 		"operation": {
 			"field\twith\ttabs": "value"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "dMOJWM6DK84i",
 		"operation": {
 			"field\u0000with\u0000nulls": "value"
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "key field\u0000with\u0000nulls must not contain null bytes",
+			"code": "@Undefined/und",
 			"type": "Error"
 		}
 	}
