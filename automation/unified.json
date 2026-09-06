@@ -38852,6 +38852,111 @@
 		]
 	},
 	{
+		"catalog": "nestedEquality",
+		"operations": [
+			{
+				"id": "meVwjDIGw1kB",
+				"operation": {"field":{}},
+				"results": [
+					{
+						"documents": [1],
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "pMtkmlla3YkT",
+				"operation": {"field":{"foo":1}},
+				"results": [
+					{
+						"documents": [2],
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "qA3dWAhHWQys",
+				"operation": {"field":{"foo":1,"bar":2}},
+				"results": [
+					{
+						"documents": [3],
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "cguI1LqSnKiv",
+				"operation": {"field":{"bar":2}},
+				"results": [
+					{
+						"documents": [4],
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "b6Pqxs3JKSEW",
+				"operation": {"field":{"foo":2}},
+				"results": [
+					{
+						"documents": [5],
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "cRQSX6lUrHeM",
+				"operation": {"field":{"$eq":{}}},
+				"results": [
+					{
+						"documents": [1],
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "kK7VKnQ4cm17",
+				"operation": {"field":{"$eq":{"foo":1}}},
+				"results": [
+					{
+						"documents": [2],
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "e7jtKhdmroGB",
+				"operation": {"field":{"$eq":{"foo":1,"bar":2}}},
+				"results": [
+					{
+						"documents": [3],
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "rNNk5OBZoZRr",
+				"operation": {"field":{"bar":{"$gt":0},"foo":1}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "oU5R0lJM98Hp",
+				"operation": {"field":{"foo":1,"bar":{"$gt":0}}},
+				"results": [
+					{
+						"documents": [],
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			}
+		]
+	},
+	{
 		"catalog": "textRegex",
 		"operations": [
 			{
