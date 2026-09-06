@@ -26,6 +26,9 @@ function normalize(input: Operation): Operation {
   // JSON.stringify is that Date instances will have their .toJSON invoked
   // before it's hand over to the replacer function JSON.stringify offer to
   // take into consideration
+  if (input === undefined) {
+    return '@Undefined/und';
+  }
   if (input instanceof Date) {
     return `@Date/${input.toISOString()}`;
   }
@@ -64,6 +67,9 @@ function reviver(key: string | number, input: Operation): Operation {
             }
             if (type === 'Number') {
                 return Number(value); // 'NaN' -> NaN, 'Infinity' -> Infinity, '-Infinity' -> -Infinity
+            }
+            if (type === 'Undefined') {
+                return undefined as unknown as Operation;
             }
         }
     }
