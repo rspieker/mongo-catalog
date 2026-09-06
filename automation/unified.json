@@ -1,5 +1,450 @@
 [
 	{
+		"catalog": "array",
+		"operations": [
+			{
+				"id": "pGPwVZ5czHK0",
+				"operation": {"tags":{"$all":["javascript","nodejs"]}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "gryHtYljpHHb",
+				"operation": {"permissions":{"$all":["read","write"]}},
+				"results": [
+					{
+						"documents": [2,14],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "lZIIFIOKlq0N",
+				"operation": {"scores":{"$all":[80,90]}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "pxvwFTgkxOVL",
+				"operation": {"nested.tags":{"$all":["frontend","backend"]}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "ntWA9QAxQbi9",
+				"operation": {"products":{"$elemMatch":{"category":"electronics","price":{"$gt":500}}}},
+				"results": [
+					{
+						"documents": [1,3,4,5,6,8,10,11,14,16,18,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "mGIMqlRCw7dX",
+				"operation": {"scores":{"$elemMatch":{"subject":"math","score":{"$gte":85}}}},
+				"results": [
+					{
+						"documents": [1,2,7,12,13,15,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "k2Fe2MuB3rst",
+				"operation": {"transactions":{"$elemMatch":{"type":"purchase","amount":{"$lt":100},"date":{"$gte":"@Date/2023-01-01T00:00:00.000Z"}}}},
+				"results": [
+					{
+						"documents": [7,15],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "slCh6wYLnWDj",
+				"operation": {"tags":{"$size":3}},
+				"results": [
+					{
+						"documents": [4],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "wHHTIuVhr0FF",
+				"operation": {"permissions":{"$size":2}},
+				"results": [
+					{
+						"documents": [2,6,13,14,16,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "mJGflcWK08Qz",
+				"operation": {"scores":{"$size":4}},
+				"results": [
+					{
+						"documents": [1,2,12],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "oHPKY2gPQYc8",
+				"operation": {"emptyArray":{"$size":0}},
+				"results": [
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "lJXid7s26NOb",
+				"operation": {"$and":[{"tags":{"$all":["javascript"]}},{"tags":{"$size":{"$gte":2}}}]},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Failed to parse $size. Expected a number in: $size: { $gte: 2 }","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "qMSEfIpw6Unk",
+				"operation": {"$or":[{"scores":{"$elemMatch":{"score":{"$gte":90}}}},{"permissions":{"$all":["admin"]}}]},
+				"results": [
+					{
+						"documents": [1,2,5,6,7,9,11,12,13,14,15,16,17,18,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "gksPqJOJr2cB",
+				"operation": {"tags":{"$all":"javascript"}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"$all needs an array","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "mMGN5eqFe06H",
+				"operation": {"permissions":{"$elemMatch":"invalid"}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"$elemMatch needs an Object","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "a2vaKtW56SYq",
+				"operation": {"scores":{"$size":-1}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Failed to parse $size. Expected a non-negative number in: $size: -1","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "wvrdG1vzDdWA",
+				"operation": {"scores":{"$size":3.5}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Failed to parse $size. Expected an integer: $size: 3.5","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "wdJM9P2XNvAr",
+				"operation": {"nonExistent":{"$size":0}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "udFRPNA5ZQXE",
+				"operation": {"mixedArray":{"$elemMatch":{"score":{"$gt":"high"}}}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "wNF1QWtY5o36",
+				"operation": {"tags":{"$all":[]}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "qLTBHHllwuY2",
+				"operation": {"tags":{"$all":["nonexistent"]}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "iwSJoX7f2ZJe",
+				"operation": {"scores":{"$elemMatch":{}}},
+				"results": [
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "sK2nLJ1LSbAR",
+				"operation": {"scores":{"$size":100}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "ogVtVttDiD4T",
+				"operation": {"scores":{"$all":[{"$elemMatch":{"score":{"$gte":90}}}]}},
+				"results": [
+					{
+						"documents": [1,2,5,6,7,9,11,12,13,14,15,16,17,18],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "r2x2VVgYHIng",
+				"operation": {"name":{"$all":["Alice"]}},
+				"results": [
+					{
+						"documents": [4,14,15,18],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "ihHnmjD0q6VL",
+				"operation": {"tags":{"$all":[null]}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "pMvVHI46wTQN",
+				"operation": {"tags":{"$all":["javascript","javascript"]}},
+				"results": [
+					{
+						"documents": [2,5,11,12,14],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "qPQPMwLHotwo",
+				"operation": {"scores":{"$elemMatch":{"$or":[{"score":{"$lt":65}},{"score":{"$gt":95}}]}}},
+				"results": [
+					{
+						"documents": [2,5,6,9,10,11,12,13,14,15,16,17,18],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "n6rn3drYtWYH",
+				"operation": {"scores":{"$elemMatch":{"subject":{"$exists":false}}}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "qsiEDXET3Dyx",
+				"operation": {"scores":{"$elemMatch":{"subject":{"$regex":"^m"}}}},
+				"results": [
+					{
+						"documents": [1,2,6,7,9,10,12,13,15,17,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "p6fqWwgOaXY9",
+				"operation": {"scores":{"$elemMatch":{"score":{"$not":{"$gte":80}}}}},
+				"results": [
+					{
+						"documents": [1,2,4,5,6,8,9,10,11,12,14,16,17,18,19,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "brEHxAO5qArM",
+				"operation": {"name":{"$elemMatch":{"$gt":"A"}}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "e40PXGZQy01w",
+				"operation": {"permissions":{"$size":1}},
+				"results": [
+					{
+						"documents": [3,5,7,9,12,15,19],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "cBO8L7njB71n",
+				"operation": {"scores":{"$size":2}},
+				"results": [
+					{
+						"documents": [3,8,13,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "suJZfJv62bth",
+				"operation": {"tags.0":"javascript"},
+				"results": [
+					{
+						"documents": [5,11,14],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "kJkV8IdKpy0t",
+				"operation": {"scores.0.subject":"math"},
+				"results": [
+					{
+						"documents": [1,7,9,10,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "j2LcEFzbd083",
+				"operation": {"scores.score":{"$gte":95}},
+				"results": [
+					{
+						"documents": [2,5,6,7,9,11,12,13,14,15,16,18],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "uyXmwLGoFqU2",
+				"operation": {"scores.subject":"math"},
+				"results": [
+					{
+						"documents": [1,2,6,7,9,10,12,13,15,17,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "bW9B6QwnF5d1",
+				"operation": {"scores":{"$elemMatch":{"subject":"math","score":{"$gte":90}}}},
+				"results": [
+					{
+						"documents": [1,2,7,13],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "vW955KXRzaI8",
+				"operation": {"scores.subject":"math","scores.score":{"$gte":90}},
+				"results": [
+					{
+						"documents": [1,2,6,7,9,12,13,15,17],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			}
+		]
+	},
+	{
 		"catalog": "bitwise",
 		"operations": [
 			{
@@ -1045,6 +1490,308 @@
 					{
 						"documents": [4,8,9,13,21,22,30],
 						"versions": "3.2.6..8.3.8"
+					}
+				]
+			}
+		]
+	},
+	{
+		"catalog": "comparison",
+		"operations": [
+			{
+				"id": "usyEj3rYMl8v",
+				"operation": {"name":{"$eq":"Alice"}},
+				"results": [
+					{
+						"documents": [1,9,13,14],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "e9NbPGt3wXDQ",
+				"operation": {"age":{"$eq":30}},
+				"results": [
+					{
+						"documents": [14],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "q1iojsEUuQBJ",
+				"operation": {"active":{"$eq":true}},
+				"results": [
+					{
+						"documents": [2,3,6,10,12,13,15,17,18,19,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "sw2wDM2UGVwm",
+				"operation": {"profile.rating":{"$eq":4.5}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "fzyOZnAGIjFQ",
+				"operation": {"tags":{"$eq":["javascript","nodejs"]}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "jgLd2NzXIhLY",
+				"operation": {"status":{"$ne":"deleted"}},
+				"results": [
+					{
+						"documents": [1,2,3,4,5,8,9,11,12,13,14,15,17,18,19],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "wagbQAlKY7fl",
+				"operation": {"age":{"$ne":25}},
+				"results": [
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "jaCqoBtUWdVj",
+				"operation": {"profile.premium":{"$ne":true}},
+				"results": [
+					{
+						"documents": [1,2,7,9,10,11,12,13,14,15,16,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "v6xNWVOP0WdW",
+				"operation": {"age":{"$gt":25}},
+				"results": [
+					{
+						"documents": [1,2,3,4,5,6,8,9,10,11,12,13,14,15,16,17,18,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "rCtX2bB12zuK",
+				"operation": {"profile.rating":{"$gt":4}},
+				"results": [
+					{
+						"documents": [2,4,7,15,16,18,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "briP2mNkxdRe",
+				"operation": {"stats.loginCount":{"$gt":10}},
+				"results": [
+					{
+						"documents": [4,5,6,8,10,11,12,14,16,17,19,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "tzRv1PUO4ibR",
+				"operation": {"age":{"$gte":18}},
+				"results": [
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "q9dPFPNSgbKl",
+				"operation": {"profile.rating":{"$gte":3.5}},
+				"results": [
+					{
+						"documents": [2,4,6,7,8,10,12,15,16,18,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "tlvF5P8YeZGe",
+				"operation": {"age":{"$lt":65}},
+				"results": [
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "jITD81LG3Qcz",
+				"operation": {"profile.balance":{"$lt":1000}},
+				"results": [
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "bC6zTPXjK6Pu",
+				"operation": {"age":{"$lte":65}},
+				"results": [
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "whDKGKQbZcam",
+				"operation": {"stats.failedLogins":{"$lte":3}},
+				"results": [
+					{
+						"documents": [1,2,3,4,6,7,8,10,11,14,18,19,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "rtGRLwzAL075",
+				"operation": {"status":{"$in":["active","pending"]}},
+				"results": [
+					{
+						"documents": [1,2,3,4,8,9,11,12,14,15,17,19],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "afJXYWwz0YSi",
+				"operation": {"age":{"$in":[25,30,35]}},
+				"results": [
+					{
+						"documents": [14],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "tNucDJPQq4rg",
+				"operation": {"tags":{"$in":["javascript","typescript","python"]}},
+				"results": [
+					{
+						"documents": [2,4,17],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "onJxSQS6m40v",
+				"operation": {"status":{"$nin":["deleted","banned"]}},
+				"results": [
+					{
+						"documents": [1,2,3,4,5,8,9,11,12,13,14,15,17,18,19],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "pigGbQaZSYbc",
+				"operation": {"role":{"$nin":["guest","temp"]}},
+				"results": [
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "u9wmmtfvfM9C",
+				"operation": {"age":{"$eq":"thirty"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "uBQPNcpGSVba",
+				"operation": {"profile.rating":{"$gt":"high"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "sM1wGhIY8Nr8",
+				"operation": {"status":{"$in":"active"}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"$in needs an array","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "o008YWqSLmT5",
+				"operation": {"age":{"$lt":null}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "p1pDMqI5Lde0",
+				"operation": {"invalid":{"$eq":"@Undefined/und"}},
+				"results": [
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
 					}
 				]
 			}
@@ -36644,6 +37391,621 @@
 					{
 						"error": {"message":"$or argument must be an array","code":2,"type":"MongoServerError"},
 						"versions": "8.0.0..8.3.8"
+					}
+				]
+			}
+		]
+	},
+	{
+		"catalog": "misc",
+		"operations": [
+			{
+				"id": "oOz0ewr8TCOK",
+				"operation": {},
+				"results": [
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "gbwHWj0FwGKT",
+				"operation": {
+					"$nop": false
+				},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"unknown top level operator: $nop. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "eSa4nZ5MzqXR",
+				"operation": {"$invalid":true},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"unknown top level operator: $invalid. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "iKBvMzUKRUCU",
+				"operation": {"$unknown":"value"},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"unknown top level operator: $unknown. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "revzucKwxWZw",
+				"operation": {"color":{"$not":"purple"}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"$not needs a regex or a document","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "tWvmd5FzzJ8A",
+				"operation": {"color":{"$not":123}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"$not needs a regex or a document","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "hRrdDKn7UnkE",
+				"operation": {"color":{"$not":true}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"$not needs a regex or a document","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "b8WfrEiDICV7",
+				"operation": {"$nor":{"color":"purple"}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"$nor must be an array","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "rblvKH6JLlNX",
+				"operation": {"$nor":["purple"]},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"$or/$and/$nor entries need to be full objects","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "neFbUphT9WM9",
+				"operation": {"$expr":{"$eq":[{"$divide":["$number",0]},1]}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Executor error during find command :: caused by :: can't $divide by zero","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "nW73cUHMkOZy",
+				"operation": {"$expr":{"$eq":[{"$divide":["$string",0]},1]}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types, not string and int","code":14,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "v0LpmfhDg9ea",
+				"operation": {"$expr":{"$eq":[{"$divide":["$string",0.1]},1]}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types, not string and double","code":14,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "eRwLIudJ3URF",
+				"operation": {"$expr":{"$eq":[{"$divide":["$bool",0]},1]}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types, not bool and int","code":14,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "pfQy3Q65LfVo",
+				"operation": {"$expr":{"$eq":[{"$divide":["$bool",0.1]},1]}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Executor error during find command :: caused by :: $divide only supports numeric types, not bool and double","code":14,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "uLalGxOKUBeB",
+				"operation": {"$expr":{"$eq":[{"$divide":["$unknown",0]},1]}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"$expr is not allowed in this context","code":2,"type":"MongoError"},
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "iRxsOFJGIMog",
+				"operation": {"invalid.path.that.does.not.exist":"value"},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "ccDSFA6x4SV0",
+				"operation": {"":"empty field name"},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "tzKVnnu8wBMk",
+				"operation": {".":"dot field name"},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "usqOPMco4uL1",
+				"operation": {"..":"double dot field name"},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "sqxymJVXWPsv",
+				"operation": {"number":{"$gt":"not a number"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "nWpqUu2T1FA5",
+				"operation": {"string":{"$gt":123}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "rsxF3cr9e00w",
+				"operation": {"bool":{"$in":["true","false"]}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "gCGLQEOxz7yJ",
+				"operation": {"price":{"$in":["cheap","expensive"]}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "sJNPcSmmNWOu",
+				"operation": {"number":null},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "lgtrsn1vji3R",
+				"operation": {"string":"@Undefined/und"},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "lVegqZHiljGO",
+				"operation": {"color":{"$eq":null}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "pcoyykD75R2w",
+				"operation": {"price":{"$ne":"@Undefined/und"}},
+				"results": [
+					{
+						"documents": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "gqSHPsbquoL7",
+				"operation": {"string":{"$regex":"[invalid"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.6.23,4.0.28"
+					},
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Regular expression is invalid: missing terminating ] for character class","code":51091,"type":"MongoServerError"},
+						"versions": "3.7.9,4.1.13..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "mxLG4timf1FN",
+				"operation": {"string":{"$regex":"(invalid"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.6.23,4.0.28"
+					},
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Regular expression is invalid: missing closing parenthesis","code":51091,"type":"MongoServerError"},
+						"versions": "3.7.9,4.1.13..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "rT2TqxhT4NLk",
+				"operation": {"string":{"$regex":"pattern","$options":"xyz"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..5.0.33"
+					},
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":" invalid flag in regex options: y","code":51108,"type":"MongoServerError"},
+						"versions": "6.0.28..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "hXyKSuJOl4jv",
+				"operation": {"string":{"$regex":"pattern","$options":"imxyz"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..5.0.33"
+					},
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":" invalid flag in regex options: y","code":51108,"type":"MongoServerError"},
+						"versions": "6.0.28..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "bNcSQLab2GGJ",
+				"operation": {"number":{"$mod":[0,0]}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"divisor cannot be 0","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "qhwDIocp4KXH",
+				"operation": {"number":{"$mod":[2,5]}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "pJNrEH8JVISr",
+				"operation": {"number":{"$mod":"invalid"}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"malformed mod, needs to be an array","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "tJxPZKx50tg1",
+				"operation": {"number":{"$mod":[2]}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"malformed mod, not enough elements","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "jWRs7oUGY7ag",
+				"operation": {"number":{"$mod":[]}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"malformed mod, not enough elements","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "uzdDIwr4wbxe",
+				"operation": {"color":{"$all":"not an array"}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"$all needs an array","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "oVaJEKbBTbRG",
+				"operation": {"color":{"$elemMatch":"not an object"}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"$elemMatch needs an Object","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "wCOynFQ9aMUJ",
+				"operation": {"color":{"$size":"not a number"}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Failed to parse $size. Expected a number in: $size: \"not a number\"","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "q5KMPlNjSYKg",
+				"operation": {"color":{"$size":-1}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Failed to parse $size. Expected a non-negative number in: $size: -1","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "mYfb5zPsPtez",
+				"operation": {"color":{"$size":1.5}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Failed to parse $size. Expected an integer: $size: 1.5","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "f1ILzlnDHjpo",
+				"operation": {"number":{"$bitsAllClear":-1}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Expected a non-negative number in: $bitsAllClear: -1","code":9,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "sCAuPuZADVKH",
+				"operation": {"number":{"$bitsAllSet":-1}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Expected a non-negative number in: $bitsAllSet: -1","code":9,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "nNJOnOpsm1Le",
+				"operation": {"number":{"$bitsAnyClear":[-1]}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Failed to parse bit position. Expected a non-negative number in: 0: -1","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "atUQ7KKWa8Su",
+				"operation": {"number":{"$bitsAnySet":[-1]}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Failed to parse bit position. Expected a non-negative number in: 0: -1","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "kM3rW7S9nLFP",
+				"operation": {"color":{"$not":{"$not":{"$not":"purple"}}}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"$not needs a regex or a document","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "vZU8OUqk04Lb",
+				"operation": {"price":{"$gt":{"$lt":10}}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "dWEPGK9wx0ZC",
+				"operation": {"number":{"$gte":0,"$invalid":true}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"unknown operator: $invalid","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "abTRz6U1fYL0",
+				"operation": {"color":"purple","$unknown":"value"},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"unknown top level operator: $unknown. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "kf7XBXQ7uHMu",
+				"operation": {"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa":"value"},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "pnaG8cFjoDgz",
+				"operation": {"field\nwith\nnewlines":"value"},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "q6OiTeAnERs1",
+				"operation": {"field\twith\ttabs":"value"},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.8"
+					}
+				]
+			},
+			{
+				"id": "dMOJWM6DK84i",
+				"operation": {"field\u0000with\u0000nulls":"value"},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"key field\u0000with\u0000nulls must not contain null bytes","code":"@Undefined/und","type":"BSONError"},
+						"versions": "3.3.15..8.3.8"
 					}
 				]
 			}
