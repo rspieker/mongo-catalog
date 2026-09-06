@@ -1,0 +1,118 @@
+[
+	{
+		"id": "meVwjDIGw1kB",
+		"operation": {
+			"field": {}
+		},
+		"documents": [
+			1
+		]
+	},
+	{
+		"id": "pMtkmlla3YkT",
+		"operation": {
+			"field": {
+				"foo": 1
+			}
+		},
+		"documents": [
+			2
+		]
+	},
+	{
+		"id": "qA3dWAhHWQys",
+		"operation": {
+			"field": {
+				"foo": 1,
+				"bar": 2
+			}
+		},
+		"documents": [
+			3
+		]
+	},
+	{
+		"id": "cguI1LqSnKiv",
+		"operation": {
+			"field": {
+				"bar": 2
+			}
+		},
+		"documents": [
+			4
+		]
+	},
+	{
+		"id": "b6Pqxs3JKSEW",
+		"operation": {
+			"field": {
+				"foo": 2
+			}
+		},
+		"documents": [
+			5
+		]
+	},
+	{
+		"id": "cRQSX6lUrHeM",
+		"operation": {
+			"field": {
+				"$eq": {}
+			}
+		},
+		"documents": [
+			1
+		]
+	},
+	{
+		"id": "kK7VKnQ4cm17",
+		"operation": {
+			"field": {
+				"$eq": {
+					"foo": 1
+				}
+			}
+		},
+		"documents": [
+			2
+		]
+	},
+	{
+		"id": "e7jtKhdmroGB",
+		"operation": {
+			"field": {
+				"$eq": {
+					"foo": 1,
+					"bar": 2
+				}
+			}
+		},
+		"documents": [
+			3
+		]
+	},
+	{
+		"id": "rNNk5OBZoZRr",
+		"operation": {
+			"field": {
+				"bar": {
+					"$gt": 0
+				},
+				"foo": 1
+			}
+		},
+		"documents": []
+	},
+	{
+		"id": "oU5R0lJM98Hp",
+		"operation": {
+			"field": {
+				"foo": 1,
+				"bar": {
+					"$gt": 0
+				}
+			}
+		},
+		"documents": []
+	}
+]
