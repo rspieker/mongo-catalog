@@ -1,27 +1,42 @@
 [
 	{
-		"id": "ovj1QWgDEpWf",
+		"id": "le7hgDNDD53o",
 		"operation": {
 			"name": {
-				"$type": 20
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "sJeJKBTFDMTI",
-		"operation": {
-			"rank": {
-				"$not": {
-					"$type": "Each"
-				}
+				"$type": 21
 			}
 		},
 		"error": {
-			"message": "Can't canonicalize query: BadValue $type has to be a number",
-			"code": 17287,
+			"message": "type not supported for appendMinElementForType",
+			"code": 10061,
 			"type": "MongoError"
 		}
+	},
+	{
+		"id": "dHuluMtQpX56",
+		"operation": {
+			"name": {
+				"$regex": "Each",
+				"$type": 22
+			}
+		},
+		"error": {
+			"message": "type not supported for appendMinElementForType",
+			"code": 10061,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "dQxmUe8ArA7i",
+		"operation": {
+			"status": null
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		]
 	},
 	{
 		"id": "qYgx2n9Dw1P6",
@@ -34,28 +49,6 @@
 			2,
 			4
 		]
-	},
-	{
-		"id": "k0SAQtx2tJnC",
-		"operation": {
-			"level": {}
-		},
-		"documents": [
-			5
-		]
-	},
-	{
-		"id": "dQNUfVGuGr1A",
-		"operation": {
-			"title": {
-				"$type": "Couple"
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue $type has to be a number",
-			"code": 17287,
-			"type": "MongoError"
-		}
 	},
 	{
 		"id": "rWAKnJKlO65g",
@@ -97,12 +90,11 @@
 		}
 	},
 	{
-		"id": "rBQLSjMeCZaW",
+		"id": "mX46AOOMLPjH",
 		"operation": {
-			"rank": {
-				"$not": {
-					"$type": null
-				}
+			"name": {
+				"$regex": "Each",
+				"$type": null
 			}
 		},
 		"error": {
@@ -112,41 +104,71 @@
 		}
 	},
 	{
-		"id": "b2wx3i9NRXq9",
+		"id": "bo9bFRZWFuzq",
 		"operation": {
-			"rank": {
-				"$not": {
-					"$type": 42
-				}
-			}
-		},
-		"documents": [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12
-		]
-	},
-	{
-		"id": "ipvTJUXepz7m",
-		"operation": {
-			"rank": {
-				"$not": {
-					"$type": true
-				}
+			"name": {
+				"$regex": "Each",
+				"$type": "value"
 			}
 		},
 		"error": {
 			"message": "Can't canonicalize query: BadValue $type has to be a number",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "cMBFErMCehcM",
+		"operation": {
+			"name": {
+				"$regex": "Each",
+				"$type": true
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $type has to be a number",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "tkPAqpHGSDfx",
+		"operation": {
+			"name": {
+				"$regex": null,
+				"$type": 22
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $regex has to be a string",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "pFDed9QxHz7p",
+		"operation": {
+			"name": {
+				"$regex": 42,
+				"$type": 22
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $regex has to be a string",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "o2iQPOWrwNT8",
+		"operation": {
+			"name": {
+				"$regex": true,
+				"$type": 22
+			}
+		},
+		"error": {
+			"message": "Can't canonicalize query: BadValue $regex has to be a string",
 			"code": 17287,
 			"type": "MongoError"
 		}
@@ -161,15 +183,7 @@
 		"documents": [
 			0,
 			1,
-			3,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12
+			3
 		]
 	},
 	{
@@ -182,15 +196,7 @@
 		"documents": [
 			0,
 			1,
-			3,
-			5,
-			6,
-			7,
-			8,
-			9,
-			10,
-			11,
-			12
+			3
 		]
 	},
 	{
@@ -204,40 +210,5 @@
 			2,
 			4
 		]
-	},
-	{
-		"id": "qTnECEaJAQWd",
-		"operation": {
-			"title": {
-				"$type": null
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue $type has to be a number",
-			"code": 17287,
-			"type": "MongoError"
-		}
-	},
-	{
-		"id": "esLUw1JGN9Rr",
-		"operation": {
-			"title": {
-				"$type": 42
-			}
-		},
-		"documents": []
-	},
-	{
-		"id": "q94Fo0qOiBS3",
-		"operation": {
-			"title": {
-				"$type": true
-			}
-		},
-		"error": {
-			"message": "Can't canonicalize query: BadValue $type has to be a number",
-			"code": 17287,
-			"type": "MongoError"
-		}
 	}
 ]
