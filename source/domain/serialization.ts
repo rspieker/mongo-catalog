@@ -52,6 +52,15 @@ function normalize(input: Operation): Operation {
   return input;
 }
 
+// A reviver returning `undefined` tells JSON.parse to *delete* the key,
+// not assign it `undefined` — there's no way to represent "restore this
+// key with value undefined" through a reviver's return value at all. So
+// $Undefined revives to this private sentinel instead, and a post-parse
+// pass (see deserialize()) swaps it back in via direct assignment
+// (`obj[key] = undefined`), which — unlike a reviver's return — does keep
+// the key.
+const UNDEFINED_SENTINEL = Symbol('undefined');
+
 function reviver(key: string | number, input: Operation): Operation {
     if (isReplacer(input)) {
         const [, type, prop, value, options] = pattern.exec(
@@ -69,7 +78,7 @@ function reviver(key: string | number, input: Operation): Operation {
                 return Number(value); // 'NaN' -> NaN, 'Infinity' -> Infinity, '-Infinity' -> -Infinity
             }
             if (type === 'Undefined') {
-                return undefined as unknown as Operation;
+                return UNDEFINED_SENTINEL as unknown as Operation;
             }
         }
     }
@@ -77,12 +86,28 @@ function reviver(key: string | number, input: Operation): Operation {
     return input;
 }
 
+function restoreUndefined(value: any): any {
+    if (Array.isArray(value)) {
+        value.forEach((v, i) => {
+            if (v === UNDEFINED_SENTINEL) value[i] = undefined;
+            else restoreUndefined(v);
+        });
+    } else if (value && typeof value === 'object') {
+        for (const k of Object.keys(value)) {
+            if (value[k] === UNDEFINED_SENTINEL) value[k] = undefined;
+            else restoreUndefined(value[k]);
+        }
+    }
+
+    return value;
+}
+
 export function serialize(operation: any, space?: string | number): string {
     return JSON.stringify(normalize(operation), null, space);
 }
 
 export function deserialize(serialized: string): any {
-    return JSON.parse(serialized, reviver);
+    return restoreUndefined(JSON.parse(serialized, reviver));
 }
 
 export function checksum(operation: any): string {
