@@ -37571,7 +37571,7 @@
 				"results": [
 					{
 						"documents": "@Undefined/und",
-						"error": {"message":"Can't canonicalize query: BadValue unknown top level operator: $expr","code":17287,"type":"MongoError"},
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
 						"versions": "2.6.12..3.5.13"
 					},
 					{
@@ -37720,12 +37720,12 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "2.6.12..3.5.13,3.6.23,4.0.28,4.1.1"
+						"versions": "2.6.12..3.5.13,3.6.11,3.6.23,4.0.14..4.1.6"
 					},
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Regular expression is invalid: missing terminating ] for character class","code":51091,"type":"MongoServerError"},
-						"versions": "3.6.0,3.7.9,4.0.0,4.1.13..8.3.8"
+						"versions": "3.6.0,3.7.3..4.0.0,4.1.13..8.3.8"
 					}
 				]
 			},
@@ -37736,12 +37736,12 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "2.6.12..3.5.13,3.6.23,4.0.28,4.1.1"
+						"versions": "2.6.12..3.5.13,3.6.11,3.6.23,4.0.14..4.1.6"
 					},
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Regular expression is invalid: missing closing parenthesis","code":51091,"type":"MongoServerError"},
-						"versions": "3.6.0,3.7.9,4.0.0,4.1.13..8.3.8"
+						"versions": "3.6.0,3.7.3..4.0.0,4.1.13..8.3.8"
 					}
 				]
 			},
@@ -38645,11 +38645,16 @@
 				"results": [
 					{
 						"error": {"message":"key a\u0000ge must not contain null bytes","type":"Error"},
-						"versions": "2.6.12..4.4.30"
+						"versions": "2.6.12..3.3.6,3.3.15,3.4.0,3.4.24,3.5.13,3.6.0,3.6.23,3.7.9,4.0.0,4.0.28,4.1.1,4.1.13..4.4.30"
+					},
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"key a\u0000ge must not contain null bytes","code":"@Undefined/und","type":"BSONError"},
+						"versions": "3.3.10,3.4.12,3.5.8,3.6.11,3.7.3,4.0.14,4.1.6,7.0.8,7.0.27,8.0.6,8.0.19,8.2.3,8.2.9,8.3.1,8.3.4"
 					},
 					{
 						"error": {"message":"key a\u0000ge must not contain null bytes","type":"BSONError"},
-						"versions": "5.0.0..8.3.8"
+						"versions": "5.0.0..7.0.0,7.0.18,7.0.40,8.0.0,8.0.13,8.0.29,8.2.1,8.2.6,8.2.12,8.3.0,8.3.3,8.3.8"
 					}
 				]
 			},
@@ -38659,11 +38664,16 @@
 				"results": [
 					{
 						"error": {"message":"key fo\u0000o.bar must not contain null bytes","type":"Error"},
-						"versions": "2.6.12..4.4.30"
+						"versions": "2.6.12..3.3.6,3.3.15,3.4.0,3.4.24,3.5.13,3.6.0,3.6.23,3.7.9,4.0.0,4.0.28,4.1.1,4.1.13..4.4.30"
+					},
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"key fo\u0000o.bar must not contain null bytes","code":"@Undefined/und","type":"BSONError"},
+						"versions": "3.3.10,3.4.12,3.5.8,3.6.11,3.7.3,4.0.14,4.1.6,7.0.8,7.0.27,8.0.6,8.0.19,8.2.3,8.2.9,8.3.1,8.3.4"
 					},
 					{
 						"error": {"message":"key fo\u0000o.bar must not contain null bytes","type":"BSONError"},
-						"versions": "5.0.0..8.3.8"
+						"versions": "5.0.0..7.0.0,7.0.18,7.0.40,8.0.0,8.0.13,8.0.29,8.2.1,8.2.6,8.2.12,8.3.0,8.3.3,8.3.8"
 					}
 				]
 			},
@@ -38673,11 +38683,16 @@
 				"results": [
 					{
 						"error": {"message":"key foo.ba\u0000r must not contain null bytes","type":"Error"},
-						"versions": "2.6.12..4.4.30"
+						"versions": "2.6.12..3.3.6,3.3.15,3.4.0,3.4.24,3.5.13,3.6.0,3.6.23,3.7.9,4.0.0,4.0.28,4.1.1,4.1.13..4.4.30"
+					},
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"key foo.ba\u0000r must not contain null bytes","code":"@Undefined/und","type":"BSONError"},
+						"versions": "3.3.10,3.4.12,3.5.8,3.6.11,3.7.3,4.0.14,4.1.6,7.0.8,7.0.27,8.0.6,8.0.19,8.2.3,8.2.9,8.3.1,8.3.4"
 					},
 					{
 						"error": {"message":"key foo.ba\u0000r must not contain null bytes","type":"BSONError"},
-						"versions": "5.0.0..8.3.8"
+						"versions": "5.0.0..7.0.0,7.0.18,7.0.40,8.0.0,8.0.13,8.0.29,8.2.1,8.2.6,8.2.12,8.3.0,8.3.3,8.3.8"
 					}
 				]
 			},
@@ -38687,11 +38702,16 @@
 				"results": [
 					{
 						"error": {"message":"key ar\u0000r.name must not contain null bytes","type":"Error"},
-						"versions": "2.6.12..4.4.30"
+						"versions": "2.6.12..3.3.6,3.3.15,3.4.0,3.4.24,3.5.13,3.6.0,3.6.23,3.7.9,4.0.0,4.0.28,4.1.1,4.1.13..4.4.30"
+					},
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"key ar\u0000r.name must not contain null bytes","code":"@Undefined/und","type":"BSONError"},
+						"versions": "3.3.10,3.4.12,3.5.8,3.6.11,3.7.3,4.0.14,4.1.6,7.0.8,7.0.27,8.0.6,8.0.19,8.2.3,8.2.9,8.3.1,8.3.4"
 					},
 					{
 						"error": {"message":"key ar\u0000r.name must not contain null bytes","type":"BSONError"},
-						"versions": "5.0.0..8.3.8"
+						"versions": "5.0.0..7.0.0,7.0.18,7.0.40,8.0.0,8.0.13,8.0.29,8.2.1,8.2.6,8.2.12,8.3.0,8.3.3,8.3.8"
 					}
 				]
 			},
@@ -38701,11 +38721,16 @@
 				"results": [
 					{
 						"error": {"message":"key arr.na\u0000me must not contain null bytes","type":"Error"},
-						"versions": "2.6.12..4.4.30"
+						"versions": "2.6.12..3.3.6,3.3.15,3.4.0,3.4.24,3.5.13,3.6.0,3.6.23,3.7.9,4.0.0,4.0.28,4.1.1,4.1.13..4.4.30"
+					},
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"key arr.na\u0000me must not contain null bytes","code":"@Undefined/und","type":"BSONError"},
+						"versions": "3.3.10,3.4.12,3.5.8,3.6.11,3.7.3,4.0.14,4.1.6,7.0.8,7.0.27,8.0.6,8.0.19,8.2.3,8.2.9,8.3.1,8.3.4"
 					},
 					{
 						"error": {"message":"key arr.na\u0000me must not contain null bytes","type":"BSONError"},
-						"versions": "5.0.0..8.3.8"
+						"versions": "5.0.0..7.0.0,7.0.18,7.0.40,8.0.0,8.0.13,8.0.29,8.2.1,8.2.6,8.2.12,8.3.0,8.3.3,8.3.8"
 					}
 				]
 			},
@@ -38715,11 +38740,16 @@
 				"results": [
 					{
 						"error": {"message":"key $gt\u0000 must not contain null bytes","type":"Error"},
-						"versions": "2.6.12..4.4.30"
+						"versions": "2.6.12..3.3.6,3.3.15,3.4.0,3.4.24,3.5.13,3.6.0,3.6.23,3.7.9,4.0.0,4.0.28,4.1.1,4.1.13..4.4.30"
+					},
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"key $gt\u0000 must not contain null bytes","code":"@Undefined/und","type":"BSONError"},
+						"versions": "3.3.10,3.4.12,3.5.8,3.6.11,3.7.3,4.0.14,4.1.6,7.0.8,7.0.27,8.0.6,8.0.19,8.2.3,8.2.9,8.3.1,8.3.4"
 					},
 					{
 						"error": {"message":"key $gt\u0000 must not contain null bytes","type":"BSONError"},
-						"versions": "5.0.0..8.3.8"
+						"versions": "5.0.0..7.0.0,7.0.18,7.0.40,8.0.0,8.0.13,8.0.29,8.2.1,8.2.6,8.2.12,8.3.0,8.3.3,8.3.8"
 					}
 				]
 			},
@@ -38747,11 +38777,16 @@
 					},
 					{
 						"error": {"message":"Regular expression cannot contain an embedded null byte","code":2,"type":"MongoError"},
-						"versions": "3.2.21..3.5.13"
+						"versions": "3.2.21,3.3.6,3.3.15,3.4.0,3.4.24,3.5.13"
+					},
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Regular expression cannot contain an embedded null byte","code":2,"type":"MongoServerError"},
+						"versions": "3.3.10,3.4.12,3.5.8,3.6.11,3.7.3,4.0.14,4.1.6,7.0.8,7.0.27,8.0.6,8.0.19,8.2.3,8.2.9,8.3.1,8.3.4"
 					},
 					{
 						"error": {"message":"Regular expression cannot contain an embedded null byte","code":2,"type":"MongoServerError"},
-						"versions": "3.6.0..8.3.8"
+						"versions": "3.6.0,3.6.23,3.7.9,4.0.0,4.0.28,4.1.1,4.1.13..7.0.0,7.0.18,7.0.40,8.0.0,8.0.13,8.0.29,8.2.1,8.2.6,8.2.12,8.3.0,8.3.3,8.3.8"
 					}
 				]
 			},
@@ -38761,11 +38796,16 @@
 				"results": [
 					{
 						"error": {"message":"value val\u0000ue must not contain null bytes","type":"Error"},
-						"versions": "2.6.12..4.4.30"
+						"versions": "2.6.12..3.3.6,3.3.15,3.4.0,3.4.24,3.5.13,3.6.0,3.6.23,3.7.9,4.0.0,4.0.28,4.1.1,4.1.13..4.4.30"
+					},
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"value val\u0000ue must not contain null bytes","code":"@Undefined/und","type":"BSONError"},
+						"versions": "3.3.10,3.4.12,3.5.8,3.6.11,3.7.3,4.0.14,4.1.6,7.0.8,7.0.27,8.0.6,8.0.19,8.2.3,8.2.9,8.3.1,8.3.4"
 					},
 					{
 						"error": {"message":"value val\u0000ue must not contain null bytes","type":"BSONError"},
-						"versions": "5.0.0..8.3.8"
+						"versions": "5.0.0..7.0.0,7.0.18,7.0.40,8.0.0,8.0.13,8.0.29,8.2.1,8.2.6,8.2.12,8.3.0,8.3.3,8.3.8"
 					}
 				]
 			}
