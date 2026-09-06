@@ -23,13 +23,15 @@
 			18,
 			19,
 			20
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "gbwHWj0FwGKT",
 		"operation": {
 			"$nop": false
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue unknown top level operator: $nop",
 			"code": 17287,
@@ -41,6 +43,7 @@
 		"operation": {
 			"$invalid": true
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue unknown top level operator: $invalid",
 			"code": 17287,
@@ -52,6 +55,7 @@
 		"operation": {
 			"$unknown": "value"
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue unknown top level operator: $unknown",
 			"code": 17287,
@@ -65,6 +69,7 @@
 				"$not": "purple"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue $not needs a regex or a document",
 			"code": 17287,
@@ -78,6 +83,7 @@
 				"$not": 123
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue $not needs a regex or a document",
 			"code": 17287,
@@ -91,6 +97,7 @@
 				"$not": true
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue $not needs a regex or a document",
 			"code": 17287,
@@ -104,6 +111,7 @@
 				"color": "purple"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue and needs an array",
 			"code": 17287,
@@ -117,6 +125,7 @@
 				"purple"
 			]
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue $or/$and/$nor entries need to be full objects",
 			"code": 17287,
@@ -138,6 +147,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
 			"code": 17287,
@@ -159,6 +169,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
 			"code": 17287,
@@ -180,6 +191,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
 			"code": 17287,
@@ -201,6 +213,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
 			"code": 17287,
@@ -222,6 +235,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
 			"code": 17287,
@@ -243,6 +257,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
 			"code": 17287,
@@ -254,28 +269,32 @@
 		"operation": {
 			"invalid.path.that.does.not.exist": "value"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "ccDSFA6x4SV0",
 		"operation": {
 			"": "empty field name"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "tzKVnnu8wBMk",
 		"operation": {
 			".": "dot field name"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "usqOPMco4uL1",
 		"operation": {
 			"..": "double dot field name"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "sqxymJVXWPsv",
@@ -284,7 +303,8 @@
 				"$gt": "not a number"
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "nWpqUu2T1FA5",
@@ -293,7 +313,8 @@
 				"$gt": 123
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "rsxF3cr9e00w",
@@ -305,7 +326,8 @@
 				]
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "gCGLQEOxz7yJ",
@@ -317,19 +339,24 @@
 				]
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "sJNPcSmmNWOu",
 		"operation": {
 			"number": null
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
-		"id": "oOz0ewr8TCOK",
-		"operation": {},
-		"documents": []
+		"id": "lgtrsn1vji3R",
+		"operation": {
+			"string": "@Undefined/und"
+		},
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "lVegqZHiljGO",
@@ -338,12 +365,15 @@
 				"$eq": null
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
-		"id": "iKeSdyBbDy4j",
+		"id": "pcoyykD75R2w",
 		"operation": {
-			"price": {}
+			"price": {
+				"$ne": "@Undefined/und"
+			}
 		},
 		"documents": [
 			1,
@@ -366,7 +396,8 @@
 			18,
 			19,
 			20
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "gqSHPsbquoL7",
@@ -375,7 +406,8 @@
 				"$regex": "[invalid"
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "mxLG4timf1FN",
@@ -384,7 +416,8 @@
 				"$regex": "(invalid"
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "rT2TqxhT4NLk",
@@ -394,7 +427,8 @@
 				"$options": "xyz"
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "hXyKSuJOl4jv",
@@ -404,7 +438,8 @@
 				"$options": "imxyz"
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "bNcSQLab2GGJ",
@@ -416,6 +451,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue divisor cannot be 0",
 			"code": 17287,
@@ -432,7 +468,8 @@
 				]
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "pJNrEH8JVISr",
@@ -441,6 +478,7 @@
 				"$mod": "invalid"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue malformed mod, needs to be an array",
 			"code": 17287,
@@ -456,6 +494,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue malformed mod, not enough elements",
 			"code": 17287,
@@ -469,6 +508,7 @@
 				"$mod": []
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue malformed mod, not enough elements",
 			"code": 17287,
@@ -482,6 +522,7 @@
 				"$all": "not an array"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue $all needs an array",
 			"code": 17287,
@@ -495,6 +536,7 @@
 				"$elemMatch": "not an object"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue $elemMatch needs an Object",
 			"code": 17287,
@@ -508,7 +550,8 @@
 				"$size": "not a number"
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "q5KMPlNjSYKg",
@@ -517,7 +560,8 @@
 				"$size": -1
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "mYfb5zPsPtez",
@@ -526,7 +570,8 @@
 				"$size": 1.5
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "f1ILzlnDHjpo",
@@ -535,6 +580,7 @@
 				"$bitsAllClear": -1
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllClear",
 			"code": 17287,
@@ -548,6 +594,7 @@
 				"$bitsAllSet": -1
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue unknown operator: $bitsAllSet",
 			"code": 17287,
@@ -563,6 +610,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnyClear",
 			"code": 17287,
@@ -578,6 +626,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue unknown operator: $bitsAnySet",
 			"code": 17287,
@@ -595,6 +644,7 @@
 				}
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue $not needs a regex or a document",
 			"code": 17287,
@@ -610,7 +660,8 @@
 				}
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "dWEPGK9wx0ZC",
@@ -620,6 +671,7 @@
 				"$invalid": true
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue unknown operator: $invalid",
 			"code": 17287,
@@ -632,6 +684,7 @@
 			"color": "purple",
 			"$unknown": "value"
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue unknown top level operator: $unknown",
 			"code": 17287,
@@ -643,29 +696,34 @@
 		"operation": {
 			"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": "value"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "pnaG8cFjoDgz",
 		"operation": {
 			"field\nwith\nnewlines": "value"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "q6OiTeAnERs1",
 		"operation": {
 			"field\twith\ttabs": "value"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "dMOJWM6DK84i",
 		"operation": {
 			"field\u0000with\u0000nulls": "value"
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "key field\u0000with\u0000nulls must not contain null bytes",
+			"code": "@Undefined/und",
 			"type": "Error"
 		}
 	}
