@@ -23,13 +23,15 @@
 			18,
 			19,
 			20
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "gbwHWj0FwGKT",
 		"operation": {
 			"$nop": false
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "unknown top level operator: $nop. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
 			"code": 2,
@@ -41,6 +43,7 @@
 		"operation": {
 			"$invalid": true
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "unknown top level operator: $invalid. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
 			"code": 2,
@@ -52,6 +55,7 @@
 		"operation": {
 			"$unknown": "value"
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "unknown top level operator: $unknown. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
 			"code": 2,
@@ -65,6 +69,7 @@
 				"$not": "purple"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$not needs a regex or a document",
 			"code": 2,
@@ -78,6 +83,7 @@
 				"$not": 123
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$not needs a regex or a document",
 			"code": 2,
@@ -91,6 +97,7 @@
 				"$not": true
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$not needs a regex or a document",
 			"code": 2,
@@ -104,6 +111,7 @@
 				"color": "purple"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$nor must be an array",
 			"code": 2,
@@ -117,6 +125,7 @@
 				"purple"
 			]
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$or/$and/$nor entries need to be full objects",
 			"code": 2,
@@ -138,6 +147,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Executor error during find command :: caused by :: can't $divide by zero",
 			"code": 4848401,
@@ -159,6 +169,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Executor error during find command :: caused by :: $divide only supports numeric types",
 			"code": 7157719,
@@ -180,6 +191,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Executor error during find command :: caused by :: $divide only supports numeric types",
 			"code": 7157719,
@@ -201,6 +213,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Executor error during find command :: caused by :: $divide only supports numeric types",
 			"code": 7157719,
@@ -222,6 +235,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Executor error during find command :: caused by :: $divide only supports numeric types",
 			"code": 7157719,
@@ -243,35 +257,40 @@
 				]
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "iRxsOFJGIMog",
 		"operation": {
 			"invalid.path.that.does.not.exist": "value"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "ccDSFA6x4SV0",
 		"operation": {
 			"": "empty field name"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "tzKVnnu8wBMk",
 		"operation": {
 			".": "dot field name"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "usqOPMco4uL1",
 		"operation": {
 			"..": "double dot field name"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "sqxymJVXWPsv",
@@ -280,7 +299,8 @@
 				"$gt": "not a number"
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "nWpqUu2T1FA5",
@@ -289,7 +309,8 @@
 				"$gt": 123
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "rsxF3cr9e00w",
@@ -301,7 +322,8 @@
 				]
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "gCGLQEOxz7yJ",
@@ -313,19 +335,24 @@
 				]
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "sJNPcSmmNWOu",
 		"operation": {
 			"number": null
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
-		"id": "oOz0ewr8TCOK",
-		"operation": {},
-		"documents": []
+		"id": "lgtrsn1vji3R",
+		"operation": {
+			"string": "@Undefined/und"
+		},
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "lVegqZHiljGO",
@@ -334,12 +361,15 @@
 				"$eq": null
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
-		"id": "iKeSdyBbDy4j",
+		"id": "pcoyykD75R2w",
 		"operation": {
-			"price": {}
+			"price": {
+				"$ne": "@Undefined/und"
+			}
 		},
 		"documents": [
 			1,
@@ -362,7 +392,8 @@
 			18,
 			19,
 			20
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "gqSHPsbquoL7",
@@ -371,6 +402,7 @@
 				"$regex": "[invalid"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Regular expression is invalid: missing terminating ] for character class",
 			"code": 51091,
@@ -384,6 +416,7 @@
 				"$regex": "(invalid"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Regular expression is invalid: missing closing parenthesis",
 			"code": 51091,
@@ -398,6 +431,7 @@
 				"$options": "xyz"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": " invalid flag in regex options: y",
 			"code": 51108,
@@ -412,6 +446,7 @@
 				"$options": "imxyz"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": " invalid flag in regex options: y",
 			"code": 51108,
@@ -428,6 +463,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "divisor cannot be 0",
 			"code": 2,
@@ -444,7 +480,8 @@
 				]
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "pJNrEH8JVISr",
@@ -453,6 +490,7 @@
 				"$mod": "invalid"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "malformed mod, needs to be an array",
 			"code": 2,
@@ -468,6 +506,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "malformed mod, not enough elements",
 			"code": 2,
@@ -481,6 +520,7 @@
 				"$mod": []
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "malformed mod, not enough elements",
 			"code": 2,
@@ -494,6 +534,7 @@
 				"$all": "not an array"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$all needs an array",
 			"code": 2,
@@ -507,6 +548,7 @@
 				"$elemMatch": "not an object"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$elemMatch needs an Object",
 			"code": 2,
@@ -520,6 +562,7 @@
 				"$size": "not a number"
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Failed to parse $size. Expected a number in: $size: \"not a number\"",
 			"code": 2,
@@ -533,6 +576,7 @@
 				"$size": -1
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Failed to parse $size. Expected a non-negative number in: $size: -1",
 			"code": 2,
@@ -546,6 +590,7 @@
 				"$size": 1.5
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Failed to parse $size. Expected an integer: $size: 1.5",
 			"code": 2,
@@ -559,6 +604,7 @@
 				"$bitsAllClear": -1
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Expected a non-negative number in: $bitsAllClear: -1",
 			"code": 9,
@@ -572,6 +618,7 @@
 				"$bitsAllSet": -1
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Expected a non-negative number in: $bitsAllSet: -1",
 			"code": 9,
@@ -587,6 +634,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Failed to parse bit position. Expected a non-negative number in: 0: -1",
 			"code": 2,
@@ -602,6 +650,7 @@
 				]
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Failed to parse bit position. Expected a non-negative number in: 0: -1",
 			"code": 2,
@@ -619,6 +668,7 @@
 				}
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$not needs a regex or a document",
 			"code": 2,
@@ -634,7 +684,8 @@
 				}
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "dWEPGK9wx0ZC",
@@ -644,6 +695,7 @@
 				"$invalid": true
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "unknown operator: $invalid",
 			"code": 2,
@@ -656,6 +708,7 @@
 			"color": "purple",
 			"$unknown": "value"
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "unknown top level operator: $unknown. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
 			"code": 2,
@@ -667,29 +720,34 @@
 		"operation": {
 			"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": "value"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "pnaG8cFjoDgz",
 		"operation": {
 			"field\nwith\nnewlines": "value"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "q6OiTeAnERs1",
 		"operation": {
 			"field\twith\ttabs": "value"
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "dMOJWM6DK84i",
 		"operation": {
 			"field\u0000with\u0000nulls": "value"
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "key field\u0000with\u0000nulls must not contain null bytes",
+			"code": "@Undefined/und",
 			"type": "BSONError"
 		}
 	}
