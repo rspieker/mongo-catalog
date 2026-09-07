@@ -1,0 +1,112 @@
+[
+	{
+		"id": "aSDX9jR2TFOH",
+		"operation": {
+			"a\u0000ge": 10
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "key a\u0000ge must not contain null bytes",
+			"code": "@Undefined/und",
+			"type": "Error"
+		}
+	},
+	{
+		"id": "nRHHqpJ6sWdf",
+		"operation": {
+			"fo\u0000o.bar": "value"
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "key fo\u0000o.bar must not contain null bytes",
+			"code": "@Undefined/und",
+			"type": "Error"
+		}
+	},
+	{
+		"id": "oXJPr5flxJIl",
+		"operation": {
+			"foo.ba\u0000r": "value"
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "key foo.ba\u0000r must not contain null bytes",
+			"code": "@Undefined/und",
+			"type": "Error"
+		}
+	},
+	{
+		"id": "v1WOZtvOYgv8",
+		"operation": {
+			"ar\u0000r.name": "value"
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "key ar\u0000r.name must not contain null bytes",
+			"code": "@Undefined/und",
+			"type": "Error"
+		}
+	},
+	{
+		"id": "vAM1pvI0umyg",
+		"operation": {
+			"arr.na\u0000me": "value"
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "key arr.na\u0000me must not contain null bytes",
+			"code": "@Undefined/und",
+			"type": "Error"
+		}
+	},
+	{
+		"id": "nxpIYXEXkXBO",
+		"operation": {
+			"age": {
+				"$gt\u0000": 5
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "key $gt\u0000 must not contain null bytes",
+			"code": "@Undefined/und",
+			"type": "Error"
+		}
+	},
+	{
+		"id": "ugiOwjXTgP42",
+		"operation": {
+			"text": "val\u0000ue"
+		},
+		"documents": [
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vnFUKyCLojQ1",
+		"operation": {
+			"text": {
+				"$regex": "val\u0000ue"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Regular expression cannot contain an embedded null byte",
+			"code": 2,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "tP2OK6UEuFOS",
+		"operation": {
+			"text": "@RegExp/val\u0000ue/"
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "value val\u0000ue must not contain null bytes",
+			"code": "@Undefined/und",
+			"type": "Error"
+		}
+	}
+]
