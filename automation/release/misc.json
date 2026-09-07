@@ -602,8 +602,8 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
-						"code": 17287,
+						"message": "unknown top level operator: $expr",
+						"code": 2,
 						"type": "MongoError"
 					},
 					"versions": "2.6.12..3.5.13"
@@ -869,7 +869,7 @@
 				{
 					"documents": [],
 					"error": "@Undefined/und",
-					"versions": "2.6.12..3.5.13,3.6.11..3.6.23,4.0.3..4.1.7"
+					"versions": "2.6.12..3.5.13,3.6.8..3.6.23,4.0.3..4.1.7"
 				},
 				{
 					"documents": "@Undefined/und",
@@ -878,7 +878,7 @@
 						"code": 51091,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0,3.6.5,3.7.1..4.0.0,4.1.10..8.3.8"
+					"versions": "3.6.0..3.6.5,3.7.1..4.0.0,4.1.10..8.3.8"
 				}
 			]
 		},
@@ -899,7 +899,7 @@
 				{
 					"documents": [],
 					"error": "@Undefined/und",
-					"versions": "2.6.12..3.5.13,3.6.11..3.6.23,4.0.3..4.1.7"
+					"versions": "2.6.12..3.5.13,3.6.8..3.6.23,4.0.3..4.1.7"
 				},
 				{
 					"documents": "@Undefined/und",
@@ -908,7 +908,7 @@
 						"code": 51091,
 						"type": "MongoServerError"
 					},
-					"versions": "3.6.0,3.6.5,3.7.1..4.0.0,4.1.10..8.3.8"
+					"versions": "3.6.0..3.6.5,3.7.1..4.0.0,4.1.10..8.3.8"
 				}
 			]
 		},
