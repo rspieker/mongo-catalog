@@ -124,6 +124,55 @@ const meridianSplit: Array<[number, number]> = [
 ]
 meridianSplit.push(meridianSplit[0])
 
+// Does MongoDB reject every pole-touching ring, or only the specific
+// self-crossing construction meridianSplit used (duplicate same-latitude,
+// opposite-longitude vertex pairs at each pole)? Isolates "touches a pole"
+// from "self-crossing" as two independent questions.
+
+// Case A: a clean single-pole wedge — one vertex exactly at the north
+// pole, no duplicate/coincident vertices anywhere.
+const poleWedge: Array<[number, number]> = [
+    [0, 90],
+    [0, 60],
+    [90, 60],
+    [0, 90],
+]
+
+// Case B: pole-to-pole, but touching each pole exactly once (unlike
+// meridianSplit, which visits each pole twice via differently-labeled but
+// coincident vertices). If this is accepted where meridianSplit was
+// rejected, the self-crossing construction — not the pole-touching — was
+// what triggered "Edges cross." Also an exact hemisphere tie (like
+// equatorSplitEquator), so a second, independent confirmation of the
+// winding tie-break rule if it does get accepted.
+const poleToPoleOnce: Array<[number, number]> = [
+    [0, -90],
+    [0, -60],
+    [0, -30],
+    [0, 0],
+    [0, 30],
+    [0, 60],
+    [0, 90],
+    [180, 60],
+    [180, 30],
+    [180, 0],
+    [180, -30],
+    [180, -60],
+    [0, -90],
+]
+
+// Edge model: does 2dsphere interpolate polygon edges as geodesics (great
+// circles) or as straight lines in lon/lat space? This triangle is sized
+// so the two interpretations disagree over a wide margin — the three test
+// points below sit well inside that disagreement band, not near either
+// boundary.
+const edgeModelTriangle: Array<[number, number]> = [
+    [-40, 0],
+    [40, 0],
+    [0, 70],
+    [-40, 0],
+]
+
 // The naive way one would write "a big rectangle": 4 corners. Because a GeoJSON
 // edge between two points is the shortest of the two possible arcs, and
 // 340 > 180, these edges get interpreted as a 20-degree arc the other
@@ -390,6 +439,45 @@ export const geoAntipodal: Catalog<GeoAntipodalDocument> = {
             },
         },
 
+        // vertex-at-pole scope, case A: clean single-pole wedge, no
+        // self-crossing — isolates "touches a pole" from meridianSplit's
+        // self-crossing construction
+        {
+            point: {
+                $geoWithin: {
+                    $geometry: { type: 'Polygon', coordinates: [poleWedge] },
+                },
+            },
+        },
+
+        // vertex-at-pole scope, case B: pole-to-pole, each pole touched
+        // exactly once, no duplicate/coincident vertices — both windings,
+        // since (if accepted) it's also an exact hemisphere tie
+        {
+            point: {
+                $geoWithin: {
+                    $geometry: { type: 'Polygon', coordinates: [poleToPoleOnce] },
+                },
+            },
+        },
+        {
+            point: {
+                $geoWithin: {
+                    $geometry: { type: 'Polygon', coordinates: [[...poleToPoleOnce].reverse()] },
+                },
+            },
+        },
+
+        // edge model: geodesic vs. flat lon/lat line interpolation of
+        // polygon edges — the sparse triangle where the two disagree
+        {
+            point: {
+                $geoWithin: {
+                    $geometry: { type: 'Polygon', coordinates: [edgeModelTriangle] },
+                },
+            },
+        },
+
         // the naive (edge-length-unsafe) "large rectangle" pitfall
         {
             point: {
@@ -490,6 +578,14 @@ export const geoAntipodal: Catalog<GeoAntipodalDocument> = {
             doc(14, 'north-of-equator-split', [90, 2]),
             doc(15, 'west-of-meridian-split', [-2, 45]),
             doc(16, 'east-of-meridian-split', [2, 45]),
+            doc(17, 'pole-wedge-inside', [45, 75]),
+            doc(18, 'pole-wedge-outside-below', [45, 50]),
+            doc(19, 'pole-wedge-outside-opposite', [-160, 75]),
+            doc(20, 'pole-to-pole-once-east', [90, 10]),
+            doc(21, 'pole-to-pole-once-west', [-90, 10]),
+            doc(22, 'edge-model-a', [-15, 55]),
+            doc(23, 'edge-model-b', [20, 50]),
+            doc(24, 'edge-model-c', [0, 65]),
         ],
     },
 }
