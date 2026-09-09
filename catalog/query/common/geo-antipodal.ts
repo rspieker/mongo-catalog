@@ -69,6 +69,61 @@ const bigRingA: Array<[number, number]> = [
 bigRingA.push(bigRingA[0])
 const bigRingB = [...bigRingA].reverse()
 
+// A full circle of latitude (no gap at the antimeridian, unlike bigRingA/B)
+// splits the globe into exactly two caps. Real MongoDB's "smaller region
+// wins" heuristic has a clear answer when the caps differ in size (lat -1
+// or 1), but at lat 0 the two caps are exactly equal — there's no
+// "smaller" to pick, so this is where the tie-break rule (if any) shows
+// itself. Dense 10-degree steps all the way around, closing edge included,
+// so every edge is a uniform short hop and none of them trip antimeridian
+// jump-detection.
+function fullParallel(lat: number, step: number): Array<[number, number]> {
+    const points: Array<[number, number]> = []
+    for (let lon = -180; lon < 180; lon += step) {
+        points.push([lon, lat])
+    }
+    points.push(points[0])
+    return points
+}
+
+const equatorSplitSouth = fullParallel(-1, 10)
+const equatorSplitEquator = fullParallel(0, 10)
+const equatorSplitNorth = fullParallel(1, 10)
+
+// The other axis: a full circle of longitude — up meridian `lon` from pole
+// to pole, then back down the antimeridian `lon + 180`. Unlike the latitude
+// rings above, any such split is *always* an exact 180/180 tie (there's no
+// near-tie/clear-winner variant to construct — every meridian pair divides
+// the globe into two equal hemispheres by definition), so this is a pure
+// tie-break probe. Consecutive same-latitude, opposite-longitude vertex
+// pairs at both poles (90/90 and -90/-90) keep every edge either a uniform
+// latitude step or a zero-length point-at-the-pole, so there's no
+// ambiguous-direction edge for jump-detection to mishandle — this is the
+// case most likely to exercise the pole-enclosing gap from geojson#18.
+function meridian(
+    lon: number,
+    latFrom: number,
+    latTo: number,
+    step: number
+): Array<[number, number]> {
+    const points: Array<[number, number]> = []
+    const dir = latTo >= latFrom ? step : -step
+    for (
+        let lat = latFrom;
+        dir > 0 ? lat <= latTo : lat >= latTo;
+        lat += dir
+    ) {
+        points.push([lon, lat])
+    }
+    return points
+}
+
+const meridianSplit: Array<[number, number]> = [
+    ...meridian(0, -90, 90, 10), // up the prime meridian, pole to pole
+    ...meridian(180, 90, -90, 10), // down the antimeridian, pole to pole
+]
+meridianSplit.push(meridianSplit[0])
+
 // The naive way one would write "a big rectangle": 4 corners. Because a GeoJSON
 // edge between two points is the shortest of the two possible arcs, and
 // 340 > 180, these edges get interpreted as a 20-degree arc the other
@@ -267,6 +322,74 @@ export const geoAntipodal: Catalog<GeoAntipodalDocument> = {
             },
         },
 
+        // equatorial exact-split winding tie-break: a full circle of
+        // latitude at -1/0/1 degrees, each tested both windings, against
+        // points just south (-2) and just north (2) of the whole set. At
+        // lat -1/1 the "smaller cap" heuristic has an unambiguous answer;
+        // at lat 0 the caps are exactly equal, so this is where any
+        // tie-break rule (winding direction, first-vertex side, ...) shows
+        // itself instead.
+        {
+            point: {
+                $geoWithin: {
+                    $geometry: { type: 'Polygon', coordinates: [equatorSplitSouth] },
+                },
+            },
+        },
+        {
+            point: {
+                $geoWithin: {
+                    $geometry: { type: 'Polygon', coordinates: [[...equatorSplitSouth].reverse()] },
+                },
+            },
+        },
+        {
+            point: {
+                $geoWithin: {
+                    $geometry: { type: 'Polygon', coordinates: [equatorSplitEquator] },
+                },
+            },
+        },
+        {
+            point: {
+                $geoWithin: {
+                    $geometry: { type: 'Polygon', coordinates: [[...equatorSplitEquator].reverse()] },
+                },
+            },
+        },
+        {
+            point: {
+                $geoWithin: {
+                    $geometry: { type: 'Polygon', coordinates: [equatorSplitNorth] },
+                },
+            },
+        },
+        {
+            point: {
+                $geoWithin: {
+                    $geometry: { type: 'Polygon', coordinates: [[...equatorSplitNorth].reverse()] },
+                },
+            },
+        },
+
+        // meridian exact-split winding tie-break: pole-to-pole ring along
+        // the prime meridian / antimeridian, both windings, against points
+        // just west (-2) and just east (2) of the split.
+        {
+            point: {
+                $geoWithin: {
+                    $geometry: { type: 'Polygon', coordinates: [meridianSplit] },
+                },
+            },
+        },
+        {
+            point: {
+                $geoWithin: {
+                    $geometry: { type: 'Polygon', coordinates: [[...meridianSplit].reverse()] },
+                },
+            },
+        },
+
         // the naive (edge-length-unsafe) "large rectangle" pitfall
         {
             point: {
@@ -363,6 +486,10 @@ export const geoAntipodal: Catalog<GeoAntipodalDocument> = {
             doc(10, 'arnhem', ARNHEM),
             doc(11, 'berlin', BERLIN),
             doc(12, 'paris', PARIS),
+            doc(13, 'south-of-equator-split', [90, -2]),
+            doc(14, 'north-of-equator-split', [90, 2]),
+            doc(15, 'west-of-meridian-split', [-2, 45]),
+            doc(16, 'east-of-meridian-split', [2, 45]),
         ],
     },
 }
