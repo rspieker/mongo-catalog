@@ -1,0 +1,4989 @@
+{
+	"catalog": "geoAntipodal",
+	"collection": {
+		"records": [
+			{
+				"_id": 1,
+				"name": "origin",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						0,
+						0
+					]
+				},
+				"legacyPoint": [
+					0,
+					0
+				]
+			},
+			{
+				"_id": 2,
+				"name": "near-antipode",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						179.9999,
+						0.0001
+					]
+				},
+				"legacyPoint": [
+					179.9999,
+					0.0001
+				]
+			},
+			{
+				"_id": 3,
+				"name": "exact-antipode",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						180,
+						0
+					]
+				},
+				"legacyPoint": [
+					180,
+					0
+				]
+			},
+			{
+				"_id": 4,
+				"name": "west-of-dateline",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						-179.9,
+						10
+					]
+				},
+				"legacyPoint": [
+					-179.9,
+					10
+				]
+			},
+			{
+				"_id": 5,
+				"name": "east-of-dateline",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						179.9,
+						10
+					]
+				},
+				"legacyPoint": [
+					179.9,
+					10
+				]
+			},
+			{
+				"_id": 6,
+				"name": "inside-small-square-and-big-band",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						2,
+						2
+					]
+				},
+				"legacyPoint": [
+					2,
+					2
+				]
+			},
+			{
+				"_id": 7,
+				"name": "inside-big-band-complement-sliver",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						179,
+						70
+					]
+				},
+				"legacyPoint": [
+					179,
+					70
+				]
+			},
+			{
+				"_id": 8,
+				"name": "near-dateline-probe-west-side",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						179.5,
+						-18
+					]
+				},
+				"legacyPoint": [
+					179.5,
+					-18
+				]
+			},
+			{
+				"_id": 9,
+				"name": "near-dateline-probe-east-side",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						-179.5,
+						-18
+					]
+				},
+				"legacyPoint": [
+					-179.5,
+					-18
+				]
+			},
+			{
+				"_id": 10,
+				"name": "arnhem",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						5.909662963872819,
+						51.9790545929402
+					]
+				},
+				"legacyPoint": [
+					5.909662963872819,
+					51.9790545929402
+				]
+			},
+			{
+				"_id": 11,
+				"name": "berlin",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						13.377711564851495,
+						52.51627850716736
+					]
+				},
+				"legacyPoint": [
+					13.377711564851495,
+					52.51627850716736
+				]
+			},
+			{
+				"_id": 12,
+				"name": "paris",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						2.294496321427715,
+						48.858267992656096
+					]
+				},
+				"legacyPoint": [
+					2.294496321427715,
+					48.858267992656096
+				]
+			},
+			{
+				"_id": 13,
+				"name": "south-of-equator-split",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						90,
+						-2
+					]
+				},
+				"legacyPoint": [
+					90,
+					-2
+				]
+			},
+			{
+				"_id": 14,
+				"name": "north-of-equator-split",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						90,
+						2
+					]
+				},
+				"legacyPoint": [
+					90,
+					2
+				]
+			},
+			{
+				"_id": 15,
+				"name": "west-of-meridian-split",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						-2,
+						45
+					]
+				},
+				"legacyPoint": [
+					-2,
+					45
+				]
+			},
+			{
+				"_id": 16,
+				"name": "east-of-meridian-split",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						2,
+						45
+					]
+				},
+				"legacyPoint": [
+					2,
+					45
+				]
+			},
+			{
+				"_id": 17,
+				"name": "pole-wedge-inside",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						45,
+						75
+					]
+				},
+				"legacyPoint": [
+					45,
+					75
+				]
+			},
+			{
+				"_id": 18,
+				"name": "pole-wedge-outside-below",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						45,
+						50
+					]
+				},
+				"legacyPoint": [
+					45,
+					50
+				]
+			},
+			{
+				"_id": 19,
+				"name": "pole-wedge-outside-opposite",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						-160,
+						75
+					]
+				},
+				"legacyPoint": [
+					-160,
+					75
+				]
+			},
+			{
+				"_id": 20,
+				"name": "pole-to-pole-once-east",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						90,
+						10
+					]
+				},
+				"legacyPoint": [
+					90,
+					10
+				]
+			},
+			{
+				"_id": 21,
+				"name": "pole-to-pole-once-west",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						-90,
+						10
+					]
+				},
+				"legacyPoint": [
+					-90,
+					10
+				]
+			},
+			{
+				"_id": 22,
+				"name": "edge-model-a",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						-15,
+						55
+					]
+				},
+				"legacyPoint": [
+					-15,
+					55
+				]
+			},
+			{
+				"_id": 23,
+				"name": "edge-model-b",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						20,
+						50
+					]
+				},
+				"legacyPoint": [
+					20,
+					50
+				]
+			},
+			{
+				"_id": 24,
+				"name": "edge-model-c",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						0,
+						65
+					]
+				},
+				"legacyPoint": [
+					0,
+					65
+				]
+			},
+			{
+				"_id": 25,
+				"name": "very-close-east-of-dateline",
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						179.99,
+						10
+					]
+				},
+				"legacyPoint": [
+					179.99,
+					10
+				]
+			}
+		]
+	},
+	"operations": [
+		{
+			"id": "mSypPdeNp4lp",
+			"query": {
+				"point": {
+					"$nearSphere": {
+						"$geometry": {
+							"type": "Point",
+							"coordinates": [
+								0,
+								0
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$nearSphere",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						1,
+						6,
+						16,
+						15,
+						12,
+						10,
+						23,
+						11,
+						22,
+						18,
+						24,
+						17,
+						21,
+						20,
+						14,
+						13,
+						19,
+						7,
+						8,
+						9,
+						4,
+						5,
+						25,
+						2,
+						3
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "lzqVtErHhWrv",
+			"query": {
+				"point": {
+					"$nearSphere": {
+						"$geometry": {
+							"type": "Point",
+							"coordinates": [
+								0,
+								0
+							]
+						},
+						"$maxDistance": 20037508
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$nearSphere",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						1,
+						6,
+						16,
+						15,
+						12,
+						10,
+						23,
+						11,
+						22,
+						18,
+						24,
+						17,
+						21,
+						20,
+						14,
+						13,
+						19,
+						7,
+						8,
+						9,
+						4,
+						5,
+						25,
+						2,
+						3
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "giYG0oyR4JZ9",
+			"query": {
+				"point": {
+					"$near": {
+						"$geometry": {
+							"type": "Point",
+							"coordinates": [
+								0,
+								0
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$near",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						1,
+						6,
+						16,
+						15,
+						12,
+						10,
+						23,
+						11,
+						22,
+						18,
+						24,
+						17,
+						21,
+						20,
+						14,
+						13,
+						19,
+						7,
+						8,
+						9,
+						4,
+						5,
+						25,
+						2,
+						3
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "nJP5T86oMHpK",
+			"query": {
+				"legacyPoint": {
+					"$near": [
+						0,
+						0
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$near",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						1,
+						6,
+						15,
+						16,
+						12,
+						10,
+						23,
+						11,
+						22,
+						24,
+						18,
+						17,
+						13,
+						14,
+						21,
+						20,
+						19,
+						2,
+						3,
+						4,
+						5,
+						25,
+						9,
+						8,
+						7
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "vwDl0IC6MZPm",
+			"query": {
+				"legacyPoint": {
+					"$nearSphere": [
+						0,
+						0
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$nearSphere",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						1,
+						6,
+						15,
+						16,
+						12,
+						10,
+						23,
+						11,
+						22,
+						18,
+						24,
+						17,
+						13,
+						21,
+						20,
+						14,
+						19,
+						7,
+						9,
+						8,
+						4,
+						5,
+						25,
+						2,
+						3
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "tF0GSBpaCPWB",
+			"query": {
+				"legacyPoint": {
+					"$nearSphere": [
+						0,
+						0
+					],
+					"$maxDistance": 3.14159
+				}
+			},
+			"operators": [
+				{
+					"operator": "$nearSphere",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						1,
+						6,
+						15,
+						16,
+						12,
+						10,
+						23,
+						11,
+						22,
+						18,
+						24,
+						17,
+						13,
+						21,
+						20,
+						14,
+						19,
+						7,
+						9,
+						8,
+						4,
+						5,
+						25
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "j8ZNBlWCZUQN",
+			"query": {
+				"legacyPoint": {
+					"$nearSphere": [
+						0,
+						0
+					],
+					"$maxDistance": 3.15
+				}
+			},
+			"operators": [
+				{
+					"operator": "$nearSphere",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						1,
+						6,
+						15,
+						16,
+						12,
+						10,
+						23,
+						11,
+						22,
+						18,
+						24,
+						17,
+						13,
+						21,
+						20,
+						14,
+						19,
+						7,
+						9,
+						8,
+						4,
+						5,
+						25,
+						2,
+						3
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "pN4GJKFKvzas",
+			"query": {
+				"point": {
+					"$nearSphere": {
+						"$geometry": {
+							"type": "Point",
+							"coordinates": [
+								-179.95,
+								10
+							]
+						},
+						"$maxDistance": 50000
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$nearSphere",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						4,
+						25,
+						5
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "tcUMLNzmydJF",
+			"query": {
+				"legacyPoint": {
+					"$near": [
+						-179.95,
+						10
+					],
+					"$maxDistance": 1
+				}
+			},
+			"operators": [
+				{
+					"operator": "$near",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "jDF4dnZPOsSz",
+			"query": {
+				"legacyPoint": {
+					"$nearSphere": [
+						-179.95,
+						10
+					],
+					"$maxDistance": 0.1
+				}
+			},
+			"operators": [
+				{
+					"operator": "$nearSphere",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "s4GWwxSYkREf",
+			"query": {
+				"legacyPoint": {
+					"$nearSphere": [
+						-179.95,
+						10
+					],
+					"$maxDistance": 1
+				}
+			},
+			"operators": [
+				{
+					"operator": "$nearSphere",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						4,
+						9
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "i7xMnn1IWrc8",
+			"query": {
+				"legacyPoint": {
+					"$nearSphere": [
+						-179.95,
+						10
+					],
+					"$maxDistance": 3.15
+				}
+			},
+			"operators": [
+				{
+					"operator": "$nearSphere",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						4,
+						9,
+						7,
+						19,
+						21,
+						20,
+						14,
+						13,
+						17,
+						24,
+						18,
+						22,
+						11,
+						23,
+						10,
+						12,
+						15,
+						16,
+						6,
+						1
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "husDXBDQSzxd",
+			"query": {
+				"legacyPoint": {
+					"$nearSphere": [
+						179.95,
+						10
+					],
+					"$maxDistance": 3.15
+				}
+			},
+			"operators": [
+				{
+					"operator": "$nearSphere",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						25,
+						5,
+						2,
+						3,
+						8,
+						7,
+						19,
+						20,
+						21,
+						14,
+						13,
+						17,
+						24,
+						18,
+						22,
+						11,
+						23,
+						10,
+						12,
+						16,
+						15,
+						6,
+						1
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "gBxvFi2D4NVF",
+			"query": {
+				"legacyPoint": {
+					"$geoWithin": {
+						"$centerSphere": [
+							[
+								-179.95,
+								10
+							],
+							3.15
+						]
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						9,
+						4,
+						19,
+						21,
+						22,
+						15,
+						13,
+						8,
+						1,
+						6,
+						16,
+						12,
+						10,
+						24,
+						11,
+						23,
+						18,
+						17,
+						14,
+						20,
+						2,
+						3,
+						5,
+						25,
+						7
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "rjE6maxhXwGk",
+			"query": {
+				"legacyPoint": {
+					"$near": [
+						5.909662963872819,
+						51.9790545929402
+					]
+				}
+			},
+			"operators": [
+				{
+					"operator": "$near",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						10,
+						12,
+						11,
+						16,
+						15,
+						23,
+						24,
+						22,
+						18,
+						17,
+						6,
+						1,
+						20,
+						14,
+						13,
+						21,
+						19,
+						7,
+						5,
+						25,
+						2,
+						3,
+						8,
+						4,
+						9
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "wNAoJrZvpZ4K",
+			"query": {
+				"legacyPoint": {
+					"$near": [
+						5.909662963872819,
+						51.9790545929402
+					],
+					"$minDistance": 6,
+					"$maxDistance": 10
+				}
+			},
+			"operators": [
+				{
+					"operator": "$near",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						11,
+						16
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "rI1S6bH8K3qL",
+			"query": {
+				"legacyPoint": {
+					"$nearSphere": [
+						5.909662963872819,
+						51.9790545929402
+					],
+					"$minDistance": 0.07,
+					"$maxDistance": 0.09
+				}
+			},
+			"operators": [
+				{
+					"operator": "$nearSphere",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						11
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "qzHtkKim30au",
+			"query": {
+				"point": {
+					"$near": {
+						"$geometry": {
+							"type": "Point",
+							"coordinates": [
+								5.909662963872819,
+								51.9790545929402
+							]
+						},
+						"$minDistance": 400000,
+						"$maxDistance": 600000
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$near",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						12,
+						11
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "dAhcqqWaK77z",
+			"query": {
+				"point": {
+					"$nearSphere": {
+						"$geometry": {
+							"type": "Point",
+							"coordinates": [
+								5.909662963872819,
+								51.9790545929402
+							]
+						},
+						"$minDistance": 400000,
+						"$maxDistance": 600000
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$nearSphere",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						12,
+						11
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "aazzxcO4p0a0",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										0,
+										0
+									],
+									[
+										4,
+										0
+									],
+									[
+										4,
+										4
+									],
+									[
+										0,
+										4
+									],
+									[
+										0,
+										0
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						1,
+						6
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "pm44FHRiJXYq",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										0,
+										0
+									],
+									[
+										0,
+										4
+									],
+									[
+										4,
+										4
+									],
+									[
+										4,
+										0
+									],
+									[
+										0,
+										0
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						1,
+						6
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "h7ZRorhCKrTp",
+			"query": {
+				"point": {
+					"$geoIntersects": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										0,
+										0
+									],
+									[
+										4,
+										0
+									],
+									[
+										4,
+										4
+									],
+									[
+										0,
+										4
+									],
+									[
+										0,
+										0
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoIntersects",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						1,
+						6
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "nyOngMFCIA05",
+			"query": {
+				"point": {
+					"$geoIntersects": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										0,
+										0
+									],
+									[
+										0,
+										4
+									],
+									[
+										4,
+										4
+									],
+									[
+										4,
+										0
+									],
+									[
+										0,
+										0
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoIntersects",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						1,
+						6
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "sXC3i1goH9DS",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										-170,
+										-60
+									],
+									[
+										-160,
+										-60
+									],
+									[
+										-150,
+										-60
+									],
+									[
+										-140,
+										-60
+									],
+									[
+										-130,
+										-60
+									],
+									[
+										-120,
+										-60
+									],
+									[
+										-110,
+										-60
+									],
+									[
+										-100,
+										-60
+									],
+									[
+										-90,
+										-60
+									],
+									[
+										-80,
+										-60
+									],
+									[
+										-70,
+										-60
+									],
+									[
+										-60,
+										-60
+									],
+									[
+										-50,
+										-60
+									],
+									[
+										-40,
+										-60
+									],
+									[
+										-30,
+										-60
+									],
+									[
+										-20,
+										-60
+									],
+									[
+										-10,
+										-60
+									],
+									[
+										0,
+										-60
+									],
+									[
+										10,
+										-60
+									],
+									[
+										20,
+										-60
+									],
+									[
+										30,
+										-60
+									],
+									[
+										40,
+										-60
+									],
+									[
+										50,
+										-60
+									],
+									[
+										60,
+										-60
+									],
+									[
+										70,
+										-60
+									],
+									[
+										80,
+										-60
+									],
+									[
+										90,
+										-60
+									],
+									[
+										100,
+										-60
+									],
+									[
+										110,
+										-60
+									],
+									[
+										120,
+										-60
+									],
+									[
+										130,
+										-60
+									],
+									[
+										140,
+										-60
+									],
+									[
+										150,
+										-60
+									],
+									[
+										160,
+										-60
+									],
+									[
+										170,
+										-60
+									],
+									[
+										170,
+										60
+									],
+									[
+										160,
+										60
+									],
+									[
+										150,
+										60
+									],
+									[
+										140,
+										60
+									],
+									[
+										130,
+										60
+									],
+									[
+										120,
+										60
+									],
+									[
+										110,
+										60
+									],
+									[
+										100,
+										60
+									],
+									[
+										90,
+										60
+									],
+									[
+										80,
+										60
+									],
+									[
+										70,
+										60
+									],
+									[
+										60,
+										60
+									],
+									[
+										50,
+										60
+									],
+									[
+										40,
+										60
+									],
+									[
+										30,
+										60
+									],
+									[
+										20,
+										60
+									],
+									[
+										10,
+										60
+									],
+									[
+										0,
+										60
+									],
+									[
+										-10,
+										60
+									],
+									[
+										-20,
+										60
+									],
+									[
+										-30,
+										60
+									],
+									[
+										-40,
+										60
+									],
+									[
+										-50,
+										60
+									],
+									[
+										-60,
+										60
+									],
+									[
+										-70,
+										60
+									],
+									[
+										-80,
+										60
+									],
+									[
+										-90,
+										60
+									],
+									[
+										-100,
+										60
+									],
+									[
+										-110,
+										60
+									],
+									[
+										-120,
+										60
+									],
+									[
+										-130,
+										60
+									],
+									[
+										-140,
+										60
+									],
+									[
+										-150,
+										60
+									],
+									[
+										-160,
+										60
+									],
+									[
+										-170,
+										60
+									],
+									[
+										-170,
+										-60
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						17,
+						24,
+						19,
+						7,
+						5,
+						25,
+						2,
+						8,
+						3,
+						9,
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "uBsKKjZtJP0L",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										-170,
+										-60
+									],
+									[
+										-170,
+										60
+									],
+									[
+										-160,
+										60
+									],
+									[
+										-150,
+										60
+									],
+									[
+										-140,
+										60
+									],
+									[
+										-130,
+										60
+									],
+									[
+										-120,
+										60
+									],
+									[
+										-110,
+										60
+									],
+									[
+										-100,
+										60
+									],
+									[
+										-90,
+										60
+									],
+									[
+										-80,
+										60
+									],
+									[
+										-70,
+										60
+									],
+									[
+										-60,
+										60
+									],
+									[
+										-50,
+										60
+									],
+									[
+										-40,
+										60
+									],
+									[
+										-30,
+										60
+									],
+									[
+										-20,
+										60
+									],
+									[
+										-10,
+										60
+									],
+									[
+										0,
+										60
+									],
+									[
+										10,
+										60
+									],
+									[
+										20,
+										60
+									],
+									[
+										30,
+										60
+									],
+									[
+										40,
+										60
+									],
+									[
+										50,
+										60
+									],
+									[
+										60,
+										60
+									],
+									[
+										70,
+										60
+									],
+									[
+										80,
+										60
+									],
+									[
+										90,
+										60
+									],
+									[
+										100,
+										60
+									],
+									[
+										110,
+										60
+									],
+									[
+										120,
+										60
+									],
+									[
+										130,
+										60
+									],
+									[
+										140,
+										60
+									],
+									[
+										150,
+										60
+									],
+									[
+										160,
+										60
+									],
+									[
+										170,
+										60
+									],
+									[
+										170,
+										-60
+									],
+									[
+										160,
+										-60
+									],
+									[
+										150,
+										-60
+									],
+									[
+										140,
+										-60
+									],
+									[
+										130,
+										-60
+									],
+									[
+										120,
+										-60
+									],
+									[
+										110,
+										-60
+									],
+									[
+										100,
+										-60
+									],
+									[
+										90,
+										-60
+									],
+									[
+										80,
+										-60
+									],
+									[
+										70,
+										-60
+									],
+									[
+										60,
+										-60
+									],
+									[
+										50,
+										-60
+									],
+									[
+										40,
+										-60
+									],
+									[
+										30,
+										-60
+									],
+									[
+										20,
+										-60
+									],
+									[
+										10,
+										-60
+									],
+									[
+										0,
+										-60
+									],
+									[
+										-10,
+										-60
+									],
+									[
+										-20,
+										-60
+									],
+									[
+										-30,
+										-60
+									],
+									[
+										-40,
+										-60
+									],
+									[
+										-50,
+										-60
+									],
+									[
+										-60,
+										-60
+									],
+									[
+										-70,
+										-60
+									],
+									[
+										-80,
+										-60
+									],
+									[
+										-90,
+										-60
+									],
+									[
+										-100,
+										-60
+									],
+									[
+										-110,
+										-60
+									],
+									[
+										-120,
+										-60
+									],
+									[
+										-130,
+										-60
+									],
+									[
+										-140,
+										-60
+									],
+									[
+										-150,
+										-60
+									],
+									[
+										-160,
+										-60
+									],
+									[
+										-170,
+										-60
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						17,
+						24,
+						19,
+						7,
+						5,
+						25,
+						2,
+						8,
+						3,
+						9,
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "vIFD7HcGS12u",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										-170,
+										-60
+									],
+									[
+										-160,
+										-60
+									],
+									[
+										-150,
+										-60
+									],
+									[
+										-140,
+										-60
+									],
+									[
+										-130,
+										-60
+									],
+									[
+										-120,
+										-60
+									],
+									[
+										-110,
+										-60
+									],
+									[
+										-100,
+										-60
+									],
+									[
+										-90,
+										-60
+									],
+									[
+										-80,
+										-60
+									],
+									[
+										-70,
+										-60
+									],
+									[
+										-60,
+										-60
+									],
+									[
+										-50,
+										-60
+									],
+									[
+										-40,
+										-60
+									],
+									[
+										-30,
+										-60
+									],
+									[
+										-20,
+										-60
+									],
+									[
+										-10,
+										-60
+									],
+									[
+										0,
+										-60
+									],
+									[
+										10,
+										-60
+									],
+									[
+										20,
+										-60
+									],
+									[
+										30,
+										-60
+									],
+									[
+										40,
+										-60
+									],
+									[
+										50,
+										-60
+									],
+									[
+										60,
+										-60
+									],
+									[
+										70,
+										-60
+									],
+									[
+										80,
+										-60
+									],
+									[
+										90,
+										-60
+									],
+									[
+										100,
+										-60
+									],
+									[
+										110,
+										-60
+									],
+									[
+										120,
+										-60
+									],
+									[
+										130,
+										-60
+									],
+									[
+										140,
+										-60
+									],
+									[
+										150,
+										-60
+									],
+									[
+										160,
+										-60
+									],
+									[
+										170,
+										-60
+									],
+									[
+										170,
+										60
+									],
+									[
+										160,
+										60
+									],
+									[
+										150,
+										60
+									],
+									[
+										140,
+										60
+									],
+									[
+										130,
+										60
+									],
+									[
+										120,
+										60
+									],
+									[
+										110,
+										60
+									],
+									[
+										100,
+										60
+									],
+									[
+										90,
+										60
+									],
+									[
+										80,
+										60
+									],
+									[
+										70,
+										60
+									],
+									[
+										60,
+										60
+									],
+									[
+										50,
+										60
+									],
+									[
+										40,
+										60
+									],
+									[
+										30,
+										60
+									],
+									[
+										20,
+										60
+									],
+									[
+										10,
+										60
+									],
+									[
+										0,
+										60
+									],
+									[
+										-10,
+										60
+									],
+									[
+										-20,
+										60
+									],
+									[
+										-30,
+										60
+									],
+									[
+										-40,
+										60
+									],
+									[
+										-50,
+										60
+									],
+									[
+										-60,
+										60
+									],
+									[
+										-70,
+										60
+									],
+									[
+										-80,
+										60
+									],
+									[
+										-90,
+										60
+									],
+									[
+										-100,
+										60
+									],
+									[
+										-110,
+										60
+									],
+									[
+										-120,
+										60
+									],
+									[
+										-130,
+										60
+									],
+									[
+										-140,
+										60
+									],
+									[
+										-150,
+										60
+									],
+									[
+										-160,
+										60
+									],
+									[
+										-170,
+										60
+									],
+									[
+										-170,
+										-60
+									]
+								]
+							],
+							"crs": {
+								"type": "name",
+								"properties": {
+									"name": "urn:x-mongodb:crs:strictwinding:EPSG:4326"
+								}
+							}
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						21,
+						1,
+						6,
+						13,
+						14,
+						20,
+						18,
+						23,
+						11,
+						10,
+						12,
+						16,
+						15,
+						22
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "pL8QbnvhTjUV",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										-170,
+										-60
+									],
+									[
+										-170,
+										60
+									],
+									[
+										-160,
+										60
+									],
+									[
+										-150,
+										60
+									],
+									[
+										-140,
+										60
+									],
+									[
+										-130,
+										60
+									],
+									[
+										-120,
+										60
+									],
+									[
+										-110,
+										60
+									],
+									[
+										-100,
+										60
+									],
+									[
+										-90,
+										60
+									],
+									[
+										-80,
+										60
+									],
+									[
+										-70,
+										60
+									],
+									[
+										-60,
+										60
+									],
+									[
+										-50,
+										60
+									],
+									[
+										-40,
+										60
+									],
+									[
+										-30,
+										60
+									],
+									[
+										-20,
+										60
+									],
+									[
+										-10,
+										60
+									],
+									[
+										0,
+										60
+									],
+									[
+										10,
+										60
+									],
+									[
+										20,
+										60
+									],
+									[
+										30,
+										60
+									],
+									[
+										40,
+										60
+									],
+									[
+										50,
+										60
+									],
+									[
+										60,
+										60
+									],
+									[
+										70,
+										60
+									],
+									[
+										80,
+										60
+									],
+									[
+										90,
+										60
+									],
+									[
+										100,
+										60
+									],
+									[
+										110,
+										60
+									],
+									[
+										120,
+										60
+									],
+									[
+										130,
+										60
+									],
+									[
+										140,
+										60
+									],
+									[
+										150,
+										60
+									],
+									[
+										160,
+										60
+									],
+									[
+										170,
+										60
+									],
+									[
+										170,
+										-60
+									],
+									[
+										160,
+										-60
+									],
+									[
+										150,
+										-60
+									],
+									[
+										140,
+										-60
+									],
+									[
+										130,
+										-60
+									],
+									[
+										120,
+										-60
+									],
+									[
+										110,
+										-60
+									],
+									[
+										100,
+										-60
+									],
+									[
+										90,
+										-60
+									],
+									[
+										80,
+										-60
+									],
+									[
+										70,
+										-60
+									],
+									[
+										60,
+										-60
+									],
+									[
+										50,
+										-60
+									],
+									[
+										40,
+										-60
+									],
+									[
+										30,
+										-60
+									],
+									[
+										20,
+										-60
+									],
+									[
+										10,
+										-60
+									],
+									[
+										0,
+										-60
+									],
+									[
+										-10,
+										-60
+									],
+									[
+										-20,
+										-60
+									],
+									[
+										-30,
+										-60
+									],
+									[
+										-40,
+										-60
+									],
+									[
+										-50,
+										-60
+									],
+									[
+										-60,
+										-60
+									],
+									[
+										-70,
+										-60
+									],
+									[
+										-80,
+										-60
+									],
+									[
+										-90,
+										-60
+									],
+									[
+										-100,
+										-60
+									],
+									[
+										-110,
+										-60
+									],
+									[
+										-120,
+										-60
+									],
+									[
+										-130,
+										-60
+									],
+									[
+										-140,
+										-60
+									],
+									[
+										-150,
+										-60
+									],
+									[
+										-160,
+										-60
+									],
+									[
+										-170,
+										-60
+									]
+								]
+							],
+							"crs": {
+								"type": "name",
+								"properties": {
+									"name": "urn:x-mongodb:crs:strictwinding:EPSG:4326"
+								}
+							}
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						17,
+						24,
+						19,
+						7,
+						5,
+						25,
+						2,
+						8,
+						3,
+						9,
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "s1F0S7keX2IK",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										-180,
+										-1
+									],
+									[
+										-170,
+										-1
+									],
+									[
+										-160,
+										-1
+									],
+									[
+										-150,
+										-1
+									],
+									[
+										-140,
+										-1
+									],
+									[
+										-130,
+										-1
+									],
+									[
+										-120,
+										-1
+									],
+									[
+										-110,
+										-1
+									],
+									[
+										-100,
+										-1
+									],
+									[
+										-90,
+										-1
+									],
+									[
+										-80,
+										-1
+									],
+									[
+										-70,
+										-1
+									],
+									[
+										-60,
+										-1
+									],
+									[
+										-50,
+										-1
+									],
+									[
+										-40,
+										-1
+									],
+									[
+										-30,
+										-1
+									],
+									[
+										-20,
+										-1
+									],
+									[
+										-10,
+										-1
+									],
+									[
+										0,
+										-1
+									],
+									[
+										10,
+										-1
+									],
+									[
+										20,
+										-1
+									],
+									[
+										30,
+										-1
+									],
+									[
+										40,
+										-1
+									],
+									[
+										50,
+										-1
+									],
+									[
+										60,
+										-1
+									],
+									[
+										70,
+										-1
+									],
+									[
+										80,
+										-1
+									],
+									[
+										90,
+										-1
+									],
+									[
+										100,
+										-1
+									],
+									[
+										110,
+										-1
+									],
+									[
+										120,
+										-1
+									],
+									[
+										130,
+										-1
+									],
+									[
+										140,
+										-1
+									],
+									[
+										150,
+										-1
+									],
+									[
+										160,
+										-1
+									],
+									[
+										170,
+										-1
+									],
+									[
+										-180,
+										-1
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						13,
+						8,
+						9
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "jKWhESYpXrVR",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										-180,
+										-1
+									],
+									[
+										170,
+										-1
+									],
+									[
+										160,
+										-1
+									],
+									[
+										150,
+										-1
+									],
+									[
+										140,
+										-1
+									],
+									[
+										130,
+										-1
+									],
+									[
+										120,
+										-1
+									],
+									[
+										110,
+										-1
+									],
+									[
+										100,
+										-1
+									],
+									[
+										90,
+										-1
+									],
+									[
+										80,
+										-1
+									],
+									[
+										70,
+										-1
+									],
+									[
+										60,
+										-1
+									],
+									[
+										50,
+										-1
+									],
+									[
+										40,
+										-1
+									],
+									[
+										30,
+										-1
+									],
+									[
+										20,
+										-1
+									],
+									[
+										10,
+										-1
+									],
+									[
+										0,
+										-1
+									],
+									[
+										-10,
+										-1
+									],
+									[
+										-20,
+										-1
+									],
+									[
+										-30,
+										-1
+									],
+									[
+										-40,
+										-1
+									],
+									[
+										-50,
+										-1
+									],
+									[
+										-60,
+										-1
+									],
+									[
+										-70,
+										-1
+									],
+									[
+										-80,
+										-1
+									],
+									[
+										-90,
+										-1
+									],
+									[
+										-100,
+										-1
+									],
+									[
+										-110,
+										-1
+									],
+									[
+										-120,
+										-1
+									],
+									[
+										-130,
+										-1
+									],
+									[
+										-140,
+										-1
+									],
+									[
+										-150,
+										-1
+									],
+									[
+										-160,
+										-1
+									],
+									[
+										-170,
+										-1
+									],
+									[
+										-180,
+										-1
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						13,
+						8,
+						9
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "bzYR0u5eVGgB",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										-180,
+										0
+									],
+									[
+										-170,
+										0
+									],
+									[
+										-160,
+										0
+									],
+									[
+										-150,
+										0
+									],
+									[
+										-140,
+										0
+									],
+									[
+										-130,
+										0
+									],
+									[
+										-120,
+										0
+									],
+									[
+										-110,
+										0
+									],
+									[
+										-100,
+										0
+									],
+									[
+										-90,
+										0
+									],
+									[
+										-80,
+										0
+									],
+									[
+										-70,
+										0
+									],
+									[
+										-60,
+										0
+									],
+									[
+										-50,
+										0
+									],
+									[
+										-40,
+										0
+									],
+									[
+										-30,
+										0
+									],
+									[
+										-20,
+										0
+									],
+									[
+										-10,
+										0
+									],
+									[
+										0,
+										0
+									],
+									[
+										10,
+										0
+									],
+									[
+										20,
+										0
+									],
+									[
+										30,
+										0
+									],
+									[
+										40,
+										0
+									],
+									[
+										50,
+										0
+									],
+									[
+										60,
+										0
+									],
+									[
+										70,
+										0
+									],
+									[
+										80,
+										0
+									],
+									[
+										90,
+										0
+									],
+									[
+										100,
+										0
+									],
+									[
+										110,
+										0
+									],
+									[
+										120,
+										0
+									],
+									[
+										130,
+										0
+									],
+									[
+										140,
+										0
+									],
+									[
+										150,
+										0
+									],
+									[
+										160,
+										0
+									],
+									[
+										170,
+										0
+									],
+									[
+										-180,
+										0
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						21,
+						1,
+						6,
+						14,
+						20,
+						18,
+						17,
+						23,
+						11,
+						10,
+						12,
+						16,
+						15,
+						24,
+						22,
+						19,
+						7,
+						5,
+						25,
+						2,
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "wNFo9LHOtZeO",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										-180,
+										0
+									],
+									[
+										170,
+										0
+									],
+									[
+										160,
+										0
+									],
+									[
+										150,
+										0
+									],
+									[
+										140,
+										0
+									],
+									[
+										130,
+										0
+									],
+									[
+										120,
+										0
+									],
+									[
+										110,
+										0
+									],
+									[
+										100,
+										0
+									],
+									[
+										90,
+										0
+									],
+									[
+										80,
+										0
+									],
+									[
+										70,
+										0
+									],
+									[
+										60,
+										0
+									],
+									[
+										50,
+										0
+									],
+									[
+										40,
+										0
+									],
+									[
+										30,
+										0
+									],
+									[
+										20,
+										0
+									],
+									[
+										10,
+										0
+									],
+									[
+										0,
+										0
+									],
+									[
+										-10,
+										0
+									],
+									[
+										-20,
+										0
+									],
+									[
+										-30,
+										0
+									],
+									[
+										-40,
+										0
+									],
+									[
+										-50,
+										0
+									],
+									[
+										-60,
+										0
+									],
+									[
+										-70,
+										0
+									],
+									[
+										-80,
+										0
+									],
+									[
+										-90,
+										0
+									],
+									[
+										-100,
+										0
+									],
+									[
+										-110,
+										0
+									],
+									[
+										-120,
+										0
+									],
+									[
+										-130,
+										0
+									],
+									[
+										-140,
+										0
+									],
+									[
+										-150,
+										0
+									],
+									[
+										-160,
+										0
+									],
+									[
+										-170,
+										0
+									],
+									[
+										-180,
+										0
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						1,
+						13,
+						8,
+						3,
+						9
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "nFRMzVLxX2Hu",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										-180,
+										1
+									],
+									[
+										-170,
+										1
+									],
+									[
+										-160,
+										1
+									],
+									[
+										-150,
+										1
+									],
+									[
+										-140,
+										1
+									],
+									[
+										-130,
+										1
+									],
+									[
+										-120,
+										1
+									],
+									[
+										-110,
+										1
+									],
+									[
+										-100,
+										1
+									],
+									[
+										-90,
+										1
+									],
+									[
+										-80,
+										1
+									],
+									[
+										-70,
+										1
+									],
+									[
+										-60,
+										1
+									],
+									[
+										-50,
+										1
+									],
+									[
+										-40,
+										1
+									],
+									[
+										-30,
+										1
+									],
+									[
+										-20,
+										1
+									],
+									[
+										-10,
+										1
+									],
+									[
+										0,
+										1
+									],
+									[
+										10,
+										1
+									],
+									[
+										20,
+										1
+									],
+									[
+										30,
+										1
+									],
+									[
+										40,
+										1
+									],
+									[
+										50,
+										1
+									],
+									[
+										60,
+										1
+									],
+									[
+										70,
+										1
+									],
+									[
+										80,
+										1
+									],
+									[
+										90,
+										1
+									],
+									[
+										100,
+										1
+									],
+									[
+										110,
+										1
+									],
+									[
+										120,
+										1
+									],
+									[
+										130,
+										1
+									],
+									[
+										140,
+										1
+									],
+									[
+										150,
+										1
+									],
+									[
+										160,
+										1
+									],
+									[
+										170,
+										1
+									],
+									[
+										-180,
+										1
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						21,
+						6,
+						14,
+						20,
+						18,
+						17,
+						23,
+						11,
+						10,
+						12,
+						16,
+						15,
+						24,
+						22,
+						19,
+						7,
+						5,
+						25,
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "nJVdBnqEMe0E",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										-180,
+										1
+									],
+									[
+										170,
+										1
+									],
+									[
+										160,
+										1
+									],
+									[
+										150,
+										1
+									],
+									[
+										140,
+										1
+									],
+									[
+										130,
+										1
+									],
+									[
+										120,
+										1
+									],
+									[
+										110,
+										1
+									],
+									[
+										100,
+										1
+									],
+									[
+										90,
+										1
+									],
+									[
+										80,
+										1
+									],
+									[
+										70,
+										1
+									],
+									[
+										60,
+										1
+									],
+									[
+										50,
+										1
+									],
+									[
+										40,
+										1
+									],
+									[
+										30,
+										1
+									],
+									[
+										20,
+										1
+									],
+									[
+										10,
+										1
+									],
+									[
+										0,
+										1
+									],
+									[
+										-10,
+										1
+									],
+									[
+										-20,
+										1
+									],
+									[
+										-30,
+										1
+									],
+									[
+										-40,
+										1
+									],
+									[
+										-50,
+										1
+									],
+									[
+										-60,
+										1
+									],
+									[
+										-70,
+										1
+									],
+									[
+										-80,
+										1
+									],
+									[
+										-90,
+										1
+									],
+									[
+										-100,
+										1
+									],
+									[
+										-110,
+										1
+									],
+									[
+										-120,
+										1
+									],
+									[
+										-130,
+										1
+									],
+									[
+										-140,
+										1
+									],
+									[
+										-150,
+										1
+									],
+									[
+										-160,
+										1
+									],
+									[
+										-170,
+										1
+									],
+									[
+										-180,
+										1
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						21,
+						6,
+						14,
+						20,
+						18,
+						17,
+						23,
+						11,
+						10,
+						12,
+						16,
+						15,
+						24,
+						22,
+						19,
+						7,
+						5,
+						25,
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "pqy5IANqNQVT",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										0,
+										-90
+									],
+									[
+										0,
+										-80
+									],
+									[
+										0,
+										-70
+									],
+									[
+										0,
+										-60
+									],
+									[
+										0,
+										-50
+									],
+									[
+										0,
+										-40
+									],
+									[
+										0,
+										-30
+									],
+									[
+										0,
+										-20
+									],
+									[
+										0,
+										-10
+									],
+									[
+										0,
+										0
+									],
+									[
+										0,
+										10
+									],
+									[
+										0,
+										20
+									],
+									[
+										0,
+										30
+									],
+									[
+										0,
+										40
+									],
+									[
+										0,
+										50
+									],
+									[
+										0,
+										60
+									],
+									[
+										0,
+										70
+									],
+									[
+										0,
+										80
+									],
+									[
+										0,
+										90
+									],
+									[
+										180,
+										90
+									],
+									[
+										180,
+										80
+									],
+									[
+										180,
+										70
+									],
+									[
+										180,
+										60
+									],
+									[
+										180,
+										50
+									],
+									[
+										180,
+										40
+									],
+									[
+										180,
+										30
+									],
+									[
+										180,
+										20
+									],
+									[
+										180,
+										10
+									],
+									[
+										180,
+										0
+									],
+									[
+										180,
+										-10
+									],
+									[
+										180,
+										-20
+									],
+									[
+										180,
+										-30
+									],
+									[
+										180,
+										-40
+									],
+									[
+										180,
+										-50
+									],
+									[
+										180,
+										-60
+									],
+									[
+										180,
+										-70
+									],
+									[
+										180,
+										-80
+									],
+									[
+										180,
+										-90
+									],
+									[
+										0,
+										-90
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": "@Undefined/und",
+					"error": {
+						"message": "Loop is not valid: [ [ 0, -90 ], [ 0, -80 ], [ 0, -70 ], [ 0, -60 ], [ 0, -50 ], [ 0, -40 ], [ 0, -30 ], [ 0, -20 ], [ 0, -10 ], [ 0, 0 ], [ 0, 10 ], [ 0, 20 ], [ 0, 30 ], [ 0, 40 ], [ 0, 50 ], [ 0, 60 ], [ 0, 70 ], [ 0, 80 ], [ 0, 90 ], [ 180, 90 ], [ 180, 80 ], [ 180, 70 ], [ 180, 60 ], [ 180, 50 ], [ 180, 40 ], [ 180, 30 ], [ 180, 20 ], [ 180, 10 ], [ 180, 0 ], [ 180, -10 ], [ 180, -20 ], [ 180, -30 ], [ 180, -40 ], [ 180, -50 ], [ 180, -60 ], [ 180, -70 ], [ 180, -80 ], [ 180, -90 ], [ 0, -90 ] ] Edges 20 and 35 cross. Edge locations in degrees: [80.0000000, 180.0000000]-[70.0000000, 180.0000000] and [-70.0000000, 180.0000000]-[-80.0000000, 180.0000000]",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "pAFBx9v4otq9",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										0,
+										-90
+									],
+									[
+										180,
+										-90
+									],
+									[
+										180,
+										-80
+									],
+									[
+										180,
+										-70
+									],
+									[
+										180,
+										-60
+									],
+									[
+										180,
+										-50
+									],
+									[
+										180,
+										-40
+									],
+									[
+										180,
+										-30
+									],
+									[
+										180,
+										-20
+									],
+									[
+										180,
+										-10
+									],
+									[
+										180,
+										0
+									],
+									[
+										180,
+										10
+									],
+									[
+										180,
+										20
+									],
+									[
+										180,
+										30
+									],
+									[
+										180,
+										40
+									],
+									[
+										180,
+										50
+									],
+									[
+										180,
+										60
+									],
+									[
+										180,
+										70
+									],
+									[
+										180,
+										80
+									],
+									[
+										180,
+										90
+									],
+									[
+										0,
+										90
+									],
+									[
+										0,
+										80
+									],
+									[
+										0,
+										70
+									],
+									[
+										0,
+										60
+									],
+									[
+										0,
+										50
+									],
+									[
+										0,
+										40
+									],
+									[
+										0,
+										30
+									],
+									[
+										0,
+										20
+									],
+									[
+										0,
+										10
+									],
+									[
+										0,
+										0
+									],
+									[
+										0,
+										-10
+									],
+									[
+										0,
+										-20
+									],
+									[
+										0,
+										-30
+									],
+									[
+										0,
+										-40
+									],
+									[
+										0,
+										-50
+									],
+									[
+										0,
+										-60
+									],
+									[
+										0,
+										-70
+									],
+									[
+										0,
+										-80
+									],
+									[
+										0,
+										-90
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": "@Undefined/und",
+					"error": {
+						"message": "Loop is not valid: [ [ 0, -90 ], [ 180, -90 ], [ 180, -80 ], [ 180, -70 ], [ 180, -60 ], [ 180, -50 ], [ 180, -40 ], [ 180, -30 ], [ 180, -20 ], [ 180, -10 ], [ 180, 0 ], [ 180, 10 ], [ 180, 20 ], [ 180, 30 ], [ 180, 40 ], [ 180, 50 ], [ 180, 60 ], [ 180, 70 ], [ 180, 80 ], [ 180, 90 ], [ 0, 90 ], [ 0, 80 ], [ 0, 70 ], [ 0, 60 ], [ 0, 50 ], [ 0, 40 ], [ 0, 30 ], [ 0, 20 ], [ 0, 10 ], [ 0, 0 ], [ 0, -10 ], [ 0, -20 ], [ 0, -30 ], [ 0, -40 ], [ 0, -50 ], [ 0, -60 ], [ 0, -70 ], [ 0, -80 ], [ 0, -90 ] ] Edges 2 and 17 cross. Edge locations in degrees: [-80.0000000, 180.0000000]-[-70.0000000, 180.0000000] and [70.0000000, 180.0000000]-[80.0000000, 180.0000000]",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "rWeWSiFPCV9f",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										0,
+										90
+									],
+									[
+										0,
+										60
+									],
+									[
+										90,
+										60
+									],
+									[
+										0,
+										90
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						17
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "enLoSAg0zTDU",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										0,
+										-90
+									],
+									[
+										0,
+										-60
+									],
+									[
+										0,
+										-30
+									],
+									[
+										0,
+										0
+									],
+									[
+										0,
+										30
+									],
+									[
+										0,
+										60
+									],
+									[
+										0,
+										90
+									],
+									[
+										180,
+										60
+									],
+									[
+										180,
+										30
+									],
+									[
+										180,
+										0
+									],
+									[
+										180,
+										-30
+									],
+									[
+										180,
+										-60
+									],
+									[
+										0,
+										-90
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						21,
+						1,
+						15,
+						24,
+						22,
+						19,
+						3,
+						9,
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "m2U0qZiSHRMz",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										0,
+										-90
+									],
+									[
+										180,
+										-60
+									],
+									[
+										180,
+										-30
+									],
+									[
+										180,
+										0
+									],
+									[
+										180,
+										30
+									],
+									[
+										180,
+										60
+									],
+									[
+										0,
+										90
+									],
+									[
+										0,
+										60
+									],
+									[
+										0,
+										30
+									],
+									[
+										0,
+										0
+									],
+									[
+										0,
+										-30
+									],
+									[
+										0,
+										-60
+									],
+									[
+										0,
+										-90
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						1,
+						6,
+						13,
+						14,
+						20,
+						18,
+						17,
+						23,
+						11,
+						10,
+						12,
+						16,
+						7,
+						5,
+						25,
+						2,
+						8,
+						3
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "lrz2GKIu4OrG",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										-40,
+										0
+									],
+									[
+										40,
+										0
+									],
+									[
+										0,
+										70
+									],
+									[
+										-40,
+										0
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						1,
+						6,
+						23,
+						11,
+						10,
+						12,
+						16,
+						15,
+						24,
+						22
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "mGxLPGCRNBWZ",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										-170,
+										-80
+									],
+									[
+										-170,
+										80
+									],
+									[
+										170,
+										80
+									],
+									[
+										170,
+										-80
+									],
+									[
+										-170,
+										-80
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						7,
+						5,
+						25,
+						2,
+						8,
+						3,
+						9,
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "j2Gn720vGOa4",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										-170,
+										-80
+									],
+									[
+										170,
+										-80
+									],
+									[
+										170,
+										80
+									],
+									[
+										-170,
+										80
+									],
+									[
+										-170,
+										-80
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						7,
+						5,
+						25,
+						2,
+						8,
+						3,
+						9,
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "slKVzJRBnwUn",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										-170,
+										-80
+									],
+									[
+										-170,
+										80
+									],
+									[
+										170,
+										80
+									],
+									[
+										170,
+										-80
+									],
+									[
+										-170,
+										-80
+									]
+								]
+							],
+							"crs": {
+								"type": "name",
+								"properties": {
+									"name": "urn:x-mongodb:crs:strictwinding:EPSG:4326"
+								}
+							}
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						7,
+						5,
+						25,
+						2,
+						8,
+						3,
+						9,
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "t1nSmBN8j1at",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										-170,
+										-80
+									],
+									[
+										170,
+										-80
+									],
+									[
+										170,
+										80
+									],
+									[
+										-170,
+										80
+									],
+									[
+										-170,
+										-80
+									]
+								]
+							],
+							"crs": {
+								"type": "name",
+								"properties": {
+									"name": "urn:x-mongodb:crs:strictwinding:EPSG:4326"
+								}
+							}
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						21,
+						1,
+						6,
+						13,
+						14,
+						20,
+						18,
+						17,
+						23,
+						11,
+						10,
+						12,
+						16,
+						15,
+						24,
+						22,
+						19
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "cJyMMVDFt8Zc",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										178,
+										-20
+									],
+									[
+										178,
+										-16
+									],
+									[
+										-178,
+										-16
+									],
+									[
+										-178,
+										-20
+									],
+									[
+										178,
+										-20
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						8,
+						9
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "uL4VPHcGJPFc",
+			"query": {
+				"point": {
+					"$geoIntersects": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										178,
+										-20
+									],
+									[
+										178,
+										-16
+									],
+									[
+										-178,
+										-16
+									],
+									[
+										-178,
+										-20
+									],
+									[
+										178,
+										-20
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoIntersects",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						8,
+						9
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "pY0TR1JX2f0t",
+			"query": {
+				"legacyPoint": {
+					"$geoWithin": {
+						"$centerSphere": [
+							[
+								0,
+								0
+							],
+							3.14159
+						]
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						9,
+						4,
+						19,
+						21,
+						22,
+						15,
+						13,
+						8,
+						1,
+						6,
+						16,
+						12,
+						10,
+						24,
+						11,
+						23,
+						18,
+						17,
+						14,
+						20,
+						5,
+						25,
+						7
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		},
+		{
+			"id": "aISKjNr159m1",
+			"query": {
+				"legacyPoint": {
+					"$geoWithin": {
+						"$centerSphere": [
+							[
+								0,
+								0
+							],
+							3.15
+						]
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						9,
+						4,
+						19,
+						21,
+						22,
+						15,
+						13,
+						8,
+						1,
+						6,
+						16,
+						12,
+						10,
+						24,
+						11,
+						23,
+						18,
+						17,
+						14,
+						20,
+						2,
+						3,
+						5,
+						25,
+						7
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.9"
+				}
+			]
+		}
+	]
+}
