@@ -253,6 +253,22 @@ export const geoAntipodal: Catalog<GeoAntipodalDocument> = {
         { legacyPoint: { $near: [-179.95, 10], $maxDistance: 1 } },
         { legacyPoint: { $nearSphere: [-179.95, 10], $maxDistance: 0.1 } },
 
+        // legacy $nearSphere across the antimeridian: is the exclusion a
+        // distance-formula quirk (only bites near the original 0.1
+        // maxDistance) or does the 2d index structurally never consider
+        // cross-antimeridian candidates at all? Decisive test: doc 5 is a
+        // genuinely close point (~16km true spherical distance) — if it
+        // still doesn't match at maxDistance 3.15 (just past pi radians,
+        // i.e. past the maximum possible geodesic distance between any
+        // two points on Earth), no distance-formula theory survives; it
+        // has to be structural. Repeated with the origin mirrored to the
+        // east side, and once for $centerSphere, to check this isn't a
+        // one-directional or $nearSphere-specific artifact.
+        { legacyPoint: { $nearSphere: [-179.95, 10], $maxDistance: 1 } },
+        { legacyPoint: { $nearSphere: [-179.95, 10], $maxDistance: 3.15 } },
+        { legacyPoint: { $nearSphere: [179.95, 10], $maxDistance: 3.15 } },
+        { legacyPoint: { $geoWithin: { $centerSphere: [[-179.95, 10], 3.15] } } },
+
         // legacy $near (raw coordinate-space Euclidean, degrees)
         // using the arnhem/berlin/paris triangle also used in monger's tests
         { legacyPoint: { $near: ARNHEM } },
@@ -586,6 +602,7 @@ export const geoAntipodal: Catalog<GeoAntipodalDocument> = {
             doc(22, 'edge-model-a', [-15, 55]),
             doc(23, 'edge-model-b', [20, 50]),
             doc(24, 'edge-model-c', [0, 65]),
+            doc(25, 'very-close-east-of-dateline', [179.99, 10]),
         ],
     },
 }
