@@ -386,6 +386,7 @@ export const geo: Catalog<GeospatialDocument> = {
         // (wrong shape for the GeoJSON form's $geometry key)
         { point: { $near: { $geometry: [REF_LNG, REF_LAT] } } },
         { legacyPoint: { $near: { $geometry: [REF_LNG, REF_LAT] } } },
+        { point: { $nearSphere: { $geometry: [REF_LNG, REF_LAT] } } },
         { legacyPoint: { $nearSphere: { $geometry: [REF_LNG, REF_LAT] } } },
 
         // $near/$nearSphere with $geometry as a legacy polygon (array of >=3 points)
