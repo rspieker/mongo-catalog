@@ -358,7 +358,23 @@ export const geo: Catalog<GeospatialDocument> = {
             },
         },
         {
+            legacyPoint: {
+                $near: {
+                    $geometry: { type: 'Point', coordinates: [REF_LNG, REF_LAT] },
+                    $minDistance: 100,
+                },
+            },
+        },
+        {
             point: {
+                $nearSphere: {
+                    $geometry: { type: 'Point', coordinates: [REF_LNG, REF_LAT] },
+                    $minDistance: 100,
+                },
+            },
+        },
+        {
+            legacyPoint: {
                 $nearSphere: {
                     $geometry: { type: 'Point', coordinates: [REF_LNG, REF_LAT] },
                     $minDistance: 100,
@@ -369,7 +385,8 @@ export const geo: Catalog<GeospatialDocument> = {
         // $near/$nearSphere with $geometry as a bare legacy point array
         // (wrong shape for the GeoJSON form's $geometry key)
         { point: { $near: { $geometry: [REF_LNG, REF_LAT] } } },
-        { point: { $nearSphere: { $geometry: [REF_LNG, REF_LAT] } } },
+        { legacyPoint: { $near: { $geometry: [REF_LNG, REF_LAT] } } },
+        { legacyPoint: { $nearSphere: { $geometry: [REF_LNG, REF_LAT] } } },
 
         // $near/$nearSphere with $geometry as a legacy polygon (array of >=3 points)
         {
@@ -384,7 +401,29 @@ export const geo: Catalog<GeospatialDocument> = {
             },
         },
         {
+            legacyPoint: {
+                $near: {
+                    $geometry: [
+                        [5.88, 51.98],
+                        [5.92, 51.98],
+                        [5.92, 52.02],
+                    ],
+                },
+            },
+        },
+        {
             point: {
+                $nearSphere: {
+                    $geometry: [
+                        [5.88, 51.98],
+                        [5.92, 51.98],
+                        [5.92, 52.02],
+                    ],
+                },
+            },
+        },
+        {
+            legacyPoint: {
                 $nearSphere: {
                     $geometry: [
                         [5.88, 51.98],
@@ -411,7 +450,33 @@ export const geo: Catalog<GeospatialDocument> = {
             },
         },
         {
+            legacyPoint: {
+                $near: {
+                    $geometry: {
+                        type: 'MultiPoint',
+                        coordinates: [
+                            [5.9, 52.0],
+                            [5.91, 52.01],
+                        ],
+                    },
+                },
+            },
+        },
+        {
             point: {
+                $nearSphere: {
+                    $geometry: {
+                        type: 'MultiPoint',
+                        coordinates: [
+                            [5.9, 52.0],
+                            [5.91, 52.01],
+                        ],
+                    },
+                },
+            },
+        },
+        {
+            legacyPoint: {
                 $nearSphere: {
                     $geometry: {
                         type: 'MultiPoint',
@@ -446,7 +511,41 @@ export const geo: Catalog<GeospatialDocument> = {
             },
         },
         {
+            legacyPoint: {
+                $near: {
+                    $geometry: {
+                        type: 'Polygon',
+                        coordinates: [
+                            [
+                                [5.88, 51.98],
+                                [5.92, 51.98],
+                                [5.92, 52.02],
+                                [5.88, 51.98],
+                            ],
+                        ],
+                    },
+                },
+            },
+        },
+        {
             point: {
+                $nearSphere: {
+                    $geometry: {
+                        type: 'Polygon',
+                        coordinates: [
+                            [
+                                [5.88, 51.98],
+                                [5.92, 51.98],
+                                [5.92, 52.02],
+                                [5.88, 51.98],
+                            ],
+                        ],
+                    },
+                },
+            },
+        },
+        {
+            legacyPoint: {
                 $nearSphere: {
                     $geometry: {
                         type: 'Polygon',
@@ -465,15 +564,20 @@ export const geo: Catalog<GeospatialDocument> = {
 
         // $near/$nearSphere with $geometry as a plain string
         { point: { $near: { $geometry: 'not-a-geometry' } } },
+        { legacyPoint: { $near: { $geometry: 'not-a-geometry' } } },
         { point: { $nearSphere: { $geometry: 'not-a-geometry' } } },
+        { legacyPoint: { $nearSphere: { $geometry: 'not-a-geometry' } } },
 
         // $near/$nearSphere with $geometry as an array of numbers that
         // doesn't represent a valid legacy point (wrong length)
         { point: { $near: { $geometry: [REF_LNG] } } },
+        { legacyPoint: { $near: { $geometry: [REF_LNG] } } },
         { point: { $nearSphere: { $geometry: [REF_LNG] } } },
+        { legacyPoint: { $nearSphere: { $geometry: [REF_LNG] } } },
 
         // $geoIntersects error cases
         { point: { $geoIntersects: {} } },
+        { legacyPoint: { $geoIntersects: {} } },
         {
             point: {
                 $geoIntersects: {
@@ -482,7 +586,21 @@ export const geo: Catalog<GeospatialDocument> = {
             },
         },
         {
+            legacyPoint: {
+                $geoIntersects: {
+                    $geometry: { type: 'Point', coordinates: [] },
+                },
+            },
+        },
+        {
             point: {
+                $geoIntersects: {
+                    $geometry: { type: 'Point', coordinates: [0] },
+                },
+            },
+        },
+        {
+            legacyPoint: {
                 $geoIntersects: {
                     $geometry: { type: 'Point', coordinates: [0] },
                 },
@@ -508,18 +626,50 @@ export const geo: Catalog<GeospatialDocument> = {
                 },
             },
         },
+        {
+            legacyPoint: {
+                $geoWithin: {
+                    $geometry: {
+                        type: 'Polygon',
+                        coordinates: [
+                            [
+                                [5.899, 51.999],
+                                [5.901, 51.999],
+                                [5.901, 52.001],
+                                [5.899, 52.001],
+                                [5.899, 51.999],
+                            ],
+                        ],
+                    },
+                },
+            },
+        },
 
         // $center with radius 0 (edge case)
+        { point: { $geoWithin: { $center: [[REF_LNG, REF_LAT], 0] } } },
         { legacyPoint: { $geoWithin: { $center: [[REF_LNG, REF_LAT], 0] } } },
 
         // Error cases
         { point: { $geoWithin: { $unknown: {} } } },
+        { legacyPoint: { $geoWithin: { $unknown: {} } } },
         { point: { $geoWithin: { $geometry: {} } } },
+        { legacyPoint: { $geoWithin: { $geometry: {} } } },
         { point: { $geoWithin: { $box: {} } } },
+        { point: { $geoWithin: { $box: {} } } },
+        { legacyPoint: { $geoWithin: { $box: {} } } },
         { point: { $geoWithin: { $center: [1] } } },
+        { legacyPoint: { $geoWithin: { $center: [1] } } },
         { point: { $geoWithin: { $center: 'invalid' } } },
+        { legacyPoint: { $geoWithin: { $center: 'invalid' } } },
         {
             point: {
+                $geoWithin: {
+                    $geometry: { type: 'Invalid', coordinates: [] },
+                },
+            },
+        },
+        {
+            legacyPoint: {
                 $geoWithin: {
                     $geometry: { type: 'Invalid', coordinates: [] },
                 },
