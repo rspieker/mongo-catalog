@@ -348,6 +348,130 @@ export const geo: Catalog<GeospatialDocument> = {
         },
         { point: { $nearSphere: {} } },
 
+        // $near/$nearSphere with only $minDistance (no $maxDistance)
+        {
+            point: {
+                $near: {
+                    $geometry: { type: 'Point', coordinates: [REF_LNG, REF_LAT] },
+                    $minDistance: 100,
+                },
+            },
+        },
+        {
+            point: {
+                $nearSphere: {
+                    $geometry: { type: 'Point', coordinates: [REF_LNG, REF_LAT] },
+                    $minDistance: 100,
+                },
+            },
+        },
+
+        // $near/$nearSphere with $geometry as a bare legacy point array
+        // (wrong shape for the GeoJSON form's $geometry key)
+        { point: { $near: { $geometry: [REF_LNG, REF_LAT] } } },
+        { point: { $nearSphere: { $geometry: [REF_LNG, REF_LAT] } } },
+
+        // $near/$nearSphere with $geometry as a legacy polygon (array of >=3 points)
+        {
+            point: {
+                $near: {
+                    $geometry: [
+                        [5.88, 51.98],
+                        [5.92, 51.98],
+                        [5.92, 52.02],
+                    ],
+                },
+            },
+        },
+        {
+            point: {
+                $nearSphere: {
+                    $geometry: [
+                        [5.88, 51.98],
+                        [5.92, 51.98],
+                        [5.92, 52.02],
+                    ],
+                },
+            },
+        },
+
+        // $near/$nearSphere with $geometry as a GeoJSON MultiPoint
+        // (structurally valid GeoJSON, but $near/$nearSphere require Point)
+        {
+            point: {
+                $near: {
+                    $geometry: {
+                        type: 'MultiPoint',
+                        coordinates: [
+                            [5.9, 52.0],
+                            [5.91, 52.01],
+                        ],
+                    },
+                },
+            },
+        },
+        {
+            point: {
+                $nearSphere: {
+                    $geometry: {
+                        type: 'MultiPoint',
+                        coordinates: [
+                            [5.9, 52.0],
+                            [5.91, 52.01],
+                        ],
+                    },
+                },
+            },
+        },
+
+        // $near/$nearSphere with $geometry as a well-formed GeoJSON Polygon
+        // (wrong type, but — unlike the degenerate empty-coordinates
+        // Polygon above — structurally valid, so this isolates "wrong
+        // type" from "malformed geometry" as the rejection reason)
+        {
+            point: {
+                $near: {
+                    $geometry: {
+                        type: 'Polygon',
+                        coordinates: [
+                            [
+                                [5.88, 51.98],
+                                [5.92, 51.98],
+                                [5.92, 52.02],
+                                [5.88, 51.98],
+                            ],
+                        ],
+                    },
+                },
+            },
+        },
+        {
+            point: {
+                $nearSphere: {
+                    $geometry: {
+                        type: 'Polygon',
+                        coordinates: [
+                            [
+                                [5.88, 51.98],
+                                [5.92, 51.98],
+                                [5.92, 52.02],
+                                [5.88, 51.98],
+                            ],
+                        ],
+                    },
+                },
+            },
+        },
+
+        // $near/$nearSphere with $geometry as a plain string
+        { point: { $near: { $geometry: 'not-a-geometry' } } },
+        { point: { $nearSphere: { $geometry: 'not-a-geometry' } } },
+
+        // $near/$nearSphere with $geometry as an array of numbers that
+        // doesn't represent a valid legacy point (wrong length)
+        { point: { $near: { $geometry: [REF_LNG] } } },
+        { point: { $nearSphere: { $geometry: [REF_LNG] } } },
+
         // $geoIntersects error cases
         { point: { $geoIntersects: {} } },
         {
