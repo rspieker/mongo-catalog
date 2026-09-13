@@ -18,6 +18,7 @@
 					"documents": [
 						0
 					],
+					"error": "@Undefined/und",
 					"versions": "2.6.12..8.3.9"
 				}
 			]
@@ -85,7 +86,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "Executor error during find command :: caused by :: ReferenceError: Abundant is not defined :\n@:1:15\n",
+						"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Abundant is not defined :\n@:1:15\n",
 						"code": 139,
 						"type": "MongoServerError"
 					},
