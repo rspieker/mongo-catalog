@@ -14,7 +14,8 @@
 				}
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "a2IrC4I8eE7e",
@@ -31,7 +32,8 @@
 				}
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "iXsAZgnIaXY4",
@@ -57,7 +59,8 @@
 			12,
 			13,
 			15
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "rnOXE3hGtwBb",
@@ -110,7 +113,8 @@
 			8,
 			13,
 			15
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "jGjqzR9Qy8HS",
@@ -146,7 +150,8 @@
 			11,
 			6,
 			12
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "wKkmx8Dm2136",
@@ -179,7 +184,8 @@
 			11,
 			6,
 			12
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "iv2pzraiBnmo",
@@ -212,7 +218,8 @@
 			11,
 			6,
 			12
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "erzyShLLGMP4",
@@ -245,7 +252,8 @@
 			15,
 			2,
 			12
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "vW1FRAeKg65m",
@@ -278,7 +286,8 @@
 			7,
 			4,
 			11
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "mODNIEEIkdZd",
@@ -312,7 +321,8 @@
 			7,
 			4,
 			11
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "d31CY5SIiZIT",
@@ -346,7 +356,8 @@
 			7,
 			4,
 			11
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "jOc28I97qbzZ",
@@ -374,7 +385,8 @@
 			5,
 			1,
 			13
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "puFLObGoqRjj",
@@ -403,7 +415,8 @@
 			5,
 			1,
 			13
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "jykBQEkxX5Yx",
@@ -436,7 +449,8 @@
 			7,
 			4,
 			11
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "f1MGD7PO2h7T",
@@ -470,7 +484,8 @@
 			7,
 			4,
 			11
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "bEytUW8Sm36z",
@@ -504,7 +519,8 @@
 			7,
 			4,
 			11
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "iGOHXstxpae3",
@@ -543,7 +559,8 @@
 			11,
 			5,
 			14
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "tH0HGRqBl0Y5",
@@ -596,7 +613,8 @@
 			11,
 			5,
 			14
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "aYIwwKRBO8Ka",
@@ -649,7 +667,8 @@
 			12,
 			14,
 			13
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "sIMUmQJ1Yz7O",
@@ -677,7 +696,8 @@
 			5,
 			1,
 			13
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "aTrq0hHIJMHa",
@@ -706,7 +726,8 @@
 			5,
 			1,
 			13
-		]
+		],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "sFHyzHZPTQqX",
@@ -715,6 +736,7 @@
 				"$near": {}
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue $geometry is required for geo near query",
 			"code": 17287,
@@ -733,6 +755,7 @@
 				}
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "$near requires a point, given { type: \"Polygon\", coordinates: [] }",
 			"code": 16885,
@@ -746,9 +769,374 @@
 				"$nearSphere": {}
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue $geometry is required for geo near query",
 			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "dk5BCy3pVp2A",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					},
+					"$minDistance": 100
+				}
+			}
+		},
+		"documents": [
+			5,
+			13,
+			15,
+			14,
+			9,
+			6,
+			10,
+			1,
+			12,
+			2,
+			3,
+			7,
+			4,
+			11
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qUCmXYN76iFy",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					},
+					"$minDistance": 100
+				}
+			}
+		},
+		"documents": [
+			5,
+			13,
+			15,
+			14,
+			9,
+			6,
+			10,
+			1,
+			12,
+			2,
+			3,
+			7,
+			4,
+			11
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "fuorHkOLhRYC",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": [
+						5.9,
+						52
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires geojson point, given { 0: 5.9, 1: 52 }",
+			"code": 16681,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "t1AOzzxx1VqO",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": [
+						5.9,
+						52
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires geojson point, given { 0: 5.9, 1: 52 }",
+			"code": 16681,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "t5LZcZD0Mpzd",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": [
+						[
+							5.88,
+							51.98
+						],
+						[
+							5.92,
+							51.98
+						],
+						[
+							5.92,
+							52.02
+						]
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires a point, given { 0: [ 5.88, 51.98 ], 1: [ 5.92, 51.98 ], 2: [ 5.92, 52.02 ] }",
+			"code": 16885,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "i4cbMeJzVpTC",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": [
+						[
+							5.88,
+							51.98
+						],
+						[
+							5.92,
+							51.98
+						],
+						[
+							5.92,
+							52.02
+						]
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires a point, given { 0: [ 5.88, 51.98 ], 1: [ 5.92, 51.98 ], 2: [ 5.92, 52.02 ] }",
+			"code": 16885,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "lKUxVDfS3TOj",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "MultiPoint",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires a point, given { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }",
+			"code": 16885,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "sZPNdRdMCeDX",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "MultiPoint",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires a point, given { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }",
+			"code": 16885,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "w1Ts3ZfKnaIx",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.88,
+									51.98
+								],
+								[
+									5.92,
+									51.98
+								],
+								[
+									5.92,
+									52.02
+								],
+								[
+									5.88,
+									51.98
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires a point, given { type: \"Polygon\", coordinates: [ [ [ 5.88, 51.98 ], [ 5.92, 51.98 ], [ 5.92, 52.02 ], [ 5.88, 51.98 ] ] ] }",
+			"code": 16885,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "w2X9WLwXPu9D",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.88,
+									51.98
+								],
+								[
+									5.92,
+									51.98
+								],
+								[
+									5.92,
+									52.02
+								],
+								[
+									5.88,
+									51.98
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires a point, given { type: \"Polygon\", coordinates: [ [ [ 5.88, 51.98 ], [ 5.92, 51.98 ], [ 5.92, 52.02 ], [ 5.88, 51.98 ] ] ] }",
+			"code": 16885,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "wBDz9Cutfetk",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": "not-a-geometry"
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue $geometry is required for geo near query",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "uZnB2VarQvbT",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": "not-a-geometry"
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue $geometry is required for geo near query",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "wFoKnxqv23w8",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": [
+						5.9
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires a point, given { 0: 5.9 }",
+			"code": 16885,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "pYyYmuHz3Tfy",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": [
+						5.9
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires a point, given { 0: 5.9 }",
+			"code": 16885,
 			"type": "MongoError"
 		}
 	},
@@ -759,6 +1147,7 @@
 				"$geoIntersects": {}
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue bad geo query: { $geoIntersects: {} }",
 			"code": 17287,
@@ -777,6 +1166,7 @@
 				}
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue bad geo query: { $geoIntersects: { $geometry: { type: \"Point\", coordinates: [] } } }",
 			"code": 17287,
@@ -797,6 +1187,7 @@
 				}
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue bad geo query: { $geoIntersects: { $geometry: { type: \"Point\", coordinates: [ 0 ] } } }",
 			"code": 17287,
@@ -838,7 +1229,8 @@
 				}
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "p9ImoBRFW5C8",
@@ -855,7 +1247,8 @@
 				}
 			}
 		},
-		"documents": []
+		"documents": [],
+		"error": "@Undefined/und"
 	},
 	{
 		"id": "jIR3gOROgKln",
@@ -866,6 +1259,7 @@
 				}
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue bad geo query: { $geoWithin: { $unknown: {} } }",
 			"code": 17287,
@@ -881,6 +1275,7 @@
 				}
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue bad geo query: { $geoWithin: { $geometry: {} } }",
 			"code": 17287,
@@ -896,6 +1291,7 @@
 				}
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue bad geo query: { $geoWithin: { $box: {} } }",
 			"code": 17287,
@@ -913,6 +1309,7 @@
 				}
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue bad geo query: { $geoWithin: { $center: [ 1 ] } }",
 			"code": 17287,
@@ -928,6 +1325,7 @@
 				}
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue bad geo query: { $geoWithin: { $center: \"invalid\" } }",
 			"code": 17287,
@@ -946,6 +1344,7 @@
 				}
 			}
 		},
+		"documents": "@Undefined/und",
 		"error": {
 			"message": "Can't canonicalize query: BadValue bad geo query: { $geoWithin: { $geometry: { type: \"Invalid\", coordinates: [] } } }",
 			"code": 17287,
