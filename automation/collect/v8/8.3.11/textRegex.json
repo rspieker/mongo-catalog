@@ -1,0 +1,916 @@
+[
+	{
+		"id": "a0Y6YIK1SRre",
+		"operation": {
+			"title": {
+				"$regex": "@RegExp/^The/"
+			}
+		},
+		"documents": [
+			7,
+			14,
+			16,
+			20,
+			21
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wOgycktagpmH",
+		"operation": {
+			"title": {
+				"$regex": "@RegExp/Quick/"
+			}
+		},
+		"documents": [
+			2,
+			3,
+			7,
+			11,
+			14,
+			16,
+			18,
+			19,
+			20,
+			21,
+			24
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sQpXLwaYrZvk",
+		"operation": {
+			"title": {
+				"$regex": "@RegExp/Brown$/"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "c8ba4r1KL8gs",
+		"operation": {
+			"description": {
+				"$regex": "@RegExp/quick/i"
+			}
+		},
+		"documents": [
+			2,
+			3,
+			5,
+			9,
+			10,
+			12,
+			14,
+			15,
+			16,
+			17,
+			18,
+			21,
+			22
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "bW6mHKlVNczc",
+		"operation": {
+			"description": {
+				"$regex": "@RegExp/brown/i"
+			}
+		},
+		"documents": [
+			1,
+			6,
+			11,
+			20
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "t7x7PVuU4LaI",
+		"operation": {
+			"title": {
+				"$regex": "quick",
+				"$options": "i"
+			}
+		},
+		"documents": [
+			2,
+			3,
+			7,
+			11,
+			14,
+			16,
+			18,
+			19,
+			20,
+			21,
+			24
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cK4TZnRvMnU3",
+		"operation": {
+			"title": {
+				"$regex": "BROWN",
+				"$options": "i"
+			}
+		},
+		"documents": [
+			1,
+			5,
+			10,
+			12,
+			16,
+			17,
+			21,
+			23,
+			25
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "mkL19RjZNh8l",
+		"operation": {
+			"description": {
+				"$regex": "@RegExp/^the/i"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "mNYVfxpkXbwA",
+		"operation": {
+			"description": {
+				"$regex": "@RegExp/guide$/i"
+			}
+		},
+		"documents": [
+			7,
+			8,
+			13,
+			23
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "tN9vAJfzxLYE",
+		"operation": {
+			"title": {
+				"$regex": "@RegExp/Quick.*Brown/"
+			}
+		},
+		"documents": [
+			16,
+			21
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "e7JNmcKuhGLJ",
+		"operation": {
+			"description": {
+				"$regex": "@RegExp/quick.*brown/i"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "q11BqVMwmKmx",
+		"operation": {
+			"manufacturer": {
+				"$regex": "@RegExp/^Quick/"
+			}
+		},
+		"documents": [
+			22,
+			24,
+			25
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rx4X4vDkM3Ck",
+		"operation": {
+			"manufacturer": {
+				"$regex": "@RegExp/LLC$/"
+			}
+		},
+		"documents": [
+			14,
+			20,
+			21,
+			23
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "fgbd4wpTLadg",
+		"operation": {
+			"manufacturer": {
+				"$regex": "@RegExp/Co$/"
+			}
+		},
+		"documents": [
+			12,
+			13,
+			15
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pEuP6wHVQTbS",
+		"operation": {
+			"title": {
+				"$regex": "@RegExp/[A-Z].*Quick/"
+			}
+		},
+		"documents": [
+			7,
+			14,
+			16,
+			20,
+			21
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "a6cPFKLPlHCh",
+		"operation": {
+			"category": {
+				"$regex": "@RegExp/^[tg]/"
+			}
+		},
+		"documents": [
+			1,
+			11,
+			14,
+			15,
+			16,
+			19,
+			20,
+			22,
+			24,
+			25
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oCIl9SxdyXEl",
+		"operation": {
+			"category": {
+				"$regex": "@RegExp/e$/"
+			}
+		},
+		"documents": [
+			1,
+			11,
+			12,
+			14,
+			16,
+			19,
+			20,
+			21,
+			22,
+			24
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oTaTfYLWxC9T",
+		"operation": {
+			"title": {
+				"$regex": "@RegExp/Quick/",
+				"$options": "i"
+			}
+		},
+		"documents": [
+			2,
+			3,
+			7,
+			11,
+			14,
+			16,
+			18,
+			19,
+			20,
+			21,
+			24
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cEs9HjEqJuU0",
+		"operation": {
+			"description": {
+				"$regex": "@RegExp/MongoDB/"
+			}
+		},
+		"documents": [
+			8,
+			9,
+			13,
+			23
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "m1mIDwkCSvdv",
+		"operation": {
+			"description": {
+				"$regex": "@RegExp/JavaScript/i"
+			}
+		},
+		"documents": [
+			2,
+			3,
+			4,
+			10,
+			15,
+			19,
+			21,
+			22,
+			24,
+			25
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "mOdhaguZGiQJ",
+		"operation": {
+			"title": {
+				"$regex": "[invalid"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Regular expression is invalid: missing terminating ] for character class",
+			"code": 51091,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "v64YlxNUp7pu",
+		"operation": {
+			"title": {
+				"$regex": "pattern",
+				"$options": "xyz"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": " invalid flag in regex options: y",
+			"code": 51108,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wqOQTXlfUBWO",
+		"operation": {
+			"$text": {
+				"$search": "quick"
+			}
+		},
+		"documents": [
+			2,
+			20,
+			24,
+			14,
+			21,
+			16,
+			3,
+			18,
+			7,
+			22,
+			19,
+			17,
+			15,
+			12,
+			11,
+			10,
+			5,
+			9
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rspkMagRtiuj",
+		"operation": {
+			"$text": {
+				"$search": "brown"
+			}
+		},
+		"documents": [
+			16,
+			25,
+			11,
+			1,
+			15,
+			4,
+			23,
+			21,
+			10,
+			5,
+			20,
+			17,
+			12,
+			6
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aFQ6xJ80294M",
+		"operation": {
+			"$text": {
+				"$search": "quick brown"
+			}
+		},
+		"documents": [
+			16,
+			25,
+			11,
+			1,
+			15,
+			4,
+			23,
+			21,
+			10,
+			5,
+			20,
+			17,
+			12,
+			6,
+			2,
+			24,
+			14,
+			3,
+			18,
+			7,
+			22,
+			19,
+			9
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rhxtsYYnwI38",
+		"operation": {
+			"$text": {
+				"$search": "JavaScript programming"
+			}
+		},
+		"documents": [
+			24,
+			22,
+			4,
+			17,
+			8,
+			21,
+			15,
+			10,
+			3,
+			2,
+			25,
+			19,
+			14,
+			13,
+			11
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wv5XXldRL7Ru",
+		"operation": {
+			"$text": {
+				"$search": "quick",
+				"$language": "en"
+			}
+		},
+		"documents": [
+			2,
+			20,
+			24,
+			14,
+			21,
+			16,
+			3,
+			18,
+			7,
+			22,
+			19,
+			17,
+			15,
+			12,
+			11,
+			10,
+			5,
+			9
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nLeHxthPae5Z",
+		"operation": {
+			"$text": {
+				"$search": "guide",
+				"$language": "en"
+			}
+		},
+		"documents": [
+			13,
+			24,
+			21,
+			12,
+			15,
+			9,
+			6,
+			18,
+			2,
+			25,
+			23,
+			19,
+			8,
+			7,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "m2WGbNIg3Gtw",
+		"operation": {
+			"$text": {
+				"$search": "Quick",
+				"$caseSensitive": true
+			}
+		},
+		"documents": [
+			2,
+			20,
+			24,
+			14,
+			21,
+			16,
+			3,
+			18,
+			7,
+			22,
+			19,
+			17,
+			15,
+			12,
+			11,
+			10,
+			5
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "bZSuYrI5ZsfM",
+		"operation": {
+			"$text": {
+				"$search": "Quick",
+				"$caseSensitive": false
+			}
+		},
+		"documents": [
+			2,
+			20,
+			24,
+			14,
+			21,
+			16,
+			3,
+			18,
+			7,
+			22,
+			19,
+			17,
+			15,
+			12,
+			11,
+			10,
+			5,
+			9
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "dRRk7ouE2wIx",
+		"operation": {
+			"$text": {
+				"$search": "BROWN",
+				"$caseSensitive": true
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "gZoipl5X5KYS",
+		"operation": {
+			"$text": {
+				"$search": "BROWN",
+				"$caseSensitive": false
+			}
+		},
+		"documents": [
+			16,
+			25,
+			11,
+			1,
+			15,
+			4,
+			23,
+			21,
+			10,
+			5,
+			20,
+			17,
+			12,
+			6
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qGAMCPYhv6QX",
+		"operation": {
+			"$text": {
+				"$search": "quick",
+				"$diacriticSensitive": true
+			}
+		},
+		"documents": [
+			2,
+			20,
+			24,
+			14,
+			21,
+			16,
+			3,
+			18,
+			7,
+			22,
+			19,
+			17,
+			15,
+			12,
+			11,
+			10,
+			5,
+			9
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uobW2P0PJrcp",
+		"operation": {
+			"$text": {
+				"$search": "quick",
+				"$diacriticSensitive": false
+			}
+		},
+		"documents": [
+			2,
+			20,
+			24,
+			14,
+			21,
+			16,
+			3,
+			18,
+			7,
+			22,
+			19,
+			17,
+			15,
+			12,
+			11,
+			10,
+			5,
+			9
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qLW5wMD09O8z",
+		"operation": {
+			"$text": {
+				"$search": "guide",
+				"$language": "en",
+				"$caseSensitive": true
+			}
+		},
+		"documents": [
+			24,
+			21,
+			12,
+			25,
+			19,
+			7,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ieDO7OQHh0rv",
+		"operation": {
+			"$text": {
+				"$search": "guide",
+				"$language": "en",
+				"$caseSensitive": false
+			}
+		},
+		"documents": [
+			13,
+			24,
+			21,
+			12,
+			15,
+			9,
+			6,
+			18,
+			2,
+			25,
+			23,
+			19,
+			8,
+			7,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "roVQWDOFBZRr",
+		"operation": {
+			"$text": {
+				"$search": "quick brown",
+				"$caseSensitive": false,
+				"$diacriticSensitive": false
+			}
+		},
+		"documents": [
+			16,
+			25,
+			11,
+			1,
+			15,
+			4,
+			23,
+			21,
+			10,
+			5,
+			20,
+			17,
+			12,
+			6,
+			2,
+			24,
+			14,
+			3,
+			18,
+			7,
+			22,
+			19,
+			9
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "iWQLMI6JwcU7",
+		"operation": {
+			"title": {
+				"$regex": "@RegExp/^$/"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qzxWCHoatU15",
+		"operation": {
+			"title": {
+				"$regex": "@RegExp/.*/"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "fEFQ89Zt5WNj",
+		"operation": {
+			"title": {
+				"$regex": "@RegExp/.+/"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wLGax0eaFBVA",
+		"operation": {
+			"tags.0": {
+				"$regex": "@RegExp/java/i"
+			}
+		},
+		"documents": [
+			17
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nKutOLvC7bOe",
+		"operation": {
+			"tags.1": {
+				"$regex": "@RegExp/mongo/i"
+			}
+		},
+		"documents": [
+			2,
+			18,
+			24
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kn1SbMS7YTj5",
+		"operation": {
+			"tags": {
+				"$regex": "quick"
+			}
+		},
+		"documents": [
+			2,
+			20,
+			24
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "k2oFehITBiTG",
+		"operation": {
+			"tags": {
+				"$regex": "@RegExp/^java/i"
+			}
+		},
+		"documents": [
+			17,
+			24
+		],
+		"error": "@Undefined/und"
+	}
+]
