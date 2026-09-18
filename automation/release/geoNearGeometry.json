@@ -950,9 +950,9 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$near requires a point, given { type: null, coordinates: [ 5.9, 52 ] }",
-						"code": 16885,
-						"type": "MongoError"
+						"message": "invalid point in geo near query $geometry argument: { type: null, coordinates: [ 5.9, 52 ] }  Expected geojson geometry with type Point, but got type unknown",
+						"code": 2,
+						"type": "MongoServerError"
 					},
 					"versions": "2.6.12,8.0.0..8.3.11"
 				},
@@ -993,9 +993,9 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$near requires a point, given { type: \"\", coordinates: [ 5.9, 52 ] }",
-						"code": 16885,
-						"type": "MongoError"
+						"message": "invalid point in geo near query $geometry argument: { type: \"\", coordinates: [ 5.9, 52 ] }  Expected geojson geometry with type Point, but got type unknown",
+						"code": 2,
+						"type": "MongoServerError"
 					},
 					"versions": "2.6.12,8.0.0..8.3.11"
 				},
@@ -1036,9 +1036,9 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$near requires a point, given { type: true, coordinates: [ 5.9, 52 ] }",
-						"code": 16885,
-						"type": "MongoError"
+						"message": "invalid point in geo near query $geometry argument: { type: true, coordinates: [ 5.9, 52 ] }  Expected geojson geometry with type Point, but got type unknown",
+						"code": 2,
+						"type": "MongoServerError"
 					},
 					"versions": "2.6.12,8.0.0..8.3.11"
 				},
@@ -1081,9 +1081,9 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$near requires a point, given { type: [ \"Point\" ], coordinates: [ 5.9, 52 ] }",
-						"code": 16885,
-						"type": "MongoError"
+						"message": "invalid point in geo near query $geometry argument: { type: [ \"Point\" ], coordinates: [ 5.9, 52 ] }  Expected geojson geometry with type Point, but got type unknown",
+						"code": 2,
+						"type": "MongoServerError"
 					},
 					"versions": "2.6.12,8.0.0..8.3.11"
 				},
@@ -1124,9 +1124,9 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$near requires a point, given { type: \"point\", coordinates: [ 5.9, 52 ] }",
-						"code": 16885,
-						"type": "MongoError"
+						"message": "invalid point in geo near query $geometry argument: { type: \"point\", coordinates: [ 5.9, 52 ] }  Expected geojson geometry with type Point, but got type unknown",
+						"code": 2,
+						"type": "MongoServerError"
 					},
 					"versions": "2.6.12,8.0.0..8.3.11"
 				},
@@ -1167,9 +1167,9 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$near requires a point, given { type: \"LineString\", coordinates: [ 5.9, 52 ] }",
-						"code": 16885,
-						"type": "MongoError"
+						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ 5.9, 52 ] }  Expected geojson geometry with type Point, but got type LineString",
+						"code": 2,
+						"type": "MongoServerError"
 					},
 					"versions": "2.6.12,8.0.0..8.3.11"
 				},
@@ -1312,9 +1312,9 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$near requires a point, given { type: null, coordinates: [ 5.9, 52 ] }",
-						"code": 16885,
-						"type": "MongoError"
+						"message": "invalid point in geo near query $geometry argument: { type: null, coordinates: [ 5.9, 52 ] }  Expected geojson geometry with type Point, but got type unknown",
+						"code": 2,
+						"type": "MongoServerError"
 					},
 					"versions": "2.6.12,8.0.0..8.3.11"
 				},
@@ -1355,9 +1355,9 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$near requires a point, given { type: \"\", coordinates: [ 5.9, 52 ] }",
-						"code": 16885,
-						"type": "MongoError"
+						"message": "invalid point in geo near query $geometry argument: { type: \"\", coordinates: [ 5.9, 52 ] }  Expected geojson geometry with type Point, but got type unknown",
+						"code": 2,
+						"type": "MongoServerError"
 					},
 					"versions": "2.6.12,8.0.0..8.3.11"
 				},
@@ -1398,9 +1398,9 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$near requires a point, given { type: true, coordinates: [ 5.9, 52 ] }",
-						"code": 16885,
-						"type": "MongoError"
+						"message": "invalid point in geo near query $geometry argument: { type: true, coordinates: [ 5.9, 52 ] }  Expected geojson geometry with type Point, but got type unknown",
+						"code": 2,
+						"type": "MongoServerError"
 					},
 					"versions": "2.6.12,8.0.0..8.3.11"
 				},
@@ -1443,9 +1443,9 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$near requires a point, given { type: [ \"Point\" ], coordinates: [ 5.9, 52 ] }",
-						"code": 16885,
-						"type": "MongoError"
+						"message": "invalid point in geo near query $geometry argument: { type: [ \"Point\" ], coordinates: [ 5.9, 52 ] }  Expected geojson geometry with type Point, but got type unknown",
+						"code": 2,
+						"type": "MongoServerError"
 					},
 					"versions": "2.6.12,8.0.0..8.3.11"
 				},
@@ -1486,9 +1486,9 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$near requires a point, given { type: \"point\", coordinates: [ 5.9, 52 ] }",
-						"code": 16885,
-						"type": "MongoError"
+						"message": "invalid point in geo near query $geometry argument: { type: \"point\", coordinates: [ 5.9, 52 ] }  Expected geojson geometry with type Point, but got type unknown",
+						"code": 2,
+						"type": "MongoServerError"
 					},
 					"versions": "2.6.12,8.0.0..8.3.11"
 				},
@@ -1529,9 +1529,9 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$near requires a point, given { type: \"LineString\", coordinates: [ 5.9, 52 ] }",
-						"code": 16885,
-						"type": "MongoError"
+						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ 5.9, 52 ] }  Expected geojson geometry with type Point, but got type LineString",
+						"code": 2,
+						"type": "MongoServerError"
 					},
 					"versions": "2.6.12,8.0.0..8.3.11"
 				},
@@ -2069,7 +2069,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=legacyPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -2101,7 +2101,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=legacyPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
