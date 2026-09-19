@@ -1,0 +1,5473 @@
+[
+	{
+		"id": "vW1FRAeKg65m",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lKUxVDfS3TOj",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "MultiPoint",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "w5FF7kuHA17E",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "LineString",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "s4zLV0JxWM06",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "MultiLineString",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									5.91,
+									52.01
+								]
+							],
+							[
+								[
+									5.92,
+									52
+								],
+								[
+									5.930000000000001,
+									52.01
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "jYFuspLh0dHA",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.890000000000001,
+									51.99
+								],
+								[
+									5.91,
+									51.99
+								],
+								[
+									5.91,
+									52.01
+								],
+								[
+									5.890000000000001,
+									52.01
+								],
+								[
+									5.890000000000001,
+									51.99
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tIAQ2CtIP2o3",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "MultiPolygon",
+						"coordinates": [
+							[
+								[
+									[
+										5.87,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.98
+									],
+									[
+										5.87,
+										51.98
+									],
+									[
+										5.87,
+										51.97
+									]
+								]
+							],
+							[
+								[
+									[
+										5.92,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.03
+									],
+									[
+										5.92,
+										52.03
+									],
+									[
+										5.92,
+										52.02
+									]
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sKohSTPJuK4S",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "GeometryCollection",
+						"geometries": [
+							{
+								"type": "Point",
+								"coordinates": [
+									5.9,
+									52
+								]
+							},
+							{
+								"type": "LineString",
+								"coordinates": [
+									[
+										5.9,
+										52
+									],
+									[
+										5.91,
+										52.01
+									]
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "cRccUzxVsdsR",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Feature",
+						"geometry": {
+							"type": "Point",
+							"coordinates": [
+								5.9,
+								52
+							]
+						},
+						"properties": {}
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "r82NIaPZLSZ3",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "FeatureCollection",
+						"features": [
+							{
+								"type": "Feature",
+								"geometry": {
+									"type": "Point",
+									"coordinates": [
+										5.9,
+										52
+									]
+								},
+								"properties": {}
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "c0qKaTE2k931",
+		"operation": {
+			"point": {
+				"$near": [
+					5.9,
+					52
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=point maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nISdQKmPvUZI",
+		"operation": {
+			"point": {
+				"$near": {
+					"x": 5.9,
+					"y": 52
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=point maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "mEKXGrNxTYD1",
+		"operation": {
+			"line": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pUvIGmT2t3pM",
+		"operation": {
+			"line": {
+				"$near": {
+					"$geometry": {
+						"type": "MultiPoint",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "cMYVkU6dTaOE",
+		"operation": {
+			"line": {
+				"$near": {
+					"$geometry": {
+						"type": "LineString",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rfQ42Jsum179",
+		"operation": {
+			"line": {
+				"$near": {
+					"$geometry": {
+						"type": "MultiLineString",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									5.91,
+									52.01
+								]
+							],
+							[
+								[
+									5.92,
+									52
+								],
+								[
+									5.930000000000001,
+									52.01
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rOeCr9O1kG5Y",
+		"operation": {
+			"line": {
+				"$near": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.890000000000001,
+									51.99
+								],
+								[
+									5.91,
+									51.99
+								],
+								[
+									5.91,
+									52.01
+								],
+								[
+									5.890000000000001,
+									52.01
+								],
+								[
+									5.890000000000001,
+									51.99
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "swtpwRwfZ2gD",
+		"operation": {
+			"line": {
+				"$near": {
+					"$geometry": {
+						"type": "MultiPolygon",
+						"coordinates": [
+							[
+								[
+									[
+										5.87,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.98
+									],
+									[
+										5.87,
+										51.98
+									],
+									[
+										5.87,
+										51.97
+									]
+								]
+							],
+							[
+								[
+									[
+										5.92,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.03
+									],
+									[
+										5.92,
+										52.03
+									],
+									[
+										5.92,
+										52.02
+									]
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "lI4LOZgSQ3DF",
+		"operation": {
+			"line": {
+				"$near": {
+					"$geometry": {
+						"type": "GeometryCollection",
+						"geometries": [
+							{
+								"type": "Point",
+								"coordinates": [
+									5.9,
+									52
+								]
+							},
+							{
+								"type": "LineString",
+								"coordinates": [
+									[
+										5.9,
+										52
+									],
+									[
+										5.91,
+										52.01
+									]
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pBQHdAvqJWZh",
+		"operation": {
+			"line": {
+				"$near": {
+					"$geometry": {
+						"type": "Feature",
+						"geometry": {
+							"type": "Point",
+							"coordinates": [
+								5.9,
+								52
+							]
+						},
+						"properties": {}
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qBqsmd4Az1vz",
+		"operation": {
+			"line": {
+				"$near": {
+					"$geometry": {
+						"type": "FeatureCollection",
+						"features": [
+							{
+								"type": "Feature",
+								"geometry": {
+									"type": "Point",
+									"coordinates": [
+										5.9,
+										52
+									]
+								},
+								"properties": {}
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "mUTQF859wKYD",
+		"operation": {
+			"line": {
+				"$near": [
+					5.9,
+					52
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=line maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rKOCkWUgTJ69",
+		"operation": {
+			"line": {
+				"$near": {
+					"x": 5.9,
+					"y": 52
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=line maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ihya2JATj9sN",
+		"operation": {
+			"polygon": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rymv31gDLQRC",
+		"operation": {
+			"polygon": {
+				"$near": {
+					"$geometry": {
+						"type": "MultiPoint",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tO0e8aIUbFfS",
+		"operation": {
+			"polygon": {
+				"$near": {
+					"$geometry": {
+						"type": "LineString",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bykWNhEPqVYe",
+		"operation": {
+			"polygon": {
+				"$near": {
+					"$geometry": {
+						"type": "MultiLineString",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									5.91,
+									52.01
+								]
+							],
+							[
+								[
+									5.92,
+									52
+								],
+								[
+									5.930000000000001,
+									52.01
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wuQUvzMnLOa3",
+		"operation": {
+			"polygon": {
+				"$near": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.890000000000001,
+									51.99
+								],
+								[
+									5.91,
+									51.99
+								],
+								[
+									5.91,
+									52.01
+								],
+								[
+									5.890000000000001,
+									52.01
+								],
+								[
+									5.890000000000001,
+									51.99
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ajLBKP3AOL85",
+		"operation": {
+			"polygon": {
+				"$near": {
+					"$geometry": {
+						"type": "MultiPolygon",
+						"coordinates": [
+							[
+								[
+									[
+										5.87,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.98
+									],
+									[
+										5.87,
+										51.98
+									],
+									[
+										5.87,
+										51.97
+									]
+								]
+							],
+							[
+								[
+									[
+										5.92,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.03
+									],
+									[
+										5.92,
+										52.03
+									],
+									[
+										5.92,
+										52.02
+									]
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "r5KWGWUsotF5",
+		"operation": {
+			"polygon": {
+				"$near": {
+					"$geometry": {
+						"type": "GeometryCollection",
+						"geometries": [
+							{
+								"type": "Point",
+								"coordinates": [
+									5.9,
+									52
+								]
+							},
+							{
+								"type": "LineString",
+								"coordinates": [
+									[
+										5.9,
+										52
+									],
+									[
+										5.91,
+										52.01
+									]
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "naoWKsE1ca9C",
+		"operation": {
+			"polygon": {
+				"$near": {
+					"$geometry": {
+						"type": "Feature",
+						"geometry": {
+							"type": "Point",
+							"coordinates": [
+								5.9,
+								52
+							]
+						},
+						"properties": {}
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tC6PfcIHAY9V",
+		"operation": {
+			"polygon": {
+				"$near": {
+					"$geometry": {
+						"type": "FeatureCollection",
+						"features": [
+							{
+								"type": "Feature",
+								"geometry": {
+									"type": "Point",
+									"coordinates": [
+										5.9,
+										52
+									]
+								},
+								"properties": {}
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qLXyvdv6HW43",
+		"operation": {
+			"polygon": {
+				"$near": [
+					5.9,
+					52
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=polygon maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vXfQ2hmVPZ5o",
+		"operation": {
+			"polygon": {
+				"$near": {
+					"x": 5.9,
+					"y": 52
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=polygon maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pkvz0BKyT1ii",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=legacyPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rS1PzYB58vE1",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "MultiPoint",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "dNJ968BOPdoj",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "LineString",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vXPKyL3OLSP0",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "MultiLineString",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									5.91,
+									52.01
+								]
+							],
+							[
+								[
+									5.92,
+									52
+								],
+								[
+									5.930000000000001,
+									52.01
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vXRv7xALRbgs",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.890000000000001,
+									51.99
+								],
+								[
+									5.91,
+									51.99
+								],
+								[
+									5.91,
+									52.01
+								],
+								[
+									5.890000000000001,
+									52.01
+								],
+								[
+									5.890000000000001,
+									51.99
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tJs9bSxPxcex",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "MultiPolygon",
+						"coordinates": [
+							[
+								[
+									[
+										5.87,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.98
+									],
+									[
+										5.87,
+										51.98
+									],
+									[
+										5.87,
+										51.97
+									]
+								]
+							],
+							[
+								[
+									[
+										5.92,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.03
+									],
+									[
+										5.92,
+										52.03
+									],
+									[
+										5.92,
+										52.02
+									]
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qDSj3VCoD0an",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "GeometryCollection",
+						"geometries": [
+							{
+								"type": "Point",
+								"coordinates": [
+									5.9,
+									52
+								]
+							},
+							{
+								"type": "LineString",
+								"coordinates": [
+									[
+										5.9,
+										52
+									],
+									[
+										5.91,
+										52.01
+									]
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wj5myEC8D3S8",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "Feature",
+						"geometry": {
+							"type": "Point",
+							"coordinates": [
+								5.9,
+								52
+							]
+						},
+						"properties": {}
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "lvPHP61HfHxP",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "FeatureCollection",
+						"features": [
+							{
+								"type": "Feature",
+								"geometry": {
+									"type": "Point",
+									"coordinates": [
+										5.9,
+										52
+									]
+								},
+								"properties": {}
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "jOc28I97qbzZ",
+		"operation": {
+			"legacyPoint": {
+				"$near": [
+					5.9,
+					52
+				]
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "mTRSnll0s5c6",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"x": 5.9,
+					"y": 52
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "tU8Q4KXv65gr",
+		"operation": {
+			"unindexedPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=unindexedPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "u4uZtalOtGdw",
+		"operation": {
+			"unindexedPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "MultiPoint",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "c4EKJy4SahYF",
+		"operation": {
+			"unindexedPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "LineString",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wHEmG3wcJ1bX",
+		"operation": {
+			"unindexedPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "MultiLineString",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									5.91,
+									52.01
+								]
+							],
+							[
+								[
+									5.92,
+									52
+								],
+								[
+									5.930000000000001,
+									52.01
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oZRwxSiD1UH4",
+		"operation": {
+			"unindexedPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.890000000000001,
+									51.99
+								],
+								[
+									5.91,
+									51.99
+								],
+								[
+									5.91,
+									52.01
+								],
+								[
+									5.890000000000001,
+									52.01
+								],
+								[
+									5.890000000000001,
+									51.99
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "dm1JAB5MpKXQ",
+		"operation": {
+			"unindexedPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "MultiPolygon",
+						"coordinates": [
+							[
+								[
+									[
+										5.87,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.98
+									],
+									[
+										5.87,
+										51.98
+									],
+									[
+										5.87,
+										51.97
+									]
+								]
+							],
+							[
+								[
+									[
+										5.92,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.03
+									],
+									[
+										5.92,
+										52.03
+									],
+									[
+										5.92,
+										52.02
+									]
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sXyfX73bJEqF",
+		"operation": {
+			"unindexedPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "GeometryCollection",
+						"geometries": [
+							{
+								"type": "Point",
+								"coordinates": [
+									5.9,
+									52
+								]
+							},
+							{
+								"type": "LineString",
+								"coordinates": [
+									[
+										5.9,
+										52
+									],
+									[
+										5.91,
+										52.01
+									]
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "fCkB3CHAPJm1",
+		"operation": {
+			"unindexedPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "Feature",
+						"geometry": {
+							"type": "Point",
+							"coordinates": [
+								5.9,
+								52
+							]
+						},
+						"properties": {}
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "eJkoIgsXadvj",
+		"operation": {
+			"unindexedPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "FeatureCollection",
+						"features": [
+							{
+								"type": "Feature",
+								"geometry": {
+									"type": "Point",
+									"coordinates": [
+										5.9,
+										52
+									]
+								},
+								"properties": {}
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "aGMwNDG0OccO",
+		"operation": {
+			"unindexedPoint": {
+				"$near": [
+					5.9,
+					52
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=unindexedPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "r9Q4I7usWyGN",
+		"operation": {
+			"unindexedPoint": {
+				"$near": {
+					"x": 5.9,
+					"y": 52
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=unindexedPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "jykBQEkxX5Yx",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sZPNdRdMCeDX",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "MultiPoint",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uXpHFH823Hcn",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "LineString",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tFvdS1K9vKdu",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "MultiLineString",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									5.91,
+									52.01
+								]
+							],
+							[
+								[
+									5.92,
+									52
+								],
+								[
+									5.930000000000001,
+									52.01
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tRuQCnc6XYV9",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.890000000000001,
+									51.99
+								],
+								[
+									5.91,
+									51.99
+								],
+								[
+									5.91,
+									52.01
+								],
+								[
+									5.890000000000001,
+									52.01
+								],
+								[
+									5.890000000000001,
+									51.99
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "mUvIGWaJmA9r",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "MultiPolygon",
+						"coordinates": [
+							[
+								[
+									[
+										5.87,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.98
+									],
+									[
+										5.87,
+										51.98
+									],
+									[
+										5.87,
+										51.97
+									]
+								]
+							],
+							[
+								[
+									[
+										5.92,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.03
+									],
+									[
+										5.92,
+										52.03
+									],
+									[
+										5.92,
+										52.02
+									]
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "gEy4yrVqBLHg",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "GeometryCollection",
+						"geometries": [
+							{
+								"type": "Point",
+								"coordinates": [
+									5.9,
+									52
+								]
+							},
+							{
+								"type": "LineString",
+								"coordinates": [
+									[
+										5.9,
+										52
+									],
+									[
+										5.91,
+										52.01
+									]
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qHWECnur6Tdb",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Feature",
+						"geometry": {
+							"type": "Point",
+							"coordinates": [
+								5.9,
+								52
+							]
+						},
+						"properties": {}
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "w5zKSu4vwfRQ",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "FeatureCollection",
+						"features": [
+							{
+								"type": "Feature",
+								"geometry": {
+									"type": "Point",
+									"coordinates": [
+										5.9,
+										52
+									]
+								},
+								"properties": {}
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bnGPxKRX43iW",
+		"operation": {
+			"point": {
+				"$nearSphere": [
+					5.9,
+					52
+				]
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "iPtk2PW6FbRT",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"x": 5.9,
+					"y": 52
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "fKxKEM3Z42iw",
+		"operation": {
+			"line": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uEGy6MbAF9ep",
+		"operation": {
+			"line": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "MultiPoint",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bqLJxShC5DQi",
+		"operation": {
+			"line": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "LineString",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pWDSIHShVT2C",
+		"operation": {
+			"line": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "MultiLineString",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									5.91,
+									52.01
+								]
+							],
+							[
+								[
+									5.92,
+									52
+								],
+								[
+									5.930000000000001,
+									52.01
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "n2GLGgBFF4ai",
+		"operation": {
+			"line": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.890000000000001,
+									51.99
+								],
+								[
+									5.91,
+									51.99
+								],
+								[
+									5.91,
+									52.01
+								],
+								[
+									5.890000000000001,
+									52.01
+								],
+								[
+									5.890000000000001,
+									51.99
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "gZnxTNFAr7FF",
+		"operation": {
+			"line": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "MultiPolygon",
+						"coordinates": [
+							[
+								[
+									[
+										5.87,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.98
+									],
+									[
+										5.87,
+										51.98
+									],
+									[
+										5.87,
+										51.97
+									]
+								]
+							],
+							[
+								[
+									[
+										5.92,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.03
+									],
+									[
+										5.92,
+										52.03
+									],
+									[
+										5.92,
+										52.02
+									]
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uBW2m9HK9YWr",
+		"operation": {
+			"line": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "GeometryCollection",
+						"geometries": [
+							{
+								"type": "Point",
+								"coordinates": [
+									5.9,
+									52
+								]
+							},
+							{
+								"type": "LineString",
+								"coordinates": [
+									[
+										5.9,
+										52
+									],
+									[
+										5.91,
+										52.01
+									]
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "mlK75ZFnqW9x",
+		"operation": {
+			"line": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Feature",
+						"geometry": {
+							"type": "Point",
+							"coordinates": [
+								5.9,
+								52
+							]
+						},
+						"properties": {}
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qzbSvXUYs5uK",
+		"operation": {
+			"line": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "FeatureCollection",
+						"features": [
+							{
+								"type": "Feature",
+								"geometry": {
+									"type": "Point",
+									"coordinates": [
+										5.9,
+										52
+									]
+								},
+								"properties": {}
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vClPqvxfq32Q",
+		"operation": {
+			"line": {
+				"$nearSphere": [
+					5.9,
+					52
+				]
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oP3KzOwEGLM8",
+		"operation": {
+			"line": {
+				"$nearSphere": {
+					"x": 5.9,
+					"y": 52
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "gm3BQTMMbeRb",
+		"operation": {
+			"polygon": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aQPvmzqrSSP3",
+		"operation": {
+			"polygon": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "MultiPoint",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qsMNdmVWn3WB",
+		"operation": {
+			"polygon": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "LineString",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "fAPsBvnErUkh",
+		"operation": {
+			"polygon": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "MultiLineString",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									5.91,
+									52.01
+								]
+							],
+							[
+								[
+									5.92,
+									52
+								],
+								[
+									5.930000000000001,
+									52.01
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "eoxqTQKvbrcL",
+		"operation": {
+			"polygon": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.890000000000001,
+									51.99
+								],
+								[
+									5.91,
+									51.99
+								],
+								[
+									5.91,
+									52.01
+								],
+								[
+									5.890000000000001,
+									52.01
+								],
+								[
+									5.890000000000001,
+									51.99
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bZLYHuTKu5Rv",
+		"operation": {
+			"polygon": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "MultiPolygon",
+						"coordinates": [
+							[
+								[
+									[
+										5.87,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.98
+									],
+									[
+										5.87,
+										51.98
+									],
+									[
+										5.87,
+										51.97
+									]
+								]
+							],
+							[
+								[
+									[
+										5.92,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.03
+									],
+									[
+										5.92,
+										52.03
+									],
+									[
+										5.92,
+										52.02
+									]
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uXE5uvrXOFWl",
+		"operation": {
+			"polygon": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "GeometryCollection",
+						"geometries": [
+							{
+								"type": "Point",
+								"coordinates": [
+									5.9,
+									52
+								]
+							},
+							{
+								"type": "LineString",
+								"coordinates": [
+									[
+										5.9,
+										52
+									],
+									[
+										5.91,
+										52.01
+									]
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "eCw1nyVIyoP4",
+		"operation": {
+			"polygon": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Feature",
+						"geometry": {
+							"type": "Point",
+							"coordinates": [
+								5.9,
+								52
+							]
+						},
+						"properties": {}
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "fGmV4TMJbcZo",
+		"operation": {
+			"polygon": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "FeatureCollection",
+						"features": [
+							{
+								"type": "Feature",
+								"geometry": {
+									"type": "Point",
+									"coordinates": [
+										5.9,
+										52
+									]
+								},
+								"properties": {}
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "peUwF5WLwBQO",
+		"operation": {
+			"polygon": {
+				"$nearSphere": [
+					5.9,
+					52
+				]
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qGuHWqHNJhlP",
+		"operation": {
+			"polygon": {
+				"$nearSphere": {
+					"x": 5.9,
+					"y": 52
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oWoJaW0INg8O",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=legacyPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bE0AHVYcW9eS",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "MultiPoint",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "a6M4sO2LBS21",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "LineString",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "jaALleKWJLa3",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "MultiLineString",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									5.91,
+									52.01
+								]
+							],
+							[
+								[
+									5.92,
+									52
+								],
+								[
+									5.930000000000001,
+									52.01
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vbryAWW2idwy",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.890000000000001,
+									51.99
+								],
+								[
+									5.91,
+									51.99
+								],
+								[
+									5.91,
+									52.01
+								],
+								[
+									5.890000000000001,
+									52.01
+								],
+								[
+									5.890000000000001,
+									51.99
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tk0GONOegAcx",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "MultiPolygon",
+						"coordinates": [
+							[
+								[
+									[
+										5.87,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.98
+									],
+									[
+										5.87,
+										51.98
+									],
+									[
+										5.87,
+										51.97
+									]
+								]
+							],
+							[
+								[
+									[
+										5.92,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.03
+									],
+									[
+										5.92,
+										52.03
+									],
+									[
+										5.92,
+										52.02
+									]
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "okN6JjKGAkfD",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "GeometryCollection",
+						"geometries": [
+							{
+								"type": "Point",
+								"coordinates": [
+									5.9,
+									52
+								]
+							},
+							{
+								"type": "LineString",
+								"coordinates": [
+									[
+										5.9,
+										52
+									],
+									[
+										5.91,
+										52.01
+									]
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wIyGwOOesA3h",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Feature",
+						"geometry": {
+							"type": "Point",
+							"coordinates": [
+								5.9,
+								52
+							]
+						},
+						"properties": {}
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "odWJjz0bfQcY",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "FeatureCollection",
+						"features": [
+							{
+								"type": "Feature",
+								"geometry": {
+									"type": "Point",
+									"coordinates": [
+										5.9,
+										52
+									]
+								},
+								"properties": {}
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sIMUmQJ1Yz7O",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": [
+					5.9,
+					52
+				]
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wWVXYB3uO78R",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"x": 5.9,
+					"y": 52
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rOOSAOkOTH6w",
+		"operation": {
+			"unindexedPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=unindexedPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rak1TO5sekT1",
+		"operation": {
+			"unindexedPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "MultiPoint",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vg0NIpK5py3T",
+		"operation": {
+			"unindexedPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "LineString",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vLaizHgLOqaJ",
+		"operation": {
+			"unindexedPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "MultiLineString",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									5.91,
+									52.01
+								]
+							],
+							[
+								[
+									5.92,
+									52
+								],
+								[
+									5.930000000000001,
+									52.01
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "dhycsKtiCLQM",
+		"operation": {
+			"unindexedPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.890000000000001,
+									51.99
+								],
+								[
+									5.91,
+									51.99
+								],
+								[
+									5.91,
+									52.01
+								],
+								[
+									5.890000000000001,
+									52.01
+								],
+								[
+									5.890000000000001,
+									51.99
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wtuEZPGUPzev",
+		"operation": {
+			"unindexedPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "MultiPolygon",
+						"coordinates": [
+							[
+								[
+									[
+										5.87,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.97
+									],
+									[
+										5.880000000000001,
+										51.98
+									],
+									[
+										5.87,
+										51.98
+									],
+									[
+										5.87,
+										51.97
+									]
+								]
+							],
+							[
+								[
+									[
+										5.92,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.02
+									],
+									[
+										5.930000000000001,
+										52.03
+									],
+									[
+										5.92,
+										52.03
+									],
+									[
+										5.92,
+										52.02
+									]
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vM2aAAxYnySj",
+		"operation": {
+			"unindexedPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "GeometryCollection",
+						"geometries": [
+							{
+								"type": "Point",
+								"coordinates": [
+									5.9,
+									52
+								]
+							},
+							{
+								"type": "LineString",
+								"coordinates": [
+									[
+										5.9,
+										52
+									],
+									[
+										5.91,
+										52.01
+									]
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ueOOMduOq1A0",
+		"operation": {
+			"unindexedPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Feature",
+						"geometry": {
+							"type": "Point",
+							"coordinates": [
+								5.9,
+								52
+							]
+						},
+						"properties": {}
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "to507Cstvj1N",
+		"operation": {
+			"unindexedPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "FeatureCollection",
+						"features": [
+							{
+								"type": "Feature",
+								"geometry": {
+									"type": "Point",
+									"coordinates": [
+										5.9,
+										52
+									]
+								},
+								"properties": {}
+							}
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "cNTKPoI4TbIM",
+		"operation": {
+			"unindexedPoint": {
+				"$nearSphere": [
+					5.9,
+					52
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=unindexedPoint maxdist=1.79769e+308 isNearSphere=1\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rJDdiCuOC60i",
+		"operation": {
+			"unindexedPoint": {
+				"$nearSphere": {
+					"x": 5.9,
+					"y": 52
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=unindexedPoint maxdist=1.79769e+308 isNearSphere=1\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oCLUzsDOE8CS",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": []
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: {}  Point must only contain numeric elements, instead got type missing",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vyyIFNwazCUU",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": []
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: {}  Point must only contain numeric elements, instead got type missing",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bOzFC3HyGcax",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": [
+						5.9,
+						52,
+						10
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: 52, 2: 10 }  Point must only contain two numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "dKtPDRy1cZFx",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": [
+						5.9,
+						52,
+						10
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: 52, 2: 10 }  Point must only contain two numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "arHeZRBrW8VK",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": [
+						5.9,
+						52,
+						10,
+						99
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: 52, 2: 10, 3: 99 }  Point must only contain two numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pwINUJSpPkzr",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": [
+						5.9,
+						52,
+						10,
+						99
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: 52, 2: 10, 3: 99 }  Point must only contain two numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "s4ZLYmMZZzUa",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": [
+						"@Number/NaN",
+						52
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: nan, 1: 52 }  Point coordinates must be finite numbers",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "iHaYiOZ88IUs",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": [
+						"@Number/NaN",
+						52
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: nan, 1: 52 }  Point coordinates must be finite numbers",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "kgtuO547bdtR",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": [
+						5.9,
+						"@Number/Infinity"
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: inf }  Point coordinates must be finite numbers",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "mqvdQzRKF6Im",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": [
+						5.9,
+						"@Number/Infinity"
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: inf }  Point coordinates must be finite numbers",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uiCYo5YyYSIh",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": [
+						"@Number/-Infinity",
+						52
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: -inf, 1: 52 }  Point coordinates must be finite numbers",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wUrCIS3vQicj",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": [
+						"@Number/-Infinity",
+						52
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: -inf, 1: 52 }  Point coordinates must be finite numbers",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rhLousK522qu",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": [
+						5.9,
+						"not-a-number"
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: \"not-a-number\" }  Point must only contain numeric elements, instead got type string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "gvtV32ABg0nq",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": [
+						5.9,
+						"not-a-number"
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: \"not-a-number\" }  Point must only contain numeric elements, instead got type string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oXvB2yI85Da7",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": [
+						[
+							5.9,
+							52
+						]
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: [ 5.9, 52 ] }  Point must only contain numeric elements, instead got type array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tv4y3iDe3USZ",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": [
+						[
+							5.9,
+							52
+						]
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: [ 5.9, 52 ] }  Point must only contain numeric elements, instead got type array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "aZQcDN5wPb3D",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": [
+						200,
+						100
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires geojson point, given { 0: 200, 1: 100 }",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qMofA5fJxaaH",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": [
+						200,
+						100
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires geojson point, given { 0: 200, 1: 100 }",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "lWaBEIhe2Q4c",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rNXCKVuGLZ4O",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": {
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=legacyPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "gEwqr8KWGbnI",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": 5,
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: 5, coordinates: [ 5.9, 52 ] }  Point must only contain numeric elements, instead got type array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "gCQqNHcJrI8c",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": {
+						"type": 5,
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: 5, coordinates: [ 5.9, 52 ] }  Point must only contain numeric elements, instead got type array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "dTwtbPtM30f0",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						],
+						"extra": "nope"
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "njBSBTqzN0Ky",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						],
+						"extra": "nope"
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=legacyPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rQeLVXPKAYUx",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": []
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: {}  Point must only contain numeric elements, instead got type missing",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sB7zMFHIxLmA",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": []
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: {}  Point must only contain numeric elements, instead got type missing",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "cbixAt8yL3LQ",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": [
+						5.9,
+						52,
+						10
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: 52, 2: 10 }  Point must only contain two numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sAAuwvi5gfAX",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": [
+						5.9,
+						52,
+						10
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: 52, 2: 10 }  Point must only contain two numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "elTXtf6k1QTF",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": [
+						5.9,
+						52,
+						10,
+						99
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: 52, 2: 10, 3: 99 }  Point must only contain two numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vWIutIIlFQeX",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": [
+						5.9,
+						52,
+						10,
+						99
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: 52, 2: 10, 3: 99 }  Point must only contain two numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vYCJyeENOIwr",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": [
+						"@Number/NaN",
+						52
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: nan, 1: 52 }  Point coordinates must be finite numbers",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oWjocZS4dUXA",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": [
+						"@Number/NaN",
+						52
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: nan, 1: 52 }  Point coordinates must be finite numbers",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "kxaMh0NgXDDJ",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": [
+						5.9,
+						"@Number/Infinity"
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: inf }  Point coordinates must be finite numbers",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "n7bPvWVs9pIW",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": [
+						5.9,
+						"@Number/Infinity"
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: inf }  Point coordinates must be finite numbers",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "cbdY4hPRCYYv",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": [
+						"@Number/-Infinity",
+						52
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: -inf, 1: 52 }  Point coordinates must be finite numbers",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rRdkxuAbAYgO",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": [
+						"@Number/-Infinity",
+						52
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: -inf, 1: 52 }  Point coordinates must be finite numbers",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "a4AnOUIE13cT",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": [
+						5.9,
+						"not-a-number"
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: \"not-a-number\" }  Point must only contain numeric elements, instead got type string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "cKi7l1ACXJUR",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": [
+						5.9,
+						"not-a-number"
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: \"not-a-number\" }  Point must only contain numeric elements, instead got type string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tBRk7yYsMcBi",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": [
+						[
+							5.9,
+							52
+						]
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: [ 5.9, 52 ] }  Point must only contain numeric elements, instead got type array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tO1hacTdNq9K",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": [
+						[
+							5.9,
+							52
+						]
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: [ 5.9, 52 ] }  Point must only contain numeric elements, instead got type array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "dkYEtGVYAdtQ",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": [
+						200,
+						100
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires geojson point, given { 0: 200, 1: 100 }",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oTAddU7YReaT",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": [
+						200,
+						100
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires geojson point, given { 0: 200, 1: 100 }",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "w6gX5hqNEDUX",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "bBLWN6OmOcZS",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=legacyPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rTbFJZC5Coif",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": 5,
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: 5, coordinates: [ 5.9, 52 ] }  Point must only contain numeric elements, instead got type array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uFI1AJJdcPbH",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": 5,
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: 5, coordinates: [ 5.9, 52 ] }  Point must only contain numeric elements, instead got type array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "hyx1yyMKQsUA",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						],
+						"extra": "nope"
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "u1pCyl3xbc2K",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						],
+						"extra": "nope"
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=legacyPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sYYJ1zQs1B54",
+		"operation": {
+			"point": {
+				"$near": []
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$geometry is required for geo near query",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ijOGB8rO8XoU",
+		"operation": {
+			"legacyPoint": {
+				"$near": []
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$geometry is required for geo near query",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "kQi9gNWskpMX",
+		"operation": {
+			"point": {
+				"$near": [
+					"@Number/NaN",
+					52
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid argument in geo near query: 0",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vhf7GO9NdWFL",
+		"operation": {
+			"legacyPoint": {
+				"$near": [
+					"@Number/NaN",
+					52
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid argument in geo near query: 0",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rCoFzMMPCS0U",
+		"operation": {
+			"point": {
+				"$near": [
+					[
+						5.9,
+						52
+					]
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid argument in geo near query: 0",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "dZznKYZ9B9NU",
+		"operation": {
+			"legacyPoint": {
+				"$near": [
+					[
+						5.9,
+						52
+					]
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid argument in geo near query: 0",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "c8KSlmuBg76z",
+		"operation": {
+			"point": {
+				"$near": {
+					"x": 5.9
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid argument in geo near query: x",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "hCzoUmkUhLZJ",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"x": 5.9
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid argument in geo near query: x",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qtNEGXBNCQY9",
+		"operation": {
+			"point": {
+				"$near": {
+					"x": 5.9,
+					"y": 52,
+					"z": 10
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=point maxdist=10 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+			"code": 291,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "jZ0fqaZIr4aR",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"x": 5.9,
+					"y": 52,
+					"z": 10
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "gMFvJAGLLjYl",
+		"operation": {
+			"point": {
+				"$nearSphere": []
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$geometry is required for geo near query",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nHyfFIUJQZDH",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": []
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$geometry is required for geo near query",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ccpKaBFLDRu4",
+		"operation": {
+			"point": {
+				"$nearSphere": [
+					"@Number/NaN",
+					52
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid argument in geo near query: 0",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oBZEJJEfbQI4",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": [
+					"@Number/NaN",
+					52
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid argument in geo near query: 0",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nMiNI6BzdzCY",
+		"operation": {
+			"point": {
+				"$nearSphere": [
+					[
+						5.9,
+						52
+					]
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid argument in geo near query: 0",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pSzrS1y4BozI",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": [
+					[
+						5.9,
+						52
+					]
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid argument in geo near query: 0",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tcWRYZH8cpan",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"x": 5.9
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid argument in geo near query: x",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vwpOQl71QCRd",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"x": 5.9
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid argument in geo near query: x",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "snpdcGOtAW9D",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"x": 5.9,
+					"y": 52,
+					"z": 10
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "fcP1BMspUelk",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"x": 5.9,
+					"y": 52,
+					"z": 10
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cTnH2EER3yQ9",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					},
+					"$maxDistance": -100
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$maxDistance must be non-negative",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sxKyLHiWm6Mz",
+		"operation": {
+			"legacyPoint": {
+				"$near": [
+					5.9,
+					52
+				],
+				"$maxDistance": -100
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$maxDistance must be non-negative",
+			"code": 16896,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nLYywxUxHhkO",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					},
+					"$maxDistance": 0
+				}
+			}
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "fPF4fFTp7ASW",
+		"operation": {
+			"legacyPoint": {
+				"$near": [
+					5.9,
+					52
+				],
+				"$maxDistance": 0
+			}
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "jTQWm8FQOrRr",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					},
+					"$maxDistance": "far"
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$maxDistance must be a number",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "c7MYNBiztQvu",
+		"operation": {
+			"legacyPoint": {
+				"$near": [
+					5.9,
+					52
+				],
+				"$maxDistance": "far"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$maxDistance must be a number",
+			"code": 16895,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sIuCR9RZyZ34",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					},
+					"$minDistance": -100
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$minDistance must be non-negative",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "t6qvwCPoLD4E",
+		"operation": {
+			"legacyPoint": {
+				"$near": [
+					5.9,
+					52
+				],
+				"$minDistance": -100
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$minDistance must be non-negative",
+			"code": 16894,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "aWI7MprffQT8",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					},
+					"$minDistance": 1000,
+					"$maxDistance": 100
+				}
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qFvV2yqPGzVS",
+		"operation": {
+			"legacyPoint": {
+				"$near": [
+					5.9,
+					52
+				],
+				"$minDistance": 1000,
+				"$maxDistance": 100
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aHGovSIyvHOW",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					},
+					"$maxDistance": -100
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$maxDistance must be non-negative",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rBMufwHDNYRn",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": [
+					5.9,
+					52
+				],
+				"$maxDistance": -100
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$maxDistance must be non-negative",
+			"code": 16896,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tWkySaw0kYeK",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					},
+					"$maxDistance": 0
+				}
+			}
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qys03jpeLPkH",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": [
+					5.9,
+					52
+				],
+				"$maxDistance": 0
+			}
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "p9M8yZNauSZF",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					},
+					"$maxDistance": "far"
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$maxDistance must be a number",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rKJOM7Ny3iVB",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": [
+					5.9,
+					52
+				],
+				"$maxDistance": "far"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$maxDistance must be a number",
+			"code": 16895,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "si0MssHPQ1NY",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					},
+					"$minDistance": -100
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$minDistance must be non-negative",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "berWHjzvhzMQ",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": [
+					5.9,
+					52
+				],
+				"$minDistance": -100
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$minDistance must be non-negative",
+			"code": 16894,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rTFeJsdB283N",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					},
+					"$minDistance": 1000,
+					"$maxDistance": 100
+				}
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "iXOfkJD81nmf",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": [
+					5.9,
+					52
+				],
+				"$minDistance": 1000,
+				"$maxDistance": 100
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "gKidvA9iwETt",
+		"operation": {
+			"point": {
+				"$near": null
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "near must be first in: { $near: null }",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bISNvj17dNIA",
+		"operation": {
+			"legacyPoint": {
+				"$near": null
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "near must be first in: { $near: null }",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vVhxFW6cgZTD",
+		"operation": {
+			"point": {
+				"$nearSphere": null
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "near must be first in: { $nearSphere: null }",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vk4tJ8xElFIu",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": null
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "near must be first in: { $nearSphere: null }",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uOtC8OQ5n6TY",
+		"operation": {
+			"point": {
+				"$minDistance": 100
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "unknown operator: $minDistance",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "jvQjcyD9FTB0",
+		"operation": {
+			"point": {
+				"$maxDistance": 100
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "unknown operator: $maxDistance",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	}
+]
