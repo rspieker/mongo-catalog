@@ -1,0 +1,1282 @@
+[
+	{
+		"id": "mDhIyVjOu5Qk",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qJmVxAI27h36",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									5.91,
+									52
+								],
+								[
+									5.91,
+									52.01
+								],
+								[
+									5.9,
+									52
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52 ], [ 5.91, 52.01 ], [ 5.9, 52 ] ] ] }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "b94IC2IaqIV3",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"coordinates": [
+							5.9
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { coordinates: [ 5.9 ] }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "noUi1Dv9IW1i",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"coordinates": [
+							5.9,
+							52,
+							10
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oIxIGq5YKZ0C",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"coordinates": {
+							"x": 5.9,
+							"y": 52
+						}
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "szsPOMF5xV4w",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"coordinates": null
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { coordinates: null }  Point must be an array or object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bJkbeLTBcJ0b",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								5.91,
+								52.01
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "r7O4yGC326nc",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									5.91,
+									52
+								],
+								[
+									5.91,
+									52.01
+								],
+								[
+									5.9,
+									52
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52 ], [ 5.91, 52.01 ], [ 5.9, 52 ] ] ] }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ssGGvGH9YOdE",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"coordinates": [
+							5.9
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { coordinates: [ 5.9 ] }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uxtALd3O02DV",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"coordinates": [
+							5.9,
+							52,
+							10
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "muH4rEOk0Xnx",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"coordinates": {
+							"x": 5.9,
+							"y": 52
+						}
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wLETyNOWBNLo",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"coordinates": null
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { coordinates: null }  Point must be an array or object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pe4NpEB2lq0i",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"x": 5.9,
+						"y": 52
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires geojson point, given { x: 5.9, y: 52 }",
+			"code": 16681,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "weWbDL25PEO0",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"lon": 5.9,
+						"lat": 52
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires geojson point, given { lon: 5.9, lat: 52 }",
+			"code": 16681,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tzDAMSXzgM1Q",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"notCoordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { notCoordinates: [ 5.9, 52 ] }  Point must be an array or object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "aboNbp5qGRPk",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: {}  Point must be an array or object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nOOPdzRNECJB",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"x": 5.9
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { x: 5.9 }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "j0ZoYPyCE12I",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"x": 5.9,
+						"y": 52
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires geojson point, given { x: 5.9, y: 52 }",
+			"code": 16681,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ePzVikhcAZoY",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"lon": 5.9,
+						"lat": 52
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires geojson point, given { lon: 5.9, lat: 52 }",
+			"code": 16681,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "iLFbpBCAqD1w",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"notCoordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { notCoordinates: [ 5.9, 52 ] }  Point must be an array or object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "elv59PdOcTUu",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: {}  Point must be an array or object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "usiQtqELAlFi",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"x": 5.9
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { x: 5.9 }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "p0UOhl00EQJj",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point"
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Point\" }  Point must be an array or object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uwShaeZ2KNaE",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": null
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Point\", coordinates: null }  Point must be an array or object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vhHwTpSnhQ56",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": {
+							"x": 5.9,
+							"y": 52
+						}
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "o5y9izj8CcUy",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": null,
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "j9Ca1Usp9XIc",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "whEyxL0AQdVc",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": true,
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kcFyBStWkdt1",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": [
+							"Point"
+						],
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ssiDNxFGfzl0",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pGxGLsZKSRDY",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": "LineString",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "eIRY2QVdAM7C",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point"
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Point\" }  Point must be an array or object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bkAcmufPHUP0",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": null
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: \"Point\", coordinates: null }  Point must be an array or object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "kCmFHGDNTYcc",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": {
+							"x": 5.9,
+							"y": 52
+						}
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sKtfK3XEN6Op",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": null,
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "f0LmzKQLEXIW",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qfLHBxOyoKfm",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": true,
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rBpZRZTTiR1A",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": [
+							"Point"
+						],
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wjbIYLMhiNGC",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "gGzp7UPYLSXF",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": "LineString",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ebjmn1lnutKf",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": 0,
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: 0, coordinates: [ 5.9, 52 ] }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "gwPnYmzBEvwv",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": -1,
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: -1, coordinates: [ 5.9, 52 ] }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "aKw2clWPc33q",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": 1.5,
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: 1.5, coordinates: [ 5.9, 52 ] }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "gOIRYMBnvSQW",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": 5,
+						"coordinates": 52
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires geojson point, given { type: 5, coordinates: 52 }",
+			"code": 16681,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bm9QP7gdL4ek",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": 5,
+						"coordinates": [
+							5.9
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: 5, coordinates: [ 5.9 ] }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "inhS5ZCnU5dr",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": 5
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: 5 }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "dwyPLkM6VkLr",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"type": 5,
+						"extra": 6
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires geojson point, given { type: 5, extra: 6 }",
+			"code": 16681,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qfCChYTsKU6C",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": 0,
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: 0, coordinates: [ 5.9, 52 ] }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bWp9yGTQwMew",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": -1,
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: -1, coordinates: [ 5.9, 52 ] }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "giONxr7GyD6z",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": 1.5,
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: 1.5, coordinates: [ 5.9, 52 ] }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "aXUxJfeLG8Pv",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": 5,
+						"coordinates": 52
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires geojson point, given { type: 5, coordinates: 52 }",
+			"code": 16681,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wtqPerQsyB0I",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": 5,
+						"coordinates": [
+							5.9
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: 5, coordinates: [ 5.9 ] }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "mHdvt6B2TsXD",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": 5
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { type: 5 }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pXovuw1vBVcR",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"type": 5,
+						"extra": 6
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$near requires geojson point, given { type: 5, extra: 6 }",
+			"code": 16681,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wFoKnxqv23w8",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": [
+						5.9
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: 5.9 }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nOOPdzRNECJB",
+		"operation": {
+			"point": {
+				"$near": {
+					"$geometry": {
+						"x": 5.9
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { x: 5.9 }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pYyYmuHz3Tfy",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": [
+						5.9
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { 0: 5.9 }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "usiQtqELAlFi",
+		"operation": {
+			"point": {
+				"$nearSphere": {
+					"$geometry": {
+						"x": 5.9
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "invalid point in geo near query $geometry argument: { x: 5.9 }  Point must only contain numeric elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rNXCKVuGLZ4O",
+		"operation": {
+			"legacyPoint": {
+				"$near": {
+					"$geometry": {
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: { legacyPoint: { $near: { $geometry: { coordinates: [ 5.9, 52 ] } } } }Sort: {}\nProj: {}\n planner returned error: unable to find index for $geoNear query",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bBLWN6OmOcZS",
+		"operation": {
+			"legacyPoint": {
+				"$nearSphere": {
+					"$geometry": {
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: { legacyPoint: { $nearSphere: { $geometry: { coordinates: [ 5.9, 52 ] } } } }Sort: {}\nProj: {}\n planner returned error: unable to find index for $geoNear query",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	}
+]
