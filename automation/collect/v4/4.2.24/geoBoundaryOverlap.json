@@ -1,0 +1,157 @@
+[
+	{
+		"id": "nGC7T0Zq9NOc",
+		"operation": {
+			"line": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "LineString",
+						"coordinates": [
+							[
+								0,
+								0
+							],
+							[
+								10,
+								10
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			6,
+			4,
+			5,
+			10,
+			1,
+			8,
+			11
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aVO8ZEyBq1Hj",
+		"operation": {
+			"line": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									0,
+									0
+								],
+								[
+									10,
+									0
+								],
+								[
+									10,
+									10
+								],
+								[
+									0,
+									0
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			10,
+			5,
+			2,
+			1,
+			8,
+			11,
+			12
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "hzTVUsjNJfZr",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									0,
+									0
+								],
+								[
+									10,
+									0
+								],
+								[
+									10,
+									10
+								],
+								[
+									0,
+									0
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			4,
+			6,
+			10,
+			2,
+			1,
+			5,
+			11,
+			12
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uxf5KO75h881",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$polygon": [
+						[
+							0,
+							0
+						],
+						[
+							10,
+							0
+						],
+						[
+							10,
+							10
+						],
+						[
+							0,
+							0
+						]
+					]
+				}
+			}
+		},
+		"documents": [
+			4,
+			6,
+			10,
+			12,
+			5,
+			11
+		],
+		"error": "@Undefined/und"
+	}
+]

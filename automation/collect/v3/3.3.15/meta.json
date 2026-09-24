@@ -3402,6 +3402,77 @@
 			"catalog": "geoWithinIntersectsMatrix",
 			"hash": "c95debd5fb43b24f18666f76e73bc317966b2f2060be673d3c2fb8bc75fc6ead",
 			"resultChecksum": "3962b0b484257ff632c23e24a1c09eb4a00b8c4c42d4d783eed9c223c9c2da91"
+		},
+		{
+			"type": "collection-completed",
+			"date": "2026-09-24T23:39:56.640Z",
+			"catalog": "geoBoundaryOverlap",
+			"hash": "30709084bf9b0fb81fed513d071992b32ffbd60cac0972e5034e0e51a23b60ca",
+			"resultChecksum": "1b084dcc2d703ec559a5ec124d80904caff0ead08e015ca841f7c9a5311ca4ed",
+			"bootstrap": {
+				"problems": [
+					{
+						"error": {
+							"message": "Can't extract geo keys: { _id: 13, name: \"point exactly mid-edge\", line: { type: \"LineString\", coordinates: [ [ 5, 5 ], [ 5, 5 ] ] }, point: { type: \"Point\", coordinates: [ 5, 5 ] }, legacyPoint: [ 5, 5 ] }  GeoJSON LineString must have at least 2 vertices: [ [ 5, 5 ], [ 5, 5 ] ]",
+							"code": 16755,
+							"type": "MongoError"
+						},
+						"documents": [
+							13
+						]
+					},
+					{
+						"error": {
+							"message": "Can't extract geo keys: { _id: 14, name: \"point exactly at the start vertex\", line: { type: \"LineString\", coordinates: [ [ 0, 0 ], [ 0, 0 ] ] }, point: { type: \"Point\", coordinates: [ 0, 0 ] }, legacyPoint: [ 0, 0 ] }  GeoJSON LineString must have at least 2 vertices: [ [ 0, 0 ], [ 0, 0 ] ]",
+							"code": 16755,
+							"type": "MongoError"
+						},
+						"documents": [
+							14
+						]
+					},
+					{
+						"error": {
+							"message": "Can't extract geo keys: { _id: 15, name: \"point exactly at the end vertex\", line: { type: \"LineString\", coordinates: [ [ 10, 10 ], [ 10, 10 ] ] }, point: { type: \"Point\", coordinates: [ 10, 10 ] }, legacyPoint: [ 10, 10 ] }  GeoJSON LineString must have at least 2 vertices: [ [ 10, 10 ], [ 10, 10 ] ]",
+							"code": 16755,
+							"type": "MongoError"
+						},
+						"documents": [
+							15
+						]
+					},
+					{
+						"error": {
+							"message": "Can't extract geo keys: { _id: 16, name: \"point exactly at the third vertex\", line: { type: \"LineString\", coordinates: [ [ 10, 0 ], [ 10, 0 ] ] }, point: { type: \"Point\", coordinates: [ 10, 0 ] }, legacyPoint: [ 10, 0 ] }  GeoJSON LineString must have at least 2 vertices: [ [ 10, 0 ], [ 10, 0 ] ]",
+							"code": 16755,
+							"type": "MongoError"
+						},
+						"documents": [
+							16
+						]
+					},
+					{
+						"error": {
+							"message": "Can't extract geo keys: { _id: 17, name: \"point clearly interior\", line: { type: \"LineString\", coordinates: [ [ 8, 3 ], [ 8, 3 ] ] }, point: { type: \"Point\", coordinates: [ 8, 3 ] }, legacyPoint: [ 8, 3 ] }  GeoJSON LineString must have at least 2 vertices: [ [ 8, 3 ], [ 8, 3 ] ]",
+							"code": 16755,
+							"type": "MongoError"
+						},
+						"documents": [
+							17
+						]
+					},
+					{
+						"error": {
+							"message": "Can't extract geo keys: { _id: 18, name: \"point clearly exterior\", line: { type: \"LineString\", coordinates: [ [ 20, 20 ], [ 20, 20 ] ] }, point: { type: \"Point\", coordinates: [ 20, 20 ] }, legacyPoint: [ 20, 20 ] }  GeoJSON LineString must have at least 2 vertices: [ [ 20, 20 ], [ 20, 20 ] ]",
+							"code": 16755,
+							"type": "MongoError"
+						},
+						"documents": [
+							18
+						]
+					}
+				]
+			}
 		}
 	]
 }
