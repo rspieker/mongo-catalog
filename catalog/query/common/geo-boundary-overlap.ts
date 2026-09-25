@@ -63,11 +63,18 @@ function lineDoc(id: number, name: string, coordinates: [[number, number], [numb
 
 // Placeholder line for the point-scenario documents — not what dimension
 // 2/3's point operations query against, just needs to satisfy the shape.
+// Must be a genuinely non-degenerate LineString: [coordinates, coordinates]
+// (identical start/end) collapses to 1 distinct vertex, which MongoDB's
+// 2dsphere index build rejects outright ("GeoJSON LineString must have at
+// least 2 vertices") — and takes the whole collection's indexing down with
+// it, silently dropping every later document, exactly what happened to
+// _id 13-18 in the first collection round.
 function pointDoc(id: number, name: string, coordinates: [number, number]): GeoBoundaryOverlapDocument {
+	const [lng, lat] = coordinates
 	return {
 		_id: id,
 		name,
-		line: { type: 'LineString', coordinates: [coordinates, coordinates] },
+		line: { type: 'LineString', coordinates: [coordinates, [lng + 0.001, lat + 0.001]] },
 		point: { type: 'Point', coordinates },
 		legacyPoint: coordinates,
 	}
@@ -100,6 +107,22 @@ const records: Array<GeoBoundaryOverlapDocument> = [
 	pointDoc(16, 'point exactly at the third vertex', [10, 0]),
 	pointDoc(17, 'point clearly interior', [8, 3]),
 	pointDoc(18, 'point clearly exterior', [20, 20]),
+
+	// Reversed-direction siblings of the collinear-overlap scenarios above
+	// (0,1,2,3,6,10,11) — added after finding that direction *does* matter
+	// for at least one case (4 vs 5: an edge-identical segment matches only
+	// in the direction the polygon ring happens to store that edge
+	// internally). The non-collinear sanity baselines (7,8,9,12) aren't
+	// reversed — a transversal crossing, a never-touching parallel, a
+	// disjoint segment, and a fully-interior segment have no plausible
+	// direction-dependence to check for.
+	lineDoc(19, 'partial overlap straddling the start vertex, reversed', [[5, 5], [-2, -2]]),
+	lineDoc(20, 'partial overlap straddling the end vertex, reversed', [[12, 12], [5, 5]]),
+	lineDoc(21, 'full containment, candidate strictly inside, reversed', [[8, 8], [2, 2]]),
+	lineDoc(22, 'full containment, candidate strictly swallows, reversed', [[12, 12], [-2, -2]]),
+	lineDoc(23, 'single-vertex touch, extending away, reversed', [[-5, -5], [0, 0]]),
+	lineDoc(24, 'from the start vertex, partway along, reversed', [[5, 5], [0, 0]]),
+	lineDoc(25, 'from the end vertex, partway along, reversed', [[5, 5], [10, 10]]),
 ]
 
 export const geoBoundaryOverlap: Catalog<GeoBoundaryOverlapDocument> = {
