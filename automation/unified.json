@@ -42695,9 +42695,14 @@
 				"operation": {"line":{"$geoIntersects":{"$geometry":{"type":"LineString","coordinates":[[0,0],[10,10]]}}}},
 				"results": [
 					{
+						"documents": [0,19,6,23,4,5,10,14,24,8,11,25,1,20,15],
+						"error": "@Undefined/und",
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [0,6,19,23,4,5,10,14,24,1,8,11,20,25,15],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -42706,9 +42711,14 @@
 				"operation": {"line":{"$geoIntersects":{"$geometry":{"type":"Polygon","coordinates":[[[0,0],[10,0],[10,10],[0,0]]]}}}},
 				"results": [
 					{
+						"documents": [5,0,10,19,24,14,2,21,8,11,25,1,20,13,12,17],
+						"error": "@Undefined/und",
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [14,0,10,19,24,5,2,21,1,8,11,20,25,13,12,17],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -42719,7 +42729,7 @@
 					{
 						"documents": [4,6,10,14,2,1,13,19,24,25,21,5,11,15,17,12,16],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -42728,9 +42738,14 @@
 				"operation": {"legacyPoint":{"$geoWithin":{"$polygon":[[0,0],[10,0],[10,10],[0,0]]}}},
 				"results": [
 					{
+						"documents": [14,15,11,5,16,17,12,4,6,10],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
 						"documents": [4,6,10,14,12,17,16,5,11,15],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.0.15..8.3.11"
 					}
 				]
 			}
@@ -47072,7 +47087,7 @@
 				"results": [
 					{
 						"documents": "@Undefined/und",
-						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"error": {"message":"Can't canonicalize query: BadValue unknown top level operator: $expr","code":17287,"type":"MongoError"},
 						"versions": "2.6.12..3.5.13"
 					},
 					{
