@@ -42688,6 +42688,55 @@
 		]
 	},
 	{
+		"catalog": "geoBoundaryOverlap",
+		"operations": [
+			{
+				"id": "nGC7T0Zq9NOc",
+				"operation": {"line":{"$geoIntersects":{"$geometry":{"type":"LineString","coordinates":[[0,0],[10,10]]}}}},
+				"results": [
+					{
+						"documents": [0,6,19,23,4,5,10,14,24,1,8,11,20,25,15],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "aVO8ZEyBq1Hj",
+				"operation": {"line":{"$geoIntersects":{"$geometry":{"type":"Polygon","coordinates":[[[0,0],[10,0],[10,10],[0,0]]]}}}},
+				"results": [
+					{
+						"documents": [14,0,10,19,24,5,2,21,1,8,11,20,25,13,12,17],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "hzTVUsjNJfZr",
+				"operation": {"point":{"$geoWithin":{"$geometry":{"type":"Polygon","coordinates":[[[0,0],[10,0],[10,10],[0,0]]]}}}},
+				"results": [
+					{
+						"documents": [4,6,10,14,2,1,13,19,24,25,21,5,11,15,17,12,16],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "uxf5KO75h881",
+				"operation": {"legacyPoint":{"$geoWithin":{"$polygon":[[0,0],[10,0],[10,10],[0,0]]}}},
+				"results": [
+					{
+						"documents": [4,6,10,14,12,17,16,5,11,15],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			}
+		]
+	},
+	{
 		"catalog": "geoNearGeometry",
 		"operations": [
 			{

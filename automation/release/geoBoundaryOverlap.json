@@ -1,0 +1,964 @@
+{
+	"catalog": "geoBoundaryOverlap",
+	"collection": {
+		"records": [
+			{
+				"_id": 0,
+				"name": "partial overlap straddling the start vertex",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							-2,
+							-2
+						],
+						[
+							5,
+							5
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						-2,
+						-2
+					]
+				},
+				"legacyPoint": [
+					-2,
+					-2
+				]
+			},
+			{
+				"_id": 1,
+				"name": "partial overlap straddling the end vertex",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							5,
+							5
+						],
+						[
+							12,
+							12
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						5,
+						5
+					]
+				},
+				"legacyPoint": [
+					5,
+					5
+				]
+			},
+			{
+				"_id": 2,
+				"name": "full containment, candidate strictly inside",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							2,
+							2
+						],
+						[
+							8,
+							8
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						2,
+						2
+					]
+				},
+				"legacyPoint": [
+					2,
+					2
+				]
+			},
+			{
+				"_id": 3,
+				"name": "full containment, candidate strictly swallows",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							-2,
+							-2
+						],
+						[
+							12,
+							12
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						-2,
+						-2
+					]
+				},
+				"legacyPoint": [
+					-2,
+					-2
+				]
+			},
+			{
+				"_id": 4,
+				"name": "identical segment",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							0,
+							0
+						],
+						[
+							10,
+							10
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						0,
+						0
+					]
+				},
+				"legacyPoint": [
+					0,
+					0
+				]
+			},
+			{
+				"_id": 5,
+				"name": "identical segment, reversed direction",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							10,
+							10
+						],
+						[
+							0,
+							0
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						10,
+						10
+					]
+				},
+				"legacyPoint": [
+					10,
+					10
+				]
+			},
+			{
+				"_id": 6,
+				"name": "single-vertex touch, extending away",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							0,
+							0
+						],
+						[
+							-5,
+							-5
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						0,
+						0
+					]
+				},
+				"legacyPoint": [
+					0,
+					0
+				]
+			},
+			{
+				"_id": 7,
+				"name": "disjoint, no overlap at all",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							12,
+							12
+						],
+						[
+							15,
+							15
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						12,
+						12
+					]
+				},
+				"legacyPoint": [
+					12,
+					12
+				]
+			},
+			{
+				"_id": 8,
+				"name": "transversal crossing, non-collinear",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							0,
+							10
+						],
+						[
+							10,
+							0
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						0,
+						10
+					]
+				},
+				"legacyPoint": [
+					0,
+					10
+				]
+			},
+			{
+				"_id": 9,
+				"name": "parallel, non-collinear, never touching",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							0,
+							1
+						],
+						[
+							10,
+							11
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						0,
+						1
+					]
+				},
+				"legacyPoint": [
+					0,
+					1
+				]
+			},
+			{
+				"_id": 10,
+				"name": "from the start vertex, partway along",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							0,
+							0
+						],
+						[
+							5,
+							5
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						0,
+						0
+					]
+				},
+				"legacyPoint": [
+					0,
+					0
+				]
+			},
+			{
+				"_id": 11,
+				"name": "from the end vertex, partway along",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							10,
+							10
+						],
+						[
+							5,
+							5
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						10,
+						10
+					]
+				},
+				"legacyPoint": [
+					10,
+					10
+				]
+			},
+			{
+				"_id": 12,
+				"name": "genuine interior crossing, not touching any edge",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							8,
+							1
+						],
+						[
+							8,
+							7
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						8,
+						1
+					]
+				},
+				"legacyPoint": [
+					8,
+					1
+				]
+			},
+			{
+				"_id": 13,
+				"name": "point exactly mid-edge",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							5,
+							5
+						],
+						[
+							5.001,
+							5.001
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						5,
+						5
+					]
+				},
+				"legacyPoint": [
+					5,
+					5
+				]
+			},
+			{
+				"_id": 14,
+				"name": "point exactly at the start vertex",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							0,
+							0
+						],
+						[
+							0.001,
+							0.001
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						0,
+						0
+					]
+				},
+				"legacyPoint": [
+					0,
+					0
+				]
+			},
+			{
+				"_id": 15,
+				"name": "point exactly at the end vertex",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							10,
+							10
+						],
+						[
+							10.001,
+							10.001
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						10,
+						10
+					]
+				},
+				"legacyPoint": [
+					10,
+					10
+				]
+			},
+			{
+				"_id": 16,
+				"name": "point exactly at the third vertex",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							10,
+							0
+						],
+						[
+							10.001,
+							0.001
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						10,
+						0
+					]
+				},
+				"legacyPoint": [
+					10,
+					0
+				]
+			},
+			{
+				"_id": 17,
+				"name": "point clearly interior",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							8,
+							3
+						],
+						[
+							8.001,
+							3.001
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						8,
+						3
+					]
+				},
+				"legacyPoint": [
+					8,
+					3
+				]
+			},
+			{
+				"_id": 18,
+				"name": "point clearly exterior",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							20,
+							20
+						],
+						[
+							20.001,
+							20.001
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						20,
+						20
+					]
+				},
+				"legacyPoint": [
+					20,
+					20
+				]
+			},
+			{
+				"_id": 19,
+				"name": "partial overlap straddling the start vertex, reversed",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							5,
+							5
+						],
+						[
+							-2,
+							-2
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						5,
+						5
+					]
+				},
+				"legacyPoint": [
+					5,
+					5
+				]
+			},
+			{
+				"_id": 20,
+				"name": "partial overlap straddling the end vertex, reversed",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							12,
+							12
+						],
+						[
+							5,
+							5
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						12,
+						12
+					]
+				},
+				"legacyPoint": [
+					12,
+					12
+				]
+			},
+			{
+				"_id": 21,
+				"name": "full containment, candidate strictly inside, reversed",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							8,
+							8
+						],
+						[
+							2,
+							2
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						8,
+						8
+					]
+				},
+				"legacyPoint": [
+					8,
+					8
+				]
+			},
+			{
+				"_id": 22,
+				"name": "full containment, candidate strictly swallows, reversed",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							12,
+							12
+						],
+						[
+							-2,
+							-2
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						12,
+						12
+					]
+				},
+				"legacyPoint": [
+					12,
+					12
+				]
+			},
+			{
+				"_id": 23,
+				"name": "single-vertex touch, extending away, reversed",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							-5,
+							-5
+						],
+						[
+							0,
+							0
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						-5,
+						-5
+					]
+				},
+				"legacyPoint": [
+					-5,
+					-5
+				]
+			},
+			{
+				"_id": 24,
+				"name": "from the start vertex, partway along, reversed",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							5,
+							5
+						],
+						[
+							0,
+							0
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						5,
+						5
+					]
+				},
+				"legacyPoint": [
+					5,
+					5
+				]
+			},
+			{
+				"_id": 25,
+				"name": "from the end vertex, partway along, reversed",
+				"line": {
+					"type": "LineString",
+					"coordinates": [
+						[
+							5,
+							5
+						],
+						[
+							10,
+							10
+						]
+					]
+				},
+				"point": {
+					"type": "Point",
+					"coordinates": [
+						5,
+						5
+					]
+				},
+				"legacyPoint": [
+					5,
+					5
+				]
+			}
+		]
+	},
+	"operations": [
+		{
+			"id": "nGC7T0Zq9NOc",
+			"query": {
+				"line": {
+					"$geoIntersects": {
+						"$geometry": {
+							"type": "LineString",
+							"coordinates": [
+								[
+									0,
+									0
+								],
+								[
+									10,
+									10
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoIntersects",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0,
+						6,
+						19,
+						23,
+						4,
+						5,
+						10,
+						14,
+						24,
+						1,
+						8,
+						11,
+						20,
+						25,
+						15
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "aVO8ZEyBq1Hj",
+			"query": {
+				"line": {
+					"$geoIntersects": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										0,
+										0
+									],
+									[
+										10,
+										0
+									],
+									[
+										10,
+										10
+									],
+									[
+										0,
+										0
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoIntersects",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						14,
+						0,
+						10,
+						19,
+						24,
+						5,
+						2,
+						21,
+						1,
+						8,
+						11,
+						20,
+						25,
+						13,
+						12,
+						17
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "hzTVUsjNJfZr",
+			"query": {
+				"point": {
+					"$geoWithin": {
+						"$geometry": {
+							"type": "Polygon",
+							"coordinates": [
+								[
+									[
+										0,
+										0
+									],
+									[
+										10,
+										0
+									],
+									[
+										10,
+										10
+									],
+									[
+										0,
+										0
+									]
+								]
+							]
+						}
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						4,
+						6,
+						10,
+						14,
+						2,
+						1,
+						13,
+						19,
+						24,
+						25,
+						21,
+						5,
+						11,
+						15,
+						17,
+						12,
+						16
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "uxf5KO75h881",
+			"query": {
+				"legacyPoint": {
+					"$geoWithin": {
+						"$polygon": [
+							[
+								0,
+								0
+							],
+							[
+								10,
+								0
+							],
+							[
+								10,
+								10
+							],
+							[
+								0,
+								0
+							]
+						]
+					}
+				}
+			},
+			"operators": [
+				{
+					"operator": "$geoWithin",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						4,
+						6,
+						10,
+						14,
+						12,
+						17,
+						16,
+						5,
+						11,
+						15
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		}
+	]
+}
