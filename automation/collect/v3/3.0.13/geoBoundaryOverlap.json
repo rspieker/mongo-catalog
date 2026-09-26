@@ -1,0 +1,185 @@
+[
+	{
+		"id": "nGC7T0Zq9NOc",
+		"operation": {
+			"line": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "LineString",
+						"coordinates": [
+							[
+								0,
+								0
+							],
+							[
+								10,
+								10
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			19,
+			6,
+			23,
+			4,
+			5,
+			10,
+			14,
+			24,
+			8,
+			11,
+			25,
+			1,
+			20,
+			15
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aVO8ZEyBq1Hj",
+		"operation": {
+			"line": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									0,
+									0
+								],
+								[
+									10,
+									0
+								],
+								[
+									10,
+									10
+								],
+								[
+									0,
+									0
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			5,
+			0,
+			10,
+			19,
+			24,
+			14,
+			2,
+			21,
+			8,
+			11,
+			25,
+			1,
+			20,
+			13,
+			12,
+			17
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "hzTVUsjNJfZr",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									0,
+									0
+								],
+								[
+									10,
+									0
+								],
+								[
+									10,
+									10
+								],
+								[
+									0,
+									0
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			4,
+			6,
+			10,
+			14,
+			2,
+			1,
+			13,
+			19,
+			24,
+			25,
+			21,
+			5,
+			11,
+			15,
+			17,
+			12,
+			16
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uxf5KO75h881",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$polygon": [
+						[
+							0,
+							0
+						],
+						[
+							10,
+							0
+						],
+						[
+							10,
+							10
+						],
+						[
+							0,
+							0
+						]
+					]
+				}
+			}
+		},
+		"documents": [
+			4,
+			6,
+			10,
+			14,
+			12,
+			17,
+			16,
+			5,
+			11,
+			15
+		],
+		"error": "@Undefined/und"
+	}
+]
