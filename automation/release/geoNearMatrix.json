@@ -570,7 +570,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -609,7 +609,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -660,7 +660,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -713,7 +713,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -792,7 +792,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -843,7 +843,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -880,7 +880,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -922,7 +922,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -950,7 +950,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=point maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -978,7 +978,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=point maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -1055,7 +1055,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1094,7 +1094,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1145,7 +1145,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1198,7 +1198,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1277,7 +1277,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1328,7 +1328,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1365,7 +1365,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1407,7 +1407,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1435,7 +1435,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=line maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -1463,7 +1463,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=line maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -1568,7 +1568,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1607,7 +1607,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1658,7 +1658,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1711,7 +1711,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1790,7 +1790,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1841,7 +1841,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1878,7 +1878,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1920,7 +1920,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1948,7 +1948,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=polygon maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -1976,7 +1976,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=polygon maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -2009,7 +2009,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=legacyPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -2048,7 +2048,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -2087,7 +2087,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -2138,7 +2138,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -2191,7 +2191,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -2270,7 +2270,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -2321,7 +2321,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -2358,7 +2358,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -2400,7 +2400,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -2499,7 +2499,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=unindexedPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -2538,7 +2538,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -2577,7 +2577,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -2628,7 +2628,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -2681,7 +2681,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -2760,7 +2760,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -2811,7 +2811,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -2848,7 +2848,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -2890,7 +2890,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -2918,7 +2918,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=unindexedPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -2946,7 +2946,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=unindexedPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -3023,7 +3023,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -3062,7 +3062,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -3113,7 +3113,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -3166,7 +3166,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -3245,7 +3245,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -3296,7 +3296,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -3333,7 +3333,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -3375,7 +3375,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -3518,7 +3518,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -3557,7 +3557,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -3608,7 +3608,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -3661,7 +3661,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -3740,7 +3740,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -3791,7 +3791,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -3828,7 +3828,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -3870,7 +3870,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -4041,7 +4041,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -4080,7 +4080,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -4131,7 +4131,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -4184,7 +4184,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -4263,7 +4263,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -4314,7 +4314,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -4351,7 +4351,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -4393,7 +4393,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -4548,7 +4548,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=legacyPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -4587,7 +4587,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -4626,7 +4626,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -4677,7 +4677,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -4730,7 +4730,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -4809,7 +4809,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -4860,7 +4860,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -4897,7 +4897,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -4939,7 +4939,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -5038,7 +5038,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=unindexedPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -5077,7 +5077,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPoint\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type MultiPoint",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -5116,7 +5116,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] }  Expected geojson geometry with type Point, but got type LineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -5167,7 +5167,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiLineString\", coordinates: [ [ [ 5.9, 52 ], [ 5.91, 52.01 ] ], [ [ 5.92, 52 ], [ 5.930000000000001, 52.01 ] ] ] }  Expected geojson geometry with type Point, but got type MultiLineString",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -5220,7 +5220,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Polygon\", coordinates: [ [ [ 5.890000000000001, 51.99 ], [ 5.91, 51.99 ], [ 5.91, 52.01 ], [ 5.890000000000001, 52.01 ], [ 5.890000000000001, 51.99 ] ] ] }  Expected geojson geometry with type Point, but got type Polygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -5299,7 +5299,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Point must only contain numeric elements, instead got type array",
+						"message": "invalid point in geo near query $geometry argument: { type: \"MultiPolygon\", coordinates: [ [ [ [ 5.87, 51.97 ], [ 5.880000000000001, 51.97 ], [ 5.880000000000001, 51.98 ], [ 5.87, 51.98 ], [ 5.87, 51.97 ] ] ], [ [ [ 5.92, 52.02 ], [ 5.930000000000001, 52.02 ], [ 5.930000000000001, 52.03 ], [ 5.92, 52.03 ], [ 5.92, 52.02 ] ] ] ] }  Expected geojson geometry with type Point, but got type MultiPolygon",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -5350,7 +5350,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"GeometryCollection\", geometries: [ { type: \"Point\", coordinates: [ 5.9, 52 ] }, { type: \"LineString\", coordinates: [ [ 5.9, 52 ], [ 5.91, 52.01 ] ] } ] }  Expected geojson geometry with type Point, but got type GeometryCollection",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -5387,7 +5387,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -5429,7 +5429,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Point must be an array or object, instead got type missing",
+						"message": "invalid point in geo near query $geometry argument: { type: \"FeatureCollection\", features: [ { type: \"Feature\", geometry: { type: \"Point\", coordinates: [ 5.9, 52 ] }, properties: {} } ] }  Expected geojson geometry with type Point, but got type unknown",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -5457,7 +5457,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=unindexedPoint maxdist=1.79769e+308 isNearSphere=1\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -5485,7 +5485,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=unindexedPoint maxdist=1.79769e+308 isNearSphere=1\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -5695,7 +5695,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { 0: nan.0, 1: 52 }  Point coordinates must be finite numbers",
+						"message": "invalid point in geo near query $geometry argument: { 0: nan, 1: 52 }  Point coordinates must be finite numbers",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -5725,7 +5725,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { 0: nan.0, 1: 52 }  Point coordinates must be finite numbers",
+						"message": "invalid point in geo near query $geometry argument: { 0: nan, 1: 52 }  Point coordinates must be finite numbers",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -5755,7 +5755,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: inf.0 }  Point coordinates must be finite numbers",
+						"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: inf }  Point coordinates must be finite numbers",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -5785,7 +5785,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: inf.0 }  Point coordinates must be finite numbers",
+						"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: inf }  Point coordinates must be finite numbers",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -5815,7 +5815,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { 0: -inf.0, 1: 52 }  Point coordinates must be finite numbers",
+						"message": "invalid point in geo near query $geometry argument: { 0: -inf, 1: 52 }  Point coordinates must be finite numbers",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -5845,7 +5845,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { 0: -inf.0, 1: 52 }  Point coordinates must be finite numbers",
+						"message": "invalid point in geo near query $geometry argument: { 0: -inf, 1: 52 }  Point coordinates must be finite numbers",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -6107,7 +6107,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=legacyPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -6246,7 +6246,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=legacyPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -6456,7 +6456,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { 0: nan.0, 1: 52 }  Point coordinates must be finite numbers",
+						"message": "invalid point in geo near query $geometry argument: { 0: nan, 1: 52 }  Point coordinates must be finite numbers",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -6486,7 +6486,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { 0: nan.0, 1: 52 }  Point coordinates must be finite numbers",
+						"message": "invalid point in geo near query $geometry argument: { 0: nan, 1: 52 }  Point coordinates must be finite numbers",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -6516,7 +6516,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: inf.0 }  Point coordinates must be finite numbers",
+						"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: inf }  Point coordinates must be finite numbers",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -6546,7 +6546,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: inf.0 }  Point coordinates must be finite numbers",
+						"message": "invalid point in geo near query $geometry argument: { 0: 5.9, 1: inf }  Point coordinates must be finite numbers",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -6576,7 +6576,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { 0: -inf.0, 1: 52 }  Point coordinates must be finite numbers",
+						"message": "invalid point in geo near query $geometry argument: { 0: -inf, 1: 52 }  Point coordinates must be finite numbers",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -6606,7 +6606,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid point in geo near query $geometry argument: { 0: -inf.0, 1: 52 }  Point coordinates must be finite numbers",
+						"message": "invalid point in geo near query $geometry argument: { 0: -inf, 1: 52 }  Point coordinates must be finite numbers",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -6868,7 +6868,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=legacyPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -7007,7 +7007,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=legacyPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -7032,7 +7032,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$geometry is required for geo near query",
+						"message": "invalid point provided to geo near query: {}",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -7057,7 +7057,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$geometry is required for geo near query",
+						"message": "invalid point provided to geo near query: {}",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -7085,7 +7085,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid argument in geo near query: 0",
+						"message": "invalid point provided to geo near query: { 0: nan, 1: 52 }",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -7113,7 +7113,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid argument in geo near query: 0",
+						"message": "invalid point provided to geo near query: { 0: nan, 1: 52 }",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -7143,7 +7143,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid argument in geo near query: 0",
+						"message": "invalid point provided to geo near query: { 0: [ 5.9, 52 ] }",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -7173,7 +7173,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid argument in geo near query: 0",
+						"message": "invalid point provided to geo near query: { 0: [ 5.9, 52 ] }",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -7200,7 +7200,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid argument in geo near query: x",
+						"message": "invalid point provided to geo near query: { x: 5.9 }",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -7227,7 +7227,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid argument in geo near query: x",
+						"message": "invalid point provided to geo near query: { x: 5.9 }",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -7256,7 +7256,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error processing query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=point maxdist=10 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -7315,7 +7315,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$geometry is required for geo near query",
+						"message": "invalid point provided to geo near query: {}",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -7340,7 +7340,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$geometry is required for geo near query",
+						"message": "invalid point provided to geo near query: {}",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -7368,7 +7368,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid argument in geo near query: 0",
+						"message": "invalid point provided to geo near query: { 0: nan, 1: 52 }",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -7396,7 +7396,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid argument in geo near query: 0",
+						"message": "invalid point provided to geo near query: { 0: nan, 1: 52 }",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -7426,7 +7426,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid argument in geo near query: 0",
+						"message": "invalid point provided to geo near query: { 0: [ 5.9, 52 ] }",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -7456,7 +7456,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid argument in geo near query: 0",
+						"message": "invalid point provided to geo near query: { 0: [ 5.9, 52 ] }",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -7483,7 +7483,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid argument in geo near query: x",
+						"message": "invalid point provided to geo near query: { x: 5.9 }",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -7510,7 +7510,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "invalid argument in geo near query: x",
+						"message": "invalid point provided to geo near query: { x: 5.9 }",
 						"code": 2,
 						"type": "MongoServerError"
 					},
