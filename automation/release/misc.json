@@ -602,8 +602,8 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "Can't canonicalize query: BadValue unknown top level operator: $expr",
-						"code": 17287,
+						"message": "unknown top level operator: $expr",
+						"code": 2,
 						"type": "MongoError"
 					},
 					"versions": "2.6.12..3.5.13"
