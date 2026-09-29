@@ -1,0 +1,1018 @@
+[
+	{
+		"id": "rspkMagRtiuj",
+		"operation": {
+			"$text": {
+				"$search": "brown"
+			}
+		},
+		"documents": [
+			0,
+			4,
+			2,
+			3,
+			6
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aC9opHzPZfE3",
+		"operation": {
+			"$text": {
+				"$search": "BROWN"
+			}
+		},
+		"documents": [
+			0,
+			4,
+			2,
+			3,
+			6
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "gZoipl5X5KYS",
+		"operation": {
+			"$text": {
+				"$search": "BROWN",
+				"$caseSensitive": false
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "dRRk7ouE2wIx",
+		"operation": {
+			"$text": {
+				"$search": "BROWN",
+				"$caseSensitive": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "m7qmucKOe5X8",
+		"operation": {
+			"$text": {
+				"$search": "cafe"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "dXkIwNeTU1WS",
+		"operation": {
+			"$text": {
+				"$search": "cafe",
+				"$diacriticSensitive": false
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "oAGF1v5XzUl2",
+		"operation": {
+			"$text": {
+				"$search": "cafe",
+				"$diacriticSensitive": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "uyxVQEANsOJI",
+		"operation": {
+			"$text": {
+				"$search": "istanbul"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qVL1LckbpPuE",
+		"operation": {
+			"$text": {
+				"$search": "istanbul",
+				"$caseSensitive": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "rOh5VrwVwXT8",
+		"operation": {
+			"$text": {
+				"$search": "istanbul",
+				"$caseSensitive": false
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "nPR2tWwRXYbk",
+		"operation": {
+			"$text": {
+				"$search": "istanbul",
+				"$diacriticSensitive": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "vWo3Sr2DwzJ2",
+		"operation": {
+			"$text": {
+				"$search": "istanbul",
+				"$diacriticSensitive": false
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "k12YIVmtiWWm",
+		"operation": {
+			"$text": {
+				"$search": "istanbul",
+				"$caseSensitive": true,
+				"$diacriticSensitive": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "emwntcdkBUKl",
+		"operation": {
+			"$text": {
+				"$search": "istanbul",
+				"$caseSensitive": true,
+				"$diacriticSensitive": false
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "os6ytcGSgj2G",
+		"operation": {
+			"$text": {
+				"$search": "istanbul",
+				"$caseSensitive": false,
+				"$diacriticSensitive": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "lkACFElVdnCZ",
+		"operation": {
+			"$text": {
+				"$search": "istanbul",
+				"$caseSensitive": false,
+				"$diacriticSensitive": false
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "alv9JvBLhU4l",
+		"operation": {
+			"$text": {
+				"$search": "open"
+			}
+		},
+		"documents": [
+			13,
+			14,
+			15
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pTZKeIyGGY5j",
+		"operation": {
+			"$text": {
+				"$search": "open",
+				"$language": "none"
+			}
+		},
+		"documents": [
+			13,
+			14,
+			15
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qpOERT8HQvVu",
+		"operation": {
+			"$text": {
+				"$search": "open",
+				"$language": "und"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue $language specifies unsupported language",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "jJF8rKhu0Utx",
+		"operation": {
+			"$text": {
+				"$search": "open",
+				"$language": "english"
+			}
+		},
+		"documents": [
+			13,
+			14,
+			15
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "f4NGpkUQAtMt",
+		"operation": {
+			"$text": {
+				"$search": "open",
+				"$language": "en"
+			}
+		},
+		"documents": [
+			13,
+			14,
+			15
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kJfflyxQwdPJ",
+		"operation": {
+			"$text": {
+				"$search": "open",
+				"$language": "eng"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue $language specifies unsupported language",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "qGaQnkKogrSU",
+		"operation": {
+			"$text": {
+				"$search": "open",
+				"$language": "dutch"
+			}
+		},
+		"documents": [
+			13,
+			14,
+			15
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lf9Hy6Lv0qW2",
+		"operation": {
+			"$text": {
+				"$search": "open",
+				"$language": "nl"
+			}
+		},
+		"documents": [
+			13,
+			14,
+			15
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "v8iK3VA2MUYi",
+		"operation": {
+			"$text": {
+				"$search": "open",
+				"$language": "dut"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue $language specifies unsupported language",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "qOUOJPjt8vS9",
+		"operation": {
+			"$text": {
+				"$search": "open",
+				"$language": "nld"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue $language specifies unsupported language",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "mCtLp5Pw7Cnu",
+		"operation": {
+			"$text": {
+				"$search": "open",
+				"$language": "german"
+			}
+		},
+		"documents": [
+			13,
+			14,
+			15
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "w5PUx0N5y67S",
+		"operation": {
+			"$text": {
+				"$search": "open",
+				"$language": "de"
+			}
+		},
+		"documents": [
+			13,
+			14,
+			15
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "exF2cJH3Q09u",
+		"operation": {
+			"$text": {
+				"$search": "open",
+				"$language": "deu"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue $language specifies unsupported language",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "p5TEVudSw0xW",
+		"operation": {
+			"$text": {
+				"$search": "open",
+				"$language": "ger"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue $language specifies unsupported language",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "sEQ0UVYwHH01",
+		"operation": {
+			"$text": {
+				"$search": "run"
+			}
+		},
+		"documents": [
+			17,
+			16
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rMYFUuMFBKbA",
+		"operation": {
+			"$text": {
+				"$search": "lauf"
+			}
+		},
+		"documents": [
+			22
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aANmJSFo0cV2",
+		"operation": {
+			"$text": {
+				"$search": "ren"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qA9PoenxORRo",
+		"operation": {
+			"$text": {
+				"$search": "the"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wqOQTXlfUBWO",
+		"operation": {
+			"$text": {
+				"$search": "quick"
+			}
+		},
+		"documents": [
+			0,
+			4,
+			2,
+			3,
+			6
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cgUqKCvHQaIr",
+		"operation": {
+			"$text": {
+				"$search": "-quick"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ceKUmxV563lP",
+		"operation": {
+			"$text": {
+				"$search": "\"quick brown fox\""
+			}
+		},
+		"documents": [
+			0,
+			2,
+			6
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "bzAGaJG0nQal",
+		"operation": {
+			"$text": {
+				"$search": "-\"quick brown fox\""
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "gx78iUsPwTmE",
+		"operation": {
+			"$text": {
+				"$search": "quick fox"
+			}
+		},
+		"documents": [
+			1,
+			0,
+			4,
+			2,
+			3,
+			6
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "byUKjv5wMDXx",
+		"operation": {
+			"$text": {
+				"$search": "-quick -fox"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "poklWD0EOp7n",
+		"operation": {
+			"$text": {
+				"$search": "quick -lazy"
+			}
+		},
+		"documents": [
+			4,
+			2,
+			3,
+			6
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "k1ynMtE8VJ7r",
+		"operation": {
+			"$text": {
+				"$search": "\"quick brown fox\" \"lazy dog\""
+			}
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "gXHTGEI2Ny1B",
+		"operation": {
+			"$text": {
+				"$search": "quick \"lazy dog\""
+			}
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rCzITMHrNFtq",
+		"operation": {
+			"$text": {
+				"$search": "-quick -\"lazy dog\""
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pCzvNBEaLZWl",
+		"operation": {
+			"$text": {
+				"$search": "cafe -zebra"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "puE9Nz3W4rUO",
+		"operation": {
+			"$text": {
+				"$search": "cafe -zebra",
+				"$caseSensitive": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "e3Ewk4EnrTRq",
+		"operation": {
+			"$text": {
+				"$search": "cafe -zebra",
+				"$caseSensitive": false
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "dw833BHPofMR",
+		"operation": {
+			"$text": {
+				"$search": "cafe -zebra",
+				"$diacriticSensitive": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "awESx8DXLFU8",
+		"operation": {
+			"$text": {
+				"$search": "cafe -zebra",
+				"$diacriticSensitive": false
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "ayPMA4ic8Xf9",
+		"operation": {
+			"$text": {
+				"$search": "cafe -zebra",
+				"$caseSensitive": true,
+				"$diacriticSensitive": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "tFwxqHx1zWLt",
+		"operation": {
+			"$text": {
+				"$search": "cafe -zebra",
+				"$caseSensitive": true,
+				"$diacriticSensitive": false
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "wd35SU1lVXgu",
+		"operation": {
+			"$text": {
+				"$search": "cafe -zebra",
+				"$caseSensitive": false,
+				"$diacriticSensitive": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "uxViOIJKjMm3",
+		"operation": {
+			"$text": {
+				"$search": "cafe -zebra",
+				"$caseSensitive": false,
+				"$diacriticSensitive": false
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "aPsYrJSrY8Se",
+		"operation": {
+			"$text": {
+				"$search": "\"naïve café\" -zebra"
+			}
+		},
+		"documents": [
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "jlWZfRCtF0bX",
+		"operation": {
+			"$text": {
+				"$search": "\"naive cafe\" -zebra"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sv6NMtmjINr4",
+		"operation": {
+			"$text": {
+				"$search": "\"naive cafe\" -zebra",
+				"$diacriticSensitive": false
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "pdlRacmiIaWZ",
+		"operation": {
+			"$text": {
+				"$search": "\"naive cafe\" -zebra",
+				"$diacriticSensitive": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "roC83GRAYKxn",
+		"operation": {
+			"$text": {
+				"$search": "\"NAIVE CAFE\" -zebra"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wEmZstPnfiiP",
+		"operation": {
+			"$text": {
+				"$search": "\"NAIVE CAFE\" -zebra",
+				"$caseSensitive": false
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "seXC0hNnHVOu",
+		"operation": {
+			"$text": {
+				"$search": "\"NAIVE CAFE\" -zebra",
+				"$caseSensitive": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue extra fields in $text",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "mEzEBv0x0d0r",
+		"operation": {
+			"$text": {
+				"$search": "state-of-the-art"
+			}
+		},
+		"documents": [
+			10
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sDBZhqp24sAh",
+		"operation": {
+			"$text": {
+				"$search": "art"
+			}
+		},
+		"documents": [
+			10
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "iqzR9P8dqKYY",
+		"operation": {
+			"$text": {
+				"$search": "don't"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kvwDFl0Z3Lhp",
+		"operation": {
+			"$text": {
+				"$search": "room101"
+			}
+		},
+		"documents": [
+			12
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ptUHLSqpK1mq",
+		"operation": {
+			"$text": {
+				"$search": "unindexedonlyterm"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "b0K03ZYij6de",
+		"operation": {
+			"$and": [
+				{
+					"$text": {
+						"$search": "quick"
+					}
+				},
+				{
+					"$text": {
+						"$search": "fox"
+					}
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue Too many text expressions",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "frYEWCGzpWQE",
+		"operation": {
+			"$or": [
+				{
+					"$text": {
+						"$search": "quick"
+					}
+				},
+				{
+					"$text": {
+						"$search": "zebra"
+					}
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue Too many text expressions",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "nWgyaMgpf9Tn",
+		"operation": {
+			"$nor": [
+				{
+					"$text": {
+						"$search": "quick"
+					}
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue text expression not allowed in nor",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	},
+	{
+		"id": "i7tPYQrwrd4y",
+		"operation": {
+			"$text": {
+				"$search": ""
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "jqJZFGIoHq6t",
+		"operation": {
+			"$text": {
+				"$search": "   "
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qGFeJEDcG4I1",
+		"operation": {
+			"$text": {
+				"$search": "-"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "q7b83f8MGcbt",
+		"operation": {
+			"$text": {
+				"$search": "\"unterminated"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nQ0Zsq5bAhDc",
+		"operation": {
+			"$text": {
+				"$search": 123
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Can't canonicalize query: BadValue $search needs a String",
+			"code": 17287,
+			"type": "MongoError"
+		}
+	}
+]
