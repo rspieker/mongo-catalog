@@ -1,0 +1,400 @@
+{
+	"catalog": "textIndexV1",
+	"collection": {
+		"records": [
+			{
+				"_id": 0,
+				"content": "the door was opened this morning"
+			},
+			{
+				"_id": 1,
+				"content": "ENGLISH in capitals, to probe V1 case-sensitive language matching"
+			}
+		]
+	},
+	"operations": [
+		{
+			"id": "alv9JvBLhU4l",
+			"query": {
+				"$text": {
+					"$search": "open"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "pTZKeIyGGY5j",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "none"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "qpOERT8HQvVu",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "und"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "jJF8rKhu0Utx",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "english"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "f4NGpkUQAtMt",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "en"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "kJfflyxQwdPJ",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "eng"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "rq2GkJuLnGnF",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "ENGLISH"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "qGaQnkKogrSU",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "dutch"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "lf9Hy6Lv0qW2",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "nl"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "v8iK3VA2MUYi",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "dut"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "qOUOJPjt8vS9",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "nld"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "mCtLp5Pw7Cnu",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "german"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "w5PUx0N5y67S",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "de"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "exF2cJH3Q09u",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "deu"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "p5TEVudSw0xW",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "ger"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "gJP3Yv8sQuaM",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "klingon"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		}
+	]
+}

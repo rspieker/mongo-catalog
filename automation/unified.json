@@ -48404,6 +48404,283 @@
 		]
 	},
 	{
+		"catalog": "textIndexV1",
+		"operations": [
+			{
+				"id": "alv9JvBLhU4l",
+				"operation": {"$text":{"$search":"open"}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "pTZKeIyGGY5j",
+				"operation": {"$text":{"$search":"open","$language":"none"}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "qpOERT8HQvVu",
+				"operation": {"$text":{"$search":"open","$language":"und"}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "jJF8rKhu0Utx",
+				"operation": {"$text":{"$search":"open","$language":"english"}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "f4NGpkUQAtMt",
+				"operation": {"$text":{"$search":"open","$language":"en"}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "kJfflyxQwdPJ",
+				"operation": {"$text":{"$search":"open","$language":"eng"}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "rq2GkJuLnGnF",
+				"operation": {"$text":{"$search":"open","$language":"ENGLISH"}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "qGaQnkKogrSU",
+				"operation": {"$text":{"$search":"open","$language":"dutch"}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "lf9Hy6Lv0qW2",
+				"operation": {"$text":{"$search":"open","$language":"nl"}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "v8iK3VA2MUYi",
+				"operation": {"$text":{"$search":"open","$language":"dut"}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "qOUOJPjt8vS9",
+				"operation": {"$text":{"$search":"open","$language":"nld"}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "mCtLp5Pw7Cnu",
+				"operation": {"$text":{"$search":"open","$language":"german"}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "w5PUx0N5y67S",
+				"operation": {"$text":{"$search":"open","$language":"de"}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "exF2cJH3Q09u",
+				"operation": {"$text":{"$search":"open","$language":"deu"}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "p5TEVudSw0xW",
+				"operation": {"$text":{"$search":"open","$language":"ger"}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "gJP3Yv8sQuaM",
+				"operation": {"$text":{"$search":"open","$language":"klingon"}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			}
+		]
+	},
+	{
+		"catalog": "textMultiField",
+		"operations": [
+			{
+				"id": "wqOQTXlfUBWO",
+				"operation": {"$text":{"$search":"quick"}},
+				"results": [
+					{
+						"documents": [0,1,4,2],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [2,4,1,0],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "v0UiN6uPJIm4",
+				"operation": {"$text":{"$search":"fox"}},
+				"results": [
+					{
+						"documents": [0,3,2,4,1],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [3,2,4,1,0],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "gx78iUsPwTmE",
+				"operation": {"$text":{"$search":"quick fox"}},
+				"results": [
+					{
+						"documents": [0,3,2,4,1],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [3,2,4,1,0],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "eOSoxxZN9trz",
+				"operation": {"$text":{"$search":"quick -dog"}},
+				"results": [
+					{
+						"documents": [0,1,4,2],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [2,4,1,0],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "wM8KOhKG34W8",
+				"operation": {"$text":{"$search":"\"quick fox\""}},
+				"results": [
+					{
+						"documents": [0,1],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [1,0],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "rspkMagRtiuj",
+				"operation": {"$text":{"$search":"brown"}},
+				"results": [
+					{
+						"documents": [4],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			}
+		]
+	},
+	{
 		"catalog": "textRegex",
 		"operations": [
 			{
@@ -49083,6 +49360,959 @@
 						"documents": [17,24],
 						"error": "@Undefined/und",
 						"versions": "2.6.12..8.3.11"
+					}
+				]
+			}
+		]
+	},
+	{
+		"catalog": "textSingleField",
+		"operations": [
+			{
+				"id": "rspkMagRtiuj",
+				"operation": {"$text":{"$search":"brown"}},
+				"results": [
+					{
+						"documents": [0,6,3,2,4],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [6,3,2,4,0],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "aC9opHzPZfE3",
+				"operation": {"$text":{"$search":"BROWN"}},
+				"results": [
+					{
+						"documents": [0,6,3,2,4],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [6,3,2,4,0],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "gZoipl5X5KYS",
+				"operation": {"$text":{"$search":"BROWN","$caseSensitive":false}},
+				"results": [
+					{
+						"documents": [0,6,3,2,4],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [6,3,2,4,0],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "dRRk7ouE2wIx",
+				"operation": {"$text":{"$search":"BROWN","$caseSensitive":true}},
+				"results": [
+					{
+						"documents": [6],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "m7qmucKOe5X8",
+				"operation": {"$text":{"$search":"cafe"}},
+				"results": [
+					{
+						"documents": [7],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "dXkIwNeTU1WS",
+				"operation": {"$text":{"$search":"cafe","$diacriticSensitive":false}},
+				"results": [
+					{
+						"documents": [7],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "oAGF1v5XzUl2",
+				"operation": {"$text":{"$search":"cafe","$diacriticSensitive":true}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "uyxVQEANsOJI",
+				"operation": {"$text":{"$search":"istanbul"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "qVL1LckbpPuE",
+				"operation": {"$text":{"$search":"istanbul","$caseSensitive":true}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "rOh5VrwVwXT8",
+				"operation": {"$text":{"$search":"istanbul","$caseSensitive":false}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "nPR2tWwRXYbk",
+				"operation": {"$text":{"$search":"istanbul","$diacriticSensitive":true}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "vWo3Sr2DwzJ2",
+				"operation": {"$text":{"$search":"istanbul","$diacriticSensitive":false}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "k12YIVmtiWWm",
+				"operation": {"$text":{"$search":"istanbul","$caseSensitive":true,"$diacriticSensitive":true}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "emwntcdkBUKl",
+				"operation": {"$text":{"$search":"istanbul","$caseSensitive":true,"$diacriticSensitive":false}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "os6ytcGSgj2G",
+				"operation": {"$text":{"$search":"istanbul","$caseSensitive":false,"$diacriticSensitive":true}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "lkACFElVdnCZ",
+				"operation": {"$text":{"$search":"istanbul","$caseSensitive":false,"$diacriticSensitive":false}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "alv9JvBLhU4l",
+				"operation": {"$text":{"$search":"open"}},
+				"results": [
+					{
+						"documents": [13,14,15],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [15,14,13],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "pTZKeIyGGY5j",
+				"operation": {"$text":{"$search":"open","$language":"none"}},
+				"results": [
+					{
+						"documents": [13,14,15],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [15,14,13],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "qpOERT8HQvVu",
+				"operation": {"$text":{"$search":"open","$language":"und"}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"unsupported language: \"und\" for text index version 3","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "jJF8rKhu0Utx",
+				"operation": {"$text":{"$search":"open","$language":"english"}},
+				"results": [
+					{
+						"documents": [13,14,15],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [15,14,13],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "f4NGpkUQAtMt",
+				"operation": {"$text":{"$search":"open","$language":"en"}},
+				"results": [
+					{
+						"documents": [13,14,15],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [15,14,13],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "kJfflyxQwdPJ",
+				"operation": {"$text":{"$search":"open","$language":"eng"}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"unsupported language: \"eng\" for text index version 3","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "qGaQnkKogrSU",
+				"operation": {"$text":{"$search":"open","$language":"dutch"}},
+				"results": [
+					{
+						"documents": [13,14,15],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [15,14,13],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "lf9Hy6Lv0qW2",
+				"operation": {"$text":{"$search":"open","$language":"nl"}},
+				"results": [
+					{
+						"documents": [13,14,15],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [15,14,13],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "v8iK3VA2MUYi",
+				"operation": {"$text":{"$search":"open","$language":"dut"}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"unsupported language: \"dut\" for text index version 3","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "qOUOJPjt8vS9",
+				"operation": {"$text":{"$search":"open","$language":"nld"}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"unsupported language: \"nld\" for text index version 3","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "mCtLp5Pw7Cnu",
+				"operation": {"$text":{"$search":"open","$language":"german"}},
+				"results": [
+					{
+						"documents": [13,14,15],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [15,14,13],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "w5PUx0N5y67S",
+				"operation": {"$text":{"$search":"open","$language":"de"}},
+				"results": [
+					{
+						"documents": [13,14,15],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [15,14,13],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "exF2cJH3Q09u",
+				"operation": {"$text":{"$search":"open","$language":"deu"}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"unsupported language: \"deu\" for text index version 3","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "p5TEVudSw0xW",
+				"operation": {"$text":{"$search":"open","$language":"ger"}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"unsupported language: \"ger\" for text index version 3","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "sEQ0UVYwHH01",
+				"operation": {"$text":{"$search":"run"}},
+				"results": [
+					{
+						"documents": [17,16],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [16,17],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "rMYFUuMFBKbA",
+				"operation": {"$text":{"$search":"lauf"}},
+				"results": [
+					{
+						"documents": [22],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "aANmJSFo0cV2",
+				"operation": {"$text":{"$search":"ren"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "qA9PoenxORRo",
+				"operation": {"$text":{"$search":"the"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "wqOQTXlfUBWO",
+				"operation": {"$text":{"$search":"quick"}},
+				"results": [
+					{
+						"documents": [0,6,3,2,4],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [6,3,2,4,0],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "cgUqKCvHQaIr",
+				"operation": {"$text":{"$search":"-quick"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "ceKUmxV563lP",
+				"operation": {"$text":{"$search":"\"quick brown fox\""}},
+				"results": [
+					{
+						"documents": [0,6,2],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [6,2,0],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "bzAGaJG0nQal",
+				"operation": {"$text":{"$search":"-\"quick brown fox\""}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "gx78iUsPwTmE",
+				"operation": {"$text":{"$search":"quick fox"}},
+				"results": [
+					{
+						"documents": [0,1,6,3,2,4],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [6,3,2,4,1,0],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "byUKjv5wMDXx",
+				"operation": {"$text":{"$search":"-quick -fox"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "poklWD0EOp7n",
+				"operation": {"$text":{"$search":"quick -lazy"}},
+				"results": [
+					{
+						"documents": [6,3,2,4],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "k1ynMtE8VJ7r",
+				"operation": {"$text":{"$search":"\"quick brown fox\" \"lazy dog\""}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "gXHTGEI2Ny1B",
+				"operation": {"$text":{"$search":"quick \"lazy dog\""}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "rCzITMHrNFtq",
+				"operation": {"$text":{"$search":"-quick -\"lazy dog\""}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "pCzvNBEaLZWl",
+				"operation": {"$text":{"$search":"cafe -zebra"}},
+				"results": [
+					{
+						"documents": [7],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "puE9Nz3W4rUO",
+				"operation": {"$text":{"$search":"cafe -zebra","$caseSensitive":true}},
+				"results": [
+					{
+						"documents": [7],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "e3Ewk4EnrTRq",
+				"operation": {"$text":{"$search":"cafe -zebra","$caseSensitive":false}},
+				"results": [
+					{
+						"documents": [7],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "dw833BHPofMR",
+				"operation": {"$text":{"$search":"cafe -zebra","$diacriticSensitive":true}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "awESx8DXLFU8",
+				"operation": {"$text":{"$search":"cafe -zebra","$diacriticSensitive":false}},
+				"results": [
+					{
+						"documents": [7],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "ayPMA4ic8Xf9",
+				"operation": {"$text":{"$search":"cafe -zebra","$caseSensitive":true,"$diacriticSensitive":true}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "tFwxqHx1zWLt",
+				"operation": {"$text":{"$search":"cafe -zebra","$caseSensitive":true,"$diacriticSensitive":false}},
+				"results": [
+					{
+						"documents": [7],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "wd35SU1lVXgu",
+				"operation": {"$text":{"$search":"cafe -zebra","$caseSensitive":false,"$diacriticSensitive":true}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "uxViOIJKjMm3",
+				"operation": {"$text":{"$search":"cafe -zebra","$caseSensitive":false,"$diacriticSensitive":false}},
+				"results": [
+					{
+						"documents": [7],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "aPsYrJSrY8Se",
+				"operation": {"$text":{"$search":"\"naïve café\" -zebra"}},
+				"results": [
+					{
+						"documents": [7],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "jlWZfRCtF0bX",
+				"operation": {"$text":{"$search":"\"naive cafe\" -zebra"}},
+				"results": [
+					{
+						"documents": [7],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "sv6NMtmjINr4",
+				"operation": {"$text":{"$search":"\"naive cafe\" -zebra","$diacriticSensitive":false}},
+				"results": [
+					{
+						"documents": [7],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "pdlRacmiIaWZ",
+				"operation": {"$text":{"$search":"\"naive cafe\" -zebra","$diacriticSensitive":true}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "roC83GRAYKxn",
+				"operation": {"$text":{"$search":"\"NAIVE CAFE\" -zebra"}},
+				"results": [
+					{
+						"documents": [7],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "wEmZstPnfiiP",
+				"operation": {"$text":{"$search":"\"NAIVE CAFE\" -zebra","$caseSensitive":false}},
+				"results": [
+					{
+						"documents": [7],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "seXC0hNnHVOu",
+				"operation": {"$text":{"$search":"\"NAIVE CAFE\" -zebra","$caseSensitive":true}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "mEzEBv0x0d0r",
+				"operation": {"$text":{"$search":"state-of-the-art"}},
+				"results": [
+					{
+						"documents": [10],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "sDBZhqp24sAh",
+				"operation": {"$text":{"$search":"art"}},
+				"results": [
+					{
+						"documents": [10],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "iqzR9P8dqKYY",
+				"operation": {"$text":{"$search":"don't"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "kvwDFl0Z3Lhp",
+				"operation": {"$text":{"$search":"room101"}},
+				"results": [
+					{
+						"documents": [12],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "ptUHLSqpK1mq",
+				"operation": {"$text":{"$search":"unindexedonlyterm"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "b0K03ZYij6de",
+				"operation": {"$and":[{"$text":{"$search":"quick"}},{"$text":{"$search":"fox"}}]},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Too many text expressions","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "frYEWCGzpWQE",
+				"operation": {"$or":[{"$text":{"$search":"quick"}},{"$text":{"$search":"zebra"}}]},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Too many text expressions","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "nWgyaMgpf9Tn",
+				"operation": {"$nor":[{"$text":{"$search":"quick"}}]},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"text expression not allowed in nor","code":2,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "i7tPYQrwrd4y",
+				"operation": {"$text":{"$search":""}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "jqJZFGIoHq6t",
+				"operation": {"$text":{"$search":"   "}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "qGFeJEDcG4I1",
+				"operation": {"$text":{"$search":"-"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "q7b83f8MGcbt",
+				"operation": {"$text":{"$search":"\"unterminated"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "nQ0Zsq5bAhDc",
+				"operation": {"$text":{"$search":123}},
+				"results": [
+					{
+						"documents": "@Undefined/und",
+						"error": {"message":"\"$search\" had the wrong type. Expected string, found int","code":14,"type":"MongoServerError"},
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			}
+		]
+	},
+	{
+		"catalog": "textWildcard",
+		"operations": [
+			{
+				"id": "wqOQTXlfUBWO",
+				"operation": {"$text":{"$search":"quick"}},
+				"results": [
+					{
+						"documents": [2,0,1],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [1,0,2],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "rspkMagRtiuj",
+				"operation": {"$text":{"$search":"brown"}},
+				"results": [
+					{
+						"documents": [2,0,1],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [1,0,2],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "wR15DKZpHldR",
+				"operation": {"$text":{"$search":"lazy"}},
+				"results": [
+					{
+						"documents": [0],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "otQO5nbSjhom",
+				"operation": {"$text":{"$search":"nested"}},
+				"results": [
+					{
+						"documents": [2],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "bIKCSb4XMzor",
+				"operation": {"$text":{"$search":"99"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
 					}
 				]
 			}

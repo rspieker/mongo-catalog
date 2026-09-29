@@ -1,0 +1,242 @@
+{
+	"catalog": "textMultiField",
+	"collection": {
+		"records": [
+			{
+				"_id": 0,
+				"title": "quick fox",
+				"body": "nothing relevant here"
+			},
+			{
+				"_id": 1,
+				"title": "nothing relevant here",
+				"body": "quick fox"
+			},
+			{
+				"_id": 2,
+				"title": "quick",
+				"body": "fox"
+			},
+			{
+				"_id": 3,
+				"title": "slow fox",
+				"body": "slow fox"
+			},
+			{
+				"_id": 4,
+				"title": "quick brown",
+				"body": "brown fox"
+			},
+			{
+				"_id": 5,
+				"title": "lazy dog",
+				"body": "the dog sleeps all day"
+			}
+		]
+	},
+	"operations": [
+		{
+			"id": "wqOQTXlfUBWO",
+			"query": {
+				"$text": {
+					"$search": "quick"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0,
+						1,
+						4,
+						2
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						2,
+						4,
+						1,
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "v0UiN6uPJIm4",
+			"query": {
+				"$text": {
+					"$search": "fox"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0,
+						3,
+						2,
+						4,
+						1
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						3,
+						2,
+						4,
+						1,
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "gx78iUsPwTmE",
+			"query": {
+				"$text": {
+					"$search": "quick fox"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0,
+						3,
+						2,
+						4,
+						1
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						3,
+						2,
+						4,
+						1,
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "eOSoxxZN9trz",
+			"query": {
+				"$text": {
+					"$search": "quick -dog"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0,
+						1,
+						4,
+						2
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						2,
+						4,
+						1,
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "wM8KOhKG34W8",
+			"query": {
+				"$text": {
+					"$search": "\"quick fox\""
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0,
+						1
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						1,
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "rspkMagRtiuj",
+			"query": {
+				"$text": {
+					"$search": "brown"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		}
+	]
+}

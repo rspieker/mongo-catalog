@@ -1,0 +1,2066 @@
+{
+	"catalog": "textSingleField",
+	"collection": {
+		"records": [
+			{
+				"_id": 0,
+				"content": "the quick brown fox jumps over the lazy dog"
+			},
+			{
+				"_id": 1,
+				"content": "a slow red fox sleeps under the busy cat"
+			},
+			{
+				"_id": 2,
+				"content": "quick brown fox"
+			},
+			{
+				"_id": 3,
+				"content": "brown quick fox"
+			},
+			{
+				"_id": 4,
+				"content": "the fox is quick and very brown indeed"
+			},
+			{
+				"_id": 5,
+				"content": "nothing relevant here at all"
+			},
+			{
+				"_id": 6,
+				"content": "QUICK BROWN FOX"
+			},
+			{
+				"_id": 7,
+				"content": "the naïve café's façade"
+			},
+			{
+				"_id": 8,
+				"content": "İstanbul is a city"
+			},
+			{
+				"_id": 9,
+				"content": "the dotless ı character test"
+			},
+			{
+				"_id": 10,
+				"content": "state-of-the-art technology"
+			},
+			{
+				"_id": 11,
+				"content": "don't stop believing"
+			},
+			{
+				"_id": 12,
+				"content": "room101 is available"
+			},
+			{
+				"_id": 13,
+				"content": "the door was opened this morning",
+				"language": "english"
+			},
+			{
+				"_id": 14,
+				"content": "the store is opening soon",
+				"language": "english"
+			},
+			{
+				"_id": 15,
+				"content": "he is the opener of the show",
+				"language": "english"
+			},
+			{
+				"_id": 16,
+				"content": "she was running fast",
+				"language": "english"
+			},
+			{
+				"_id": 17,
+				"content": "he never runs anywhere",
+				"language": "english"
+			},
+			{
+				"_id": 18,
+				"content": "he ran all the way home",
+				"language": "english"
+			},
+			{
+				"_id": 19,
+				"content": "die Häuser sind groß",
+				"language": "german"
+			},
+			{
+				"_id": 20,
+				"content": "das Haus ist groß",
+				"language": "german"
+			},
+			{
+				"_id": 21,
+				"content": "er läuft schnell",
+				"language": "german"
+			},
+			{
+				"_id": 22,
+				"content": "wir werden laufen",
+				"language": "german"
+			},
+			{
+				"_id": 23,
+				"content": "er lief gestern",
+				"language": "german"
+			},
+			{
+				"_id": 24,
+				"content": "het vliegtuig vertrekt nu",
+				"language": "dutch"
+			},
+			{
+				"_id": 25,
+				"content": "de vliegtuigen zijn groot",
+				"language": "dutch"
+			},
+			{
+				"_id": 26,
+				"content": "wij rennen elke dag",
+				"language": "dutch"
+			},
+			{
+				"_id": 27,
+				"content": "hij rent hard",
+				"language": "dutch"
+			},
+			{
+				"_id": 28,
+				"content": "zij rende gisteren",
+				"language": "dutch"
+			},
+			{
+				"_id": 29,
+				"content": "the a an is are was"
+			},
+			{
+				"_id": 30,
+				"content": "elephant zebra giraffe"
+			},
+			{
+				"_id": 31,
+				"content": "ordinary filler text here",
+				"secret": "unindexedonlyterm quick brown fox"
+			}
+		]
+	},
+	"operations": [
+		{
+			"id": "rspkMagRtiuj",
+			"query": {
+				"$text": {
+					"$search": "brown"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0,
+						6,
+						3,
+						2,
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						6,
+						3,
+						2,
+						4,
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "aC9opHzPZfE3",
+			"query": {
+				"$text": {
+					"$search": "BROWN"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0,
+						6,
+						3,
+						2,
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						6,
+						3,
+						2,
+						4,
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "gZoipl5X5KYS",
+			"query": {
+				"$text": {
+					"$search": "BROWN",
+					"$caseSensitive": false
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0,
+						6,
+						3,
+						2,
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						6,
+						3,
+						2,
+						4,
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "dRRk7ouE2wIx",
+			"query": {
+				"$text": {
+					"$search": "BROWN",
+					"$caseSensitive": true
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						6
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "m7qmucKOe5X8",
+			"query": {
+				"$text": {
+					"$search": "cafe"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						7
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "dXkIwNeTU1WS",
+			"query": {
+				"$text": {
+					"$search": "cafe",
+					"$diacriticSensitive": false
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						7
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "oAGF1v5XzUl2",
+			"query": {
+				"$text": {
+					"$search": "cafe",
+					"$diacriticSensitive": true
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "uyxVQEANsOJI",
+			"query": {
+				"$text": {
+					"$search": "istanbul"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "qVL1LckbpPuE",
+			"query": {
+				"$text": {
+					"$search": "istanbul",
+					"$caseSensitive": true
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "rOh5VrwVwXT8",
+			"query": {
+				"$text": {
+					"$search": "istanbul",
+					"$caseSensitive": false
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "nPR2tWwRXYbk",
+			"query": {
+				"$text": {
+					"$search": "istanbul",
+					"$diacriticSensitive": true
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "vWo3Sr2DwzJ2",
+			"query": {
+				"$text": {
+					"$search": "istanbul",
+					"$diacriticSensitive": false
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "k12YIVmtiWWm",
+			"query": {
+				"$text": {
+					"$search": "istanbul",
+					"$caseSensitive": true,
+					"$diacriticSensitive": true
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "emwntcdkBUKl",
+			"query": {
+				"$text": {
+					"$search": "istanbul",
+					"$caseSensitive": true,
+					"$diacriticSensitive": false
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "os6ytcGSgj2G",
+			"query": {
+				"$text": {
+					"$search": "istanbul",
+					"$caseSensitive": false,
+					"$diacriticSensitive": true
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "lkACFElVdnCZ",
+			"query": {
+				"$text": {
+					"$search": "istanbul",
+					"$caseSensitive": false,
+					"$diacriticSensitive": false
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "alv9JvBLhU4l",
+			"query": {
+				"$text": {
+					"$search": "open"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						13,
+						14,
+						15
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						15,
+						14,
+						13
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "pTZKeIyGGY5j",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "none"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						13,
+						14,
+						15
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						15,
+						14,
+						13
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "qpOERT8HQvVu",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "und"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": "@Undefined/und",
+					"error": {
+						"message": "unsupported language: \"und\" for text index version 3",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "jJF8rKhu0Utx",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "english"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						13,
+						14,
+						15
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						15,
+						14,
+						13
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "f4NGpkUQAtMt",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "en"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						13,
+						14,
+						15
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						15,
+						14,
+						13
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "kJfflyxQwdPJ",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "eng"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": "@Undefined/und",
+					"error": {
+						"message": "unsupported language: \"eng\" for text index version 3",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "qGaQnkKogrSU",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "dutch"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						13,
+						14,
+						15
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						15,
+						14,
+						13
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "lf9Hy6Lv0qW2",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "nl"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						13,
+						14,
+						15
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						15,
+						14,
+						13
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "v8iK3VA2MUYi",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "dut"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": "@Undefined/und",
+					"error": {
+						"message": "unsupported language: \"dut\" for text index version 3",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "qOUOJPjt8vS9",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "nld"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": "@Undefined/und",
+					"error": {
+						"message": "unsupported language: \"nld\" for text index version 3",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "mCtLp5Pw7Cnu",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "german"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						13,
+						14,
+						15
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						15,
+						14,
+						13
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "w5PUx0N5y67S",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "de"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						13,
+						14,
+						15
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						15,
+						14,
+						13
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "exF2cJH3Q09u",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "deu"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": "@Undefined/und",
+					"error": {
+						"message": "unsupported language: \"deu\" for text index version 3",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "p5TEVudSw0xW",
+			"query": {
+				"$text": {
+					"$search": "open",
+					"$language": "ger"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": "@Undefined/und",
+					"error": {
+						"message": "unsupported language: \"ger\" for text index version 3",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "sEQ0UVYwHH01",
+			"query": {
+				"$text": {
+					"$search": "run"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						17,
+						16
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						16,
+						17
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "rMYFUuMFBKbA",
+			"query": {
+				"$text": {
+					"$search": "lauf"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						22
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "aANmJSFo0cV2",
+			"query": {
+				"$text": {
+					"$search": "ren"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "qA9PoenxORRo",
+			"query": {
+				"$text": {
+					"$search": "the"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "wqOQTXlfUBWO",
+			"query": {
+				"$text": {
+					"$search": "quick"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0,
+						6,
+						3,
+						2,
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						6,
+						3,
+						2,
+						4,
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "cgUqKCvHQaIr",
+			"query": {
+				"$text": {
+					"$search": "-quick"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "ceKUmxV563lP",
+			"query": {
+				"$text": {
+					"$search": "\"quick brown fox\""
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0,
+						6,
+						2
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						6,
+						2,
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "bzAGaJG0nQal",
+			"query": {
+				"$text": {
+					"$search": "-\"quick brown fox\""
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "gx78iUsPwTmE",
+			"query": {
+				"$text": {
+					"$search": "quick fox"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0,
+						1,
+						6,
+						3,
+						2,
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						6,
+						3,
+						2,
+						4,
+						1,
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "byUKjv5wMDXx",
+			"query": {
+				"$text": {
+					"$search": "-quick -fox"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "poklWD0EOp7n",
+			"query": {
+				"$text": {
+					"$search": "quick -lazy"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						6,
+						3,
+						2,
+						4
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "k1ynMtE8VJ7r",
+			"query": {
+				"$text": {
+					"$search": "\"quick brown fox\" \"lazy dog\""
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "gXHTGEI2Ny1B",
+			"query": {
+				"$text": {
+					"$search": "quick \"lazy dog\""
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "rCzITMHrNFtq",
+			"query": {
+				"$text": {
+					"$search": "-quick -\"lazy dog\""
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "pCzvNBEaLZWl",
+			"query": {
+				"$text": {
+					"$search": "cafe -zebra"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						7
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "puE9Nz3W4rUO",
+			"query": {
+				"$text": {
+					"$search": "cafe -zebra",
+					"$caseSensitive": true
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						7
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "e3Ewk4EnrTRq",
+			"query": {
+				"$text": {
+					"$search": "cafe -zebra",
+					"$caseSensitive": false
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						7
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "dw833BHPofMR",
+			"query": {
+				"$text": {
+					"$search": "cafe -zebra",
+					"$diacriticSensitive": true
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "awESx8DXLFU8",
+			"query": {
+				"$text": {
+					"$search": "cafe -zebra",
+					"$diacriticSensitive": false
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						7
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "ayPMA4ic8Xf9",
+			"query": {
+				"$text": {
+					"$search": "cafe -zebra",
+					"$caseSensitive": true,
+					"$diacriticSensitive": true
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "tFwxqHx1zWLt",
+			"query": {
+				"$text": {
+					"$search": "cafe -zebra",
+					"$caseSensitive": true,
+					"$diacriticSensitive": false
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						7
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "wd35SU1lVXgu",
+			"query": {
+				"$text": {
+					"$search": "cafe -zebra",
+					"$caseSensitive": false,
+					"$diacriticSensitive": true
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "uxViOIJKjMm3",
+			"query": {
+				"$text": {
+					"$search": "cafe -zebra",
+					"$caseSensitive": false,
+					"$diacriticSensitive": false
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						7
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "aPsYrJSrY8Se",
+			"query": {
+				"$text": {
+					"$search": "\"naïve café\" -zebra"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						7
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "jlWZfRCtF0bX",
+			"query": {
+				"$text": {
+					"$search": "\"naive cafe\" -zebra"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						7
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "sv6NMtmjINr4",
+			"query": {
+				"$text": {
+					"$search": "\"naive cafe\" -zebra",
+					"$diacriticSensitive": false
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						7
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "pdlRacmiIaWZ",
+			"query": {
+				"$text": {
+					"$search": "\"naive cafe\" -zebra",
+					"$diacriticSensitive": true
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "roC83GRAYKxn",
+			"query": {
+				"$text": {
+					"$search": "\"NAIVE CAFE\" -zebra"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						7
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "wEmZstPnfiiP",
+			"query": {
+				"$text": {
+					"$search": "\"NAIVE CAFE\" -zebra",
+					"$caseSensitive": false
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						7
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "seXC0hNnHVOu",
+			"query": {
+				"$text": {
+					"$search": "\"NAIVE CAFE\" -zebra",
+					"$caseSensitive": true
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "mEzEBv0x0d0r",
+			"query": {
+				"$text": {
+					"$search": "state-of-the-art"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						10
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "sDBZhqp24sAh",
+			"query": {
+				"$text": {
+					"$search": "art"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						10
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "iqzR9P8dqKYY",
+			"query": {
+				"$text": {
+					"$search": "don't"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "kvwDFl0Z3Lhp",
+			"query": {
+				"$text": {
+					"$search": "room101"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						12
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "ptUHLSqpK1mq",
+			"query": {
+				"$text": {
+					"$search": "unindexedonlyterm"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "b0K03ZYij6de",
+			"query": {
+				"$and": [
+					{
+						"$text": {
+							"$search": "quick"
+						}
+					},
+					{
+						"$text": {
+							"$search": "fox"
+						}
+					}
+				]
+			},
+			"operators": [
+				{
+					"operator": "$and",
+					"score": 1
+				},
+				{
+					"operator": "$text",
+					"score": 0.75
+				}
+			],
+			"results": [
+				{
+					"documents": "@Undefined/und",
+					"error": {
+						"message": "Too many text expressions",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "frYEWCGzpWQE",
+			"query": {
+				"$or": [
+					{
+						"$text": {
+							"$search": "quick"
+						}
+					},
+					{
+						"$text": {
+							"$search": "zebra"
+						}
+					}
+				]
+			},
+			"operators": [
+				{
+					"operator": "$or",
+					"score": 1
+				},
+				{
+					"operator": "$text",
+					"score": 0.75
+				}
+			],
+			"results": [
+				{
+					"documents": "@Undefined/und",
+					"error": {
+						"message": "Too many text expressions",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "nWgyaMgpf9Tn",
+			"query": {
+				"$nor": [
+					{
+						"$text": {
+							"$search": "quick"
+						}
+					}
+				]
+			},
+			"operators": [
+				{
+					"operator": "$nor",
+					"score": 1
+				},
+				{
+					"operator": "$text",
+					"score": 0.75
+				}
+			],
+			"results": [
+				{
+					"documents": "@Undefined/und",
+					"error": {
+						"message": "text expression not allowed in nor",
+						"code": 2,
+						"type": "MongoServerError"
+					},
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "i7tPYQrwrd4y",
+			"query": {
+				"$text": {
+					"$search": ""
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "jqJZFGIoHq6t",
+			"query": {
+				"$text": {
+					"$search": "   "
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "qGFeJEDcG4I1",
+			"query": {
+				"$text": {
+					"$search": "-"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "q7b83f8MGcbt",
+			"query": {
+				"$text": {
+					"$search": "\"unterminated"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "nQ0Zsq5bAhDc",
+			"query": {
+				"$text": {
+					"$search": 123
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": "@Undefined/und",
+					"error": {
+						"message": "\"$search\" had the wrong type. Expected string, found int",
+						"code": 14,
+						"type": "MongoServerError"
+					},
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		}
+	]
+}

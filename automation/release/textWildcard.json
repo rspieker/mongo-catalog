@@ -1,0 +1,199 @@
+{
+	"catalog": "textWildcard",
+	"collection": {
+		"records": [
+			{
+				"_id": 0,
+				"title": "quick brown fox",
+				"tags": [
+					"lazy",
+					"dog"
+				],
+				"meta": {
+					"note": "nothing here"
+				},
+				"count": 1
+			},
+			{
+				"_id": 1,
+				"title": "nothing relevant",
+				"tags": [
+					"quick",
+					"brown"
+				],
+				"meta": {
+					"note": "irrelevant"
+				},
+				"count": 2
+			},
+			{
+				"_id": 2,
+				"title": "nothing relevant",
+				"tags": [
+					"irrelevant"
+				],
+				"meta": {
+					"note": "quick brown fox nested"
+				},
+				"count": 3
+			},
+			{
+				"_id": 3,
+				"title": "the count matters",
+				"tags": [],
+				"meta": {
+					"note": "plain"
+				},
+				"count": 99
+			},
+			{
+				"_id": 4,
+				"title": "plain doc",
+				"tags": [
+					"single"
+				],
+				"meta": {
+					"note": "plain"
+				},
+				"count": 4
+			}
+		]
+	},
+	"operations": [
+		{
+			"id": "wqOQTXlfUBWO",
+			"query": {
+				"$text": {
+					"$search": "quick"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						2,
+						0,
+						1
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						1,
+						0,
+						2
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "rspkMagRtiuj",
+			"query": {
+				"$text": {
+					"$search": "brown"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						2,
+						0,
+						1
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..3.5.13"
+				},
+				{
+					"documents": [
+						1,
+						0,
+						2
+					],
+					"error": "@Undefined/und",
+					"versions": "3.6.23..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "wR15DKZpHldR",
+			"query": {
+				"$text": {
+					"$search": "lazy"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						0
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "otQO5nbSjhom",
+			"query": {
+				"$text": {
+					"$search": "nested"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [
+						2
+					],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		},
+		{
+			"id": "bIKCSb4XMzor",
+			"query": {
+				"$text": {
+					"$search": "99"
+				}
+			},
+			"operators": [
+				{
+					"operator": "$text",
+					"score": 1
+				}
+			],
+			"results": [
+				{
+					"documents": [],
+					"error": "@Undefined/und",
+					"versions": "3.3.15..8.3.11"
+				}
+			]
+		}
+	]
+}

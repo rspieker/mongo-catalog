@@ -1,5 +1,5 @@
 {
-	"generated": "2026-09-29T06:33:23.142Z",
+	"generated": "2026-09-29T09:16:14.476Z",
 	"latestCollectedVersion": "8.3.11",
 	"catalogs": [
 		{
@@ -255,10 +255,34 @@
 			"taggedOperations": 2
 		},
 		{
+			"catalog": "textIndexV1",
+			"file": "textIndexV1.json",
+			"operations": 16,
+			"taggedOperations": 16
+		},
+		{
+			"catalog": "textMultiField",
+			"file": "textMultiField.json",
+			"operations": 6,
+			"taggedOperations": 6
+		},
+		{
 			"catalog": "textRegex",
 			"file": "textRegex.json",
 			"operations": 44,
 			"taggedOperations": 44
+		},
+		{
+			"catalog": "textSingleField",
+			"file": "textSingleField.json",
+			"operations": 73,
+			"taggedOperations": 73
+		},
+		{
+			"catalog": "textWildcard",
+			"file": "textWildcard.json",
+			"operations": 5,
+			"taggedOperations": 5
 		},
 		{
 			"catalog": "typeMatrix",
@@ -268,10 +292,10 @@
 		}
 	],
 	"totals": {
-		"catalogs": 44,
+		"catalogs": 48,
 		"skippedCatalogs": 0,
-		"operations": 3841,
-		"taggedOperations": 3527
+		"operations": 3941,
+		"taggedOperations": 3627
 	},
 	"skipped": []
 }
