@@ -2,8 +2,8 @@
 // v2 uses callbacks, not promises
 import { DSN } from '../dsn';
 import type { CatalogDriver, GenericDocument, QueryResult } from './interface'
-import { normalizeDocuments, normalizeError, insertDocumentsSafely, isQueryTimeoutError, MAX_QUERY_TIME_MS } from './helpers'
-import type { Bootstrap } from './interface'
+import { normalizeDocuments, normalizeError, insertDocumentsSafely, isQueryTimeoutError, MAX_QUERY_TIME_MS, resolveIndexSpec } from './helpers'
+import type { Bootstrap, IndexSpec } from './interface'
 
 // Import mongodb2 without types
 const mongodb2: any = require('mongodb2');
@@ -46,7 +46,7 @@ export async function createDriverV2(dsn: DSN): Promise<CatalogDriver> {
         
         async initCollection(options: {
             name: string;
-            indices?: Array<{ [key: string]: 1 | -1 | 'text' } | string>;
+            indices?: Array<IndexSpec>;
             documents?: GenericDocument[];
         }): Promise<Bootstrap> {
             // Drop existing (v2 doesn't have dropCollection on db, need to use collection.drop)
@@ -63,10 +63,8 @@ export async function createDriverV2(dsn: DSN): Promise<CatalogDriver> {
             // Create indices
             if (options.indices?.length) {
                 for (const index of options.indices) {
-                    const indexSpec = typeof index === 'string' 
-                        ? { [index]: 1 } 
-                        : index;
-                    await promisify<void>((cb) => collection!.createIndex(indexSpec, cb));
+                    const { keys, options: indexOptions } = resolveIndexSpec(index);
+                    await promisify<void>((cb) => collection!.createIndex(keys, indexOptions ?? {}, cb));
                 }
             }
             

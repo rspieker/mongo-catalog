@@ -2,8 +2,8 @@
 import { MongoClient, Collection, Db } from 'mongodb6';
 import { DSN } from '../dsn';
 import type { CatalogDriver, GenericDocument, QueryResult } from './interface'
-import { normalizeDocuments, normalizeError, insertDocumentsSafely, isQueryTimeoutError, MAX_QUERY_TIME_MS } from './helpers'
-import type { Bootstrap } from './interface'
+import { normalizeDocuments, normalizeError, insertDocumentsSafely, isQueryTimeoutError, MAX_QUERY_TIME_MS, resolveIndexSpec } from './helpers'
+import type { Bootstrap, IndexSpec } from './interface'
 
 export async function createDriverV6(dsn: DSN): Promise<CatalogDriver> {
     const client = new MongoClient(dsn.url, {
@@ -25,7 +25,7 @@ export async function createDriverV6(dsn: DSN): Promise<CatalogDriver> {
         
         async initCollection(options: {
             name: string;
-            indices?: Array<{ [key: string]: 1 | -1 | 'text' } | string>;
+            indices?: Array<IndexSpec>;
             documents?: GenericDocument[];
         }): Promise<Bootstrap> {
             // Drop existing
@@ -41,11 +41,8 @@ export async function createDriverV6(dsn: DSN): Promise<CatalogDriver> {
             // Create indices
             if (options.indices?.length) {
                 for (const index of options.indices) {
-                    if (typeof index === 'string') {
-                        await collection.createIndex({ [index]: 1 });
-                    } else {
-                        await collection.createIndex(index);
-                    }
+                    const { keys, options: indexOptions } = resolveIndexSpec(index);
+                    await collection.createIndex(keys, indexOptions);
                 }
             }
             

@@ -22,11 +22,21 @@ export type MongoQuery<T extends MongoDocument<Record<string, unknown>>> = {
     // Add other operators as needed
     [key: string]: unknown
 }
+// '$**' is MongoDB's real wildcard index syntax (e.g. for a wildcard text
+// index) — not a real KeyPath<T> member, added explicitly so it's
+// intentionally recognized rather than slipping through by accident (see
+// the note above IndexKeySpec).
+type IndexKeyPath<T> = KeyPath<T> | '$**'
+type IndexKeySpec<T> = Partial<{ [K in IndexKeyPath<T>]: -1 | 0 | 1 | 'text' | '2dsphere' | '2d' }>
+
 export type MongoCollection<T extends MongoDocument<Record<string, unknown>>> =
     {
         indices?: Array<
-            | { [K in KeyPath<T>]: -1 | 0 | 1 | 'text' | '2dsphere' | '2d' }
-            | KeyPath<T>
+            | IndexKeySpec<T>
+            | IndexKeyPath<T>
+            // real createIndex options (e.g. textIndexVersion) alongside the key spec —
+            // needed whenever the option itself is the thing under test, not just the keys
+            | { keys: IndexKeySpec<T>; options: Record<string, unknown> }
         >
         records: Array<MongoDocument<T>>
     }

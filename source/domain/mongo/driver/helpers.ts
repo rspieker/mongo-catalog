@@ -1,4 +1,22 @@
-import type { GenericDocument, QueryError, Bootstrap, InsertionProblem } from './interface'
+import type { GenericDocument, QueryError, Bootstrap, InsertionProblem, IndexKeys, IndexSpec } from './interface'
+
+// Normalizes the three shapes IndexSpec can take (bare field name, bare
+// key-spec, or `{ keys, options }`) into the (keys, options) pair every
+// driver's createIndex call site needs — kept here once instead of
+// duplicated across all 6 versioned drivers.
+export function resolveIndexSpec(index: IndexSpec): { keys: IndexKeys; options: Record<string, unknown> } {
+    if (typeof index === 'string') return { keys: { [index]: 1 }, options: {} }
+    // IndexKeys is an index-signature type, so `in` checks can't cleanly
+    // discriminate it from the `{ keys, options }` wrapper — a bare key-spec
+    // could in principle have a field literally named "options". The real
+    // discriminant is the *value* shape: a key-spec's values are always
+    // 1 | -1 | 'text' (primitives), never an object.
+    if (typeof (index as { options?: unknown }).options === 'object') {
+        const wrapped = index as { keys: IndexKeys; options: Record<string, unknown> }
+        return { keys: wrapped.keys, options: wrapped.options }
+    }
+    return { keys: index as IndexKeys, options: {} }
+}
 
 // Bounds a single query's server-side execution time. Unlike
 // connectTimeoutMS/serverSelectionTimeoutMS (which only matter when the
