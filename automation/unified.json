@@ -47087,7 +47087,7 @@
 				"results": [
 					{
 						"documents": "@Undefined/und",
-						"error": {"message":"Can't canonicalize query: BadValue unknown top level operator: $expr","code":17287,"type":"MongoError"},
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
 						"versions": "2.6.12..3.5.13"
 					},
 					{
@@ -48413,7 +48413,7 @@
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48424,7 +48424,7 @@
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48433,9 +48433,14 @@
 				"operation": {"$text":{"$search":"open","$language":"und"}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue $language specifies unsupported language","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -48446,7 +48451,7 @@
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48457,7 +48462,7 @@
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48466,9 +48471,14 @@
 				"operation": {"$text":{"$search":"open","$language":"eng"}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue $language specifies unsupported language","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -48479,7 +48489,7 @@
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48490,7 +48500,7 @@
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48501,7 +48511,7 @@
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48510,9 +48520,14 @@
 				"operation": {"$text":{"$search":"open","$language":"dut"}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue $language specifies unsupported language","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -48521,9 +48536,14 @@
 				"operation": {"$text":{"$search":"open","$language":"nld"}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue $language specifies unsupported language","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -48534,7 +48554,7 @@
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48545,7 +48565,7 @@
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48554,9 +48574,14 @@
 				"operation": {"$text":{"$search":"open","$language":"deu"}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue $language specifies unsupported language","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -48565,9 +48590,14 @@
 				"operation": {"$text":{"$search":"open","$language":"ger"}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue $language specifies unsupported language","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -48576,9 +48606,14 @@
 				"operation": {"$text":{"$search":"open","$language":"klingon"}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue $language specifies unsupported language","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			}
@@ -48592,9 +48627,14 @@
 				"operation": {"$text":{"$search":"quick"}},
 				"results": [
 					{
+						"documents": [1,4,0,2],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
 						"documents": [0,1,4,2],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
+						"versions": "3.0.15..3.5.13"
 					},
 					{
 						"documents": [2,4,1,0],
@@ -48607,6 +48647,16 @@
 				"id": "v0UiN6uPJIm4",
 				"operation": {"$text":{"$search":"fox"}},
 				"results": [
+					{
+						"documents": [1,4,0,3,2],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
+						"documents": [0,1,4,2,3],
+						"error": "@Undefined/und",
+						"versions": "3.0.15,3.2.21"
+					},
 					{
 						"documents": [0,3,2,4,1],
 						"error": "@Undefined/und",
@@ -48624,6 +48674,21 @@
 				"operation": {"$text":{"$search":"quick fox"}},
 				"results": [
 					{
+						"documents": [1,4,0,3,2],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
+						"documents": [3,0,1,4,2],
+						"error": "@Undefined/und",
+						"versions": "3.0.15"
+					},
+					{
+						"documents": [0,1,4,2,3],
+						"error": "@Undefined/und",
+						"versions": "3.2.21"
+					},
+					{
 						"documents": [0,3,2,4,1],
 						"error": "@Undefined/und",
 						"versions": "3.3.15..3.5.13"
@@ -48640,9 +48705,14 @@
 				"operation": {"$text":{"$search":"quick -dog"}},
 				"results": [
 					{
+						"documents": [1,4,0,2],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
 						"documents": [0,1,4,2],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
+						"versions": "3.0.15..3.5.13"
 					},
 					{
 						"documents": [2,4,1,0],
@@ -48656,14 +48726,14 @@
 				"operation": {"$text":{"$search":"\"quick fox\""}},
 				"results": [
 					{
-						"documents": [0,1],
-						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
-					},
-					{
 						"documents": [1,0],
 						"error": "@Undefined/und",
-						"versions": "3.6.23..8.3.11"
+						"versions": "2.6.12,3.6.23..8.3.11"
+					},
+					{
+						"documents": [0,1],
+						"error": "@Undefined/und",
+						"versions": "3.0.15..3.5.13"
 					}
 				]
 			},
@@ -48674,7 +48744,7 @@
 					{
 						"documents": [4],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			}
@@ -49373,6 +49443,16 @@
 				"operation": {"$text":{"$search":"brown"}},
 				"results": [
 					{
+						"documents": [4,0,3,6,2],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
+						"documents": [0,4,2,3,6],
+						"error": "@Undefined/und",
+						"versions": "3.0.15,3.2.21"
+					},
+					{
 						"documents": [0,6,3,2,4],
 						"error": "@Undefined/und",
 						"versions": "3.3.15..3.5.13"
@@ -49388,6 +49468,16 @@
 				"id": "aC9opHzPZfE3",
 				"operation": {"$text":{"$search":"BROWN"}},
 				"results": [
+					{
+						"documents": [4,0,3,6,2],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
+						"documents": [0,4,2,3,6],
+						"error": "@Undefined/und",
+						"versions": "3.0.15,3.2.21"
+					},
 					{
 						"documents": [0,6,3,2,4],
 						"error": "@Undefined/und",
@@ -49405,6 +49495,16 @@
 				"operation": {"$text":{"$search":"BROWN","$caseSensitive":false}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
+						"documents": [0,4,2,3,6],
+						"error": "@Undefined/und",
+						"versions": "3.2.21"
+					},
+					{
 						"documents": [0,6,3,2,4],
 						"error": "@Undefined/und",
 						"versions": "3.3.15..3.5.13"
@@ -49421,9 +49521,14 @@
 				"operation": {"$text":{"$search":"BROWN","$caseSensitive":true}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [6],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -49432,9 +49537,14 @@
 				"operation": {"$text":{"$search":"cafe"}},
 				"results": [
 					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -49443,9 +49553,14 @@
 				"operation": {"$text":{"$search":"cafe","$diacriticSensitive":false}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -49454,9 +49569,14 @@
 				"operation": {"$text":{"$search":"cafe","$diacriticSensitive":true}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -49467,7 +49587,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -49476,9 +49596,14 @@
 				"operation": {"$text":{"$search":"istanbul","$caseSensitive":true}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -49487,9 +49612,14 @@
 				"operation": {"$text":{"$search":"istanbul","$caseSensitive":false}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -49498,9 +49628,14 @@
 				"operation": {"$text":{"$search":"istanbul","$diacriticSensitive":true}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -49509,9 +49644,14 @@
 				"operation": {"$text":{"$search":"istanbul","$diacriticSensitive":false}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -49520,9 +49660,14 @@
 				"operation": {"$text":{"$search":"istanbul","$caseSensitive":true,"$diacriticSensitive":true}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -49531,9 +49676,14 @@
 				"operation": {"$text":{"$search":"istanbul","$caseSensitive":true,"$diacriticSensitive":false}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -49542,9 +49692,14 @@
 				"operation": {"$text":{"$search":"istanbul","$caseSensitive":false,"$diacriticSensitive":true}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -49553,9 +49708,14 @@
 				"operation": {"$text":{"$search":"istanbul","$caseSensitive":false,"$diacriticSensitive":false}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -49564,9 +49724,14 @@
 				"operation": {"$text":{"$search":"open"}},
 				"results": [
 					{
+						"documents": [14,13,15],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
 						"documents": [13,14,15],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
+						"versions": "3.0.15..3.5.13"
 					},
 					{
 						"documents": [15,14,13],
@@ -49580,9 +49745,14 @@
 				"operation": {"$text":{"$search":"open","$language":"none"}},
 				"results": [
 					{
+						"documents": [14,13,15],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
 						"documents": [13,14,15],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
+						"versions": "3.0.15..3.5.13"
 					},
 					{
 						"documents": [15,14,13],
@@ -49598,7 +49768,7 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"unsupported language: \"und\" for text index version 3","code":2,"type":"MongoServerError"},
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -49607,9 +49777,14 @@
 				"operation": {"$text":{"$search":"open","$language":"english"}},
 				"results": [
 					{
+						"documents": [14,13,15],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
 						"documents": [13,14,15],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
+						"versions": "3.0.15..3.5.13"
 					},
 					{
 						"documents": [15,14,13],
@@ -49623,9 +49798,14 @@
 				"operation": {"$text":{"$search":"open","$language":"en"}},
 				"results": [
 					{
+						"documents": [14,13,15],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
 						"documents": [13,14,15],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
+						"versions": "3.0.15..3.5.13"
 					},
 					{
 						"documents": [15,14,13],
@@ -49641,7 +49821,7 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"unsupported language: \"eng\" for text index version 3","code":2,"type":"MongoServerError"},
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -49650,9 +49830,14 @@
 				"operation": {"$text":{"$search":"open","$language":"dutch"}},
 				"results": [
 					{
+						"documents": [14,13,15],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
 						"documents": [13,14,15],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
+						"versions": "3.0.15..3.5.13"
 					},
 					{
 						"documents": [15,14,13],
@@ -49666,9 +49851,14 @@
 				"operation": {"$text":{"$search":"open","$language":"nl"}},
 				"results": [
 					{
+						"documents": [14,13,15],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
 						"documents": [13,14,15],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
+						"versions": "3.0.15..3.5.13"
 					},
 					{
 						"documents": [15,14,13],
@@ -49684,7 +49874,7 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"unsupported language: \"dut\" for text index version 3","code":2,"type":"MongoServerError"},
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -49695,7 +49885,7 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"unsupported language: \"nld\" for text index version 3","code":2,"type":"MongoServerError"},
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -49704,9 +49894,14 @@
 				"operation": {"$text":{"$search":"open","$language":"german"}},
 				"results": [
 					{
+						"documents": [14,13,15],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
 						"documents": [13,14,15],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
+						"versions": "3.0.15..3.5.13"
 					},
 					{
 						"documents": [15,14,13],
@@ -49720,9 +49915,14 @@
 				"operation": {"$text":{"$search":"open","$language":"de"}},
 				"results": [
 					{
+						"documents": [14,13,15],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
 						"documents": [13,14,15],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
+						"versions": "3.0.15..3.5.13"
 					},
 					{
 						"documents": [15,14,13],
@@ -49738,7 +49938,7 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"unsupported language: \"deu\" for text index version 3","code":2,"type":"MongoServerError"},
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -49749,7 +49949,7 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"unsupported language: \"ger\" for text index version 3","code":2,"type":"MongoServerError"},
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -49760,7 +49960,7 @@
 					{
 						"documents": [17,16],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
+						"versions": "2.6.12..3.5.13"
 					},
 					{
 						"documents": [16,17],
@@ -49776,7 +49976,7 @@
 					{
 						"documents": [22],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -49787,7 +49987,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -49798,7 +49998,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -49806,6 +50006,16 @@
 				"id": "wqOQTXlfUBWO",
 				"operation": {"$text":{"$search":"quick"}},
 				"results": [
+					{
+						"documents": [4,0,3,6,2],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
+						"documents": [0,4,2,3,6],
+						"error": "@Undefined/und",
+						"versions": "3.0.15,3.2.21"
+					},
 					{
 						"documents": [0,6,3,2,4],
 						"error": "@Undefined/und",
@@ -49825,7 +50035,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -49836,7 +50046,12 @@
 					{
 						"documents": [0,6,2],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
+						"versions": "2.6.12,3.3.15..3.5.13"
+					},
+					{
+						"documents": [0,2,6],
+						"error": "@Undefined/und",
+						"versions": "3.0.15,3.2.21"
 					},
 					{
 						"documents": [6,2,0],
@@ -49852,7 +50067,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -49860,6 +50075,21 @@
 				"id": "gx78iUsPwTmE",
 				"operation": {"$text":{"$search":"quick fox"}},
 				"results": [
+					{
+						"documents": [1,4,0,3,6,2],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
+						"documents": [1,0,4,2,3,6],
+						"error": "@Undefined/und",
+						"versions": "3.0.15"
+					},
+					{
+						"documents": [0,1,4,2,3,6],
+						"error": "@Undefined/und",
+						"versions": "3.2.21"
+					},
 					{
 						"documents": [0,1,6,3,2,4],
 						"error": "@Undefined/und",
@@ -49879,7 +50109,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -49887,6 +50117,16 @@
 				"id": "poklWD0EOp7n",
 				"operation": {"$text":{"$search":"quick -lazy"}},
 				"results": [
+					{
+						"documents": [4,3,6,2],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
+						"documents": [4,2,3,6],
+						"error": "@Undefined/und",
+						"versions": "3.0.15,3.2.21"
+					},
 					{
 						"documents": [6,3,2,4],
 						"error": "@Undefined/und",
@@ -49901,7 +50141,7 @@
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -49912,7 +50152,7 @@
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -49923,7 +50163,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -49932,9 +50172,14 @@
 				"operation": {"$text":{"$search":"cafe -zebra"}},
 				"results": [
 					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -49943,9 +50188,14 @@
 				"operation": {"$text":{"$search":"cafe -zebra","$caseSensitive":true}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -49954,9 +50204,14 @@
 				"operation": {"$text":{"$search":"cafe -zebra","$caseSensitive":false}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -49965,9 +50220,14 @@
 				"operation": {"$text":{"$search":"cafe -zebra","$diacriticSensitive":true}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -49976,9 +50236,14 @@
 				"operation": {"$text":{"$search":"cafe -zebra","$diacriticSensitive":false}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -49987,9 +50252,14 @@
 				"operation": {"$text":{"$search":"cafe -zebra","$caseSensitive":true,"$diacriticSensitive":true}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -49998,9 +50268,14 @@
 				"operation": {"$text":{"$search":"cafe -zebra","$caseSensitive":true,"$diacriticSensitive":false}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -50009,9 +50284,14 @@
 				"operation": {"$text":{"$search":"cafe -zebra","$caseSensitive":false,"$diacriticSensitive":true}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -50020,9 +50300,14 @@
 				"operation": {"$text":{"$search":"cafe -zebra","$caseSensitive":false,"$diacriticSensitive":false}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -50033,7 +50318,7 @@
 					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -50042,9 +50327,14 @@
 				"operation": {"$text":{"$search":"\"naive cafe\" -zebra"}},
 				"results": [
 					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -50053,9 +50343,14 @@
 				"operation": {"$text":{"$search":"\"naive cafe\" -zebra","$diacriticSensitive":false}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -50064,9 +50359,14 @@
 				"operation": {"$text":{"$search":"\"naive cafe\" -zebra","$diacriticSensitive":true}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -50075,9 +50375,14 @@
 				"operation": {"$text":{"$search":"\"NAIVE CAFE\" -zebra"}},
 				"results": [
 					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -50086,9 +50391,14 @@
 				"operation": {"$text":{"$search":"\"NAIVE CAFE\" -zebra","$caseSensitive":false}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -50097,9 +50407,14 @@
 				"operation": {"$text":{"$search":"\"NAIVE CAFE\" -zebra","$caseSensitive":true}},
 				"results": [
 					{
+						"documents": "@Undefined/und",
+						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
+						"versions": "2.6.12,3.0.15"
+					},
+					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "3.2.21..8.3.11"
 					}
 				]
 			},
@@ -50110,7 +50425,7 @@
 					{
 						"documents": [10],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -50121,7 +50436,7 @@
 					{
 						"documents": [10],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -50132,7 +50447,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -50143,7 +50458,7 @@
 					{
 						"documents": [12],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -50154,7 +50469,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -50165,7 +50480,7 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Too many text expressions","code":2,"type":"MongoServerError"},
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -50176,7 +50491,7 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Too many text expressions","code":2,"type":"MongoServerError"},
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -50187,7 +50502,7 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"text expression not allowed in nor","code":2,"type":"MongoServerError"},
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -50198,7 +50513,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -50209,7 +50524,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -50220,7 +50535,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -50231,7 +50546,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -50242,7 +50557,7 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"\"$search\" had the wrong type. Expected string, found int","code":14,"type":"MongoServerError"},
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			}
@@ -50258,7 +50573,7 @@
 					{
 						"documents": [2,0,1],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
+						"versions": "2.6.12..3.5.13"
 					},
 					{
 						"documents": [1,0,2],
@@ -50274,7 +50589,7 @@
 					{
 						"documents": [2,0,1],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
+						"versions": "2.6.12..3.5.13"
 					},
 					{
 						"documents": [1,0,2],
@@ -50290,7 +50605,7 @@
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -50301,7 +50616,7 @@
 					{
 						"documents": [2],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -50312,7 +50627,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			}
