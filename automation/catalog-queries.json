@@ -3010,6 +3010,42 @@
 		]
 	},
 	{
+		"name": "text-wildcard",
+		"path": "catalog/query/common/text-wildcard.ts",
+		"exports": [
+			{
+				"name": "textWildcard",
+				"type": "Catalog",
+				"hash": "88169dad0cbca3e901907a4bed4b0f0cec2d55914ab638a5b0d5d198190dd7b2"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-09-29T06:32:10.487Z",
+				"exportName": "textWildcard"
+			}
+		]
+	},
+	{
+		"name": "text-single-field",
+		"path": "catalog/query/common/text-single-field.ts",
+		"exports": [
+			{
+				"name": "textSingleField",
+				"type": "Catalog",
+				"hash": "eed99244c20732e1bd8c6930614be5cdb37a1b883bf256cb31c27e241aeaae3f"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-09-29T06:32:10.518Z",
+				"exportName": "textSingleField"
+			}
+		]
+	},
+	{
 		"name": "text-regex",
 		"path": "catalog/query/common/text-regex.ts",
 		"exports": [
@@ -3030,6 +3066,42 @@
 				"date": "2026-08-29T13:43:14.765Z",
 				"exportName": "textRegex",
 				"before": "e73292ee0e3d031be051eee0e8527546985f5d932ca379fd277ab64abe27e035"
+			}
+		]
+	},
+	{
+		"name": "text-multi-field",
+		"path": "catalog/query/common/text-multi-field.ts",
+		"exports": [
+			{
+				"name": "textMultiField",
+				"type": "Catalog",
+				"hash": "083795f833c02988787a81b7e4203cb88140a2fb4a5b058ad9c565d3631d2c59"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-09-29T06:32:10.652Z",
+				"exportName": "textMultiField"
+			}
+		]
+	},
+	{
+		"name": "text-index-v1",
+		"path": "catalog/query/common/text-index-v1.ts",
+		"exports": [
+			{
+				"name": "textIndexV1",
+				"type": "Catalog",
+				"hash": "054a33bc4709313aa57c720fe8a909a258a3756b2b14a78c90e173fc24ac7bff"
+			}
+		],
+		"update": [
+			{
+				"type": "INITIAL",
+				"date": "2026-09-29T06:32:10.670Z",
+				"exportName": "textIndexV1"
 			}
 		]
 	},
