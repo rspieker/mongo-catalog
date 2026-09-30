@@ -48404,6 +48404,190 @@
 		]
 	},
 	{
+		"catalog": "textContraction",
+		"operations": [
+			{
+				"id": "iqzR9P8dqKYY",
+				"operation": {"$text":{"$search":"don't"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "gLTU6UDNFyg4",
+				"operation": {"$text":{"$search":"\"don't\""}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "uIIBINvAU52u",
+				"operation": {"$text":{"$search":"dont"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "pY9LAsWARUQN",
+				"operation": {"$text":{"$search":"don"}},
+				"results": [
+					{
+						"documents": [2],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "wdn0LDyokY5b",
+				"operation": {"$text":{"$search":"doesn't"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "jscCAjP52W1J",
+				"operation": {"$text":{"$search":"auto's"}},
+				"results": [
+					{
+						"documents": [3,4],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [4,3],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "tYfSaB18o57q",
+				"operation": {"$text":{"$search":"\"auto's\""}},
+				"results": [
+					{
+						"documents": [3,4],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [4,3],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "daLRRDvnV4UB",
+				"operation": {"$text":{"$search":"autos"}},
+				"results": [
+					{
+						"documents": [3,4],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [4,3],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "wxxIZtxHIn6x",
+				"operation": {"$text":{"$search":"auto"}},
+				"results": [
+					{
+						"documents": [3,4],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [4,3],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "qqyIXBSDnTg3",
+				"operation": {"$text":{"$search":"baby's"}},
+				"results": [
+					{
+						"documents": [],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "bbThuMuzUlsT",
+				"operation": {"$text":{"$search":"'s ochtends"}},
+				"results": [
+					{
+						"documents": [5],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "lerjJ8Q9JDc4",
+				"operation": {"$text":{"$search":"\"'s ochtends\""}},
+				"results": [
+					{
+						"documents": [5],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "vT5yxNXsUB8K",
+				"operation": {"$text":{"$search":"s ochtends"}},
+				"results": [
+					{
+						"documents": [6,3,4,5],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..3.5.13"
+					},
+					{
+						"documents": [5,4,3,6],
+						"error": "@Undefined/und",
+						"versions": "3.6.23..8.3.11"
+					}
+				]
+			},
+			{
+				"id": "nyO61fty5CR2",
+				"operation": {"$text":{"$search":"ochtends"}},
+				"results": [
+					{
+						"documents": [5],
+						"error": "@Undefined/und",
+						"versions": "3.3.15..8.3.11"
+					}
+				]
+			}
+		]
+	},
+	{
 		"catalog": "textIndexV1",
 		"operations": [
 			{
