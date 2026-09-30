@@ -47087,7 +47087,7 @@
 				"results": [
 					{
 						"documents": "@Undefined/und",
-						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
+						"error": {"message":"Can't canonicalize query: BadValue unknown top level operator: $expr","code":17287,"type":"MongoError"},
 						"versions": "2.6.12..3.5.13"
 					},
 					{
@@ -48435,12 +48435,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue $language specifies unsupported language","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -48473,12 +48473,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue $language specifies unsupported language","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -48522,12 +48522,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue $language specifies unsupported language","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -48538,12 +48538,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue $language specifies unsupported language","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -48576,12 +48576,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue $language specifies unsupported language","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -48592,12 +48592,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue $language specifies unsupported language","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -48608,12 +48608,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue $language specifies unsupported language","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [0],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			}
@@ -48634,7 +48634,7 @@
 					{
 						"documents": [0,1,4,2],
 						"error": "@Undefined/und",
-						"versions": "3.0.15..3.5.13"
+						"versions": "3.0.12..3.5.13"
 					},
 					{
 						"documents": [2,4,1,0],
@@ -48655,7 +48655,7 @@
 					{
 						"documents": [0,1,4,2,3],
 						"error": "@Undefined/und",
-						"versions": "3.0.15,3.2.21"
+						"versions": "3.0.12..3.2.21"
 					},
 					{
 						"documents": [0,3,2,4,1],
@@ -48681,12 +48681,12 @@
 					{
 						"documents": [3,0,1,4,2],
 						"error": "@Undefined/und",
-						"versions": "3.0.15"
+						"versions": "3.0.12,3.0.15"
 					},
 					{
 						"documents": [0,1,4,2,3],
 						"error": "@Undefined/und",
-						"versions": "3.2.21"
+						"versions": "3.2.13,3.2.21"
 					},
 					{
 						"documents": [0,3,2,4,1],
@@ -48712,7 +48712,7 @@
 					{
 						"documents": [0,1,4,2],
 						"error": "@Undefined/und",
-						"versions": "3.0.15..3.5.13"
+						"versions": "3.0.12..3.5.13"
 					},
 					{
 						"documents": [2,4,1,0],
@@ -48733,7 +48733,7 @@
 					{
 						"documents": [0,1],
 						"error": "@Undefined/und",
-						"versions": "3.0.15..3.5.13"
+						"versions": "3.0.12..3.5.13"
 					}
 				]
 			},
@@ -49450,7 +49450,7 @@
 					{
 						"documents": [0,4,2,3,6],
 						"error": "@Undefined/und",
-						"versions": "3.0.15,3.2.21"
+						"versions": "3.0.12..3.2.21"
 					},
 					{
 						"documents": [0,6,3,2,4],
@@ -49476,7 +49476,7 @@
 					{
 						"documents": [0,4,2,3,6],
 						"error": "@Undefined/und",
-						"versions": "3.0.15,3.2.21"
+						"versions": "3.0.12..3.2.21"
 					},
 					{
 						"documents": [0,6,3,2,4],
@@ -49497,12 +49497,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [0,4,2,3,6],
 						"error": "@Undefined/und",
-						"versions": "3.2.21"
+						"versions": "3.2.13,3.2.21"
 					},
 					{
 						"documents": [0,6,3,2,4],
@@ -49523,12 +49523,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [6],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -49539,12 +49539,12 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -49555,12 +49555,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -49571,12 +49571,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -49598,12 +49598,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -49614,12 +49614,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -49630,12 +49630,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -49646,12 +49646,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -49662,12 +49662,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -49678,12 +49678,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -49694,12 +49694,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -49710,12 +49710,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -49731,7 +49731,7 @@
 					{
 						"documents": [13,14,15],
 						"error": "@Undefined/und",
-						"versions": "3.0.15..3.5.13"
+						"versions": "3.0.12..3.5.13"
 					},
 					{
 						"documents": [15,14,13],
@@ -49752,7 +49752,7 @@
 					{
 						"documents": [13,14,15],
 						"error": "@Undefined/und",
-						"versions": "3.0.15..3.5.13"
+						"versions": "3.0.12..3.5.13"
 					},
 					{
 						"documents": [15,14,13],
@@ -49784,7 +49784,7 @@
 					{
 						"documents": [13,14,15],
 						"error": "@Undefined/und",
-						"versions": "3.0.15..3.5.13"
+						"versions": "3.0.12..3.5.13"
 					},
 					{
 						"documents": [15,14,13],
@@ -49805,7 +49805,7 @@
 					{
 						"documents": [13,14,15],
 						"error": "@Undefined/und",
-						"versions": "3.0.15..3.5.13"
+						"versions": "3.0.12..3.5.13"
 					},
 					{
 						"documents": [15,14,13],
@@ -49837,7 +49837,7 @@
 					{
 						"documents": [13,14,15],
 						"error": "@Undefined/und",
-						"versions": "3.0.15..3.5.13"
+						"versions": "3.0.12..3.5.13"
 					},
 					{
 						"documents": [15,14,13],
@@ -49858,7 +49858,7 @@
 					{
 						"documents": [13,14,15],
 						"error": "@Undefined/und",
-						"versions": "3.0.15..3.5.13"
+						"versions": "3.0.12..3.5.13"
 					},
 					{
 						"documents": [15,14,13],
@@ -49901,7 +49901,7 @@
 					{
 						"documents": [13,14,15],
 						"error": "@Undefined/und",
-						"versions": "3.0.15..3.5.13"
+						"versions": "3.0.12..3.5.13"
 					},
 					{
 						"documents": [15,14,13],
@@ -49922,7 +49922,7 @@
 					{
 						"documents": [13,14,15],
 						"error": "@Undefined/und",
-						"versions": "3.0.15..3.5.13"
+						"versions": "3.0.12..3.5.13"
 					},
 					{
 						"documents": [15,14,13],
@@ -50014,7 +50014,7 @@
 					{
 						"documents": [0,4,2,3,6],
 						"error": "@Undefined/und",
-						"versions": "3.0.15,3.2.21"
+						"versions": "3.0.12..3.2.21"
 					},
 					{
 						"documents": [0,6,3,2,4],
@@ -50051,7 +50051,7 @@
 					{
 						"documents": [0,2,6],
 						"error": "@Undefined/und",
-						"versions": "3.0.15,3.2.21"
+						"versions": "3.0.12..3.2.21"
 					},
 					{
 						"documents": [6,2,0],
@@ -50083,12 +50083,12 @@
 					{
 						"documents": [1,0,4,2,3,6],
 						"error": "@Undefined/und",
-						"versions": "3.0.15"
+						"versions": "3.0.12,3.0.15"
 					},
 					{
 						"documents": [0,1,4,2,3,6],
 						"error": "@Undefined/und",
-						"versions": "3.2.21"
+						"versions": "3.2.13,3.2.21"
 					},
 					{
 						"documents": [0,1,6,3,2,4],
@@ -50125,7 +50125,7 @@
 					{
 						"documents": [4,2,3,6],
 						"error": "@Undefined/und",
-						"versions": "3.0.15,3.2.21"
+						"versions": "3.0.12..3.2.21"
 					},
 					{
 						"documents": [6,3,2,4],
@@ -50174,12 +50174,12 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -50190,12 +50190,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -50206,12 +50206,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -50222,12 +50222,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -50238,12 +50238,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -50254,12 +50254,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -50270,12 +50270,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -50286,12 +50286,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -50302,12 +50302,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -50329,12 +50329,12 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -50345,12 +50345,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -50361,12 +50361,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -50377,12 +50377,12 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -50393,12 +50393,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [7],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
@@ -50409,12 +50409,12 @@
 					{
 						"documents": "@Undefined/und",
 						"error": {"message":"Can't canonicalize query: BadValue extra fields in $text","code":17287,"type":"MongoError"},
-						"versions": "2.6.12,3.0.15"
+						"versions": "2.6.12..3.0.15"
 					},
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.2.21..8.3.11"
+						"versions": "3.2.13..8.3.11"
 					}
 				]
 			},
