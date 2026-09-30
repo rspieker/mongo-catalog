@@ -49,6 +49,14 @@ export const textContraction: Catalog<TextContractionDocument> = {
 		{ $text: { $search: 'dont' } },
 		{ $text: { $search: 'don' } },
 		{ $text: { $search: "doesn't" } },
+		// the query string itself is interpreted using the index's own
+		// default_language (english here), not a per-document language
+		// override — these isolate whether an unstemmed *query* against the
+		// unstemmed (doc 2, language:'none') content closes the gap that
+		// the plain-language versions above left open
+		{ $text: { $search: "don't", $language: 'none' } },
+		{ $text: { $search: '"don\'t"', $language: 'none' } },
+		{ $text: { $search: "doesn't", $language: 'none' } },
 
 		// Dutch plural -'s — unquoted, quoted, apostrophe-stripped, bare word
 		{ $text: { $search: "auto's" } },
@@ -62,6 +70,11 @@ export const textContraction: Catalog<TextContractionDocument> = {
 		{ $text: { $search: '"\'s ochtends"' } },
 		{ $text: { $search: 's ochtends' } },
 		{ $text: { $search: 'ochtends' } },
+		// doc 5 (language:'nl') matched but doc 6 (language:'none') didn't —
+		// the opposite direction from auto's — isolating query-side language
+		// the same way as the English pair above
+		{ $text: { $search: "'s ochtends", $language: 'none' } },
+		{ $text: { $search: '"\'s ochtends"', $language: 'none' } },
 	],
 	collection: {
 		indices: [{ content: 'text' }],
