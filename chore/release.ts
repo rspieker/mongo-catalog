@@ -14,7 +14,7 @@ import { classifyOperators, type OperatorTag } from '../source/domain/mongo/oper
 import { serialize } from '../source/domain/serialization';
 import { Version } from '../source/domain/version';
 
-// Record values (read live via loadCollectionRecords, below) and query
+// Record values (read live via loadCollection, below) and query
 // results can carry NaN/Infinity/-Infinity/Date/RegExp which don't translate
 // to JSON as we need them to (NaN/Infinity turn into null, Date becomes it's
 // ISO string and RegExp becomes an empty object)
@@ -55,7 +55,7 @@ type ReleaseOperation = {
 };
 type ReleaseCatalog = {
     catalog: string;
-    collection: { records: Array<unknown> };
+    collection: { records: Array<unknown>; indices?: Array<unknown> };
     operations: Array<ReleaseOperation>;
 };
 
@@ -70,7 +70,7 @@ function resolveCatalogPath(catalogExportName: string, records: Array<CatalogQue
     return record.path;
 }
 
-async function loadCollectionRecords(path: string, exportName: string): Promise<Array<unknown>> {
+async function loadCollection(path: string, exportName: string): Promise<{ records: Array<unknown>; indices?: Array<unknown> }> {
     const component = resolve(process.cwd(), path);
     const module = await import(component);
     const catalog = module[exportName] as Catalog<MongoDocument<Record<string, unknown>>> | undefined;
@@ -79,7 +79,10 @@ async function loadCollectionRecords(path: string, exportName: string): Promise<
         throw new Error(`Export '${exportName}' not found in module ${path}`);
     }
 
-    return catalog.collection.records;
+    // indices weren't part of the release payload until index-aware
+    // operators ($text today) needed them — records-only consumers are
+    // unaffected since this is purely additive.
+    return { records: catalog.collection.records, indices: catalog.collection.indices };
 }
 
 
@@ -110,10 +113,10 @@ async function main(): Promise<void> {
 
     for (const catalogEntry of unified) {
         let path: string;
-        let records: Array<unknown>;
+        let collection: { records: Array<unknown>; indices?: Array<unknown> };
         try {
             path = resolveCatalogPath(catalogEntry.catalog, catalogQueries);
-            records = await loadCollectionRecords(path, catalogEntry.catalog);
+            collection = await loadCollection(path, catalogEntry.catalog);
         } catch (error: any) {
           skipped.push({ catalog: catalogEntry.catalog, reason: error.message || String(error) });
           continue;
@@ -122,7 +125,7 @@ async function main(): Promise<void> {
         let taggedOperations = 0;
         const releaseCatalog: ReleaseCatalog = {
             catalog: catalogEntry.catalog,
-            collection: { records },
+            collection,
             operations: catalogEntry.operations.map((op) => {
                 const operators = classifyOperators(op.operation);
                 if (operators.length) {
