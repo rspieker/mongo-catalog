@@ -1,0 +1,155 @@
+[
+	{
+		"id": "bvJFMKQaA0Qp",
+		"operation": {
+			"scores": {
+				"$elemMatch": {
+					"$ref": "Abundant",
+					"$id": {
+						"$proxy": "Double"
+					}
+				}
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "mmIXNtlMGPjV",
+		"operation": {
+			"level": {
+				"$ref": "Couple",
+				"$id": 30
+			}
+		},
+		"documents": [
+			1
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "mAcxmXOff8WI",
+		"operation": {
+			"scores": {
+				"$elemMatch": 42
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$elemMatch needs an Object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "onGtVPXrgQRn",
+		"operation": {
+			"scores": {
+				"$elemMatch": {
+					"$ref": null,
+					"$id": {
+						"$proxy": null
+					}
+				}
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uxdT7Mo26dX4",
+		"operation": {
+			"scores": {
+				"$elemMatch": {
+					"$ref": 42,
+					"$id": {
+						"$proxy": 42
+					}
+				}
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kr3ADwEId3Us",
+		"operation": {
+			"scores": {
+				"$elemMatch": {
+					"$ref": true,
+					"$id": {
+						"$proxy": true
+					}
+				}
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uxh8SHXOH1a0",
+		"operation": {
+			"level": {
+				"$ref": "Couple",
+				"$id": null
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "hYQSKF5fXoXn",
+		"operation": {
+			"level": {
+				"$ref": "Couple",
+				"$id": "value"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oxGiPtE1fHY8",
+		"operation": {
+			"level": {
+				"$ref": "Couple",
+				"$id": true
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rqGLIFMHDVcf",
+		"operation": {
+			"level": {
+				"$ref": null,
+				"$id": 30
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uYBfjDETBFUj",
+		"operation": {
+			"level": {
+				"$ref": 42,
+				"$id": 30
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "l3IgWLS5JGn8",
+		"operation": {
+			"level": {
+				"$ref": true,
+				"$id": 30
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	}
+]
