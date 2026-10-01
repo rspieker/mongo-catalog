@@ -47087,7 +47087,7 @@
 				"results": [
 					{
 						"documents": "@Undefined/und",
-						"error": {"message":"Can't canonicalize query: BadValue unknown top level operator: $expr","code":17287,"type":"MongoError"},
+						"error": {"message":"unknown top level operator: $expr","code":2,"type":"MongoError"},
 						"versions": "2.6.12..3.5.13"
 					},
 					{
@@ -48413,7 +48413,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48424,7 +48424,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48435,7 +48435,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48446,7 +48446,7 @@
 					{
 						"documents": [2],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48457,7 +48457,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48468,7 +48468,7 @@
 					{
 						"documents": [2],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48479,7 +48479,7 @@
 					{
 						"documents": [2],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48490,7 +48490,7 @@
 					{
 						"documents": [2],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48499,14 +48499,14 @@
 				"operation": {"$text":{"$search":"auto's"}},
 				"results": [
 					{
-						"documents": [3,4],
-						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
-					},
-					{
 						"documents": [4,3],
 						"error": "@Undefined/und",
-						"versions": "3.6.23..8.3.11"
+						"versions": "2.6.12,3.6.23..8.3.11"
+					},
+					{
+						"documents": [3,4],
+						"error": "@Undefined/und",
+						"versions": "3.0.15..3.5.13"
 					}
 				]
 			},
@@ -48515,14 +48515,14 @@
 				"operation": {"$text":{"$search":"\"auto's\""}},
 				"results": [
 					{
-						"documents": [3,4],
-						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
-					},
-					{
 						"documents": [4,3],
 						"error": "@Undefined/und",
-						"versions": "3.6.23..8.3.11"
+						"versions": "2.6.12,3.6.23..8.3.11"
+					},
+					{
+						"documents": [3,4],
+						"error": "@Undefined/und",
+						"versions": "3.0.15..3.5.13"
 					}
 				]
 			},
@@ -48531,14 +48531,14 @@
 				"operation": {"$text":{"$search":"autos"}},
 				"results": [
 					{
-						"documents": [3,4],
-						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
-					},
-					{
 						"documents": [4,3],
 						"error": "@Undefined/und",
-						"versions": "3.6.23..8.3.11"
+						"versions": "2.6.12,3.6.23..8.3.11"
+					},
+					{
+						"documents": [3,4],
+						"error": "@Undefined/und",
+						"versions": "3.0.15..3.5.13"
 					}
 				]
 			},
@@ -48547,14 +48547,14 @@
 				"operation": {"$text":{"$search":"auto"}},
 				"results": [
 					{
-						"documents": [3,4],
-						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
-					},
-					{
 						"documents": [4,3],
 						"error": "@Undefined/und",
-						"versions": "3.6.23..8.3.11"
+						"versions": "2.6.12,3.6.23..8.3.11"
+					},
+					{
+						"documents": [3,4],
+						"error": "@Undefined/und",
+						"versions": "3.0.15..3.5.13"
 					}
 				]
 			},
@@ -48565,7 +48565,7 @@
 					{
 						"documents": [],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48576,7 +48576,7 @@
 					{
 						"documents": [5],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48587,7 +48587,7 @@
 					{
 						"documents": [5],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48596,9 +48596,19 @@
 				"operation": {"$text":{"$search":"s ochtends"}},
 				"results": [
 					{
+						"documents": [4,6,3,5],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
+						"documents": [5,6,3,4],
+						"error": "@Undefined/und",
+						"versions": "3.0.15"
+					},
+					{
 						"documents": [6,3,4,5],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
+						"versions": "3.2.21..3.5.13"
 					},
 					{
 						"documents": [5,4,3,6],
@@ -48614,7 +48624,7 @@
 					{
 						"documents": [5],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..8.3.11"
+						"versions": "2.6.12..8.3.11"
 					}
 				]
 			},
@@ -48623,9 +48633,19 @@
 				"operation": {"$text":{"$search":"'s ochtends","$language":"none"}},
 				"results": [
 					{
+						"documents": [4,6,3,5],
+						"error": "@Undefined/und",
+						"versions": "2.6.12"
+					},
+					{
+						"documents": [5,6,3,4],
+						"error": "@Undefined/und",
+						"versions": "3.0.15"
+					},
+					{
 						"documents": [5,3,4,6],
 						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
+						"versions": "3.2.21..3.5.13"
 					},
 					{
 						"documents": [6,4,3,5],
@@ -48639,14 +48659,14 @@
 				"operation": {"$text":{"$search":"\"'s ochtends\"","$language":"none"}},
 				"results": [
 					{
-						"documents": [5,6],
-						"error": "@Undefined/und",
-						"versions": "3.3.15..3.5.13"
-					},
-					{
 						"documents": [6,5],
 						"error": "@Undefined/und",
-						"versions": "3.6.23..8.3.11"
+						"versions": "2.6.12,3.6.23..8.3.11"
+					},
+					{
+						"documents": [5,6],
+						"error": "@Undefined/und",
+						"versions": "3.0.15..3.5.13"
 					}
 				]
 			}
