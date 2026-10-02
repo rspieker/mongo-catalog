@@ -1,0 +1,89 @@
+[
+	{
+		"id": "wqOQTXlfUBWO",
+		"operation": {
+			"$text": {
+				"$search": "quick"
+			}
+		},
+		"documents": [
+			2,
+			4,
+			1,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "v0UiN6uPJIm4",
+		"operation": {
+			"$text": {
+				"$search": "fox"
+			}
+		},
+		"documents": [
+			3,
+			2,
+			4,
+			1,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "gx78iUsPwTmE",
+		"operation": {
+			"$text": {
+				"$search": "quick fox"
+			}
+		},
+		"documents": [
+			3,
+			2,
+			4,
+			1,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "eOSoxxZN9trz",
+		"operation": {
+			"$text": {
+				"$search": "quick -dog"
+			}
+		},
+		"documents": [
+			2,
+			4,
+			1,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wM8KOhKG34W8",
+		"operation": {
+			"$text": {
+				"$search": "\"quick fox\""
+			}
+		},
+		"documents": [
+			1,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rspkMagRtiuj",
+		"operation": {
+			"$text": {
+				"$search": "brown"
+			}
+		},
+		"documents": [
+			4
+		],
+		"error": "@Undefined/und"
+	}
+]
