@@ -1,0 +1,1262 @@
+[
+	{
+		"id": "oOz0ewr8TCOK",
+		"operation": {},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25,
+			26,
+			27,
+			28
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "v8M8iCTvo9m6",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$gte": 8,
+						"$lte": 10
+					},
+					"score": {
+						"$gte": 8,
+						"$lte": 10
+					}
+				},
+				{
+					"age": {
+						"$gte": 9,
+						"$lte": 11
+					},
+					"score": {
+						"$gte": 9,
+						"$lte": 11
+					}
+				},
+				{
+					"age": {
+						"$gte": 9,
+						"$lte": 12
+					},
+					"score": {
+						"$gte": 9,
+						"$lte": 12
+					}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aaE549KBoV1l",
+		"operation": {
+			"scores.0": 19
+		},
+		"documents": [
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vsmEL6bEzPRf",
+		"operation": {
+			"scores.0": {
+				"$gt": 26
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "og2yxinKwLHw",
+		"operation": {
+			"scores.0": {
+				"$lt": 18
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aaE549KBoV1l",
+		"operation": {
+			"scores.0": 19
+		},
+		"documents": [
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vsmEL6bEzPRf",
+		"operation": {
+			"scores.0": {
+				"$gt": 26
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "og2yxinKwLHw",
+		"operation": {
+			"scores.0": {
+				"$lt": 18
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "eEuBJ6XlPWnz",
+		"operation": {
+			"ratings.0": [
+				32,
+				33
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kb300wU7j3Fv",
+		"operation": {
+			"ratings.0.0": 33
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "h1TL50m1E2I9",
+		"operation": {
+			"level": {
+				"count": 3669,
+				"grade": "Abundant"
+			}
+		},
+		"documents": [
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cUwcfSmy05R9",
+		"operation": {
+			"counts": {
+				"$gt": 27,
+				"$lt": 30
+			}
+		},
+		"documents": [
+			5
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "af41OH4y3Zij",
+		"operation": {
+			"$or": [
+				{
+					"counts": {
+						"$in": [
+							26,
+							27
+						]
+					}
+				},
+				{
+					"capacity": {
+						"$in": [
+							29,
+							30
+						]
+					}
+				}
+			]
+		},
+		"documents": [
+			5
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nUNfKqWDIT57",
+		"operation": {
+			"name": {
+				"$size": 15
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rArXXW4cCFbo",
+		"operation": {
+			"title.quantity": {
+				"$size": 9
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vatVojSaX7ES",
+		"operation": {
+			"title.quantity.size": {
+				"$size": 8
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wK3nORVkffF9",
+		"operation": {
+			"title.quantity.size.index": {
+				"$size": 8
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "tSuyAuw2JNun",
+		"operation": {
+			"depth.depth.username": {
+				"$size": 27
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lmZBjpO5C6nl",
+		"operation": {
+			"username.depth.depth.username": {
+				"$size": 27
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rGF47W7TPJRG",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$gte": null,
+						"$lte": null
+					},
+					"score": {
+						"$gte": null,
+						"$lte": null
+					}
+				},
+				{
+					"age": {
+						"$gte": null,
+						"$lte": null
+					},
+					"score": {
+						"$gte": null,
+						"$lte": null
+					}
+				},
+				{
+					"age": {
+						"$gte": null,
+						"$lte": null
+					},
+					"score": {
+						"$gte": null,
+						"$lte": null
+					}
+				}
+			]
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25,
+			26,
+			27,
+			28
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kxIr9m4y3Z9H",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$gte": "value",
+						"$lte": "value"
+					},
+					"score": {
+						"$gte": "value",
+						"$lte": "value"
+					}
+				},
+				{
+					"age": {
+						"$gte": "value",
+						"$lte": "value"
+					},
+					"score": {
+						"$gte": "value",
+						"$lte": "value"
+					}
+				},
+				{
+					"age": {
+						"$gte": "value",
+						"$lte": "value"
+					},
+					"score": {
+						"$gte": "value",
+						"$lte": "value"
+					}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wX38QPBunSGH",
+		"operation": {
+			"$or": [
+				{
+					"age": {
+						"$gte": true,
+						"$lte": true
+					},
+					"score": {
+						"$gte": true,
+						"$lte": true
+					}
+				},
+				{
+					"age": {
+						"$gte": true,
+						"$lte": true
+					},
+					"score": {
+						"$gte": true,
+						"$lte": true
+					}
+				},
+				{
+					"age": {
+						"$gte": true,
+						"$lte": true
+					},
+					"score": {
+						"$gte": true,
+						"$lte": true
+					}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "mOJHV9KJvROG",
+		"operation": {
+			"scores.0": null
+		},
+		"documents": [
+			0,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25,
+			26,
+			27,
+			28
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nKOgFyrg79wg",
+		"operation": {
+			"scores.0": "value"
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uLt77HjWIoG1",
+		"operation": {
+			"scores.0": true
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "dIVkX8gNDKdi",
+		"operation": {
+			"scores.0": {
+				"$gt": null
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cUtyYJme9sOb",
+		"operation": {
+			"scores.0": {
+				"$gt": "value"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uaLdcHqQi6lQ",
+		"operation": {
+			"scores.0": {
+				"$gt": true
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lEXzXi7zqXvF",
+		"operation": {
+			"scores.0": {
+				"$lt": null
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rx5ZfK7bRisj",
+		"operation": {
+			"scores.0": {
+				"$lt": "value"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cXBCBLLUbaqu",
+		"operation": {
+			"scores.0": {
+				"$lt": true
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ly02LaqHCf7h",
+		"operation": {
+			"ratings.0": [
+				null,
+				null
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "dSLBEiKo1Fz8",
+		"operation": {
+			"ratings.0": [
+				"value",
+				"value"
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "av5ps1FEL6IR",
+		"operation": {
+			"ratings.0": [
+				true,
+				true
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cpSLNjApVHcu",
+		"operation": {
+			"ratings.0.0": null
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25,
+			26,
+			27,
+			28
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pKQ4WruE7f4n",
+		"operation": {
+			"ratings.0.0": "value"
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uRhhLLOT98bU",
+		"operation": {
+			"ratings.0.0": true
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "fCXvPHLW7ZFE",
+		"operation": {
+			"level": {
+				"count": null,
+				"grade": "Abundant"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "bTT6BNZLakOR",
+		"operation": {
+			"level": {
+				"count": "value",
+				"grade": "Abundant"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kWWaDoFccW5Q",
+		"operation": {
+			"level": {
+				"count": true,
+				"grade": "Abundant"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uoL525w4NmMH",
+		"operation": {
+			"level": {
+				"count": 3669,
+				"grade": null
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "dVYOUMeHI0aK",
+		"operation": {
+			"level": {
+				"count": 3669,
+				"grade": 42
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oVyVXNOnlMJU",
+		"operation": {
+			"level": {
+				"count": 3669,
+				"grade": true
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kWsW6OUFKRmu",
+		"operation": {
+			"counts": {
+				"$gt": null,
+				"$lt": null
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ttQt6huwKg23",
+		"operation": {
+			"counts": {
+				"$gt": "value",
+				"$lt": "value"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lrxjoBUku00H",
+		"operation": {
+			"counts": {
+				"$gt": true,
+				"$lt": true
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "b7a8kD9VH2dW",
+		"operation": {
+			"$or": [
+				{
+					"counts": {
+						"$in": "active"
+					}
+				},
+				{
+					"capacity": {
+						"$in": "active"
+					}
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$in needs an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vANonX0wvRHx",
+		"operation": {
+			"$or": [
+				{
+					"counts": {
+						"$in": [
+							null,
+							null
+						]
+					}
+				},
+				{
+					"capacity": {
+						"$in": [
+							null,
+							null
+						]
+					}
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20,
+			21,
+			22,
+			23,
+			24,
+			25,
+			26,
+			27,
+			28
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "hpMbZEZWEE8Z",
+		"operation": {
+			"$or": [
+				{
+					"counts": {
+						"$in": [
+							"value",
+							"value"
+						]
+					}
+				},
+				{
+					"capacity": {
+						"$in": [
+							"value",
+							"value"
+						]
+					}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "tk0XJCwyXSby",
+		"operation": {
+			"$or": [
+				{
+					"counts": {
+						"$in": [
+							true,
+							true
+						]
+					}
+				},
+				{
+					"capacity": {
+						"$in": [
+							true,
+							true
+						]
+					}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aNHhBQRtyNPe",
+		"operation": {
+			"name": {
+				"$size": "large"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pJNkKnBPezWV",
+		"operation": {
+			"name": {
+				"$size": 2.5
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "q0DkqqZ8Rag0",
+		"operation": {
+			"name": {
+				"$size": null
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: null",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pAYUY0oSA1X1",
+		"operation": {
+			"name": {
+				"$size": "value"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "aIzK5TJJAeOC",
+		"operation": {
+			"name": {
+				"$size": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: true",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nsDuCVTdCJ3k",
+		"operation": {
+			"title.quantity": {
+				"$size": "large"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oCquizWvlVXM",
+		"operation": {
+			"title.quantity": {
+				"$size": 2.5
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "v2OpSlUAiZty",
+		"operation": {
+			"title.quantity": {
+				"$size": null
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: null",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "mswtuve3c1Hk",
+		"operation": {
+			"title.quantity": {
+				"$size": "value"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wdMjqEA0AI08",
+		"operation": {
+			"title.quantity": {
+				"$size": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: true",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "unnOHGHBmyED",
+		"operation": {
+			"title.quantity.size": {
+				"$size": "large"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nMyrFTPATDED",
+		"operation": {
+			"title.quantity.size": {
+				"$size": 2.5
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "smyyNvuxUkTJ",
+		"operation": {
+			"title.quantity.size": {
+				"$size": null
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: null",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "clYNEIWeQW85",
+		"operation": {
+			"title.quantity.size": {
+				"$size": "value"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "w2Czj3tngLlD",
+		"operation": {
+			"title.quantity.size": {
+				"$size": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: true",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "cHGXAOs7A4Fa",
+		"operation": {
+			"title.quantity.size.index": {
+				"$size": "large"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wRq3jKOx2QuZ",
+		"operation": {
+			"title.quantity.size.index": {
+				"$size": 2.5
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "p0QdlsjvdUu1",
+		"operation": {
+			"title.quantity.size.index": {
+				"$size": null
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: null",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "u4XWa8kHhWG2",
+		"operation": {
+			"title.quantity.size.index": {
+				"$size": "value"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "cLQUcGVT4uHZ",
+		"operation": {
+			"title.quantity.size.index": {
+				"$size": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: true",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "jUNTUBTbnGHA",
+		"operation": {
+			"depth.depth.username": {
+				"$size": "large"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sJ9GPAray5RS",
+		"operation": {
+			"depth.depth.username": {
+				"$size": 2.5
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "djewUXZ2KHus",
+		"operation": {
+			"depth.depth.username": {
+				"$size": null
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: null",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uJTTFNteaL7x",
+		"operation": {
+			"depth.depth.username": {
+				"$size": "value"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vE4T1tBgSKkN",
+		"operation": {
+			"depth.depth.username": {
+				"$size": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: true",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "cI2AcXQKUVvY",
+		"operation": {
+			"username.depth.depth.username": {
+				"$size": "large"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"large\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "mXRNT4U2TRa8",
+		"operation": {
+			"username.depth.depth.username": {
+				"$size": 2.5
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected an integer: $size: 2.5",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "s5jbIGNclVhi",
+		"operation": {
+			"username.depth.depth.username": {
+				"$size": null
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: null",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "unJRNZdCyyA6",
+		"operation": {
+			"username.depth.depth.username": {
+				"$size": "value"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"value\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "kOodQ9HB4R6q",
+		"operation": {
+			"username.depth.depth.username": {
+				"$size": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: true",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	}
+]

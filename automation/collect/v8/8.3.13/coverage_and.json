@@ -1,0 +1,6891 @@
+[
+	{
+		"id": "uV2vJ8nNnXYD",
+		"operation": {
+			"$and": [
+				{
+					"name": 7
+				}
+			]
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lZxISWNc4ASf",
+		"operation": {
+			"$and": [
+				{
+					"name": 7
+				},
+				{
+					"name": 8
+				}
+			]
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "b7flDhAJofMR",
+		"operation": {
+			"$and": [
+				{
+					"name": 7
+				},
+				{
+					"name": 8
+				},
+				{
+					"name": 9
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vqRoEKnjixB3",
+		"operation": {
+			"$and": [
+				{
+					"name": "Abundant"
+				}
+			]
+		},
+		"documents": [
+			1
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kMMQJ3oOg9Hb",
+		"operation": {
+			"$and": [
+				{
+					"name": "Abundant"
+				},
+				{
+					"name": "Couple"
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vwi4fsf1lK8V",
+		"operation": {
+			"name": 8,
+			"$and": [
+				{
+					"name": 7
+				}
+			]
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pvkAj3yL7d2d",
+		"operation": {
+			"name": 7,
+			"$and": [
+				{
+					"name": 7
+				}
+			]
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "dBDnTuUWEOvm",
+		"operation": {
+			"name": 8,
+			"$and": [
+				{
+					"$and": [
+						{
+							"name": 7
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oIylHRNswic9",
+		"operation": {
+			"name": 7,
+			"$and": [
+				{
+					"$and": [
+						{
+							"name": 7
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "otYwY4nIN5Dk",
+		"operation": {
+			"$and": [
+				{
+					"name": 8
+				},
+				{
+					"$and": [
+						{
+							"name": 7
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oRKs848BglH2",
+		"operation": {
+			"$and": [
+				{
+					"name": 7
+				},
+				{
+					"$and": [
+						{
+							"name": 7
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cbpcQTTGxOts",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aFfrtP5iRz97",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				},
+				{
+					"name": {}
+				},
+				{
+					"name": {}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lOJvXLEy3AZf",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				},
+				{
+					"name": {}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "b9CQULXWWQF8",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				},
+				{
+					"name": "Abundant"
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aoZMNcZrgyNH",
+		"operation": {
+			"$and": [
+				{
+					"name": {
+						"$gt": 6
+					}
+				}
+			]
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pO9CLUjLkcLl",
+		"operation": {
+			"name": "Abundant",
+			"$where": "Double"
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Double is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rvZhE0tqh7aF",
+		"operation": {
+			"$and": [
+				{
+					"name": "Abundant"
+				}
+			],
+			"$where": "Double"
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Double is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "t33vTPruinYI",
+		"operation": {
+			"$and": [
+				{
+					"$where": "Double"
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Double is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "dM3qe27T5qmX",
+		"operation": {
+			"$and": [
+				{
+					"name": "Abundant"
+				},
+				{
+					"$where": "Double"
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Double is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "lizXhSV8B80r",
+		"operation": {
+			"$and": [
+				{
+					"$where": "Double"
+				}
+			],
+			"$where": "Double"
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Double is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uV2vJ8nNnXYD",
+		"operation": {
+			"$and": [
+				{
+					"name": 7
+				}
+			]
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lZxISWNc4ASf",
+		"operation": {
+			"$and": [
+				{
+					"name": 7
+				},
+				{
+					"name": 8
+				}
+			]
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "b7flDhAJofMR",
+		"operation": {
+			"$and": [
+				{
+					"name": 7
+				},
+				{
+					"name": 8
+				},
+				{
+					"name": 9
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vqRoEKnjixB3",
+		"operation": {
+			"$and": [
+				{
+					"name": "Abundant"
+				}
+			]
+		},
+		"documents": [
+			1
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kMMQJ3oOg9Hb",
+		"operation": {
+			"$and": [
+				{
+					"name": "Abundant"
+				},
+				{
+					"name": "Couple"
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vwi4fsf1lK8V",
+		"operation": {
+			"name": 8,
+			"$and": [
+				{
+					"name": 7
+				}
+			]
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pvkAj3yL7d2d",
+		"operation": {
+			"name": 7,
+			"$and": [
+				{
+					"name": 7
+				}
+			]
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "dBDnTuUWEOvm",
+		"operation": {
+			"name": 8,
+			"$and": [
+				{
+					"$and": [
+						{
+							"name": 7
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oIylHRNswic9",
+		"operation": {
+			"name": 7,
+			"$and": [
+				{
+					"$and": [
+						{
+							"name": 7
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "otYwY4nIN5Dk",
+		"operation": {
+			"$and": [
+				{
+					"name": 8
+				},
+				{
+					"$and": [
+						{
+							"name": 7
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oRKs848BglH2",
+		"operation": {
+			"$and": [
+				{
+					"name": 7
+				},
+				{
+					"$and": [
+						{
+							"name": 7
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cbpcQTTGxOts",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aFfrtP5iRz97",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				},
+				{
+					"name": {}
+				},
+				{
+					"name": {}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lOJvXLEy3AZf",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				},
+				{
+					"name": {}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "b9CQULXWWQF8",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				},
+				{
+					"name": "Abundant"
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aoZMNcZrgyNH",
+		"operation": {
+			"$and": [
+				{
+					"name": {
+						"$gt": 6
+					}
+				}
+			]
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pO9CLUjLkcLl",
+		"operation": {
+			"name": "Abundant",
+			"$where": "Double"
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Double is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rvZhE0tqh7aF",
+		"operation": {
+			"$and": [
+				{
+					"name": "Abundant"
+				}
+			],
+			"$where": "Double"
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Double is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "t33vTPruinYI",
+		"operation": {
+			"$and": [
+				{
+					"$where": "Double"
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Double is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "dM3qe27T5qmX",
+		"operation": {
+			"$and": [
+				{
+					"name": "Abundant"
+				},
+				{
+					"$where": "Double"
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Double is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "lizXhSV8B80r",
+		"operation": {
+			"$and": [
+				{
+					"$where": "Double"
+				}
+			],
+			"$where": "Double"
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Double is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "lVLUMdKq4Q0k",
+		"operation": {
+			"$and": 10
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$and argument must be an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "eHaoCnERN88o",
+		"operation": {
+			"$and": []
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$and argument must be a non-empty array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qD8jLAYDLFco",
+		"operation": {
+			"$and": [
+				10
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$and argument's entries must be objects",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "lVLUMdKq4Q0k",
+		"operation": {
+			"$and": 10
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$and argument must be an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "eHaoCnERN88o",
+		"operation": {
+			"$and": []
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$and argument must be a non-empty array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qD8jLAYDLFco",
+		"operation": {
+			"$and": [
+				10
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$and argument's entries must be objects",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oOz0ewr8TCOK",
+		"operation": {},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wDbGh2L8Mcv2",
+		"operation": {
+			"title": {}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nSKd1V6kDcf2",
+		"operation": {
+			"title": {
+				"$not": {}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$not argument must be a non-empty object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ryAC2INRlV8l",
+		"operation": {
+			"$and": [
+				{
+					"title": {
+						"$not": {}
+					}
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$not argument must be a non-empty object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ugSzsVOsZtFj",
+		"operation": {
+			"$and": [
+				{
+					"title": {}
+				},
+				{
+					"title": {
+						"$not": {}
+					}
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$not argument must be a non-empty object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wMjAV0Lw09IB",
+		"operation": {
+			"$or": [
+				{
+					"title": {}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "o1JSl3qYOoRc",
+		"operation": {
+			"$nor": [
+				{
+					"title": {}
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uPodyAgwyI5x",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": {}
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "w7ufRBIJXAuE",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$not": {}
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$not argument must be a non-empty object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "aUveZQBXiShZ",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": {}
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "hJdfDLNRklkR",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$not": {}
+					}
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$not argument must be a non-empty object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "w6MZcBAs2uci",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$not": {}
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$not argument must be a non-empty object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sOyWSrh0SLTd",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": {}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "h4E9izIe79v4",
+		"operation": {
+			"title": 26,
+			"$where": "Couple"
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sLDdzg5FRX9W",
+		"operation": {
+			"title": 26,
+			"$and": [
+				{
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "l8xszTvs0FWP",
+		"operation": {
+			"$and": [
+				{
+					"title": 26
+				},
+				{
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wmKmOUE8lVjp",
+		"operation": {
+			"$and": [
+				{
+					"title": 26,
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vMku5JqV5hIH",
+		"operation": {
+			"title": 26,
+			"$and": [
+				{
+					"title": 26
+				},
+				{
+					"title": 26,
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "urFhqRhzTST0",
+		"operation": {
+			"title": {
+				"$lt": 28
+			}
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wqPXhC6KC13w",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": 33
+					}
+				},
+				{
+					"score": {
+						"$lt": 27
+					}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sKegwAmCLkmA",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": 33
+					}
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": 30
+							}
+						},
+						{
+							"$or": [
+								{
+									"rank": {
+										"$lt": 30
+									}
+								},
+								{
+									"level": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uEK0q5YA5iWD",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$gt": 30
+							}
+						},
+						{
+							"rank": {
+								"$gt": 27
+							}
+						}
+					]
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": 30
+							}
+						},
+						{
+							"level": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "urFhqRhzTST0",
+		"operation": {
+			"title": {
+				"$lt": 28
+			}
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wqPXhC6KC13w",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": 33
+					}
+				},
+				{
+					"score": {
+						"$lt": 27
+					}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sKegwAmCLkmA",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": 33
+					}
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": 30
+							}
+						},
+						{
+							"$or": [
+								{
+									"rank": {
+										"$lt": 30
+									}
+								},
+								{
+									"level": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uEK0q5YA5iWD",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$gt": 30
+							}
+						},
+						{
+							"rank": {
+								"$gt": 27
+							}
+						}
+					]
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": 30
+							}
+						},
+						{
+							"level": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vIBFliiuMduI",
+		"operation": {
+			"title": {
+				"$gt": 31
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "urFhqRhzTST0",
+		"operation": {
+			"title": {
+				"$lt": 28
+			}
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wqPXhC6KC13w",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": 33
+					}
+				},
+				{
+					"score": {
+						"$lt": 27
+					}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sKegwAmCLkmA",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": 33
+					}
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": 30
+							}
+						},
+						{
+							"$or": [
+								{
+									"rank": {
+										"$lt": 30
+									}
+								},
+								{
+									"level": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uEK0q5YA5iWD",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$gt": 30
+							}
+						},
+						{
+							"rank": {
+								"$gt": 27
+							}
+						}
+					]
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": 30
+							}
+						},
+						{
+							"level": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vIBFliiuMduI",
+		"operation": {
+			"title": {
+				"$gt": 31
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uNgYWywXG7Hl",
+		"operation": {
+			"$or": [
+				{
+					"title": 26
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "mL5RSXsDObpI",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vuGLJITyQT1p",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rOXf0N5G0b5D",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kZBG0Vq00EGE",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nThJFHphKS9s",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ivFSBjPxKJ6y",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uRP5Cyt345Qi",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uB0q4IgRbQd0",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sD2GXYJSMPXf",
+		"operation": {
+			"$nor": [
+				{
+					"title": 27
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lgIIsOzBCZPe",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "peTyzTtVutcr",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": 27
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pya2HdQb5KzR",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": 27
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cQ6W01d2fatA",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": 27
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "dxDXEznt9UPD",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": 27
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "tIKHgt4qJf6i",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": 27
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "d6ArPx6STwQh",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "h1IGM7GQSUGV",
+		"operation": {
+			"title": 26
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uNgYWywXG7Hl",
+		"operation": {
+			"$or": [
+				{
+					"title": 26
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "mL5RSXsDObpI",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vuGLJITyQT1p",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rOXf0N5G0b5D",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kZBG0Vq00EGE",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nThJFHphKS9s",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ivFSBjPxKJ6y",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uRP5Cyt345Qi",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uB0q4IgRbQd0",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sD2GXYJSMPXf",
+		"operation": {
+			"$nor": [
+				{
+					"title": 27
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lgIIsOzBCZPe",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": 26
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "peTyzTtVutcr",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": 27
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pya2HdQb5KzR",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": 27
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cQ6W01d2fatA",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": 27
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "dxDXEznt9UPD",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": 27
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "tIKHgt4qJf6i",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": 27
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "d6ArPx6STwQh",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": 26
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pkhzWC81QXy0",
+		"operation": {
+			"title": {
+				"$ne": 27
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pWG5EFkEfJtd",
+		"operation": {
+			"$and": [
+				{
+					"title": {
+						"$ne": 27
+					}
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "jNuKTsbNzKRd",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$ne": 27
+					}
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qNnJYYnKlY36",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": 27
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nJ7JQMV6B5mZ",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$ne": 27
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vPTJJrBxM6aE",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$ne": 27
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uIPxEC7MpJV8",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": 27
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "jgpavPzrUXPw",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": {
+										"$ne": 27
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ibbj4ATD6LkG",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": 27
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "mMfNCOMBIrWq",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": 27
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ciTQViTFg3ZE",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": {
+										"$ne": 27
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "b2zBBQYTj4pP",
+		"operation": {
+			"$nor": [
+				{
+					"title": {
+						"$ne": 26
+					}
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "tpVMxchliBcm",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": {
+								"$ne": 27
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "s7mQOqyt1kPz",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": {
+								"$ne": 26
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ewTeSFgSR8TM",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": 26
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qWKBwfUssPfJ",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": {
+										"$ne": 26
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cqGTjp5NNmR9",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": 26
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "jWtyBX2aLI3T",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": 26
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qFPUnpqSdk9X",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": {
+										"$ne": 27
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pkhzWC81QXy0",
+		"operation": {
+			"title": {
+				"$ne": 27
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pWG5EFkEfJtd",
+		"operation": {
+			"$and": [
+				{
+					"title": {
+						"$ne": 27
+					}
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "jNuKTsbNzKRd",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$ne": 27
+					}
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qNnJYYnKlY36",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": 27
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nJ7JQMV6B5mZ",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$ne": 27
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vPTJJrBxM6aE",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$ne": 27
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uIPxEC7MpJV8",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": 27
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "jgpavPzrUXPw",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": {
+										"$ne": 27
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ibbj4ATD6LkG",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": 27
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "mMfNCOMBIrWq",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": 27
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ciTQViTFg3ZE",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": {
+										"$ne": 27
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "b2zBBQYTj4pP",
+		"operation": {
+			"$nor": [
+				{
+					"title": {
+						"$ne": 26
+					}
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "tpVMxchliBcm",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": {
+								"$ne": 27
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "s7mQOqyt1kPz",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": {
+								"$ne": 26
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ewTeSFgSR8TM",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": 26
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qWKBwfUssPfJ",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": {
+										"$ne": 26
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cqGTjp5NNmR9",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": 26
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "jWtyBX2aLI3T",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": 26
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qFPUnpqSdk9X",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": {
+										"$ne": 27
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lqWIAvd0F5i6",
+		"operation": {
+			"$and": [
+				{
+					"name": null
+				}
+			]
+		},
+		"documents": [
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "waetvBzM3tm4",
+		"operation": {
+			"$and": [
+				{
+					"name": "value"
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rENNLGXWSalI",
+		"operation": {
+			"$and": [
+				{
+					"name": true
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qMFJNKDrl50Z",
+		"operation": {
+			"$and": [
+				{
+					"name": null
+				},
+				{
+					"name": null
+				}
+			]
+		},
+		"documents": [
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "fPCfRaHiZ0AS",
+		"operation": {
+			"$and": [
+				{
+					"name": "value"
+				},
+				{
+					"name": "value"
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nobVDYwOyiTT",
+		"operation": {
+			"$and": [
+				{
+					"name": true
+				},
+				{
+					"name": true
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "dxYnrbgca2l3",
+		"operation": {
+			"$and": [
+				{
+					"name": null
+				},
+				{
+					"name": null
+				},
+				{
+					"name": null
+				}
+			]
+		},
+		"documents": [
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "fRoXiaAYNDCR",
+		"operation": {
+			"$and": [
+				{
+					"name": "value"
+				},
+				{
+					"name": "value"
+				},
+				{
+					"name": "value"
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "jMnovaBpJTWr",
+		"operation": {
+			"$and": [
+				{
+					"name": true
+				},
+				{
+					"name": true
+				},
+				{
+					"name": true
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "f1wTavMK1fsX",
+		"operation": {
+			"$and": [
+				{
+					"name": 42
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wPwBQZGw0WYK",
+		"operation": {
+			"$and": [
+				{
+					"name": 42
+				},
+				{
+					"name": 42
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "hA0Alow8tmVV",
+		"operation": {
+			"name": null,
+			"$and": [
+				{
+					"name": null
+				}
+			]
+		},
+		"documents": [
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aJELxUIAMRXY",
+		"operation": {
+			"name": "value",
+			"$and": [
+				{
+					"name": "value"
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ne3klKMMfw0K",
+		"operation": {
+			"name": true,
+			"$and": [
+				{
+					"name": true
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "bIxc8F8iAKKj",
+		"operation": {
+			"name": null,
+			"$and": [
+				{
+					"$and": [
+						{
+							"name": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sEZIKRRBFtcz",
+		"operation": {
+			"name": "value",
+			"$and": [
+				{
+					"$and": [
+						{
+							"name": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vuZUS0q8EmgW",
+		"operation": {
+			"name": true,
+			"$and": [
+				{
+					"$and": [
+						{
+							"name": true
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "flVjUgAtO1ER",
+		"operation": {
+			"$and": [
+				{
+					"name": null
+				},
+				{
+					"$and": [
+						{
+							"name": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nRHFKM3enBn7",
+		"operation": {
+			"$and": [
+				{
+					"name": "value"
+				},
+				{
+					"$and": [
+						{
+							"name": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "tFMd6JDSLXkR",
+		"operation": {
+			"$and": [
+				{
+					"name": true
+				},
+				{
+					"$and": [
+						{
+							"name": true
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aQYmtMB4zEsh",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				},
+				{
+					"name": null
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "iOUIPyvP45lg",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				},
+				{
+					"name": 42
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pD5UxOiKi6xI",
+		"operation": {
+			"$and": [
+				{
+					"name": {}
+				},
+				{
+					"name": true
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "a3VKEDLODB3n",
+		"operation": {
+			"$and": [
+				{
+					"name": {
+						"$gt": null
+					}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wxiRnJfFKr3P",
+		"operation": {
+			"$and": [
+				{
+					"name": {
+						"$gt": "value"
+					}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vOBAaQCHvPmR",
+		"operation": {
+			"$and": [
+				{
+					"name": {
+						"$gt": true
+					}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nd57GRFjx1jw",
+		"operation": {
+			"name": null,
+			"$where": null
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uAkoYfuMYB7l",
+		"operation": {
+			"name": 42,
+			"$where": 42
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "cCEWIf66LaFu",
+		"operation": {
+			"name": true,
+			"$where": true
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rviTPN6DtSQ1",
+		"operation": {
+			"$and": [
+				{
+					"name": null
+				}
+			],
+			"$where": null
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nyyqiG8nSTWr",
+		"operation": {
+			"$and": [
+				{
+					"name": 42
+				}
+			],
+			"$where": 42
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "kL3X5VzxfdYZ",
+		"operation": {
+			"$and": [
+				{
+					"name": true
+				}
+			],
+			"$where": true
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qwz5POpyEDRG",
+		"operation": {
+			"$and": [
+				{
+					"$where": null
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "buCBYIrpHIpA",
+		"operation": {
+			"$and": [
+				{
+					"$where": 42
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "lBGNdkUEPd82",
+		"operation": {
+			"$and": [
+				{
+					"$where": true
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "eLRFFy7SF56U",
+		"operation": {
+			"$and": [
+				{
+					"name": null
+				},
+				{
+					"$where": null
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bqKFBqaBrvho",
+		"operation": {
+			"$and": [
+				{
+					"name": 42
+				},
+				{
+					"$where": 42
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tPCGkcbAxkkt",
+		"operation": {
+			"$and": [
+				{
+					"name": true
+				},
+				{
+					"$where": true
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "aS2CCTWBWvdL",
+		"operation": {
+			"$and": [
+				{
+					"$where": null
+				}
+			],
+			"$where": null
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oEFRQtRN7g8o",
+		"operation": {
+			"$and": [
+				{
+					"$where": 42
+				}
+			],
+			"$where": 42
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "o8PGMvER45au",
+		"operation": {
+			"$and": [
+				{
+					"$where": true
+				}
+			],
+			"$where": true
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vNKuJUMn27Fv",
+		"operation": {
+			"$and": null
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$and argument must be an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oRC7MvMSoTbJ",
+		"operation": {
+			"$and": "value"
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$and argument must be an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "utUmEKyCw8OC",
+		"operation": {
+			"$and": true
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$and argument must be an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "srAK3wPMEvxs",
+		"operation": {
+			"$and": [
+				null
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$and argument's entries must be objects",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pxE1gcXkXFBW",
+		"operation": {
+			"$and": [
+				"value"
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$and argument's entries must be objects",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "a76SyesdHUVA",
+		"operation": {
+			"$and": [
+				true
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$and argument's entries must be objects",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qy17KbDLTN2v",
+		"operation": {
+			"title": null,
+			"$where": "Couple"
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "al7CKJjkRS5x",
+		"operation": {
+			"title": "value",
+			"$where": "Couple"
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "n9rUs1odyXTH",
+		"operation": {
+			"title": true,
+			"$where": "Couple"
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "atX4KwMB5V3J",
+		"operation": {
+			"title": 26,
+			"$where": null
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "puGEr50QkSDN",
+		"operation": {
+			"title": 26,
+			"$where": 42
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "hI95WLqQKiFf",
+		"operation": {
+			"title": 26,
+			"$where": true
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ap8H2KhANWku",
+		"operation": {
+			"title": null,
+			"$and": [
+				{
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ti7HjYGdB3m7",
+		"operation": {
+			"title": "value",
+			"$and": [
+				{
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "bp00KT7v2Rcj",
+		"operation": {
+			"title": true,
+			"$and": [
+				{
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sOF2hz0uWif8",
+		"operation": {
+			"title": 26,
+			"$and": [
+				{
+					"$where": null
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pJgBpSEDdDVG",
+		"operation": {
+			"title": 26,
+			"$and": [
+				{
+					"$where": 42
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "gI1rNtwGMB2F",
+		"operation": {
+			"title": 26,
+			"$and": [
+				{
+					"$where": true
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sTrhVhqXKPZz",
+		"operation": {
+			"$and": [
+				{
+					"title": null
+				},
+				{
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "iYxwxQQz41Wu",
+		"operation": {
+			"$and": [
+				{
+					"title": "value"
+				},
+				{
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "jwTCDoLFeG57",
+		"operation": {
+			"$and": [
+				{
+					"title": true
+				},
+				{
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "bOzp0yoEWavw",
+		"operation": {
+			"$and": [
+				{
+					"title": 26
+				},
+				{
+					"$where": null
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vP8OfXyIID8z",
+		"operation": {
+			"$and": [
+				{
+					"title": 26
+				},
+				{
+					"$where": 42
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "eH7ydyXathIi",
+		"operation": {
+			"$and": [
+				{
+					"title": 26
+				},
+				{
+					"$where": true
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "s3TSsMDYJW8g",
+		"operation": {
+			"$and": [
+				{
+					"title": null,
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nRYDFMpGHOR5",
+		"operation": {
+			"$and": [
+				{
+					"title": "value",
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qMISQIHwtVrL",
+		"operation": {
+			"$and": [
+				{
+					"title": true,
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "iIphLFoZAJX6",
+		"operation": {
+			"$and": [
+				{
+					"title": 26,
+					"$where": null
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "krH4OBdahDIj",
+		"operation": {
+			"$and": [
+				{
+					"title": 26,
+					"$where": 42
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tGM7Wa2vL4YP",
+		"operation": {
+			"$and": [
+				{
+					"title": 26,
+					"$where": true
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "kvx5GxSzgRDe",
+		"operation": {
+			"title": null,
+			"$and": [
+				{
+					"title": null
+				},
+				{
+					"title": null,
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: ReferenceError: Couple is not defined :\n@:1:15\n",
+			"code": 139,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "j6WNQA1JaSNv",
+		"operation": {
+			"title": "value",
+			"$and": [
+				{
+					"title": "value"
+				},
+				{
+					"title": "value",
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "tcy6rpzQ7P0S",
+		"operation": {
+			"title": true,
+			"$and": [
+				{
+					"title": true
+				},
+				{
+					"title": true,
+					"$where": "Couple"
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "weCOvYUvZ6bG",
+		"operation": {
+			"title": 26,
+			"$and": [
+				{
+					"title": 26
+				},
+				{
+					"title": 26,
+					"$where": null
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "epAIx9k6SB4X",
+		"operation": {
+			"title": 26,
+			"$and": [
+				{
+					"title": 26
+				},
+				{
+					"title": 26,
+					"$where": 42
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tT8TJOHnUMZ1",
+		"operation": {
+			"title": 26,
+			"$and": [
+				{
+					"title": 26
+				},
+				{
+					"title": 26,
+					"$where": true
+				}
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$where got bad type",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bAAsGLvGUZn2",
+		"operation": {
+			"title": {
+				"$lt": null
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "hM4nSIsytL1G",
+		"operation": {
+			"title": {
+				"$lt": "value"
+			}
+		},
+		"documents": [
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ssNxJPADP80l",
+		"operation": {
+			"title": {
+				"$lt": true
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oKVnuQkLqtU1",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": null
+					}
+				},
+				{
+					"score": {
+						"$lt": null
+					}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cf6EdH7C6Xbq",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": "value"
+					}
+				},
+				{
+					"score": {
+						"$lt": "value"
+					}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lAYoalV4UJaU",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": true
+					}
+				},
+				{
+					"score": {
+						"$lt": true
+					}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "mP8VFb3lLShI",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": null
+					}
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": null
+							}
+						},
+						{
+							"$or": [
+								{
+									"rank": {
+										"$lt": null
+									}
+								},
+								{
+									"level": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "l5YYZLUKKLr3",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": "value"
+					}
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": "value"
+							}
+						},
+						{
+							"$or": [
+								{
+									"rank": {
+										"$lt": "value"
+									}
+								},
+								{
+									"level": "value"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "iEScwGMG9BcY",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$gt": true
+					}
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": true
+							}
+						},
+						{
+							"$or": [
+								{
+									"rank": {
+										"$lt": true
+									}
+								},
+								{
+									"level": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wTnVkzNAH65e",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$gt": null
+							}
+						},
+						{
+							"rank": {
+								"$gt": null
+							}
+						}
+					]
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": null
+							}
+						},
+						{
+							"level": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ahIX0STNSogy",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$gt": "value"
+							}
+						},
+						{
+							"rank": {
+								"$gt": "value"
+							}
+						}
+					]
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": "value"
+							}
+						},
+						{
+							"level": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wMpRcdAgialX",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$gt": true
+							}
+						},
+						{
+							"rank": {
+								"$gt": true
+							}
+						}
+					]
+				},
+				{
+					"$and": [
+						{
+							"score": {
+								"$lt": true
+							}
+						},
+						{
+							"level": true
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "s6DvitMDNf3j",
+		"operation": {
+			"title": {
+				"$gt": null
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qUlCQN4ec0WH",
+		"operation": {
+			"title": {
+				"$gt": "value"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ptQ4OaJ4RUeU",
+		"operation": {
+			"title": {
+				"$gt": true
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "r3z1X3OT4TOU",
+		"operation": {
+			"$or": [
+				{
+					"title": null
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kUu1ke0ffTPT",
+		"operation": {
+			"$or": [
+				{
+					"title": "value"
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nsNeCGZCYDaS",
+		"operation": {
+			"$or": [
+				{
+					"title": true
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oLi9uU0MG13R",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "gW3dFcwtY1s7",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wqEY7tlgT0XW",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": true
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kjAWtZQ0lyq8",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oy1aSupNo4fL",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "trJuiOhJiftB",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": true
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ghnHBNKMnxqe",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qsbZ0De4Kabr",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cFGx24QoOVLf",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": true
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "dWdCR8tI4fYN",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "atQc05yPaCXe",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "b7CaWNFnUPso",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": true
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "t2DO32sfCW8M",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "iwGOyXKFoaQZ",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": "value"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wohMk6LoT10O",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "eP5hDTPOQOIi",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lOT7a1RSWbkS",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": "value"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "eVrxtCLBPfNM",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "l6ZoNsWbIxj5",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "w0hyKFHOmo8w",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": "value"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kT3yHNKqa0Y0",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "obNxz1YJ5VdK",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "l7TqDEMmJYFT",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": "value"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cl6LOLZYdEU0",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "bYTZWwGGESk4",
+		"operation": {
+			"$nor": [
+				{
+					"title": null
+				}
+			]
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aS3uegTvL8Fm",
+		"operation": {
+			"$nor": [
+				{
+					"title": "value"
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qYXCJ9t7XHE5",
+		"operation": {
+			"$nor": [
+				{
+					"title": true
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "mR0AcWo1O6dP",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lrnKGHbmKXHA",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "foqsDLwIsITx",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": true
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uOsKPsEP7FC1",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "fVI6zsmfgv0J",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vMNsTIAM9umQ",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": true
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kkfsKIxpU2GM",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": null
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "b6solOQPDe8h",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": "value"
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rg2C3BRKy9fV",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": true
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qPLKIOzwcQ0K",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wqY8TQgK1mNl",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": "value"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "teuxwErcT1yk",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "eoV5AU9PsIEg",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uueSXma84P73",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": "value"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qQJZfh34dGJB",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uG0LIMkxkbIS",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wRRL3CvAbZWc",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": "value"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "a4FgVxBTQNag",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cMEwIItRXLQN",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vG5GGc8u6GpZ",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": "value"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uNkbkJSCuNoo",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": true
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qHPCvKg41n4Y",
+		"operation": {
+			"title": null
+		},
+		"documents": [
+			0,
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vZibMJVClQeK",
+		"operation": {
+			"title": "value"
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "c6THdYUrGeAg",
+		"operation": {
+			"title": true
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nEpz5AEWV6hU",
+		"operation": {
+			"title": {
+				"$ne": null
+			}
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "q0Zy3DmnL3v2",
+		"operation": {
+			"title": {
+				"$ne": "value"
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "hOetPOPKDcX9",
+		"operation": {
+			"title": {
+				"$ne": true
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "fOoTK54SUCHH",
+		"operation": {
+			"$and": [
+				{
+					"title": {
+						"$ne": null
+					}
+				}
+			]
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "hgbZZ2Z0FKYt",
+		"operation": {
+			"$and": [
+				{
+					"title": {
+						"$ne": "value"
+					}
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "gOzBD3WbZmg0",
+		"operation": {
+			"$and": [
+				{
+					"title": {
+						"$ne": true
+					}
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "u4XfzRzQLUQr",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$ne": null
+					}
+				}
+			]
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "u2iqFZRpc20L",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$ne": "value"
+					}
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "b2SEAdixskNj",
+		"operation": {
+			"$or": [
+				{
+					"title": {
+						"$ne": true
+					}
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "inHc3A7LvApU",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": null
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kHO4XOrqjGvo",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": "value"
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "gK0LWagVhaHy",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": true
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "p80On1hqi2ls",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$ne": null
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "o1xqIXnEnnNX",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$ne": "value"
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sNiCRHqi6Xzp",
+		"operation": {
+			"$or": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$ne": true
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "q0PyJkUWVqXn",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$ne": null
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lIzIQ5VN5W6r",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$ne": "value"
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "h7LhXUtSLipq",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"title": {
+								"$ne": true
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wdV732DUZCWi",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": null
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "bzo6B5FHroSk",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": "value"
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wHCsYU0D4Por",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": true
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aOwBkTw5We4w",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": {
+										"$ne": null
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "bSEsZcvzA01n",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": {
+										"$ne": "value"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "tvwEVCVGTcMv",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": {
+										"$ne": true
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "r46IDtVhHBM3",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": null
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "jlLQIeryRIDI",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": "value"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "fPBKODiumbkT",
+		"operation": {
+			"$and": [
+				{
+					"$or": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": true
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "jq5rXpt9YbNx",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": null
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "omIeHb6wMGTT",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": "value"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uUr6VHyuqvOG",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": true
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wA05PCJ269FF",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": {
+										"$ne": null
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lmisFzPFs8sy",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": {
+										"$ne": "value"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uI78JRux6eJt",
+		"operation": {
+			"$or": [
+				{
+					"$and": [
+						{
+							"$or": [
+								{
+									"title": {
+										"$ne": true
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rsFUQGK9RLf6",
+		"operation": {
+			"$nor": [
+				{
+					"title": {
+						"$ne": null
+					}
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rI3LrOiUy9Zr",
+		"operation": {
+			"$nor": [
+				{
+					"title": {
+						"$ne": "value"
+					}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nFgSAgWBzOyQ",
+		"operation": {
+			"$nor": [
+				{
+					"title": {
+						"$ne": true
+					}
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ub8nAIQAGdJS",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": {
+								"$ne": null
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "hG5HAebtkopH",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": {
+								"$ne": "value"
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "bQjLJJQFYkGo",
+		"operation": {
+			"$nor": [
+				{
+					"$nor": [
+						{
+							"title": {
+								"$ne": true
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sIenIuCGp4KR",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": {
+								"$ne": null
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "u2rSirsVScPc",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": {
+								"$ne": "value"
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cXiyXwhmwe6j",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"title": {
+								"$ne": true
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "mPu9VNOx1XR4",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": null
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cz2QfHGKTTwG",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": "value"
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "e2Yl2KlGA53r",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"title": {
+								"$ne": true
+							}
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "iACvXfuc0ODG",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": {
+										"$ne": null
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "gK6GxIyuITSV",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": {
+										"$ne": "value"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wzLztBrJMfEF",
+		"operation": {
+			"$and": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": {
+										"$ne": true
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oWHIHc4zgWIx",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": null
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sH56JpnxtMSR",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": "value"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "o52PWNJtVZFc",
+		"operation": {
+			"$and": [
+				{
+					"$nor": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": true
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pZpT1M8R8Snd",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": null
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "gWuJUyLnrJVr",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": "value"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oLzhskktAmsk",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$and": [
+								{
+									"title": {
+										"$ne": true
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "dK6OBGy3LX1Q",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": {
+										"$ne": null
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "b9Hy8ntyE1mu",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": {
+										"$ne": "value"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nM2yzPRPFpWb",
+		"operation": {
+			"$nor": [
+				{
+					"$and": [
+						{
+							"$nor": [
+								{
+									"title": {
+										"$ne": true
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"error": "@Undefined/und"
+	}
+]
