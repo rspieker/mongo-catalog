@@ -464,6 +464,7 @@
 						8,
 						11
 					],
+					"error": "@Undefined/und",
 					"versions": "2.6.12..9.0.2"
 				}
 			]
@@ -498,6 +499,7 @@
 						4,
 						18
 					],
+					"error": "@Undefined/und",
 					"versions": "2.6.12..9.0.2"
 				}
 			]
@@ -535,6 +537,7 @@
 						2,
 						17
 					],
+					"error": "@Undefined/und",
 					"versions": "2.6.12..9.0.2"
 				}
 			]
@@ -576,6 +579,7 @@
 						2,
 						3
 					],
+					"error": "@Undefined/und",
 					"versions": "2.6.12..9.0.2"
 				}
 			]
@@ -617,6 +621,7 @@
 						12,
 						19
 					],
+					"error": "@Undefined/und",
 					"versions": "2.6.12..9.0.2"
 				}
 			]
@@ -651,6 +656,7 @@
 						17,
 						19
 					],
+					"error": "@Undefined/und",
 					"versions": "2.6.12..9.0.2"
 				}
 			]
@@ -694,6 +700,7 @@
 						19,
 						20
 					],
+					"error": "@Undefined/und",
 					"versions": "2.6.12..9.0.2"
 				}
 			]
@@ -735,6 +742,7 @@
 						18,
 						19
 					],
+					"error": "@Undefined/und",
 					"versions": "2.6.12..9.0.2"
 				}
 			]
@@ -783,6 +791,7 @@
 						18,
 						20
 					],
+					"error": "@Undefined/und",
 					"versions": "2.6.12..9.0.2"
 				}
 			]
@@ -1141,7 +1150,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$and/$or/$nor must be a nonempty array",
+						"message": "$and argument must be a non-empty array",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1196,7 +1205,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$and/$or/$nor must be a nonempty array",
+						"message": "$or argument must be a non-empty array",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1249,6 +1258,7 @@
 						19,
 						20
 					],
+					"error": "@Undefined/und",
 					"versions": "2.6.12..9.0.2"
 				}
 			]
@@ -1290,6 +1300,7 @@
 						19,
 						20
 					],
+					"error": "@Undefined/und",
 					"versions": "2.6.12..9.0.2"
 				}
 			]
@@ -1318,6 +1329,7 @@
 			"results": [
 				{
 					"documents": [],
+					"error": "@Undefined/und",
 					"versions": "2.6.12..9.0.2"
 				}
 			]
@@ -1346,6 +1358,7 @@
 			"results": [
 				{
 					"documents": [],
+					"error": "@Undefined/und",
 					"versions": "2.6.12..9.0.2"
 				}
 			]
@@ -1464,7 +1477,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$and must be an array",
+						"message": "$and argument must be an array",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -1527,7 +1540,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$or must be an array",
+						"message": "$or argument must be an array",
 						"code": 2,
 						"type": "MongoServerError"
 					},

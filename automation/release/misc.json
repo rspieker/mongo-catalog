@@ -305,7 +305,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$not needs a regex or a document",
+						"message": "$not argument must be a regex or an object",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -330,7 +330,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$not needs a regex or a document",
+						"message": "$not argument must be a regex or an object",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -355,7 +355,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$not needs a regex or a document",
+						"message": "$not argument must be a regex or an object",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -380,7 +380,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$nor must be an array",
+						"message": "$nor argument must be an array",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -405,7 +405,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$or/$and/$nor entries need to be full objects",
+						"message": "$nor argument's entries must be objects",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -438,7 +438,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "Executor error during find command :: caused by :: can't $divide by zero",
+						"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: can't $divide by zero",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -471,7 +471,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "Executor error during find command :: caused by :: $divide only supports numeric types, not string and int",
+						"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $divide only supports numeric types, not string and int",
 						"code": 14,
 						"type": "MongoServerError"
 					},
@@ -504,7 +504,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "Executor error during find command :: caused by :: $divide only supports numeric types, not string and double",
+						"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $divide only supports numeric types, not string and double",
 						"code": 14,
 						"type": "MongoServerError"
 					},
@@ -537,7 +537,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "Executor error during find command :: caused by :: $divide only supports numeric types, not bool and int",
+						"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $divide only supports numeric types, not bool and int",
 						"code": 14,
 						"type": "MongoServerError"
 					},
@@ -570,7 +570,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "Executor error during find command :: caused by :: $divide only supports numeric types, not bool and double",
+						"message": "Executor error during find command: MongoCatalog.CatalogCollection :: caused by :: $divide only supports numeric types, not bool and double",
 						"code": 14,
 						"type": "MongoServerError"
 					},
@@ -1369,7 +1369,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "$not needs a regex or a document",
+						"message": "$not argument must be a regex or an object",
 						"code": 2,
 						"type": "MongoServerError"
 					},
