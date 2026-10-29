@@ -2117,7 +2117,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error enumerating plans for query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=legacyPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -2196,7 +2196,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "error enumerating plans for query: ns=MongoCatalog.CatalogCollectionTree: GEONEAR  field=legacyPoint maxdist=1.79769e+308 isNearSphere=0\nSort: {}\nProj: {}\n planner returned error :: caused by :: unable to find index for $geoNear query",
+						"message": "unable to find index for $geoNear query",
 						"code": 291,
 						"type": "MongoServerError"
 					},
@@ -3463,7 +3463,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "unknown GeoJSON type (type field missing or not a string)",
+						"message": "unknown GeoJSON type: {}",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -3490,7 +3490,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "unknown GeoJSON type (type field missing or not a string)",
+						"message": "unknown GeoJSON type: {}",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -3686,7 +3686,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "unknown GeoJSON type 'Invalid'",
+						"message": "unknown GeoJSON type: { type: \"Invalid\", coordinates: [] }",
 						"code": 2,
 						"type": "MongoServerError"
 					},
@@ -3716,7 +3716,7 @@
 				{
 					"documents": "@Undefined/und",
 					"error": {
-						"message": "unknown GeoJSON type 'Invalid'",
+						"message": "unknown GeoJSON type: { type: \"Invalid\", coordinates: [] }",
 						"code": 2,
 						"type": "MongoServerError"
 					},
