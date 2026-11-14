@@ -1,0 +1,2295 @@
+[
+	{
+		"id": "fHOnObjVJg3L",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									15.9,
+									52
+								],
+								[
+									15.9,
+									62
+								],
+								[
+									5.9,
+									62
+								],
+								[
+									5.9,
+									52
+								]
+							],
+							[
+								[
+									8.9,
+									55
+								],
+								[
+									12.9,
+									55
+								],
+								[
+									12.9,
+									59
+								],
+								[
+									8.9,
+									59
+								],
+								[
+									8.9,
+									55
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			6,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "kBbSsplQwSdZ",
+		"operation": {
+			"point": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									15.9,
+									52
+								],
+								[
+									15.9,
+									62
+								],
+								[
+									5.9,
+									62
+								],
+								[
+									5.9,
+									52
+								]
+							],
+							[
+								[
+									8.9,
+									55
+								],
+								[
+									12.9,
+									55
+								],
+								[
+									12.9,
+									59
+								],
+								[
+									8.9,
+									59
+								],
+								[
+									8.9,
+									55
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			6,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "o6nZVJbuC8pG",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "MultiPolygon",
+						"coordinates": [
+							[
+								[
+									[
+										5.9,
+										52
+									],
+									[
+										7.9,
+										52
+									],
+									[
+										7.9,
+										54
+									],
+									[
+										5.9,
+										54
+									],
+									[
+										5.9,
+										52
+									]
+								]
+							],
+							[
+								[
+									[
+										15.899999999999999,
+										62
+									],
+									[
+										17.9,
+										62
+									],
+									[
+										17.9,
+										64
+									],
+									[
+										15.899999999999999,
+										64
+									],
+									[
+										15.899999999999999,
+										62
+									]
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			4,
+			1,
+			6,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rlzEjpwwcTcn",
+		"operation": {
+			"point": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "MultiPolygon",
+						"coordinates": [
+							[
+								[
+									[
+										5.9,
+										52
+									],
+									[
+										7.9,
+										52
+									],
+									[
+										7.9,
+										54
+									],
+									[
+										5.9,
+										54
+									],
+									[
+										5.9,
+										52
+									]
+								]
+							],
+							[
+								[
+									[
+										15.899999999999999,
+										62
+									],
+									[
+										17.9,
+										62
+									],
+									[
+										17.9,
+										64
+									],
+									[
+										15.899999999999999,
+										64
+									],
+									[
+										15.899999999999999,
+										62
+									]
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			4,
+			1,
+			6,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ncIMLGd77Nrw",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "MultiPolygon",
+						"coordinates": [
+							[
+								[
+									[
+										-170,
+										0
+									],
+									[
+										-160,
+										0
+									],
+									[
+										-150,
+										0
+									],
+									[
+										-170,
+										80
+									],
+									[
+										-170,
+										0
+									]
+								]
+							],
+							[
+								[
+									[
+										5.9,
+										52
+									],
+									[
+										7.9,
+										52
+									],
+									[
+										7.9,
+										54
+									],
+									[
+										5.9,
+										54
+									],
+									[
+										5.9,
+										52
+									]
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			6,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "hKpWWkCIfZTt",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Loop must have at least 3 different vertices, 0 unique vertices were provided: [ [ 5.9, 52 ] ]",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wJaBi0WBVnE9",
+		"operation": {
+			"point": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Loop must have at least 3 different vertices, 0 unique vertices were provided: [ [ 5.9, 52 ] ]",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "eYM0AJyugeS3",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$polygon": [
+						[
+							5.9,
+							52
+						]
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Polygon must have at least 3 points, instead got 1 vertices",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "jK7FlYSLF9WS",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									6.9,
+									52
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Loop is not closed, first vertex does not equal last vertex: [ [ 5.9, 52 ], [ 6.9, 52 ] ]",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "fYEmAlv8NTaY",
+		"operation": {
+			"point": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									6.9,
+									52
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Loop is not closed, first vertex does not equal last vertex: [ [ 5.9, 52 ], [ 6.9, 52 ] ]",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "q6QINLPHElG9",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$polygon": [
+						[
+							5.9,
+							52
+						],
+						[
+							6.9,
+							52
+						]
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Polygon must have at least 3 points, instead got 2 vertices",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "dUy6oXCEVLdC",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									6.9,
+									52
+								],
+								[
+									6.9,
+									53
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Loop is not closed, first vertex does not equal last vertex: [ [ 5.9, 52 ], [ 6.9, 52 ], [ 6.9, 53 ] ]",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "glQbTMllQUxz",
+		"operation": {
+			"point": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									6.9,
+									52
+								],
+								[
+									6.9,
+									53
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Loop is not closed, first vertex does not equal last vertex: [ [ 5.9, 52 ], [ 6.9, 52 ], [ 6.9, 53 ] ]",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wqeV19aVmYbd",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$polygon": [
+						[
+							5.9,
+							52
+						],
+						[
+							6.9,
+							52
+						],
+						[
+							6.9,
+							53
+						]
+					]
+				}
+			}
+		},
+		"documents": [
+			0,
+			1
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "tGRAsc5jV0e9",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									6.9,
+									52
+								],
+								[
+									6.9,
+									53
+								],
+								[
+									5.9,
+									53
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Loop is not closed, first vertex does not equal last vertex: [ [ 5.9, 52 ], [ 6.9, 52 ], [ 6.9, 53 ], [ 5.9, 53 ] ]",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "lVArX6XjmRPZ",
+		"operation": {
+			"point": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									6.9,
+									52
+								],
+								[
+									6.9,
+									53
+								],
+								[
+									5.9,
+									53
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Loop is not closed, first vertex does not equal last vertex: [ [ 5.9, 52 ], [ 6.9, 52 ], [ 6.9, 53 ], [ 5.9, 53 ] ]",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "clNYrWPbNRWC",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$polygon": [
+						[
+							5.9,
+							52
+						],
+						[
+							6.9,
+							52
+						],
+						[
+							6.9,
+							53
+						],
+						[
+							5.9,
+							53
+						]
+					]
+				}
+			}
+		},
+		"documents": [
+			0,
+			6,
+			1
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ptzc71KixdXT",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									5.9,
+									52
+								],
+								[
+									6.9,
+									52
+								],
+								[
+									6.9,
+									53
+								],
+								[
+									5.9,
+									52
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			6,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oJY8IdB26VLU",
+		"operation": {
+			"point": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									5.9,
+									52
+								],
+								[
+									6.9,
+									52
+								],
+								[
+									6.9,
+									53
+								],
+								[
+									5.9,
+									52
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			6,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uyWPoH8qV10L",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$polygon": [
+						[
+							5.9,
+							52
+						],
+						[
+							5.9,
+							52
+						],
+						[
+							6.9,
+							52
+						],
+						[
+							6.9,
+							53
+						],
+						[
+							5.9,
+							52
+						]
+					]
+				}
+			}
+		},
+		"documents": [
+			0,
+			1
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ptRICWamLnff",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									4.9,
+									51
+								],
+								[
+									6.9,
+									51
+								],
+								[
+									6.9,
+									53
+								],
+								[
+									4.9,
+									53
+								],
+								[
+									4.9,
+									51
+								]
+							]
+						],
+						"crs": "not-a-real-crs"
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "GeoJSON CRS must be an object, instead got type string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tTg7IvE25YGJ",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									4.9,
+									51
+								],
+								[
+									6.9,
+									51
+								],
+								[
+									6.9,
+									53
+								],
+								[
+									4.9,
+									53
+								],
+								[
+									4.9,
+									51
+								]
+							]
+						],
+						"crs": {
+							"type": "name",
+							"properties": {
+								"name": "not-a-real-crs"
+							}
+						}
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Unknown CRS name: not-a-real-crs",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "fNEQEQOPEDZh",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									4.9,
+									51
+								],
+								[
+									6.9,
+									51
+								],
+								[
+									6.9,
+									53
+								],
+								[
+									4.9,
+									53
+								],
+								[
+									4.9,
+									51
+								]
+							]
+						],
+						"extra": "nope"
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			6,
+			7,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "bWUxQmYUsP2j",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$box": []
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Point must be an array or object, instead got type missing",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wm8C84stPZUP",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$box": [
+						[
+							5.9,
+							52
+						]
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Point must be an array or object, instead got type missing",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vNLWMWlH26qD",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$box": [
+						[
+							5.9,
+							52
+						],
+						[
+							6.9,
+							53
+						],
+						[
+							7.9,
+							54
+						]
+					]
+				}
+			}
+		},
+		"documents": [
+			0,
+			6,
+			1
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lWQYSlLDoNam",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$box": [
+						[
+							5.9
+						],
+						[
+							6.9,
+							53
+						]
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Point must only contain numeric elements, instead got type missing",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vYHrZHxz1OJj",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$box": [
+						[
+							5.9,
+							"not-a-number"
+						],
+						[
+							6.9,
+							53
+						]
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Point must only contain numeric elements, instead got type string",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oCoZoOfFeKTJ",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$box": [
+						[
+							5.9,
+							52
+						],
+						[
+							5.9,
+							52
+						]
+					]
+				}
+			}
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "cqD7Xs2CDKxI",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$box": [
+						[
+							6.9,
+							52
+						],
+						[
+							5.9,
+							53
+						]
+					]
+				}
+			}
+		},
+		"documents": [
+			0,
+			6,
+			1
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oJWCcHE8fbjr",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$box": [
+						[
+							5.9,
+							53
+						],
+						[
+							6.9,
+							52
+						]
+					]
+				}
+			}
+		},
+		"documents": [
+			0,
+			6,
+			1
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uxWgL0pI8hTL",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$box": [
+						[
+							6.9,
+							53
+						],
+						[
+							5.9,
+							52
+						]
+					]
+				}
+			}
+		},
+		"documents": [
+			0,
+			6,
+			1
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "oQOiNzoOORVQ",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$center": [
+						[
+							5.9,
+							52
+						],
+						"1000"
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Radius must be a non-negative number: \"1000\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "o2ZCxGIpheWa",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$centerSphere": [
+						[
+							5.9,
+							52
+						],
+						"0.01"
+					]
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Radius must be a non-negative number: \"0.01\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "ryRHissR8ZRW",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$box": [
+						[
+							5.9,
+							52
+						],
+						[
+							15.9,
+							62
+						]
+					]
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			6
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "tdRL9aQMj4TQ",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$polygon": [
+						[
+							5.9,
+							52
+						],
+						[
+							15.9,
+							52
+						],
+						[
+							15.9,
+							62
+						],
+						[
+							5.9,
+							62
+						],
+						[
+							5.9,
+							52
+						]
+					]
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			6
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sGqUxjz5wnMZ",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$center": [
+						[
+							10.9,
+							57
+						],
+						10
+					]
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			4,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "jzsJ1SKPixSB",
+		"operation": {
+			"point": {
+				"$geoWithin": {
+					"$centerSphere": [
+						[
+							10.9,
+							57
+						],
+						0.5
+					]
+				}
+			}
+		},
+		"documents": [
+			3,
+			5,
+			2,
+			4,
+			1,
+			6,
+			7,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vxYO6uT1TXQm",
+		"operation": {
+			"legacyPoint": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									15.9,
+									52
+								],
+								[
+									15.9,
+									62
+								],
+								[
+									5.9,
+									62
+								],
+								[
+									5.9,
+									52
+								]
+							],
+							[
+								[
+									8.9,
+									55
+								],
+								[
+									12.9,
+									55
+								],
+								[
+									12.9,
+									59
+								],
+								[
+									8.9,
+									59
+								],
+								[
+									8.9,
+									55
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			6
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "aA2IJzNZI0Im",
+		"operation": {
+			"legacyPoint": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									15.9,
+									52
+								],
+								[
+									15.9,
+									62
+								],
+								[
+									5.9,
+									62
+								],
+								[
+									5.9,
+									52
+								]
+							],
+							[
+								[
+									8.9,
+									55
+								],
+								[
+									12.9,
+									55
+								],
+								[
+									12.9,
+									59
+								],
+								[
+									8.9,
+									59
+								],
+								[
+									8.9,
+									55
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			6
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pEsyTWg1RWAU",
+		"operation": {
+			"unindexedPoint": {
+				"$geoWithin": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									15.9,
+									52
+								],
+								[
+									15.9,
+									62
+								],
+								[
+									5.9,
+									62
+								],
+								[
+									5.9,
+									52
+								]
+							],
+							[
+								[
+									8.9,
+									55
+								],
+								[
+									12.9,
+									55
+								],
+								[
+									12.9,
+									59
+								],
+								[
+									8.9,
+									59
+								],
+								[
+									8.9,
+									55
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			6
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "mM2rXoUnyVVZ",
+		"operation": {
+			"unindexedPoint": {
+				"$geoWithin": {
+					"$box": [
+						[
+							5.9,
+							52
+						],
+						[
+							15.9,
+							62
+						]
+					]
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			2,
+			6
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "wxAEXoKQxYci",
+		"operation": {
+			"unindexedPoint": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									15.9,
+									52
+								],
+								[
+									15.9,
+									62
+								],
+								[
+									5.9,
+									62
+								],
+								[
+									5.9,
+									52
+								]
+							],
+							[
+								[
+									8.9,
+									55
+								],
+								[
+									12.9,
+									55
+								],
+								[
+									12.9,
+									59
+								],
+								[
+									8.9,
+									59
+								],
+								[
+									8.9,
+									55
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			1,
+			6
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sNqoxs5JdS4n",
+		"operation": {
+			"point": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "uMw3XYu2GLX1",
+		"operation": {
+			"point": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "MultiPoint",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								6.9,
+								53
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qv5XRpXJ6dgQ",
+		"operation": {
+			"point": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "LineString",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								6.9,
+								53
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "vJzWV7KZoEid",
+		"operation": {
+			"point": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "MultiLineString",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									6.9,
+									53
+								]
+							],
+							[
+								[
+									7.9,
+									52
+								],
+								[
+									8.9,
+									53
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "s2hJmEY8KaTM",
+		"operation": {
+			"point": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									4.9,
+									51
+								],
+								[
+									6.9,
+									51
+								],
+								[
+									6.9,
+									53
+								],
+								[
+									4.9,
+									53
+								],
+								[
+									4.9,
+									51
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			6,
+			7,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rlzEjpwwcTcn",
+		"operation": {
+			"point": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "MultiPolygon",
+						"coordinates": [
+							[
+								[
+									[
+										5.9,
+										52
+									],
+									[
+										7.9,
+										52
+									],
+									[
+										7.9,
+										54
+									],
+									[
+										5.9,
+										54
+									],
+									[
+										5.9,
+										52
+									]
+								]
+							],
+							[
+								[
+									[
+										15.899999999999999,
+										62
+									],
+									[
+										17.9,
+										62
+									],
+									[
+										17.9,
+										64
+									],
+									[
+										15.899999999999999,
+										64
+									],
+									[
+										15.899999999999999,
+										62
+									]
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			4,
+			1,
+			6,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "a2IrC4I8eE7e",
+		"operation": {
+			"line": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pyTwrswtUEbk",
+		"operation": {
+			"line": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "MultiPoint",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								6.9,
+								53
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			0
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "dMkIzHbrjKUg",
+		"operation": {
+			"line": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "LineString",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								6.9,
+								53
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			0,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "u2lf1lwYKklI",
+		"operation": {
+			"line": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "MultiLineString",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									6.9,
+									53
+								]
+							],
+							[
+								[
+									7.9,
+									52
+								],
+								[
+									8.9,
+									53
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			0,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ft5ILOSH94O1",
+		"operation": {
+			"line": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									4.9,
+									51
+								],
+								[
+									6.9,
+									51
+								],
+								[
+									6.9,
+									53
+								],
+								[
+									4.9,
+									53
+								],
+								[
+									4.9,
+									51
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "d8QJ1Y70JomR",
+		"operation": {
+			"line": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "MultiPolygon",
+						"coordinates": [
+							[
+								[
+									[
+										5.9,
+										52
+									],
+									[
+										7.9,
+										52
+									],
+									[
+										7.9,
+										54
+									],
+									[
+										5.9,
+										54
+									],
+									[
+										5.9,
+										52
+									]
+								]
+							],
+							[
+								[
+									[
+										15.899999999999999,
+										62
+									],
+									[
+										17.9,
+										62
+									],
+									[
+										17.9,
+										64
+									],
+									[
+										15.899999999999999,
+										64
+									],
+									[
+										15.899999999999999,
+										62
+									]
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			4,
+			1,
+			0,
+			6,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "iXsAZgnIaXY4",
+		"operation": {
+			"polygon": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Point",
+						"coordinates": [
+							5.9,
+							52
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			0,
+			7,
+			6
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "qNVlTIrLreYf",
+		"operation": {
+			"polygon": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "MultiPoint",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								6.9,
+								53
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			0,
+			7,
+			6
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sN3QVE59OEUF",
+		"operation": {
+			"polygon": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "LineString",
+						"coordinates": [
+							[
+								5.9,
+								52
+							],
+							[
+								6.9,
+								53
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			6,
+			0,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "j7pChxEoEUT6",
+		"operation": {
+			"polygon": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "MultiLineString",
+						"coordinates": [
+							[
+								[
+									5.9,
+									52
+								],
+								[
+									6.9,
+									53
+								]
+							],
+							[
+								[
+									7.9,
+									52
+								],
+								[
+									8.9,
+									53
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			6,
+			0,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "djuFFS1fWWcU",
+		"operation": {
+			"polygon": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "Polygon",
+						"coordinates": [
+							[
+								[
+									4.9,
+									51
+								],
+								[
+									6.9,
+									51
+								],
+								[
+									6.9,
+									53
+								],
+								[
+									4.9,
+									53
+								],
+								[
+									4.9,
+									51
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			1,
+			6,
+			0,
+			7
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nDYI9BHVNqVy",
+		"operation": {
+			"polygon": {
+				"$geoIntersects": {
+					"$geometry": {
+						"type": "MultiPolygon",
+						"coordinates": [
+							[
+								[
+									[
+										5.9,
+										52
+									],
+									[
+										7.9,
+										52
+									],
+									[
+										7.9,
+										54
+									],
+									[
+										5.9,
+										54
+									],
+									[
+										5.9,
+										52
+									]
+								]
+							],
+							[
+								[
+									[
+										15.899999999999999,
+										62
+									],
+									[
+										17.9,
+										62
+									],
+									[
+										17.9,
+										64
+									],
+									[
+										15.899999999999999,
+										64
+									],
+									[
+										15.899999999999999,
+										62
+									]
+								]
+							]
+						]
+					}
+				}
+			}
+		},
+		"documents": [
+			4,
+			1,
+			6,
+			0,
+			7
+		],
+		"error": "@Undefined/und"
+	}
+]

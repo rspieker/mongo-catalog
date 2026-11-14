@@ -1,0 +1,754 @@
+[
+	{
+		"id": "oOz0ewr8TCOK",
+		"operation": {},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "gbwHWj0FwGKT",
+		"operation": {
+			"$nop": false
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "unknown top level operator: $nop. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "eSa4nZ5MzqXR",
+		"operation": {
+			"$invalid": true
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "unknown top level operator: $invalid. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "iKBvMzUKRUCU",
+		"operation": {
+			"$unknown": "value"
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "unknown top level operator: $unknown. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "revzucKwxWZw",
+		"operation": {
+			"color": {
+				"$not": "purple"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$not needs a regex or a document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tWvmd5FzzJ8A",
+		"operation": {
+			"color": {
+				"$not": 123
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$not needs a regex or a document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "hRrdDKn7UnkE",
+		"operation": {
+			"color": {
+				"$not": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$not needs a regex or a document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "b8WfrEiDICV7",
+		"operation": {
+			"$nor": {
+				"color": "purple"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$nor must be an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rblvKH6JLlNX",
+		"operation": {
+			"$nor": [
+				"purple"
+			]
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$or/$and/$nor entries need to be full objects",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "neFbUphT9WM9",
+		"operation": {
+			"$expr": {
+				"$eq": [
+					{
+						"$divide": [
+							"$number",
+							0
+						]
+					},
+					1
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command :: caused by :: can't $divide by zero",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nW73cUHMkOZy",
+		"operation": {
+			"$expr": {
+				"$eq": [
+					{
+						"$divide": [
+							"$string",
+							0
+						]
+					},
+					1
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command :: caused by :: $divide only supports numeric types, not string and int",
+			"code": 14,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "v0LpmfhDg9ea",
+		"operation": {
+			"$expr": {
+				"$eq": [
+					{
+						"$divide": [
+							"$string",
+							0.1
+						]
+					},
+					1
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command :: caused by :: $divide only supports numeric types, not string and double",
+			"code": 14,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "eRwLIudJ3URF",
+		"operation": {
+			"$expr": {
+				"$eq": [
+					{
+						"$divide": [
+							"$bool",
+							0
+						]
+					},
+					1
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command :: caused by :: $divide only supports numeric types, not bool and int",
+			"code": 14,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "pfQy3Q65LfVo",
+		"operation": {
+			"$expr": {
+				"$eq": [
+					{
+						"$divide": [
+							"$bool",
+							0.1
+						]
+					},
+					1
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Executor error during find command :: caused by :: $divide only supports numeric types, not bool and double",
+			"code": 14,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uLalGxOKUBeB",
+		"operation": {
+			"$expr": {
+				"$eq": [
+					{
+						"$divide": [
+							"$unknown",
+							0
+						]
+					},
+					1
+				]
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "iRxsOFJGIMog",
+		"operation": {
+			"invalid.path.that.does.not.exist": "value"
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "ccDSFA6x4SV0",
+		"operation": {
+			"": "empty field name"
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "tzKVnnu8wBMk",
+		"operation": {
+			".": "dot field name"
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "usqOPMco4uL1",
+		"operation": {
+			"..": "double dot field name"
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sqxymJVXWPsv",
+		"operation": {
+			"number": {
+				"$gt": "not a number"
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "nWpqUu2T1FA5",
+		"operation": {
+			"string": {
+				"$gt": 123
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "rsxF3cr9e00w",
+		"operation": {
+			"bool": {
+				"$in": [
+					"true",
+					"false"
+				]
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "gCGLQEOxz7yJ",
+		"operation": {
+			"price": {
+				"$in": [
+					"cheap",
+					"expensive"
+				]
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "sJNPcSmmNWOu",
+		"operation": {
+			"number": null
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lgtrsn1vji3R",
+		"operation": {
+			"string": "@Undefined/und"
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "lVegqZHiljGO",
+		"operation": {
+			"color": {
+				"$eq": null
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pcoyykD75R2w",
+		"operation": {
+			"price": {
+				"$ne": "@Undefined/und"
+			}
+		},
+		"documents": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17,
+			18,
+			19,
+			20
+		],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "gqSHPsbquoL7",
+		"operation": {
+			"string": {
+				"$regex": "[invalid"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Regular expression is invalid: missing terminating ] for character class",
+			"code": 51091,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "mxLG4timf1FN",
+		"operation": {
+			"string": {
+				"$regex": "(invalid"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Regular expression is invalid: missing closing parenthesis",
+			"code": 51091,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "rT2TqxhT4NLk",
+		"operation": {
+			"string": {
+				"$regex": "pattern",
+				"$options": "xyz"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": " invalid flag in regex options: y",
+			"code": 51108,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "hXyKSuJOl4jv",
+		"operation": {
+			"string": {
+				"$regex": "pattern",
+				"$options": "imxyz"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": " invalid flag in regex options: y",
+			"code": 51108,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "bNcSQLab2GGJ",
+		"operation": {
+			"number": {
+				"$mod": [
+					0,
+					0
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "divisor cannot be 0",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "qhwDIocp4KXH",
+		"operation": {
+			"number": {
+				"$mod": [
+					2,
+					5
+				]
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pJNrEH8JVISr",
+		"operation": {
+			"number": {
+				"$mod": "invalid"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "malformed mod, needs to be an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "tJxPZKx50tg1",
+		"operation": {
+			"number": {
+				"$mod": [
+					2
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "malformed mod, not enough elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "jWRs7oUGY7ag",
+		"operation": {
+			"number": {
+				"$mod": []
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "malformed mod, not enough elements",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "uzdDIwr4wbxe",
+		"operation": {
+			"color": {
+				"$all": "not an array"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$all needs an array",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "oVaJEKbBTbRG",
+		"operation": {
+			"color": {
+				"$elemMatch": "not an object"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$elemMatch needs an Object",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "wCOynFQ9aMUJ",
+		"operation": {
+			"color": {
+				"$size": "not a number"
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a number in: $size: \"not a number\"",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "q5KMPlNjSYKg",
+		"operation": {
+			"color": {
+				"$size": -1
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected a non-negative number in: $size: -1",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "mYfb5zPsPtez",
+		"operation": {
+			"color": {
+				"$size": 1.5
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse $size. Expected an integer: $size: 1.5",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "f1ILzlnDHjpo",
+		"operation": {
+			"number": {
+				"$bitsAllClear": -1
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Expected a non-negative number in: $bitsAllClear: -1",
+			"code": 9,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "sCAuPuZADVKH",
+		"operation": {
+			"number": {
+				"$bitsAllSet": -1
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Expected a non-negative number in: $bitsAllSet: -1",
+			"code": 9,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "nNJOnOpsm1Le",
+		"operation": {
+			"number": {
+				"$bitsAnyClear": [
+					-1
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse bit position. Expected a non-negative number in: 0: -1",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "atUQ7KKWa8Su",
+		"operation": {
+			"number": {
+				"$bitsAnySet": [
+					-1
+				]
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "Failed to parse bit position. Expected a non-negative number in: 0: -1",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "kM3rW7S9nLFP",
+		"operation": {
+			"color": {
+				"$not": {
+					"$not": {
+						"$not": "purple"
+					}
+				}
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "$not needs a regex or a document",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "vZU8OUqk04Lb",
+		"operation": {
+			"price": {
+				"$gt": {
+					"$lt": 10
+				}
+			}
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "dWEPGK9wx0ZC",
+		"operation": {
+			"number": {
+				"$gte": 0,
+				"$invalid": true
+			}
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "unknown operator: $invalid",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "abTRz6U1fYL0",
+		"operation": {
+			"color": "purple",
+			"$unknown": "value"
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "unknown top level operator: $unknown. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
+			"code": 2,
+			"type": "MongoServerError"
+		}
+	},
+	{
+		"id": "kf7XBXQ7uHMu",
+		"operation": {
+			"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": "value"
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "pnaG8cFjoDgz",
+		"operation": {
+			"field\nwith\nnewlines": "value"
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "q6OiTeAnERs1",
+		"operation": {
+			"field\twith\ttabs": "value"
+		},
+		"documents": [],
+		"error": "@Undefined/und"
+	},
+	{
+		"id": "dMOJWM6DK84i",
+		"operation": {
+			"field\u0000with\u0000nulls": "value"
+		},
+		"documents": "@Undefined/und",
+		"error": {
+			"message": "key field\u0000with\u0000nulls must not contain null bytes",
+			"code": "@Undefined/und",
+			"type": "BSONError"
+		}
+	}
+]
